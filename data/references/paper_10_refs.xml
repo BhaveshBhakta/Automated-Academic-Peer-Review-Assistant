@@ -1,0 +1,1540 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Explainable artificial intelligence: Understanding, visualizing and interpreting deep learning models</title>
+		<author>
+			<persName><forename type="first">Wojciech</forename><surname>Samek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Wiegand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus-Robert</forename><surname>Müller</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1708.08296</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Towards better analysis of machine learning models: A visual analytics perspective</title>
+		<author>
+			<persName><forename type="first">Shixia</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Visual Informatics</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="48" to="56" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Explainable artificial intelligence (xai)</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Gunning</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">In: Defense Advanced Research Projects Agency (DARPA), nd Web</title>
+				<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Position paper: the science of deep specification</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Andrew</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Appel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">375</biblScope>
+			<biblScope unit="page">20160331</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">AI-complete, AI-hard, or AI-easy-classification of problems in AI</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Roman</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Yampolskiy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The 23rd Midwest Artificial Intelligence and Cognitive Science Conference</title>
+				<meeting><address><addrLine>Cincinnati, OH, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Superintelligence: Paths, Dangers, Strategies</title>
+		<author>
+			<persName><forename type="first">Nick</forename><surname>Bostrom</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>Oxford</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Reprint ed</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">A Dual Approach to Scalable Verification of Deep Networks</title>
+		<author>
+			<persName><forename type="first">Krishnamurthy</forename><surname>Dvijotham</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+			<publisher>UAI</publisher>
+			<biblScope unit="page" from="550" to="559" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Fast and effective robustness certification</title>
+		<author>
+			<persName><forename type="first">Gagandeep</forename><surname>Singh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="10802" to="10813" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Towards fast computation of certified robustness for relu networks</title>
+		<author>
+			<persName><forename type="first">Tsui-Wei</forename><surname>Weng</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1804.09699</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Towards verified artificial intelligence</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sanjit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dorsa</forename><surname>Seshia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S Shankar</forename><surname>Sadigh</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Sastry</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1606.08514</idno>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Introduction to Languages and the Theory of Computation</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Martin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1991" />
+			<biblScope unit="volume">4</biblScope>
+			<pubPlace>NY</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">On certain formal properties of grammars</title>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Chomsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information and control</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="137" to="167" />
+			<date type="published" when="1959" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Programming languages, natural languages, and mathematics</title>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Naur</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="676" to="683" />
+			<date type="published" when="1975" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Three approaches to the quantitative definition of information</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Andrei</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kolmogorov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Problems of information transmission</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="7" />
+			<date type="published" when="1965" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">On the length of programs for computing finite binary sequences</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gregory</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Chaitin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the ACM (JACM)</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="547" to="569" />
+			<date type="published" when="1966" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A mathematical theory of communication</title>
+		<author>
+			<persName><forename type="first">Claude</forename><forename type="middle">Elwood</forename><surname>Shannon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bell system technical journal</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="379" to="423" />
+			<date type="published" when="1948" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">An information measure for classification</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">M</forename><surname>Wallace</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Boulton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Computer Journal</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="185" to="194" />
+			<date type="published" when="1968" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Minimum message length and Kolmogorov complexity</title>
+		<author>
+			<persName><forename type="first">Chris</forename><forename type="middle">S</forename><surname>Wallace</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Dowe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Computer Journal</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="270" to="283" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">MML, hybrid Bayesian network graphical models, statistical consistency, invariance and uniqueness</title>
+		<author>
+			<persName><surname>David L Dowe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Philosophy of statistics</title>
+		<imprint>
+			<biblScope unit="page" from="901" to="982" />
+			<date type="published" when="2011" />
+			<publisher>Elsevier</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Universal sequential search problems</title>
+		<author>
+			<persName><forename type="first">Leonid Anatolevich</forename><surname>Levin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Problemy peredachi informatsii</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="115" to="116" />
+			<date type="published" when="1973" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Optimum sequential search</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Raymond</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Solomonoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Memorandum</title>
+				<meeting><address><addrLine>Oxbridge Research, Cambridge, Mass</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1984" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Progress in incremental machine learning</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Solomonoff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NIPS Workshop on Universal Learning Algorithms and Optimal Search</title>
+		<imprint>
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Universal search</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gagliolo</surname></persName>
+		</author>
+		<idno type="DOI">10.4249/scholarpedia.2575</idno>
+	</analytic>
+	<monogr>
+		<title level="m">revision #152144</title>
+				<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">2575</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Superoptimizer: a look at the smallest program</title>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Massalin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGARCH Computer Architecture News</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="122" to="126" />
+			<date type="published" when="1987" />
+			<publisher>IEEE Computer Society Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Eliminating branches using a superoptimizer and the GNU C compiler</title>
+		<author>
+			<persName><forename type="first">Granlund</forename><surname>Torbjo Rn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Kenner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">cal</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Shade: A fast instruction-set simulator for execution profiling</title>
+		<author>
+			<persName><forename type="first">Bob</forename><surname>Cmelik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Keppel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Fast simulation of computer architectures</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1995" />
+			<biblScope unit="page" from="5" to="46" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Denali: a goal-directed superoptimizer</title>
+		<author>
+			<persName><forename type="first">Rajeev</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Greg</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><surname>Randall</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>ACM</publisher>
+			<biblScope unit="volume">37</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">TOAST: Applying answer set programming to superoptimisation</title>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Brain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Logic Programming</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="270" to="284" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Automatic generation of peephole superoptimizers</title>
+		<author>
+			<persName><forename type="first">Sorav</forename><surname>Bansal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Aiken</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Sigplan Notices</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="394" to="403" />
+			<date type="published" when="2006" />
+			<publisher>ACM</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Stochastic superoptimization</title>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Schkufza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Aiken</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGPLAN Notices</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="305" to="316" />
+			<date type="published" when="2013" />
+			<publisher>ACM</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">State Machines All The Way Down</title>
+		<author>
+			<persName><forename type="first">Edwin</forename><surname>Brady</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Everest: Towards a verified, drop-in replacement of HTTPS</title>
+		<author>
+			<persName><forename type="first">Karthikeyan</forename><surname>Bhargavan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik</title>
+				<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note>2nd Summit on Advances in Programming Languages</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Documentation and user&apos;s manual</title>
+		<author>
+			<persName><forename type="first">Xavier</forename><surname>Leroy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">INRIA Paris-Rocquencourt</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note>The CompCert verified compiler</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">seL4: Formal verification of an OS kernel</title>
+		<author>
+			<persName><forename type="first">Gerwin</forename><surname>Klein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM SIGOPS 22nd symposium on Operating systems principles</title>
+				<meeting>the ACM SIGOPS 22nd symposium on Operating systems principles</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="207" to="220" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Total Functional Programming</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Turner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. UCS</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="751" to="768" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The Ackermann function. a theoretical, computational, and formula manipulative study</title>
+		<author>
+			<persName><forename type="first">Yngve</forename><surname>Sundblad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BIT Numerical Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="107" to="119" />
+			<date type="published" when="1971" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">System V application binary interface</title>
+		<author>
+			<persName><surname>Hj Lu</surname></persName>
+		</author>
+		<idno>v1. 0</idno>
+	</analytic>
+	<monogr>
+		<title level="m">K1OM Architecture Processor Supplement</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Proof assistants: History, ideas and future</title>
+		<author>
+			<persName><forename type="first">Herman</forename><surname>Geuvers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sadhana</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="25" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The morphological approach to discovery, invention, research and construction</title>
+		<author>
+			<persName><forename type="first">Fritz</forename><surname>Zwicky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">New methods of thought and procedure</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1967" />
+			<biblScope unit="page" from="273" to="297" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">A structural approach to operational semantics</title>
+		<author>
+			<persName><surname>Gordon D Plotkin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1981" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Abstract interpretation of small-step semantics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Schmidt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">LOMAPS workshop on Analysis and Verification of Multiple-Agent Languages</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1996" />
+			<biblScope unit="page" from="76" to="99" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">The origins of structural operational semantics</title>
+		<author>
+			<persName><surname>Gordon D Plotkin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Logic and Algebraic Programming</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="3" to="15" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Coinductive big-step operational semantics</title>
+		<author>
+			<persName><forename type="first">Xavier</forename><surname>Leroy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hervé</forename><surname>Grall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information and Computation</title>
+		<imprint>
+			<biblScope unit="volume">207</biblScope>
+			<biblScope unit="page" from="284" to="304" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Large-scale weaklysupervised pre-training for video action recognition</title>
+		<author>
+			<persName><forename type="first">Deepti</forename><surname>Ghadiyaram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Du</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dhruv</forename><surname>Mahajan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="12046" to="12055" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Billion-scale semi-supervised learning for image classification</title>
+		<author>
+			<persName><forename type="first">Yalniz</forename><surname>I Zeki</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1905.00546</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Recursive functions of symbolic expressions and their computation by machine</title>
+		<author>
+			<persName><forename type="first">John</forename><surname>Mccarthy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1959" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Definitional interpreters for higher-order programming languages</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Reynolds</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the ACM annual conference</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="717" to="740" />
+			<date type="published" when="1972" />
+			<publisher>ACM</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Threaded code</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Bell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="370" to="372" />
+			<date type="published" when="1973" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Binary lambda calculus and combinatory logic</title>
+		<author>
+			<persName><forename type="first">John</forename><surname>Tromp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Randomness and Complexity, from Leibniz to Chaitin. World Scientific</title>
+		<imprint>
+			<biblScope unit="page" from="237" to="260" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Counting and generating terms in the binary lambda calculus</title>
+		<author>
+			<persName><forename type="first">Katarzyna</forename><surname>Grygiel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Lescanne</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Functional Programming</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Meta optimization: improving compiler heuristics with machine learning</title>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Stephenson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGPLAN Notices</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="77" to="90" />
+			<date type="published" when="2003" />
+			<publisher>ACM</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Meta-optimization for parameter tuning with a flexible computing budget</title>
+		<author>
+			<persName><forename type="first">Juergen</forename><surname>Branke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jawad Asem</forename><surname>Elomari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th annual conference on Genetic and evolutionary computation</title>
+				<meeting>the 14th annual conference on Genetic and evolutionary computation</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="1245" to="1252" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Parameter meta-optimization of metaheuristic optimization algorithms</title>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Neumüller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Computer Aided Systems Theory</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="367" to="374" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Meta-optimization based on selforganizing map and genetic algorithm</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Karpenko</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Svianadze</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Optical Memory and Neural Networks</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="279" to="283" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Performance index and metaoptimization of a direct search optimization method</title>
+		<author>
+			<persName><forename type="first">Petter</forename><surname>Krus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johan</forename><surname>Ölvander</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering optimization</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="1167" to="1185" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Hunting for metamorphic</title>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Szor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Ferrie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Virus bulletin conference. Prague</title>
+		<imprint>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<title level="m" type="main">European intelligence and security informatics conference</title>
+		<author>
+			<persName><forename type="first">Xufang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">K</forename><surname>Peter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Freddy</forename><surname>Loh</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Tan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>IEEE</publisher>
+			<biblScope unit="page" from="149" to="154" />
+		</imprint>
+	</monogr>
+	<note>Mechanisms of polymorphic and metamorphic viruses</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Detection of metamorphic viruses: A survey</title>
+		<author>
+			<persName><forename type="first">Ankur</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bist</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2014 International Conference on Advances in Computing, Communications and Informatics (ICACCI)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="1559" to="1565" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Optimization by simulated annealing</title>
+		<author>
+			<persName><forename type="first">Scott</forename><surname>Kirkpatrick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Gelatt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><forename type="middle">P</forename><surname>Vecchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">science</title>
+		<imprint>
+			<biblScope unit="volume">220</biblScope>
+			<biblScope unit="page" from="671" to="680" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Thermodynamical approach to the traveling salesman problem: An efficient simulation algorithm</title>
+		<author>
+			<persName><forename type="first">Vladimir</forename><surname>Černy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of optimization theory and applications</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="41" to="51" />
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Stochastic versus deterministic update in simulated annealing</title>
+		<author>
+			<persName><forename type="first">Pablo</forename><surname>Moscato</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Fontanari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Letters A</title>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="page" from="204" to="208" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Simulated annealing: A proof of convergence</title>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Granville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mirko</forename><surname>Krivánek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J-P</forename><surname>Rasson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="652" to="656" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<monogr>
+		<title level="m" type="main">Simulated annealing and Boltzmann machines</title>
+		<author>
+			<persName><forename type="first">Emile</forename><surname>Aarts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Korst</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Parallel simulated annealing techniques</title>
+		<author>
+			<persName><surname>Daniel R Greening</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica D: Nonlinear Phenomena</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="293" to="306" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Parallel simulated annealing using speculative computation</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ellen</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Witte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Roger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark A</forename><surname>Chamberlain</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Franklin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Parallel &amp; Distributed Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="483" to="494" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Parallel search for combinatorial optimization: Genetic algorithms, simulated annealing, tabu search and GRASP</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Panos</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pardalos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Workshop on Parallel Algorithms for Irregularly Structured Problems</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1995" />
+			<biblScope unit="page" from="317" to="331" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Parallel simulated annealing algorithms</title>
+		<author>
+			<persName><surname>D Janaki Ram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K Ganapathy</forename><surname>Sreenivas</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Subramaniam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of parallel and distributed computing</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="207" to="212" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Generating subdivision curves with L-systems on a GPU</title>
+		<author>
+			<persName><forename type="first">Radomir</forename><surname>Mech</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Przemyslaw</forename><surname>Prusinkiewicz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">In: SIGGRAPH</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Parallel generation of multiple L-systems</title>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Lipp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Wonka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Wimmer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computers &amp; Graphics</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="585" to="593" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Interactive evolution of L-system grammars for computer graphics modelling</title>
+		<author>
+			<persName><forename type="first">Jon</forename><surname>Mccormack</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Complex Systems: from biology to computation</title>
+				<imprint>
+			<date type="published" when="1993" />
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Generating performance portable code using rewrite rules: from high-level functional expressions to high-performance OpenCL code</title>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Steuwer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGPLAN Notices</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="205" to="217" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Matrix multiplication beyond auto-tuning: rewrite-based GPU code generation</title>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Steuwer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toomas</forename><surname>Remmelg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christophe</forename><surname>Dubach</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Compilers, Architectures and Synthesis for Embedded Systems</title>
+				<meeting>the International Conference on Compilers, Architectures and Synthesis for Embedded Systems</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">PyCUDA and PyOpenCL: A scripting-based approach to GPU run-time code generation</title>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Klöckner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Parallel Computing</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="157" to="174" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Automatic termination analysis for GPU kernels</title>
+		<author>
+			<persName><forename type="first">Jeroen</forename><surname>Ketema</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alastair</forename><forename type="middle">F</forename><surname>Donaldson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carsten</forename><surname>Fuhs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Workshop on Termination</title>
+				<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="50" to="55" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">The symbol grounding problem</title>
+		<author>
+			<persName><forename type="first">Stevan</forename><surname>Harnad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physica D: Nonlinear Phenomena</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="335" to="346" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Real-time computing: A new discipline of computer science and engineering</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parameswaran</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ramanathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the IEEE</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="6" to="24" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<title level="m" type="main">Unexplainability and Incomprehensibility of Artificial Intelligence</title>
+		<author>
+			<persName><forename type="first">Roman</forename><surname>Yampolskiy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Methods for interpreting and understanding deep neural networks</title>
+		<author>
+			<persName><forename type="first">Grégoire</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wojciech</forename><surname>Samek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus-Robert</forename><surname>Müller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Digital Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Unpredictability and computational irreducibility</title>
+		<author>
+			<persName><forename type="first">Hervé</forename><surname>Zwirn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Paul</forename><surname>Delahaye</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Irreducibility and Computational Equivalence</title>
+		<imprint>
+			<biblScope unit="page" from="273" to="295" />
+			<date type="published" when="2013" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<monogr>
+		<title level="m" type="main">Unpredictability of AI</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Roman</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Yampolskiy</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1905.13053</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Nondeterministic algorithms</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Robert</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Floyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the ACM (JACM)</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="636" to="644" />
+			<date type="published" when="1967" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

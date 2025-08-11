@@ -1,0 +1,376 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Bitcoin: A peer-to-peer electronic cash system</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nakamoto</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018-05" />
+		</imprint>
+	</monogr>
+	<note>retrieved online</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">A next generation smart contract and decentralized application platform</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Buterin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018-05" />
+		</imprint>
+	</monogr>
+	<note>retrieved online</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The Byzantine generals problem</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lamport</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Shostak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pease</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. on Programming Languages and Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="382" to="401" />
+			<date type="published" when="1982" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Combating doublespending using cooperative P2P systems</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Osipkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Vasserman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hopper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICDCS.2007.91</idno>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Distributed double spending prevention</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hoepman</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:0802.0832v1</idno>
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">The Enigma</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hodges</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Turing</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1983" />
+			<publisher>Burnett Books</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>R3 Corda</surname></persName>
+		</author>
+		<ptr target="https://www.r3.com/,retrievedonline" />
+		<imprint>
+			<date type="published" when="2018-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Bigchaindb</surname></persName>
+		</author>
+		<ptr target="https://www.bigchaindb.com/,retrievedonline" />
+		<imprint>
+			<date type="published" when="2018-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<ptr target="https://www.hyperledger.org/,retrievedonline" />
+		<title level="m">Hyperledger</title>
+				<imprint>
+			<date type="published" when="2018-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Mining association rules between sets of items in large databases</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Imieliński</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Swami</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 1993 ACM SIGMOD International Conference on Management of Data, SIGMOD</title>
+				<meeting>the 1993 ACM SIGMOD International Conference on Management of Data, SIGMOD</meeting>
+		<imprint>
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<ptr target="https://kaleido.io/,retrievedonline" />
+		<title level="m">ConsenSys company</title>
+				<imprint>
+			<date type="published" when="2018-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Approximate frequency counts over data streams</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Manku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Motwani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2002 International Conference on Very Large Data Bases (VLDB &apos;02)</title>
+				<meeting>the 2002 International Conference on Very Large Data Bases (VLDB &apos;02)<address><addrLine>Hong Kong</addrLine></address></meeting>
+		<imprint>
+			<biblScope unit="page" from="346" to="357" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A simple algorithm for finding frequent elements in streams and bags</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Karp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Papadimitriou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Shenker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Database Syst</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="51" to="55" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Finding recent frequent itemsets adaptively over online data streams</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Lee</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="487" to="492" />
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">False positive or false negative: Mining frequent itemsets from high speed transactional data streams</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Chong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zhou</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page">4</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The management and mining of multiple predictive models using the predictive modeling markup language</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Grossman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bailey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ramu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Qin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0950-5849(99)00022-1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Information and Software Technology</title>
+				<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="589" to="595" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Deploying analytics with the Portable Format for Analytics (PFA)</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pivarski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bennett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Grossman</surname></persName>
+		</author>
+		<idno>KDD &apos;16</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Applied machine learning at Facebook: A datacenter infrastructure perspective</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hazelwood</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Symposium on High-Performance Computer Architecture (HPCA)</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">An overview of SAS Visual Data Mining and Machine Learning on SAS Viya</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wexler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Haller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Myneni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SAS Global Forum</title>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Trustless machine learning contracts: Evaluating and exchanging machine learning models on the Ethereum blockchain</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kurtulmus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Daniel</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1802.10185</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Security analysis of SHA-256 and Sisters</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Gilbert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Handschuh</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="175" to="193" />
+		</imprint>
+	</monogr>
+	<note>Selected Areas in Cryptography</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

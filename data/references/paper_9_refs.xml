@@ -1,0 +1,506 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Parallel coordinates: a tool for visualizing multi-dimensional geometry</title>
+		<author>
+			<persName><forename type="first">Alfred</forename><surname>Inselberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernard</forename><surname>Dimsdale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 1st conference on Visualization&apos;90</title>
+				<meeting>the 1st conference on Visualization&apos;90</meeting>
+		<imprint>
+			<publisher>IEEE Computer Society Press</publisher>
+			<date type="published" when="1990" />
+			<biblScope unit="page" from="361" to="378" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation</title>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Bach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Binder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Grégoire</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederick</forename><surname>Klauschen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus-Robert</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wojciech</forename><surname>Samek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PloS one</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">e0130140</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Gender shades: Intersectional accuracy disparities in commercial gender classification</title>
+		<author>
+			<persName><forename type="first">Joy</forename><surname>Buolamwini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timnit</forename><surname>Gebru</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Conference on fairness, accountability and transparency</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="77" to="91" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Man is to computer programmer as woman is to homemaker? debiasing word embeddings</title>
+		<author>
+			<persName><forename type="first">Tolga</forename><surname>Bolukbasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai-Wei</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Venkatesh</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">T</forename><surname>Saligrama</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kalai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="4349" to="4357" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Men also like shopping: Reducing gender bias amplification using corpus-level constraints</title>
+		<author>
+			<persName><forename type="first">Jieyu</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianlu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Yatskar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vicente</forename><surname>Ordonez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai-Wei</forename><surname>Chang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1707.09457</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Unbiased look at dataset bias</title>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Torralba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexei</forename><forename type="middle">A</forename><surname>Efros</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Undoing the damage of dataset bias</title>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Khosla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tinghui</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomasz</forename><surname>Malisiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexei</forename><forename type="middle">A</forename><surname>Efros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Torralba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">European Conference on Computer Vision</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="158" to="171" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">A deeper look at dataset bias</title>
+		<author>
+			<persName><forename type="first">Tatiana</forename><surname>Tommasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Novi</forename><surname>Patricia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Caputo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tinne</forename><surname>Tuytelaars</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Domain adaptation in computer vision applications</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="37" to="55" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Why should i trust you?: Explaining the predictions of any classifier</title>
+		<author>
+			<persName><forename type="first">Sameer</forename><surname>Marco Tulio Ribeiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Guestrin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining</title>
+				<meeting>the 22nd ACM SIGKDD international conference on knowledge discovery and data mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1135" to="1144" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Causal interpretations of black-box models</title>
+		<author>
+			<persName><forename type="first">Qingyuan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Hastie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Business &amp; Economic Statistics</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note>just-accepted</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Permutation importance: a corrected feature importance measure</title>
+		<author>
+			<persName><forename type="first">André</forename><surname>Altmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Toloşi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Sander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Lengauer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1340" to="1347" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Visualizing and understanding convolutional networks</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Matthew</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rob</forename><surname>Zeiler</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Fergus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="818" to="833" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Luisa</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Zintgraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Taco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tameem</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Adel</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Welling</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1702.04595</idno>
+		<title level="m">Visualizing deep neural network decisions: Prediction difference analysis</title>
+				<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Deep inside convolutional networks: Visualising image classification models and saliency maps</title>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Vedaldi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICLR</title>
+				<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Riedmiller. Striving for simplicity: The all convolutional net</title>
+		<author>
+			<persName><forename type="first">Jost</forename><surname>Tobias Springenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexey</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">A</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICLR</title>
+				<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Axiomatic attribution for deep networks</title>
+		<author>
+			<persName><forename type="first">Mukund</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ankur</forename><surname>Taly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiqi</forename><surname>Yan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Smilkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikhil</forename><surname>Thorat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Been</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernanda</forename><surname>Viégas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Wattenberg</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1706.03825</idno>
+		<title level="m">Smoothgrad: removing noise by adding noise</title>
+				<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Grad-cam: Visual explanations from deep networks via gradient-based localization</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramprasaath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Selvaraju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Cogswell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramakrishna</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devi</forename><surname>Vedantam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dhruv</forename><surname>Parikh</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Batra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICCV</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="618" to="626" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Learning important features through propagating activation differences</title>
+		<author>
+			<persName><forename type="first">Avanti</forename><surname>Shrikumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peyton</forename><surname>Greenside</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anshul</forename><surname>Kundaje</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Understanding individual decisions of cnns via contrastive backpropagation</title>
+		<author>
+			<persName><forename type="first">Jindong</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yinchong</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>Tresp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACCV</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,11 @@
+Title: Private Machine Learning via Randomised Response
+Published: 2020-01-14T17:56:16Z
+Link: http://arxiv.org/abs/2001.04942v2
+
+Abstract:
+We introduce a general learning framework for private machine learning based
+on randomised response. Our assumption is that all actors are potentially
+adversarial and as such we trust only to release a single noisy version of an
+individual's datapoint. We discuss a general approach that forms a consistent
+way to estimate the true underlying machine learning model and demonstrate this
+in the case of logistic regression.

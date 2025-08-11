@@ -1,0 +1,3681 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Read the fine print</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Aaronson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Physics</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="291" to="293" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Shadow tomography of quantum states</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Aaronson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 50th annual ACM SIGACT symposium on theory of computing</title>
+				<meeting>the 50th annual ACM SIGACT symposium on theory of computing</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="325" to="338" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Shadow tomography of quantum states</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Aaronson</surname></persName>
+		</author>
+		<idno type="DOI">10.1137/18M120275X</idno>
+		<ptr target="https://doi.org/10.1137/18M120275X" />
+	</analytic>
+	<monogr>
+		<title level="j">SIAM Journal on Computing</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Gentle measurement of quantum states and differential privacy</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Aaronson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">N</forename><surname>Rothblum</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Filtering variational quantum algorithms for combinatorial optimization</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Amaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Modica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rosenkranz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fiorentini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Benedetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lubasch</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/2058-9565/ac3e54</idno>
+		<idno>doi: 10. 1088/2058-9565/ac3e54</idno>
+		<ptr target="http://dx.doi.org/10.1088/2058-9565/ac3e54" />
+	</analytic>
+	<monogr>
+		<title level="j">Quantum Science and Technology</title>
+		<idno type="ISSN">2058-9565</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">15021</biblScope>
+			<date type="published" when="2022-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Natural evolutionary strategies for variational quantum computation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Anand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Degroote</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aspuru-Guzik</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/2632-2153/abf3ac</idno>
+		<ptr target="https://doi.org/10.1088%2F2632-2153%2Fabf3ac" />
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning: Science and Technology</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">45012</biblScope>
+			<date type="published" when="2021-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Junipr: a framework for unsupervised machine learning in particle physics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Andreassen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Feige</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Frye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Schwartz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The European Physical Journal C</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page" from="1" to="24" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Effect of barren plateaus on gradient-free optimization. Quantum, 5:558</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Arrasmith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Czarnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.22331/q-2021-10-05-558</idno>
+		<ptr target="http://dx.doi.org/10.22331/q-2021-10-05-558" />
+		<imprint>
+			<date type="published" when="2021-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Equivalence of quantum barren plateaus to cost concentration and narrow gorges</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Arrasmith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/2058-9565/ac7d06</idno>
+		<ptr target="http://dx.doi.org/10.1088/2058-9565/ac7d06" />
+	</analytic>
+	<monogr>
+		<title level="j">Quantum Science and Technology</title>
+		<idno type="ISSN">2058-9565</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">45015</biblScope>
+			<date type="published" when="2022-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">On the robustness of bucket brigade quantum ram</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Arunachalam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Gheorghiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Jochym-O'connor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mosca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">V</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1367-2630/17/12/123010</idno>
+		<ptr target="http://dx.doi.org/10.1088/1367-2630/17/12/123010" />
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<idno type="ISSN">1367-2630</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">123010</biblScope>
+			<date type="published" when="2015-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Step-by-step hhl algorithm walkthrough to enhance the understanding of critical quantum computing concepts</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J M J</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zaman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">Y</forename><surname>Wong</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><surname>Barak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Marwaha</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2106.05900</idno>
+		<title level="m">Classical algorithms and quantum limitations for maximum cut on high-girth graphs</title>
+				<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Improving variational quantum optimization using cvar</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Barkoutsos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Nannicini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Robert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Tavernelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Woerner</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page">256</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">An optoacoustic field-programmable perceptron for recurrent neural networks</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Englund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Stiller</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2309.01543</idno>
+		<imprint>
+			<date type="published" when="2023" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A generative modeling approach for benchmarking and training shallow quantum circuits</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Benedetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Garcia-Pintos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Perdomo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Leyton-Ortega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perdomo-Ortiz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">npj Quantum Information</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">45</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Hardware-efficient variational quantum algorithms for time evolution</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Benedetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fiorentini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lubasch</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevResearch.3.033083</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevResearch.3.033083" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<idno type="ISSN">2643- 1564</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2021-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Noisy intermediate-scale quantum (nisq) algorithms</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Bharti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cervera-Lierta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Kyaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Haug</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Alperin-Lea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Anand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Degroote</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Heimonen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Kottmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Menke</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2101.08448</idno>
+		<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Quantum machine learning</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Biamonte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wittek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Pancotti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Rebentrost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wiebe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lloyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">549</biblScope>
+			<biblScope unit="issue">7671</biblScope>
+			<biblScope unit="page" from="195" to="202" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A semi-agnostic ansatz with variable structure for variational quantum algorithms</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bilkis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Verdon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s42484-023-00132-1</idno>
+		<ptr target="http://dx.doi.org/10.1007/s42484-023-00132-1" />
+	</analytic>
+	<monogr>
+		<title level="j">Quantum Machine Intelligence</title>
+		<idno type="ISSN">2524-4914</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">2023</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Training variational quantum algorithms is np-hard</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bittel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kliesch</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.127.120502</idno>
+		<ptr target="https://link.aps.org/doi/10.1103/PhysRevLett.127.120502" />
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="page">120502</biblScope>
+			<date type="published" when="2021-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Statistical complexity of quantum circuits</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Bu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevA.105.062431</idno>
+		<idno>doi: 10. 1103/physreva.105.062431</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevA.105.062431" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review A</title>
+		<idno type="ISSN">2469-9934</idno>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<date type="published" when="2022-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Effects of quantum resources and noise on the statistical complexity of quantum circuits</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Bu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/2058-9565/acb56a</idno>
+		<ptr target="http://dx.doi.org/10.1088/2058-9565/acb56a" />
+	</analytic>
+	<monogr>
+		<title level="j">Quantum Science and Technology</title>
+		<idno type="ISSN">2058-9565</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">25013</biblScope>
+			<date type="published" when="2023-02" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Classical shadows with pauliinvariant unitary ensembles. npj Quantum Information</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Bu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jaffe</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41534-023-00801-w</idno>
+		<ptr target="http://dx.doi.org/10.1038/s41534-023-00801-w" />
+		<imprint>
+			<date type="published" when="2024-01" />
+			<biblScope unit="volume">10</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">The battle of clean and dirty qubits in the era of partial error correction</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Bultrini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Czarnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<idno type="DOI">10.22331/q-2023-07-13-1060</idno>
+		<ptr target="http://dx.doi.org/10.22331/q-2023-07-13-1060" />
+		<imprint>
+			<date type="published" when="2023-07" />
+			<biblScope unit="page">1060</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Cost function dependent barren plateaus in shallow parametrized quantum circuits</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Volkoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41467-021-21728-w</idno>
+		<ptr target="http://dx.doi.org/10.1038/s41467-021-21728-w" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<idno type="ISSN">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2021-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Variational quantum state eigensolver. npj Quantum Information</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Arrasmith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022" />
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">113</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Challenges and opportunities in quantum machine learning</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Verdon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Computational Science</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="567" to="576" />
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><surname>Cervero Martín</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Plekhanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lubasch</surname></persName>
+		</author>
+		<idno type="DOI">10.22331/q-2023-04-13-974</idno>
+		<ptr target="http://dx.doi.org/10.22331/q-2023-04-13-974" />
+		<title level="m">Barren plateaus in quantum tensor network optimization. Quantum, 7:974</title>
+				<imprint>
+			<date type="published" when="2023-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">An introduction to error-correcting codes: From classical to quantum</title>
+		<author>
+			<persName><forename type="first">H.-H</forename><surname>Chang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Robust shadow estimation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Flammia</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PRXQuantum.2.030348</idno>
+		<ptr target="http://dx.doi.org/10.1103/PRXQuantum.2.030348" />
+	</analytic>
+	<monogr>
+		<title level="j">PRX Quantum</title>
+		<idno type="ISSN">2691-3399</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2021-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Information perspective to probabilistic modeling: Boltzmann machines versus born machines</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Entropy</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">583</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Sampling-based sublinear low-rank matrix arithmetic framework for dequantizing quantum machine learning</title>
+		<author>
+			<persName><forename type="first">N.-H</forename><surname>Chia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gilyén</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-H</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3357713.3384314</idno>
+		<ptr target="http://dx.doi.org/10.1145/3357713.3384314" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing, STOC &apos;20</title>
+				<meeting>the 52nd Annual ACM SIGACT Symposium on Theory of Computing, STOC &apos;20</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2020-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">On lazy training in differentiable programming</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chizat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Oyallon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Bach</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Quantum machine learning: a classical perspective</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ciliberto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Herbster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Ialongo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pontil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rocchetto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Severini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wossnig</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rspa.2017.0551</idno>
+		<ptr target="http://dx.doi.org/10.1098/rspa.2017.0551" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<idno type="ISSN">1471-2946</idno>
+		<imprint>
+			<biblScope unit="volume">474</biblScope>
+			<biblScope unit="page">20170551</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Machine learning of noise-resilient quantum circuits</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Rudinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sarovar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PRXQuantum.2.010324</idno>
+		<idno>doi: 10.1103/ prxquantum.2.010324</idno>
+		<ptr target="http://dx.doi.org/10.1103/PRXQuantum.2.010324" />
+	</analytic>
+	<monogr>
+		<title level="m">PRX Quantum</title>
+				<imprint>
+			<date type="published" when="2021-02" />
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Chaos, complexity, and random matrices</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cotler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hunter-Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Yoshida</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/JHEP11(2017)048</idno>
+		<ptr target="http://dx.doi.org/10.1007/JHEP11" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of High Energy Physics</title>
+		<idno type="ISSN">1029- 8479</idno>
+		<imprint>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">48</biblScope>
+			<date type="published" when="2017-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">Revisiting dequantization and quantum advantage in learning tasks</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cotler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Mcclean</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2112.00811</idno>
+		<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Error mitigation with clifford quantum-circuit data. Quantum, 5:592</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Czarnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Arrasmith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<idno type="DOI">10.22331/q-2021-11-26-592</idno>
+		<ptr target="http://dx.doi.org/10.22331/q-2021-11-26-592" />
+		<imprint>
+			<date type="published" when="2021-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Tight bounds on the convergence of noisy random circuits to the uniform distribution</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Deshpande</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Niroula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Shtanko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Gorshkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fefferman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Gullans</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PRXQuantum.3.040329</idno>
+		<idno>doi: 10.1103/ prxquantum.3.040329</idno>
+		<ptr target="http://dx.doi.org/10.1103/PRXQuantum.3.040329" />
+	</analytic>
+	<monogr>
+		<title level="j">PRX Quantum</title>
+		<idno type="ISSN">2691-3399</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2022-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">A non-review of quantum machine learning: trends and explorations</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Dunjko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wittek</surname></persName>
+		</author>
+		<idno type="DOI">10.22331/qv-2020-03-17-32</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Quantum Views</title>
+				<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">32</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">The randomized measurement toolbox</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Elben</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Flammia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kueng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Preskill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Vermersch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zoller</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s42254-022-00535-2</idno>
+		<ptr target="http://dx.doi.org/10.1038/s42254-022-00535-2" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Physics</title>
+		<idno type="ISSN">2522-5820</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="9" to="24" />
+			<date type="published" when="2022-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Hybrid quantum-classical algorithms and quantum error mitigation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Endo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Benjamin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yuan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Physical Society of Japan</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">32001</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Harper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Flammia</surname></persName>
+		</author>
+		<title level="m">Scalable bayesian hamiltonian learning</title>
+				<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">A quantum approximate optimization algorithm</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Farhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goldstone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gutmann</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1411.4028</idno>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Lectures On Computation. Advanced book program. Basic Books</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Feynman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Allen</surname></persName>
+		</author>
+		<ptr target="https://books.google.com.tw/books?id=-olQAAAAMAAJ" />
+		<imprint>
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Quantum observables for continuous control of the quantum approximate optimization algorithm via reinforcement learning</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Garcia-Saez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Riu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gilyén</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Low</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wiebe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing, STOC &apos;19</title>
+				<meeting>the 51st Annual ACM SIGACT Symposium on Theory of Computing, STOC &apos;19</meeting>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title/>
+		<idno type="DOI">10.1145/3313276.3316366</idno>
+		<ptr target="http://dx.doi.org/10.1145/3313276.3316366" />
+		<imprint>
+			<date type="published" when="2019-06" />
+			<publisher>ACM</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Robust online hamiltonian learning</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Granade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ferrie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wiebe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Cory</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1367-2630/14/10/103013</idno>
+		<ptr target="http://dx.doi.org/10.1088/1367-2630/14/10/103013" />
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<idno type="ISSN">1367-2630</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">103013</biblScope>
+			<date type="published" when="2012-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">An adaptive variational algorithm for exact molecular simulations on a quantum computer</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Grimsley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Economou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">J</forename><surname>Mayhall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature communications</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">3007</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<title level="m" type="main">A fast quantum mechanical algorithm for database search</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Grover</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Propagating phonons coupled to an artificial atom</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">V</forename><surname>Gustafsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Aref</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Kockum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Ekström</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Johansson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Delsing</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.1257219</idno>
+		<ptr target="http://dx.doi.org/10.1126/science.1257219" />
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<idno type="ISSN">1095-9203</idno>
+		<imprint>
+			<biblScope unit="volume">346</biblScope>
+			<biblScope unit="issue">6206</biblScope>
+			<biblScope unit="page" from="207" to="211" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Quantum computing with trapped ions</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Haffner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Roos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Blatt</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.physrep.2008.09.003</idno>
+		<ptr target="https://doi.org/10.1016%2Fj.physrep.2008.09.003" />
+	</analytic>
+	<monogr>
+		<title level="j">Physics Reports</title>
+		<imprint>
+			<biblScope unit="volume">469</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="155" to="203" />
+			<date type="published" when="2008-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Quantifying fermionic nonlinearity of quantum circuits</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hakkaku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tashima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mitarai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Mizukami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Fujii</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevResearch.4.043100</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevResearch.4.043100" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<idno type="ISSN">2643-1564</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2022-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<title level="m" type="main">Practicality of Quantum Random Access Memory</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">T</forename><surname>Hann</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+		<respStmt>
+			<orgName>Yale University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Hardware-efficient quantum random access memory with hybrid quantum acoustic systems</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">T</forename><surname>Hann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-L</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Schoelkopf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Girvin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.123.250501</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevLett.123.250501" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<idno type="ISSN">1079-7114</idno>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="issue">25</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Hardware-efficient quantum random access memory with hybrid quantum acoustic systems</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">T</forename><surname>Hann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-L</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Schoelkopf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Girvin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="page">250501</biblScope>
+			<date type="published" when="2019-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Low-depth gradient measurements can improve convergence in variational hybrid quantum-classical algorithms</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Harrow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Napp</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/physrevlett.126.140502</idno>
+		<ptr target="https://doi.org/10.1103%2Fphysrevlett.126.140502" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<date type="published" when="2021-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Quantum algorithm for linear systems of equations</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Harrow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hassidim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lloyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical review letters</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page">150502</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Sequential measurements, disturbance and property testing</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Harrow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Y Y</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Montanaro</surname></persName>
+		</author>
+		<idno type="DOI">10.1137/1.9781611974782.105</idno>
+		<ptr target="http://dx.doi.org/10.1137/1.9781611974782.105" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twenty-Eighth Annual ACM-SIAM Symposium on Discrete Algorithms. Society for Industrial and Applied Mathematics</title>
+				<meeting>the Twenty-Eighth Annual ACM-SIAM Symposium on Discrete Algorithms. Society for Industrial and Applied Mathematics</meeting>
+		<imprint>
+			<date type="published" when="2017-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Connecting ansatz expressibility to gradient magnitudes and barren plateaus</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PRXQuantum.3.010313</idno>
+		<ptr target="http://dx.doi.org/10.1103/PRXQuantum.3.010313" />
+	</analytic>
+	<monogr>
+		<title level="j">PRX Quantum</title>
+		<idno type="ISSN">2691-3399</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2022-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Bharti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Rebentrost</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1909.07344</idno>
+		<idno type="arXiv">arXiv:1909.07344</idno>
+		<title level="m">Near-term quantum algorithms for linear systems of equations. arXiv e-prints, art</title>
+				<imprint>
+			<date type="published" when="2019-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Predicting many properties of a quantum system from very few measurements</title>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kueng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Preskill</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41567-020-0932-7</idno>
+		<ptr target="https://doi.org/10.1038%2Fs41567-020-0932-7" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Physics</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1050" to="1057" />
+			<date type="published" when="2020-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Predicting many properties of a quantum system from very few measurements</title>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kueng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Preskill</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41567-020-0932-7</idno>
+		<ptr target="http://dx.doi.org/10.1038/s41567-020-0932-7" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Physics</title>
+		<idno type="ISSN">1745-2481</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1050" to="1057" />
+			<date type="published" when="2020-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Power of data in quantum machine learning</title>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Broughton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mohseni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Babbush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Boixo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Neven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Mcclean</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41467-021-22539-9</idno>
+		<ptr target="https://doi.org/10.1038%2Fs41467-021-22539-9" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2021-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Efficient estimation of pauli observables by derandomization</title>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kueng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Preskill</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.127.030503</idno>
+		<ptr target="https://link.aps.org/doi/10.1103/PhysRevLett.127.030503" />
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="page">30503</biblScope>
+			<date type="published" when="2021-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Information-theoretic bounds on quantum advantage in machine learning</title>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kueng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Preskill</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">190505</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Quantum advantage in learning from experiments</title>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Broughton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cotler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mohseni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Neven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Babbush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kueng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Preskill</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">376</biblScope>
+			<biblScope unit="issue">6598</biblScope>
+			<biblScope unit="page" from="1182" to="1186" />
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Provably efficient machine learning for quantum many-body problems</title>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kueng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Torlai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">V</forename><surname>Albert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Preskill</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.abk3333</idno>
+		<ptr target="http://dx.doi.org/10.1126/science.abk3333" />
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<idno type="ISSN">1095-9203</idno>
+		<imprint>
+			<biblScope unit="volume">377</biblScope>
+			<biblScope unit="issue">6613</biblScope>
+			<date type="published" when="2022-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<title level="m" type="main">Non-convex optimization for machine learning. Foundations and Trends® in Machine Learning</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kar</surname></persName>
+		</author>
+		<idno type="DOI">10.1561/2200000058</idno>
+		<ptr target="http://dx.doi.org/10.1561/2200000058" />
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="142" to="336" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<title level="m" type="main">On nonconvex optimization for machine learning: Gradients, stochasticity, and saddle points</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Netrapalli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Kakade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">I</forename><surname>Jordan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Hardware-efficient variational quantum eigensolver for small molecules and quantum magnets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kandala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mezzacapo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Temme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Takita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Chow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Gambetta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">nature</title>
+		<imprint>
+			<biblScope unit="volume">549</biblScope>
+			<biblScope unit="issue">7671</biblScope>
+			<biblScope unit="page" from="242" to="246" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<title level="m" type="main">Quantum recommendation systems</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kerenidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Prakash</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<monogr>
+		<title level="m" type="main">Learning unitaries by gradient descent</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">T</forename><surname>Kiani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lloyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Maity</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Quantum simulation of electronic structure with linear depth and connectivity</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">D</forename><surname>Kivlichan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcclean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wiebe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Gidney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aspuru-Guzik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">K L</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Babbush</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical review letters</title>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">110501</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<monogr>
+		<title level="m" type="main">Classical shadows with noise. Quantum, 6:776</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Grewal</surname></persName>
+		</author>
+		<idno type="DOI">10.22331/q-2022-08-16-776</idno>
+		<ptr target="http://dx.doi.org/10.22331/q-2022-08-16-776" />
+		<imprint>
+			<date type="published" when="2022-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Quantum computer-aided design of quantum optics hardware</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Kottmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krenn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">H</forename><surname>Kyaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Alperin-Lea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aspuru-Guzik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quantum Science and Technology</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">35010</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">A quantum engineer&apos;s guide to superconducting qubits</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Krantz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kjaergaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Orlando</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gustavsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">D</forename><surname>Oliver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied physics reviews</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Computer-inspired quantum experiments</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krenn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Erhard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zeilinger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Physics</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="649" to="661" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Theory of overparametrization in quantum neural networks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Larocca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Garcia-Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s43588-023-00467-6</idno>
+		<ptr target="http://dx.doi.org/10.1038/s43588-023-00467-6" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Computational Science</title>
+		<idno type="ISSN">2662-8457</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="542" to="551" />
+			<date type="published" when="2023" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Robust data encodings for quantum classifiers</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Larose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Coyle</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevA.102.032420</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevA.102.032420" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review A</title>
+		<idno type="ISSN">2469-9934</idno>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2020-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<monogr>
+		<title level="m" type="main">Variational quantum state diagonalization. npj Quantum Information</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Larose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tikku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>O'neel-Judy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41534-019-0167-6</idno>
+		<ptr target="http://dx.doi.org/10.1038/s41534-019-0167-6" />
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">5</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Generalized unitary coupled cluster wave functions for quantum computation</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">J</forename><surname>Huggins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Head-Gordon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Whaley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of chemical theory and computation</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="311" to="324" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Quantum optimization with a novel gibbs objective function and ansatz architecture search</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Coram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Riley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Leichenauer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">23074</biblScope>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Spectral form factors and late time quantum chaos</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevD.98.086026</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevD.98.086026" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review D</title>
+		<idno type="ISSN">2470-0029</idno>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<date type="published" when="2018-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Scrambling and decoding the charged quantum information</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevResearch.2.043164</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevResearch.2.043164" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<idno type="ISSN">2643-1564</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2020-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<monogr>
+		<title level="m" type="main">Laziness, barren plateau, and noise in machine learning</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Representation learning via quantum neural tangent kernels</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Tacchino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Glick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mezzacapo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PRX Quantum</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">30323</biblScope>
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<monogr>
+		<title level="m" type="main">Noise can be helpful for variational quantum algorithms</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wilde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Mele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Eisert</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2210.06723</idno>
+		<imprint>
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<monogr>
+		<title level="m" type="main">Towards provably efficient quantum algorithms for large-scale machine-learning models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-P</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Alexeev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Eisert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2303.03428</idno>
+		<imprint>
+			<date type="published" when="2023" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Efficient quantum algorithm for dissipative nonlinear differential equations</title>
+		<author>
+			<persName><forename type="first">J.-P</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">Ø</forename><surname>Kolden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Krovi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">F</forename><surname>Loureiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Trivisa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Childs</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.2026805118</idno>
+		<ptr target="http://dx.doi.org/10.1073/pnas.2026805118" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<idno type="ISSN">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="issue">35</biblScope>
+			<biblScope unit="page">2021</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Universal quantum simulators</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lloyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">273</biblScope>
+			<biblScope unit="issue">5278</biblScope>
+			<biblScope unit="page" from="1073" to="1078" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<monogr>
+		<title level="m" type="main">Quantum algorithms for supervised and unsupervised machine learning</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lloyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mohseni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Rebentrost</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Quantum principal component analysis</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lloyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mohseni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Rebentrost</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nphys3029</idno>
+		<ptr target="http://dx.doi.org/10.1038/nphys3029" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Physics</title>
+		<idno type="ISSN">1745-2481</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="631" to="633" />
+			<date type="published" when="2014-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Variational quantum algorithms for nonlinear problems</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lubasch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Joo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Moinier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kiffner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jaksch</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevA.101.010301</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevA.101.010301" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review A</title>
+		<idno type="ISSN">2469-9934</idno>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2020-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">O</forename><surname>Marrero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kieferová</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wiebe</surname></persName>
+		</author>
+		<title level="m">Entanglement induced barren plateaus</title>
+				<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<monogr>
+		<title level="m" type="main">Universal quantum emulator</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Marvian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lloyd</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">The theory of variational hybrid quantum-classical algorithms</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Mcclean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Romero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Babbush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aspuru-Guzik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">23023</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">Barren plateaus in quantum neural network training landscapes</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Mcclean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Boixo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">N</forename><surname>Smelyanskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Babbush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Neven</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41467-018-07090-4</idno>
+		<ptr target="http://dx.doi.org/10.1038/s41467-018-07090-4" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<idno type="ISSN">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title level="a" type="main">Methodology for replacing indirect measurements with direct measurements</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mitarai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Fujii</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/physrevresearch.1.013006</idno>
+		<ptr target="https://doi.org/10.1103%2Fphysrevresearch.1.013006" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2019-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">Quantum optimization using variational algorithms on near-term quantum devices</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Moll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Barkoutsos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">S</forename><surname>Bishop</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Chow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Egger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Filipp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fuhrer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Gambetta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ganzhorn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quantum Science and Technology</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">30503</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<analytic>
+		<title level="a" type="main">Sequential minimal optimization for quantum-classical hybrid algorithms</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Nakanishi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Fujii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Todo</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/physrevresearch.2.043158</idno>
+		<ptr target="https://doi.org/10.1103%2Fphysrevresearch.2.043158" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2020-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">L</forename><surname>Chuang</surname></persName>
+		</author>
+		<idno>doi: 10.1017/ CBO9780511976667</idno>
+		<title level="m">Quantum Computation and Quantum Information: 10th Anniversary Edition</title>
+				<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title level="a" type="main">Quantum ground state and single-phonon control of a mechanical resonator</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>O'connell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hofheinz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ansmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Bialczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lenander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lucero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Neeley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Weides</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wenner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Martinis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cleland</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature08967</idno>
+		<ptr target="https://doi.org/10.1038/nature08967" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<imprint>
+			<biblScope unit="volume">464</biblScope>
+			<biblScope unit="issue">7289</biblScope>
+			<biblScope unit="page" from="697" to="703" />
+			<date type="published" when="2010-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<monogr>
+		<title level="m" type="main">Efficient quantum tomography</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>O'donnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wright</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<monogr>
+		<title level="m" type="main">Structure optimization for parameterized quantum circuits</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ostaszewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Grant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Benedetti</surname></persName>
+		</author>
+		<idno type="DOI">10.22331/q-2021-01-28-391</idno>
+		<ptr target="https://doi.org/" />
+		<imprint>
+			<date type="published" when="2021-01-10" />
+			<biblScope unit="page">391</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<analytic>
+		<title level="a" type="main">Entanglement devised barren plateau mitigation</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Patti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Najafi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">F</forename><surname>Yelin</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevResearch.3.033090</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevResearch.3.033090" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<idno type="ISSN">2643-1564</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2021-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<monogr>
+		<title level="m" type="main">Data re-uploading for a universal quantum classifier</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pérez-Salinas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cervera-Lierta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Gil-Fuster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">I</forename><surname>Latorre</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page">226</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<analytic>
+		<title level="a" type="main">A variational eigenvalue solver on a photonic quantum processor</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Peruzzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcclean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Shadbolt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-H</forename><surname>Yung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-Q</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Love</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aspuru-Guzik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>O'brien</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature communications</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">4213</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<monogr>
+		<title level="m" type="main">Sequential minimal optimization: A fast algorithm for training support vector machines</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Platt</surname></persName>
+		</author>
+		<idno>MSR-TR-98-14</idno>
+		<imprint>
+			<date type="published" when="1998-04" />
+			<pubPlace>Microsoft</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename></persName>
+		</author>
+		<title level="m">Quantum computing in the nisq era and beyond. Quantum</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">79</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<analytic>
+		<title level="a" type="main">Chaos and complexity by design</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Yoshida</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/JHEP04(2017)121</idno>
+		<ptr target="http://dx.doi.org/10.1007/JHEP04(2017)121" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of High Energy Physics</title>
+		<idno type="ISSN">1029-8479</idno>
+		<imprint>
+			<biblScope unit="volume">2017</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2017-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b112">
+	<monogr>
+		<title level="m" type="main">The principles of deep learning theory</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yaida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hanin</surname></persName>
+		</author>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<biblScope unit="page">2022</biblScope>
+			<pubPlace>Cambridge, MA, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b113">
+	<analytic>
+		<title level="a" type="main">Quantum error correction: an introductory guide</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Roffe</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/00107514.2019.1667078</idno>
+		<ptr target="http://dx.doi.org/10.1080/00107514.2019.1667078" />
+	</analytic>
+	<monogr>
+		<title level="j">Contemporary Physics</title>
+		<idno type="ISSN">1366-5812</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="226" to="245" />
+			<date type="published" when="2019-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b114">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Sakurai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Napolitano</surname></persName>
+		</author>
+		<idno>doi: 10.1017/ 9781108587280</idno>
+		<title level="m">Modern Quantum Mechanics. Quantum physics, quantum information and quantum computation</title>
+				<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<biblScope unit="volume">10</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b115">
+	<analytic>
+		<title level="a" type="main">Noise resilience of variational quantum compiling</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Khatri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1367-2630/ab784c</idno>
+		<ptr target="http://dx.doi.org/10.1088/1367-2630/ab784c" />
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<idno type="ISSN">1367- 2630</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">43006</biblScope>
+			<date type="published" when="2020-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b116">
+	<analytic>
+		<title level="a" type="main">Trainability of dissipative perceptronbased quantum neural networks</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.128.180505</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevLett.128.180505" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<idno type="ISSN">1079-7114</idno>
+		<imprint>
+			<biblScope unit="volume">128</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<date type="published" when="2022-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b117">
+	<analytic>
+		<title level="a" type="main">Algorithms for quantum computation: discrete logarithms and factoring</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Shor</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SFCS.1994.365700</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings 35th Annual Symposium on Foundations of Computer Science</title>
+				<meeting>35th Annual Symposium on Foundations of Computer Science</meeting>
+		<imprint>
+			<date type="published" when="1994" />
+			<biblScope unit="page" from="124" to="134" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b118">
+	<analytic>
+		<title level="a" type="main">10-qubit entanglement and parallel logic operations with a superconducting circuit</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-B</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-A</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-W</forename><surname>Pan</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.119.180511</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevLett.119.180511" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<idno type="ISSN">1079-7114</idno>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<date type="published" when="2017-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b119">
+	<analytic>
+		<title level="a" type="main">Experimental estimation of quantum state properties from classical shadows</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Struchalin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">A</forename><surname>Zagorovskii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kovlakov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Straupe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kulik</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PRXQuantum.2.010307</idno>
+		<ptr target="https://link.aps.org/doi/10.1103/PRXQuantum.2.010307" />
+	</analytic>
+	<monogr>
+		<title level="j">PRX Quantum</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">10307</biblScope>
+			<date type="published" when="2021-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b120">
+	<analytic>
+		<title level="a" type="main">Generalized Trotter&apos;s formula and systematic approximants of exponential operators and inner derivations with applications to many-body problems</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Suzuki</surname></persName>
+		</author>
+		<idno>doi: 10.1007/ BF01609348</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Communications in Mathematical Physics</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="183" to="190" />
+			<date type="published" when="1976-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b121">
+	<analytic>
+		<title level="a" type="main">A quantum-inspired classical algorithm for recommendation systems</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 51st annual ACM SIGACT symposium on theory of computing</title>
+				<meeting>the 51st annual ACM SIGACT symposium on theory of computing</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="217" to="228" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b122">
+	<analytic>
+		<title level="a" type="main">Quantum principal component analysis only achieves an exponential speedup because of its state preparation assumptions</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Tang</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.127.060503</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevLett.127.060503" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<idno type="ISSN">1079-7114</idno>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<date type="published" when="2021-08" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b123">
+	<analytic>
+		<title level="a" type="main">New perspectives on unitary coupled-cluster theory</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Taube</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Bartlett</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/qua.21198</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Quantum Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page" from="3393" to="3401" />
+			<date type="published" when="2006-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b124">
+	<analytic>
+		<title level="a" type="main">Error mitigation for short-depth quantum circuits</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Temme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bravyi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Gambetta</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.119.180509</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevLett.119.180509" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<idno type="ISSN">1079-7114</idno>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<date type="published" when="2017-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b125">
+	<analytic>
+		<title level="a" type="main">On barren plateaus and cost function locality in variational quantum algorithms</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Uvarov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Biamonte</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1751-8121/abfac7</idno>
+		<ptr target="http://dx.doi.org/10.1088/1751-8121/abfac7" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Physics A: Mathematical and Theoretical</title>
+		<idno type="ISSN">1751-8121</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">24</biblScope>
+			<biblScope unit="page">245301</biblScope>
+			<date type="published" when="2021-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b126">
+	<monogr>
+		<title level="m" type="main">Learning to learn with quantum neural networks via classical neural networks</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Verdon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Broughton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Mcclean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Sung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Babbush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Neven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mohseni</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b127">
+	<monogr>
+		<title level="m" type="main">Can error mitigation improve trainability of noisy variational quantum algorithms?</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Czarnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Arrasmith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b128">
+	<analytic>
+		<title level="a" type="main">Noiseinduced barren plateaus in variational quantum algorithms</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fontana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cerezo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cincio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Coles</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41467-021-27045-6</idno>
+		<ptr target="http://dx.doi.org/10.1038/s41467-021-27045-6" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<idno type="ISSN">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2021-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b129">
+	<monogr>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Alexeev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">T</forename><surname>Chong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2307.13460</idno>
+		<title level="m">Fundamental causal bounds of quantum random access memories</title>
+				<imprint>
+			<date type="published" when="2023" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b130">
+	<analytic>
+		<title level="a" type="main">Reinforcementlearning-assisted quantum optimization</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Wauters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Panizon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">B</forename><surname>Mbeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Santoro</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/physrevresearch.2.033446</idno>
+		<ptr target="https://doi.org/10.1103%2Fphysrevresearch.2.033446" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2020-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b131">
+	<analytic>
+		<title level="a" type="main">Progress towards practical quantum variational algorithms</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Hastings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Troyer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review A</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">42303</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b132">
+	<analytic>
+		<title level="a" type="main">Hamiltonian learning and certification using quantum resources</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wiebe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Granade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ferrie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cory</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.112.190501</idno>
+		<ptr target="http://dx.doi.org/10.1103/PhysRevLett.112.190501" />
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Letters</title>
+		<idno type="ISSN">1079-7114</idno>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b133">
+	<analytic>
+		<title level="a" type="main">Quantum bootstrapping via compressed quantum hamiltonian learning</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wiebe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Granade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">G</forename><surname>Cory</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1367-2630/17/2/022005</idno>
+		<ptr target="http://dx.doi.org/10.1088/1367-2630/17/2/022005" />
+	</analytic>
+	<monogr>
+		<title level="j">New Journal of Physics</title>
+		<idno type="ISSN">1367-2630</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">22005</biblScope>
+			<date type="published" when="2015-02" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b134">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wierstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schaul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Glasmachers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
+		<title level="m">Natural evolution strategies</title>
+				<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b135">
+	<monogr>
+		<title level="m" type="main">Error-mitigated fermionic classical shadows on noisy quantum devices</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Koh</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b136">
+	<monogr>
+		<title level="m" type="main">Policy gradient based quantum approximate optimization algorithm</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bukov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b137">
+	<analytic>
+		<title level="a" type="main">From transistor to trapped-ion computers for quantum chemistry</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Yung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Casanova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mezzacapo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcclean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lamata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aspuru-Guzik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Solano</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/srep03589</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2014</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b138">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-C</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhuang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2311.18144</idno>
+		<title level="m">Dynamical phase transition in quantum neural networks with large depth</title>
+				<imprint>
+			<date type="published" when="2023" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b139">
+	<analytic>
+		<title level="a" type="main">Natural evolution strategies and variational monte carlo</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Carleo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Stokes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Veerapaneni</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/2632-2153/abcb50</idno>
+		<ptr target="https://doi.org/10.1088%2F2632-2153%2Fabcb50" />
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning: Science and Technology</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="02L" to="T3" />
+			<date type="published" when="2020-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

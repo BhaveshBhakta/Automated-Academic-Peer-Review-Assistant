@@ -1,0 +1,16 @@
+Title: AutoCompete: A Framework for Machine Learning Competition
+Published: 2015-07-08T15:07:39Z
+Link: http://arxiv.org/abs/1507.02188v1
+
+Abstract:
+In this paper, we propose AutoCompete, a highly automated machine learning
+framework for tackling machine learning competitions. This framework has been
+learned by us, validated and improved over a period of more than two years by
+participating in online machine learning competitions. It aims at minimizing
+human interference required to build a first useful predictive model and to
+assess the practical difficulty of a given machine learning challenge. The
+proposed system helps in identifying data types, choosing a machine learn- ing
+model, tuning hyper-parameters, avoiding over-fitting and optimization for a
+provided evaluation metric. We also observe that the proposed system produces
+better (or comparable) results with less runtime as compared to other
+approaches.

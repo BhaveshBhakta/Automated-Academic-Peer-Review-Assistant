@@ -1,0 +1,2309 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">2020: Anaconda software distribution</title>
+		<ptr target="https://docs.anaconda.com/" />
+	</analytic>
+	<monogr>
+		<title level="j">Anaconda Inc</title>
+		<imprint/>
+	</monogr>
+	<note>Anaconda</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">2020: Visualizing the effects of predictor variables in black box supervised learning models</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">W</forename><surname>Apley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/rssb.12377</idno>
+		<ptr target="https://rss.onlinelibrary.wiley.com/doi/pdf/10.1111/rssb.12377" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Royal Statistical Society: Series B (Statistical Methodology)</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1059" to="1086" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">2020: A statistical model to predict the extratropical transition of tropical cyclones</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bieli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Sobel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Camargo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Tippett</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/WAF-D-19-0045.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/35/2/waf-d-19-0045.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Weather and Forecasting</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="451" to="466" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Use of regression techniques to predict hail size and the probability of large hail</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Billet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Delisi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Gates</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Weather and Forecasting</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="154" to="164" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Resampling methods for meta-model validation with recommendations for evolutionary computation</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bischl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>O. Mersmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Trautmann</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Weihs</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/EVCO_a_00069</idno>
+		<ptr target="https://doi.org/10.1162/EVCO_a_00069,URLhttps://doi.org/10.1162/EVCO_a_00069" />
+	</analytic>
+	<monogr>
+		<title level="j">Evol. Comput</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="249" to="275" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bisong</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4842-4470-8_7</idno>
+		<ptr target="https://doi.org/10.1007/978-1-4842-4470-8_7" />
+		<title level="m">Google Colaboratory</title>
+				<meeting><address><addrLine>Berkeley, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Apress</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="59" to="64" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">2021: Machine learning for earth system observation and prediction</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bonavita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coauthors</forename></persName>
+		</author>
+		<idno type="DOI">10.1175/BAMS-D-20-0307.1,URLhttps://journals.ametsoc.org/view/journals/bams/102/4/BAMS-D-20-0307.1.xml</idno>
+		<ptr target="https://doi.org/10.1175/BAMS-D-20-0307.1,URLhttps://journals.ametsoc.org/view/journals/bams/102/4/BAMS-D-20-0307.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin of the American Meteorological Society</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="E710" to="E716" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Classification and Regression Trees. Routledge</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Breiman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1984" />
+			<pubPlace>New York, New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Random forests</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Breiman</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/A:1010933404324</idno>
+		<ptr target="https://doi.org/10.1023/A:1010933404324" />
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="5" to="32" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">2020: Calibration of Machine Learning-Based Probabilistic Hail Predictions for Operational Forecasting. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Burke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Snook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">I</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mccorkle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-19-0105.1</idno>
+		<ptr target="https://doi.org/10.1175/WAF-D-19-0105.1" />
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="149" to="168" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">2022: Nws forecasters&apos; perceptions and potential uses of trustworthy ai/ml for hazardous weather risks</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Cains</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coauthors</forename></persName>
+		</author>
+		<ptr target="https://ams.confex.com/ams/102ANNUAL/meetingapp.cgi/Paper/393121,americanmeteorologicalsociety" />
+	</analytic>
+	<monogr>
+		<title level="m">annual meeting</title>
+				<imprint>
+			<biblScope unit="page">102</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">2021: A dualfrequency radar retrieval of two parameters of the snowfall particle size distribution using a neural network</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Chase</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">W</forename><surname>Nesbitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Mcfarquhar</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/JAMC-D-20-0177.1,URLhttps://journals.ametsoc.org/view/journals/apme/60/3/JAMC-D-20-0177.1.xml</idno>
+		<ptr target="https://doi.org/10.1175/JAMC-D-20-0177.1,URLhttps://journals.ametsoc.org/view/journals/apme/60/3/JAMC-D-20-0177.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Meteorology and Climatology</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="341" to="359" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The diagnosis of upper-level humidity</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chisholm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ball</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Veigas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Luty</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Meteorology</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="613" to="619" />
+			<date type="published" when="1968" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">An empirical model for assessing the severe weather potential of developing convection</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cintineo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pavolonis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sieglaff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lindsey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Weather and Forecasting</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="639" to="653" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">An empirical model for assessing the severe weather potential of developing convection</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cintineo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coauthors</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+			<publisher>Weather and Forecasting</publisher>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="331" to="345" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">2020: Noaa probsevere v2.0-probhail, probwind, and probtor. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Cintineo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Pavolonis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Sieglaff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cronce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Brunner</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-19-0242.1,URLhttps://journals.ametsoc.org/view/journals/wefo/35/4/wafD190242.xml</idno>
+		<ptr target="https://doi.org/10.1175/WAF-D-19-0242.1,URLhttps://journals.ametsoc.org/view/journals/wefo/35/4/wafD190242.xml" />
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="1523" to="1543" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">2020: Dual-polarization radar retrievals of coastal pacific northwest raindrop size distribution parameters using random forest regression</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Conrick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Zagrodnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">F</forename><surname>Mass</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/JTECH-D-19-0107.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/atot/37/2/jtech-d-19-0107.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Atmospheric and Oceanic Technology</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="229" to="242" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">2021: Climatology of linear mesoscale convective system morphology in the united states based on the random-forests method</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Feng</surname></persName>
+		</author>
+		<ptr target="https://doi.org/10" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Climate</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="7257" to="7276" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">/</forename><surname>Jcli-</surname></persName>
+		</author>
+		<idno>D-20-0862.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/clim/34/17/JCLI-D-20-0862.1.xml" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Application of machine learning to large hail prediction -the importance of radar reflectivity, lightning occurrence and convective parameters derived from era5</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Czernecki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Taszarek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Marosz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Półrolniczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kolendowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wyszogrodzki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Szturc</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.atmosres.2019.05.010</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0169809519300900" />
+	</analytic>
+	<monogr>
+		<title level="j">Atmospheric Research</title>
+		<imprint>
+			<biblScope unit="volume">227</biblScope>
+			<biblScope unit="page" from="249" to="262" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Using mping data to generate random forests for precipitation type forecasts</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Elmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Grams</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note>14th Conference on Artificial and Computational Intelligence and its Applications to the Environmental Sciences, 4.2</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Using machine learning to generate storm-scale probabilistic guidance of severe weather hazards in the warn-onforecast system</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Flora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Potvin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Skinner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Handler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mc-Govern</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/MWR-D-20-0194.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/mwre/149/5/MWR-D-20-0194.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Weather Review</title>
+		<imprint>
+			<biblScope unit="volume">149</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1535" to="1557" />
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Greedy function approximation: a gradient boosting machine</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Friedman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Statistics</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1189" to="1232" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">2019: Machine learning for stochastic parameterization: Generative adversarial networks in the lorenz &apos;96 model</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Christensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Monahan</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1909.04711" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Advances in Modeling Earth Systems, Conditionally Accepted</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Classification of convective areas using decision trees</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Brotzge</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Atmospheric and Oceanic Technology</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1341" to="1353" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Severe hail prediction within a spatiotemporal relational data mining framework</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Brotzge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Data Mining</title>
+				<meeting><address><addrLine>Dallas, TX</addrLine></address></meeting>
+		<imprint>
+			<publisher>Institute of Electrical and Electronics Engineers</publisher>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">2017: Storm-based probabilistic hail forecasting with machine learning applied to convection-allowing ensembles. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Haupt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sobash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Xue</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="1819" to="1840" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">2021: Machine learning classification of significant tornadoes 24 and hail in the united states using era5 proximity soundings. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">A</forename><surname>Gensini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Converse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">S</forename><surname>Ashley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Taszarek</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/WAF-D-21-0056.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/36/6/WAF-D-21-0056.1.xml" />
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="2143" to="2160" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The Use of Model Output Statistics (MOS) in Objective Weather Forecasting</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">R</forename><surname>Glahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Lowry</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Meteor</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="1203" to="1211" />
+			<date type="published" when="1972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<author>
+			<persName><forename type="first">I</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Courville</surname></persName>
+		</author>
+		<ptr target="http://www.deeplearningbook.org" />
+		<title level="m">Deep Learning</title>
+				<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">2016: Naïve bayesian precipitation type retrieval from satellite using a cloud-top and ground-radar matched climatology</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M</forename><surname>Grams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P.-E</forename><surname>Kirstetter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Gourley</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/JHM-D-16-0058.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/hydr/17/10/jhm-d-16-0058_1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Hydrometeorology</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2649" to="2665" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">2020: Array programming with NumPy</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coauthors</forename></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-020-2649-2</idno>
+		<idno>s41586-020-2649-2</idno>
+		<ptr target="https://doi.org/10.1038/s41586-020-2649-2" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">585</biblScope>
+			<biblScope unit="issue">7825</biblScope>
+			<biblScope unit="page" from="357" to="362" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Dendrology in numerical weather prediction: What random forests and logistic regression tell us about forecasting</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Herman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Schumacher</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/MWR-D-17-0307.1</idno>
+		<ptr target="https://doi.org/10.1175/MWR-D-17-0307.1" />
+	</analytic>
+	<monogr>
+		<title level="j">Mon. Wea. Rev</title>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="page" from="1785" to="1812" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Money doesn&apos;t grow on trees, but forecasts do: Forecasting extreme precipitation with random forests</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Herman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Schumacher</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/MWR-D-17-0250.1</idno>
+		<ptr target="https://doi.org/10.1175/MWR-D-17-0250.1" />
+	</analytic>
+	<monogr>
+		<title level="j">Mon. Wea. Rev</title>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="page" from="1571" to="1600" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">2021: Development and interpretation of a neural-network-based synthetic radar reflectivity estimator using goes-r satellite observations</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Hilburn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ebert-Uphoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Miller</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/JAMC-D-20-0084.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/apme/60/1/jamc-d-20-0084.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Meteorology and Climatology</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="21" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">2020: Forecasting severe weather with random forests</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">R</forename><surname>Herman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Schumacher</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/MWR-D-19-0344.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/mwre/148/5/mwr-d-19-0344.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Weather Review</title>
+		<imprint>
+			<biblScope unit="volume">148</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="2135" to="2161" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">2021: Forecasting excessive rainfall with random forests and a deterministic convection-allowing model. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Schumacher</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-21-0026.1,URLhttps://journals.ametsoc.org/view/journals/wefo/36/5/WAF-D-21-0026.1.xml</idno>
+		<ptr target="https://doi.org/10.1175/WAF-D-21-0026.1,URLhttps://journals.ametsoc.org/view/journals/wefo/36/5/WAF-D-21-0026.1.xml" />
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="1693" to="1711" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Ridge regression: Biased estimation for nonorthogonal problems</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">E</forename><surname>Hoerl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Kennard</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/00401706.1970.10488634</idno>
+		<ptr target="https://www.tandfonline.com/doi/pdf/10.1080/00401706.1970.10488634" />
+		<imprint>
+			<date type="published" when="1970" />
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="55" to="67" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Technometrics</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Very simple classification rules perform well on most commonly used datasets</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Holte</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/A:1022631118932</idno>
+		<ptr target="https://doi.org/10.1023/A:1022631118932" />
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<date type="published" when="1993" />
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="63" to="90" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">2020: Short-term tropical cyclone intensity forecasting from satellite imagery based on the deviation angle variance technique. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Ritchie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Tyo</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-19-0102.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/35/1/waf-d-19-0102.1.xml" />
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="285" to="298" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Weather radar ground clutter. part i: Identification, modeling, and simulation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Hubbert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dixon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Meymaris</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/2009JTECHA1159.1,URLhttps://journals.ametsoc.org/view/journals/atot/26/7/2009jtecha1159_1.xml</idno>
+		<ptr target="https://doi.org/10.1175/2009JTECHA1159.1,URLhttps://journals.ametsoc.org/view/journals/atot/26/7/2009jtecha1159_1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Atmospheric and Oceanic Technology</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1165" to="1180" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">2020: Classifying convective storms using machine learning. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Jergensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lagerquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-19-0170.1,URLhttps://journals.ametsoc.org/view/journals/wefo/35/2/waf-d-19-0170.1.xml</idno>
+		<ptr target="https://doi.org/10.1175/WAF-D-19-0170.1,URLhttps://journals.ametsoc.org/view/journals/wefo/35/2/waf-d-19-0170.1.xml" />
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="537" to="559" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Atmospheric Modeling, Data Assimilation and Predictability</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kalnay</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/CBO9780511802270</idno>
+		<ptr target="https://doi.org/10.1017/CBO9780511802270" />
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Classification of merged AVHRR and SMMR Arctic data with neural networks. Photogrammetric Engineering and Remote Sensing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Key</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Maslanik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schweiger</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1989" />
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="1331" to="1338" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Jupyter notebooks -a publishing format for reproducible computational workflows. Positioning and Power in Academic Publishing: Players, Agents and Agendas</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kluyver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coauthors</forename></persName>
+		</author>
+		<editor>F. Loizides, and B. Schmidt</editor>
+		<imprint>
+			<date type="published" when="2016" />
+			<publisher>IOS Press</publisher>
+			<biblScope unit="page" from="87" to="90" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">An objective model for identifying secondary eyewall formation in hurricanes</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Kossin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sitkowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/2008MWR2701.1,URLhttps://journals.ametsoc.org/view/journals/mwre/137/3/2008mwr2701.1.xml</idno>
+		<ptr target="https://doi.org/10.1175/2008MWR2701.1,URLhttps://journals.ametsoc.org/view/journals/mwre/137/3/2008mwr2701.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Weather Review</title>
+		<imprint>
+			<biblScope unit="volume">137</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="876" to="892" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">On the optimality of naïve bayes with dependent binary features</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">I</forename><surname>Kuncheva</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patrec.2005.12.001</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0167865505003582" />
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="830" to="837" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">2020: Geospatial qpe accuracy dependence on weather radar network configurations</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Kurdzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">F</forename><surname>Joback</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P.-E</forename><surname>Kirstetter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y N</forename><surname>Cho</surname></persName>
+		</author>
+		<ptr target="https://doi.org/10" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Meteorology and Climatology</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1773" to="1792" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">/</forename><surname>Jamc-</surname></persName>
+		</author>
+		<idno>D-19-0164.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/apme/59/11/JAMC-D-19-0164.1.xml" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Precipitation estimates from msg seviri daytime, nighttime, and twilight data with random forests</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kühnlein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Appelhans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Thies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nauß</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/JAMC-D-14-0082.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/apme/53/11/jamc-d-14-0082.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Meteorology and Climatology</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="2457" to="2480" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<title level="m" type="main">2011: Numerical Weather Prediction/Data Assimilation</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lackmann</surname></persName>
+		</author>
+		<imprint>
+			<publisher>American Meteorological Society</publisher>
+			<biblScope unit="page" from="274" to="287" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">2020: Deep learning on three-dimensional multiscale data for nexthour tornado prediction</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lagerquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Homeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J G</forename><surname>Ii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/MWR-D-19-0372.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/mwre/148/7/mwrD190372.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Weather Review</title>
+		<imprint>
+			<biblScope unit="volume">148</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2837" to="2861" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Machine learning for real-time prediction of damaging straight-line convective wind. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lagerquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Smith</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="2175" to="2193" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Using deep learning to nowcast the spatial coverage of convection from himawari-8 satellite data</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lagerquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Q</forename><surname>Stewart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ebert-Uphoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kumler</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/MWR-D-21-0096.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/mwre/149/12/MWR-D-21-0096.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Weather Review</title>
+		<imprint>
+			<biblScope unit="volume">149</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="3897" to="3921" />
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Which polarimetric variables are important for weather/no-weather discrimination?</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lakshmanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Karstens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Krause</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Elmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ryzhkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Berkseth</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/JTECH-D-13-00205.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/atot/32/6/jtech-d-13-00205_1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Atmospheric and Oceanic Technology</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1209" to="1223" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">2020: Subseasonal predictions of tropical cyclone occurrence and ace in the s2s dataset</title>
+		<author>
+			<persName><forename type="first">C.-Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Camargo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Vitart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Sobel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Camp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Tippett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-19-0217.1,URLhttps://journals.ametsoc.org/view/journals/wefo/35/3/waf-d-19-0217.1.xml</idno>
+		<ptr target="https://doi.org/10.1175/WAF-D-19-0217.1,URLhttps://journals.ametsoc.org/view/journals/wefo/35/3/waf-d-19-0217.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Weather and Forecasting</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="921" to="938" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">A neural network approach to cloud classification</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Weger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sengupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Welch</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/36.58972</idno>
+		<ptr target="https://doi.org/10.1109/36.58972" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Geoscience and Remote Sensing</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="846" to="855" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">2020: A causal inference model based on random forests to identify the effect of soil moisture on precipitation</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coauthors</forename></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/JHM-D-19-0209.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/hydr/21/5/jhm-d-19-0209.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Hydrometeorology</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1115" to="1131" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">2020: Generating Probabilistic Next-Day Severe Weather Forecasts from Convection-Allowing Ensembles Using Random Forests</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">D</forename><surname>Loken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Karstens</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-19-0258.1/4951271/wafd190258.pdf</idno>
+		<idno>org/10.1175/WAF-D-19-0258.1</idno>
+		<ptr target="https://journals.ametsoc.org/waf/article-pdf/doi/10.1175/WAF-D-19-0258.1/4951271/wafd190258.pdf" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">2022: Comparing and interpreting differently-designed random forests for next-day severe weather hazard prediction</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">D</forename><surname>Loken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-21-0138.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/aop/WAF-D-21-0138.1/WAF-D-21-0138.1.xml" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Application of statistical methods in weather prediction</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Malone</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="806" to="815" />
+			<date type="published" when="1955" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<title level="m" type="main">2020: Improving radar-based precipitation nowcasts with machine learning using an approach based on random forest. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sorteberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-20-0080.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/35/6/waf-d-20-0080.1.xml" />
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="2461" to="2478" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">2019: Goes-17 advanced baseline imager performance recovery summary</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mccorkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Van Naarden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lindsey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Efremova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Coakley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Black</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Krimchansky</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/IGARSS40859.2019.9044466</idno>
+		<ptr target="https://doi.org/10.1109/IGARSS40859.2019.9044466" />
+	</analytic>
+	<monogr>
+		<title level="m">IGARSS 2019 -2019 IEEE International Geoscience and Remote Sensing Symposium</title>
+				<imprint>
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">2021: The need for ethical, responsible, and trustworthy artificial intelligence for environmental sciences</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ebert-Uphoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J G I</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bostrom</surname></persName>
+		</author>
+		<idno>2112.08453</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Solar energy prediction: An international contest to initiate interdisciplinary research on compelling meteorological problems</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Basara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hamill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Margolin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin of the American Meteorological Society</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1388" to="1395" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Enhancing understanding and improving prediction of severe weather through spatiotemporal relational learning</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Basara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="27" to="50" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Making the black box more transparent: Understanding the physical implications of machine learning</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lagerquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Jergensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Elmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Homeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Smith</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+			<publisher>American Meteorological Society</publisher>
+		</imprint>
+	</monogr>
+	<note>early online release</note>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Probabilistic 0-1-h convective initiation nowcasts that combine geostationary satellite observations and numerical weather prediction model data</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mecikalski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jewett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ahĳevych</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Leroy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Walker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Meteorology and Climatology</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1039" to="1059" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">2021: A benchmark to test generalization capabilities of deep learning methods to classify severe convective storms in a changing climate</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Molina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Gagne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Prein</surname></persName>
+		</author>
+		<idno type="DOI">10.1029/2020EA001490</idno>
+		<idno>e2020EA001 490</idno>
+		<ptr target="https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020EA001490" />
+	</analytic>
+	<monogr>
+		<title level="j">Earth and Space Science</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">9</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<title level="m" type="main">2022: Interpretable Machine Learning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Molnar</surname></persName>
+		</author>
+		<ptr target="https://christophm.github.io/interpretable-ml-book" />
+		<imprint/>
+	</monogr>
+	<note>2nd ed</note>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">What is a good forecast? an essay on the nature of goodness in weather forecasting</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Murphy</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/1520-0434(1993)008&lt;0281:WIAGFA&gt;2.0</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/8/2/1520-0434_" />
+	</analytic>
+	<monogr>
+		<title level="j">Weather and Forecasting</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="281" to="293" />
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">2020: Aviation turbulence forecasting at upper levels with machine learning techniques based on regression trees</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Muñoz-Esparza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Sharman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Deierling</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/JAMC-D-20-0116.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/apme/59/11/JAMC-D-20-0116.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Meteorology and Climatology</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1883" to="1899" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<title level="m" type="main">2020: Quantifying the benefits of nonlinear methods for global statistical hindcasts of tropical cyclones intensity. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Neetu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lengaigne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vialard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mangeas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Menkes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Suresh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Leloup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Knaff</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-19-0163.1,URLhttps://journals.ametsoc.org/view/journals/wefo/35/3/waf-d-19-0163.1.xml</idno>
+		<ptr target="https://doi.org/10.1175/WAF-D-19-0163.1,URLhttps://journals.ametsoc.org/view/journals/wefo/35/3/waf-d-19-0163.1.xml" />
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="807" to="820" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Classifying proximity soundings with self-organizing maps toward improving supercell and tornado forecasting</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Nowotarski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Jensen</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-12-00125.1</idno>
+		<ptr target="https://doi.org/10.1175/WAF-D-12-00125.1" />
+	</analytic>
+	<monogr>
+		<title level="j">Wea. Forecasting</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="783" to="801" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Scikit-learn: Machine learning in Python</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Pedregosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coauthors</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="2825" to="2830" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Application of a bayesian classifier of anomalous propagation to singlepolarization radar reflectivity data</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Peter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Steinle</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/JTECH-D-12-00082.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/atot/30/9/jtech-d-12-00082_1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Atmospheric and Oceanic Technology</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<title level="m" type="main">Programs for Machine Learning</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Quinlan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1993" />
+			<publisher>Morgan Kaufmann</publisher>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">C4</biblScope>
+			<pubPlace>San Mateo, California</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">2021: Skilful precipitation nowcasting using deep generative models of radar</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ravuri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Coauthors</forename></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-021-03854-z</idno>
+		<ptr target="https://doi.org/10.1038/s41586-021-03854-z" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">597</biblScope>
+			<biblScope unit="issue">7878</biblScope>
+			<biblScope unit="page" from="672" to="677" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<monogr>
+		<title level="m" type="main">Visualizing multiple measures of forecast quality. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Roebber</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="601" to="608" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Learning representations by back-propagating errors</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Rumelhart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/323533a0</idno>
+		<ptr target="https://doi.org/10.1038/323533a0" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">323</biblScope>
+			<biblScope unit="issue">6088</biblScope>
+			<biblScope unit="page" from="533" to="536" />
+			<date type="published" when="1986" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">2021: From random forests to flood forecasts: A research to operations success story</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Schumacher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Erickson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Trojniak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">R</forename><surname>Herman</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/BAMS-D-20-0186.1,URLhttps://journals.ametsoc.org/view/journals/bams/102/9/BAMS-D-20-0186.1.xml</idno>
+		<ptr target="https://doi.org/10.1175/BAMS-D-20-0186.1,URLhttps://journals.ametsoc.org/view/journals/bams/102/9/BAMS-D-20-0186.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin of the American Meteorological Society</title>
+		<imprint>
+			<biblScope unit="volume">102</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="E1742" to="E1755" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<monogr>
+		<title level="m" type="main">2020: Observed relationship between tornado intensity and pretornadic mesocyclone characteristics. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Sessa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Trapp</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/WAF-D-19-0099.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/35/4/wafD190099.xml" />
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="1243" to="1261" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">2022: Diagnosing supercell environments: A machine learning approach</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Shield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Houston</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-21-0098.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/aop/WAF-D-21-0098.1/WAF-D-21-0098.1.xml" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">2019: Forestbased and semiparametric methods for the postprocessing of rainfall ensemble forecasting</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Taillardat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>A.-L. Fougères</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Naveau</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Mestre</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-18-0149.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/34/3/waf-d-18-0149_1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Weather and Forecasting</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="617" to="634" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Regression shrinkage and selection via the lasso</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tibshirani</surname></persName>
+		</author>
+		<ptr target="http://www.jstor.org/stable/2346178" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Royal Statistical Society. Series B (Methodological)</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="267" to="288" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<monogr>
+		<title level="m" type="main">Pattern recognition using generalized portrait method</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vapnik</surname></persName>
+		</author>
+		<ptr target="https://ci.nii.ac.jp/naid/10020952249/en/" />
+		<imprint>
+			<date type="published" when="1963" />
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="774" to="780" />
+		</imprint>
+	</monogr>
+	<note>Automation and Remote Control</note>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<monogr>
+		<title level="m" type="main">Sevir : A storm event imagery dataset for deep learning applications in radar and satellite meteorology</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Veillette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Samsi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mattioli</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2020/file/fa78a16157fed00d7a80515818432169-Paper.pdf" />
+		<editor>H. Larochelle, M. Ranzato, R. Hadsell, M. F. Balcan, and H. Lin</editor>
+		<imprint>
+			<date type="published" when="2020" />
+			<publisher>Curran Associates, Inc</publisher>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="9" to="22" />
+		</imprint>
+	</monogr>
+	<note>Advances in Neural Information Processing Systems</note>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<monogr>
+		<title level="m" type="main">Probabilistic skill of subseasonal surface temperature forecasts over north america. Weather and Forecasting</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Vigaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Tippett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Robertson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Acharya</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/WAF-D-19-0117.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/34/6/waf-d-19-0117_1.xml" />
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1789" to="1806" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">2020: Nowcasting multicell short-term intense precipitation using graph models and random forests</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xue</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/MWR-D-20-0050.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/mwre/148/11/MWR-D-20-0050.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Weather Review</title>
+		<imprint>
+			<biblScope unit="volume">148</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="4453" to="4466" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Lightning from two national detection networks related to vertically integrated liquid and echo-top information from wsr-88d radar</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Watson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Holle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>López</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/1520-0434(1995)010&lt;0592:LFTNDN&gt;2.0</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/wefo/10/3/1520-0434_" />
+	</analytic>
+	<monogr>
+		<title level="j">Weather and Forecasting</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="592" to="605" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<monogr>
+		<author>
+			<persName><forename type="first">Wes</forename><surname>Mckinney</surname></persName>
+		</author>
+		<idno type="DOI">10.25080/Majora-92bf1922-00a</idno>
+		<ptr target="https://doi.org/10.25080/Majora-92bf1922-00a" />
+		<title level="m">Data Structures for Statistical Computing in Python. Proceedings of the 9th Python in Science Conference</title>
+				<editor>
+			<persName><forename type="first">Jarrod</forename><surname>Stéfan Van Der Walt</surname></persName>
+			<persName><surname>Millman</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="56" to="61" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Using random forests to diagnose aviation turbulence</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="51" to="70" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Combining observations and model data for short-term storm forecasting. Remote Sensing Applications for Aviation Weather Hazard Detection and Decision Support</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ahĳevych</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dettling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Steiner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Society for Optics and Photonics</title>
+				<meeting><address><addrLine>San Diego, CA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Remote detection and diagnosis of thunderstorm turbulence. Remote Sensing Applications for Aviation Weather Hazard Detection and Decision Support</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sharman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Craig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Blackburn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Society for Optics and Photonics</title>
+				<meeting><address><addrLine>San Diego, CA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">2021: Estimating pm2.5 concentrations in contiguous eastern coastal zone of china using modis aod and a two-stage random forest model</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yu</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/JTECH-D-20-0214.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/atot/aop/JTECH-D-20-0214.1/JTECH-D-20-0214.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Atmospheric and Oceanic Technology</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">A fifth-power relationship for lightning activity from tropical rainfall measuring mission satellite observations</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yoshida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Morimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ushio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Kawasaki</surname></persName>
+		</author>
+		<idno type="DOI">10.1029/2008JD010370</idno>
+		<ptr target="https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2008JD010370" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Geophysical Research: Atmospheres</title>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="issue">D9</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">2021: Machine learning approaches for improving near-real-time imerg rainfall estimates by integrating cloud properties from noaa cdr patmos-x</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<idno>https://doi.org/10. 1175/JHM-D-21-0019.1</idno>
+		<ptr target="https://journals.ametsoc.org/view/journals/hydr/22/10/JHM-D-21-0019.1.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Hydrometeorology</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2767" to="2781" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Regularization and variable selection via the elastic net</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hastie</surname></persName>
+		</author>
+		<ptr target="http://www.jstor.org/stable/3647580" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Royal Statistical Society. Series B (Statistical Methodology)</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="301" to="320" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,8 @@
+Title: Introduction to Machine Learning: Class Notes 67577
+Published: 2009-04-23T11:40:57Z
+Link: http://arxiv.org/abs/0904.3664v1
+
+Abstract:
+Introduction to Machine learning covering Statistical Inference (Bayes, EM,
+ML/MaxEnt duality), algebraic and spectral methods (PCA, LDA, CCA, Clustering),
+and PAC learning (the Formal model, VC dimension, Double Sampling theorem).

@@ -1,0 +1,272 @@
+[
+    {
+        "title": "Lecture Notes: Optimization for Machine Learning",
+        "abstract": "Lecture notes on optimization for machine learning, derived from a course at\nPrinceton University and tutorials given in MLSS, Buenos Aires, as well as\nSimons Foundation, Berkeley.",
+        "link": "http://arxiv.org/abs/1909.03550v1",
+        "published": "2019-09-08T21:49:42Z",
+        "pdf_url": "http://arxiv.org/pdf/1909.03550v1.pdf",
+        "txt_path": "data/txt/paper_1.txt",
+        "pdf_path": "data/pdfs/paper_1.pdf"
+    },
+    {
+        "title": "An Optimal Control View of Adversarial Machine Learning",
+        "abstract": "I describe an optimal control view of adversarial machine learning, where the\ndynamical system is the machine learner, the input are adversarial actions, and\nthe control costs are defined by the adversary's goals to do harm and be hard\nto detect. This view encompasses many types of adversarial machine learning,\nincluding test-item attacks, training-data poisoning, and adversarial reward\nshaping. The view encourages adversarial machine learning researcher to utilize\nadvances in control theory and reinforcement learning.",
+        "link": "http://arxiv.org/abs/1811.04422v1",
+        "published": "2018-11-11T14:28:34Z",
+        "pdf_url": "http://arxiv.org/pdf/1811.04422v1.pdf",
+        "txt_path": "data/txt/paper_2.txt",
+        "pdf_path": "data/pdfs/paper_2.pdf"
+    },
+    {
+        "title": "Minimax deviation strategies for machine learning and recognition with\n  short learning samples",
+        "abstract": "The article is devoted to the problem of small learning samples in machine\nlearning. The flaws of maximum likelihood learning and minimax learning are\nlooked into and the concept of minimax deviation learning is introduced that is\nfree of those flaws.",
+        "link": "http://arxiv.org/abs/1707.04849v1",
+        "published": "2017-07-16T09:15:08Z",
+        "pdf_url": "http://arxiv.org/pdf/1707.04849v1.pdf",
+        "txt_path": "data/txt/paper_3.txt",
+        "pdf_path": "data/pdfs/paper_3.pdf"
+    },
+    {
+        "title": "Machine Learning for Clinical Predictive Analytics",
+        "abstract": "In this chapter, we provide a brief overview of applying machine learning\ntechniques for clinical prediction tasks. We begin with a quick introduction to\nthe concepts of machine learning and outline some of the most common machine\nlearning algorithms. Next, we demonstrate how to apply the algorithms with\nappropriate toolkits to conduct machine learning experiments for clinical\nprediction tasks. The objectives of this chapter are to (1) understand the\nbasics of machine learning techniques and the reasons behind why they are\nuseful for solving clinical prediction problems, (2) understand the intuition\nbehind some machine learning models, including regression, decision trees, and\nsupport vector machines, and (3) understand how to apply these models to\nclinical prediction problems using publicly available datasets via case\nstudies.",
+        "link": "http://arxiv.org/abs/1909.09246v1",
+        "published": "2019-09-19T22:02:00Z",
+        "pdf_url": "http://arxiv.org/pdf/1909.09246v1.pdf",
+        "txt_path": "data/txt/paper_4.txt",
+        "pdf_path": "data/pdfs/paper_4.pdf"
+    },
+    {
+        "title": "Towards Modular Machine Learning Solution Development: Benefits and\n  Trade-offs",
+        "abstract": "Machine learning technologies have demonstrated immense capabilities in\nvarious domains. They play a key role in the success of modern businesses.\nHowever, adoption of machine learning technologies has a lot of untouched\npotential. Cost of developing custom machine learning solutions that solve\nunique business problems is a major inhibitor to far-reaching adoption of\nmachine learning technologies. We recognize that the monolithic nature\nprevalent in today's machine learning applications stands in the way of\nefficient and cost effective customized machine learning solution development.\nIn this work we explore the benefits of modular machine learning solutions and\ndiscuss how modular machine learning solutions can overcome some of the major\nsolution engineering limitations of monolithic machine learning solutions. We\nanalyze the trade-offs between modular and monolithic machine learning\nsolutions through three deep learning problems; one text based and the two\nimage based. Our experimental results show that modular machine learning\nsolutions have a promising potential to reap the solution engineering\nadvantages of modularity while gaining performance and data advantages in a way\nthe monolithic machine learning solutions do not permit.",
+        "link": "http://arxiv.org/abs/2301.09753v1",
+        "published": "2023-01-23T22:54:34Z",
+        "pdf_url": "http://arxiv.org/pdf/2301.09753v1.pdf",
+        "txt_path": "data/txt/paper_5.txt",
+        "pdf_path": "data/pdfs/paper_5.pdf"
+    },
+    {
+        "title": "Introduction to Machine Learning: Class Notes 67577",
+        "abstract": "Introduction to Machine learning covering Statistical Inference (Bayes, EM,\nML/MaxEnt duality), algebraic and spectral methods (PCA, LDA, CCA, Clustering),\nand PAC learning (the Formal model, VC dimension, Double Sampling theorem).",
+        "link": "http://arxiv.org/abs/0904.3664v1",
+        "published": "2009-04-23T11:40:57Z",
+        "pdf_url": "http://arxiv.org/pdf/0904.3664v1.pdf",
+        "txt_path": "data/txt/paper_6.txt",
+        "pdf_path": "data/pdfs/paper_6.pdf"
+    },
+    {
+        "title": "The Tribes of Machine Learning and the Realm of Computer Architecture",
+        "abstract": "Machine learning techniques have influenced the field of computer\narchitecture like many other fields. This paper studies how the fundamental\nmachine learning techniques can be applied towards computer architecture\nproblems. We also provide a detailed survey of computer architecture research\nthat employs different machine learning methods. Finally, we present some\nfuture opportunities and the outstanding challenges that need to be overcome to\nexploit full potential of machine learning for computer architecture.",
+        "link": "http://arxiv.org/abs/2012.04105v1",
+        "published": "2020-12-07T23:10:51Z",
+        "pdf_url": "http://arxiv.org/pdf/2012.04105v1.pdf",
+        "txt_path": "data/txt/paper_7.txt",
+        "pdf_path": "data/pdfs/paper_7.pdf"
+    },
+    {
+        "title": "A Machine Learning Tutorial for Operational Meteorology, Part I:\n  Traditional Machine Learning",
+        "abstract": "Recently, the use of machine learning in meteorology has increased greatly.\nWhile many machine learning methods are not new, university classes on machine\nlearning are largely unavailable to meteorology students and are not required\nto become a meteorologist. The lack of formal instruction has contributed to\nperception that machine learning methods are 'black boxes' and thus end-users\nare hesitant to apply the machine learning methods in their every day workflow.\nTo reduce the opaqueness of machine learning methods and lower hesitancy\ntowards machine learning in meteorology, this paper provides a survey of some\nof the most common machine learning methods. A familiar meteorological example\nis used to contextualize the machine learning methods while also discussing\nmachine learning topics using plain language. The following machine learning\nmethods are demonstrated: linear regression; logistic regression; decision\ntrees; random forest; gradient boosted decision trees; naive Bayes; and support\nvector machines. Beyond discussing the different methods, the paper also\ncontains discussions on the general machine learning process as well as best\npractices to enable readers to apply machine learning to their own datasets.\nFurthermore, all code (in the form of Jupyter notebooks and Google Colaboratory\nnotebooks) used to make the examples in the paper is provided in an effort to\ncatalyse the use of machine learning in meteorology.",
+        "link": "http://arxiv.org/abs/2204.07492v2",
+        "published": "2022-04-15T14:48:04Z",
+        "pdf_url": "http://arxiv.org/pdf/2204.07492v2.pdf",
+        "txt_path": "data/txt/paper_8.txt",
+        "pdf_path": "data/pdfs/paper_8.pdf"
+    },
+    {
+        "title": "Understanding Bias in Machine Learning",
+        "abstract": "Bias is known to be an impediment to fair decisions in many domains such as\nhuman resources, the public sector, health care etc. Recently, hope has been\nexpressed that the use of machine learning methods for taking such decisions\nwould diminish or even resolve the problem. At the same time, machine learning\nexperts warn that machine learning models can be biased as well. In this\narticle, our goal is to explain the issue of bias in machine learning from a\ntechnical perspective and to illustrate the impact that biased data can have on\na machine learning model. To reach such a goal, we develop interactive plots to\nvisualizing the bias learned from synthetic data.",
+        "link": "http://arxiv.org/abs/1909.01866v1",
+        "published": "2019-09-02T20:36:19Z",
+        "pdf_url": "http://arxiv.org/pdf/1909.01866v1.pdf",
+        "txt_path": "data/txt/paper_9.txt",
+        "pdf_path": "data/pdfs/paper_9.pdf"
+    },
+    {
+        "title": "Position Paper: Towards Transparent Machine Learning",
+        "abstract": "Transparent machine learning is introduced as an alternative form of machine\nlearning, where both the model and the learning system are represented in\nsource code form. The goal of this project is to enable direct human\nunderstanding of machine learning models, giving us the ability to learn,\nverify, and refine them as programs. If solved, this technology could represent\na best-case scenario for the safety and security of AI systems going forward.",
+        "link": "http://arxiv.org/abs/1911.06612v1",
+        "published": "2019-11-12T10:49:55Z",
+        "pdf_url": "http://arxiv.org/pdf/1911.06612v1.pdf",
+        "txt_path": "data/txt/paper_10.txt",
+        "pdf_path": "data/pdfs/paper_10.pdf"
+    },
+    {
+        "title": "A Unified Analytical Framework for Trustable Machine Learning and\n  Automation Running with Blockchain",
+        "abstract": "Traditional machine learning algorithms use data from databases that are\nmutable, and therefore the data cannot be fully trusted. Also, the machine\nlearning process is difficult to automate. This paper proposes building a\ntrustable machine learning system by using blockchain technology, which can\nstore data in a permanent and immutable way. In addition, smart contracts are\nused to automate the machine learning process. This paper makes three\ncontributions. First, it establishes a link between machine learning technology\nand blockchain technology. Previously, machine learning and blockchain have\nbeen considered two independent technologies without an obvious link. Second,\nit proposes a unified analytical framework for trustable machine learning by\nusing blockchain technology. This unified framework solves both the\ntrustability and automation issues in machine learning. Third, it enables a\ncomputer to translate core machine learning implementation from a single thread\non a single machine to multiple threads on multiple machines running with\nblockchain by using a unified approach. The paper uses association rule mining\nas an example to demonstrate how trustable machine learning can be implemented\nwith blockchain, and it shows how this approach can be used to analyze opioid\nprescriptions to help combat the opioid crisis.",
+        "link": "http://arxiv.org/abs/1903.08801v1",
+        "published": "2019-03-21T02:17:08Z",
+        "pdf_url": "http://arxiv.org/pdf/1903.08801v1.pdf",
+        "txt_path": "data/txt/paper_11.txt",
+        "pdf_path": "data/pdfs/paper_11.pdf"
+    },
+    {
+        "title": "MLBench: How Good Are Machine Learning Clouds for Binary Classification\n  Tasks on Structured Data?",
+        "abstract": "We conduct an empirical study of machine learning functionalities provided by\nmajor cloud service providers, which we call machine learning clouds. Machine\nlearning clouds hold the promise of hiding all the sophistication of running\nlarge-scale machine learning: Instead of specifying how to run a machine\nlearning task, users only specify what machine learning task to run and the\ncloud figures out the rest. Raising the level of abstraction, however, rarely\ncomes free - a performance penalty is possible. How good, then, are current\nmachine learning clouds on real-world machine learning workloads?\n  We study this question with a focus on binary classication problems. We\npresent mlbench, a novel benchmark constructed by harvesting datasets from\nKaggle competitions. We then compare the performance of the top winning code\navailable from Kaggle with that of running machine learning clouds from both\nAzure and Amazon on mlbench. Our comparative study reveals the strength and\nweakness of existing machine learning clouds and points out potential future\ndirections for improvement.",
+        "link": "http://arxiv.org/abs/1707.09562v3",
+        "published": "2017-07-29T21:59:18Z",
+        "pdf_url": "http://arxiv.org/pdf/1707.09562v3.pdf",
+        "txt_path": "data/txt/paper_12.txt",
+        "pdf_path": "data/pdfs/paper_12.pdf"
+    },
+    {
+        "title": "Data Pricing in Machine Learning Pipelines",
+        "abstract": "Machine learning is disruptive. At the same time, machine learning can only\nsucceed by collaboration among many parties in multiple steps naturally as\npipelines in an eco-system, such as collecting data for possible machine\nlearning applications, collaboratively training models by multiple parties and\ndelivering machine learning services to end users. Data is critical and\npenetrating in the whole machine learning pipelines. As machine learning\npipelines involve many parties and, in order to be successful, have to form a\nconstructive and dynamic eco-system, marketplaces and data pricing are\nfundamental in connecting and facilitating those many parties. In this article,\nwe survey the principles and the latest research development of data pricing in\nmachine learning pipelines. We start with a brief review of data marketplaces\nand pricing desiderata. Then, we focus on pricing in three important steps in\nmachine learning pipelines. To understand pricing in the step of training data\ncollection, we review pricing raw data sets and data labels. We also\ninvestigate pricing in the step of collaborative training of machine learning\nmodels, and overview pricing machine learning models for end users in the step\nof machine learning deployment. We also discuss a series of possible future\ndirections.",
+        "link": "http://arxiv.org/abs/2108.07915v1",
+        "published": "2021-08-18T00:57:06Z",
+        "pdf_url": "http://arxiv.org/pdf/2108.07915v1.pdf",
+        "txt_path": "data/txt/paper_13.txt",
+        "pdf_path": "data/pdfs/paper_13.pdf"
+    },
+    {
+        "title": "Techniques for Automated Machine Learning",
+        "abstract": "Automated machine learning (AutoML) aims to find optimal machine learning\nsolutions automatically given a machine learning problem. It could release the\nburden of data scientists from the multifarious manual tuning process and\nenable the access of domain experts to the off-the-shelf machine learning\nsolutions without extensive experience. In this paper, we review the current\ndevelopments of AutoML in terms of three categories, automated feature\nengineering (AutoFE), automated model and hyperparameter learning (AutoMHL),\nand automated deep learning (AutoDL). State-of-the-art techniques adopted in\nthe three categories are presented, including Bayesian optimization,\nreinforcement learning, evolutionary algorithm, and gradient-based approaches.\nWe summarize popular AutoML frameworks and conclude with current open\nchallenges of AutoML.",
+        "link": "http://arxiv.org/abs/1907.08908v1",
+        "published": "2019-07-21T04:03:36Z",
+        "pdf_url": "http://arxiv.org/pdf/1907.08908v1.pdf",
+        "txt_path": "data/txt/paper_14.txt",
+        "pdf_path": "data/pdfs/paper_14.pdf"
+    },
+    {
+        "title": "The Landscape of Modern Machine Learning: A Review of Machine,\n  Distributed and Federated Learning",
+        "abstract": "With the advance of the powerful heterogeneous, parallel and distributed\ncomputing systems and ever increasing immense amount of data, machine learning\nhas become an indispensable part of cutting-edge technology, scientific\nresearch and consumer products. In this study, we present a review of modern\nmachine and deep learning. We provide a high-level overview for the latest\nadvanced machine learning algorithms, applications, and frameworks. Our\ndiscussion encompasses parallel distributed learning, deep learning as well as\nfederated learning. As a result, our work serves as an introductory text to the\nvast field of modern machine learning.",
+        "link": "http://arxiv.org/abs/2312.03120v1",
+        "published": "2023-12-05T20:40:05Z",
+        "pdf_url": "http://arxiv.org/pdf/2312.03120v1.pdf",
+        "txt_path": "data/txt/paper_15.txt",
+        "pdf_path": "data/pdfs/paper_15.pdf"
+    },
+    {
+        "title": "Parallelization of Machine Learning Algorithms Respectively on Single\n  Machine and Spark",
+        "abstract": "With the rapid development of big data technologies, how to dig out useful\ninformation from massive data becomes an essential problem. However, using\nmachine learning algorithms to analyze large data may be time-consuming and\ninefficient on the traditional single machine. To solve these problems, this\npaper has made some research on the parallelization of several classic machine\nlearning algorithms respectively on the single machine and the big data\nplatform Spark. We compare the runtime and efficiency of traditional machine\nlearning algorithms with parallelized machine learning algorithms respectively\non the single machine and Spark platform. The research results have shown\nsignificant improvement in runtime and efficiency of parallelized machine\nlearning algorithms.",
+        "link": "http://arxiv.org/abs/2206.07090v2",
+        "published": "2022-05-08T03:47:30Z",
+        "pdf_url": "http://arxiv.org/pdf/2206.07090v2.pdf",
+        "txt_path": "data/txt/paper_16.txt",
+        "pdf_path": null
+    },
+    {
+        "title": "AutoCompete: A Framework for Machine Learning Competition",
+        "abstract": "In this paper, we propose AutoCompete, a highly automated machine learning\nframework for tackling machine learning competitions. This framework has been\nlearned by us, validated and improved over a period of more than two years by\nparticipating in online machine learning competitions. It aims at minimizing\nhuman interference required to build a first useful predictive model and to\nassess the practical difficulty of a given machine learning challenge. The\nproposed system helps in identifying data types, choosing a machine learn- ing\nmodel, tuning hyper-parameters, avoiding over-fitting and optimization for a\nprovided evaluation metric. We also observe that the proposed system produces\nbetter (or comparable) results with less runtime as compared to other\napproaches.",
+        "link": "http://arxiv.org/abs/1507.02188v1",
+        "published": "2015-07-08T15:07:39Z",
+        "pdf_url": "http://arxiv.org/pdf/1507.02188v1.pdf",
+        "txt_path": "data/txt/paper_17.txt",
+        "pdf_path": "data/pdfs/paper_17.pdf"
+    },
+    {
+        "title": "Joint Training of Deep Boltzmann Machines",
+        "abstract": "We introduce a new method for training deep Boltzmann machines jointly. Prior\nmethods require an initial learning pass that trains the deep Boltzmann machine\ngreedily, one layer at a time, or do not perform well on classifi- cation\ntasks.",
+        "link": "http://arxiv.org/abs/1212.2686v1",
+        "published": "2012-12-12T01:59:27Z",
+        "pdf_url": "http://arxiv.org/pdf/1212.2686v1.pdf",
+        "txt_path": "data/txt/paper_18.txt",
+        "pdf_path": "data/pdfs/paper_18.pdf"
+    },
+    {
+        "title": "Proceedings of the 2016 ICML Workshop on #Data4Good: Machine Learning in\n  Social Good Applications",
+        "abstract": "This is the Proceedings of the ICML Workshop on #Data4Good: Machine Learning\nin Social Good Applications, which was held on June 24, 2016 in New York.",
+        "link": "http://arxiv.org/abs/1607.02450v2",
+        "published": "2016-07-08T16:55:31Z",
+        "pdf_url": "http://arxiv.org/pdf/1607.02450v2.pdf",
+        "txt_path": "data/txt/paper_19.txt",
+        "pdf_path": null
+    },
+    {
+        "title": "Mathematical Perspective of Machine Learning",
+        "abstract": "We take a closer look at some theoretical challenges of Machine Learning as a\nfunction approximation, gradient descent as the default optimization algorithm,\nlimitations of fixed length and width networks and a different approach to RNNs\nfrom a mathematical perspective.",
+        "link": "http://arxiv.org/abs/2007.01503v1",
+        "published": "2020-07-03T05:26:02Z",
+        "pdf_url": "http://arxiv.org/pdf/2007.01503v1.pdf",
+        "txt_path": "data/txt/paper_20.txt",
+        "pdf_path": "data/pdfs/paper_20.pdf"
+    },
+    {
+        "title": "Private Machine Learning via Randomised Response",
+        "abstract": "We introduce a general learning framework for private machine learning based\non randomised response. Our assumption is that all actors are potentially\nadversarial and as such we trust only to release a single noisy version of an\nindividual's datapoint. We discuss a general approach that forms a consistent\nway to estimate the true underlying machine learning model and demonstrate this\nin the case of logistic regression.",
+        "link": "http://arxiv.org/abs/2001.04942v2",
+        "published": "2020-01-14T17:56:16Z",
+        "pdf_url": "http://arxiv.org/pdf/2001.04942v2.pdf",
+        "txt_path": "data/txt/paper_21.txt",
+        "pdf_path": "data/pdfs/paper_21.pdf"
+    },
+    {
+        "title": "Ten-year Survival Prediction for Breast Cancer Patients",
+        "abstract": "This report assesses different machine learning approaches to 10-year\nsurvival prediction of breast cancer patients.",
+        "link": "http://arxiv.org/abs/1911.00776v1",
+        "published": "2019-11-02T19:53:32Z",
+        "pdf_url": "http://arxiv.org/pdf/1911.00776v1.pdf",
+        "txt_path": "data/txt/paper_22.txt",
+        "pdf_path": "data/pdfs/paper_22.pdf"
+    },
+    {
+        "title": "A Survey of Optimization Methods from a Machine Learning Perspective",
+        "abstract": "Machine learning develops rapidly, which has made many theoretical\nbreakthroughs and is widely applied in various fields. Optimization, as an\nimportant part of machine learning, has attracted much attention of\nresearchers. With the exponential growth of data amount and the increase of\nmodel complexity, optimization methods in machine learning face more and more\nchallenges. A lot of work on solving optimization problems or improving\noptimization methods in machine learning has been proposed successively. The\nsystematic retrospect and summary of the optimization methods from the\nperspective of machine learning are of great significance, which can offer\nguidance for both developments of optimization and machine learning research.\nIn this paper, we first describe the optimization problems in machine learning.\nThen, we introduce the principles and progresses of commonly used optimization\nmethods. Next, we summarize the applications and developments of optimization\nmethods in some popular machine learning fields. Finally, we explore and give\nsome challenges and open problems for the optimization in machine learning.",
+        "link": "http://arxiv.org/abs/1906.06821v2",
+        "published": "2019-06-17T02:54:51Z",
+        "pdf_url": "http://arxiv.org/pdf/1906.06821v2.pdf",
+        "txt_path": "data/txt/paper_23.txt",
+        "pdf_path": "data/pdfs/paper_23.pdf"
+    },
+    {
+        "title": "Tuning Learning Rates with the Cumulative-Learning Constant",
+        "abstract": "This paper introduces a novel method for optimizing learning rates in machine\nlearning. A previously unrecognized proportionality between learning rates and\ndataset sizes is discovered, providing valuable insights into how dataset scale\ninfluences training dynamics. Additionally, a cumulative learning constant is\nidentified, offering a framework for designing and optimizing advanced learning\nrate schedules. These findings have the potential to enhance training\nefficiency and performance across a wide range of machine learning\napplications.",
+        "link": "http://arxiv.org/abs/2505.13457v1",
+        "published": "2025-04-30T00:07:48Z",
+        "pdf_url": "http://arxiv.org/pdf/2505.13457v1.pdf",
+        "txt_path": "data/txt/paper_24.txt",
+        "pdf_path": "data/pdfs/paper_24.pdf"
+    },
+    {
+        "title": "When Machine Learning Meets Privacy: A Survey and Outlook",
+        "abstract": "The newly emerged machine learning (e.g. deep learning) methods have become a\nstrong driving force to revolutionize a wide range of industries, such as smart\nhealthcare, financial technology, and surveillance systems. Meanwhile, privacy\nhas emerged as a big concern in this machine learning-based artificial\nintelligence era. It is important to note that the problem of privacy\npreservation in the context of machine learning is quite different from that in\ntraditional data privacy protection, as machine learning can act as both friend\nand foe. Currently, the work on the preservation of privacy and machine\nlearning (ML) is still in an infancy stage, as most existing solutions only\nfocus on privacy problems during the machine learning process. Therefore, a\ncomprehensive study on the privacy preservation problems and machine learning\nis required. This paper surveys the state of the art in privacy issues and\nsolutions for machine learning. The survey covers three categories of\ninteractions between privacy and machine learning: (i) private machine\nlearning, (ii) machine learning aided privacy protection, and (iii) machine\nlearning-based privacy attack and corresponding protection schemes. The current\nresearch progress in each category is reviewed and the key challenges are\nidentified. Finally, based on our in-depth analysis of the area of privacy and\nmachine learning, we point out future research directions in this field.",
+        "link": "http://arxiv.org/abs/2011.11819v1",
+        "published": "2020-11-24T00:52:49Z",
+        "pdf_url": "http://arxiv.org/pdf/2011.11819v1.pdf",
+        "txt_path": "data/txt/paper_25.txt",
+        "pdf_path": "data/pdfs/paper_25.pdf"
+    },
+    {
+        "title": "Probabilistic Machine Learning for Healthcare",
+        "abstract": "Machine learning can be used to make sense of healthcare data. Probabilistic\nmachine learning models help provide a complete picture of observed data in\nhealthcare. In this review, we examine how probabilistic machine learning can\nadvance healthcare. We consider challenges in the predictive model building\npipeline where probabilistic models can be beneficial including calibration and\nmissing data. Beyond predictive models, we also investigate the utility of\nprobabilistic machine learning models in phenotyping, in generative models for\nclinical use cases, and in reinforcement learning.",
+        "link": "http://arxiv.org/abs/2009.11087v1",
+        "published": "2020-09-23T12:14:05Z",
+        "pdf_url": "http://arxiv.org/pdf/2009.11087v1.pdf",
+        "txt_path": "data/txt/paper_26.txt",
+        "pdf_path": "data/pdfs/paper_26.pdf"
+    },
+    {
+        "title": "Evaluation Challenges for Geospatial ML",
+        "abstract": "As geospatial machine learning models and maps derived from their predictions\nare increasingly used for downstream analyses in science and policy, it is\nimperative to evaluate their accuracy and applicability. Geospatial machine\nlearning has key distinctions from other learning paradigms, and as such, the\ncorrect way to measure performance of spatial machine learning outputs has been\na topic of debate. In this paper, I delineate unique challenges of model\nevaluation for geospatial machine learning with global or remotely sensed\ndatasets, culminating in concrete takeaways to improve evaluations of\ngeospatial model performance.",
+        "link": "http://arxiv.org/abs/2303.18087v1",
+        "published": "2023-03-31T14:24:06Z",
+        "pdf_url": "http://arxiv.org/pdf/2303.18087v1.pdf",
+        "txt_path": "data/txt/paper_27.txt",
+        "pdf_path": "data/pdfs/paper_27.pdf"
+    },
+    {
+        "title": "A comprehensive review of Quantum Machine Learning: from NISQ to Fault\n  Tolerance",
+        "abstract": "Quantum machine learning, which involves running machine learning algorithms\non quantum devices, has garnered significant attention in both academic and\nbusiness circles. In this paper, we offer a comprehensive and unbiased review\nof the various concepts that have emerged in the field of quantum machine\nlearning. This includes techniques used in Noisy Intermediate-Scale Quantum\n(NISQ) technologies and approaches for algorithms compatible with\nfault-tolerant quantum computing hardware. Our review covers fundamental\nconcepts, algorithms, and the statistical learning theory pertinent to quantum\nmachine learning.",
+        "link": "http://arxiv.org/abs/2401.11351v2",
+        "published": "2024-01-21T00:19:16Z",
+        "pdf_url": "http://arxiv.org/pdf/2401.11351v2.pdf",
+        "txt_path": "data/txt/paper_28.txt",
+        "pdf_path": "data/pdfs/paper_28.pdf"
+    },
+    {
+        "title": "Augmented Q Imitation Learning (AQIL)",
+        "abstract": "The study of unsupervised learning can be generally divided into two\ncategories: imitation learning and reinforcement learning. In imitation\nlearning the machine learns by mimicking the behavior of an expert system\nwhereas in reinforcement learning the machine learns via direct environment\nfeedback. Traditional deep reinforcement learning takes a significant time\nbefore the machine starts to converge to an optimal policy. This paper proposes\nAugmented Q-Imitation-Learning, a method by which deep reinforcement learning\nconvergence can be accelerated by applying Q-imitation-learning as the initial\ntraining process in traditional Deep Q-learning.",
+        "link": "http://arxiv.org/abs/2004.00993v2",
+        "published": "2020-03-31T18:08:23Z",
+        "pdf_url": "http://arxiv.org/pdf/2004.00993v2.pdf",
+        "txt_path": "data/txt/paper_29.txt",
+        "pdf_path": "data/pdfs/paper_29.pdf"
+    },
+    {
+        "title": "Towards CRISP-ML(Q): A Machine Learning Process Model with Quality\n  Assurance Methodology",
+        "abstract": "Machine learning is an established and frequently used technique in industry\nand academia but a standard process model to improve success and efficiency of\nmachine learning applications is still missing. Project organizations and\nmachine learning practitioners have a need for guidance throughout the life\ncycle of a machine learning application to meet business expectations. We\ntherefore propose a process model for the development of machine learning\napplications, that covers six phases from defining the scope to maintaining the\ndeployed machine learning application. The first phase combines business and\ndata understanding as data availability oftentimes affects the feasibility of\nthe project. The sixth phase covers state-of-the-art approaches for monitoring\nand maintenance of a machine learning applications, as the risk of model\ndegradation in a changing environment is eminent. With each task of the\nprocess, we propose quality assurance methodology that is suitable to adress\nchallenges in machine learning development that we identify in form of risks.\nThe methodology is drawn from practical experience and scientific literature\nand has proven to be general and stable. The process model expands on CRISP-DM,\na data mining process model that enjoys strong industry support but lacks to\naddress machine learning specific tasks. Our work proposes an industry and\napplication neutral process model tailored for machine learning applications\nwith focus on technical tasks for quality assurance.",
+        "link": "http://arxiv.org/abs/2003.05155v2",
+        "published": "2020-03-11T08:25:49Z",
+        "pdf_url": "http://arxiv.org/pdf/2003.05155v2.pdf",
+        "txt_path": "data/txt/paper_30.txt",
+        "pdf_path": "data/pdfs/paper_30.pdf"
+    }
+]

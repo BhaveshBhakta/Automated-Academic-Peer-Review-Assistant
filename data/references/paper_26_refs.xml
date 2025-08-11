@@ -1,0 +1,3791 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Can mobile health technologies transform health care?</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Steinhubl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">D</forename><surname>Muse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Topol</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Jama</title>
+		<imprint>
+			<biblScope unit="volume">310</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page" from="2395" to="2396" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Prediction of cardiovascular risk factors from retinal fundus photographs via deep learning</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Poplin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Varadarajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Blumer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">V</forename><surname>Mcconnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Webster</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Biomedical Engineering</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">158</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">An interpretable machine learning model for accurate prediction of sepsis in the icu</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nemati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Holder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Razmi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Stanley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">D</forename><surname>Clifford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">G</forename><surname>Buchman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Critical care medicine</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">547</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Automated methods for the summarization of electronic health records</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Pivovarov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Elhadad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="938" to="947" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Generating focused molecule libraries for drug discovery with recurrent neural networks</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Segler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kogej</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tyrchan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Waller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACS central science</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="120" to="131" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Deep reinforcement learning for closed-loop blood glucose control</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Busui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wiens</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">A markov decision process to suggest optimal treatment of severe infections in intensive care</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Komorowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Celi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Faisal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Neural Information Processing Systems Workshop on Machine Learning for Health</title>
+				<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Tensorflow distributions</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">V</forename><surname>Dillon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Langmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brevdo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Vasudevan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Patton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hoffman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Saurous</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1711.10604</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Pyro: Deep universal probabilistic programming</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bingham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jankowiak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Obermeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Pradhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Karaletsos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Szerlip</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Horsfall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Goodman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="973" to="978" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Deep survival analysis: Nonparametrics and missingness</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Miscouridou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Elhadad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ranganath</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning for Healthcare Conference</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="244" to="256" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Recurrent neural networks for multivariate time series with missing values</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Che</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Purushotham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sontag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific reports</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Deep survival analysis</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ranganath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Elhadad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Blei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning for Healthcare Conference</title>
+				<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="101" to="114" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Multiple imputation using chained equations: issues and guidance for practice</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">R</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Royston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Wood</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Statistics in medicine</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="377" to="399" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Little</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Rubin</surname></persName>
+		</author>
+		<title level="m">Statistical analysis with missing data</title>
+				<imprint>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">793</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Missing value imputation for mixed data through gaussian copula</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Udell</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1910.12845</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Graphical models for processing missing data</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mohan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pearl</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1801.03583</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Sequentially additive nonignorable missing data modelling using auxiliary marginal information</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sadinle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Reiter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrika</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="889" to="911" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Semiparametric estimation with data missing not at random using an instrumental variable</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wirth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Robins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J T</forename><surname>Tchetgen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Statistica Sinica</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1965" to="1983" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Testing survival under right censoring and left truncation</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hyde</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrika</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<date type="published" when="1977" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Deephit: A deep learning approach to survival analysis with competing risks</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Zame</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Der Schaar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">AAAI</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="2314" to="2321" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Deepsurv: personalized treatment recommender system using a cox proportional hazards deep neural network</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Katzman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Shaham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cloninger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kluger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BMC medical research methodology</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">24</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Verification of forecasts expressed in terms of probability</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">W</forename><surname>Brier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly weather review</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="3" />
+			<date type="published" when="1950" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Random survival forests</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ishwaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">B</forename><surname>Kogalur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Blackstone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Lauer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The annals of applied statistics</title>
+				<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="841" to="860" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Hazard plotting for incomplete failure data</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Nelson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Quality Technology</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="27" to="52" />
+			<date type="published" when="1969" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Censoring issues in survival analysis</title>
+		<author>
+			<persName><forename type="first">K.-M</forename><surname>Leung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Elashoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Afifi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual review of public health</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="83" to="104" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Interval censored recursive forests</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Jewell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Kosorok</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1912.09983</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Prediction of coronary heart disease using risk factor categories</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Dagostino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Levy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Belanger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Silbershatz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">B</forename><surname>Kannel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page" from="1837" to="1847" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">On calibration of modern neural networks</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Pleiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1321" to="1330" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Counterfactual reasoning for fair clinical risk prediction</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Pfohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Y</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning for Healthcare Conference</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="325" to="358" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Calibration: the achilles heel of predictive analytics</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Van Calster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Mclernon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Smeden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wynants</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">W</forename><surname>Steyerberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BMC medicine</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="7" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Obtaining well calibrated probabilities using bayesian binning</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Naeini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hauskrecht</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Twenty-Ninth AAAI Conference on Artificial Intelligence</title>
+				<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Probabilistic outputs for support vector machines and comparisons to regularized likelihood methods</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Platt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ADVANCES IN LARGE MARGIN CLASSIFIERS</title>
+				<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="1999" />
+			<biblScope unit="page" from="61" to="74" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Isotonic median regression: a linear programming approach</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Chakravarti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mathematics of operations research</title>
+				<imprint>
+			<date type="published" when="1989" />
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="303" to="308" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Transforming classifier scores into accurate multiclass probability estimates</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zadrozny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Elkan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining</title>
+				<meeting>the eighth ACM SIGKDD international conference on Knowledge discovery and data mining</meeting>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="694" to="699" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Reducing multiclass to binary by coupling probability estimates</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zadrozny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="1041" to="1048" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Verified uncertainty calibration</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="3792" to="3803" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Direct uncertainty prediction for medical second opinions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Raghu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Blumer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sayres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Obermeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kleinberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mullainathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kleinberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="5281" to="5290" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">G</forename><surname>De Bruijn</surname></persName>
+		</author>
+		<title level="m">Asymptotic methods in analysis</title>
+				<imprint>
+			<publisher>Courier Corporation</publisher>
+			<date type="published" when="1981" />
+			<biblScope unit="volume">4</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">A leisurely look at the bootstrap, the jackknife, and cross-validation</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Efron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Statistician</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="36" to="48" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Simple and scalable predictive uncertainty estimation using deep ensembles</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lakshminarayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pritzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Blundell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="6402" to="6413" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main">Uncertainty in deep learning</title>
+		<author>
+			<persName><forename type="first">Y</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">3</biblScope>
+		</imprint>
+	</monogr>
+	<note>University of Cambridge</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Dropout as a bayesian approximation: Representing model uncertainty in deep learning</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">international conference on machine learning</title>
+				<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1050" to="1059" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Inconsistency of bayesian inference for misspecified linear models, and a proposal for repairing it</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Grünwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Van Ommen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bayesian Analysis</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1069" to="1103" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Analyzing the role of model uncertainty for electronic health records</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Dusenberry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kemp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nixon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Jerfel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Heller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Dai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Health, Inference, and Learning</title>
+				<meeting>the ACM Conference on Health, Inference, and Learning</meeting>
+		<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="204" to="213" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs: a cross-sectional study</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Zech</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Badgeley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Costa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Titano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Oermann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS medicine</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">e1002683</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Feature robustness in non-stationary health records: caveats to deployable model performance in common clinical machine learning tasks</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Nestor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mcdermott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Boag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Berner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Naumann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Hughes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goldenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghassemi</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1908.00690</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Urban-rural county and state differences in chronic obstructive pulmonary diseaseunited states</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Croft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Wheaton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Matthews</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Cunningham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Holt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Morbidity and Mortality Weekly Report</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">205</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Adaptive change detection in heart rate trend monitoring in anesthetized children</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Dumont</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Ansermino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on biomedical engineering</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="2211" to="2219" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Online bayesian change point detection algorithms for segmentation of epileptic activity</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Malladi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">P</forename><surname>Kalamangalam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Aazhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2013 Asilomar Conference on Signals, Systems and Computers</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="1833" to="1837" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Improving predictive inference under covariate shift by weighting the loglikelihood function</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Shimodaira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of statistical planning and inference</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="227" to="244" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Importanceweighted cross-validation for covariate shift</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sugiyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Blankertz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krauledat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Dornhege</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-R</forename><surname>Müller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Joint Pattern Recognition Symposium</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="354" to="363" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">From development to deployment: dataset shift, causality, and shift-stable models in health ai</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Subbaswamy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Saria</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biostatistics</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="345" to="352" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Dramatically improved survival in multiple myeloma patients in the recent decade: Results from a swedish population-based study</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Thorsteinsdottir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Dickman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Landgren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Blimark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hultcrantz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Turesson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Björkholm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Y</forename><surname>Kristinsson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Haematologica</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">e412</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Caruana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gehrke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sturm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Elhadad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 21th ACM SIGKDD international conference on knowledge discovery and data mining</title>
+				<meeting>the 21th ACM SIGKDD international conference on knowledge discovery and data mining</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="1721" to="1730" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Reliable decision support using counterfactual models</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schulam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Saria</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1697" to="1708" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">Performative prediction</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Perdomo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zrnic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mendler-Dünner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hardt</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2002.06673</idno>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Counterfactual reasoning and learning systems: The example of computational advertising</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Quiñonero-Candela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">X</forename><surname>Charles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Chickering</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Portugaly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Simard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Snelson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3207" to="3260" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">The social cost of strategic classification</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Milli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Dragan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Conference on Fairness, Accountability, and Transparency</title>
+				<meeting>the Conference on Fairness, Accountability, and Transparency</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="230" to="239" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Machine learning and health care disparities in dermatology</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Adamson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA dermatology</title>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1247" to="1248" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Dissecting racial bias in an algorithm used to manage the health of populations</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Obermeyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Powers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Vogeli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mullainathan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">366</biblScope>
+			<biblScope unit="issue">6464</biblScope>
+			<biblScope unit="page" from="447" to="453" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Ensuring fairness in machine learning to advance health equity</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rajkomar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Howell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Chin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of internal medicine</title>
+		<imprint>
+			<biblScope unit="volume">169</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="866" to="872" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Equality of opportunity in supervised learning</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Srebro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="3315" to="3323" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Fairness through awareness</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dwork</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pitassi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Reingold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zemel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 3rd innovations in theoretical computer science conference</title>
+				<meeting>the 3rd innovations in theoretical computer science conference</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="214" to="226" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Learning fair representations</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zemel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Swersky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pitassi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dwork</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="325" to="333" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Man is to computer programmer as woman is to homemaker? debiasing word embeddings</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Bolukbasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-W</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Saligrama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">T</forename><surname>Kalai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="4349" to="4357" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Fair prediction with disparate impact: A study of bias in recidivism prediction instruments</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chouldechova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Big data</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="153" to="163" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Inherent trade-offs in the fair determination of risk scores</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kleinberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mullainathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Raghavan</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1609.05807</idno>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<monogr>
+		<title level="m" type="main">Fair predictors under distribution shift</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Mhasawade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chunara</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1911.00677</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">On fairness and calibration</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Pleiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Raghavan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kleinberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="5680" to="5689" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">The problem of infra-marginality in outcome tests for discrimination</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Simoiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Corbett-Davies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Goel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Annals of Applied Statistics</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1193" to="1216" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Multicalibration: Calibration for the (computationally-identifiable) masses</title>
+		<author>
+			<persName><forename type="first">Ú</forename><surname>Hébert-Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Reingold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Rothblum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="1939" to="1948" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Fair regression for health care spending</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rose</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biometrics</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<title level="m" type="main">Learning fair classifiers: A regularization-inspired approach</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bechavod</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ligett</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1707.00044</idno>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1733" to="1782" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Fairness constraints: Mechanisms for fair classification</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Zafar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Valera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Rogriguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">P</forename><surname>Gummadi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Artificial Intelligence and Statistics</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="962" to="970" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Why is my classifier discriminatory?</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">D</forename><surname>Johansson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sontag</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="3539" to="3550" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Electronic health records based phenotyping in next-generation clinical trials: a perspective from the nih health care systems collaboratory</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Richesson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">E</forename><surname>Hammond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nahm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wixted</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Simon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">E</forename><surname>Bauck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cifelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Smerek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dickerson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">e2</biblScope>
+			<biblScope unit="page" from="e226" to="e231" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Advances in electronic phenotyping: from rule-based definitions to machine learning models</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Banda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Seneviratne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hernandez-Boussard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual review of biomedical data science</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="53" to="68" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Attentive state-space modeling of disease progression</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Alaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van Der Schaar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="11334" to="11344" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Understanding vasopressor intervention and weaning: Risk prediction in a public heterogeneous clinical time series database</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghassemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Celi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Szolovits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Doshi-Velez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="page">138</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Advances in electronic phenotyping: From rule-based definitions to machine learning models</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Banda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Seneviratne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hernandez-Boussard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Biomedical Data Science</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="53" to="68" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Comorbidity clusters in autism spectrum disorders: an electronic health record time-series analysis</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Doshi-Velez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kohane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pediatrics</title>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="e54" to="e63" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Electronic medical record phenotyping using the anchor and learn framework</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Halpern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Horng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sontag</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="731" to="740" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Enabling phenotypic big data with phenorm</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gronsbell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename><surname>Ananthakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">S</forename><surname>Gainer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Churchill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Szolovits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">N</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">S</forename><surname>Kohane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="54" to="60" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Phekb: a catalog and workflow for creating electronic phenotype algorithms for transportability</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Speltz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">V</forename><surname>Rasmussen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Basford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Gottesman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Peissig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Pacheco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tromp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pathak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">S</forename><surname>Carrell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1046" to="1052" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">High-throughput multimodal automated phenotyping (map) with application to phewas</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">P</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">A</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Link</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Huffman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gronsbell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-L</forename><surname>Ho</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1255" to="1262" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (phecap)</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-L</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename><surname>Ananthakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Xia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Protocols</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="3426" to="3444" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Practical guidance on artificial intelligence for health-care data</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghassemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Naumann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schulam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Beam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ranganath</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet Digital Health</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="e157" to="e159" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Autism, evolution, and the inadequacy of spectrum</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">S</forename><surname>Greenspan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Evolution</title>
+		<imprint>
+			<biblScope unit="volume">2018</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="213" to="216" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Learning probabilistic phenotypes from heterogeneous ehr data</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Pivovarov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Perotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Grave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Angiolillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">H</forename><surname>Wiggins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Elhadad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of biomedical informatics</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="156" to="165" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Harvest, a longitudinal patient record summarizer</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Hirsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Tanenbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gorman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Schmitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hashorva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ervits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Vawdrey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sturm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Elhadad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="263" to="274" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Auto-encoding variational bayes</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Welling</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The 2nd International Conference on Learning Representations (ICLR)</title>
+				<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Inferring multidimensional rates of aging from cross-sectional data</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Pierson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hashimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Koller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Leskovec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Eriksson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Liang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of machine learning research</title>
+				<meeting>machine learning research</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page">97</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Phenotyping through semi-supervised tensor factorization (psst)</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Henderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Malin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Denny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename><surname>Kho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Ho</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">AMIA Annual Symposium Proceedings</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">2018</biblScope>
+			<biblScope unit="page">564</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Characterizing wheeze phenotypes to identify endotypes of childhood asthma, and the implications for future management</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Belgrave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Custovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Simpson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Expert review of clinical immunology</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="921" to="936" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Asthma phenotypes in childhood</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Deliu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Belgrave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sperrin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Buchan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Custovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Expert review of clinical immunology</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="705" to="713" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">Characterizing treatment pathways at scale using the ohdsi network</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hripcsak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Duke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">H</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Huser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Suchard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Schuemie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Defalco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perotte</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">27</biblScope>
+			<biblScope unit="page" from="7329" to="7336" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">Learning endometriosis phenotypes from patientgenerated data</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Urteaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mckillop</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Elhadad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NPJ digital medicine</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Clustering longitudinal clinical marker trajectories from electronic health data: Applications to phenotyping and endotype discovery</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schulam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wigley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Saria</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Twenty-Ninth AAAI Conference on Artificial Intelligence</title>
+				<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">Predicting intervention onset in the icu with switching state space models</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghassemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Hughes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Szolovits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Doshi-Velez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">AMIA Summits on Translational Science Proceedings</title>
+		<imprint>
+			<biblScope unit="volume">2017</biblScope>
+			<biblScope unit="page">82</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<monogr>
+		<title level="m" type="main">The use of autoencoders for discovering patient phenotypes</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Suresh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Szolovits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghassemi</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1703.07004</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">Clinical intervention prediction and understanding with deep neural networks</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Suresh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hunt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Celi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Szolovits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghassemi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning for Healthcare Conference</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="322" to="337" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<monogr>
+		<title level="m" type="main">Survival-supervised topic modeling with anchor words: Characterizing pancreatitis outcomes</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Weiss</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1712.00535</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<analytic>
+		<title level="a" type="main">Phenotype inference with semi-supervised mixed membership models</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">A</forename><surname>Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Perotte</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of machine learning research</title>
+				<meeting>machine learning research</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="page">304</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title level="a" type="main">Generative adversarial nets</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pouget-Abadie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mirza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Warde-Farley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ozair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Courville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="2672" to="2680" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<analytic>
+		<title level="a" type="main">Variational inference with normalizing flows</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rezende</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mohamed</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="1530" to="1538" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<analytic>
+		<title level="a" type="main">A survey on image data augmentation for deep learning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Shorten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Khoshgoftaar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Big Data</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">60</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<analytic>
+		<title level="a" type="main">Ganbased synthetic medical image augmentation for increased cnn performance in liver lesion classification</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Frid-Adar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Diamant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Klang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Amitai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Goldberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Greenspan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<imprint>
+			<biblScope unit="volume">321</biblScope>
+			<biblScope unit="page" from="321" to="331" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<analytic>
+		<title level="a" type="main">Generative image translation for data augmentation of bone lesion pathology</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Venkatesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chopra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ledig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Medical Imaging with Deep Learning</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="225" to="235" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<analytic>
+		<title level="a" type="main">Learning more with less: Conditional pggan-based data augmentation for brain metastases detection using highly-rough annotation on mr images</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Murao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Noguchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kawata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Uchiyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Rundo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nakayama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Satoh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 28th ACM International Conference on Information and Knowledge Management</title>
+				<meeting>the 28th ACM International Conference on Information and Knowledge Management</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="119" to="127" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<analytic>
+		<title level="a" type="main">Red blood cell image generation for data augmentation using conditional generative adversarial networks</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Bailo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y. Min</forename><surname>Shin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition Workshops</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="0" to="0" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving generative deep neural networks support clinical data sharing</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">K</forename><surname>Beaulieu-Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">S</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Bhavnani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Byrd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Greene</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Circulation: Cardiovascular Quality and Outcomes</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">e005122</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<monogr>
+		<title level="m" type="main">Gans for medical image analysis</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kazeminia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Baur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kuijper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Van Ginneken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Navab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Albarqouni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mukhopadhyay</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1809.06222</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b112">
+	<monogr>
+		<title level="m" type="main">Deep generative models in the real-world: An open challenge from medical imaging</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Pawlowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rajchl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glocker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Konukoglu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1806.05452</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b113">
+	<analytic>
+		<title level="a" type="main">Visual feature attribution using wasserstein gans</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">F</forename><surname>Baumgartner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Koch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Can Tezcan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Xi</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Konukoglu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="8309" to="8319" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b114">
+	<analytic>
+		<title level="a" type="main">Medgan: Medical image translation using gans</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Armanious</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Küstner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hepp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nikolaou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gatidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computerized Medical Imaging and Graphics</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page">101684</biblScope>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b115">
+	<analytic>
+		<title level="a" type="main">Guacamol: benchmarking models for de novo molecular design</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fiscato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Segler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Vaucher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of chemical information and modeling</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1096" to="1108" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b116">
+	<analytic>
+		<title level="a" type="main">Adversarial threshold neural computer for molecular de novo design</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Putin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Asadulaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Vanhaelen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ivanenkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Aladinskaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aliper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zhavoronkov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Molecular pharmaceutics</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="4386" to="4397" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b117">
+	<analytic>
+		<title level="a" type="main">Fréchet chemnet distance: a metric for generative models for molecules in drug discovery</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Preuer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Renz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hochreiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Klambauer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of chemical information and modeling</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1736" to="1741" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b118">
+	<analytic>
+		<title level="a" type="main">Deep learning enables rapid identification of potent ddr1 kinase inhibitors</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zhavoronkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">A</forename><surname>Ivanenkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aliper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Veselov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">A</forename><surname>Aladinskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Aladinskaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">A</forename><surname>Terentiev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Polykovskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Kuznetsov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Asadulaev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature biotechnology</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1038" to="1040" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b119">
+	<analytic>
+		<title level="a" type="main">Popcorn: Partially observed prediction constrained reinforcement learning</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Futoma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Hughes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Doshi-Velez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The 23rd International Conference on Artificial Intelligence and Statistics</title>
+				<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b120">
+	<analytic>
+		<title level="a" type="main">Informing sequential clinical decision-making through reinforcement learning: an empirical study</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Shortreed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Laber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Lizotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Stroup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pineau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Murphy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Machine learning</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="109" to="136" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b121">
+	<analytic>
+		<title level="a" type="main">Dynamic measurement scheduling for event forecasting using deep rl</title>
+		<author>
+			<persName><forename type="first">C.-H</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Goldenberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="951" to="960" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b122">
+	<analytic>
+		<title level="a" type="main">A reinforcement learning approach to weaning of mechanical ventilation in intensive care units</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Prasad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L.-F</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chivers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Draugelis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">E</forename><surname>Engelhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Uncertainty in Artificial Intelligence</title>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b123">
+	<analytic>
+		<title level="a" type="main">A reinforcement learning approach for individualizing erythropoietin dosages in hemodialysis patients</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Martín-Guerrero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Soria-Olivas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Climente-Martí</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">V</forename><surname>Jiménez-Torres</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="9737" to="9742" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b124">
+	<monogr>
+		<title level="m" type="main">The actor search tree critic (astc) for off-policy pomdp learning in medical decision making</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Komorowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename></persName>
+		</author>
+		<idno type="arXiv">arXiv:1805.11548</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b125">
+	<monogr>
+		<title level="m" type="main">Reinforcement learning in healthcare: a survey</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nemati</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1908.08796</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b126">
+	<analytic>
+		<title level="a" type="main">Guidelines for reinforcement learning in healthcare</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Gottesman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Johansson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Komorowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Faisal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sontag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Doshi-Velez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Celi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Med</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="16" to="18" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b127">
+	<monogr>
+		<title level="m" type="main">Reinforcement learning: An introduction</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Sutton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Barto</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+			<publisher>MIT press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b128">
+	<analytic>
+		<title level="a" type="main">A reinforcement learning-based method for management of type 1 diabetes: Exploratory study</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">O M</forename><surname>Javad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">O</forename><surname>Agboola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Jethwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zeid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kamarthi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JMIR diabetes</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">e12905</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b129">
+	<analytic>
+		<title level="a" type="main">Continuous state-space models for optimal sepsis treatment: a deep reinforcement learning approach</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Raghu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Komorowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Celi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Szolovits</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghassemi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning for Healthcare Conference</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="147" to="163" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b130">
+	<analytic>
+		<title level="a" type="main">The uva/padova type 1 diabetes simulator: new features</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Man</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Micheletto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Breton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kovatchev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cobelli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of diabetes science and technology</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="26" to="34" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b131">
+	<monogr>
+		<title level="m" type="main">A biometric study of basal metabolism in man</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">G</forename><surname>Benedict</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1919" />
+		</imprint>
+		<respStmt>
+			<orgName>Carnegie institution of Washington</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b132">
+	<analytic>
+		<title level="a" type="main">Guidelines for reinforcement learning in healthcare</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Gottesman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Johansson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Komorowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Faisal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sontag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Doshi-Velez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Celi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nat Med</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="16" to="18" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b133">
+	<analytic>
+		<title level="a" type="main">Variation in physician practice styles within and across emergency departments</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Van Parys</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PloS one</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">e0159882</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b134">
+	<analytic>
+		<title level="a" type="main">Counterfactual off-policy evaluation with gumbel-max structural causal models</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Oberst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sontag</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="4881" to="4890" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b135">
+	<analytic>
+		<title level="a" type="main">Learning factored representations for partially observable markov decision processes</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Sallans</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="1050" to="1056" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b136">
+	<monogr>
+		<title level="m" type="main">Off-policy evaluation in partially observable environments</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tennenholtz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mannor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Shalit</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="10276" to="10283" />
+		</imprint>
+	</monogr>
+	<note>Association for the Advancement of Artificial Intelligence</note>
+</biblStruct>
+
+<biblStruct xml:id="b137">
+	<monogr>
+		<title level="m" type="main">Causal inference</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Hernán</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Robins</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b138">
+	<analytic>
+		<title level="a" type="main">When to start treatment? a systematic approach to the comparison of dynamic regimes using observational data</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">E</forename><surname>Cain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Robins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lanoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Logan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Costagliola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Hernán</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The international journal of biostatistics</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b139">
+	<analytic>
+		<title level="a" type="main">Automated versus do-it-yourself methods for causal inference: Lessons learned from a data analysis competition</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Dorie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Shalit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cervone</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Statistical Science</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="43" to="68" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b140">
+	<monogr>
+		<title level="m" type="main">Structured inference networks for nonlinear state space models</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Shalit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sontag</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<publisher>AAAI</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

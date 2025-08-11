@@ -1,0 +1,152 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Layer-wise learning of deep generative models</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Arnold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ollivier</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note>ArXiv e-prints</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Improving neural networks by preventing co-adaptation of feature detectors</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Krizhevsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<idno>abs/1207.0580</idno>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>CoRR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Learning feature hierarchies with cented deep Boltzmann machines</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-R</forename><surname>Müller</surname></persName>
+		</author>
+		<idno>abs/1203.4416</idno>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>CoRR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Deep Boltzmann machines</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twelfth International Conference on Artificial Intelligence and Statistics</title>
+				<meeting>the Twelfth International Conference on Artificial Intelligence and Statistics</meeting>
+		<imprint>
+			<publisher>AISTATS</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">8</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Empirical risk minimization of graphical model parameters given approximate inference, decoding, and model structure</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Stoyanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ropson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Eisner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th International Conference on Artificial Intelligence and Statistics (AISTATS)</title>
+				<meeting>the 14th International Conference on Artificial Intelligence and Statistics (AISTATS)<address><addrLine>Fort Lauderdale</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="725" to="733" />
+		</imprint>
+	</monogr>
+	<note>JMLR Workshop and Conference Proceedings. Supplementary material (4 pages) also available</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Training restricted Boltzmann machines using approximations to the likelihood gradient</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tieleman</surname></persName>
+		</author>
+		<editor>W. W. Cohen, A. McCallum, and S. T. Roweis</editor>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>ACM</publisher>
+			<biblScope unit="page" from="1064" to="1071" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">On the convergence of markovian stochastic algorithms with rapidly decreasing ergodicity rates</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Younes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Stochastics and Stochastic Reports</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="177" to="228" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

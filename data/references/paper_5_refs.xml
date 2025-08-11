@@ -1,0 +1,511 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Learning to compose neural networks for question answering</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Andreas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rohrbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Darrell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Klein</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1601.01705</idno>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Recursive routing networks: Learning to compose modules for language understanding</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Cases</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rosenbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Riemer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Klinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tamkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Greene</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jurafsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</title>
+				<meeting>the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="3631" to="3648" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Are neural nets modular? inspecting functional modularity through differentiable weight masks</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Csordás</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Van Steenkiste</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
+		<ptr target="https://openreview.net/forum?id=7uVcpu-gMD" />
+	</analytic>
+	<monogr>
+		<title level="m">9th International Conference on Learning Representations, ICLR 2021, Virtual Event</title>
+				<meeting><address><addrLine>Austria</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">BERT: pre-training of deep bidirectional transformers for language understanding</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Devlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Toutanova</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/n19-1423</idno>
+		<ptr target="https://doi.org/10.18653/v1/n19-1423" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019</title>
+				<editor>
+			<persName><forename type="first">J</forename><surname>Burstein</surname></persName>
+			<persName><forename type="first">C</forename><surname>Doran</surname></persName>
+			<persName><forename type="first">T</forename><surname>Solorio</surname></persName>
+		</editor>
+		<meeting>the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019<address><addrLine>Minneapolis, MN, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="4171" to="4186" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Filmy cloud removal on satellite imagery with multispectral conditional generative adversarial nets</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Enomoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sakurada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fukui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Matsuoka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nakamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kawaguchi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPRW.2017.197</idno>
+		<ptr target="https://doi.org/10.1109/CVPRW.2017.197" />
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Conference on Computer Vision and Pattern Recognition Workshops, CVPR Workshops</title>
+				<meeting><address><addrLine>Honolulu, HI, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2017-07-21" />
+			<biblScope unit="page" from="1533" to="1541" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Eurosat: A novel dataset and deep learning benchmark for land use and land cover classification</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Helber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bischke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dengel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Borth</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/JSTARS.2019.2918242</idno>
+		<ptr target="https://doi.org/10.1109/JSTARS.2019.2918242" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE J. Sel. Top. Appl. Earth Obs. Remote. Sens</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2217" to="2226" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Distilling the knowledge in a neural network</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dean</surname></persName>
+		</author>
+		<idno>abs/1503.02531</idno>
+		<ptr target="http://arxiv.org/abs/1503.02531" />
+		<imprint>
+			<date type="published" when="2015" />
+			<publisher>CoRR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Imageto-image translation with conditional adversarial networks</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Isola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Efros</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2017.632</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2017.632" />
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting><address><addrLine>Honolulu, HI, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2017-07-21" />
+			<biblScope unit="page" from="5967" to="5976" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The multilingual amazon reviews corpus</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Keung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Szarvas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">A</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2020.emnlp-main.369</idno>
+		<ptr target="https://doi.org/10.18653/v1/2020.emnlp-main.369" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing</title>
+				<editor>
+			<persName><forename type="first">B</forename><surname>Webber</surname></persName>
+			<persName><forename type="first">T</forename><surname>Cohn</surname></persName>
+			<persName><forename type="first">Y</forename><surname>He</surname></persName>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</editor>
+		<meeting>the 2020 Conference on Empirical Methods in Natural Language Processing<address><addrLine>Online</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2020" />
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page">2020</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Towards a robust knowledge graph-enabled machine learning service description framework</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Menik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ramaswamy</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICSC50631.2021.00026</idno>
+		<ptr target="https://doi.org/10.1109/ICSC50631.2021.00026" />
+	</analytic>
+	<monogr>
+		<title level="m">15th IEEE International Conference on Semantic Computing</title>
+				<meeting><address><addrLine>Laguna Hills, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021" />
+			<biblScope unit="page">2021</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">U-net: Convolutional networks for biomedical image segmentation</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">; N</forename><surname>Brox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hornegger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">M W</forename><surname>Iii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frangi</forename></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-24574-4_28</idno>
+		<ptr target="https://doi.org/10.1007/978-3-319-24574-4_28" />
+	</analytic>
+	<monogr>
+		<title level="m">Medical Image Computing and Computer-Assisted Intervention -MICCAI 2015 -18th International Conference</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename></persName>
+		</editor>
+		<meeting><address><addrLine>Munich, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">9351</biblScope>
+			<biblScope unit="page" from="234" to="241" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part III</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Ensemble learning: A survey</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Sagi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Rokach</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">e1249</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Rethinking model scaling for convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">V</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Efficientnet</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v97/tan19a.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 36th International Conference on Machine Learning, ICML 2019</title>
+				<editor>
+			<persName><forename type="first">K</forename><surname>Chaudhuri</surname></persName>
+			<persName><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</editor>
+		<meeting>the 36th International Conference on Machine Learning, ICML 2019<address><addrLine>Long Beach, California, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2019-06-15" />
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="page" from="6105" to="6114" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The Tatoeba Translation Challenge -Realistic data sets for low resource and multilingual MT</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tiedemann</surname></persName>
+		</author>
+		<ptr target="https://www.aclweb.org/anthology/2020.wmt-1.139" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Fifth Conference on Machine Translation</title>
+				<meeting>the Fifth Conference on Machine Translation</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2020-11" />
+			<biblScope unit="page" from="1174" to="1182" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Huggingface&apos;s transformers: State-of-theart natural language processing</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Debut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sanh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chaumond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Delangue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cistac</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Rault</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Louf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Funtowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Brew</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ArXiv</title>
+		<imprint>
+			<date type="published" when="1910" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A comprehensive survey on transfer learning</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zhuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Xi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>He</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the IEEE</title>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="43" to="76" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

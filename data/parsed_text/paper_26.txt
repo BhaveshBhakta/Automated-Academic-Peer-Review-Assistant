@@ -1,0 +1,1504 @@
+Probabilistic Machine
+Learning for Healthcare
+Irene Y. Chen,1,∗Shalmali Joshi,2,∗Marzyeh
+Ghassemi,2,3 and Rajesh Ranganath4,5,6
+1Electrical Engineering and Computer Science, Massachusetts Institute of
+Technology, Cambridge, MA 02139, USA; email: iychen@mit.edu
+2Vector Institute, Toronto, Ontario, Canada; email: shalmali@vectorinstitute.ai
+3Department of Computer Science, University of Toronto, Toronto, Ontario,
+Canada
+4Department of Computer Science, Courant Institute, New York University, New
+York, New York 10012, USA
+5Center for Data Science, New York University, New York, New York 10012, USA
+6Department of Population Health, New York University Grossman School of
+Medicine, New York, New York 10012, USA
+Xxxx. Xxx. Xxx. Xxx. 2021. AA:1–25
+https://doi.org/10.1146/((please add
+article doi))
+Copyright c
+⃝2021 by Annual Reviews.
+All rights reserved
+Keywords
+probabilistic modeling, health, electronic health records
+Abstract
+Machine learning can be used to make sense of healthcare data. Proba-
+bilistic machine learning models help provide a complete picture of ob-
+served data in healthcare. In this review, we examine how probabilistic
+machine learning can advance healthcare. We consider challenges in
+the predictive model building pipeline where probabilistic models can
+be beneﬁcial including calibration and missing data. Beyond predictive
+models, we also investigate the utility of probabilistic machine learning
+models in phenotyping, in generative models for clinical use cases, and
+in reinforcement learning.
+1
+arXiv:2009.11087v1  [stat.ML]  23 Sep 2020
+
+Contents
+1. INTRODUCTION ............................................................................................
+2
+2. PROBABILISTIC MODELS .................................................................................
+3
+3. CHALLENGES IN BUILDING PREDICTIVE MODELS FOR MEDICINE ..................................
+4
+3.1. Missing Values ..........................................................................................
+4
+3.2. Censoring ................................................................................................
+5
+3.3. Calibration...............................................................................................
+6
+3.4. Uncertainty ..............................................................................................
+7
+3.5. Data Shift ...............................................................................................
+8
+3.6. Fairness..................................................................................................
+10
+4. PHENOTYPING WITH LATENT VARIABLES .............................................................
+11
+4.1. Phenotypic Matching ...................................................................................
+12
+4.2. Uncovering Hidden Phenotypes .........................................................................
+12
+4.3. Semi-supervised Phenotyping with Anchors ............................................................
+13
+5. GENERATIVE MODELS.....................................................................................
+13
+6. REINFORCEMENT LEARNING FOR TREATMENT PLANNING .........................................
+15
+6.1. Model-based RL .........................................................................................
+16
+6.2. Stochastic Policies ......................................................................................
+16
+6.3. Partial Observability.....................................................................................
+17
+7. DISCUSSION.................................................................................................
+18
+1. INTRODUCTION
+Recent advances in healthcare—from tracking patient health with mobile phones (1), to
+predicting peripheral vascular disease from retinal images (2), to detecting sepsis early in
+intensive care units (3), to summarizing medical records to reduce the digital burden on
+clinicians (4)—have made use of artiﬁcial intelligence and machine learning. The power of
+machine learning is rooted in both the assumptions encoded in a model and the troves of
+healthcare data used for training.
+Abstractly, healthcare data can be thought of as coming from a probability distribution
+called the data generating distribution.
+It is through this data generating distribution
+that learning and evaluating a machine learning model can be formalized. For example,
+the error of a machine learning model on a test set, i.e., data that is not used during
+training, measures how well this model performs on new samples from the data generating
+distribution. In many uses of machine learning models in healthcare, the data generating
+distribution does not need to be made explicit. For instance, making predictions or ﬁnding
+regression coeﬃcients may not require consideration of the data generating distribution.
+We illustrate why a probabilistic machine learning model is helpful in healthcare. Imag-
+ine modeling the survival time for melanoma patients based on stage and demographic in-
+formation. If two observed stage, demographic pairs have the same average survival time,
+but the variance in survival diﬀers, the average survival time can mislead planning.
+A
+probabilistic model of survival would instead provide a more holistic view by returning a
+distribution over survival times given the stage and demographic information. Such a prob-
+abilistic model would enable both the patient and the provider to better plan for the future
+by incorporating uncertainty into the decision making process.
+For example, a melanoma
+Probability
+distribution:
+Function describing
+the random process
+of possible outcomes,
+denoted p(·)
+Data generating
+distribution: The
+probability
+distribution from
+which observations
+are sampled
+Machine learning
+model: An algorithm
+that has been
+trained on data for a
+task
+Algorithm: A ﬁnite
+sequence of
+well-deﬁned
+instructions used to
+solve a class of
+problems
+patient with high certainty about a small survival time might choose to make speciﬁc life
+2
+Chen et al.
+
+adjustments.
+The probabilistic perspective can aid the entire machine learning model development
+and maintenance pipeline. Missing values can be molliﬁed by probabilistic models. Cen-
+soring of labels, such as survival time, can be addressed through probabilistic models. The
+probabilistic view can also aid in maintaining deployed models by detecting shifts in a data
+generating distribution over time.
+Probabilistic machine learning models have a myriad of practical uses in healthcare. A
+type of probabilistic model called a latent variable models can be used for phenotpying.
+Probabilistic models can also be used for simulation, which has seen success in scientiﬁc
+discovery like in drug development (5).
+The probabilistic approach has shown promise
+in learning policies for diabetes and sepsis management, among other applications that
+use reinforcement learning (6, 7). However, estimating probabilistic models comes with a
+cost.
+Probabilistic models can require more mental and computational labor than non-
+probabilistic approaches, though this labor is being reduced through the introduction of
+probabilistic building blocks in common machine learning toolkits (8, 9).
+This review focuses on the uses of probabilistic models in healthcare. At the end of this
+review, the goal is for the reader to understand how probability plays a role in building
+models and how it can help address challenges that occur in machine learning models in
+healthcare. This review is organized as follows. The ﬁrst section sets up mathematical
+notation for the basic concepts around probabilistic models. The subsequent sections are
+organized by use cases in healthcare that make use of the probabilistic perspective.
+2. PROBABILISTIC MODELS
+To make the distinction between a probabilistic model and a deterministic model clear, we
+present an example. Consider features x and a count-valued response y like lymphocyte
+count. Now take a model with parameter θ denoted gθ(x); this model is a function that
+predicts lymphocyte count based on the features and can be learned by ﬁnding the pa-
+rameters that minimize the squared error between the model predictions and the observed
+response. For simplicity we do not consider a ﬁxed data set, but rather assume access to
+the data generating distribution F. See margin notes for common notation used in this
+review, including response, probability, and expectation. With this setup, the model gθ(x)
+can be trained by ﬁnding θ to minimize
+Ex,y∼F [(gθ(x) −y)2].
+If trained well, the model gθ will be close to the expected value of y given the observed fea-
+tures x. This type of model is deterministic and can be used to make predictions. However,
+without assumptions, this model says nothing about the distribution of the response.
+A probabilistic model represents a probability distribution. A probabilistic model of a
+response y given features x, rather than being a function, would be a probability distribution
+pθ(y | x). One way to train such a model from data is to maximize the likelihood of the
+observations,
+Ex,y∼F [log pθ(y | x)].
+If trained well, the model pθ would be close to the conditional distribution of y given the
+features x in the data generating distribution. The probabilistic model pθ can not only be
+Response/label:
+Dependent variable,
+e.g. patient
+mortality, denoted y
+Feature:
+Independent
+variable, e.g. patient
+biomarkers, denoted
+x
+Parameter: Model
+parameters, e.g.
+coeﬃcients of a
+logistic regression,
+denoted θ
+Expectation:
+Expectation with
+random variables
+drawn from the
+distribution F,
+denoted Ex,y∼F
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+3
+
+used to compute the average value of y given a particular observed feature (by computing
+Epθ(y | x)[y]), but also the conditional variance and other statistics as well. Note that binary
+classiﬁers are special in that their probability distribution is completely characterized by
+its expectation.1
+Probabilistic models go beyond regression.
+We list diﬀerent ﬂavors of probabilistic
+models—predictive models, generative models, and latent variable models—in the margin
+notes. Probabilistic models can refer to both models with probabilistic outputs or proba-
+bilistic modeling components in a broader estimation pipeline. In the subsequent sections,
+we will go into more detail on the role of probabilistic models in healthcare for building
+predictive models (Section 3), for phentopying (Section 4), for simulation (Section 5), and
+for sequential decision making (Section 6).
+Predictive model: A
+model for a response
+given observed
+features, denoted
+p(y | x)
+Latent variable
+model: A model that
+connects unseen
+traits to observed
+data, denoted p(z, x)
+Generative model: A
+model that outputs
+samples, denoted
+p(x)
+3. CHALLENGES IN BUILDING PREDICTIVE MODELS FOR MEDICINE
+In this section, we show how probabilistic models can aid in diﬀerent parts of the model
+development and model maintenance pipeline in healthcare.
+Here, we assume that the
+problem has already been reduced to a collection of features and a (potentially real-valued)
+response. The goal is to produce a model that predicts the response from the features.
+The section highlights probabilistic methods—referring to both models with probabilistic
+outputs or models with probabilistic computation in the development pipeline–to address
+key challenges in building predictive models for medicine.
+3.1. Missing Values
+Missing values are a prevalent problem in clinical data that can impede predictive models,
+and probabilistic models allow for the modeling of the underlying data mechanism for
+missingness. Healthcare datasets are generally observational and frequently incomplete as
+a result. Consider a longitudinal clinical dataset of patient visits following a diagnosis of
+diabetes. For each patient visit, a clinician may choose not to measure all possible biomarker
+values, resulting in missing values.
+Patients may also vary in their number of clinical
+visits, resulting in missing visits for some patients compared to the maximum number of
+patient visits. Traditionally, machine learning models require completely observed datasets.
+Because removal of missing values may result in a dataset that is too small, or the removal
+may induce statistical bias, the search for other methods to accommodate missingness is an
+active area of research.
+Missingness: The
+manner in which
+data is missing from
+a sample of the
+population
+In cases where predictive performance is of greatest importance, the model can directly
+incorporate missingness. One example might be passing indicators of observation as fea-
+tures, which provide the most information about the response (10). Using these indicators
+of observation in a time series, recurrent neural networks have been used to predict pa-
+tient outcomes in the intensive care unit (11). Additionally, deep probabilistic models can
+marginalize missing values to predict time to coronary heart disease (12).
+The predictive performance may not be the only quantity of interest for a model. Re-
+searchers may also be interested in parameter estimation, e.g., using coeﬃcients to model
+features importance. A main method to address missing data for parameter estimation
+is imputation, meaning the replacement of missing values based on information from the
+1In general, binary classiﬁers can be used to approximate more complex distributions.
+4
+Chen et al.
+
+observed values. After imputation, the transformed data is used for the resulting predictive
+model. Imputation methods range from using the mean or median of the observed values
+to prediction of the missing value for each observation. One popular imputation method is
+multiple imputation using chained equations where missing features are imputed using the
+posterior predictive distribution of the missing data conditional on the observed data (13).
+Imputation: The
+replacement of
+missing values based
+on information from
+the observed values
+Implicit in imputation methods is an assumption about the underlying data generating
+process (14), namely that the data is either missing completely at random (MCAR) or
+missing at random (MAR). MCAR refers an assumption that the missingness of a data
+is completely random and uncorrelated whereas MAR refers to missingness of data that
+depends on the observed data. Notably, imputation methods cannot support data that is
+missing not at random (MNAR), meaning the missingness correlates with an unobserved
+characteristic. Using either the assumption of MCAR or MAR, imputation methods range
+can leverage probabilistic methods such as Gaussian methods (15), causal diagrams (16),
+or models using auxiliary information (17).
+Identiﬁcation of MNAR requires additional
+assumptions, for example semi-parametric estimation using an instrumental variable (18).
+Additionally, modeling the data missingness process allows for the model stability when the
+mechanism for data missingness changes, e.g. across hospitals or across time.
+3.2. Censoring
+Similar to how probabilistic models can address missing features as described in Section 3.1,
+probabilistic models can capture the probability distribution of the possible outcome events
+when the patient labels are not observed. Labels in healthcare often depend on a patient’s
+state at some point in the future. This gap in time between observed features and observed
+label means that the labels may be unobserved or censored for some patients (19). We may
+be interested in the time to event, e.g., death, for a patient given observed features and
+may observe previous patients, only some of whom have observed times to event. A simple
+machine learning method might regress on the time to event only for patients with observed
+labels, but this simpliﬁcation generally underestimates the time to event because patients
+with a longer gap between observed features and time to event are less likely to be observed.
+In contrast, probabilistic models to characterize the survival function are trained with the
+label likelihood and can directly address censored observations by computing the probability
+that the observed label falls in the censoring interval through integration when observations
+are censored at random.
+The general assumption that makes survival problems tractable
+Censoring: The
+process through
+which event times
+hidden
+Survival function: A
+function providing a
+probabilistic
+estimate of no event
+occurring before a
+speciﬁed time
+is censoring at random where the censoring and event time are independent given the
+observed features. Under the censoring at random assumption, consider a patient that has
+no event until a censoring time c with features x, the likelihood under a distribution p can
+be computed as
+R ∞
+c
+p(a | x) da.
+This approach has been used in combination with deep
+neural networks in recent work on deep survival analysis (10, 20, 12, 21).
+The evaluation of a survival function requires consideration about the probability dis-
+tribution of outcomes. The Brier score (22) is the metric traditionally used for estimating
+the survival function. Evaluation with the Brier score requires appropriate adjustment for
+censoring by estimating the (inverse) probability of censoring. Non-probabilistic methods
+like survival forests (23) have also been used to incorporate right censoring. Survival forests
+side-step explicit parametrization of censoring mechanism but build on ensembles of random
+trees to non-parametrically estimate a cumulative hazard function (a probabilistic quantity)
+using the NelsonAalen estimator (24). In the presence of more complex forms of censoring,
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+5
+
+like interval censoring which is common in epidemiological studies, uncertainty over the
+interval of censoring should be modeled to ﬁx bias in survival estimates. This statistical
+bias is particularly problematic if the interval periods themselves are long. Modeling the
+uncertainties over the censoring mechanism have been demonstrated to improve estimation
+over imputation techniques (25) and has been only recently explored in machine learning
+literature (26) in a non-probabilistic framework using random forests.
+3.3. Calibration
+Probabilistic machine learning models can ensure that risk scores used in clinical settings
+are calibrated, meaning that the risk estimates accurately characterize the actual risk. Risk
+scores like the Framingham risk score (27) for cardiovascular disease prediction are routinely
+used for clinical decision making, diagnostic tools, or determining subsequent treatment
+pathways. There is a general expectation that in addition to predicting the correct binary
+label y (whether a patient will develop coronary heart disease in 10 years), the actual
+risk estimate of the event is available as well. These risk estimates can be obtained only
+from a machine learning model that frames the supervised learning problem as that of
+estimating the probability pθ(y | x). Therefore, support vector machines (SVMs) will not
+directly provide such risk estimates without further processing.
+Calibration: The
+measure of how well
+risk estimates reﬂect
+true risk
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Conﬁdence (ˆp)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Accuracy (of samples with conﬁdence ˆp)
+Calibration plots (Reliability diagram)
+Perfectly calibrated
+Logistic Regression
+Figure 1
+Calibration of an machine learning model can be
+measured via probabilistic modeling. A model is
+well-calibrated if for all examples, c, for which
+the model provides the same estimate ˆp of
+p(y | x), the proportion of these examples that
+are associated with the prediction (y = 1) is
+equal to ˆp. In this ﬁgure the red shaded region
+denotes the reliability plot of a perfectly
+calibrated model and the blue shaded region
+from a logistic regression ﬁtted for a synthetic
+binary classiﬁcation problem.
+How well do machine learning mod-
+els trained to estimate pθ(y | x) character-
+ize this risk? This can be understood by
+quantifying how well-calibrated a model
+is.
+An machine learning method is well-
+calibrated if for all examples, x, for which
+the model provides the same estimate ˆp
+of pθ(y | x), the proportion of these exam-
+ples that are associated with the predic-
+tion (y = 1) is equal to ˆp. Calibration is
+therefore an inherently probabilistic con-
+cept. While traditional machine learning
+methods like logistic-regression and shal-
+low neural networks typically produce well-
+calibrated risk scores, modern neural net-
+works notoriously may not (28). Further,
+even if a model is calibrated at the popula-
+tion level, subpopulation level miscalibra-
+tion can further amplify inequities in clini-
+cal decision making (29). Since calibration
+signiﬁcantly aﬀects optimality of down-
+stream clinical decision making (30), diag-
+nostic, and other decision support models
+should consider probabilistic frameworks
+for supervised model design.
+Calibration of machine learning models
+can be quantiﬁed using reliability diagrams which evaluates the estimated risk of a group
+of example ˆp against the expected sample accuracy for all ˆp. A well-calibrated model will
+6
+Chen et al.
+
+be close to the identity function in the diagram (see Figure 1). Assessing the expected
+(or maximum) diﬀerence between the estimated conﬁdence/risk of a model and empirical
+estimates, a quantity known as the Expected (or Maximum) Calibration Error (31) can
+summarize how well-calibrated a model is (lower is better). Reliability diagrams can also
+be assessed at subpopulation levels to determine miscalibration challenges due to lack of
+samples within groups. Calibration of machine learning methods can be improved post-
+hoc using techniques such as Platt’s scaling (32), which corrects for calibration errors after
+model training by learning a mapping from learned risk scores to calibrated risk scores by
+estimating a sigmoid mapping on a validation set. These methods can also be used for non-
+probabilistic models like SVMs that do not produce risk scores as a by-product of supervised
+learning. Platt’s scaling is essentially reﬁtting a logistic regression (a probabilistic model)
+to obtain risk scores from deterministic models like SVMs. When data is scarce, ﬂexible
+non-parametric methods like isotonic regression can be used for calibration (33). Sigmoid
+function reﬁtting as done in Platt’s scaling can also be extended to multiclass settings by
+modeling multiclass problems as a one-vs-all classiﬁcation (34, 35). Calibration can also
+be improved with other post-hoc methods. Binning methods to obtain calibrated neural
+networks have also been proposed recently (36, 34).
+This class of methods suitably re-
+estimate risk scores to directly improve/optimize calibration metrics.
+3.4. Uncertainty
+Several types of uncertainties arise when modeling clinical outcomes of interest from ﬁnite
+amount of data. Machine learning model predictions are based on a ﬁnite random samples,
+making the model predictions themselves random. That is, any machine learning model
+(deterministic or probabilistic) is a function of the random samples from the data generating
+distribution and hence, has an associated uncertainty. The overall uncertainty of a machine
+learning model prediction, captured by p(y | x) is known as the predictive uncertainty of
+the model. To see how the uncertainty can aﬀect downstream decision making, consider a
+breast cancer staging model that predicts risk of an adverse event. If the model-estimated
+disease stage has diﬀerent variances for diﬀerent features values, the resulting decisions can
+be suboptimal if a single decision threshold is used.
+Predictive uncertainty can be further decomposed into diﬀerent sources.
+The ﬁrst
+source, called aleatoric uncertainty, measures the noise in the labels in the true data gen-
+erating process. For instance, diagnostic labels can have some uncertainty when diﬀerent
+clinicians annotate the same sample (37). The second source stems from the uncertainty
+about an estimated model’s match to the true data generating distribution. This uncer-
+tainty is called model uncertainty, also known as epistemic uncertainty. Model uncertainty
+is a combination of the choice of the model class used to approximate a property of the
+true data generating distribution, as well as the fact that multiple parameters θ within the
+same model class can approximate the data well.
+When a large enough sample size is available and assuming correctness of the model
+class, uncertainty can be quantiﬁed using asymptotic analyses (38). Large scale datasets
+may not always be available. In this case, uncertainty is either captured via bootstrapping
+samples (39) without explicit probabilistic modeling or using a fully Bayesian framework.
+Bootstrapping is a sampling with replacement procedure, a proxy to quantify uncertainty
+Predictive
+uncertainty: An
+expression of the
+statistical dispersion
+of the model
+prediction
+Bootstrapping: A
+procedure involving
+sampling with
+replacement, which
+can be used to
+quantify uncertainty
+over a data sample
+Bayesian framework:
+A class of statistical
+methods that assign
+probabilities or
+distributions to
+events or parameters
+based on prior
+knowledge before
+experimentation
+over the data sample, so that multiple model estimates can be obtained. Predictions from
+diﬀerent candidate models then give an estimate of variability in predictions, i.e., capturing
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+7
+
+uncertainty. Neural networks can also be retrained on bootstrapped samples to quantify
+this uncertainty although performance may degrade with fewer data samples (40). These
+methods can be used to assess overall uncertainty as well as calibration of a model, but still
+only provide expectations over outcomes rather than a full characterization of the predictive
+uncertainty. Thus, the onus is on the end user to calculate probabilistic quantities of interest
+like variance that will be useful for downstream decision making.
+In a full Bayesian framework, the outcome of interest is naturally modeled as a dis-
+tribution i.e. p(y | x). Additionally, distributional assumptions are made over the model
+parameter θ itself allowing to fully characterize as well as decompose the predictive distribu-
+tion. The relationship between overall uncertainty and model uncertainty p(θ | D) (where
+D is the dataset sample from the generating distribution) is captured by the following
+relationship:
+p(y | x) =
+Z
+θ
+p(y | x, θ)p(θ | D)dθ
+Notably, such uncertainty estimation via Bayesian modeling is more challenging to incor-
+porate for non-probabilistic machine learning models like support vector machines. For deep
+neural networks, for capturing this uncertainty over predictions, i.e. p(y | x), Bayesian deep
+learning (41) is commonly employed. These methods usually capture intermediate uncer-
+tainties i.e. over parameters p(θ | x) during model training. For instance, one method (42)
+reinterprets traditional regularization methods like dropout regularization (42) in a prob-
+abilistic framework. However, eliciting good prior distributions over parameters, required
+for Bayesian modeling, can be a challenge for modern deep neural networks. Even in simple
+models, misspeciﬁcation of such priors can lead to unreliable uncertainty estimates (43).
+Recently, extensive evaluation of Bayesian neural networks and neural network ensemble
+methods for uncertainty characterization has been demonstrated on critical care datasets
+eICU and MIMIC-III (44).
+Similar to bootstrapping neural network ensembles do not
+explicitly model the predictive distribution to obtain uncertainty estimates.
+In one ex-
+ample, model predictions and hence downstream decisions can vary widely for individuals
+due to these uncertainties and quantifying this uncertainty can reduce the possibility of
+sub-optimal clinical decisions (44).
+3.5. Data Shift
+After clinical model development, the data setting in which the model is used may diﬀer
+from the setting in which the model was trained, a shift that can be characterized and
+accommodated by probabilistic models.
+For example, model performance may degrade
+when the data distribution for development and for deployment diﬀer across locations (45) or
+across time (46). This shift of data can threaten the performance of machine learning models
+in deployment. Consider a setting where a model is trained to predict an outcome y based
+on patient features x. When a model is trained on a source domain with data distribution
+p(y | x), the concern is that the setting of deployment may have a diﬀerent distribution in
+p(x) (covariate shift) or p(y | x) (label shift), as seen in Figure 2. Probabilistic models can
+describe this process and improve robustness of models over diﬀerent data distributions.
+Covariate shift: The
+condition where the
+feature distribution
+changes
+Label shift: The
+condition where the
+relationship between
+features and
+response changes
+Probabilistic models can address covariate shift through identiﬁcation and correction.
+Covariate shift is the condition where the feature distribution changes. For example, urban
+and rural hospitals have diﬀerences in clinical care patient populations. Rural hospitals have
+higher prevalence of chronic obstructive pulmonary disease including higher rates of Medi-
+8
+Chen et al.
+
+4
+2
+0
+2
+4
+x
+4
+3
+2
+1
+0
+1
+2
+3
+4
+y
+4
+2
+0
+2
+4
+x
+4
+3
+2
+1
+0
+1
+2
+3
+4
+y
+4
+2
+0
+2
+4
+x
+4
+3
+2
+1
+0
+1
+2
+3
+4
+y
+Figure 2
+Consider a data distribution of p(x, y) (left) where x and y are continuous and univariate and
+y = x + ϵ with ϵ ∼N(0, 1). Covariate shift (middle) refers to changes in p(x), for example
+because of diﬀerences in patient demographics between hospitals. Here p(x) changes from a
+unimodal distribution to a bimodal distribution. Label shift (right) refers to changes in the
+relationship between x and y, for example because of diﬀerences in treatment policies between
+hospitals. Here, we show y = −x + ϵ with ϵ ∼N(0, 1).
+care hospitalizations and death (47). In model settings with long time-series sequences,
+for example continuous monitoring in medical settings, change point detection identiﬁes
+abrupt changes in observed data where p(x) shifts dramatically (48, 49). In settings with
+clear and known demarcations between source and target domains, for example across hos-
+pitals, probabilistic models can adapt model development on the source domain to a target
+domain for deployment. One technique is using importance sampling, based on estimates of
+the probability of the domain given the features, to reweight observed datapoints (50, 51).
+Modeling and correcting for data shifts allows for more accurate and robust clinical models.
+Label shift, meaning p(y | x) changes, is the mechanism of labels conditional on features
+changes and may be due to changes in treatment policy or induced by the clinical model
+itself (52). For example, clinical protocol for disease management may change as additional
+scientiﬁc discoveries shape medical knowledge, resulting in multiple myeloma survival rates
+improving dramatically with one-year relative survival rates increasing from 69% in 1973
+to to 82% in 2013 due to better treatment policies (53). Without reasoning about this
+shift, models may yield erroneous and outdated results. In one famous example, a model
+predicting pneumonia risk stratiﬁcation did not account for patients with asthma being
+given more severe interventions; the predictions for pneumonia patients with asthma yielded
+lower risk when clinical literature reveals the opposite (54). In that case, models can be
+trained to be anticipate shifts in policy based on the treatment policy distribution (55) and
+therefore more readily update for changes in clinical treatment protocol.
+Treatment policy: A
+medical protocol for
+interventions on a
+given patient
+Alternatively, the model itself may induce change in the data after deployment. For
+example, a diagnostic model may yield predictions that guide treatment policy where high
+risk patients receive more aggressive treatments, meaning the model may not be calibrated
+to the outcomes that occur after model deployment. One method to address this shift is
+to produce probabilistic models that yield stable and calibrated predictions for not only
+pre-deployment outcomes but also against future outcomes that manifest from the data
+shifts (56). Strategic behavior from the individuals may also aﬀect the data distribution,
+for example, with otherwise healthy patients adapting to the deployed clinical model for
+treatment and displaying behaviors similar to sick patients in order to receive additional
+treatment. Causal inference methods can model complex systems to address changes in
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+9
+
+strategic behavior (57, 58).
+3.6. Fairness
+The fairness of a clinical model is a key concern to ensure unbiased predictions for medical
+tasks, and probabilistic models help enable the deﬁning, auditing, and ameliorating this
+algorithmic bias. Because of the high-stakes setting of healthcare, researchers have raised
+numerous concerns about fairness and algorithmic bias in clinical contexts (59, 60, 61).
+There exist many deﬁnitions of algorithmic fairness (62, 63, 64, 65), and probabilistic models
+are crucial to representing and addressing many notions of ethics and disparity.
+One branch of fairness focuses on the notion of individual fairness (63). This fairness
+deﬁnition implies that a patient with similar characteristics to another patient should not
+receive worse clinical care than the other. A key requirement is that similar patients receive
+similar probabilistic predictions, using some notion of similarity (65).
+Another branch of concerns analyzes fairness across groups. In this family of fairness
+deﬁnitions, algorithmic bias is assessed based on known and pre-deﬁned sensitive attribute
+groups, e.g. race, gender, socioeconomic status. Because some deﬁnitions are impossible to
+satisfy simultaneously (66, 67), deﬁnition choice is crucial in diﬀerent health settings.
+The fundamental idea across group fairness deﬁnitions is that a deﬁnition of performance
+should not diﬀer across groups and statistically signiﬁcant violations of this assumption
+could prove algorithmic bias.
+Algorithmic fairness:
+The study of
+deﬁnitions related to
+the justice of model
+predictions
+Individual fairness:
+The principle that
+similar individuals
+should be treated
+similarly
+Fairness across
+groups: The
+principle that
+pre-deﬁned patient
+groups should
+receive similar model
+performance
+Although not all deﬁnitions of group fairness require probabilistic models, we outline a
+few examples of group fairness deﬁnitions that leverage the data distributions. For example,
+the two groups may not adjust to changes in data shift in the same way. Probabilistic
+models can learn models on the source data distribution that will adapt to a target data
+distribution while satisfying group fairness deﬁnitions (68). In another example, examining
+the calibration of an algorithm across each group may reveal larger disparities (69, 70), and
+health settings may require calibration across multiple subgroups (71). Lastly, probabilistic
+models can reason about regression on continuous outcome variables, for example in the
+case of health care costs. When comparing predictions for healthcare costs between patients
+with mental health and substance abuse disorders compared to patients without them, the
+sensitive attribute group and the residual error from a learned model should be independent.
+Researchers can then measure the covariance between the sensitive attribute group and the
+residual error as a proxy for independence to detect the level of algorithmic bias in the
+model (72).
+The quest to propose solutions to algorithmic bias is still in its infancy.
+Notably,
+any balance between algorithmic fairness and accuracy may be ethically challenging for
+health settings. Although non-probabilistic models solutions to algorithmic bias certainly
+exist (60), probabilistic models consider how to ﬁx discrimination within the constraints
+of the model. One method seeks to induce independence between model predictions and
+the sensitive attribute through a latent representation can be learned that maximizes per-
+formance and minimizes dependence on the sensitive attribute (64).
+Another approach
+alters the objective function of the predictive model to regularize for algorithmic fairness
+based on a speciﬁed deﬁnitions (73, 74). Lastly, probabilistic models can reason about the
+eﬀectiveness of additional data collection or other actions using the existing data (75).
+10
+Chen et al.
+
+4. PHENOTYPING WITH LATENT VARIABLES
+We now pivot to three major healthcare application areas where probabilistic modeling
+has been extensively used, starting with phenotyping. Phenotyping (76) is the process of
+producing concise representations of medical concepts or diagnoses composed of observable
+clinical traits that could be used to facilitate cohort selection or trait deﬁnition (77). From
+a latent variable perspective, we can hypothesize that simple latent “summaries” explain
+the variation in observed patient records, and serve as a governing factor in determining
+how diﬀerent patients will progress (78) or react to diﬀerent interventions (79). Prior work
+has identiﬁed many forms of electronic phenotyping, including rule-based methods, text
+processing, noisy data learning, and unsupervised discovery of latent phenotypes (80). We
+categorize these eﬀorts into three settings, based primarily on the amount of the level of
+label supervision used.
+Phenotype: The
+presentation of
+characteristics of an
+individual
+In some settings the goal is phenotypic matching, where phenotypes are explicitly de-
+ﬁned, and the goal is to map noisy data sources into these labels. In others the goal is
+uncovering latent phenotypes, where there is uncertainty about what phenotypic deﬁnitions
+should be, and the goal is to identify useful characterizations that could impact patient
+care (81). Semi-supervised phenotyping is a hybrid approach that straddles matching and
+discovery, where we assume that some label information is available, e.g., with the use
+of speciﬁc “anchoring” clinical terms (82, 83). Both phenotypic matching and uncovering
+latent phenotypes are visualized in Figure 3.
+In this review, we review each of these
+three settings—phenotype matching, uncovering latent phenotypes, and semi-supervised
+phenotyping—outlining key areas where probabilistic models have made, or could make, an
+impact.
+Cardiovascular function
+Renal Function
+Low
+High
+Low
+High
+Systolic Blood Pressure
+Cholesterol
+Figure 3
+Phenotyping matching (left) matches patients x with explicitly deﬁned phenotypes, here
+described in diﬀerent shades of blue as having high/low cardiovascular function and high/low
+renal function. Uncovering latent phenotypes (right) learns new phenotypes to identify useful
+characterizations through probabilistic clustering.
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+11
+
+4.1. Phenotypic Matching
+Phenotypic matching is a computational approach that involves matching or summarizing
+patient records x into validated phenotypes z. This style of phenotyping is useful when a
+meaningful classiﬁcation or alert could be automated for patients that need to be treated
+early, or more eﬃciently.
+For example, structured electronic health record (EHR) data
+in the form of International Classiﬁcation of Disease (ICD) billing codes and medication
+prescriptions have been used to detect coronary heart disease or rheumatoid arthritis (84).
+More recent work has also targeted use of natural language processing (85), with additional
+unsupervised learning of important features from the structured EHR (86). Importantly,
+phenotypic matching assumes that the existing phenotype deﬁnitions z are appropriate,
+robust and identiﬁable from the given data x.
+Known challenges in label leakage, soft
+labels, confounding and missingness must therefore be considered very carefully (87).
+Probabilistic methods could be particularly useful in phenotyping due to the inherent
+uncertainty in many phenotype deﬁnitions, which can change over time as in autism (88).
+Some work has moved to integrate notions of uncertainty into matching, either by per-
+forming large-scale phenotype estimation from observational data (89), or by visualizing
+probabilistic estimates over phenotypes for interactive veriﬁcation (90). More generally,
+models that attempt to discover phenotypes based on underlying data regularities, or use
+prior labels in a semi-supervised fashion, are well-suited for probabilities modeling.
+4.2. Uncovering Hidden Phenotypes
+Instead of matching to a known phenotype z, many problems in healthcare require iden-
+tifying potential phenotypes from data. When phenotypes are unknown, they are hidden.
+This makes ﬁnding unknown phenotypes well-suited to latent variable models. This style
+of model takes the phenotype of a person to be a latent variable z with a hypothesized
+prior distribution p(z). The latent variable controls the distribution of the observed data
+x through the likelihood p(x | z). As a whole, the model with parameters θ is pθ(z, x).
+The goal during learning is to ﬁnd parameters of the latent variable model that make the
+observed data likely.
+Typically, this is done through an approximation to the posterior
+p(z | x), which also helps compute phenotypes given an observation from a single patient.
+To illustrate, imagine that x is a vector of measured traits like hemoglobin A1C—a test
+that evaluates the average glucose in blood over the past few months, blood pressure—a
+measure of the pressure that blood exerts within arteries, and cholesterol—a waxy sub-
+stance that can develop into fatty deposits in blood vessels.
+Let the phenotype z be a
+binary variable marking a patient as belonging into one of two possible phenotypes. The
+likelihood is set up such that the phenotype is encouraged to explain relationships between
+the observed traits, e.g., blood pressure and cholesterol have a positive correlation.
+One salient example of a latent variable model is a variational autoencoders (VAEs)
+(91), where neural networks are both used to parametrize the likelihood and the posterior
+approximation. Recent work has used VAEs in a health setting to create low-dimensional
+latent representations of a phenotype feature space that additionally capture individual rates
+of change along each dimension during aging (92). We note that non-probabilistic methods
+have also identiﬁed meaningful subtypes including asthma subtypes through hierarchical
+clustering (81) and type 2 diabetes through tensor factorization (93).
+Uncovering latent phenotypes (and subcategories) often aims to discover similar patient
+subgroups that may share the same underlying disease mechanism, or treatment response
+12
+Chen et al.
+
+patterns. In conditions such as asthma, where there is heterogeneity in symptom expression
+and response to therapy, phenotyping subcategories of z into z1 . . . zk can be particularly
+useful. Data-driven methods for data-driven characterization of wheeze patterns, and the
+further discovery of biomarkers to identify phenotypes are useful, particularly in childhood
+(94, 95). Treatments themselves can also be heterogenous, and clustering them can reveal
+treatment proﬁles at a large scale that would not have been clear in a smaller sample (96).
+For example, recent work in endometriosis subtyping provides evidence of diﬀerent treat-
+ments in each of four subtypes learned in an unsupervised mixed-membership model (97).
+Importantly, while the subtypes present new knowledge, they also align well with pre-
+vious clinical knowledge about endometriosis, and reﬂect direct patient experiences with
+endometriosis.
+Probabilistic clustering of time series speciﬁcally can be high-value in clinical settings,
+because sequential clinical markers from diﬀerent patients could be heterogeonous.
+For
+instance, autoimmune diseases are known to be heterogenous, and hierarchical probabilistic
+models can be used to infer disease subtypes in such patients and explain away correlations
+that are not relevant to the question of interest (98). In more acute settings, neural networks
+and switching state autoregressive models have been used in the intensive care unit to
+predict upcoming interventions (99, 100). These estimations can be used to group patients
+that are “maximally activiating” for intervention onsets (101).
+4.3. Semi-supervised Phenotyping with Anchors
+Phenotypic matching can initially be very labor intensive, as it requires many manual gold
+standard annotations of z. In some cases, there is some strong information that can be used
+for partial phenotype matching, but other facets of the phenotype must be discovered. One
+potential solution to this is to assume that phenotype labels themselves are weak or “semi-
+supervised”, with only a few known features from data being clear conditional markers. In
+this setting, probabilistic modeling approaches can be used to identify additional features
+that correlate with the anchoring clinical terms (82, 83). Anchoring can be thought of as
+a form of noisy labelling, where observing the positive anchor ai unambiguously reveals
+the state of latent phenotype zi to be positive, but a negative anchor ai reveals nothing
+about zi, so that p(zi = 1 | ai = 1) = 1.
+Other work has similarly used anchor words
+Anchor: A speciﬁed
+feature which, if
+positive, reveal that
+the desired attribute
+is also positive
+to provide a form of supervision in topic modeling for characterizing pancreatitis outcomes
+(102).
+Further work in phenotype inference with semi-supervised approaches have used
+mixed membership models (103) to inferring binary labels for clinical condition targets
+when trained on limited samples.
+5. GENERATIVE MODELS
+Generative models refer to the class of probabilistic models trained to produce samples that
+match samples from the distribution from which observed data is collected. For example,
+given data vector x, we can sample from p(x) using a generative model to produce synthetic
+but realistic data, as shown in Figure 4. Recent advances in deep learning have led to
+promising generative models. Generative adversarial networks (GANs) (104) use two neural
+networks to ﬁrst create artiﬁcial imitations of the training data and then separately decide
+whether a given sample was genuine or counterfeit. Other models include deep likelihood
+models like normalizing ﬂows (105) where a simple initial density is transformed into a more
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+13
+
+complex one by applying a sequence of invertible transformations.
+Sampling: The act of
+generating data
+points from a given
+distribution
+In this review, we focus on three promising cases for generative models in medicine.
+First, we describe the the use of generative models to overcome data deﬁciency or ac-
+cessibility challenges in clinical data.
+Next, we describe how generative models can be
+used for clinical tasks like abnormality detection and modality translation in medical imag-
+ing. Lastly, we address the generation of viable candidates in the drug discovery process.
+Figure 4
+Generative models produce samples
+from data distribution p(x). Synthetic
+data samples (grey patients) resemble
+actual patient data (green patients)
+and are useful for many clinical
+problems including data augmentation
+and abnormality detection.
+Data augmentation. Clinical predictive mod-
+els often suﬀer from poor performance because of
+insuﬃcient data stemming from patients with rare
+conditions, labels that are costly to obtain, or other
+logistical challenges. Data augmentation using gen-
+erative models can create synthetic data that is sim-
+ilar to the true dataset of interest to mitigate the
+eﬀects of insuﬃcient data. Particularly in medical
+imaging (106), generative models can then acceler-
+ate model development that would be otherwise im-
+peded by small dataset sizes.
+Data augmentation can address small or imbal-
+anced datasets through the generation of synthetic
+datapoints. For example, GANs have been used to
+augment all three classes of liver lesions (107), to in-
+crease the number of positive examples of bone lesions (108) or brain metastases (109), and
+to provide additional red blood cell images for downstream segmentation tasks (110). Note
+that when data augmentation is applied to a dataset, the augmented data does add any
+additional information, but the augmented data can regularize the model or help mitigate
+class imbalance.
+Data augmentation can address privacy and security concerns that impede model de-
+velopment by creating synthetic data that can be shared across institutions. Researchers
+created synthetic patients using a GAN based on actual patients in a systolic blood pres-
+sure trial using GANs with diﬀerential privacy constraints. The synthetic patients were
+similar enough to the original trial patients that models trained on each dataset yielded ef-
+fectively the same results (111). Machine learning models trained using the synthetic data
+generalized well to the original training data. Because sharing individual-level data across
+clinical institutions often requires close collaboration and extensive data use agreements,
+data augmentation and distribution of privacy-preserving synthetic data can circumvent
+these restrictions.
+Clinical task assistance. Generative models can assist with clinical tasks including
+abnormality detection and modality translation in medical imaging (112). With regards to
+abnormality detection, images from healthy patients are used to learn a latent space. Then,
+a reference medical image potentially containing an abnormality is encoded into the healthy
+latent space. Samples are drawn from the latent space near the encoded image and compared
+against the reference medical image. Any diﬀerences between the generated samples and the
+reference medical image are highlighted and analyzed for medical abnormalities (113, 114).
+The task of translation of medical imaging between modalities — e.g., positron emission
+tomography (PET) scan to computed tomography (CT) scan — is necessary for tasks like
+attenuation correction of PET data using CT scans. Two diﬀerent encoders are learned
+14
+Chen et al.
+
+for two medical imaging modalities with the same latent space. Then, one image can be
+translated into another modality by mapping ﬁrst to the latent space and then decoding to
+the second modality (115).
+Drug development.
+Currently the development of de novo drug-like compounds
+relies on the identiﬁcation of new molecular entities. While prior methods have relied on
+manual selection of candidates or molecular predictors to estimate viability, sampling from
+generative models can create large virtual chemical libraries, which can then be screened
+more eﬃciently for in silico drug discovery purposes.
+Methods for candidate generation focus on use cases that are goal-based or distribution-
+based (116). Goal-based describes methods that generate molecular structures that perform
+well according to a scoped goal like structural or physiochemical features, and they do not
+necessarily rely on probabilistic models.
+Distribution-based methods observe acceptable
+molecules and generate similar molecular structures, a task well-suited for generative mod-
+els. Using GANs, researchers have produced novel small-molecule organicestructures (117).
+However, molecules generated by GANs may lack diversity (118), a problem that other
+generative models such as VAEs do not suﬀer (5). One model combines distribution-based
+and goal-based approaches by learning a latent representation of molecules using a VAE
+and then using reinforcement learning using a reward function, similar to the goal-based
+scores, to explore the space (119).
+6. REINFORCEMENT LEARNING FOR TREATMENT PLANNING
+Sequential decision making is a core part of healthcare (120, 121, 122, 123, 7, 124, 125, 126),
+and probabilistic models enable a variety of approaches including characterizing randomness
+in patient disease progression and stochasticity of clinician intervention practices (6, 127,
+120).
+Consider a patient admitted to the intensive care unit (ICU) as they develop a
+respiratory failure. Clinicians will attempt to manage the patient’s condition with a series
+of advanced respiratory interventions over the coming hours/days with the goal of restoring
+their function for a successful discharge and survival. During the ICU stay, a sequence of
+interventions are done. For example, starting with a mechanical ventilation for urgent and
+initial resuscitation of the patient, to prevent further deterioration. After this is normalized,
+further interventions like more therapeutic treatments and additional diﬀerential diagnosis
+follow.
+This is an example of clinical care that is a series of interventions to improve
+the chances of patient survival. Similarly, treating progression of chronic conditions is a
+sequential set of interventions to manage disease severity, just over months/years of disease
+progression. In machine learning, the closest analogue to modeling this problem is known as
+Reinforcement learning (RL). The primary goal of an RL algorithm can be to either learn
+a function or a distribution over possible interventions given patient state (policy learning)
+or evaluating the potential reward of an existing policy (policy evaluation).
+RL can be seen as a generalization of supervised machine learning learning where the
+goal is to make a sequence of optimal decisions to maximize long term rewards (126) (patient
+survival in the ICU example). In this setup, a clinician (learning agent) interacts within
+an environment (patients) via actions (ventilation and other interventions) it performs,
+observes the changes in the environment (patient state) in order to successfully discharge
+the patient (maximize a longer term numerical reward) (128).
+Reinforcement
+learning: The study
+of learning a
+distribution over
+interventions for
+treatment planning
+Rewards: A
+measurement of
+value of decisions
+taken (e.g. patient
+survival)
+Actions: The set of
+interventions
+State: The collection
+of patient traits that
+can inform the next
+action
+Policy: The
+distribution over
+interventions given
+the patient state
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+15
+
+Stochasticity of state transitions
+Partial observability
+Stochastic Policies
+ventilation
+medication
+medication
+ventilation
+medication
+No action
+No action
+..
+ventilation
+medication
+Figure 5
+Components of an RL based treatment planning model that should be modeled probabilistically.
+Patient progression through a treatment plan is stochastic (blue distribution over state
+transitions) with shades of blue representing possible states. A treatment plan or a policy itself,
+learned from clinical data and stochastic clinical practice can lead to randomness in interventions
+creating a distribution over potential interventions (e.g. a patient can be ventilated or given
+medication or simply be monitored for longer–no-action). This resulting distribution is denoted as
+a discrete distribution over interventions on the top-right where the shades of red denote the type
+of intervention. Finally, many aspects of a patient may be unobserved (green+blue shaded
+patients represent unobserved patient states in green) but critical to treatment planning.
+Modeling this partial observability (the green distribution denotes this randomness) is beneﬁcial
+for policy learning.
+6.1. Model-based RL
+Canonical RL assumes the ability to conduct experiments in the target environment, which
+allows the learning algorithm to collect samples to learn a reasonable policy, called “model-
+free” learning, explored for diabetes management (129) and sepsis management (130, 7).
+In model-free learning, an RL agent does not model the underlying transition dynamics
+of the data, which are how a patient state changes based on their current state and the
+current intervention performed by the clinician. In healthcare, it is not feasible to conduct
+online experiments, due to ethical concerns around patient safety, neither is it easy to
+collect vast amounts of data. Embedding prior knowledge about transition dynamics is
+therefore key in healthcare and can reduce the need to collect many samples. This is usually
+done via “model-based” RL, which involves explicitly modeling the transition dynamics to
+learn a policy. For example, consider the problem of managing type-1 diabetes, where the
+goal would be to determine amount of insulin to administer based on continuous glucose
+monitoring (6). While the underlying physiological glucagon kinetics and secretion are well
+characterized (131), carbohydrate intake of a patient is stochastic (6).
+This makes the
+transition dynamics of the patient’s glucose model partially stochastic (132) and should be
+modeled accordingly for healthcare RL tasks.
+6.2. Stochastic Policies
+Clinical data is rife with diﬀerent forms of uncertainty.
+The nature of uncertainty can
+be due to noisy or even incomplete observations of patient state. In Section 3.4, we fo-
+cused on capturing uncertainty for predictive and diagnostics tasks.
+Here, we focus on
+16
+Chen et al.
+
+how uncertainty should be accounted for treatment planning in sequential decision making.
+First, there is inherent randomness in how patients are treated as well as in healthcare
+data-collection. For example, dosages can diﬀer across hospital practices; so can reporting
+standards and practices (133, 134). There may also be some uncertainty between when a
+drug was administered versus when the intervention was recorded. Modeling policies deter-
+ministically can then lead to misspeciﬁcation in RL problem formulation. In the extreme
+case where data-collection and recording artefacts are modeled without any wiggle room to
+model the randomness, one runs the risk of blind imitation of such artefacts rather than
+learning clinically meaningful treatment policies.
+Most RL methods (policy learning or evaluation) in healthcare fall in the framework
+of oﬀ-policy RL. Oﬀ-policy learning refers to policy learning when observational data on
+patient progression and interventions are available from a clinician’s treatment path, called
+the behavior policy. The goal is to either learn a better policy or estimate the reward of a
+diﬀerent policy on these patients. Oﬀ-policy means the algorithm is unable to interact with
+the environment (patients) to collect new samples. Here again one of the main statistical
+challenge is sample eﬃciency to learn a better policy.
+Along with modeling the transition dynamics, the inability to collect additional data (by
+actively intervening on patients) can be mitigated by framing oﬀ-policy learning as a causal
+(and therefore a probabilistic) estimation problem: would the patient have survived had
+they not been treated? This framing allows the RL algorithm to explore how outcomes could
+have changed under a slightly diﬀerent set of interventions without actual experimentation.
+Another way to address this is if a similar patient happened to be in the dataset who was
+not treated and one could similarly estimate a good treatment policy based on the estimated
+eﬃcacy of the treatment. Causal modeling oﬀers an in-between solution, where by making
+certain assumptions on the underlying probabilistic data-generating mechanisms, one could
+sample such counterfactual trajectories from the original observed data itself (135). Thus,
+with fewer eﬀective number of samples, reliable stochastic policies can be learned with a
+probabilistic approach to RL. In healthcare, the beneﬁts of causal probabilistic modeling
+have become a complementary toolbox that can be leveraged for training reliable policies.
+6.3. Partial Observability
+In many cases, clinicians’ interventions are done with more implicit information than avail-
+able to an RL algorithm. This problem is known as partial observability and is yet another
+source of uncertainty in reliable policy learning. The conventional MDP framework can
+be augmented to handle partial observability, known as Partially Observable MDPs. The
+added modeling complexity now involves learning an observation function p(o|s), which
+characterizes likely observations o an RL algorithm perceives based on the potential states
+s of the patient. Confounding in observational health data is one such example source of
+partial observability (133). Consider a case where socio-economic status is unavailable to an
+RL agent to learn from but was used by clinicians, who may have used costlier treatments
+for wealthy patients. The goal is then to learn a policy when a behavior policy operated
+on more (and complete state information) compared to what is available to the RL algo-
+rithm. In this case, learning with partial observations involves estimating the posterior over
+unobserved states p(s|·) (136, 137). The beneﬁts of such probabilistic inference have been
+demonstrated for oﬀ-policy evaluation in the presence of such confounding for treatment
+planning (137).
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+17
+
+7. DISCUSSION
+Machine learning for healthcare holds promise to reshape healthcare. In this review, we give
+a broad overview of the role that probabilistic modeling plays in medicine. This review does
+not touch on all of the areas of healthcare that beneﬁt from probabilistic modeling. For
+example, causal inference (138) is a central question in medicine. Probabilistic methods have
+been used to estimate causal eﬀects in HIV treatment (139), and in general, probabilistic
+techniques have been shown to give some of the most accurate inferences at a well-known
+causal inference challenge (140). As another example, healthcare often involves time-series
+data, which beneﬁts from a probabilistic approach for providing uncertainty estimates over
+forecasts (141).
+We believe that a probabilistic perspective can yield signiﬁcant beneﬁts when building
+machine learning models for healthcare; this review covers speciﬁc examples in building
+predictive models, phenotyping, sample generation, and learning policies. We encourage
+further research into both methodologies and applications with probabilistic machine learn-
+ing models in healthcare.
+DISCLOSURE STATEMENT
+The authors are not aware of any aﬃliations, memberships, funding, or ﬁnancial holdings
+that might be perceived as aﬀecting the objectivity of this review.
+ACKNOWLEDGMENTS
+The authors thank No´emie Elhadad, Rahul G. Krishnan, Peter Schulam, and Pete Szolovits
+for helpful and useful feedback. This work was supported in part by a CIFAR AI Chair at
+the Vector Institute (MG) and Microsoft Research (MG).
+LITERATURE CITED
+1. S. R. Steinhubl, E. D. Muse, and E. J. Topol, “Can mobile health technologies transform
+health care?,” Jama, vol. 310, no. 22, pp. 2395–2396, 2013.
+2. R. Poplin, A. V. Varadarajan, K. Blumer, Y. Liu, M. V. McConnell, G. S. Corrado, L. Peng,
+and D. R. Webster, “Prediction of cardiovascular risk factors from retinal fundus photographs
+via deep learning,” Nature Biomedical Engineering, vol. 2, no. 3, p. 158, 2018.
+3. S. Nemati, A. Holder, F. Razmi, M. D. Stanley, G. D. Cliﬀord, and T. G. Buchman, “An
+interpretable machine learning model for accurate prediction of sepsis in the icu,” Critical
+care medicine, vol. 46, no. 4, p. 547, 2018.
+4. R. Pivovarov and N. Elhadad, “Automated methods for the summarization of electronic health
+records,” Journal of the American Medical Informatics Association, vol. 22, no. 5, pp. 938–
+947, 2015.
+5. M. H. Segler, T. Kogej, C. Tyrchan, and M. P. Waller, “Generating focused molecule libraries
+for drug discovery with recurrent neural networks,” ACS central science, vol. 4, no. 1, pp. 120–
+131, 2018.
+6. I. Fox, J. Lee, R. Busui, and J. Wiens, “Deep reinforcement learning for closed-loop blood
+glucose control,” 2020.
+7. M. Komorowski, A. Gordon, L. Celi, and A. Faisal, “A markov decision process to suggest
+optimal treatment of severe infections in intensive care,” in Neural Information Processing
+Systems Workshop on Machine Learning for Health, 2016.
+18
+Chen et al.
+
+8. J. V. Dillon, I. Langmore, D. Tran, E. Brevdo, S. Vasudevan, D. Moore, B. Patton, A. Alemi,
+M. Hoﬀman, and R. A. Saurous, “Tensorﬂow distributions,” arXiv preprint arXiv:1711.10604,
+2017.
+9. E. Bingham, J. P. Chen, M. Jankowiak, F. Obermeyer, N. Pradhan, T. Karaletsos, R. Singh,
+P. Szerlip, P. Horsfall, and N. D. Goodman, “Pyro: Deep universal probabilistic program-
+ming,” The Journal of Machine Learning Research, vol. 20, no. 1, pp. 973–978, 2019.
+10. X. Miscouridou, A. Perotte, N. Elhadad, and R. Ranganath, “Deep survival analysis: Non-
+parametrics and missingness,” in Machine Learning for Healthcare Conference, pp. 244–256,
+2018.
+11. Z. Che, S. Purushotham, K. Cho, D. Sontag, and Y. Liu, “Recurrent neural networks for
+multivariate time series with missing values,” Scientiﬁc reports, vol. 8, no. 1, pp. 1–12, 2018.
+12. R. Ranganath, A. Perotte, N. Elhadad, and D. Blei, “Deep survival analysis,” in Machine
+Learning for Healthcare Conference, pp. 101–114, 2016.
+13. I. R. White, P. Royston, and A. M. Wood, “Multiple imputation using chained equations:
+issues and guidance for practice,” Statistics in medicine, vol. 30, no. 4, pp. 377–399, 2011.
+14. R. J. Little and D. B. Rubin, Statistical analysis with missing data, vol. 793. John Wiley &
+Sons, 2019.
+15. Y. Zhao and M. Udell, “Missing value imputation for mixed data through gaussian copula,”
+arXiv preprint arXiv:1910.12845, 2019.
+16. K. Mohan and J. Pearl, “Graphical models for processing missing data,” arXiv preprint
+arXiv:1801.03583, 2018.
+17. M. Sadinle and J. P. Reiter, “Sequentially additive nonignorable missing data modelling using
+auxiliary marginal information,” Biometrika, vol. 106, no. 4, pp. 889–911, 2019.
+18. B. Sun, L. Liu, W. Miao, K. Wirth, J. Robins, and E. J. T. Tchetgen, “Semiparametric
+estimation with data missing not at random using an instrumental variable,” Statistica Sinica,
+vol. 28, no. 4, pp. 1965–1983, 2018.
+19. J. HYDE, “Testing survival under right censoring and left truncation,” Biometrika, vol. 64,
+1977.
+20. C. Lee, W. R. Zame, J. Yoon, and M. van der Schaar, “Deephit: A deep learning approach to
+survival analysis with competing risks.,” in AAAI, pp. 2314–2321, 2018.
+21. J. L. Katzman, U. Shaham, A. Cloninger, J. Bates, T. Jiang, and Y. Kluger, “Deepsurv:
+personalized treatment recommender system using a cox proportional hazards deep neural
+network,” BMC medical research methodology, vol. 18, no. 1, p. 24, 2018.
+22. G. W. Brier, “Veriﬁcation of forecasts expressed in terms of probability,” Monthly weather
+review, vol. 78, no. 1, pp. 1–3, 1950.
+23. H. Ishwaran, U. B. Kogalur, E. H. Blackstone, M. S. Lauer, et al., “Random survival forests,”
+The annals of applied statistics, vol. 2, no. 3, pp. 841–860, 2008.
+24. W. Nelson, “Hazard plotting for incomplete failure data,” Journal of Quality Technology,
+vol. 1, no. 1, pp. 27–52, 1969.
+25. K.-M. Leung, R. M. Elashoﬀ, and A. A. Aﬁﬁ, “Censoring issues in survival analysis,” Annual
+review of public health, vol. 18, no. 1, pp. 83–104, 1997.
+26. H. Cho, N. P. Jewell, and M. R. Kosorok, “Interval censored recursive forests,” arXiv preprint
+arXiv:1912.09983, 2019.
+27. P. W. Wilson, R. B. DAgostino, D. Levy, A. M. Belanger, H. Silbershatz, and W. B. Kannel,
+“Prediction of coronary heart disease using risk factor categories,” Circulation, vol. 97, no. 18,
+pp. 1837–1847, 1998.
+28. C. Guo, G. Pleiss, Y. Sun, and K. Q. Weinberger, “On calibration of modern neural networks,”
+in International Conference on Machine Learning, pp. 1321–1330, 2017.
+29. S. R. Pfohl, T. Duan, D. Y. Ding, and N. H. Shah, “Counterfactual reasoning for fair clinical
+risk prediction,” in Machine Learning for Healthcare Conference, pp. 325–358, 2019.
+30. B. Van Calster, D. J. McLernon, M. Van Smeden, L. Wynants, and E. W. Steyerberg, “Cal-
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+19
+
+ibration: the achilles heel of predictive analytics,” BMC medicine, vol. 17, no. 1, pp. 1–7,
+2019.
+31. M. P. Naeini, G. Cooper, and M. Hauskrecht, “Obtaining well calibrated probabilities using
+bayesian binning,” in Twenty-Ninth AAAI Conference on Artiﬁcial Intelligence, 2015.
+32. J. C. Platt, “Probabilistic outputs for support vector machines and comparisons to regularized
+likelihood methods,” in ADVANCES IN LARGE MARGIN CLASSIFIERS, pp. 61–74, MIT
+Press, 1999.
+33. N. Chakravarti, “Isotonic median regression: a linear programming approach,” Mathematics
+of operations research, vol. 14, no. 2, pp. 303–308, 1989.
+34. B. Zadrozny and C. Elkan, “Transforming classiﬁer scores into accurate multiclass probability
+estimates,” in Proceedings of the eighth ACM SIGKDD international conference on Knowledge
+discovery and data mining, pp. 694–699, 2002.
+35. B. Zadrozny, “Reducing multiclass to binary by coupling probability estimates,” in Advances
+in neural information processing systems, pp. 1041–1048, 2002.
+36. A. Kumar, P. S. Liang, and T. Ma, “Veriﬁed uncertainty calibration,” in Advances in Neural
+Information Processing Systems, pp. 3792–3803, 2019.
+37. M. Raghu, K. Blumer, R. Sayres, Z. Obermeyer, B. Kleinberg, S. Mullainathan, and J. Klein-
+berg, “Direct uncertainty prediction for medical second opinions,” in International Conference
+on Machine Learning, pp. 5281–5290, 2019.
+38. N. G. De Bruijn, Asymptotic methods in analysis, vol. 4. Courier Corporation, 1981.
+39. B. Efron and G. Gong, “A leisurely look at the bootstrap, the jackknife, and cross-validation,”
+The American Statistician, vol. 37, no. 1, pp. 36–48, 1983.
+40. B. Lakshminarayanan, A. Pritzel, and C. Blundell, “Simple and scalable predictive uncertainty
+estimation using deep ensembles,” in Advances in neural information processing systems,
+pp. 6402–6413, 2017.
+41. Y. Gal, “Uncertainty in deep learning,” University of Cambridge, vol. 1, p. 3, 2016.
+42. Y. Gal and Z. Ghahramani, “Dropout as a bayesian approximation:
+Representing model
+uncertainty in deep learning,” in international conference on machine learning, pp. 1050–
+1059, 2016.
+43. P. Gr¨unwald, T. Van Ommen, et al., “Inconsistency of bayesian inference for misspeciﬁed
+linear models, and a proposal for repairing it,” Bayesian Analysis, vol. 12, no. 4, pp. 1069–
+1103, 2017.
+44. M. W. Dusenberry, D. Tran, E. Choi, J. Kemp, J. Nixon, G. Jerfel, K. Heller, and A. M. Dai,
+“Analyzing the role of model uncertainty for electronic health records,” in Proceedings of the
+ACM Conference on Health, Inference, and Learning, pp. 204–213, 2020.
+45. J. R. Zech, M. A. Badgeley, M. Liu, A. B. Costa, J. J. Titano, and E. K. Oermann, “Variable
+generalization performance of a deep learning model to detect pneumonia in chest radiographs:
+a cross-sectional study,” PLoS medicine, vol. 15, no. 11, p. e1002683, 2018.
+46. B. Nestor, M. McDermott, W. Boag, G. Berner, T. Naumann, M. C. Hughes, A. Golden-
+berg, and M. Ghassemi, “Feature robustness in non-stationary health records: caveats to
+deployable model performance in common clinical machine learning tasks,” arXiv preprint
+arXiv:1908.00690, 2019.
+47. J. B. Croft, A. G. Wheaton, Y. Liu, F. Xu, H. Lu, K. A. Matthews, T. J. Cunningham,
+Y. Wang, and J. B. Holt, “Urban-rural county and state diﬀerences in chronic obstructive
+pulmonary diseaseunited states, 2015,” Morbidity and Mortality Weekly Report, vol. 67, no. 7,
+p. 205, 2018.
+48. P. Yang, G. Dumont, and J. M. Ansermino, “Adaptive change detection in heart rate trend
+monitoring in anesthetized children,” IEEE transactions on biomedical engineering, vol. 53,
+no. 11, pp. 2211–2219, 2006.
+49. R. Malladi, G. P. Kalamangalam, and B. Aazhang, “Online bayesian change point detection
+algorithms for segmentation of epileptic activity,” in 2013 Asilomar Conference on Signals,
+20
+Chen et al.
+
+Systems and Computers, pp. 1833–1837, IEEE, 2013.
+50. H. Shimodaira, “Improving predictive inference under covariate shift by weighting the log-
+likelihood function,” Journal of statistical planning and inference, vol. 90, no. 2, pp. 227–244,
+2000.
+51. M. Sugiyama, B. Blankertz, M. Krauledat, G. Dornhege, and K.-R. M¨uller, “Importance-
+weighted cross-validation for covariate shift,” in Joint Pattern Recognition Symposium,
+pp. 354–363, Springer, 2006.
+52. A. Subbaswamy and S. Saria, “From development to deployment: dataset shift, causality, and
+shift-stable models in health ai,” Biostatistics, vol. 21, no. 2, pp. 345–352, 2020.
+53. S. Thorsteinsdottir, P. W. Dickman, O. Landgren, C. Blimark, M. Hultcrantz, I. Turesson,
+M. Bj¨orkholm, and S. Y. Kristinsson, “Dramatically improved survival in multiple myeloma
+patients in the recent decade: Results from a swedish population-based study,” Haematologica,
+vol. 103, no. 9, p. e412, 2018.
+54. R. Caruana, Y. Lou, J. Gehrke, P. Koch, M. Sturm, and N. Elhadad, “Intelligible models for
+healthcare: Predicting pneumonia risk and hospital 30-day readmission,” in Proceedings of
+the 21th ACM SIGKDD international conference on knowledge discovery and data mining,
+pp. 1721–1730, 2015.
+55. P. Schulam and S. Saria, “Reliable decision support using counterfactual models,” in Advances
+in Neural Information Processing Systems, pp. 1697–1708, 2017.
+56. J. C. Perdomo, T. Zrnic, C. Mendler-D¨unner, and M. Hardt, “Performative prediction,” arXiv
+preprint arXiv:2002.06673, 2020.
+57. L. Bottou, J. Peters, J. Qui˜nonero-Candela, D. X. Charles, D. M. Chickering, E. Portugaly,
+D. Ray, P. Simard, and E. Snelson, “Counterfactual reasoning and learning systems: The
+example of computational advertising,” The Journal of Machine Learning Research, vol. 14,
+no. 1, pp. 3207–3260, 2013.
+58. S. Milli, J. Miller, A. D. Dragan, and M. Hardt, “The social cost of strategic classiﬁcation,” in
+Proceedings of the Conference on Fairness, Accountability, and Transparency, pp. 230–239,
+2019.
+59. A. S. Adamson and A. Smith, “Machine learning and health care disparities in dermatology,”
+JAMA dermatology, vol. 154, no. 11, pp. 1247–1248, 2018.
+60. Z. Obermeyer, B. Powers, C. Vogeli, and S. Mullainathan, “Dissecting racial bias in an algo-
+rithm used to manage the health of populations,” Science, vol. 366, no. 6464, pp. 447–453,
+2019.
+61. A. Rajkomar, M. Hardt, M. D. Howell, G. Corrado, and M. H. Chin, “Ensuring fairness in
+machine learning to advance health equity,” Annals of internal medicine, vol. 169, no. 12,
+pp. 866–872, 2018.
+62. M. Hardt, E. Price, and N. Srebro, “Equality of opportunity in supervised learning,” in Ad-
+vances in neural information processing systems, pp. 3315–3323, 2016.
+63. C. Dwork, M. Hardt, T. Pitassi, O. Reingold, and R. Zemel, “Fairness through awareness,” in
+Proceedings of the 3rd innovations in theoretical computer science conference, pp. 214–226,
+2012.
+64. R. Zemel, Y. Wu, K. Swersky, T. Pitassi, and C. Dwork, “Learning fair representations,” in
+International Conference on Machine Learning, pp. 325–333, 2013.
+65. T. Bolukbasi, K.-W. Chang, J. Y. Zou, V. Saligrama, and A. T. Kalai, “Man is to computer
+programmer as woman is to homemaker? debiasing word embeddings,” in Advances in neural
+information processing systems, pp. 4349–4357, 2016.
+66. A. Chouldechova, “Fair prediction with disparate impact: A study of bias in recidivism pre-
+diction instruments,” Big data, vol. 5, no. 2, pp. 153–163, 2017.
+67. J. Kleinberg, S. Mullainathan, and M. Raghavan, “Inherent trade-oﬀs in the fair determination
+of risk scores,” arXiv preprint arXiv:1609.05807, 2016.
+68. H. Singh, R. Singh, V. Mhasawade, and R. Chunara, “Fair predictors under distribution shift,”
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+21
+
+arXiv preprint arXiv:1911.00677, 2019.
+69. G. Pleiss, M. Raghavan, F. Wu, J. Kleinberg, and K. Q. Weinberger, “On fairness and cali-
+bration,” in Advances in Neural Information Processing Systems, pp. 5680–5689, 2017.
+70. C. Simoiu, S. Corbett-Davies, S. Goel, et al., “The problem of infra-marginality in outcome
+tests for discrimination,” The Annals of Applied Statistics, vol. 11, no. 3, pp. 1193–1216, 2017.
+71. ´U. H´ebert-Johnson, M. Kim, O. Reingold, and G. Rothblum, “Multicalibration: Calibra-
+tion for the (computationally-identiﬁable) masses,” in International Conference on Machine
+Learning, pp. 1939–1948, 2018.
+72. A. Zink and S. Rose, “Fair regression for health care spending,” Biometrics.
+73. Y. Bechavod and K. Ligett, “Learning fair classiﬁers: A regularization-inspired approach,”
+arXiv preprint arXiv:1707.00044, pp. 1733–1782, 2017.
+74. M. B. Zafar, I. Valera, M. G. Rogriguez, and K. P. Gummadi, “Fairness constraints: Mecha-
+nisms for fair classiﬁcation,” in Artiﬁcial Intelligence and Statistics, pp. 962–970, 2017.
+75. I. Chen, F. D. Johansson, and D. Sontag, “Why is my classiﬁer discriminatory?,” in Advances
+in Neural Information Processing Systems, pp. 3539–3550, 2018.
+76. R. L. Richesson, W. E. Hammond, M. Nahm, D. Wixted, G. E. Simon, J. G. Robinson,
+A. E. Bauck, D. Cifelli, M. M. Smerek, J. Dickerson, et al., “Electronic health records based
+phenotyping in next-generation clinical trials: a perspective from the nih health care systems
+collaboratory,” Journal of the American Medical Informatics Association, vol. 20, no. e2,
+pp. e226–e231, 2013.
+77. J. M. Banda, M. Seneviratne, T. Hernandez-Boussard, and N. H. Shah, “Advances in elec-
+tronic phenotyping: from rule-based deﬁnitions to machine learning models,” Annual review
+of biomedical data science, vol. 1, pp. 53–68, 2018.
+78. A. M. Alaa and M. van der Schaar, “Attentive state-space modeling of disease progression,”
+in Advances in Neural Information Processing Systems, pp. 11334–11344, 2019.
+79. M. Ghassemi, M. Wu, M. Feng, L. A. Celi, P. Szolovits, and F. Doshi-Velez, “Understanding
+vasopressor intervention and weaning: Risk prediction in a public heterogeneous clinical time
+series database,” Journal of the American Medical Informatics Association, p. ocw138, 2016.
+80. J. M. Banda, M. Seneviratne, T. Hernandez-Boussard, and N. H. Shah, “Advances in electronic
+phenotyping: From rule-based deﬁnitions to machine learning models,” Annual Review of
+Biomedical Data Science, vol. 1, no. 1, pp. 53–68, 2018.
+81. F. Doshi-Velez, Y. Ge, and I. Kohane, “Comorbidity clusters in autism spectrum disorders:
+an electronic health record time-series analysis,” Pediatrics, vol. 133, no. 1, pp. e54–e63, 2014.
+82. Y. Halpern, S. Horng, Y. Choi, and D. Sontag, “Electronic medical record phenotyping using
+the anchor and learn framework,” Journal of the American Medical Informatics Association,
+vol. 23, no. 4, pp. 731–740, 2016.
+83. S. Yu, Y. Ma, J. Gronsbell, T. Cai, A. N. Ananthakrishnan, V. S. Gainer, S. E. Churchill,
+P. Szolovits, S. N. Murphy, I. S. Kohane, et al., “Enabling phenotypic big data with phenorm,”
+Journal of the American Medical Informatics Association, vol. 25, no. 1, pp. 54–60, 2018.
+84. J. C. Kirby, P. Speltz, L. V. Rasmussen, M. Basford, O. Gottesman, P. L. Peissig, J. A.
+Pacheco, G. Tromp, J. Pathak, D. S. Carrell, et al., “Phekb: a catalog and workﬂow for cre-
+ating electronic phenotype algorithms for transportability,” Journal of the American Medical
+Informatics Association, vol. 23, no. 6, pp. 1046–1052, 2016.
+85. K. P. Liao, J. Sun, T. A. Cai, N. Link, C. Hong, J. Huang, J. E. Huﬀman, J. Gronsbell,
+Y. Zhang, Y.-L. Ho, et al., “High-throughput multimodal automated phenotyping (map) with
+application to phewas,” Journal of the American Medical Informatics Association, vol. 26,
+no. 11, pp. 1255–1262, 2019.
+86. Y. Zhang, T. Cai, S. Yu, K. Cho, C. Hong, J. Sun, J. Huang, Y.-L. Ho, A. N. Ananthakrishnan,
+Z. Xia, et al., “High-throughput phenotyping with electronic medical record data using a
+common semi-supervised approach (phecap),” Nature Protocols, vol. 14, no. 12, pp. 3426–
+3444, 2019.
+22
+Chen et al.
+
+87. M. Ghassemi, T. Naumann, P. Schulam, A. L. Beam, I. Y. Chen, and R. Ranganath, “Practical
+guidance on artiﬁcial intelligence for health-care data,” The Lancet Digital Health, vol. 1, no. 4,
+pp. e157–e159, 2019.
+88. N. S. Greenspan, “Autism, evolution, and the inadequacy of spectrum,” Evolution, medicine,
+and public health, vol. 2018, no. 1, pp. 213–216, 2018.
+89. R. Pivovarov, A. J. Perotte, E. Grave, J. Angiolillo, C. H. Wiggins, and N. Elhadad, “Learning
+probabilistic phenotypes from heterogeneous ehr data,” Journal of biomedical informatics,
+vol. 58, pp. 156–165, 2015.
+90. J. S. Hirsch, J. S. Tanenbaum, S. Lipsky Gorman, C. Liu, E. Schmitz, D. Hashorva, A. Ervits,
+D. Vawdrey, M. Sturm, and N. Elhadad, “Harvest, a longitudinal patient record summarizer,”
+Journal of the American Medical Informatics Association, vol. 22, no. 2, pp. 263–274, 2015.
+91. D. P. Kingma and M. Welling, “Auto-encoding variational bayes,” The 2nd International
+Conference on Learning Representations (ICLR), 2013.
+92. E. Pierson, P. W. Koh, T. Hashimoto, D. Koller, J. Leskovec, N. Eriksson, and P. Liang,
+“Inferring multidimensional rates of aging from cross-sectional data,” Proceedings of machine
+learning research, vol. 89, p. 97, 2019.
+93. J. Henderson, H. He, B. A. Malin, J. C. Denny, A. N. Kho, J. Ghosh, and J. C. Ho, “Phe-
+notyping through semi-supervised tensor factorization (psst),” in AMIA Annual Symposium
+Proceedings, vol. 2018, p. 564, American Medical Informatics Association, 2018.
+94. D. C. Belgrave, A. Custovic, and A. Simpson, “Characterizing wheeze phenotypes to identify
+endotypes of childhood asthma, and the implications for future management,” Expert review
+of clinical immunology, vol. 9, no. 10, pp. 921–936, 2013.
+95. M. Deliu, D. Belgrave, M. Sperrin, I. Buchan, and A. Custovic, “Asthma phenotypes in
+childhood,” Expert review of clinical immunology, vol. 13, no. 7, pp. 705–713, 2017.
+96. G. Hripcsak, P. B. Ryan, J. D. Duke, N. H. Shah, R. W. Park, V. Huser, M. A. Suchard,
+M. J. Schuemie, F. J. DeFalco, A. Perotte, et al., “Characterizing treatment pathways at scale
+using the ohdsi network,” Proceedings of the National Academy of Sciences, vol. 113, no. 27,
+pp. 7329–7336, 2016.
+97. I. Urteaga, M. McKillop, and N. Elhadad, “Learning endometriosis phenotypes from patient-
+generated data,” NPJ digital medicine, vol. 3, no. 1, pp. 1–14, 2020.
+98. P. Schulam, F. Wigley, and S. Saria, “Clustering longitudinal clinical marker trajectories from
+electronic health data: Applications to phenotyping and endotype discovery,” in Twenty-Ninth
+AAAI Conference on Artiﬁcial Intelligence, 2015.
+99. M. Ghassemi, M. Wu, M. C. Hughes, P. Szolovits, and F. Doshi-Velez, “Predicting intervention
+onset in the icu with switching state space models,” AMIA Summits on Translational Science
+Proceedings, vol. 2017, p. 82, 2017.
+100. H. Suresh, P. Szolovits, and M. Ghassemi, “The use of autoencoders for discovering patient
+phenotypes,” arXiv preprint arXiv:1703.07004, 2017.
+101. H. Suresh, N. Hunt, A. Johnson, L. A. Celi, P. Szolovits, and M. Ghassemi, “Clinical inter-
+vention prediction and understanding with deep neural networks,” in Machine Learning for
+Healthcare Conference, pp. 322–337, 2017.
+102. G. H. Chen and J. C. Weiss, “Survival-supervised topic modeling with anchor words: Char-
+acterizing pancreatitis outcomes,” arXiv preprint arXiv:1712.00535, 2017.
+103. V. A. Rodriguez and A. Perotte, “Phenotype inference with semi-supervised mixed member-
+ship models,” Proceedings of machine learning research, vol. 106, p. 304, 2019.
+104. I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville,
+and Y. Bengio, “Generative adversarial nets,” in Advances in neural information processing
+systems, pp. 2672–2680, 2014.
+105. D. Rezende and S. Mohamed, “Variational inference with normalizing ﬂows,” in International
+Conference on Machine Learning, pp. 1530–1538, 2015.
+106. C. Shorten and T. M. Khoshgoftaar, “A survey on image data augmentation for deep learning,”
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+23
+
+Journal of Big Data, vol. 6, no. 1, p. 60, 2019.
+107. M. Frid-Adar, I. Diamant, E. Klang, M. Amitai, J. Goldberger, and H. Greenspan, “Gan-
+based synthetic medical image augmentation for increased cnn performance in liver lesion
+classiﬁcation,” Neurocomputing, vol. 321, pp. 321–331, 2018.
+108. A. Gupta, S. Venkatesh, S. Chopra, and C. Ledig, “Generative image translation for data
+augmentation of bone lesion pathology,” in International Conference on Medical Imaging
+with Deep Learning, pp. 225–235, 2019.
+109. C. Han, K. Murao, T. Noguchi, Y. Kawata, F. Uchiyama, L. Rundo, H. Nakayama, and
+S. Satoh, “Learning more with less: Conditional pggan-based data augmentation for brain
+metastases detection using highly-rough annotation on mr images,” in Proceedings of the 28th
+ACM International Conference on Information and Knowledge Management, pp. 119–127,
+2019.
+110. O. Bailo, D. Ham, and Y. Min Shin, “Red blood cell image generation for data augmentation
+using conditional generative adversarial networks,” in Proceedings of the IEEE Conference on
+Computer Vision and Pattern Recognition Workshops, pp. 0–0, 2019.
+111. B. K. Beaulieu-Jones, Z. S. Wu, C. Williams, R. Lee, S. P. Bhavnani, J. B. Byrd, and C. S.
+Greene, “Privacy-preserving generative deep neural networks support clinical data sharing,”
+Circulation: Cardiovascular Quality and Outcomes, vol. 12, no. 7, p. e005122, 2019.
+112. S. Kazeminia, C. Baur, A. Kuijper, B. van Ginneken, N. Navab, S. Albarqouni, and
+A. Mukhopadhyay, “Gans for medical image analysis,” arXiv preprint arXiv:1809.06222, 2018.
+113. X. Chen, N. Pawlowski, M. Rajchl, B. Glocker, and E. Konukoglu, “Deep generative models in
+the real-world: An open challenge from medical imaging,” arXiv preprint arXiv:1806.05452,
+2018.
+114. C. F. Baumgartner, L. M. Koch, K. Can Tezcan, J. Xi Ang, and E. Konukoglu, “Visual feature
+attribution using wasserstein gans,” in Proceedings of the IEEE Conference on Computer
+Vision and Pattern Recognition, pp. 8309–8319, 2018.
+115. K. Armanious, C. Jiang, M. Fischer, T. K¨ustner, T. Hepp, K. Nikolaou, S. Gatidis, and
+B. Yang, “Medgan: Medical image translation using gans,” Computerized Medical Imaging
+and Graphics, vol. 79, p. 101684, 2020.
+116. N. Brown, M. Fiscato, M. H. Segler, and A. C. Vaucher, “Guacamol: benchmarking models
+for de novo molecular design,” Journal of chemical information and modeling, vol. 59, no. 3,
+pp. 1096–1108, 2019.
+117. E. Putin, A. Asadulaev, Q. Vanhaelen, Y. Ivanenkov, A. V. Aladinskaya, A. Aliper, and
+A. Zhavoronkov, “Adversarial threshold neural computer for molecular de novo design,” Molec-
+ular pharmaceutics, vol. 15, no. 10, pp. 4386–4397, 2018.
+118. K. Preuer, P. Renz, T. Unterthiner, S. Hochreiter, and G. Klambauer, “Fr´echet chemnet
+distance: a metric for generative models for molecules in drug discovery,” Journal of chemical
+information and modeling, vol. 58, no. 9, pp. 1736–1741, 2018.
+119. A. Zhavoronkov, Y. A. Ivanenkov, A. Aliper, M. S. Veselov, V. A. Aladinskiy, A. V. Aladin-
+skaya, V. A. Terentiev, D. A. Polykovskiy, M. D. Kuznetsov, A. Asadulaev, et al., “Deep
+learning enables rapid identiﬁcation of potent ddr1 kinase inhibitors,” Nature biotechnology,
+vol. 37, no. 9, pp. 1038–1040, 2019.
+120. J. Futoma, M. C. Hughes, and F. Doshi-Velez, “Popcorn: Partially observed prediction con-
+strained reinforcement learning,” The 23rd International Conference on Artiﬁcial Intelligence
+and Statistics, 2020.
+121. S. M. Shortreed, E. Laber, D. J. Lizotte, T. S. Stroup, J. Pineau, and S. A. Murphy, “Inform-
+ing sequential clinical decision-making through reinforcement learning: an empirical study,”
+Machine learning, vol. 84, no. 1-2, pp. 109–136, 2011.
+122. C.-H. Chang, M. Mai, and A. Goldenberg, “Dynamic measurement scheduling for event fore-
+casting using deep rl,” in International Conference on Machine Learning, pp. 951–960, 2019.
+123. N. Prasad, L.-F. Cheng, C. Chivers, M. Draugelis, and B. E. Engelhardt, “A reinforcement
+24
+Chen et al.
+
+learning approach to weaning of mechanical ventilation in intensive care units,” Uncertainty
+in Artiﬁcial Intelligence, 2017.
+124. J. D. Mart´ın-Guerrero, F. Gomez, E. Soria-Olivas, J. Schmidhuber, M. Climente-Mart´ı, and
+N. V. Jim´enez-Torres, “A reinforcement learning approach for individualizing erythropoietin
+dosages in hemodialysis patients,” Expert Systems with Applications, vol. 36, no. 6, pp. 9737–
+9742, 2009.
+125. L. Li, M. Komorowski, and A. A. Faisal, “The actor search tree critic (astc) for oﬀ-policy
+pomdp learning in medical decision making,” arXiv preprint arXiv:1805.11548, 2018.
+126. C. Yu, J. Liu, and S. Nemati, “Reinforcement learning in healthcare: a survey,” arXiv preprint
+arXiv:1908.08796, 2019.
+127. O. Gottesman, F. Johansson, M. Komorowski, A. Faisal, D. Sontag, F. Doshi-Velez, and L. A.
+Celi, “Guidelines for reinforcement learning in healthcare,” Nat Med, vol. 25, no. 1, pp. 16–18,
+2019.
+128. R. S. Sutton and A. G. Barto, Reinforcement learning: An introduction. MIT press, 2018.
+129. M. O. M. Javad, S. O. Agboola, K. Jethwani, A. Zeid, and S. Kamarthi, “A reinforcement
+learning–based method for management of type 1 diabetes: Exploratory study,” JMIR dia-
+betes, vol. 4, no. 3, p. e12905, 2019.
+130. A. Raghu, M. Komorowski, L. A. Celi, P. Szolovits, and M. Ghassemi, “Continuous state-space
+models for optimal sepsis treatment: a deep reinforcement learning approach,” in Machine
+Learning for Healthcare Conference, pp. 147–163, 2017.
+131. C. D. Man, F. Micheletto, D. Lv, M. Breton, B. Kovatchev, and C. Cobelli, “The uva/padova
+type 1 diabetes simulator: new features,” Journal of diabetes science and technology, vol. 8,
+no. 1, pp. 26–34, 2014.
+132. J. A. Harris and F. G. Benedict, A biometric study of basal metabolism in man. No. 279,
+Carnegie institution of Washington, 1919.
+133. O. Gottesman, F. Johansson, M. Komorowski, A. Faisal, D. Sontag, F. Doshi-Velez, and L. A.
+Celi, “Guidelines for reinforcement learning in healthcare,” Nat Med, vol. 25, no. 1, pp. 16–18,
+2019.
+134. J. Van Parys, “Variation in physician practice styles within and across emergency depart-
+ments,” PloS one, vol. 11, no. 8, p. e0159882, 2016.
+135. M. Oberst and D. Sontag, “Counterfactual oﬀ-policy evaluation with gumbel-max structural
+causal models,” in International Conference on Machine Learning, pp. 4881–4890, 2019.
+136. B. Sallans, “Learning factored representations for partially observable markov decision pro-
+cesses,” in Advances in neural information processing systems, pp. 1050–1056, 2000.
+137. G. Tennenholtz, S. Mannor, and U. Shalit, “Oﬀ-policy evaluation in partially observable en-
+vironments,” Association for the Advancement of Artiﬁcial Intelligence, pp. 10276–10283,
+2019.
+138. M. A. Hern´an and J. M. Robins, “Causal inference,” 2020.
+139. L. E. Cain, J. M. Robins, E. Lanoy, R. Logan, D. Costagliola, and M. A. Hern´an, “When to
+start treatment? a systematic approach to the comparison of dynamic regimes using observa-
+tional data,” The international journal of biostatistics, vol. 6, no. 2, 2010.
+140. V. Dorie, J. Hill, U. Shalit, M. Scott, D. Cervone, et al., “Automated versus do-it-yourself
+methods for causal inference: Lessons learned from a data analysis competition,” Statistical
+Science, vol. 34, no. 1, pp. 43–68, 2019.
+141. R. G. Krishnan, U. Shalit, and D. Sontag, “Structured inference networks for nonlinear state
+space models,” in AAAI, 2017.
+www.annualreviews.org • Probabilistic machine learning for Healthcare
+25

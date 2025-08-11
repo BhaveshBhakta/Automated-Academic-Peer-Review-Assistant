@@ -1,0 +1,7 @@
+Title: Ten-year Survival Prediction for Breast Cancer Patients
+Published: 2019-11-02T19:53:32Z
+Link: http://arxiv.org/abs/1911.00776v1
+
+Abstract:
+This report assesses different machine learning approaches to 10-year
+survival prediction of breast cancer patients.

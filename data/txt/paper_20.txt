@@ -1,0 +1,9 @@
+Title: Mathematical Perspective of Machine Learning
+Published: 2020-07-03T05:26:02Z
+Link: http://arxiv.org/abs/2007.01503v1
+
+Abstract:
+We take a closer look at some theoretical challenges of Machine Learning as a
+function approximation, gradient descent as the default optimization algorithm,
+limitations of fixed length and width networks and a different approach to RNNs
+from a mathematical perspective.

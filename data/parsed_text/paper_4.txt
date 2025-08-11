@@ -1,0 +1,944 @@
+Machine Learning for Clinical Predictive Analytics
+Wei-Hung Weng 1
+Learning Objectives
+• Understand the basics of machine learning
+techniques and the reasons behind why they
+are useful for solving clinical prediction
+problems.
+• Understand the intuition behind some ma-
+chine learning models, including regression,
+decision trees, and support vector machines.
+• Understand how to apply these models to
+clinical prediction problems using publicly
+available datasets via case studies.
+1. Machine Learning for Healthcare
+1.1. Introduction
+In this chapter, we provide a brief overview of applying ma-
+chine learning techniques for clinical prediction tasks. We
+begin with a quick introduction to the concepts of machine
+learning, and outline some of the most common machine
+learning algorithms. Next, we demonstrate how to apply
+the algorithms with appropriate toolkits to conduct machine
+learning experiments for clinical prediction tasks.
+This chapter is composed of ﬁve sections. First, we will
+explain why machine learning techniques are helpful for
+researchers in solving clinical prediction problems (section
+1). Understanding the motivations behind machine learn-
+ing approaches in healthcare are essential, since precision
+and accuracy are often critical in healthcare problems, and
+everything from diagnostic decisions to predictive clinical
+analytics could dramatically beneﬁt from data-based pro-
+cesses with improved efﬁciency and reliability. In the sec-
+ond section, we will introduce several important concepts in
+machine learning in a colloquial manner, such as learning
+scenarios, objective/target function, error and loss function
+and metrics, optimization and model validation, and ﬁnally
+a summary of model selection methods (section 2). These
+topics will help us utilize machine learning algorithms in
+an appropriate way. Following that, we will introduce some
+1MIT CSAIL, Cambridge, MA, USA. Correspondence to: Wei-
+Hung Weng <ckbjimmy@mit.edu>.
+popular machine learning algorithms for prediction prob-
+lems (section 3). For example, logistic regression, decision
+tree and support vector machine. Then, we will discuss
+some limitations and pitfalls of using the machine learning
+approach (section 4). Lastly, we will provide case studies
+using real intensive care unit (ICU) data from a publicly
+available dataset, PhysioNet Challenge 2012, as well as the
+breast tumor data from Breast Cancer Wisconsin (Diagnos-
+tic) Database, and summarize what we have mentioned in
+the chapter (section 5).
+1.2. Why machine learning?
+Machine learning is an interdisciplinary ﬁeld which consists
+of computer science, mathematics, and statistics. It is also
+an approach toward building intelligent machines for artiﬁ-
+cial intelligence (AI). Different from rule-based symbolic
+AI, the idea of utilizing machine learning for AI is to learn
+from data (examples and experiences). Instead of explicitly
+programming hand-crafted rules, we construct a model for
+prediction by feeding data into a machine learning algorithm,
+and the algorithm will learn an optimized function based on
+the data and the speciﬁc task. Such data-driven methodol-
+ogy is now the state-of-the-art approach of various research
+domains, such as computer vision (Krizhevsky et al., 2012),
+natural language processing (NLP) (Yala et al., 2017), and
+speech to text translation (Wu et al., 2016; Chung et al.,
+2018; 2019), for many complex real-world applications.
+Due to the increased popularity of the electronic health
+record (EHR) system in recent years, massive quantities of
+healthcare data have been generated (Henry et al., 2016).
+Machine learning for healthcare therefore becomes an
+emerging applied domain. Recently, researchers and clin-
+icians have started applying machine learning algorithms
+to solve the problems of clinical outcome prediction (Ghas-
+semi et al., 2014), diagnosis (Gulshan et al., 2016; Esteva
+et al., 2017; Liu et al., 2017; Chung & Weng, 2017; Nagpal
+et al., 2018), treatment and optimal decision making (Raghu
+et al., 2017; Weng et al., 2017a; Komorowski et al., 2018)
+using data in different modalities, such as structured lab
+measurements (Pivovarov et al., 2015), claims data (Doshi-
+Velez et al., 2014; Pivovarov et al., 2015; Choi et al., 2016),
+free texts (Pivovarov et al., 2015; Weng & Szolovits, 2018;
+Weng et al., 2019b), images (Gulshan et al., 2016; Esteva
+et al., 2017; Bejnordi et al., 2017; Chen et al., 2019a), physi-
+arXiv:1909.09246v1  [cs.LG]  19 Sep 2019
+
+Machine Learning for Clinical Predictive Analytics
+ological signals (Lehman et al., 2018), and even cross-modal
+information (Hsu et al., 2018; Liu et al., 2019).
+Instead of traditional ad-hoc healthcare data analytics,
+which usually requires expert-intensive efforts for collecting
+data and designing limited hand-crafted features, machine
+learning-based approaches help us recognize patterns inside
+the data and allow us to perform personalized clinical predic-
+tion with more generalizable prediction models (Gehrmann
+et al., 2018). They help us maximize the utilization of mas-
+sive but complex EHR data. In this chapter, we will focus on
+how to tackle clinical prediction problems using a machine
+learning-based approach.
+2. General Concepts of Learning
+2.1. Learning scenario for clinical prediction
+We start with how to frame your clinical problem into a
+machine learning prediction problem with a simple example.
+Assuming that you want to build a model for predicting the
+mortality of ICU patients with continuous renal replacement
+therapy and you have a large ICU database, which includes
+hundreds of variables such as vital signs, lab data, demo-
+graphics, medications, and even clinical notes and reports,
+the clinical problem can be reframed as a task: “Given data
+with hundreds of input variables, I want to learn a model
+from the data that can correctly make a prediction given a
+new datapoint.” That is, the output of the function (model)
+should be as close as possible to the outcome of what exactly
+happened (the ground truth). Machine learning algorithm is
+here to help you to ﬁnd the best function from a set of func-
+tions. This is a typical machine learning scenario, which is
+termed supervised learning. In such a case, you may do the
+following steps:
+• Deﬁne the outcome of your task
+• Consult with domain experts to identify important fea-
+tures/variables
+• Select an appropriate algorithm (or design a new ma-
+chine learning algorithm) with a suitable parameter
+selection
+• Find an optimized model with a subset of data (training
+data) with the algorithm
+• Evaluate the model with another subset of data (testing
+data) with appropriate metrics
+• Deploy the prediction model on real-world data
+At the end of the chapter, we will show an exercise notebook
+that will help you go through the concepts mentioned above.
+2.2. Machine learning scenarios
+There are many machine learning scenarios, such as su-
+pervised learning, unsupervised learning, semi-supervised
+learning, reinforcement learning, and transfer learning. We
+will only focus on the ﬁrst two main categories, supervised
+learning and unsupervised learning. Both of the scenarios
+expect to learn from the underlying data distribution, or
+to put it simply, ﬁnd patterns inside data. The difference
+between them is that you have annotated data under the
+supervised scenario but only unlabelled data under unsuper-
+vised learning scenario.
+2.2.1. SUPERVISED LEARNING
+Supervised learning is the most common scenario for practi-
+cal machine learning tasks if the outcome is well-deﬁned,
+or example, if you are predicting patient mortality, hospital
+length of stay, or drug response. In general, the super-
+vised learning algorithm will try to learn how to build a
+classiﬁer for predicting the outcome variable y given input
+x, which is a mapping function f where y = f(x). The
+classiﬁer will be built by an algorithm along with a set
+of data {x1, ..., xn} with the corresponding outcome label
+{y1, ..., yn}.Supervised learning can be categorized by two
+criteria, either by type of prediction or by type of model.
+First, it can be separated into regression or classiﬁcation
+problems. For predicting continuous outcomes, using re-
+gression methods such as linear regression is suitable. For
+class prediction, classiﬁcation algorithms such as logistic
+regression, naive Bayes, decision trees or support vector
+machines (SVM) (Cortes & Vapnik, 1995) will be a better
+choice. For example, linear regression is suitable for chil-
+dren height prediction problem whereas SVM is better for
+binary mortality prediction.
+Regarding the goal of the learning process, a discriminative
+model such as regression, trees and SVMs can learn the deci-
+sion boundary within the data.However, a generative model
+like naive Bayes will learn the probability distributions of
+the data.
+2.2.2. UNSUPERVISED LEARNING
+Without corresponding output variables (y), the unsuper-
+vised learning algorithms discover latent structures and pat-
+terns directly from the given unlabeled data {x1, ..., xn}.
+There is no ground truth in the unsupervised learning, there-
+fore, the machine will only ﬁnd associations or clusters
+inside the data.For example, we may discover hidden sub-
+types in a disease using an unsupervised approach (Ghas-
+semi et al., 2014).
+
+Machine Learning for Clinical Predictive Analytics
+2.2.3. OTHER SCENARIO
+Other scenarios such as reinforcement learning (RL) frame
+a decision making problem into a computer agent interac-
+tion with a dynamic environment (Silver et al., 2016), in
+which the agent attempts to reach the best reward based
+on feedback when it navigates the state and action space.
+Using a clinical scenario as an example, the agent (the RL
+algorithm) will try to improve the model parameters based
+on iteratively simulating the state (patient condition) and
+action (giving ﬂuid or vasopressor for hypotension), obtain
+the feedback reward (mortality or not), and eventually con-
+verge to a model that may yield optimal decisions (Raghu
+et al., 2017).
+2.3. Find the best function
+To estimate and ﬁnd the best mapping function in the above
+scenarios, the process of optimization is needed. However,
+we do need to deﬁne some criteria to tell us how well the
+function (model) can predict the task. Therefore, we need
+a loss function and a cost function (objective function) for
+this purpose.
+Loss function deﬁnes the difference between the output
+of model y and the real data value ˆy. Different machine
+learning algorithms may use different loss functions, for
+example, least squared error for linear regression, logistic
+loss for logistic regression, and hinge loss for SVM (Table 1).
+Cost function is the summation of loss functions of each
+training data point. Using loss functions, we can deﬁne
+the cost function to evaluate model performance. Through
+loss and cost functions, we can compute the performance of
+functions on the whole dataset.
+In unsupervised learning setting, the algorithms have no
+real data value to compute the loss function. In such case,
+we can use the input itself as the output and compute the
+difference between input and output. For example, we use
+reconstruction loss for autoencoder, a kind of unsupervised
+learning algorithms, to evaluate whether the model can well
+reconstruct the input from hidden states inside the model.
+There is a mathematical proof for this learning problem to
+explain why machine learning is feasible even if the function
+space is inﬁnite. Since our goal is not to explain the mathe-
+matics and mechanism of machine learning, further details
+on why there is a ﬁnite bound on the generalization error are
+not mentioned here. For readers who are interested in the
+theory of machine learning, such as Hoeffding’s inequality
+that gives a probability upper bound, VapnikChervonenkis
+(VC) dimension and VC generalization bound, please refer
+to the textbooks (Abu-Mostafa et al., 2012).
+2.4. Metrics
+Choosing an appropriate numeric evaluation metric for opti-
+mization is crucial. Different evaluation metrics are applied
+to different scenarios and problems.
+2.4.1. SUPERVISED LEARNING
+In classiﬁcation problems, accuracy, precision/positive pre-
+dictive value (PPV), recall/sensitivity, speciﬁcity, and the F1
+score are usually used. We use a confusion matrix to show
+the relation between these metrics 2.
+The area under receiver operating curve (AUROC) is a very
+common metric, which sums up the area under the curve in
+the plot with x-axis of false positive rate (FPR, also known
+as 1-speciﬁcity), and y-axis of true positive rate (TPR) 1.
+FPR and TPR values may change based on the threshold of
+your subjective choice.
+Figure 1. Example of AUROC.
+In a regression problem, the adjusted R-squared value is
+commonly used for evaluation. The R-squared value, also
+known as the coefﬁcient of determination, follows the equa-
+tion and is deﬁned by the total sum of squares (SStot) and
+the residual sum of squares (SSres). The detailed equations
+are as follows:
+R2 = 1 −SSres
+SStot
+= 1 −
+Pm
+i=1(yi −f(xi))2
+Pm
+i=1(yi −ˆyi)2
+Adjusted R2 = 1 −(1 −R2)(m −1)
+m −n −1
+There are also other metrics for regression, such as Akaike
+information criterion (AIC) and Bayesian information crite-
+rion (BIC), for different study purposes.
+2.4.2. UNSUPERVISED LEARNING
+Since there are no ground truth labels for unsupervised sce-
+narios, evaluation metrics of unsupervised learning settings
+are relatively difﬁcult to deﬁne and usually depend on the
+algorithms in question. For example, the Calinski-Harabaz
+index and silhouette coefﬁcient have been used to evaluate
+k-means clustering. Reconstruction error is used for autoen-
+
+Machine Learning for Clinical Predictive Analytics
+Task
+Error type
+Loss function
+Note
+Regression
+Mean-squared error
+1
+n
+Pn
+i=1(yi −ˆyi)2
+Easy to learn but sensitive to outliers
+(MSE, L2 loss)
+Mean absolute error
+1
+n
+Pn
+i=1 |yi −ˆyi|
+Robust to outliers but not differentiable
+(MAE, L1 loss)
+Classiﬁcation
+Cross entropy
+= Log loss
+−1
+n
+Pn
+i=1[yi log( ˆyi) + (1 −yi) log(1 −ˆyi)]
+= −1
+n
+Pn
+i=1 pi log qi
+Quantify the difference between
+two probability distributions
+Hinge loss
+1
+n
+Pn
+i=1 max(0, 1 −yi ˆyi)
+For support vector machine
+KL divergence
+DKL(p||q) = P
+i pi(log pi
+qi )
+Quantify the difference between
+two probability distributions
+Table 1. Examples of commonly-used loss functions in machine learning.
+Predicted
+True
+False
+Actual
+True
+True positive (TP)
+False negative (FN)
+Type II error
+Recall = Sensntivity =
+TP
+TP+FN
+False
+False positive (FP)
+Type I error
+True negative (TN)
+Speciﬁcity =
+TN
+TN+FP
+Precision =
+TP
+TP+FP
+Accuracy =
+TP+TN
+TP+TN+FP+FN
+F1 = 2×Precision×Recall
+Precision+Recall
+Table 2. Commonly-used metrics in machine learning.
+coder, a kind of neural network architecture for learning
+data representation.
+2.5. Model Validation
+The next step after deciding the algorithm is to get your data
+ready for training a model for your task. In practice, we
+split the whole dataset into three pieces:
+• Training set for model training. You will run the se-
+lected machine learning algorithm only on this subset.
+• Development (a.k.a. dev, validation) set, also called
+hold-out, for parameter tuning and feature selection.
+This subset is only for optimization and model valida-
+tion.
+• Testing set for evaluating model performance. We only
+apply the model for prediction here, but wont change
+any content in the model at this moment.
+There are a few things that we need to keep in mind:
+• It is better to have your training, dev and testing sets
+all from the same data distribution instead of having
+them too different (e.g. training/dev on male patients
+but testing on female patients), otherwise you may face
+the problem of overﬁtting, in which your model will
+ﬁt the data too well in training or dev sets but ﬁnd it
+difﬁcult to generalize to the test data. In this situation,
+the trained model will not be able to be applied to other
+cases.
+• It is important to prevent using any data in the dev set
+or testing set for model training. Test data leakage, i.e.
+having part of testing data while training phase, may
+cause the overﬁtting of the model to your test data and
+erroneously gives you a high performance but a bad
+model.
+There is no consensus on the relative proportions of the
+three subsets. However, people usually split out 20-30% of
+the whole dataset for their testing set. The proportion can
+be smaller if you have more data.
+2.5.1. CROSS-VALIDATION
+The other commonly used approach for model validation
+is k-fold cross validation (CV). The goal of k-fold CV is
+to reduce the overﬁtting of the initial training set by further
+training several models with the same algorithm but with
+different training/dev set splitting.
+In k-fold CV, we split the whole dataset into k folds and
+train the model k times. In each training, we iteratively
+leave one different fold out for validation, and train on the
+remaining k −1 folds. The ﬁnal error is the average of
+errors over k times of training 2. In practice, we usually use
+k=5 or 10. The extreme case for n cases is n-fold CV, which
+
+Machine Learning for Clinical Predictive Analytics
+is also called leave-one-out CV (LOOCV).
+Figure 2. K-fold cross-validation.
+Please keep in mind that the testing set is completely ex-
+cluded from the process of CV. Only training and dev sets
+are involved in this process.
+2.6. Diagnostics
+After the ﬁrst iteration of model training and evaluation, you
+may ﬁnd that the trained model does not perform well on the
+unseen testing data. To address the issue of error in machine
+learning, we need to conduct some diagnostics regarding
+bias and variance in the model in order to achieve a model
+with low bias and low variance.
+2.6.1. BIAS AND VARIANCE
+The bias of a model is the difference between the expected
+prediction and the correct model that we try to predict for
+given data points. That is, it is the algorithm’s error rate
+on training set. This is an underﬁtting problem, which
+the model can’t capture the trend of the data well due to
+excessively simple model, and one potential solution is
+to make the model more complex, which can be done by
+reducing regularization (section 2.6.2), or conﬁguring and
+adding more input features. For example, stacking more
+layers if you are using a deep learning approach. However,
+it is possible that the outcome of complex model is high
+variance.
+The variance of a model is the variability of the model
+prediction for given data points. It is the model error rate
+difference between training and dev sets. Problems of high
+variance are usually related to the issue of overﬁtting. i.e.
+hard to generalize to unseen data. The possible solution is to
+simplify the model, such as using regularization, reducing
+the number of features, or add more training data. Yet the
+simpler model may also suffer from the issue of high bias.
+High bias and high variance can happen simultaneously with
+very bad models. To achieve the optimal error rate, a.k.a.
+Bayes error rate, which is an unavoidable bias from the most
+optimized model, we need to do iterative experiments to
+ﬁnd the optimal bias and variance tradeoff.
+Finally, a good practice of investigating bias and variance
+is to plot the informative learning curve with training and
+validation errors. In Figure 3 and Table 3 we demonstrate a
+few cases of diagnostics as examples.
+Figure 3. Bias and variance.
+2.6.2. REGULARIZATION
+The goal of regularization is to prevent model overﬁtting
+and high variance. The most common regularization tech-
+niques include Least absolute shrinkage and selection op-
+erator (LASSO regression, L1-regularization) (Tibshirani,
+1996), ridge regression (L2-regression) (Hoerl & Kennard,
+1970), and elastic net regression (a linear combination of L1
+and L2 regularization) (Zou & Hastie, 2005).
+In practice, we add a weighted penalty term λ to the cost
+function as a regularization. For L1-regularization, we add
+the absolute value of the magnitude of coefﬁcient as penalty
+term, and in L2-regularization we add the squared value of
+magnitude instead (Table 4).
+L1-regularization is also a good technique for feature se-
+lection since it can ”shrink” the coefﬁcients of less impor-
+tant features to zero and remove them. In contrast, L2-
+regularization just makes the coefﬁcients smaller, but not to
+zero.
+2.7. Error analysis
+It is an important practice to construct your ﬁrst prediction
+pipeline as soon as possible and iteratively improve its per-
+formance by error analysis. Error analysis is a critical step
+to examine the performance between your model and the
+optimized one. To do the analysis, it is necessary to manu-
+ally go through some erroneously predicted data from the
+dev set.
+The error analysis can help you understand potential prob-
+lems in the current algorithm setting. For example, the
+misclassiﬁed cases usually come from speciﬁc classes (e.g.
+patients with cardiovascular issues might get confused with
+those with renal problems since there are some shared patho-
+
+Machine Learning for Clinical Predictive Analytics
+Training error
+Validation error
+Approach
+High bias
+High
+Low
+Increase complexity
+High variance
+Low
+High
+Decrease complexity
+Add more data
+Table 3. The characteristic of high bias and high variance.
+Regularization
+Equation
+L1 (LASSO)
+Pm
+i=1(yi −Pn
+j=1 βjxij)2 + λ Pn
+j=1 |βj|
+L2 (Ridge)
+Pm
+i=1(yi −Pn
+j=1 βjxij)2 + λ Pn
+j=1 β2
+j
+Table 4. L1 and L2-regularized logistic regression.
+logical features between two organ systems) or inputs with
+speciﬁc conditions (Weng et al., 2017b). Such misclassiﬁca-
+tion can be prevented by changing to more complex model
+architecture (e.g. neural networks), or adding more features
+(e.g. combining word- and concept-level features), in order
+to help distinguish the classes.
+2.8. Ablation analysis
+Ablation analysis is a critical step for identifying impor-
+tant factors in the model. Once you obtain an ideal model,
+it is necessary to compare it with some simple but robust
+models, such as linear or logistic regression model. This
+step is also essential for research projects, since the readers
+of your work will want to know what factors and methods
+are related to the improvement of model performance. For
+example, the deep learning approach of clinical document
+deidentiﬁcation outperforms traditional natural language
+processing approach. In the paper of using neural network
+for deidentiﬁcation (Dernoncourt et al., 2017), the authors
+demonstrate that the character-level token embedding tech-
+nique had the greatest effect on model performance, and
+this became the critical factor of their study.
+3. Learning Algorithms
+In this section, we brieﬂy introduce the concepts of some
+algorithm families that can be used in the clinical predic-
+tion tasks. For supervised learning, we will discuss linear
+models, tree-based models and SVM. For unsupervised
+learning, we will discuss the concepts of clustering and di-
+mensionality reduction algorithms. We will skip the neural
+network method in this chapter. Please refer to program-
+ming tutorial part 3 or deep learning textbook for further
+information (Goodfellow et al., 2016).
+3.1. Supervised learning
+3.1.1. LINEAR MODELS
+Linear models are commonly used not only in machine
+learning but also in statistical analysis. They are widely
+adopted in the clinical world and can usually be provided
+as baseline models for clinical machine learning tasks. In
+this class of algorithms, we usually use linear regression for
+regression problems and logistic regression for classiﬁcation
+problems.
+The pros of linear models include their interpretability, less
+computation, as well as less complexity comparing to other
+classical machine learning algorithms. The cons of them
+are their inferior performance. However, these are common
+trade-off features in model selection. It is still worthwhile
+to start from this simple but powerful family of algorithms.
+3.1.2. TREE-BASED MODELS
+Tree-based models can be used for both regression and
+classiﬁcation problems. Decision tree, also known as clas-
+siﬁcation and regression trees (CART), is one of the most
+common tree-based models (Breiman, 2017). It follows the
+steps below to ﬁnd the best tree:
+• It looks across all possible thresholds across all possi-
+ble features and picks the single feature split that best
+separates the data
+• The data is split on that feature at a speciﬁc threshold
+that yields the highest performance
+• It iteratively repeats the above two steps until reaching
+the maximal tree depth, or until all the leaves are pure
+There are many parameters that should be considered while
+using the decision tree algorithm. The following are some
+important parameters:
+• Splitting criteria: by Gini index or entropy
+
+Machine Learning for Clinical Predictive Analytics
+• Tree size: tree depth, tree pruning
+• Number of samples: minimal samples in a leaf, or
+minimal sample to split a node
+The biggest advantage of a decision tree is providing model
+interpretability and actionable decision. Since the tree is
+represented in a binary way, the trained tree model can
+be easily converted into a set of rules. For example, in
+the paper the authors utilized CART to create a series of
+clinical rules (Fonarow et al., 2005). However, decision trees
+may have the issue of high variance and yield an inferior
+performance.
+Random forest is another tree-based algorithm that
+combines the idea of bagging and subsampling fea-
+tures (Breiman, 2001). In brief, it tries to ensemble the
+results and performances of a number of decision trees that
+were built by randomly selected sets of features. The algo-
+rithm can be explained as follows:
+• Pick a random subset of features
+• Create a bootstrap sample of data (randomly resample
+the data)
+• Build a decision tree on this data
+• Iteratively perform the above steps until termination
+Random forest is a robust classiﬁer that usually works well
+on most of the supervised learning problems, but a main
+concern is model interpretability. There are also other tree-
+based models such as adaptive boosting (Adaboost) and
+gradient boosting algorithms, which attempt to combine
+multiple weaker learners into a stronger model (Freund
+et al., 1999; Friedman, 2001).
+3.1.3. SUPPORT VECTOR MACHINE (SVM)
+SVM is a very powerful family of machine learning algo-
+rithms (Cortes & Vapnik, 1995). The goal of SVM is trying
+to ﬁnd a hyperplane (e.g. a line in 2D, a plane in 3D, or
+a n-dimension structure in a n + 1 dimensions space) to
+separate data points into two sides, and the hyperplane has
+to maximize the minimal distance from the sentinel data
+points, support vectors, to the hyperplane 4.
+SVM also works for non-linear separable data. It uses a
+technique called “kernel trick” that linearly splits the data
+in another vector space, then converts the space back to
+the original one later 5. The commonly used kernels in-
+clude linear kernel, radial basis function (RBF) kernel and
+polynomial kernel.
+Regarding the optimization, we used hinge loss to train
+SVM. The pros of using SVM is its superior performance,
+Figure 4. Hyperplane of SVM to linearly separate samples.
+Figure 5. Kernel trick of SVM.
+yet the model’s inferior interpretability limits its applications
+in the healthcare domain.
+3.2. Unsupervised learning
+In the previous section, we mentioned that the goal of un-
+supervised learning is to discover hidden patterns inside
+data. We can use clustering algorithms to aggregate data
+points into several clusters and investigate the characteristics
+of each cluster. We can also use dimensionality reduction
+algorithms to transform a high-dimensional into a smaller-
+dimensional vector space for further machine learning steps.
+3.2.1. CLUSTERING
+K-means clustering, Expectation-Maximization (EM) al-
+gorithm, hierarchical clustering are all common clustering
+methods. In this section, we will just introduce k-means
+clustering. The goal of k-means clustering is to ﬁnd latent
+groups in the data, with the number of groups represented
+by the variable k.
+The simpliﬁed steps of k-means clustering are (Figure 6):
+• Randomly initializing k points as the centroids of the
+k clusters
+• Assigning data points to the nearest centroid and form-
+ing clusters
+• Recomputing and updating centroids based on the
+mean value of data points in the cluster
+• Repeating step 2 and 3 until convergence
+
+Machine Learning for Clinical Predictive Analytics
+Figure 6. Steps of k-means clustering.
+The k-means algorithm is guaranteed to converge to a ﬁnal
+result. However, this converged state may be local optimum
+and therefore need to experiment several times to explore
+the variability of results.
+The obtained ﬁnal k centroids, as well as the cluster labels
+of data points can all serve as new features for further ma-
+chine learning tasks, as well be shown in Section 9 of the
+“Applied Statistical Learning in Python” chapter. Regarding
+choosing the cluster number k, there are several techniques
+for k value validation. The most common methods include
+elbow method, silhouette coefﬁcient, also Calinski-Harabaz
+index. However, it is very useful to decide k if you already
+have some clinical domain insights about potential cluster
+number.
+3.2.2. DIMENSIONALITY REDUCTION
+While dealing with clinical data, it is possible that you need
+to face with a very high-dimensional but sparse dataset.
+Such characteristics may decrease the model performance
+even if you use top performing machine algorithms such as
+SVM, random forest or even deep learning due to the risk
+of overﬁtting. A potential solution is to utilize the power of
+dimensionality reduction algorithms to convert the dataset
+into lower dimensional vector space.Principal component
+analysis (PCA) is a method that ﬁnds the principal com-
+ponents of the data by transforming data points into a new
+coordinate system (Jolliffe, 2011). The ﬁrst axis of the new
+coordinate system corresponds to the ﬁrst principal compo-
+nent (PC1), which explains the most variance in the data
+and can serve as the most important feature of the dataset.
+PCA is a linear algorithm and therefore it is hard to interpret
+the complex polynomial relationship between features. Also,
+PCA may not be able to represent similar data points of high-
+dimensional data that are close together since the linear
+algorithm does not consider non-linear manifolds.
+The non-linear dimensionality reduction algorithm, t-
+Distributed Stochastic Neighbor Embedding (t-SNE), be-
+comes an alternative when we want to explore or visualize
+the high-dimensional data (Maaten & Hinton, 2008). t-SNE
+considers probability distributions with random walk on
+neighborhood graphs on the curved manifold to ﬁnd the pat-
+terns of data. Autoencoder is another dimensionality reduc-
+tion algorithm based on a neural network architecture that
+aims for learning data representation by minimizing the dif-
+ference between the input and output of the network (Rumel-
+hart et al., 1988; Hinton & Salakhutdinov, 2006).
+The dimensionality reduction algorithms are good at rep-
+resenting multi-dimensional data. Also, a smaller set of
+features learned from dimensionality reduction algorithms
+may not only reduce the complexity of the model, but also
+decrease model training time, as well as inference (classiﬁ-
+cation/prediction) time.
+4. Pitfalls and Limitations
+Machine learning is a powerful technique for healthcare
+research. From a technical and algorithmic perspective,
+there are many directions that we can undertake to improve
+methodology, such as generalizability, less supervision, mul-
+timodal and multitask training (Weng et al., 2019a), or learn-
+ing temporality and irregularity (Xiao et al., 2018).
+However, there are some pitfalls and limitations about utiliz-
+ing machine learning in healthcare that should be considered
+while model development (Chen et al., 2019b). For exam-
+ple, model biases and fairness is a critical issue since the
+training data we use are usually noisy and biased (Caruana
+et al., 2015; Ghassemi et al., 2018). We still need human
+expert to validate, interpret and adjust the models. Model
+interpretability is also an important topic from the aspects of
+(1) human-machine collaboration and (2) building a human-
+like intelligent machine for medicine (Girkar et al., 2018).
+Causality is usually not being addressed in most of the clin-
+ical machine learning research, yet it is a key of clinical
+decision making. We may need more complicated causal
+inference algorithms to answer clinical causal questions.
+We also need to think more about how to deploy the de-
+veloped machine learning models into clinical workﬂow.
+How to utilize them to improve workﬂow (Horng et al.,
+2017; Chen et al., 2019a), as well as integrate all informa-
+tion acquired by human and machine, to transform them
+into clinical actions and improve health outcomes are the
+most important things that we should consider for future
+clinician-machine collaboration.
+5. Programming Exercise
+We provide three tutorials for readers to have some hands-
+on exercises of learning basic machine learning concepts,
+algorithms and toolkits for clinical prediction tasks. They
+can be accessed through Google colab and Python Jupyter
+notebook with two real-world datasets:
+• Breast Cancer Wisconsin (Diagnostic) Database
+
+Machine Learning for Clinical Predictive Analytics
+• Preprocessed ICU data from PhysioNet Challenge
+2012 Database
+The learning objectives of these tutorial include:
+• Learn how to use Google colab / Jupyter notebook
+• Learn how to build and diagnose machine learning
+models for clinical classiﬁcation and clustering tasks
+In part 1, we will go through the basic of machine learning
+concepts through classiﬁcation problems. In part 2, we will
+go deeper into unsupervised learning methods for clustering
+and visualization. In part 3, we will discuss more about
+deep neural networks. Please check the link of tutorials in
+the Appendix.
+6. Conclusion
+In summary, machine learning is an important and powerful
+technique for healthcare research. In this chapter, we have
+shown readers how to reframe a clinical problem into appro-
+priate machine learning tasks, select and adjust an algorithm
+for model training, perform model diagnostics and error
+analysis, as well as model results and interpretation. The
+concepts and tools described in this chapter aim to allow the
+researcher to better understand how to conduct a machine
+learning project for clinical predictive analytics.
+Programming Tutorial Appendix
+The
+tutorials
+mentioned
+in
+this
+chapter
+available
+in the GitHub repository:
+https://github.com/
+ckbjimmy/2018_mlw.git.
+References
+Abu-Mostafa, Y., Lin, H., and Magdon-Ismail, M. Learning
+from data: a short course. AMLbook, 2012.
+Bejnordi, B. E., Lin, J., Glass, B., Mullooly, M., Gierach,
+G. L., Sherman, M. E., Karssemeijer, N., Van Der Laak,
+J., and Beck, A. H. Deep learning-based assessment of
+tumor-associated stroma for diagnosing breast cancer in
+histopathology images. ISBI, 2017.
+Breiman, L. Random forests. Machine learning, 45(1):
+5–32, 2001.
+Breiman, L. Classiﬁcation and regression trees. Routledge,
+2017.
+Caruana, R., Lou, Y., Gehrke, J., Koch, P., Sturm, M., and
+Elhadad, N. Intelligible models for healthcare: Predicting
+pneumonia risk and hospital 30-day readmission. KDD,
+2015.
+Chen, P.-H. C., Gadepalli, K., MacDonald, R., Liu, Y., Kad-
+owaki, S., Nagpal, K., Kohlberger, T., Dean, J., Corrado,
+G. S., Hipp, J. D., et al. An augmented reality microscope
+with real-time artiﬁcial intelligence integration for cancer
+diagnosis. Nature Medicine, 25(9):1453, 2019a.
+Chen, P.-H. C., Liu, Y., and Peng, L. How to develop ma-
+chine learning models for healthcare. Nature Materials,
+18(5):410, 2019b.
+Choi, Y., Chiu, C. Y.-I., and Sontag, D. Learning low-
+dimensional representations of medical concepts. AMIA
+CRI, 2016:41, 2016.
+Chung, Y.-A. and Weng, W.-H. Learning deep representa-
+tions of medical images using siamese cnns with applica-
+tion to content-based image retrieval. Machine Learning
+for Health (ML4H) workshop at NIPS 2017, 2017.
+Chung, Y.-A., Weng, W.-H., Tong, S., and Glass, J. Unsu-
+pervised cross-modal alignment of speech and text em-
+bedding spaces. NeurIPS, 2018.
+Chung, Y.-A., Weng, W.-H., Tong, S., and Glass, J. Towards
+unsupervised speech-to-text translation. ICASSP, 2019.
+Cortes, C. and Vapnik, V. Support-vector networks. Ma-
+chine learning, 20(3):273–297, 1995.
+Dernoncourt, F., Lee, J. Y., Uzuner, O., and Szolovits, P.
+De-identiﬁcation of patient notes with recurrent neural
+networks. JAMIA, 24(3):596–606, 2017.
+Doshi-Velez, F., Ge, Y., and Kohane, I. Comorbidity clusters
+in autism spectrum disorders: an electronic health record
+time-series analysis. Pediatrics, 133(1):e54–e63, 2014.
+Esteva, A., Kuprel, B., Novoa, R. A., Ko, J., Swetter, S. M.,
+Blau, H. M., and Thrun, S. Dermatologist-level classiﬁ-
+cation of skin cancer with deep neural networks. Nature,
+542(7639):115, 2017.
+Fonarow, G. C., Adams, K. F., Abraham, W. T., Yancy,
+C. W., Boscardin, W. J., Committee, A. S. A., et al. Risk
+stratiﬁcation for in-hospital mortality in acutely decom-
+pensated heart failure: classiﬁcation and regression tree
+analysis. JAMA, 293(5):572–580, 2005.
+Freund, Y., Schapire, R., and Abe, N. A short introduc-
+tion to boosting. Journal-Japanese Society For Artiﬁcial
+Intelligence, 14(771-780):1612, 1999.
+Friedman, J. H. Greedy function approximation: a gradient
+boosting machine. Annals of statistics, pp. 1189–1232,
+2001.
+Gehrmann, S., Dernoncourt, F., Li, Y., Carlson, E. T., Wu,
+J. T., Welt, J., Foote Jr, J., Moseley, E. T., Grant, D. W.,
+Tyler, P. D., et al. Comparing deep learning and concept
+
+Machine Learning for Clinical Predictive Analytics
+extraction based methods for patient phenotyping from
+clinical narratives. PLoS one, 13(2):e0192360, 2018.
+Ghassemi, M., Naumann, T., Doshi-Velez, F., Brimmer, N.,
+Joshi, R., Rumshisky, A., and Szolovits, P. Unfolding
+physiological state: Mortality modelling in intensive care
+units. KDD, pp. 75–84, 2014.
+Ghassemi, M., Naumann, T., Schulam, P., Beam, A. L.,
+and Ranganath, R. Opportunities in machine learning for
+healthcare. arXiv preprint arXiv:1806.00388, 2018.
+Girkar, U. M., Uchimido, R., Lehman, L.-w. H., Szolovits,
+P., Celi, L., and Weng, W.-H. Predicting blood pressure re-
+sponse to ﬂuid bolus therapy using attention-based neural
+networks for clinical interpretability. Machine Learning
+for Health (ML4H) Workshop at NeurIPS 2018, 2018.
+Goodfellow, I., Bengio, Y., and Courville, A. Deep learning.
+MIT press, 2016.
+Gulshan, V., Peng, L., Coram, M., Stumpe, M. C., Wu,
+D., Narayanaswamy, A., Venugopalan, S., Widner, K.,
+Madams, T., Cuadros, J., et al. Development and valida-
+tion of a deep learning algorithm for detection of diabetic
+retinopathy in retinal fundus photographs. JAMA, 316
+(22):2402–2410, 2016.
+Henry, J., Pylypchuk, Y., Searcy, T., and Patel, V. Adoption
+of electronic health record systems among us non-federal
+acute care hospitals: 2008-2015. ONC data brief, 35:1–9,
+2016.
+Hinton, G. E. and Salakhutdinov, R. R. Reducing the di-
+mensionality of data with neural networks. Science, 313
+(5786):504–507, 2006.
+Hoerl, A. E. and Kennard, R. W. Ridge regression: Biased
+estimation for nonorthogonal problems. Technometrics,
+12(1):55–67, 1970.
+Horng, S., Sontag, D. A., Halpern, Y., Jernite, Y., Shapiro,
+N. I., and Nathanson, L. A. Creating an automated trigger
+for sepsis clinical decision support at emergency depart-
+ment triage using machine learning. PLoS one, 12(4):
+e0174708, 2017.
+Hsu, T.-M. H., Weng, W.-H., Boag, W., McDermott, M., and
+Szolovits, P. Unsupervised multimodal representation
+learning across medical images and reports. Machine
+Learning for Health (ML4H) Workshop at NeurIPS 2018,
+2018.
+Jolliffe, I. Principal component analysis. Springer, 2011.
+Komorowski, M., Celi, L. A., Badawi, O., Gordon, A. C.,
+and Faisal, A. A. The artiﬁcial intelligence clinician
+learns optimal treatment strategies for sepsis in intensive
+care. Nature Medicine, 24(11):1716, 2018.
+Krizhevsky, A., Sutskever, I., and Hinton, G. E. Imagenet
+classiﬁcation with deep convolutional neural networks.
+NIPS, 2012.
+Lehman, E. P., Krishnan, R. G., Zhao, X., Mark, R. G.,
+and Li-wei, H. L. Representation learning approaches
+to detect false arrhythmia alarms from ecg dynamics.
+MLHC, 2018.
+Liu, G., Hsu, T.-M. H., McDermott, M., Boag, W., Weng,
+W.-H., Szolovits, P., and Ghassemi, M. Clinically accu-
+rate chest x-ray report generation. MLHC, 2019.
+Liu, Y., Gadepalli, K., Norouzi, M., Dahl, G. E., Kohlberger,
+T., Boyko, A., Venugopalan, S., Timofeev, A., Nelson,
+P. Q., Corrado, G. S., et al. Detecting cancer metas-
+tases on gigapixel pathology images.
+arXiv preprint
+arXiv:1703.02442, 2017.
+Maaten, L. v. d. and Hinton, G. Visualizing data using t-sne.
+JMLR, 9(Nov):2579–2605, 2008.
+Nagpal, K., Foote, D., Liu, Y., Wulczyn, E., Tan, F., Olson,
+N., Smith, J. L., Mohtashamian, A., Wren, J. H., Corrado,
+G. S., et al. Development and validation of a deep learn-
+ing algorithm for improving gleason scoring of prostate
+cancer. arXiv preprint arXiv:1811.06497, 2018.
+Pivovarov, R., Perotte, A. J., Grave, E., Angiolillo, J., Wig-
+gins, C. H., and Elhadad, N. Learning probabilistic phe-
+notypes from heterogeneous ehr data. JBI, 58:156–165,
+2015.
+Raghu, A., Komorowski, M., Celi, L. A., Szolovits, P., and
+Ghassemi, M. Continuous state-space models for optimal
+sepsis treatment-a deep reinforcement learning approach.
+MLHC, 2017.
+Rumelhart, D. E., Hinton, G. E., Williams, R. J., et al. Learn-
+ing representations by back-propagating errors. Cognitive
+modeling, 5(3):1, 1988.
+Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L.,
+Van Den Driessche, G., Schrittwieser, J., Antonoglou, I.,
+Panneershelvam, V., Lanctot, M., et al. Mastering the
+game of go with deep neural networks and tree search.
+Nature, 529(7587):484, 2016.
+Tibshirani, R. Regression shrinkage and selection via the
+lasso. Journal of the Royal Statistical Society: Series B
+(Methodological), 58(1):267–288, 1996.
+Weng, W.-H. and Szolovits, P. Mapping unparalleled clini-
+cal professional and consumer languages with embedding
+alignment. 2018 KDD Workshop on Machine Learning
+for Medicine and Healthcare, 2018.
+
+Machine Learning for Clinical Predictive Analytics
+Weng, W.-H., Gao, M., He, Z., Yan, S., and Szolovits, P.
+Representation and reinforcement learning for personal-
+ized glycemic control in septic patients. Machine Learn-
+ing for Health (ML4H) workshop at NIPS 2017, 2017a.
+Weng, W.-H., Wagholikar, K. B., McCray, A. T., Szolovits,
+P., and Chueh, H. C. Medical subdomain classiﬁcation
+of clinical notes using a machine learning-based natural
+language processing approach. BMC medical informatics
+and decision making, 17(1):155, 2017b.
+Weng, W.-H., Cai, Y., Lin, A., Tan, F., and Chen, P.-
+H. C. Multimodal multitask representation learning for
+pathology biobank metadata prediction. arXiv preprint
+arXiv:1909.07846, 2019a.
+Weng, W.-H., Chung, Y.-A., and Szolovits, P. Unsupervised
+clinical language translation. KDD, 2019b.
+Wu, Y., Schuster, M., Chen, Z., Le, Q. V., Norouzi, M.,
+Macherey, W., Krikun, M., Cao, Y., Gao, Q., Macherey,
+K., et al. Google’s neural machine translation system:
+Bridging the gap between human and machine translation.
+arXiv preprint arXiv:1609.08144, 2016.
+Xiao, C., Choi, E., and Sun, J. Opportunities and chal-
+lenges in developing deep learning models using elec-
+tronic health records data: a systematic review. JAMIA,
+25(10):1419–1428, 2018.
+Yala, A., Barzilay, R., Salama, L., Grifﬁn, M., Sollender, G.,
+Bardia, A., Lehman, C., Buckley, J. M., Coopey, S. B.,
+Polubriaginof, F., et al. Using machine learning to parse
+breast pathology reports. Breast cancer research and
+treatment, 161(2):203–211, 2017.
+Zou, H. and Hastie, T. elasticnet: Elastic net regularization
+and variable selection. R package version, 2005.

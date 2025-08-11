@@ -1,0 +1,128 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Convex Analysis and Nonlinear Optimization</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Borwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Lewis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000" />
+			<publisher>Springer Verlag</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Convex Optimization</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Vandenberghe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>Cambrige University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Pattern Classification</title>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">O</forename><surname>Duda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">E</forename><surname>Hart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">G</forename><surname>Stork</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Fundamentals of Convex Analysis</title>
+		<author>
+			<persName><forename type="first">J.-B</forename><surname>Hiriart-Urruty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Springer Verlag</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Asymptotically Subminimax Solutions of Compound Statistical Decision Problems</title>
+		<author>
+			<persName><forename type="first">Herbert</forename><surname>Robbins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Second Berkeley Symposium on Mathematical Statistics and Probability</title>
+				<editor>
+			<persName><forename type="first">Jerzy</forename><surname>Neyman</surname></persName>
+		</editor>
+		<meeting>the Second Berkeley Symposium on Mathematical Statistics and Probability</meeting>
+		<imprint>
+			<publisher>University of California Press</publisher>
+			<date type="published" when="1951" />
+			<biblScope unit="page" from="131" to="148" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Nondifferentiable Optimization and Polynomial Problems. Nonconvex Optimization and Its Applications</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">Z</forename><surname>Shor</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Statistical Pattern Recognition</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">R</forename><surname>Webb</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

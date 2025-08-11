@@ -1,0 +1,1882 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Prove that a single Newton step for linear regression yields the optimal solution</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Let f : R d → R, and consider the affine transformation y = Ax, for A ∈ R d×d being a symmetric matrix</title>
+		<imprint/>
+	</monogr>
+	<note>Prove that y t+1 ← y t − η∇f (y t</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Prove that the function g(z) defined in phase 2 of the robust Newton algorithm is 1 2 -strongly convex and 2-smooth</title>
+		<idno>10.7</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Bibliographic Remarks For a nice exposition on hyperparameter optimization see [64, 65], in which the the benchmark of comparing to Random Search with double queries was proposed. Perhaps the simplest approach to HPO is random sampling of different choices of parameters and picking the best amongst the chosen evaluations</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Successive Halving (SH) algorithm was introduced [43]. Hyperband further improves SH by automatically tuning the hyperparameters in SH</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">The Bayesian optimization (BO) methodology is currently the most studied in HPO. For recent studies and algorithms of this flavor see</title>
+		<imprint/>
+	</monogr>
+	<note>10, 78, 81, 79, 24, 84, 40</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">The spectral approach for hyperparameter optimization was introduced in [38]. For an in-depth treatment of compressed sensing see the survey of [63], and for Fourier analysis of Boolean functions see</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Competing in the dark: An efficient algorithm for bandit linear optimization</title>
+		<author>
+			<persName><forename type="first">Jacob</forename><surname>Abernethy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Rakhlin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 21st Annual Conference on Learning Theory</title>
+				<meeting>the 21st Annual Conference on Learning Theory</meeting>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="263" to="274" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Finding approximate local minima faster than gradient descent</title>
+		<author>
+			<persName><forename type="first">Naman</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zeyuan</forename><surname>Allen-Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Bullins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tengyu</forename><surname>Ma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 49th Annual ACM SIGACT Symposium on Theory of Computing</title>
+				<meeting>the 49th Annual ACM SIGACT Symposium on Theory of Computing</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1195" to="1199" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">The case for full-matrix adaptive regularization</title>
+		<author>
+			<persName><forename type="first">Naman</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Bullins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyi</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karan</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cyril</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1806.02958</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Second-order stochastic optimization for machine learning in linear time</title>
+		<author>
+			<persName><forename type="first">Naman</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Bullins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4148" to="4187" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Linear coupling: An ultimate unification of gradient and mirror descent</title>
+		<author>
+			<persName><forename type="first">Zeyuan</forename><surname>Allen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">-</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Orecchia</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1407.1537</idno>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Memoryefficient adaptive optimization for large-scale learning</title>
+		<author>
+			<persName><forename type="first">Rohan</forename><surname>Anil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vineet</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomer</forename><surname>Koren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Singer</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1901.11150</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">On the equivalence between herding and conditional gradient algorithms</title>
+		<author>
+			<persName><forename type="first">Francis</forename><surname>Bach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Lacoste-Julien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guillaume</forename><surname>Obozinski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 29th International Conference on Machine Learning (ICML-12), ICML &apos;12</title>
+				<editor>
+			<persName><forename type="first">John</forename><surname>Langford</surname></persName>
+			<persName><forename type="first">Joelle</forename><surname>Pineau</surname></persName>
+		</editor>
+		<meeting>the 29th International Conference on Machine Learning (ICML-12), ICML &apos;12<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Omnipress</publisher>
+			<date type="published" when="2012-07" />
+			<biblScope unit="page" from="1359" to="1366" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Distributed frank-wolfe algorithm: A unified framework for communication-efficient sparse learning</title>
+		<author>
+			<persName><forename type="first">Aurélien</forename><surname>Bellet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingyu</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alireza</forename><surname>Bagheri Garakani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria-Florina</forename><surname>Balcan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Sha</surname></persName>
+		</author>
+		<idno>abs/1404.2644</idno>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Random search for hyperparameter optimization</title>
+		<author>
+			<persName><forename type="first">James</forename><surname>Bergstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="281" to="305" />
+			<date type="published" when="2012-02" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Algorithms for hyper-parameter optimization</title>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">S</forename><surname>Bergstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rémi</forename><surname>Bardenet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balázs</forename><surname>Kégl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<editor>
+			<persName><forename type="first">J</forename><surname>Shawe-Taylor</surname></persName>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Zemel</surname></persName>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Bartlett</surname></persName>
+			<persName><forename type="first">F</forename><surname>Pereira</surname></persName>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="2546" to="2554" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Convex Analysis and Nonlinear Optimization: Theory and Examples</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Borwein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Lewis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Convex Optimization. Cambridge University Press</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Vandenberghe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">Sébastien</forename><surname>Bubeck</surname></persName>
+		</author>
+		<title level="m">Convex optimization: Algorithms and complexity. Foundations and Trends in Machine Learning</title>
+				<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="231" to="357" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Exact matrix completion via convex optimization</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Candes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Recht</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foundations of Computational Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="717" to="772" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<author>
+			<persName><forename type="first">Nicolò</forename><surname>Cesa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">-</forename><surname>Bianchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gábor</forename><surname>Lugosi</surname></persName>
+		</author>
+		<title level="m">Prediction, Learning, and Games</title>
+				<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Extreme tensoring for low-memory preconditioning</title>
+		<author>
+			<persName><forename type="first">Xinyi</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naman</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cyril</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1902.04620</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Optimal adaptive and accelerated stochastic gradient descent</title>
+		<author>
+			<persName><forename type="first">Qi</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guanghui</forename><surname>Lan</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1810.00553</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Adaptive subgradient methods for online learning and stochastic optimization</title>
+		<author>
+			<persName><forename type="first">John</forename><surname>Duchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Singer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="2121" to="2159" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Adaptive subgradient methods for online learning and stochastic optimization</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">C</forename><surname>Duchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Singer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">COLT 2010 -The 23rd Conference on Learning Theory</title>
+				<meeting><address><addrLine>Haifa, Israel</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="257" to="269" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Lifted coordinate descent for learning with trace-norm regularization</title>
+		<author>
+			<persName><forename type="first">Miroslav</forename><surname>Dudík</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zaïd</forename><surname>Harchaoui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jérôme</forename><surname>Malick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research -Proceedings Track</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="327" to="336" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">An algorithm for quadratic programming</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Frank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wolfe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Naval Research Logistics Quarterly</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="149" to="154" />
+			<date type="published" when="1956" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Approximating semidefinite programs in sublinear time</title>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Garber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NIPS</title>
+				<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="1080" to="1088" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Playing non-linear games with linear oracles</title>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Garber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">FOCS</title>
+				<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="420" to="428" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Bayesian optimization with inequality constraints</title>
+		<author>
+			<persName><forename type="first">Jacob</forename><forename type="middle">R</forename><surname>Gardner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matt</forename><forename type="middle">J</forename><surname>Kusner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhixiang</forename><forename type="middle">Eddie</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kilian</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">P</forename><surname>Cunningham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 31th International Conference on Machine Learning</title>
+				<meeting>the 31th International Conference on Machine Learning<address><addrLine>Beijing, China</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014-06" />
+			<biblScope unit="page" from="937" to="945" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Deep Learning</title>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Courville</surname></persName>
+		</author>
+		<ptr target="http://www.deeplearningbook.org" />
+		<imprint>
+			<date type="published" when="2016" />
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">General convergence results for linear discriminant updates</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Grove</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Littlestone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schuurmans</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="173" to="210" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">A unified approach to adaptive regularization in online and stochastic optimization</title>
+		<author>
+			<persName><forename type="first">Vineet</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomer</forename><surname>Koren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Singer</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1706.06569</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<author>
+			<persName><forename type="first">Vineet</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomer</forename><surname>Koren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Singer</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1802.09568</idno>
+		<title level="m">Shampoo: Preconditioned stochastic tensor optimization</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Approximation to bayes risk in repeated play</title>
+		<author>
+			<persName><forename type="first">James</forename><surname>Hannan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Contributions to the Theory of Games</title>
+				<editor>
+			<persName><forename type="first">M</forename><surname>Dresher</surname></persName>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Tucker</surname></persName>
+			<persName><forename type="first">P</forename><surname>Wolfe</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="1957" />
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="97" to="139" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Large-scale image classification with trace-norm regularization</title>
+		<author>
+			<persName><forename type="first">Zaïd</forename><surname>Harchaoui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthijs</forename><surname>Douze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mattis</forename><surname>Paulin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miroslav</forename><surname>Dudík</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jérôme</forename><surname>Malick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+				<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="3386" to="3393" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Introduction to online convex optimization</title>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foundations and TrendsÂ R in Optimization</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page" from="157" to="325" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Logarithmic regret algorithms for online convex optimization</title>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amit</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satyen</forename><surname>Kale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="169" to="192" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sham</forename><surname>Kakade</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1905.00313</idno>
+		<title level="m">Revisiting the polyak step size</title>
+				<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Extracting certainty from uncertainty: Regret bounded by variation in costs</title>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satyen</forename><surname>Kale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The 21st Annual Conference on Learning Theory (COLT)</title>
+				<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="57" to="68" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Beyond the regret minimization barrier: an optimal algorithm for stochastic strongly-convex optimization</title>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satyen</forename><surname>Kale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Journal of Machine Learning Research -Proceedings Track</title>
+				<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="421" to="436" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Projection-free online learning</title>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satyen</forename><surname>Kale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Beyond the regret minimization barrier: optimal algorithms for stochastic strongly-convex optimization</title>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satyen</forename><surname>Kale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="2489" to="2512" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Hyperparameter optimization: A spectral approach</title>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Klivans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Yuan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+			<publisher>ICLR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Neural networks for machine learning lecture 6a overview of mini-batch gradient descent</title>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nitish</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Swersky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cited on</title>
+		<imprint>
+			<biblScope unit="page">14</biblScope>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Annette Shoemaker. Efficient hyperparameter optimization for deep learning algorithms using deterministic RBF surrogates</title>
+		<author>
+			<persName><forename type="first">Ilija</forename><surname>Ilievski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taimoor</forename><surname>Akhtar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiashi</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence</title>
+				<meeting>the Thirty-First AAAI Conference on Artificial Intelligence<address><addrLine>San Francisco, California, USA.</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="822" to="829" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Revisiting frank-wolfe: Projection-free sparse convex optimization</title>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Jaggi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">A simple algorithm for nuclear norm regularized problems</title>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Jaggi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marek</forename><surname>Sulovský</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="471" to="478" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Non-stochastic best arm identification and hyperparameter optimization</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">G</forename><surname>Jamieson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ameet</forename><surname>Talwalkar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 19th International Conference on Artificial Intelligence and Statistics, AISTATS 2016</title>
+				<meeting>the 19th International Conference on Artificial Intelligence and Statistics, AISTATS 2016<address><addrLine>Cadiz, Spain</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="240" to="248" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Accelerating stochastic gradient descent using predictive variance reduction</title>
+		<author>
+			<persName><forename type="first">Rie</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="315" to="323" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Efficient algorithms for online decision problems</title>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Kalai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Santosh</forename><surname>Vempala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer and System Sciences</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="291" to="307" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Adam: A method for stochastic optimization</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Diederik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jimmy</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ba</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.6980</idno>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Exponentiated gradient versus gradient descent for linear predictors</title>
+		<author>
+			<persName><forename type="first">Jyrki</forename><surname>Kivinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><forename type="middle">K</forename><surname>Warmuth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Comput</title>
+		<imprint>
+			<biblScope unit="volume">132</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="63" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Relative loss bounds for multidimensional regression problems</title>
+		<author>
+			<persName><forename type="first">Jyrki</forename><surname>Kivinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manfred</forename><forename type="middle">K</forename><surname>Warmuth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="301" to="329" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Block-coordinate frank-wolfe optimization for structural svms</title>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Lacoste-Julien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Jaggi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">W</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Pletscher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 30th International Conference on Machine Learning, ICML 2013</title>
+				<meeting>the 30th International Conference on Machine Learning, ICML 2013<address><addrLine>Atlanta, GA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013-06" />
+			<biblScope unit="page" from="53" to="61" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Practical large-scale optimization for max-norm regularization</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Recht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Srebro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Tropp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NIPS</title>
+				<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="1297" to="1305" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title level="m" type="main">Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Jamieson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Desalvo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rostamizadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Talwalkar</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016-03" />
+		</imprint>
+	</monogr>
+	<note>ArXiv e-prints</note>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Adaptive bound optimization for online convex optimization</title>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">J</forename><surname>Streeter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">COLT 2010 -The 23rd Conference on Learning Theory</title>
+				<meeting><address><addrLine>Haifa, Israel</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="244" to="256" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Problem Complexity and Method Efficiency in Optimization</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Arkadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">B</forename><surname>Nemirovski</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Yudin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1983" />
+			<publisher>John Wiley UK/USA</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Interior point polynomial time methods in convex programming</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Nemirovskii</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Lecture Notes</title>
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Interior point polynomial time methods in convex programming</title>
+		<author>
+			<persName><surname>As Nemirovskii</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Lecture Notes</title>
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">A method of solving a convex programming problem with convergence rate O(1/k 2 )</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Nesterov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Soviet Mathematics Doklady</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="372" to="376" />
+			<date type="published" when="1983" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">Introductory Lectures on Convex Optimization: A Basic Course. Applied Optimization</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Nesterov</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<title level="m" type="main">Interior Point Polynomial Algorithms in Convex Programming</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">E</forename><surname>Nesterov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Nemirovskii</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994" />
+			<pubPlace>SIAM, Philadelphia</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<monogr>
+		<title level="m" type="main">Analysis of Boolean Functions</title>
+		<author>
+			<persName><forename type="first">O'</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Donnell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">New adaptive algorithms for online classification</title>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Orabona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koby</forename><surname>Crammer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 24th Annual Conference on Neural Information Processing Systems</title>
+				<meeting>the 24th Annual Conference on Neural Information Processing Systems</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="1840" to="1848" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Fast exact multiplication by the hessian</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barak</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pearlmutter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neural computation</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="147" to="160" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Making gradient descent optimal for strongly convex stochastic optimization</title>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Rakhlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Shamir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karthik</forename><surname>Sridharan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<title level="m" type="main">Compressive sensing and structured random matrices. Theoretical foundations and numerical methods for sparse recovery</title>
+		<author>
+			<persName><forename type="first">Holger</forename><surname>Rauhut</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="1" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<title level="m" type="main">Embracing the random</title>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Recht</surname></persName>
+		</author>
+		<ptr target="http://www.argmin.net/2016/06/23/hyperband/" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<monogr>
+		<title level="m" type="main">The news on auto-tuning</title>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Recht</surname></persName>
+		</author>
+		<ptr target="http://www.argmin.net/2016/06/20/hypertuning/" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Fast maximum margin matrix factorization for collaborative prediction</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Jasson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Rennie</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Srebro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 22Nd International Conference on Machine Learning, ICML &apos;05</title>
+				<meeting>the 22Nd International Conference on Machine Learning, ICML &apos;05<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="713" to="719" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">A stochastic approximation method</title>
+		<author>
+			<persName><forename type="first">Herbert</forename><surname>Robbins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sutton</forename><surname>Monro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Annals of Mathematical Statistics</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">1951</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">T</forename><surname>Rockafellar</surname></persName>
+		</author>
+		<title level="m">Convex Analysis. Convex Analysis. Princeton University Press</title>
+				<imprint>
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Collaborative filtering in a nonuniform world: Learning with the weighted trace norm</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Srebro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NIPS</title>
+				<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="2056" to="2064" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Minimizing finite sums with the stochastic average gradient</title>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><forename type="middle">Le</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francis</forename><surname>Bach</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Programming</title>
+		<imprint>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="83" to="112" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<monogr>
+		<author>
+			<persName><forename type="first">Shai</forename><surname>Shalev-Shwartz</surname></persName>
+		</author>
+		<title level="m">Online Learning: Theory, Algorithms, and Applications</title>
+				<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+		<respStmt>
+			<orgName>The Hebrew University of Jerusalem</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Large-scale convex minimization with a low-rank constraint</title>
+		<author>
+			<persName><forename type="first">Shai</forename><surname>Shalev-Shwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alon</forename><surname>Gonen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Shamir</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="329" to="336" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">A primal-dual perspective of online learning algorithms</title>
+		<author>
+			<persName><forename type="first">Shai</forename><surname>Shalev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">-</forename><surname>Shwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Singer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning</title>
+				<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="115" to="142" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Pegasos: primal estimated sub-gradient solver for svm</title>
+		<author>
+			<persName><forename type="first">Shai</forename><surname>Shalev-Shwartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Singer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Srebro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Cotter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Math. Program</title>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="30" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<monogr>
+		<author>
+			<persName><forename type="first">O</forename><surname>Shamir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Shalev-Shwartz</surname></persName>
+		</author>
+		<title level="m">Collaborative filtering with the trace norm: Learning, bounding, and transducing. JMLR -Proceedings Track</title>
+				<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="661" to="678" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Stochastic gradient descent for non-smooth optimization: Convergence results and optimal averaging schemes</title>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Shamir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">Adafactor: Adaptive learning rates with sublinear memory cost</title>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchell</forename><surname>Stern</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1804.04235</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Practical bayesian optimization of machine learning algorithms</title>
+		<author>
+			<persName><forename type="first">Jasper</forename><surname>Snoek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><forename type="middle">P</forename><surname>Adams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 25: 26th Annual Conference on Neural Information Processing Systems</title>
+				<meeting><address><addrLine>Lake Tahoe, Nevada, United States</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2012-12-03" />
+			<biblScope unit="page" from="2960" to="2968" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of a meeting held</note>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Input warping for bayesian optimization of non-stationary functions</title>
+		<author>
+			<persName><forename type="first">Jasper</forename><surname>Snoek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Swersky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">S</forename><surname>Zemel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><forename type="middle">P</forename><surname>Adams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 31th International Conference on Machine Learning</title>
+				<meeting>the 31th International Conference on Machine Learning<address><addrLine>Beijing, China</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014-06" />
+			<biblScope unit="page" from="1674" to="1682" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Learning with Matrix Factorizations</title>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Srebro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Massachusetts Institute of Technology</title>
+				<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Multi-task bayesian optimization</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Swersky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jasper</forename><surname>Snoek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><forename type="middle">Prescott</forename><surname>Adams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 26: 27th Annual Conference on Neural Information Processing Systems</title>
+				<meeting><address><addrLine>Lake Tahoe, Nevada, United States</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013-12-05" />
+			<biblScope unit="page" from="2004" to="2012" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of a meeting held</note>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Greedy algorithms for structurally constrained high dimensional problems</title>
+		<author>
+			<persName><forename type="first">Ambuj</forename><surname>Tewari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Pradeep</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Inderjit</forename><forename type="middle">S</forename><surname>Ravikumar</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Dhillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NIPS</title>
+				<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="882" to="890" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Computing machinery and intelligence</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Turing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mind</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">236</biblScope>
+			<biblScope unit="page" from="433" to="460" />
+			<date type="published" when="1950" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Bayesian optimization in high dimensions via random embeddings</title>
+		<author>
+			<persName><forename type="first">Ziyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masrour</forename><surname>Zoghi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Hutter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Matheson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nando</forename><surname>De Freitas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IJCAI 2013, Proceedings of the 23rd International Joint Conference on Artificial Intelligence</title>
+				<meeting><address><addrLine>Beijing, China</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="1778" to="1784" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<monogr>
+		<author>
+			<persName><forename type="first">Rachel</forename><surname>Ward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoxia</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leon</forename><surname>Bottou</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1806.01811</idno>
+		<title level="m">Adagrad stepsizes: Sharp convergence over nonconvex landscapes, from any initialization</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Linear convergence with condition number independent access of full gradients</title>
+		<author>
+			<persName><forename type="first">Lijun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehrdad</forename><surname>Mahdavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rong</forename><surname>Jin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="980" to="988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Online convex programming and generalized infinitesimal gradient ascent</title>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Zinkevich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 20th International Conference on Machine Learning</title>
+				<meeting>the 20th International Conference on Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2003" />
+			<biblScope unit="page" from="928" to="936" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

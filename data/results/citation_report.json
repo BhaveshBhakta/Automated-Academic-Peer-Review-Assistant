@@ -1,0 +1,201 @@
+{
+  "total_references": 51,
+  "outdated_references": [
+    {
+      "title": "Learning from data: a short course",
+      "year": "2012"
+    },
+    {
+      "title": "Deep learning-based assessment of tumor-associated stroma for diagnosing breast cancer in histopathology images",
+      "year": "2017"
+    },
+    {
+      "title": "Random Forests",
+      "year": "2001"
+    },
+    {
+      "title": "Regression Trees",
+      "year": "2017"
+    },
+    {
+      "title": "Intelligible Models for HealthCare",
+      "year": "2015"
+    },
+    {
+      "title": "An augmented reality microscope with real-time artificial intelligence integration for cancer diagnosis",
+      "year": "2019"
+    },
+    {
+      "title": "How to develop machine learning models for healthcare",
+      "year": "2019"
+    },
+    {
+      "title": "Learning lowdimensional representations of medical concepts",
+      "year": "2016"
+    },
+    {
+      "title": "Learning deep representations of medical images using siamese cnns with application to content-based image retrieval",
+      "year": "2017"
+    },
+    {
+      "title": "Towards Unsupervised Speech-to-text Translation",
+      "year": "2019"
+    },
+    {
+      "title": "Towards Unsupervised Speech-to-text Translation",
+      "year": "2019"
+    },
+    {
+      "title": "Support-Vector Networks",
+      "year": "1995"
+    },
+    {
+      "title": "De-identification of patient notes with recurrent neural networks",
+      "year": "2016"
+    },
+    {
+      "title": "Comorbidity Clusters in Autism Spectrum Disorders: An Electronic Health Record Time-Series Analysis",
+      "year": "2014"
+    },
+    {
+      "title": "Dermatologist-level classification of skin cancer with deep neural networks",
+      "year": "2017"
+    },
+    {
+      "title": "Risk stratification for in-hospital mortality in acutely decompensated heart failure. Classification and regression tree analysis",
+      "year": "2005"
+    },
+    {
+      "title": "A short introduction to boosting",
+      "year": "1999"
+    },
+    {
+      "title": "Greedy function approximation: A gradient boosting machine.",
+      "year": "2001"
+    },
+    {
+      "title": "Comparing deep learning and concept extraction based methods for patient phenotyping from clinical narratives",
+      "year": "2018"
+    },
+    {
+      "title": "Unfolding physiological state",
+      "year": "2014"
+    },
+    {
+      "title": "Opportunities in machine learning for healthcare",
+      "year": "2018"
+    },
+    {
+      "title": "Abstract 448: Predicting Blood Pressure Response to Fluid Bolus Therapy Using Neural Networks with Clinical Interpretability",
+      "year": "2019"
+    },
+    {
+      "title": "Deep learning",
+      "year": "2016"
+    },
+    {
+      "title": "Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs",
+      "year": "2016"
+    },
+    {
+      "title": "Adoption of electronic health record systems among us non-federal acute care hospitals",
+      "year": "2008"
+    },
+    {
+      "title": "Reducing the Dimensionality of Data with Neural Networks",
+      "year": "2006"
+    },
+    {
+      "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "year": "1970"
+    },
+    {
+      "title": "Creating an automated trigger for sepsis clinical decision support at emergency department triage using machine learning",
+      "year": "2017"
+    },
+    {
+      "title": "Unsupervised multimodal representation learning across medical images and reports. Machine Learning for Health (ML4H) Workshop at NeurIPS",
+      "year": "2018"
+    },
+    {
+      "title": "Principal Component Analysis and Factor Analysis",
+      "year": "1986"
+    },
+    {
+      "title": "The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care",
+      "year": "2018"
+    },
+    {
+      "title": "ImageNet classification with deep convolutional neural networks",
+      "year": "2017"
+    },
+    {
+      "title": "Representation learning approaches to detect false arrhythmia alarms from ecg dynamics",
+      "year": "2018"
+    },
+    {
+      "title": "Clinically accurate chest x-ray report generation",
+      "year": "2019"
+    },
+    {
+      "title": "Artificial Intelligence\u2013Based Breast Cancer Nodal Metastasis Detection: Insights Into the Black Box for Pathologists",
+      "year": "2018"
+    },
+    {
+      "title": "Development and validation of a deep learning algorithm for improving Gleason scoring of prostate cancer",
+      "year": "2019"
+    },
+    {
+      "title": "Learning probabilistic phenotypes from heterogeneous EHR data",
+      "year": "2015"
+    },
+    {
+      "title": "Learning Representations by Back-Propagating Errors",
+      "year": "2002"
+    },
+    {
+      "title": "Mastering the game of Go with deep neural networks and tree search",
+      "year": "2016"
+    },
+    {
+      "title": "Regression Shrinkage and Selection Via the Lasso",
+      "year": "1996"
+    },
+    {
+      "title": "Proceedings of the 2nd ACM SIGPLAN International Workshop on Machine Learning and Programming Languages",
+      "year": "2018"
+    },
+    {
+      "title": "Representation and reinforcement learning for personalized glycemic control in septic patients. Machine Learning for Health (ML4H) workshop at NIPS",
+      "year": "2017"
+    },
+    {
+      "title": "Medical subdomain classification of clinical notes using a machine learning-based natural language processing approach",
+      "year": "2017"
+    },
+    {
+      "title": "Multimodal multitask representation learning for pathology biobank metadata prediction",
+      "year": "2019"
+    },
+    {
+      "title": "Unsupervised Clinical Language Translation",
+      "year": "2019"
+    },
+    {
+      "title": "Google's neural machine translation system",
+      "year": "2016"
+    },
+    {
+      "title": "Opportunities and challenges in developing deep learning models using electronic health records data: a systematic review",
+      "year": "2018"
+    },
+    {
+      "title": "Using machine learning to parse breast pathology reports",
+      "year": "2016"
+    },
+    {
+      "title": "Regularization and Variable Selection Via the Elastic Net",
+      "year": "2005"
+    }
+  ]
+}

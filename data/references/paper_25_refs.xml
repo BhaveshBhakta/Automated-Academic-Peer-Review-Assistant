@@ -1,0 +1,5022 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">On the Protection of Private Information in Machine Learning Systems: Two Recent Approches</title>
+		<author>
+			<persName><forename type="first">Martín</forename><surname>Abadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Úlfar</forename><surname>Erlingsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilya</forename><surname>Mironov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Papernot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kunal</forename><surname>Talwar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CSF.2017.10</idno>
+		<ptr target="https://doi.org/10.1109/CSF.2017.10" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of IEEE Computer Security Foundations Symposium (CSF&apos;17</title>
+				<meeting>IEEE Computer Security Foundations Symposium (CSF&apos;17</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Deep learning with differential privacy</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">Brendan</forename><surname>Martín Abadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andy</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilya</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Mironov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kunal</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Talwar</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2976749.2978318</idno>
+		<ptr target="https://doi.org/10.1145/2976749.2978318" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;16</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;16</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="308" to="318" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Privacy and human behavior in the age of information</title>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Acquisti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Brandimarte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Loewenstein</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.aaa1465</idno>
+		<ptr target="https://doi.org/10.1126/science.aaa1465" />
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">347</biblScope>
+			<biblScope unit="page" from="509" to="514" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Differentially Private Mixture of Generative Neural Networks</title>
+		<author>
+			<persName><forename type="first">Gergely</forename><surname>Acs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Melis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claude</forename><surname>Castelluccia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emiliano De</forename><surname>Cristofaro</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TKDE.2018.2855136</idno>
+		<ptr target="https://doi.org/10.1109/TKDE.2018.2855136" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Knowl. Data Eng</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="1109" to="1121" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">On k-anonymity and the curse of dimensionality</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Charu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Aggarwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 31st international conference on Very large data bases (VLDB&apos;05</title>
+				<meeting>the 31st international conference on Very large data bases (VLDB&apos;05</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="901" to="909" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">Gagan</forename><surname>Aggarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomás</forename><surname>Feder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Krishnaram</forename><surname>Kenthapadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajeev</forename><surname>Motwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rina</forename><surname>Panigrahy</surname></persName>
+		</author>
+		<title level="m">Dilys Thomas, and An Zhu. 2005. Anonymizing tables. In International Conference on Database Theory</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="246" to="258" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving data mining</title>
+		<author>
+			<persName><forename type="first">Rakesh</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramakrishnan</forename><surname>Srikant</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/342009.335438</idno>
+		<ptr target="https://doi.org/10.1145/342009.335438" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM SIGMOD international conference on Management of data (SIGMOD&apos;00)</title>
+				<meeting>the ACM SIGMOD international conference on Management of data (SIGMOD&apos;00)<address><addrLine>New York, New York, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="439" to="450" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Hacking smart machines with smarter ones: How to extract meaningful data from machine learning classifiers</title>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Ateniese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Luigi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angelo</forename><surname>Mancini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Spognardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Domenico</forename><surname>Villani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giovanni</forename><surname>Vitali</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Felici</surname></persName>
+		</author>
+		<idno type="DOI">10.1504/IJSN.2015.071829</idno>
+		<ptr target="https://doi.org/10.1504/IJSN.2015.071829" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Security and Networks</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="137" to="150" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Mining apps for abnormal usage of sensitive data</title>
+		<author>
+			<persName><forename type="first">Vitalii</forename><surname>Avdiienko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantin</forename><surname>Kuznetsov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessandra</forename><surname>Gorla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Zeller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Arzt</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICSE.2015.61</idno>
+		<ptr target="https://doi.org/10.1109/ICSE.2015.61" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings International Conference on Software Engineering (ICSE&apos;15)</title>
+				<meeting>International Conference on Software Engineering (ICSE&apos;15)</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="426" to="436" />
+		</imprint>
+	</monogr>
+	<note>Siegfried Rasthofer, and Eric Bodden</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Christopher</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Bishop</surname></persName>
+		</author>
+		<title level="m">Pattern Recognition and Machine Learning (Information Science and Statistics)</title>
+				<meeting><address><addrLine>Secaucus, NJ, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer-Verlag New York, Inc</publisher>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A neural parametric singing synthesizer</title>
+		<author>
+			<persName><forename type="first">Merlijn</forename><surname>Blaauw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jordi</forename><surname>Bonada</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Annual Conference of the International Speech Communication Association (INTERSPEECH&apos;17)</title>
+				<meeting>the Annual Conference of the International Speech Communication Association (INTERSPEECH&apos;17)</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="4001" to="4005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Practical secure aggregation for privacy-preserving machine learning</title>
+		<author>
+			<persName><forename type="first">Keith</forename><surname>Bonawitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vladimir</forename><surname>Ivanov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Kreuter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Marcedone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarvar</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Ramage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Segal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karn</forename><surname>Seth</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3133956.3133982</idno>
+		<ptr target="https://doi.org/10.1145/3133956.3133982" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;17</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;17</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1175" to="1191" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Machine Learning Classification over Encrypted Data</title>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Bost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ada</forename><surname>Raluca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Popa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shafi</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Goldwasser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceeding of The Network and Distributed System Security Symposium (NDSS&apos;15)</title>
+				<meeting>eeding of The Network and Distributed System Security Symposium (NDSS&apos;15)</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Communicationefficient learning of deep networks from decentralized data</title>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eider</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Ramage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seth</forename><surname>Hampson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blaise</forename><surname>Agüera Y Arcas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS&apos;17)</title>
+				<meeting>the 20th International Conference on Artificial Intelligence and Statistics (AISTATS&apos;17)</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving remote diagnostics</title>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Brickell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Donald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><surname>Porter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmett</forename><surname>Shmatikov</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Witchel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th ACM conference on Computer and communications security (CCS&apos;07</title>
+				<meeting>the 14th ACM conference on Computer and communications security (CCS&apos;07</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="498" to="507" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Secure two-party k-means clustering</title>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Bunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rafail</forename><surname>Ostrovsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th ACM conference on Computer and communications security (CCS&apos;07</title>
+				<meeting>the 14th ACM conference on Computer and communications security (CCS&apos;07</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="486" to="497" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Public Perceptions of Privacy and Security</title>
+		<author>
+			<persName><surname>Pew Research</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Center</surname></persName>
+		</author>
+		<ptr target="http://www.pewinternet.org/2014/11/12/public-privacy-perceptions/" />
+	</analytic>
+	<monogr>
+		<title level="j">Pew Research Center</title>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Differentially private empirical risk minimization</title>
+		<author>
+			<persName><forename type="first">Kamalika</forename><surname>Chaudhuri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claire</forename><surname>Monteleoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand D</forename><surname>Sarwate</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1069" to="1109" />
+			<date type="published" when="2011-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Zoo: Zeroth order optimization based black-box attacks to deep neural networks without training substitute models</title>
+		<author>
+			<persName><forename type="first">Pin-Yu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yash</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinfeng</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cho-Jui</forename><surname>Hsieh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 10th ACM Workshop on Artificial Intelligence and Security</title>
+				<meeting>the 10th ACM Workshop on Artificial Intelligence and Security</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="15" to="26" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">You are where you tweet: a content-based approach to geo-locating twitter users</title>
+		<author>
+			<persName><forename type="first">Zhiyuan</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Caverlee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyumin</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of ACM international conference on Information and knowledge management (CIKM&apos;10</title>
+				<meeting>ACM international conference on Information and knowledge management (CIKM&apos;10</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="759" to="768" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Learning Sensitive Images Using Generative Models</title>
+		<author>
+			<persName><forename type="first">Sen-Ching Samson</forename><surname>Cheung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herb</forename><surname>Wildfeuer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Nikkhah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoqing</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Waitian</forename><surname>Tan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 25th IEEE International Conference on Image Processing (ICIP&apos;18</title>
+				<meeting>the 25th IEEE International Conference on Image Processing (ICIP&apos;18</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="4128" to="4132" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Friendship and mobility: user movement in location-based social networks</title>
+		<author>
+			<persName><forename type="first">Eunjoon</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jure</forename><surname>Myers</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Leskovec</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM International Conference on Knowledge Discovery and Data Mining</title>
+				<meeting>the ACM International Conference on Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="1082" to="1090" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Generating Multi-label Discrete Patient Records using Generative Adversarial Networks</title>
+		<author>
+			<persName><forename type="first">Edward</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siddharth</forename><surname>Biswal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><surname>Malin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><surname>Duke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><forename type="middle">F</forename><surname>Stewart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jimeng</forename><surname>Sun</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v68/choi17a.htmlhttp://arxiv.org/abs/1703.06490" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Machine Learning for Healthcare Conference</title>
+				<meeting>the Machine Learning for Healthcare Conference</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">On-line trust perception: What really matters</title>
+		<author>
+			<persName><forename type="first">Elisa</forename><surname>Costante</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerry</forename><forename type="middle">Den</forename><surname>Hartog</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Milan</forename><surname>Petkovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 1st Workshop on Socio-Technical Aspects in Security and Trust (STAST&apos;11</title>
+				<meeting>the 1st Workshop on Socio-Technical Aspects in Security and Trust (STAST&apos;11</meeting>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="52" to="59" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A machine learning solution to assess privacy policy completeness (short paper)</title>
+		<author>
+			<persName><forename type="first">Elisa</forename><surname>Costante</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanhao</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Milan</forename><surname>Petkovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerry</forename><forename type="middle">Den</forename><surname>Hartog</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2381966.2381979</idno>
+		<ptr target="https://doi.org/10.1145/2381966.2381979" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;12</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;12</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="91" to="96" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Personalized privacy assistants for the internet of things: Providing users with notice and choice</title>
+		<author>
+			<persName><forename type="first">Anupam</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Degeling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Smullen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Norman</forename><surname>Sadeh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Pervasive Computing</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="35" to="46" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Deep generative image models using a laplacian pyramid of adversarial networks</title>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Denton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soumith</forename><surname>Chintala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arthur</forename><surname>Szlam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rob</forename><surname>Fergus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS&apos;15)</title>
+				<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="1486" to="1494" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Hadi M Dolatabadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Erfani</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Leckie</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2007.07435</idno>
+		<title level="m">AdvFlow: Inconspicuous Black-box Adversarial Attacks using Normalizing Flows</title>
+				<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Cryptonets: Applying neural networks to encrypted data with high throughput and accuracy</title>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Dowlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ran</forename><surname>Gilad-Bachrach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kim</forename><surname>Laine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristin</forename><surname>Lauter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Naehrig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Wernsing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 33rd International Conference on Machine Learning (ICML&apos;16)</title>
+				<meeting>the 33rd International Conference on Machine Learning (ICML&apos;16)</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="342" to="351" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving multivariate statistical analysis: Linear regression and classification</title>
+		<author>
+			<persName><forename type="first">Wenliang</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yunghsiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shigang</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1137/1.9781611972740.21</idno>
+		<ptr target="https://doi.org/10.1137/1.9781611972740.21" />
+	</analytic>
+	<monogr>
+		<title level="m">SIAM Proceedings Series. 222-233</title>
+				<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Differential privacy: A survey of results</title>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Dwork</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International conference on theory and applications of models of computation</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="1" to="19" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Calibrating noise to sensitivity in private data analysis</title>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Dwork</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Mcsherry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kobbi</forename><surname>Nissim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the theory of cryptography conference (TCC&apos;06)</title>
+				<meeting>the theory of cryptography conference (TCC&apos;06)</meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="265" to="284" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">The algorithmic foundations of differential privacy</title>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Dwork</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Roth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foundations and Trends in Theoretical Computer Science</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="211" to="407" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving Prediction</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dwork</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Feldman Theory</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v75/dwork18a.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Machine Learning for Healthcare Conference</title>
+				<meeting>the Machine Learning for Healthcare Conference</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Adversarial examples that fool both computer vision and time-limited humans</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Gamaleldin F Elsayed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shreya</forename><surname>Papernot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexey</forename><surname>Shankar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Kurakin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Cheung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jascha</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Sohl-Dickstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS&apos;18)</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="3910" to="3920" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Fundamental limits on adversarial robustness</title>
+		<author>
+			<persName><forename type="first">Alhussein</forename><surname>Fawzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omar</forename><surname>Fawzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Frossard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of International Conference on Machine Learning (ICML&apos;15)</title>
+				<meeting>International Conference on Machine Learning (ICML&apos;15)</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+	<note>Workshop Deep Learning</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The dark side of social networking sites: An exploration of the relational and psychological stressors associated with Facebook use and affordances</title>
+		<author>
+			<persName><forename type="first">Jesse</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">J</forename><surname>Moreland</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.chb.2014.11.083</idno>
+		<ptr target="https://doi.org/10.1016/j.chb.2014.11.083" />
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Human Behavior</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="168" to="176" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Model inversion attacks that exploit confidence information and basic countermeasures</title>
+		<author>
+			<persName><forename type="first">Matt</forename><surname>Fredrikson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Somesh</forename><surname>Jha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Ristenpart</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2810103.2813677</idno>
+		<ptr target="https://doi.org/10.1145/2810103.2813677" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;15)</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;15)</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="1322" to="1333" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Privacy in pharmacogenetics: An end-to-end case study of personalized warfarin dosing</title>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Fredrikson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Lantz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Somesh</forename><surname>Jha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Page</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Ristenpart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 23rd USENIX Security Symposium (USENIX&apos;14</title>
+				<meeting>the 23rd USENIX Security Symposium (USENIX&apos;14</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="17" to="32" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">A differential privacy framework for matrix factorization recommender systems</title>
+		<author>
+			<persName><forename type="first">Arik</forename><surname>Friedman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shlomo</forename><surname>Berkovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><forename type="middle">Ali</forename><surname>Kaafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">User Modeling and User-Adapted Interaction</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="425" to="458" />
+			<date type="published" when="2016-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Adversarial learning of privacy-preserving text representations for de-identification of medical records</title>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Friedrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arne</forename><surname>Köhn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregor</forename><surname>Wiedemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Biemann</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/p19-1584</idno>
+		<ptr target="https://doi.org/10.18653/v1/p19-1584" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL&apos;20</title>
+				<meeting>the 57th Annual Meeting of the Association for Computational Linguistics (ACL&apos;20</meeting>
+		<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="5829" to="5839" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Keeping Context in Mind: Automating Mobile App Access Control with User Interface Inspection</title>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zizhan</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sencun</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prasant</forename><surname>Mohapatra</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/INFOCOM.2019.8737510</idno>
+		<ptr target="https://doi.org/10.1109/INFOCOM.2019.8737510" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of IEEE International Conference on Computer Communications (INFOCOM&apos;19</title>
+				<meeting>IEEE International Conference on Computer Communications (INFOCOM&apos;19</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="2089" to="2097" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Privacy-Aware Adaptive Data Encryption Strategy of Big Data in Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Keke</forename><surname>Gai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meikang</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Xiong</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CSCloud.2016.52</idno>
+		<ptr target="https://doi.org/10.1109/CSCloud.2016.52" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of 3rd IEEE International Conference on Cyber Security and Cloud Computing (CSCloud&apos;16</title>
+				<meeting>3rd IEEE International Conference on Cyber Security and Cloud Computing (CSCloud&apos;16</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="273" to="278" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Defense Against the Dark Arts: An overview of adversarial example security research and future research directions</title>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1806.04169</idno>
+		<idno>arXiv:1806.04169</idno>
+		<ptr target="http://arxiv.org/abs/1806.04169" />
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Generative adversarial nets</title>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">J</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><surname>Pouget-Abadie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Mirza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Warde-Farley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sherjil</forename><surname>Ozair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Courville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS&apos;14)</title>
+				<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="2672" to="2680" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Checking app behavior against app descriptions</title>
+		<author>
+			<persName><forename type="first">Alessandra</forename><surname>Gorla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilaria</forename><surname>Tavecchia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Zeller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 36th International Conference on Software Engineering (ICSE&apos;14</title>
+				<meeting>the 36th International Conference on Software Engineering (ICSE&apos;14</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="1025" to="1035" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">ML confidential: Machine learning on encrypted data</title>
+		<author>
+			<persName><forename type="first">Thore</forename><surname>Graepel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristin</forename><surname>Lauter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Naehrig</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Information Security and Cryptology (ICISC&apos;12</title>
+				<meeting>the International Conference on Information Security and Cryptology (ICISC&apos;12</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="1" to="21" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">DRAW: A recurrent neural network for image generation</title>
+		<author>
+			<persName><forename type="first">Karol</forename><surname>Gregor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivo</forename><surname>Danihelka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Graves</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danilo</forename><surname>Jimenez Rezende</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daan</forename><surname>Wierstra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 32nd International Conference on Machine Learning (ICML&apos;15)</title>
+				<meeting>the 32nd International Conference on Machine Learning (ICML&apos;15)</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="1462" to="1471" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Badnets: Identifying vulnerabilities in the machine learning model supply chain</title>
+		<author>
+			<persName><forename type="first">Tianyu</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Dolan-Gavitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siddharth</forename><surname>Garg</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1708.06733</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">We know where you are: Home location identification in location-based social networks</title>
+		<author>
+			<persName><forename type="first">Yulong</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuan</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weidong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaxing</forename><surname>Song</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICCCN.2016.7568598</idno>
+		<ptr target="https://doi.org/10.1109/ICCCN.2016.7568598" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 25th International Conference on Computer Communications and Networks (ICCCN&apos;16</title>
+				<meeting>the 25th International Conference on Computer Communications and Networks (ICCCN&apos;16</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1" to="9" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Automatically Detecting Bystanders in Photos to Reduce Privacy Risks</title>
+		<author>
+			<persName><forename type="first">Rakibul</forename><surname>Hasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Crandall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario Fritz Apu</forename><surname>Kapadia</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SP40000.2020.00097</idno>
+		<ptr target="https://doi.org/10.1109/SP40000.2020.00097" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;20</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;20</meeting>
+		<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="318" to="335" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">LOGAN: Membership Inference Attacks Against Generative Models</title>
+		<author>
+			<persName><forename type="first">Jamie</forename><surname>Hayes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Melis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Danezis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emiliano De</forename><surname>Cristofaro</surname></persName>
+		</author>
+		<idno type="DOI">10.2478/popets-2019-0008</idno>
+		<ptr target="https://doi.org/10.2478/popets-2019-0008" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings on Privacy Enhancing Technologies (PETS&apos;19</title>
+				<meeting>on Privacy Enhancing Technologies (PETS&apos;19</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="133" to="152" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Re-identification attacks-A systematic literature review</title>
+		<author>
+			<persName><forename type="first">Jane</forename><surname>Henriksen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">-</forename><surname>Bulmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheridan</forename><surname>Jeary</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Information Management</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="1184" to="1192" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving Machine Learning as a Service</title>
+		<author>
+			<persName><forename type="first">Ehsan</forename><surname>Hesamifard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hassan</forename><surname>Takabi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Ghasemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rebecca</forename><forename type="middle">N</forename><surname>Wright</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings on Privacy Enhancing Technologies (PETS&apos;19</title>
+				<meeting>on Privacy Enhancing Technologies (PETS&apos;19</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="123" to="142" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Deep Models under the GAN: Information leakage from collaborative deep learning</title>
+		<author>
+			<persName><forename type="first">Briland</forename><surname>Hitaj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Ateniese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>Perez-Cruz</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3133956.3134012</idno>
+		<ptr target="https://doi.org/10.1145/3133956.3134012" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;17)</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;17)</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="603" to="618" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Reverse engineering convolutional neural networks through side-channel information leaks</title>
+		<author>
+			<persName><forename type="first">Weizhe</forename><surname>Hua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiru</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G Edward</forename><surname>Suh</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3195970.3196105</idno>
+		<ptr target="https://doi.org/10.1145/3195970.3196105" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Design Automation Conference (DAC&apos;18)</title>
+				<meeting>the Design Automation Conference (DAC&apos;18)</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note>Part F1377. 1-6</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Privacy-aware Synthesizing for Crowdsourced Data</title>
+		<author>
+			<persName><forename type="first">Mengdi</forename><surname>Huai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenglin</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinhui</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aidong</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence</title>
+				<meeting>the Twenty-Eighth International Joint Conference on Artificial Intelligence<address><addrLine>California</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">2019</biblScope>
+			<biblScope unit="page" from="2542" to="2548" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Attacks on Anonymization-Based Privacy-Preserving: A Survey for Data Mining and Data Publishing</title>
+		<author>
+			<persName><forename type="first">Nermin</forename><surname>Abou-El-Ela Abdou Hussien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hesham A</forename><surname>Hamza</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hefny</surname></persName>
+		</author>
+		<idno type="DOI">10.4236/jis.2013.42012</idno>
+		<ptr target="https://doi.org/10.4236/jis.2013.42012" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Information Security</title>
+		<imprint>
+			<biblScope unit="volume">04</biblScope>
+			<biblScope unit="page" from="101" to="112" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Improved Algorithms for Differentially Private Orthogonal Tensor Decomposition</title>
+		<author>
+			<persName><forename type="first">Hafiz</forename><surname>Imtia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><forename type="middle">D</forename><surname>Sarwate</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICASSP.2018.8461303</idno>
+		<ptr target="https://doi.org/10.1109/ICASSP.2018.8461303" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP&apos;18)</title>
+				<meeting>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP&apos;18)</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="2201" to="2205" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Distributed Differentially Private Algorithms for Matrix and Tensor Factorization</title>
+		<author>
+			<persName><forename type="first">Hafiz</forename><surname>Imtiaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><forename type="middle">D</forename><surname>Sarwate</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/JSTSP.2018.2877842</idno>
+		<ptr target="https://doi.org/10.1109/JSTSP.2018.2877842" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE J. Sel. Topics Signal Process</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1449" to="1464" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Towards practical differentially private convex optimization</title>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Iyengar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">P</forename><surname>Near</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dawn</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Om</forename><surname>Thakkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhradeep</forename><surname>Thakurta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lun</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SP.2019.00001</idno>
+		<ptr target="https://doi.org/10.1109/SP.2019.00001" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;19)., Vol. 2019-May. IEEE</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;19)., Vol. 2019-May. IEEE</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="299" to="316" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving distributed k-means clustering over arbitrarily partitioned data</title>
+		<author>
+			<persName><forename type="first">Geetha</forename><surname>Jagannathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rebecca</forename><forename type="middle">N</forename><surname>Wright</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1081870.1081942</idno>
+		<ptr target="https://doi.org/10.1145/1081870.1081942" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM International Conference on Knowledge Discovery and Data Mining (KDD&apos;05</title>
+				<meeting>the ACM International Conference on Knowledge Discovery and Data Mining (KDD&apos;05</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="593" to="599" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Age recognition in the wild</title>
+		<author>
+			<persName><forename type="first">Amirhossein</forename><surname>Jahanbekam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Bauckhage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Thurau</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICPR.2010.104</idno>
+		<ptr target="https://doi.org/10.1109/ICPR.2010.104" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Pattern Recognition (ICPR&apos;10</title>
+				<meeting>the International Conference on Pattern Recognition (ICPR&apos;10</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="392" to="395" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<author>
+			<persName><forename type="first">Zhanglong</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zachary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Lipton</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Elkan</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.7584</idno>
+		<ptr target="http://arxiv.org/abs/1412.7584" />
+		<title level="m">Differential Privacy and Machine Learning: a Survey and Review</title>
+				<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">AttriGuard: A practical defense against attribute inference attacks via adversarial machine learning</title>
+		<author>
+			<persName><forename type="first">Jinyuan</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil Zhenqiang</forename><surname>Gong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 27th USENIX Security Symposium (USENIX&apos;18</title>
+				<meeting>the 27th USENIX Security Symposium (USENIX&apos;18</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="513" to="529" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Preserving model privacy for machine learning in distributed systems</title>
+		<author>
+			<persName><forename type="first">Qi</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linke</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhanpeng</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuguang</forename><surname>Fang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TPDS.2018.2809624</idno>
+		<ptr target="https://doi.org/10.1109/TPDS.2018.2809624" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Parallel Distrib. Syst</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="1808" to="1822" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Person recognition in personal photo collections</title>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><surname>Seong Joon Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Benenson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernt</forename><surname>Fritz</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Schiele</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE International Conference on Computer Vision (CVPR&apos;15</title>
+				<meeting>the IEEE International Conference on Computer Vision (CVPR&apos;15</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="3862" to="3870" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<monogr>
+		<title level="m" type="main">Advances and Open Problems in Federated Learning</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">Brendan</forename><surname>Peter Kairouz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aurélien</forename><surname>Avent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Bellet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arjun</forename><forename type="middle">Nitin</forename><surname>Bennis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><surname>Bhagoji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zachary</forename><surname>Bonawitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Graham</forename><surname>Charles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><surname>Cormode</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Cummings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">L</forename><surname>Rafael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Salim</forename><forename type="middle">El</forename><surname>Oliveira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Rouayheb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josh</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zachary</forename><surname>Gardner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrià</forename><surname>Garrett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Badih</forename><surname>Gascón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phillip</forename><forename type="middle">B</forename><surname>Ghazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Gibbons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zaid</forename><surname>Gruteser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chaoyang</forename><surname>Harchaoui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lie</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhouyuan</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Huo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Hutchinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tara</forename><surname>Jaggi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gauri</forename><surname>Javidi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mikhail</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakub</forename><surname>Khodak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleksandra</forename><surname>Konečný</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Farinaz</forename><surname>Korolova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sanmi</forename><surname>Koushanfar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tancrède</forename><surname>Koyejo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Lepoint</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prateek</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehryar</forename><surname>Mittal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Mohri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayfer</forename><surname>Nock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rasmus</forename><surname>Özgür</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mariana Raykova ; Jianyu</forename><surname>Pagh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felix</forename><forename type="middle">X</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sen</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Zhao</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1912.04977</idno>
+		<ptr target="http://arxiv.org/abs/1912.04977" />
+		<editor>Hang Qi, Daniel Ramage, Ramesh Raskar, Dawn Song, Weikang Song, Sebastian U. Stich, Ziteng Sun, Ananda Theertha Suresh, Florian Tramèr, Praneeth Vepakomma,</editor>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<monogr>
+		<author>
+			<persName><forename type="first">Jakub</forename><surname>Konečný</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Felix</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ananda</forename><forename type="middle">Theertha</forename><surname>Richtárik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dave</forename><surname>Suresh</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Bacon</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1610.05492</idno>
+		<ptr target="http://arxiv.org/abs/1610.05492" />
+		<title level="m">Federated Learning: Strategies for Improving Communication Efficiency</title>
+				<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Inference attacks on location tracks</title>
+		<author>
+			<persName><forename type="first">John</forename><surname>Krumm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Pervasive Computing</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="127" to="143" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<author>
+			<persName><forename type="first">Vaibhav</forename><surname>Kulkarni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natasa</forename><surname>Tagasovska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thibault</forename><surname>Vatter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benoit</forename><surname>Garbinato</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1811.12801</idno>
+		<ptr target="http://arxiv.org/abs/1811.12801" />
+		<title level="m">Generative Models for Simulating Mobility Trajectories</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Adversarial machine learning at scale</title>
+		<author>
+			<persName><forename type="first">Alexey</forename><surname>Kurakin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">J</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samy</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Learning Representations (ICLR&apos;19)</title>
+				<meeting>the International Conference on Learning Representations (ICLR&apos;19)</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Automatic Detection of Vague Words and Sentences in Privacy Policies</title>
+		<author>
+			<persName><forename type="first">Logan</forename><surname>Lebanoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/D18-1387</idno>
+		<ptr target="https://doi.org/10.18653/v1/D18-1387" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</title>
+				<meeting>the 2018 Conference on Empirical Methods in Natural Language Processing<address><addrLine>Stroudsburg, PA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="3508" to="3517" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Certified robustness to adversarial examples with differential privacy</title>
+		<author>
+			<persName><forename type="first">Mathias</forename><surname>Lecuyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vaggelis</forename><surname>Atlidakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roxana</forename><surname>Geambasu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suman</forename><surname>Jana</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;19)</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;19)</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="656" to="672" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Privacy preference modeling and prediction in a simulated campuswide IoT environment</title>
+		<author>
+			<persName><forename type="first">Hosub</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfred</forename><surname>Kobsa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE International Conference on Pervasive Computing and Communications</title>
+				<meeting>the IEEE International Conference on Pervasive Computing and Communications</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="276" to="285" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Privacy leakage of location sharing in mobile social networks: Attacks and defense</title>
+		<author>
+			<persName><forename type="first">Huaxin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haojin</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suguo</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohui</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuemin Sherman</forename><surname>Shen</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TDSC.2016.2604383</idno>
+		<ptr target="https://doi.org/10.1109/TDSC.2016.2604383" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Dependable Secure Comput</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="646" to="660" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Multi-key privacypreserving deep learning in cloud computing</title>
+		<author>
+			<persName><forename type="first">Ping</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhengan</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chong</forename><forename type="middle">Zhi</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siu</forename><forename type="middle">Ming</forename><surname>Yiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2017.02.006</idno>
+		<ptr target="https://doi.org/10.1016/j.future.2017.02.006" />
+	</analytic>
+	<monogr>
+		<title level="j">Future Generation Computer Systems</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page" from="76" to="85" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">AnonymousNet: Natural face de-identification with measurable privacy</title>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Lin</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPRW.2019.00013</idno>
+		<ptr target="https://doi.org/10.1109/CVPRW.2019.00013" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops (CVPRW&apos;19)</title>
+				<meeting>the IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops (CVPRW&apos;19)</meeting>
+		<imprint>
+			<date type="published" when="2019-06" />
+			<biblScope unit="page" from="56" to="65" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">NATTACK: Learning the Distributions of Adversarial Examples for an Improved Black-Box Attack on Deep Neural Networks</title>
+		<author>
+			<persName><forename type="first">Yandong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lijun</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liqiang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boqing</forename><surname>Gong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Machine Learning (ICML&apos;19</title>
+				<meeting>the International Conference on Machine Learning (ICML&apos;19</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="3866" to="3876" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Adversaries or allies? Privacy and deep learning in big data era</title>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianqing</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Xiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wanlei</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cpe.5102</idno>
+		<ptr target="https://doi.org/10.1002/cpe.5102" />
+	</analytic>
+	<monogr>
+		<title level="m">Concurrency Computation</title>
+				<imprint>
+			<publisher>Wiley Online Library</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">31</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Home location protection in mobile social networks: a community based method</title>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wanlei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shui</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Xiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Information Security Practice and Experience (ISPEC&apos;17)</title>
+				<meeting>the International Conference on Information Security Practice and Experience (ISPEC&apos;17)</meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="694" to="704" />
+		</imprint>
+	</monogr>
+	<note>short paper</note>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Silence is Golden: Enhancing Privacy of Location-Based Services by Content Broadcasting and Active Caching in Wireless Vehicular Networks</title>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wanlei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianqing</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Longxiang</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haibo</forename><surname>Luan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TVT.2016.2531185</idno>
+		<ptr target="https://doi.org/10.1109/TVT.2016.2531185" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Veh. Technol</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="9942" to="9953" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Mining checkins from location-sharing services for client-independent IP geolocation</title>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaoxue</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuezhi</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoming</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K K</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/INFOCOM.2014.6847987</idno>
+		<ptr target="https://doi.org/10.1109/INFOCOM.2014.6847987" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of IEEE International Conference on Computer Communications (INFOCOM&apos;14</title>
+				<meeting>IEEE International Conference on Computer Communications (INFOCOM&apos;14</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="619" to="627" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">Generative model: Membership attack, generalization and diversity</title>
+		<author>
+			<persName><forename type="first">Kin</forename><forename type="middle">Sum</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Gao</surname></persName>
+		</author>
+		<idno>abs/1805.09898</idno>
+		<imprint>
+			<date type="published" when="2018" />
+			<publisher>CoRR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">A survey on security threats and defensive techniques of machine learning: A data driven view</title>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wentao</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shui</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Victor</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Leung</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ACCESS.2018.2805680</idno>
+		<ptr target="https://doi.org/10.1109/ACCESS.2018.2805680" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="12103" to="12117" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">trajGANs: Using generative adversarial networks for geo-privacy protection of trajectory data (Vision paper)</title>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanzhou</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clio</forename><surname>Andris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Location Privacy and Security Workshop</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Trojaning Attack on Neural Networks</title>
+		<author>
+			<persName><forename type="first">Yingqi</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiqing</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yousra</forename><surname>Aafer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wen-Chuan</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><surname>Zhai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weihang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.14722/ndss.2018.23291</idno>
+		<ptr target="https://doi.org/10.14722/ndss.2018.23291" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of Network and Distributed Systems Security Symposium (NDSS&apos;18</title>
+				<meeting>Network and Distributed Systems Security Symposium (NDSS&apos;18</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<monogr>
+		<title level="m" type="main">Protecting Privacy in Shared Photos via Adversarial Examples Based Stealth</title>
+		<author>
+			<persName><forename type="first">Yujia</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiming</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nenghai</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="DOI">10.1155/2017/1897438</idno>
+		<ptr target="https://doi.org/10.1155/2017/1897438" />
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page">2017</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<monogr>
+		<author>
+			<persName><forename type="first">Yunhui</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Bindschaedler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diyue</forename><surname>Bu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaofeng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haixu</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Carl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Gunter</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Chen</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1802.04889</idno>
+		<ptr target="http://arxiv.org/abs/1802.04889" />
+		<title level="m">Understanding Membership Inferences on Well-Generalized Learning Models</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Adversarial learning</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Lowd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Meek</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1081870.1081950</idno>
+		<ptr target="https://doi.org/10.1145/1081870.1081950" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM International Conference on Knowledge Discovery and Data Mining (KDD&apos;05</title>
+				<meeting>the ACM International Conference on Knowledge Discovery and Data Mining (KDD&apos;05</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="641" to="647" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Home location identification of twitter users</title>
+		<author>
+			<persName><forename type="first">Jalal</forename><surname>Mahmud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><surname>Nichols</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clemens</forename><surname>Drews</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2528548</idno>
+		<ptr target="https://doi.org/10.1145/2528548" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Intell. Syst. Technol</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">47</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Detection of fraudulent and malicious websites by analysing user reviews for online shopping websites</title>
+		<author>
+			<persName><forename type="first">Deepa</forename><surname>Asha S Manek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chandra</forename><surname>Shenoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Mohan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Venugopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1504/ijkwi.2016.078712</idno>
+		<ptr target="https://doi.org/10.1504/ijkwi.2016.078712" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Knowledge and Web Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">171</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Personality trait development from age 12 to age 18: Longitudinal, cross-sectional, and cross-cultural analyses</title>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">T</forename><surname>Robert R Mccrae</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Costa</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Terracciano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wayne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><forename type="middle">J</forename><surname>Parker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Filip</forename><forename type="middle">De</forename><surname>Mills</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Fruyt</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Mervielde</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/0022-3514.83.6.1456</idno>
+		<ptr target="https://doi.org/10.1037/0022-3514.83.6.1456" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Personality and Social Psychology</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="1456" to="1468" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Federated Learning of Deep Networks using Model Averaging</title>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eider</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Ramage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seth</forename><surname>Hampson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blaise</forename><surname>Agüera Y Arcas</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/1.2841713</idno>
+		<ptr target="https://doi.org/10.1063/1.2841713" />
+	</analytic>
+	<monogr>
+		<title level="j">Arxiv</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="page">91118</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Learning Differentially Private Recurrent Language Models Without Lossing Accuracy</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>H Brendan Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kunal</forename><surname>Ramage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Talwar</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/585597.585599</idno>
+		<ptr target="https://doi.org/10.1145/585597.585599" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 6th International Conference on Learning Representations (ICLR&apos;18)</title>
+				<meeting>the 6th International Conference on Learning Representations (ICLR&apos;18)</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="39" to="44" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<monogr>
+		<title level="m" type="main">Defeating image obfuscation with deep learning</title>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Mcpherson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Shokri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><surname>Shmatikov</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1609.00408</idno>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">Measuring Personality for Automatic Elicitation of Privacy Preferences</title>
+		<author>
+			<persName><surname>Hoda Mehrpouyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Soledad</forename><surname>Ion Madrazo Azpiazu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Privacy-Aware Computing (PAC&apos;17</title>
+				<meeting>the IEEE Symposium on Privacy-Aware Computing (PAC&apos;17</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="84" to="95" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Exploiting unintended feature leakage in collaborative learning</title>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Melis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Congzheng</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><surname>Emiliano De Cristofaro</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Shmatikov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;19)</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;19)</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="691" to="706" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">Your online interests: Pwned! a pollution attack against targeted advertising</title>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anmol</forename><surname>Sheth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udi</forename><surname>Weinsberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenke</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;14</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;14</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="129" to="140" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title level="a" type="main">Rényi Differential Privacy</title>
+		<author>
+			<persName><forename type="first">Ilya</forename><surname>Mironov</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CSF.2017.11</idno>
+		<ptr target="https://doi.org/10.1109/CSF.2017.11" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Computer Security Foundations Symposium (CSF&apos;17)</title>
+				<meeting>the IEEE Computer Security Foundations Symposium (CSF&apos;17)</meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="263" to="275" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">SecureML: A system for scalable privacy-preserving machine learning</title>
+		<author>
+			<persName><forename type="first">Payman</forename><surname>Mohassel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yupeng</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;17)</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;17)</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="19" to="38" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<analytic>
+		<title level="a" type="main">Universal adversarial perturbations</title>
+		<author>
+			<persName><forename type="first">Alhussein</forename><surname>Seyed Mohsen Moosavi-Dezfooli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omar</forename><surname>Fawzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Fawzi</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Frossard</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2017.17</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2017.17" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR&apos;17)</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition (CVPR&apos;17)</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="86" to="94" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<analytic>
+		<title level="a" type="main">Deepfool: a simple and accurate method to fool deep neural networks</title>
+		<author>
+			<persName><forename type="first">Alhussein</forename><surname>Seyed-Mohsen Moosavi-Dezfooli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Fawzi</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Frossard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR&apos;16</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition (CVPR&apos;16</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="2574" to="2582" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<monogr>
+		<title level="m" type="main">How To Break Anonymity of the Netflix Prize Dataset</title>
+		<author>
+			<persName><forename type="first">Arvind</forename><surname>Narayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><surname>Shmatikov</surname></persName>
+		</author>
+		<idno>cs/0610105</idno>
+		<ptr target="http://arxiv.org/abs/cs/0610105" />
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<analytic>
+		<title level="a" type="main">Comprehensive privacy analysis of deep learning: Passive and active white-box inference attacks against centralized and federated learning</title>
+		<author>
+			<persName><forename type="first">Milad</forename><surname>Nasr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Shokri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amir</forename><surname>Houmansadr</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SP.2019.00065</idno>
+		<ptr target="https://doi.org/10.1109/SP.2019.00065" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;19</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;19</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="739" to="753" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<monogr>
+		<title level="m" type="main">Oracle Efficient Private Non-Convex Optimization</title>
+		<author>
+			<persName><forename type="first">Seth</forename><surname>Neel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Vietri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiwei Steven</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1909.01783</idno>
+		<ptr target="http://arxiv.org/abs/1909.01783" />
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving ridge regression on hundreds of millions of records</title>
+		<author>
+			<persName><forename type="first">Valeria</forename><surname>Nikolaenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Udi</forename><surname>Weinsberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stratis</forename><surname>Ioannidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Joye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Boneh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nina</forename><surname>Taft</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;13</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;13</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="334" to="348" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<monogr>
+		<title level="m" type="main">Assesing Completeness of Solvency and Financial Condition Reports through the use of Machine Learning and Text Classification</title>
+		<author>
+			<persName><forename type="first">Ruairí</forename><surname>Nugent</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<analytic>
+		<title level="a" type="main">Faceless person recognition: Privacy implications in social media</title>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><surname>Seong Joon Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Benenson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernt</forename><surname>Fritz</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Schiele</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of European Conference on Computer Vision (ECCV&apos;16)</title>
+				<meeting>European Conference on Computer Vision (ECCV&apos;16)</meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="19" to="35" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<analytic>
+		<title level="a" type="main">Adversarial image perturbation for privacy protection a game theory perspective</title>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Seong Joon Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernt</forename><surname>Fritz</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Schiele</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of IEEE International Conference on Computer Vision (ICCV&apos;17)</title>
+				<meeting>IEEE International Conference on Computer Vision (ICCV&apos;17)</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1491" to="1500" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<analytic>
+		<title level="a" type="main">Towards reverse-engineering black-box neural networks</title>
+		<author>
+			<persName><forename type="first">Bernt</forename><surname>Seong Joon Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Schiele</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Fritz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Explainable AI: Interpreting, Explaining and Visualizing Deep Learning</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="121" to="144" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<analytic>
+		<title level="a" type="main">SmarPer: Context-Aware and Automatic Runtime-Permissions for Mobile Devices</title>
+		<author>
+			<persName><forename type="first">Katarzyna</forename><surname>Olejnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Italo</forename><surname>Dacosta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joana</forename><forename type="middle">Soares</forename><surname>Machado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Huguenin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Emtiyaz</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><forename type="middle">Pierre</forename><surname>Hubaux</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SP.2017.25</idno>
+		<ptr target="https://doi.org/10.1109/SP.2017.25" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;17</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;17</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1058" to="1076" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b112">
+	<analytic>
+		<title level="a" type="main">Connecting Pixels to Privacy and Utility: Automatic Redaction of Private Information in Images</title>
+		<author>
+			<persName><forename type="first">Tribhuvanesh</forename><surname>Orekondy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Fritz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernt</forename><surname>Schiele</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2018.00883</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2018.00883" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR&apos;18</title>
+				<meeting>the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR&apos;18</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="8466" to="8475" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b113">
+	<analytic>
+		<title level="a" type="main">Towards a Visual Privacy Advisor: Understanding and Predicting Privacy Risks in Images</title>
+		<author>
+			<persName><forename type="first">Tribhuvanesh</forename><surname>Orekondy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernt</forename><surname>Schiele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Fritz</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICCV.2017.398</idno>
+		<ptr target="https://doi.org/10.1109/ICCV.2017.398" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE International Conference on Computer Vision (ICCV&apos;17</title>
+				<meeting>the IEEE International Conference on Computer Vision (ICCV&apos;17</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="3706" to="3715" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b114">
+	<analytic>
+		<title level="a" type="main">A non-parametric generative model for human trajectories</title>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Ouyang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Shokri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenzhuo</forename><surname>Rosenblum</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI&apos;18</title>
+				<meeting>the International Joint Conference on Artificial Intelligence (IJCAI&apos;18</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="3812" to="3817" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b115">
+	<analytic>
+		<title level="a" type="main">Semi-supervised knowledge transfer for deep learning from private training data</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Papernot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martín</forename><surname>Abadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kunal</forename><surname>Talwar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Úlfar</forename><surname>Erlingsson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 5th International Conference on Learning Representations (ICLR&apos;19)</title>
+				<meeting>the 5th International Conference on Learning Representations (ICLR&apos;19)</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b116">
+	<monogr>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Papernot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Mcdaniel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1605.07277</idno>
+		<ptr target="http://arxiv.org/abs/1605.07277" />
+		<title level="m">Transferability in Machine Learning: from Phenomena to Black-Box Attacks using Adversarial Samples</title>
+				<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b117">
+	<analytic>
+		<title level="a" type="main">Practical black-box attacks against machine learning</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Papernot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Mcdaniel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Somesh</forename><surname>Jha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ananthram</forename><surname>Berkay Celik</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Swami</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3052973.3053009</idno>
+		<ptr target="https://doi.org/10.1145/3052973.3053009" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Asia Conference on Computer and Communications Security (ASIACCS&apos;17)</title>
+				<meeting>the ACM Asia Conference on Computer and Communications Security (ASIACCS&apos;17)</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="506" to="519" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b118">
+	<analytic>
+		<title level="a" type="main">The limitations of deep learning in adversarial settings</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Papernot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Mcdaniel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Somesh</forename><surname>Jha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matt</forename><surname>Fredrikson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ananthram</forename><surname>Berkay Celik</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Swami</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE European Symposium on Security and Privacy (EuroS&amp;P&apos;16)</title>
+				<meeting>the IEEE European Symposium on Security and Privacy (EuroS&amp;P&apos;16)</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="372" to="387" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b119">
+	<analytic>
+		<title level="a" type="main">Data synthesis based on generative adversarial networks</title>
+		<author>
+			<persName><forename type="first">Noseong</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahmoud</forename><surname>Mohammadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kshitij</forename><surname>Gorde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sushil</forename><surname>Jajodia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongkyu</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Youngmin</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/3231751.3231757</idno>
+		<ptr target="https://doi.org/10.14778/3231751.3231757" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the VLDB Endowment</title>
+				<meeting>the VLDB Endowment</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="1071" to="1083" />
+		</imprint>
+		<respStmt>
+			<orgName>VLDB Endowment</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b120">
+	<analytic>
+		<title level="a" type="main">Multiparty differential privacy via aggregation of locally trained classifiers</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Manas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shantanu</forename><surname>Pathak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bhiksha</forename><surname>Rane</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Raj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS&apos;10</title>
+				<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="1876" to="1884" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b121">
+	<analytic>
+		<title level="a" type="main">Privacy, security and trust issues arising from cloud computing</title>
+		<author>
+			<persName><forename type="first">Siani</forename><surname>Pearson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Azzedine</forename><surname>Benameur</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CloudCom.2010.66</idno>
+		<ptr target="https://doi.org/10.1109/CloudCom.2010.66" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2nd IEEE International Conference on Cloud Computing Technology and Science (CloudCom&apos;10</title>
+				<meeting>the 2nd IEEE International Conference on Cloud Computing Technology and Science (CloudCom&apos;10</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="693" to="702" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b122">
+	<analytic>
+		<title level="a" type="main">Scalable Differential Privacy with Certified Robustness in Adversarial Learning</title>
+		<author>
+			<persName><forename type="first">Nhathai</forename><surname>Phan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">My</forename><forename type="middle">T</forename><surname>Thai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruoming</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dejing</forename><surname>Dou</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1903.09822</idno>
+		<ptr target="http://arxiv.org/abs/1903.09822" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 37th International Conference on Machine Learning (PMLR&apos;20)</title>
+				<meeting>the 37th International Conference on Machine Learning (PMLR&apos;20)</meeting>
+		<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="volume">6</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b123">
+	<analytic>
+		<title level="a" type="main">Adaptive laplace mechanism: Differential privacy preservation in deep learning</title>
+		<author>
+			<persName><forename type="first">Nhathai</forename><surname>Phan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xintao</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dejing</forename><surname>Dou</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICDM.2017.48</idno>
+		<ptr target="https://doi.org/10.1109/ICDM.2017.48" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of IEEE International Conference on Data Mining (ICDM&apos;17)</title>
+				<meeting>IEEE International Conference on Data Mining (ICDM&apos;17)</meeting>
+		<imprint>
+			<date type="published" when="2017-11" />
+			<biblScope unit="page" from="385" to="394" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b124">
+	<analytic>
+		<title level="a" type="main">Heterogeneous Gaussian mechanism: Preserving differential privacy in deep learning with provable robustness</title>
+		<author>
+			<persName><forename type="first">Minh</forename><forename type="middle">N</forename><surname>Nhat Hai Phan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Vu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruoming</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dejing</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xintao</forename><surname>Dou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">My</forename><forename type="middle">T</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Thai</surname></persName>
+		</author>
+		<idno type="DOI">10.24963/ijcai.2019/660</idno>
+		<idno type="arXiv">arXiv:1906.01444</idno>
+		<ptr target="https://doi.org/10.24963/ijcai.2019/660" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of International Joint Conference on Artificial Intelligence (IJCAI&apos;19)</title>
+				<meeting>International Joint Conference on Artificial Intelligence (IJCAI&apos;19)</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">2019-Augus. 4753-4759</note>
+</biblStruct>
+
+<biblStruct xml:id="b125">
+	<analytic>
+		<title level="a" type="main">Privacy-Preserving Deep Learning via Additively Homomorphic Encryption</title>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Trieu Phong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshinori</forename><surname>Aono</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takuya</forename><surname>Hayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lihua</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiho</forename><surname>Moriai</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TIFS.2017.2787987</idno>
+		<ptr target="https://doi.org/10.1109/TIFS.2017.2787987" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Forensics Security</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="1333" to="1345" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b126">
+	<analytic>
+		<title level="a" type="main">Cryptographic techniques for privacy-preserving data mining</title>
+		<author>
+			<persName><forename type="first">Benny</forename><surname>Pinkas</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/772862.772865</idno>
+		<ptr target="https://doi.org/10.1145/772862.772865" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGKDD Explorations Newsletter</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="12" to="19" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b127">
+	<analytic>
+		<title level="a" type="main">Generative Adversarial Perturbations</title>
+		<author>
+			<persName><forename type="first">Omid</forename><surname>Poursaeed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Isay</forename><surname>Katsman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bicheng</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Belongie</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2018.00465</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2018.00465" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR&apos;18</title>
+				<meeting>the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR&apos;18</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="4422" to="4431" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b128">
+	<monogr>
+		<title level="m" type="main">Sampling Attacks: Amplification of Membership Inference Attacks by Repeated Queries</title>
+		<author>
+			<persName><forename type="first">Tribhuvanesh</forename><surname>Shadi Rahimian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Orekondy</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Fritz</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2009.00395</idno>
+		<ptr target="http://arxiv.org/abs/2009.00395" />
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b129">
+	<analytic>
+		<title level="a" type="main">Private-by-design advertising meets the real world</title>
+		<author>
+			<persName><forename type="first">Alexey</forename><surname>Reznichenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Francis</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2660267.2660305</idno>
+		<ptr target="https://doi.org/10.1145/2660267.2660305" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;14</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;14</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="116" to="128" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b130">
+	<analytic>
+		<title level="a" type="main">Adversarial Diversity and Hard Positive Generation</title>
+		<author>
+			<persName><forename type="first">Andras</forename><surname>Rozsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ethan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terrance</forename><forename type="middle">E</forename><surname>Rudd</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Boult</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPRW.2016.58</idno>
+		<ptr target="https://doi.org/10.1109/CVPRW.2016.58" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops (CVPW&apos;16</title>
+				<meeting>the IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops (CVPW&apos;16</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="410" to="417" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b131">
+	<monogr>
+		<title level="m" type="main">Learning in a Large Function Space: Privacy-Preserving Mechanisms for SVM Learning</title>
+		<author>
+			<persName><forename type="first">I P</forename><surname>Benjamin</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Rubinstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Peter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Bartlett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nina</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Taft</surname></persName>
+		</author>
+		<idno>1. 65-100</idno>
+		<ptr target="http://repository.cmu.edu/jpc" />
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b132">
+	<monogr>
+		<title level="m" type="main">Dynamic Backdoor Attacks Against Machine Learning Models</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Salem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Backes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiqing</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2003.03675</idno>
+		<ptr target="http://arxiv.org/abs/2003.03675" />
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b133">
+	<analytic>
+		<title level="a" type="main">ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Salem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mathias</forename><surname>Humbert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Berrang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Fritz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Backes</surname></persName>
+		</author>
+		<idno type="DOI">10.14722/ndss.2019.23119</idno>
+		<ptr target="https://doi.org/10.14722/ndss.2019.23119" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of Network and Distributed Systems Security Symposium (NDSS&apos;19</title>
+				<meeting>Network and Distributed Systems Security Symposium (NDSS&apos;19</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b134">
+	<analytic>
+		<title level="a" type="main">Privacy preserving regression modelling via distributed computation</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ashish</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><forename type="middle">F</forename><surname>Sanil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaodong</forename><surname>Karr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerome P</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Reiter</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1014052.1014139</idno>
+		<ptr target="https://doi.org/10.1145/1014052.1014139" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD&apos;04</title>
+				<meeting>the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD&apos;04</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="677" to="682" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b135">
+	<monogr>
+		<title level="m" type="main">Secure Linear Regression on Vertically Partitioned Datasets</title>
+		<author>
+			<persName><forename type="first">Phillipp</forename><surname>Schoppmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Borja</forename><surname>Balle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jack</forename><surname>Doerner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samee</forename><surname>Zahur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Evans</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1" to="27" />
+		</imprint>
+	</monogr>
+	<note type="report_type">IACR Cryptology Eprint Archive 2016</note>
+</biblStruct>
+
+<biblStruct xml:id="b136">
+	<analytic>
+		<title level="a" type="main">Machine Learning in Automated Text Categorization</title>
+		<author>
+			<persName><forename type="first">Fabrizio</forename><surname>Sebastiani</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/505282.505283</idno>
+		<ptr target="https://doi.org/10.1145/505282.505283" />
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Surveys</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1" to="47" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b137">
+	<analytic>
+		<title level="a" type="main">Accessorize to a crime: Real and stealthy attacks on state-of-the-art face recognition</title>
+		<author>
+			<persName><forename type="first">Mahmood</forename><surname>Sharif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sruti</forename><surname>Bhagavatula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lujo</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael K</forename><surname>Reiter</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2976749.2978392</idno>
+		<ptr target="https://doi.org/10.1145/2976749.2978392" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;16</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;16</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1528" to="1540" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b138">
+	<analytic>
+		<title level="a" type="main">Toward an approach to privacy notices in IoT</title>
+		<author>
+			<persName><forename type="first">Parvaneh</forename><surname>Shayegh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sepideh</forename><surname>Ghanavati</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/REW.2017.77</idno>
+		<ptr target="https://doi.org/10.1109/REW.2017.77" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE 25th International Requirements Engineering Conference Workshops (REW&apos;17). 104-110</title>
+				<meeting>the IEEE 25th International Requirements Engineering Conference Workshops (REW&apos;17). 104-110</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b139">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving deep learning</title>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Shokri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><surname>Shmatikov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;15</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;15</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="1310" to="1321" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b140">
+	<analytic>
+		<title level="a" type="main">Membership Inference Attacks Against Machine Learning Models</title>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Shokri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Stronati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Congzheng</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><surname>Shmatikov</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SP.2017.41</idno>
+		<ptr target="https://doi.org/10.1109/SP.2017.41" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;17)</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;17)</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="3" to="18" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b141">
+	<analytic>
+		<title level="a" type="main">Hiding in the mobile crowd: Location privacy through collaboration</title>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Shokri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Theodorakopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Panos</forename><surname>Papadimitratos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ehsan</forename><surname>Kazemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><forename type="middle">Pierre</forename><surname>Hubaux</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TDSC.2013.57</idno>
+		<ptr target="https://doi.org/10.1109/TDSC.2013.57" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Dependable Secure Comput</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="266" to="279" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b142">
+	<analytic>
+		<title level="a" type="main">Secure logistic regression of horizontally and vertically partitioned distributed databases</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Aleksandra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuval</forename><surname>Slavkovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">M</forename><surname>Nardi</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Tibbits</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICDMW.2007.114</idno>
+		<ptr target="https://doi.org/10.1109/ICDMW.2007.114" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE International Conference on Data Mining (ICDM&apos;07</title>
+				<meeting>the IEEE International Conference on Data Mining (ICDM&apos;07</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="723" to="728" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b143">
+	<analytic>
+		<title level="a" type="main">Machine learning models that remember too much</title>
+		<author>
+			<persName><forename type="first">Congzheng</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Ristenpart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><surname>Shmatikov</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3133956.3134077</idno>
+		<ptr target="https://doi.org/10.1145/3133956.3134077" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;17)</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;17)</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="587" to="601" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b144">
+	<analytic>
+		<title level="a" type="main">Collaborative learning for deep neural networks</title>
+		<author>
+			<persName><forename type="first">Guocong</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Chai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS&apos;18)</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="1832" to="1841" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b145">
+	<analytic>
+		<title level="a" type="main">Stochastic gradient descent with differentially private updates</title>
+		<author>
+			<persName><forename type="first">Shuang</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kamalika</forename><surname>Chaudhuri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand D</forename><surname>Sarwate</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/GlobalSIP.2013.6736861</idno>
+		<ptr target="https://doi.org/10.1109/GlobalSIP.2013.6736861" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Global Conference on Signal and Information Processing (GlobalSIP&apos;13</title>
+				<meeting>the IEEE Global Conference on Signal and Information Processing (GlobalSIP&apos;13</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="245" to="248" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b146">
+	<analytic>
+		<title level="a" type="main">Toward automated online photo privacy</title>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Squicciarini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cornelia</forename><surname>Caragea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Balakavi</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2983644</idno>
+		<ptr target="https://doi.org/10.1145/2983644" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Web</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b147">
+	<analytic>
+		<title level="a" type="main">Analyzing images&apos; privacy for the modern web</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Anna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cornelia</forename><surname>Squicciarini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Caragea</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Balakavi</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2631775.2631803</idno>
+		<ptr target="https://doi.org/10.1145/2631775.2631803" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 25th ACM Conference on Hypertext and Social Media (HT&apos;14</title>
+				<meeting>the 25th ACM Conference on Hypertext and Social Media (HT&apos;14</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="136" to="147" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b148">
+	<analytic>
+		<title level="a" type="main">Natural and Effective Obfuscation by Head Inpainting</title>
+		<author>
+			<persName><forename type="first">Qianru</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liqian</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luc</forename><surname>Seong Joon Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernt</forename><surname>Van Gool</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Schiele</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Fritz</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2018.00530</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2018.00530" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR&apos;18)</title>
+				<meeting>the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR&apos;18)</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="5050" to="5059" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b149">
+	<analytic>
+		<title level="a" type="main">A domain based approach to social relation recognition</title>
+		<author>
+			<persName><forename type="first">Qianru</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernt</forename><surname>Schiele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Fritz</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2017.54</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2017.54" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 30th IEEE Conference on Computer Vision and Pattern Recognition (CVPR&apos;17</title>
+				<meeting>the 30th IEEE Conference on Computer Vision and Pattern Recognition (CVPR&apos;17</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="435" to="444" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b150">
+	<analytic>
+		<title level="a" type="main">Face detection using deep learning: An improved faster RCNN approach</title>
+		<author>
+			<persName><forename type="first">Xudong</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengcheng</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">C H</forename><surname>Hoi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neucom.2018.03.030</idno>
+		<ptr target="https://doi.org/10.1016/j.neucom.2018.03.030" />
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<imprint>
+			<biblScope unit="volume">299</biblScope>
+			<biblScope unit="page" from="42" to="50" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b151">
+	<analytic>
+		<title level="a" type="main">Dumitru Erhan, Ian Goodfellow, and Rob Fergus</title>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Szegedy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wojciech</forename><surname>Zaremba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joan</forename><surname>Bruna</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Learning Representations (ICLR&apos;14)</title>
+				<meeting>the International Conference on Learning Representations (ICLR&apos;14)</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note>Intriguing properties of neural networks</note>
+</biblStruct>
+
+<biblStruct xml:id="b152">
+	<analytic>
+		<title level="a" type="main">2018. I Read but Don&apos;t Agree: Privacy Policy Benchmarking using Machine Learning and the EU GDPR</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Welderufael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Tesfay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toru</forename><surname>Hofmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shinsaku</forename><surname>Nakamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jetzabel</forename><surname>Kiyomoto</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Serna</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Companion Proceedings of the The Web Conference</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="163" to="166" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b153">
+	<monogr>
+		<ptr target="https://www.ft.com/content/87184c40-2cfe-11e8-9b4b-bc4b9f08f381" />
+		<title level="m">Financial Times. 2020. Facebook privacy breach. Financial Times</title>
+				<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="11" to="12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b154">
+	<analytic>
+		<title level="a" type="main">Stealing machine learning models via prediction APIs</title>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Tramèr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ari</forename><surname>Juels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Michael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Reiter</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ristenpart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 25th USENIX Security Symposium (USENIX&apos;16</title>
+				<meeting>the 25th USENIX Security Symposium (USENIX&apos;16</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="601" to="618" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b155">
+	<analytic>
+		<title level="a" type="main">Generating artificial data for private deep learning</title>
+		<author>
+			<persName><forename type="first">Aleksei</forename><surname>Triastcyn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boi</forename><surname>Faltings</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 CEUR Workshop</title>
+				<meeting>the 2019 CEUR Workshop</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">2335</biblScope>
+			<biblScope unit="page" from="33" to="40" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b156">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving naive bayes classification</title>
+		<author>
+			<persName><forename type="first">Jaideep</forename><surname>Vaidya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Murat</forename><surname>Kantarcoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Clifton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The VLDB Journal</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="879" to="898" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b157">
+	<monogr>
+		<title level="m" type="main">WaveNet: A Generative Model for Raw Audio</title>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Van Den Oord</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sander</forename><surname>Dieleman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heiga</forename><surname>Zen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Graves</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nal</forename><surname>Kalchbrenner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Senior</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koray</forename><surname>Kavukcuoglu</surname></persName>
+		</author>
+		<idno>abs/1609.03499</idno>
+		<ptr target="http://arxiv.org/abs/1609.03499" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b158">
+	<monogr>
+		<title level="m" type="main">Split learning for health: Distributed deep learning without sharing raw patient data</title>
+		<author>
+			<persName><forename type="first">Praneeth</forename><surname>Vepakomma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Otkrist</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tristan</forename><surname>Swedish</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramesh</forename><surname>Raskar</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1812.00564</idno>
+		<ptr target="http://arxiv.org/abs/1812.00564" />
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b159">
+	<analytic>
+		<title level="a" type="main">Show and tell: A neural image caption generator</title>
+		<author>
+			<persName><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Toshev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samy</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dumitru</forename><surname>Erhan</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2015.7298935</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2015.7298935" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR&apos;15)</title>
+				<meeting>the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR&apos;15)</meeting>
+		<imprint>
+			<date type="published" when="2015-06" />
+			<biblScope unit="page" from="7" to="12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b160">
+	<analytic>
+		<title level="a" type="main">Stealing Hyperparameters in Machine Learning</title>
+		<author>
+			<persName><forename type="first">Binghui</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil Zhenqiang</forename><surname>Gong</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SP.2018.00038</idno>
+		<ptr target="https://doi.org/10.1109/SP.2018.00038" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;18</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;18</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="36" to="52" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b161">
+	<analytic>
+		<title level="a" type="main">Privacy-preserving data publishing: A survey on recent developments</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P S</forename><surname>Fung</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Surveys</title>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b162">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Comput. Surv</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2020-11" />
+			<publisher>Article . Publication date</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b163">
+	<analytic>
+		<title level="a" type="main">Beyond Inferring Class Representatives: User-Level Privacy Leakage from Federated Learning</title>
+		<author>
+			<persName><forename type="first">Zhibo</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengkai</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhifei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hairong</forename><surname>Qi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/INFOCOM.2019.8737416</idno>
+		<ptr target="https://doi.org/10.1109/INFOCOM.2019.8737416" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of IEEE International Conference on Computer Communications (INFOCOM&apos;19</title>
+				<meeting>IEEE International Conference on Computer Communications (INFOCOM&apos;19</meeting>
+		<imprint>
+			<date type="published" when="2019-04" />
+			<biblScope unit="page" from="2512" to="2520" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b164">
+	<analytic>
+		<title level="a" type="main">2018. I know what you see: Power side-channel attack on convolutional neural network accelerators</title>
+		<author>
+			<persName><forename type="first">Lingxiao</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yannan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3274694.3274696</idno>
+		<ptr target="https://doi.org/10.1145/3274694.3274696" />
+	</analytic>
+	<monogr>
+		<title level="m">ACM International Conference Proceeding Series</title>
+				<imprint>
+			<biblScope unit="page" from="393" to="406" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b165">
+	<analytic>
+		<title level="a" type="main">Android permissions remystified: A field study on contextual integrity</title>
+		<author>
+			<persName><forename type="first">Primal</forename><surname>Wijesekera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arjun</forename><surname>Baokar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashkan</forename><surname>Hosseini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Egelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Wagner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantin</forename><surname>Beznosov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 24th USENIX Security Symposium (USENIX&apos;15</title>
+				<meeting>the 24th USENIX Security Symposium (USENIX&apos;15</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="499" to="514" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b166">
+	<analytic>
+		<title level="a" type="main">The Feasibility of Dynamically Granted Permissions: Aligning Mobile Privacy with User Preferences</title>
+		<author>
+			<persName><forename type="first">Primal</forename><surname>Wijesekera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arjun</forename><surname>Baokar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lynn</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><surname>Reardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Egelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Wagner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantin</forename><surname>Beznosov</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SP.2017.51</idno>
+		<ptr target="https://doi.org/10.1109/SP.2017.51" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Symposium on Security and Privacy (SP&apos;17</title>
+				<meeting>the IEEE Symposium on Security and Privacy (SP&apos;17</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1077" to="1093" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b167">
+	<monogr>
+		<title level="m" type="main">Contextualizing privacy decisions for better prediction</title>
+		<author>
+			<persName><forename type="first">Primal</forename><surname>Wijesekera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><surname>Reardon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irwin</forename><surname>Reyes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lynn</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jung</forename><forename type="middle">Wei</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Good</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Wagner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantin</forename><surname>Beznosov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Egelman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note>and protection</note>
+</biblStruct>
+
+<biblStruct xml:id="b168">
+	<monogr>
+		<idno type="DOI">10.1145/3173574.3173842</idno>
+		<ptr target="https://doi.org/10.1145/3173574.3173842" />
+		<title level="m">Proceedings of the Conference on Human Factors in Computing Systems (CHI&apos;18)</title>
+				<meeting>the Conference on Human Factors in Computing Systems (CHI&apos;18)</meeting>
+		<imprint>
+			<date type="published" when="2018-04-268" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b169">
+	<analytic>
+		<title level="a" type="main">Can we still avoid automatic face detection</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Michael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><surname>Wilber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Shmatikov</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Belongie</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/WACV.2016.7477452</idno>
+		<ptr target="https://doi.org/10.1109/WACV.2016.7477452" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Winter Conference on Applications of Computer Vision (WACV&apos;16</title>
+				<meeting>the IEEE Winter Conference on Applications of Computer Vision (WACV&apos;16</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1" to="9" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b170">
+	<analytic>
+		<title level="a" type="main">The value of collaboration in convex machine learning with differential privacy</title>
+		<author>
+			<persName><forename type="first">Nan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Farhad</forename><surname>Farokhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><forename type="middle">Ali</forename><surname>Kaafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE Symposium on Security and Privacy (SP)</title>
+				<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="304" to="317" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b171">
+	<analytic>
+		<title level="a" type="main">Privacy-preservation for Stochastic Gradient Descent Application to Secure Logistic Regression</title>
+		<author>
+			<persName><forename type="first">Shuang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tadanori</forename><surname>Teruya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junpei</forename><surname>Kawamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Sakuma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroaki</forename><surname>Kikuchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 27th Annual Conference of the Japanese Society for Artificial Intelligence (JSAI&apos;13</title>
+				<meeting>the 27th Annual Conference of the Japanese Society for Artificial Intelligence (JSAI&apos;13</meeting>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="6" to="9" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b172">
+	<monogr>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kalyan</forename><surname>Veeramachaneni</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1811.11264</idno>
+		<ptr target="http://arxiv.org/abs/1811.11264" />
+		<title level="m">Synthesizing Tabular Data using Generative Adversarial Networks</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b173">
+	<analytic>
+		<title level="a" type="main">Latent backdoor attacks on deep neural networks</title>
+		<author>
+			<persName><forename type="first">Yuanshun</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haitao</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huiying</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><forename type="middle">Y</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3319535.3354209</idno>
+		<ptr target="https://doi.org/10.1145/3319535.3354209" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM Conference on Computer and Communications Security (CCS&apos;19</title>
+				<meeting>the ACM Conference on Computer and Communications Security (CCS&apos;19</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="2041" to="2055" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b174">
+	<analytic>
+		<title level="a" type="main">Privacy risk in machine learning: Analyzing the connection to overfitting</title>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Yeom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irene</forename><surname>Giacomelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matt</forename><surname>Fredrikson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Somesh</forename><surname>Jha</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CSF.2018.00027</idno>
+		<ptr target="https://doi.org/10.1109/CSF.2018.00027" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Computer Security Foundations Symposium (CSF&apos;18)</title>
+				<meeting>the IEEE Computer Security Foundations Symposium (CSF&apos;18)</meeting>
+		<imprint>
+			<date type="published" when="2018-07-268" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b175">
+	<analytic>
+		<title level="a" type="main">IPrivacy: Image Privacy Protection by Identifying Sensitive Objects via Deep Multi-Task Learning</title>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baopeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhengzhong</forename><surname>Kuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianping</forename><surname>Fan</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TIFS.2016.2636090</idno>
+		<ptr target="https://doi.org/10.1109/TIFS.2016.2636090" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Forensics Security</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1005" to="1016" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b176">
+	<analytic>
+		<title level="a" type="main">Context-dependent privacy-aware photo sharing based on machine learning</title>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joël</forename><surname>Theytaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Touradj</forename><surname>Ebrahimi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-58469-0_7</idno>
+		<ptr target="https://doi.org/10.1007/978-3-319-58469-0_7" />
+	</analytic>
+	<monogr>
+		<title level="m">IFIP Advances in Information and Communication Technology</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="volume">502</biblScope>
+			<biblScope unit="page" from="93" to="107" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b177">
+	<analytic>
+		<title level="a" type="main">Privacy-aware image classification and search</title>
+		<author>
+			<persName><forename type="first">Sergej</forename><surname>Zerr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Siersdorfer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathon</forename><surname>Hare</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><surname>Demidova</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2348283.2348292</idno>
+		<ptr target="https://doi.org/10.1145/2348283.2348292" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR&apos;12</title>
+				<meeting>the International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR&apos;12</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="35" to="44" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b178">
+	<analytic>
+		<title level="a" type="main">A survey on collaborative deep learning and privacy-preserving</title>
+		<author>
+			<persName><forename type="first">Dayin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dakui</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinqiao</forename><surname>Shi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE 3rd International Conference on Data Science in Cyberspace (DSC&apos;18)</title>
+				<meeting>the IEEE 3rd International Conference on Data Science in Cyberspace (DSC&apos;18)</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b179">
+	<analytic>
+		<title/>
+		<idno type="DOI">10.1109/DSC.2018.00104</idno>
+		<ptr target="https://doi.org/10.1109/DSC.2018.00104" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE</title>
+		<imprint>
+			<biblScope unit="page" from="652" to="658" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b180">
+	<analytic>
+		<title level="a" type="main">Functional mechanism: Regression analysis under differential privacy</title>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhenjie</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaokui</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marianne</forename><surname>Winslett</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/2350229.2350253</idno>
+		<ptr target="https://doi.org/10.14778/2350229.2350253" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Very Large Data Bases (VLDB&apos;12)</title>
+				<meeting>the International Conference on Very Large Data Bases (VLDB&apos;12)</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="1364" to="1375" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b181">
+	<monogr>
+		<author>
+			<persName><forename type="first">Tianwei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zecheng</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruby</forename><forename type="middle">B</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1807.01860</idno>
+		<ptr target="http://arxiv.org/abs/1807.01860" />
+		<title level="m">Privacy-preserving Machine Learning through Data Obfuscation</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b182">
+	<monogr>
+		<title level="m" type="main">Differentially Private Releasing via Deep Generative Model</title>
+		<author>
+			<persName><forename type="first">Xinyang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shouling</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ting</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1801.01594</idno>
+		<ptr target="http://arxiv.org/abs/1801.01594" />
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b183">
+	<analytic>
+		<title level="a" type="main">Principal visual word discovery for automatic license plate detection</title>
+		<author>
+			<persName><forename type="first">Wengang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Houqiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yijuan</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qi</forename><surname>Tian</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TIP.2012.2199506</idno>
+		<ptr target="https://doi.org/10.1109/TIP.2012.2199506" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Image Process</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="4269" to="4279" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

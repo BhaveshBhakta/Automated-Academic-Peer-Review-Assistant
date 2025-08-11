@@ -1,0 +1,3257 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A marketplace for data: An algorithmic solution</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Dahleh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sarkar</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3328526.3329589</idno>
+		<idno>DOI 10.1145/ 3328526.3329589</idno>
+		<ptr target="https://doi.org/10.1145/3328526.3329589" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 ACM Conference on Economics and Computation</title>
+				<editor>
+			<persName><forename type="first">A</forename><surname>Karlin</surname></persName>
+			<persName><forename type="first">N</forename><surname>Immorlica</surname></persName>
+			<persName><forename type="first">R</forename><surname>Johari</surname></persName>
+		</editor>
+		<meeting>the 2019 ACM Conference on Economics and Computation<address><addrLine>Phoenix, AZ, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2019-06-24" />
+			<biblScope unit="page" from="701" to="726" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Incentives for truthful evaluations</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>De Alfaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Faella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Polychronopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Shavlovsky</surname></persName>
+		</author>
+		<idno>abs/1608.07886</idno>
+		<ptr target="http://arxiv.org/abs/1608.07886,1608.07886" />
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The multiplicative weights update method: a meta-algorithm and applications</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Arora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kale</surname></persName>
+		</author>
+		<idno type="DOI">10.4086/toc.2012.v008a006</idno>
+		<ptr target="https://doi.org/10.4086/toc.2012.v008a006" />
+	</analytic>
+	<monogr>
+		<title level="j">Theory Comput</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="121" to="164" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The lovely but lonely vickrey auction</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Ausubel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Milgrom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Combinatorial auctions</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="22" to="26" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Pricing information goods: A strategic analysis of the selling and pay-per-use mechanisms</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Balasubramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bhattacharya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">V</forename><surname>Krishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="218" to="234" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title/>
+		<ptr target="https://www.bdex.com" />
+	</analytic>
+	<monogr>
+		<title level="j">BDEX</title>
+		<imprint>
+			<biblScope unit="page" from="2021" to="2025" />
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Federated learning: Collaborative machine learning without centralized training data</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brendan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Daniel</surname></persName>
+		</author>
+		<ptr target="https://ai.googleblog.com/2017/04/federated-learning-collaborative.html" />
+	</analytic>
+	<monogr>
+		<title level="j">Google AI Blog URL</title>
+		<imprint>
+			<biblScope unit="page" from="2021" to="2027" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Business-to-business marketing</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Brennan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Canning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Mcdowell</surname></persName>
+		</author>
+		<idno type="DOI">10.4135/9781446276518</idno>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Sage Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Language models are few-shot learners</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">B</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ryder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Subbiah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dhariwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Neelakantan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Shyam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Sastry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Askell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Herbert-Voss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Krueger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Henighan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Child</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramesh</forename><forename type="middle">A</forename><surname>Ziegler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Winter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hesse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sigler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Litwin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chess</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Berner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mccandlish</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Radford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Amodei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020</title>
+				<editor>
+			<persName><forename type="first">H</forename><surname>Larochelle</surname></persName>
+			<persName><forename type="first">M</forename><surname>Ranzato</surname></persName>
+			<persName><forename type="first">R</forename><surname>Hadsell</surname></persName>
+			<persName><forename type="first">M</forename><surname>Balcan</surname></persName>
+			<persName><forename type="first">H</forename><surname>Lin</surname></persName>
+		</editor>
+		<meeting><address><addrLine>NeurIPS</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2020-12-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Provenance in databases</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Buneman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Tan</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1247480.1247646</idno>
+		<ptr target="https://doi.org/10.1145/1247480.1247646" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM SIGMOD International Conference on Management of Data</title>
+				<editor>
+			<persName><forename type="first">C</forename><forename type="middle">Y</forename><surname>Chan</surname></persName>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Ooi</surname></persName>
+			<persName><forename type="first">A</forename><surname>Zhou</surname></persName>
+		</editor>
+		<meeting>the ACM SIGMOD International Conference on Management of Data<address><addrLine>Beijing, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2007-06-12" />
+			<biblScope unit="page" from="1171" to="1173" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Microeconomics: Optimization, Experiments, and Behavior</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Burkett</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">A dendrite method for cluster analysis</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Caliński</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Harabasz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications in Statistics-theory and Methods</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="27" />
+			<date type="published" when="1974" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Computational Aspects of Cooperative Game Theory</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chalkiadakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Elkind</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<idno type="DOI">10.2200/S00355ED1V01Y201107AIM016</idno>
+		<ptr target="https://doi.org/10.2200/S00355ED1V01Y201107AIM016" />
+	</analytic>
+	<monogr>
+		<title level="j">Synthesis Lectures on Artificial Intelligence and Machine Learning</title>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Morgan &amp; Claypool Publishers</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Differentially private empirical risk minimization</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chaudhuri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Monteleoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Sarwate</surname></persName>
+		</author>
+		<ptr target="http://dl.acm.org/citation.cfm?id=2021036" />
+	</analytic>
+	<monogr>
+		<title level="j">J Mach Learn Res</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1069" to="1109" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Revenue maximization for query pricing</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chawla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Deep</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koutris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Teng</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/3357377.3357378</idno>
+		<ptr target="http://www.vldb.org/pvldb/vol13/p1-chawla.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Proc VLDB Endow</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="14" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Towards model-based pricing for machine learning in a data marketplace</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koutris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3299869.3300078</idno>
+		<ptr target="https://doi.org/10.1145/3299869.3300078" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 International Conference on Management of Data, SIGMOD Conference</title>
+				<editor>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Boncz</surname></persName>
+			<persName><forename type="first">S</forename><surname>Manegold</surname></persName>
+			<persName><forename type="first">A</forename><surname>Ailamaki</surname></persName>
+			<persName><forename type="first">A</forename><surname>Deshpande</surname></persName>
+			<persName><forename type="first">T</forename><surname>Kraska</surname></persName>
+		</editor>
+		<meeting>the 2019 International Conference on Management of Data, SIGMOD Conference<address><addrLine>Amsterdam, The Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2019-06-30" />
+			<biblScope unit="page" from="1535" to="1552" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Frugalml: How to use ml prediction apis more accurately and cheaply</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zaharia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Zou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page">33</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Characterizations of an empirical influence function for detecting influential cases in regression</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Weisberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/00401706.1980.10486199</idno>
+		<ptr target="https://www.tandfonline.com/doi/pdf/10.1080/00401706.1980.10486199" />
+	</analytic>
+	<monogr>
+		<title level="j">Technometrics</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="495" to="508" />
+			<date type="published" when="1980" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Privacy auctions for recommender systems</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dandekar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fawaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ioannidis</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-35311-6_23</idno>
+		<ptr target="https://doi.org/10.1007/978-3-642-35311-623" />
+	</analytic>
+	<monogr>
+		<title level="m">Goldberg PW (ed) Internet and Network Economics -8th International Workshop</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Liverpool, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2012-12-10" />
+			<biblScope unit="volume">7695</biblScope>
+			<biblScope unit="page" from="309" to="322" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Crowdsourced judgement elicitation with endogenous proficiency</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dasgupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Schwabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vaf</forename><surname>Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Glaser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Baeza-Yates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">B</forename><surname>Moon</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2488388.2488417</idno>
+		<ptr target="https://doi.org/10.1145/2488388.2488417" />
+	</analytic>
+	<monogr>
+		<title level="m">International World Wide Web Conferences Steering Committee / ACM</title>
+				<meeting><address><addrLine>Rio de Janeiro, Brazil</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013-05-13" />
+			<biblScope unit="page" from="319" to="330" />
+		</imprint>
+	</monogr>
+	<note>22nd International World Wide Web Conference, WWW &apos;13</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Locality-sensitive hashing scheme based on p-stable distributions</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Datar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Immorlica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Indyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">S</forename><surname>Mirrokni</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/997817.997857</idno>
+		<ptr target="https://doi.org/10.1145/997817.997857" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 20th ACM Symposium on Computational Geometry</title>
+				<editor>
+			<persName><forename type="first">J</forename><surname>Snoeyink</surname></persName>
+			<persName><forename type="first">J</forename><surname>Boissonnat</surname></persName>
+		</editor>
+		<meeting>the 20th ACM Symposium on Computational Geometry<address><addrLine>Brooklyn, New York, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2004-06-08" />
+			<biblScope unit="page" from="253" to="262" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Dawex</surname></persName>
+		</author>
+		<ptr target="https://www.dawex.com/en/" />
+		<imprint>
+			<date type="published" when="2021" />
+			<biblScope unit="page" from="2021" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Pricing strategies and levels and their impact on corporate profitability</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>De Toni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Milan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">B</forename><surname>Saciloto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Larentis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Revista de Administração</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="120" to="133" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The design of arbitrage-free data pricing schemes</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Deep</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koutris</surname></persName>
+		</author>
+		<idno type="DOI">10.4230/LIPIcs.ICDT.2017.12</idno>
+		<ptr target="https://doi.org/10.4230/LIPIcs.ICDT.2017.12" />
+	</analytic>
+	<monogr>
+		<title level="m">Schloss Dagstuhl -Leibniz-Zentrum für Informatik, LIPIcs</title>
+				<editor>
+			<persName><forename type="first">M</forename><surname>Benedikt</surname></persName>
+			<persName><forename type="first">G</forename><surname>Orsi</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Venice, Italy</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017-03-21" />
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page">18</biblScope>
+		</imprint>
+	</monogr>
+	<note>20th International Conference on Database Theory</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">QIRANA: A framework for scalable query pricing</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Deep</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koutris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Salihoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chirkova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Suciu</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3035918.3064017</idno>
+		<ptr target="https://doi.org/10.1145/3035918.3064017" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2017 ACM International Conference on Management of Data, SIGMOD Conference</title>
+				<meeting>the 2017 ACM International Conference on Management of Data, SIGMOD Conference<address><addrLine>Chicago, IL, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017-05-14" />
+			<biblScope unit="page" from="699" to="713" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">BERT: pre-training of deep bidirectional transformers for language understanding</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Devlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Toutanova</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/n19-1423</idno>
+		<ptr target="https://doi.org/10.18653/v1/n19-1423" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019</title>
+		<title level="s">Long and Short Papers</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Burstein</surname></persName>
+			<persName><forename type="first">C</forename><surname>Doran</surname></persName>
+			<persName><forename type="first">T</forename><surname>Solorio</surname></persName>
+		</editor>
+		<meeting>the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019<address><addrLine>Minneapolis, MN, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019-06-02" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="4171" to="4186" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Marketing: Concepts and Strategies</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dibb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Simkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">M</forename><surname>Pride</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Ferrell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<pubPlace>Houghton Mifflin, Abingdon, UK</pubPlace>
+		</imprint>
+	</monogr>
+	<note>5th Edition</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Differential privacy: A survey of results</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dwork</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-540-79228-4_1</idno>
+		<ptr target="https://doi.org/10.1007/978-3-540-79228-41" />
+	</analytic>
+	<monogr>
+		<title level="m">Theory and Applications of Models of Computation, 5th International Conference</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Agrawal</surname></persName>
+			<persName><forename type="first">D</forename><surname>Du</surname></persName>
+			<persName><forename type="first">Z</forename><surname>Duan</surname></persName>
+			<persName><forename type="first">A</forename><surname>Li</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Xi&apos;an, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2008-04-25" />
+			<biblScope unit="volume">4978</biblScope>
+			<biblScope unit="page" from="1" to="19" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Bayesian optimal knapsack procurement</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ensthaler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Giebe</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejor.2013.09.031</idno>
+		<ptr target="https://doi.org/10.1016/j.ejor.2013.09.031" />
+	</analytic>
+	<monogr>
+		<title level="j">Eur J Oper Res</title>
+		<imprint>
+			<biblScope unit="volume">234</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="774" to="779" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Data market platforms: Trading data assets to solve data problems</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Subramaniam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Franklin</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/3407790.3407800</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proc VLDB Endow</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1933" to="1947" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Pricing of data products in data marketplaces</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Fricker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">V</forename><surname>Maksimov</surname></persName>
+		</author>
+		<editor>Ojala A, Holmström Olsson H, Werder K</editor>
+		<imprint>
+			<date type="published" when="2017" />
+			<publisher>Springer International Publishing</publisher>
+			<biblScope unit="page" from="49" to="66" />
+			<pubPlace>Cham</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Brokered agreements in multi-party machine learning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Beschastnikh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 10th ACM SIGOPS Asia-Pacific Workshop on Systems</title>
+				<meeting>the 10th ACM SIGOPS Asia-Pacific Workshop on Systems</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="69" to="75" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Data shapley: Equitable valuation of data for machine learning</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghorbani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Y</forename><surname>Zou</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v97/ghorbani19c.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 36th International Conference on Machine Learning, ICML 2019</title>
+				<editor>
+			<persName><forename type="first">K</forename><surname>Chaudhuri</surname></persName>
+			<persName><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</editor>
+		<meeting>the 36th International Conference on Machine Learning, ICML 2019<address><addrLine>Long Beach, California, USA, PMLR</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019-06" />
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="page" from="2242" to="2251" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Selling privacy at auction</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Roth</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1993574.1993605</idno>
+		<ptr target="https://doi.org/10.1145/1993574.1993605" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings 12th ACM Conference on Electronic Commerce (EC-2011)</title>
+				<editor>
+			<persName><forename type="first">Y</forename><surname>Shoham</surname></persName>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+			<persName><forename type="first">T</forename><surname>Roughgarden</surname></persName>
+		</editor>
+		<meeting>12th ACM Conference on Electronic Commerce (EC-2011)<address><addrLine>San Jose, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2011-06-05" />
+			<biblScope unit="page" from="199" to="208" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Solutions to general non-zero-sum games</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Gillies</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Contributions to the Theory of Games</title>
+				<imprint>
+			<date type="published" when="1959" />
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="47" to="85" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Deep bayesian trust: A dominant and fair incentive mechanism for crowd</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Goel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Faltings</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v33i01.33011996</idno>
+		<ptr target="https://doi.org/10.1609/aaai.v33i01.33011996" />
+	</analytic>
+	<monogr>
+		<title level="m">The Thirty-Third AAAI Conference on Artificial Intelligence, AAAI 2019, The Thirty-First Innovative Applications of Artificial Intelligence Conference, IAAI 2019</title>
+				<meeting><address><addrLine>Honolulu, Hawaii, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>AAAI Press</publisher>
+			<date type="published" when="2019-01-27" />
+			<biblScope unit="volume">2019</biblScope>
+			<biblScope unit="page" from="1996" to="2003" />
+		</imprint>
+	</monogr>
+	<note>The Ninth AAAI Symposium on Educational Advances in Artificial Intelligence</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Stochastic multi-armed-bandit problem with non-stationary rewards</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Zeevi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Besbes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Welling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cortes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Lawrence</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2014/hash/903ce9225fca3e988c2af215d4e544d3-Abstract.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems</title>
+				<meeting><address><addrLine>Montreal, Quebec, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014-12-08" />
+			<biblScope unit="page" from="199" to="207" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Replication-robust payoff-allocation with applications in machine learning marketplaces. CoRR abs</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tople</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Wooldridge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Ohrimenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tschiatschek</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2006.14583" />
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page">14583</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">A pricing model for data markets</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Heckman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Boehmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Davaloo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">G</forename><surname>Kurup</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Probability inequalities for sums of bounded random variables</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hoeffding</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Collected Works of Wassily Hoeffding</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1994" />
+			<biblScope unit="page" from="409" to="426" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Trading data for learning: Incentive mechanism for on-device federated learning</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gong</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/GLOBECOM42002.2020.9322475</idno>
+		<ptr target="https://doi.org/10.1109/GLOBECOM42002.2020.9322475" />
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Global Communications Conference, GLOBECOM 2020, Virtual Event</title>
+				<meeting><address><addrLine>Taiwan</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-12-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Inference aided reinforcement learning for incentive mechanism design in crowdsourcing</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M</forename><surname>Wallach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Grauman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Cesa-Bianchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Garnett</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2018/hash/f2e43fa3400d826df4195a9ac70dca62-Abstract.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018</title>
+				<meeting><address><addrLine>NeurIPS; Montréal, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2018-12-03" />
+			<biblScope unit="page" from="5512" to="5522" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">A demonstration of sterling: A privacy-preserving data marketplace</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hynes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Song</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/3229863.3236266</idno>
+		<ptr target="http://www.vldb.org/pvldb/vol11/p2086-hynes.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Proc VLDB Endow</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="2086" to="2089" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Modern Cost-Benefit Methods</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Irvin</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-349-15912-3</idno>
+		<imprint>
+			<date type="published" when="1978" />
+			<publisher>Macmillan Publishers Limited</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Efficient task-specific data valuation for nearest neighbor algorithms</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">A</forename><surname>Hubis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">M</forename><surname>Gürel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Spanos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Song</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/3342263.3342637</idno>
+		<ptr target="http://www.vldb.org/pvldb/vol12/p1610-jia.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Proc VLDB Endow</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1610" to="1623" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Towards efficient data valuation based on the shapley value</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">A</forename><surname>Hubis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hynes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">M</forename><surname>Gürel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Spanos</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v89/jia19a.html" />
+	</analytic>
+	<monogr>
+		<title level="m">The 22nd International Conference on Artificial Intelligence and Statistics, AIS-TATS</title>
+				<editor>
+			<persName><forename type="first">K</forename><surname>Chaudhuri</surname></persName>
+			<persName><forename type="first">M</forename><surname>Sugiyama</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Naha, Okinawa, Japan, PMLR</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019-04-18" />
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="1167" to="1176" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of Machine Learning Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Economics of peer-to-peer mobile crowdsensing</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Global Communications Conference (GLOBECOM)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Quality of information aware incentive mechanisms for mobile crowd sensing systems</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nahrstedt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J ;</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">X</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zussman</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2746285.2746310</idno>
+		<ptr target="https://doi.org/10.1145/2746285.2746310" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 16th ACM International Symposium on Mobile Ad Hoc Networking and Computing</title>
+				<meeting>the 16th ACM International Symposium on Mobile Ad Hoc Networking and Computing<address><addrLine>Hangzhou, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2015-06-22" />
+			<biblScope unit="page" from="167" to="176" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">If you do not care about it, sell it: Trading location privacy in mobile crowd sensing</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Guo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/INFOCOM.2019.8737457</idno>
+		<ptr target="https://doi.org/10.1109/INFOCOM.2019.8737457" />
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE Conference on Computer Communications, INFOCOM 2019</title>
+				<meeting><address><addrLine>Paris, France</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-04-29" />
+			<biblScope unit="page" from="1045" to="1053" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Conservative or liberal? personalized differential privacy</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Jorgensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cormode</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gehrke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Lehner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Shim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Cha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Lohman</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICDE.2015.7113353</idno>
+		<ptr target="https://doi.org/10.1109/ICDE.2015.7113353" />
+	</analytic>
+	<monogr>
+		<title level="m">31st IEEE International Conference on Data Engineering, ICDE 2015</title>
+				<meeting><address><addrLine>Seoul, South Korea</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2015-04-13" />
+			<biblScope unit="page" from="1023" to="1034" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Incentive mechanism for reliable federated learning: A joint optimization approach to combining reputation and contract theory</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Niyato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/JIOT.2019.2940820</idno>
+		<ptr target="https://doi.org/10.1109/JIOT.2019.2940820" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Internet Things J</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="10700" to="10714" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Understanding black-box predictions via influence functions</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">W</forename><surname>Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Liang</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v70/koh17a.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 34th International Conference on Machine Learning</title>
+				<editor>
+			<persName><forename type="first">D</forename><surname>Precup</surname></persName>
+			<persName><forename type="first">Y</forename><forename type="middle">W</forename><surname>Teh</surname></persName>
+		</editor>
+		<meeting>the 34th International Conference on Machine Learning<address><addrLine>Sydney, NSW, Australia</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017-08-11" />
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="1885" to="1894" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of Machine Learning Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Querybased data pricing</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koutris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Upadhyaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Balazinska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Howe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Suciu</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2213556.2213582</idno>
+		<ptr target="https://doi.org/10.1145/2213556.2213582" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 31st ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems, PODS 2012</title>
+				<editor>
+			<persName><forename type="first">M</forename><surname>Benedikt</surname></persName>
+			<persName><forename type="first">M</forename><surname>Krötzsch</surname></persName>
+			<persName><forename type="first">M</forename><surname>Lenzerini</surname></persName>
+		</editor>
+		<meeting>the 31st ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems, PODS 2012<address><addrLine>Scottsdale, AZ, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2012-05-20" />
+			<biblScope unit="page" from="167" to="178" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Toward practical query pricing with querymarket</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koutris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Upadhyaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Balazinska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Howe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Suciu</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2463676.2465335</idno>
+		<ptr target="https://doi.org/10.1145/2463676.2465335" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM SIGMOD International Conference on Management of Data, SIGMOD 2013</title>
+				<editor>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Ross</surname></persName>
+			<persName><forename type="first">D</forename><surname>Srivastava</surname></persName>
+			<persName><forename type="first">D</forename><surname>Papadias</surname></persName>
+		</editor>
+		<meeting>the ACM SIGMOD International Conference on Management of Data, SIGMOD 2013<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013-06-22" />
+			<biblScope unit="page" from="613" to="624" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Optimal incentive-driven design of participatory sensing systems</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Koutsopoulos</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/INFCOM.2013.6566934</idno>
+		<ptr target="https://doi.org/10.1109/INFCOM.2013.6566934" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE INFO-COM 2013</title>
+				<meeting>the IEEE INFO-COM 2013<address><addrLine>Turin, Italy</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013-04-14" />
+			<biblScope unit="page" from="1402" to="1410" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Essentials of Game Theory: A Concise Multidisciplinary Introduction</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Leyton-Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shoham</surname></persName>
+		</author>
+		<idno type="DOI">10.2200/S00108ED1V01Y200802AIM003</idno>
+		<ptr target="https://doi.org/10.2200/S00108ED1V01Y200802AIM003" />
+	</analytic>
+	<monogr>
+		<title level="j">Synthesis Lectures on Artificial Intelligence and Machine Learning</title>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>Morgan &amp; Claypool Publishers</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">A theory of pricing private data</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Miklau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Suciu</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2448496.2448502</idno>
+		<ptr target="https://doi.org/10.1145/2448496.2448502" />
+	</analytic>
+	<monogr>
+		<title level="m">Joint 2013 EDBT/ICDT Conferences, ICDT &apos;13 Proceedings</title>
+				<editor>
+			<persName><forename type="first">W</forename><surname>Tan</surname></persName>
+			<persName><forename type="first">G</forename><surname>Guerrini</surname></persName>
+			<persName><forename type="first">B</forename><surname>Catania</surname></persName>
+			<persName><forename type="first">A</forename><surname>Gounaris</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Genoa, Italy</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013-03-18" />
+			<biblScope unit="page" from="33" to="44" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">A survey on big data market: Pricing, trading and protection</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">An</forename><forename type="middle">D</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="15132" to="15154" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">On arbitrage-free pricing for general data queries</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kifer</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/2732939.2732948</idno>
+		<ptr target="http://www.vldb.org/pvldb/vol7/p757-lin.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Proc VLDB Endow</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="757" to="768" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chakraborty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mittal</surname></persName>
+		</author>
+		<ptr target="http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2017/09/dependence-makes-you-vulnerable-differential-privacy-under-dependent-tuples.pdf" />
+		<title level="m">Dependence makes you vulnberable: Differential privacy under dependent tuples</title>
+				<meeting><address><addrLine>San Diego, California, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>The Internet Society</publisher>
+			<date type="published" when="2016-02-21" />
+		</imprint>
+	</monogr>
+	<note>23rd Annual Network and Distributed System Security Symposium</note>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Dealer: An end-toend model marketplace with differential privacy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pei</forename><forename type="middle">J</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename></persName>
+		</author>
+		<idno type="DOI">10.14778/3447689.3447700</idno>
+		<ptr target="https://doi.org/10.14778/3447689.3447700" />
+	</analytic>
+	<monogr>
+		<title level="j">Proc VLDB Endow</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="957" to="969" />
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Machine-learning aided peer prediction</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3033274.3085126</idno>
+		<ptr target="https://doi.org/10.1145/3033274.3085126" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2017 ACM Conference on Economics and Computation, EC &apos;17</title>
+				<editor>
+			<persName><forename type="first">C</forename><surname>Daskalakis</surname></persName>
+			<persName><forename type="first">M</forename><surname>Babaioff</surname></persName>
+			<persName><forename type="first">H</forename><surname>Moulin</surname></persName>
+		</editor>
+		<meeting>the 2017 ACM Conference on Economics and Computation, EC &apos;17<address><addrLine>Cambridge, MA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017-06-26" />
+			<biblScope unit="page" from="63" to="80" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Sequential peer prediction: Learning to elicit effort using posted prices</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<ptr target="http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14970" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence</title>
+				<editor>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Singh</surname></persName>
+			<persName><forename type="first">S</forename><surname>Markovitch</surname></persName>
+		</editor>
+		<meeting>the Thirty-First AAAI Conference on Artificial Intelligence<address><addrLine>San Francisco, California, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>AAAI Press</publisher>
+			<date type="published" when="2017-02-04" />
+			<biblScope unit="page" from="607" to="613" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">Roundup of machine learning forecasts and market estimates</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Louis</surname></persName>
+		</author>
+		<ptr target="https://www.forbes.com/sites/louiscolumbus/2020/01/19/roundup-of-machine-learning-forecasts-and-market-estimates-2020" />
+		<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="2021" to="2026" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Data collection and wireless communication in internet of things (iot) using economic analysis and pricing models: A survey</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">C</forename><surname>Luong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">T</forename><surname>Hoang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Niyato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">I</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Communications Surveys &amp; Tutorials</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2546" to="2590" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Concare: Personalized clinical feature embedding via capturing the healthcare context</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ruan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gao</surname></persName>
+		</author>
+		<ptr target="https://aaai.org/ojs/index.php/AAAI/article/view/5428" />
+	</analytic>
+	<monogr>
+		<title level="m">The Thirty-Second Innovative Applications of Artificial Intelligence Conference</title>
+				<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>AAAI Press</publisher>
+			<date type="published" when="2020-02-07" />
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page" from="833" to="840" />
+		</imprint>
+	</monogr>
+	<note>The Tenth AAAI Symposium on Educational Advances in Artificial Intelligence</note>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Bounding the estimation error of sampling-based shapley value approximation with/without stratifying. CoRR abs/1306</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Maleki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Tran-Thanh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hines</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Rahwan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rogers</surname></persName>
+		</author>
+		<ptr target="http://arxiv.org/abs/1306.4265,1306.4265" />
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="volume">4265</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Communication-efficient learning of deep networks from decentralized data</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ramage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hampson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Arcas</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v54/mcmahan17a.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 20th International Conference on Artificial Intelligence and Statistics</title>
+				<editor>
+			<persName><forename type="first">A</forename><surname>Singh</surname></persName>
+			<persName><forename type="first">X</forename><forename type="middle">J</forename><surname>Zhu</surname></persName>
+		</editor>
+		<meeting>the 20th International Conference on Artificial Intelligence and Statistics<address><addrLine>Fort Lauderdale, FL, USA, PMLR</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017-04-22" />
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="1273" to="1282" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of Machine Learning Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Towards query pricing on incomplete data</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Knowledge and Data Engineering</title>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Pricing approaches for data markets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Muschalle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Stahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Löser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Vossen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International workshop on business intelligence for the real-time enterprise</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="129" to="144" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Optimal auction design</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Myerson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematics of operations research</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="58" to="73" />
+			<date type="published" when="1981" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<monogr>
+		<title level="m" type="main">The Strategy and Tactics of Pricing: A Guide to Growing More Profitably</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nagle</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Tt &amp; Hogan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Prentice Hall</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Determinacy and rewriting of conjunctive queries using views: A progress report</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Segoufin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vianu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/11965893_5</idno>
+		<ptr target="https://doi.org/10.1007/119658935" />
+	</analytic>
+	<monogr>
+		<title level="m">Database Theory -ICDT 2007, 11th International Conference</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Schwentick</surname></persName>
+			<persName><forename type="first">D</forename><surname>Suciu</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Barcelona, Spain</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2007-01-10" />
+			<biblScope unit="volume">4353</biblScope>
+			<biblScope unit="page" from="59" to="73" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Equilibrium points in n-person games</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Nash</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc of the National Academy of Sciences</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="48" to="49" />
+			<date type="published" when="1950" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Learning with noisy labels</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Natarajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">S</forename><surname>Dhillon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ravikumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tewari</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2013/hash/3871bd64012152bfb53fdf04b401193f-Abstract.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 26: 27th Annual Conference on Neural Information Processing Systems</title>
+				<editor>
+			<persName><forename type="first">Cjc</forename><surname>Burges</surname></persName>
+			<persName><forename type="first">L</forename><surname>Bottou</surname></persName>
+			<persName><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Lake Tahoe, Nevada, United States</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013-12-05" />
+			<biblScope unit="page" from="1196" to="1204" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of a meeting held</note>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<monogr>
+		<title level="m" type="main">The brand flip : why customers now run companiesand how to profit from it</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Neumeier</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<pubPlace>New Riders,, San Francisco</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">How to balance privacy and money through pricing mechanism in personal data market</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nget</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yoshikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Degenhardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kallumadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>De Rijke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Si</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Trotman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<ptr target="http://ceur-ws.org/Vol-2311/paper15.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the SIGIR 2017 Workshop On eCommerce co-located with the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval, eCOM@SIGIR 2017</title>
+				<meeting>the SIGIR 2017 Workshop On eCommerce co-located with the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval, eCOM@SIGIR 2017<address><addrLine>Tokyo, Japan</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017-08-11" />
+			<biblScope unit="volume">2311</biblScope>
+		</imprint>
+	</monogr>
+	<note type="report_type">CEUR-WS.org</note>
+	<note>CEUR Workshop Proceedings</note>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Unlocking the value of privacy: Trading aggregate statistics over private correlated data</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3219819.3220013</idno>
+		<idno>DOI 10.1145/ 3219819.3220013</idno>
+		<ptr target="https://doi.org/10.1145/3219819.3220013" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</title>
+				<editor>
+			<persName><forename type="first">Y</forename><surname>Guo</surname></persName>
+			<persName><forename type="first">F</forename><surname>Farooq</surname></persName>
+		</editor>
+		<meeting>the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining<address><addrLine>London, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2018-08-19" />
+			<biblScope unit="page" from="2031" to="2040" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<monogr>
+		<title level="m" type="main">Collaborative machine learning markets with data-replication-robust payments</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Ohrimenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tople</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tschiatschek</surname></persName>
+		</author>
+		<idno>abs/1911.09052</idno>
+		<ptr target="http://arxiv.org/abs/1911.09052" />
+		<imprint>
+			<date type="published" when="1911" />
+			<biblScope unit="page">9052</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">A survey on data pricing: from economics to data science</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pei</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TKDE.2020.3045927</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Knowledge and Data Engineering</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="1" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Learning to scale payments in crowdsourcing with properboost</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Radanovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Faltings</surname></persName>
+		</author>
+		<ptr target="http://aaai.org/ocs/index.php/HCOMP/HCOMP16/paper/view/14033" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Fourth AAAI Conference on Human Computation and Crowdsourcing, HCOMP 2016</title>
+				<editor>
+			<persName><forename type="first">A</forename><surname>Ghosh</surname></persName>
+			<persName><forename type="first">M</forename><surname>Lease</surname></persName>
+		</editor>
+		<meeting>the Fourth AAAI Conference on Human Computation and Crowdsourcing, HCOMP 2016<address><addrLine>Austin, Texas, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>AAAI Press</publisher>
+			<date type="published" when="2016-10-30" />
+			<biblScope unit="page" from="179" to="188" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Incentives for effort in crowdsourcing using the peer truth serum</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Radanovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Faltings</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jurca</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2856102</idno>
+		<ptr target="https://doi.org/10.1145/2856102" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans Intell Syst Technol</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">28</biblScope>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">Compressive sensing and structured random matrices. Theoretical foundations and numerical methods for sparse recovery</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Rauhut</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="1" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">Rewarding highquality data via influence functions</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Richardson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Filos-Ratsikas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Faltings</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1908" />
+			<biblScope unit="page">11598</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Budget-bounded incentives for federated learning</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Richardson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Filos-Ratsikas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Faltings</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-63076-8_13</idno>
+		<idno>https://doi.org/10.1007/978-3-030-63076-8 13</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Federated Learning -Privacy and Incentive</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">Q</forename><surname>Yang</surname></persName>
+			<persName><forename type="first">L</forename><surname>Fan</surname></persName>
+			<persName><forename type="first">H</forename><surname>Yu</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2020" />
+			<biblScope unit="volume">12500</biblScope>
+			<biblScope unit="page" from="176" to="188" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Silhouettes: a graphical aid to the interpretation and validation of cluster analysis</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Rousseeuw</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of computational and applied mathematics</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="53" to="65" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Marketplaces for data: an initial survey</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Schomm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Stahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Vossen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGMOD Record</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="15" to="26" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Double or nothing: Multiplicative incentive mechanisms for crowdsourcing</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">B</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D ;</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cortes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Lawrence</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sugiyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Garnett</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2015/hash/c81e728d9d4c2f636f067f89cc14862c-Abstract.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 28: Annual Conference on Neural Information Processing Systems</title>
+				<meeting><address><addrLine>Montreal, Quebec, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015-12-07" />
+			<biblScope unit="page" from="1" to="9" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">No oops, you won&apos;t do it again: Mechanisms for self-correction in crowdsourcing</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">B</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhou</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v48/shaha16.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 33nd International Conference on Machine Learning</title>
+				<editor>
+			<persName><forename type="first">M</forename><surname>Balcan</surname></persName>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</editor>
+		<meeting>the 33nd International Conference on Machine Learning<address><addrLine>New York City, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016-06-19" />
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+		</imprint>
+	</monogr>
+	<note>JMLR.org, JMLR Workshop and Conference Proceedings</note>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Approval voting and incentives in crowdsourcing</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">B</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Peres</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v37/shaha15.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 32nd International Conference on Machine Learning</title>
+				<editor>
+			<persName><forename type="first">F</forename><forename type="middle">R</forename><surname>Bach</surname></persName>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Blei</surname></persName>
+		</editor>
+		<meeting>the 32nd International Conference on Machine Learning<address><addrLine>Lille, France</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015-07-11" />
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="10" to="19" />
+		</imprint>
+	</monogr>
+	<note>JMLR.org, JMLR Workshop and Conference Proceedings</note>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">A value for n-person games</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">S</forename><surname>Shapley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Contributions to the Theory of Games</title>
+				<imprint>
+			<date type="published" when="1953" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="307" to="317" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Informed truthfulness in multi-task peer prediction</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Shnayder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Frongillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Parkes</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2940716.2940790</idno>
+		<ptr target="https://doi.org/10.1145/2940716.2940790" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2016 ACM Conference on Economics and Computation, EC &apos;16</title>
+				<editor>
+			<persName><forename type="first">V</forename><surname>Conitzer</surname></persName>
+			<persName><forename type="first">D</forename><surname>Bergemann</surname></persName>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</editor>
+		<meeting>the 2016 ACM Conference on Economics and Computation, EC &apos;16<address><addrLine>Maastricht, The Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2016-07-24" />
+			<biblScope unit="page" from="179" to="196" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Measuring performance of peer prediction mechanisms using replicator dynamics</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Shnayder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Frongillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Parkes</surname></persName>
+		</author>
+		<ptr target="http://www.ijcai.org/Abstract/16/371" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence</title>
+				<editor>
+			<persName><forename type="first">S</forename><surname>Kambhampati</surname></persName>
+		</editor>
+		<meeting>the Twenty-Fifth International Joint Conference on Artificial Intelligence<address><addrLine>New York, NY, USA, 9</addrLine></address></meeting>
+		<imprint>
+			<publisher>IJCAI/AAAI Press</publisher>
+			<date type="published" when="2016-07-15" />
+			<biblScope unit="volume">2016</biblScope>
+			<biblScope unit="page" from="2611" to="2617" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Collaborative machine learning with incentive-aware model rewards</title>
+		<author>
+			<persName><forename type="first">Rhl</forename><surname>Sim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bkh</forename><surname>Low</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v119/sim20a.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 37th International Conference on Machine Learning</title>
+				<meeting>the 37th International Conference on Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2020-07" />
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page" from="8927" to="8936" />
+		</imprint>
+	</monogr>
+	<note>Virtual Event, PMLR, Proceedings of Machine Learning Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Snowflake (2021) Snowflake data marketplace</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Singer</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/FOCS.2010.78</idno>
+		<ptr target="https://www.snowflake.com/data-marketplace/" />
+	</analytic>
+	<monogr>
+		<title level="m">51th Annual IEEE Symposium on Foundations of Computer Science, FOCS 2010</title>
+				<meeting><address><addrLine>Las Vegas, Nevada, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2010-10-23" />
+			<biblScope unit="page" from="2021" to="2025" />
+		</imprint>
+	</monogr>
+	<note>Budget feasible mechanisms</note>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">Data quality scores for pricing on data marketplaces</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Stahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Vossen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-662-49381-6_21</idno>
+		<ptr target="https://doi.org/10.1007/978-3-662-49381-621" />
+	</analytic>
+	<monogr>
+		<title level="m">Intelligent Information and Database Systems -8th Asian Conference</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">N</forename><forename type="middle">T</forename><surname>Nguyen</surname></persName>
+			<persName><forename type="first">B</forename><surname>Trawinski</surname></persName>
+			<persName><forename type="first">H</forename><surname>Fujita</surname></persName>
+			<persName><forename type="first">T</forename><surname>Hong</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Da Nang, Vietnam</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2016-03-14" />
+			<biblScope unit="volume">9621</biblScope>
+			<biblScope unit="page" from="215" to="224" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part I</note>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">The price is rightmodels and algorithms for pricing data</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bressan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Valduriez</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-40173-2_31</idno>
+		<ptr target="https://doi.org/10.1007/978-3-642-40173-231" />
+	</analytic>
+	<monogr>
+		<title level="m">Database and Expert Systems Applications -24th International Conference, DEXA 2013</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">H</forename><surname>Decker</surname></persName>
+			<persName><forename type="first">L</forename><surname>Lhotská</surname></persName>
+			<persName><forename type="first">S</forename><surname>Link</surname></persName>
+			<persName><forename type="first">J</forename><surname>Basl</surname></persName>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Tjoa</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Prague, Czech Republic</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2013-08-26" />
+			<biblScope unit="volume">8056</biblScope>
+			<biblScope unit="page" from="380" to="394" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part II</note>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Get a sample for a discount -sampling-based XML data pricing</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Amarilli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Senellart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S ;</forename><surname>Bressan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Decker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lhotská</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Link</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Spies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Wagner</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-10073-9_3</idno>
+		<ptr target="https://doi.org/10.1007/978-3-319-10073-93" />
+	</analytic>
+	<monogr>
+		<title level="m">Database and Expert Systems Applications -25th International Conference</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Munich, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">8644</biblScope>
+			<biblScope unit="page" from="20" to="34" />
+		</imprint>
+	</monogr>
+	<note>September 1-4, 2014. Proceedings, Part I</note>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">Stealing machine learning models via prediction apis</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Tramèr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Juels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Reiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ristenpart</surname></persName>
+		</author>
+		<ptr target="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer" />
+	</analytic>
+	<monogr>
+		<title level="m">25th USENIX Security Symposium, USENIX Security 16</title>
+				<editor>
+			<persName><forename type="first">T</forename><surname>Holz</surname></persName>
+			<persName><forename type="first">S</forename><surname>Savage</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Austin, TX, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>USENIX Association</publisher>
+			<date type="published" when="2016-08-10" />
+			<biblScope unit="page" from="601" to="618" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title level="a" type="main">Price-optimal querying with data apis</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Upadhyaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Balazinska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Suciu</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/3007328.3007335</idno>
+		<ptr target="http://www.vldb.org/pvldb/vol9/p1695-upadhyaya.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">Proc VLDB Endow</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page" from="1695" to="1706" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">Making better use of the crowd: How crowdsourcing can advance machine learning research</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Vaughan</surname></persName>
+		</author>
+		<ptr target="http://jmlr.org/papers/v18/17-234.html" />
+	</analytic>
+	<monogr>
+		<title level="j">J Mach Learn Res</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="1" to="193" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<analytic>
+		<title level="a" type="main">A principled approach to data valuation for federated learning</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rausch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Song</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-63076-8_11</idno>
+		<idno>https://doi.org/10.1007/978-3-030-63076-8 11</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Federated Learning -Privacy and Incentive</title>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">Q</forename><surname>Yang</surname></persName>
+			<persName><forename type="first">L</forename><surname>Fan</surname></persName>
+			<persName><forename type="first">H</forename><surname>Yu</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2020" />
+			<biblScope unit="volume">12500</biblScope>
+			<biblScope unit="page" from="153" to="167" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<analytic>
+		<title level="a" type="main">If you like shapley then you&apos;ll love the core</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Procaccia</surname></persName>
+		</author>
+		<ptr target="https://ojs.aaai.org/index.php/AAAI/article/view/16721" />
+	</analytic>
+	<monogr>
+		<title level="m">Thirty-Fifth AAAI Conference on Artificial Intelligence, AAAI 2021, Thirty-Third Conference on Innovative Applications of Artificial Intelligence, IAAI 2021, The Eleventh Symposium on Educational Advances in Artificial Intelligence, EAAI 2021, Virtual Event</title>
+				<imprint>
+			<publisher>AAAI Press</publisher>
+			<date type="published" when="2021-02-02" />
+			<biblScope unit="page" from="5751" to="5759" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title level="a" type="main">Crowdsourcing to smartphones: incentive mechanism design for mobile phone sensing</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2348543.2348567</idno>
+		<ptr target="https://doi.org/10.1145/2348543.2348567" />
+	</analytic>
+	<monogr>
+		<title level="m">The 18th Annual International Conference on Mobile Computing and Networking, Mobicom&apos;12</title>
+				<editor>
+			<persName><forename type="first">Ekici</forename><forename type="middle">E</forename><surname>Akanöb</surname></persName>
+			<persName><forename type="first">L</forename><surname>Qiu</surname></persName>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Snoeren</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Istanbul, Turkey</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2012-08-22" />
+			<biblScope unit="page" from="173" to="184" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<analytic>
+		<title level="a" type="main">Data valuation using reinforcement learning</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Ö</forename><surname>Arik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pfister</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v119/yoon20a.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 37th International Conference on Machine Learning</title>
+				<meeting>the 37th International Conference on Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2020-07" />
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page" from="10842" to="10851" />
+		</imprint>
+	</monogr>
+	<note>Virtual Event, PMLR, Proceedings of Machine Learning Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<analytic>
+		<title level="a" type="main">Data pricing strategy based on data quality</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cie.2017.08.008</idno>
+		<ptr target="https://doi.org/10.1016/j.cie.2017.08.008" />
+	</analytic>
+	<monogr>
+		<title level="j">Comput Ind Eng</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<analytic>
+		<title level="a" type="main">A sustainable incentive scheme for federated learning</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Weng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Niyato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/MIS.2020.2987774</idno>
+		<ptr target="https://doi.org/10.1109/MIS.2020.2987774" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Intell Syst</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="58" to="69" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<analytic>
+		<title level="a" type="main">Cloudleak: Large-scale deep learning models stealing through adversarial examples</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jin</surname></persName>
+		</author>
+		<ptr target="https://www.ndss-symposium.org/ndss-paper/cloudleak-large-scale-deep-learning-models-stealing-through-adversarial-examples/" />
+	</analytic>
+	<monogr>
+		<title level="m">27th Annual Network and Distributed System Security Symposium</title>
+				<meeting><address><addrLine>San Diego, California, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>The Internet Society</publisher>
+			<date type="published" when="2020-02-23" />
+			<biblScope unit="volume">2020</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<monogr>
+		<title level="m" type="main">A survey of data pricing methods</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Beltran</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<analytic>
+		<title level="a" type="main">Selling data at an auction under privacy constraints</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Beltrán</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v124/zhang20b.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirty-Sixth Conference on Uncertainty in Artificial Intelligence</title>
+				<editor>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Adams</surname></persName>
+			<persName><forename type="first">V</forename><surname>Gogate</surname></persName>
+		</editor>
+		<meeting>the Thirty-Sixth Conference on Uncertainty in Artificial Intelligence</meeting>
+		<imprint>
+			<publisher>AUAI Press</publisher>
+			<date type="published" when="2020-08-03" />
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page" from="669" to="678" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of Machine Learning Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<analytic>
+		<title level="a" type="main">Incentives for mobile crowd sensing: A survey</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Mao</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/COMST.2015.2415528</idno>
+		<ptr target="https://doi.org/10.1109/COMST.2015.2415528" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Commun Surv Tutorials</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="54" to="67" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<analytic>
+		<title level="a" type="main">Trust: A general framework for truthful double spectrum auctions</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE INFOCOM</title>
+		<imprint>
+			<biblScope unit="page" from="999" to="1007" />
+			<date type="published" when="2009" />
+			<publisher>IEEE</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b112">
+	<analytic>
+		<title level="a" type="main">Parallel feature selection inspired by group testing</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Porwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">Q</forename><surname>Ngo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Govindaraju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Welling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cortes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Lawrence</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2014/hash/fb8feff253bb6c834deb61ec76baa893-Abstract.html" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 27: Annual Conference on Neural Information Processing Systems 2014</title>
+				<editor>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Montreal, Quebec, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014-12-08" />
+			<biblScope unit="page" from="3554" to="3562" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

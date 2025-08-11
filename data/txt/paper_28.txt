@@ -1,0 +1,15 @@
+Title: A comprehensive review of Quantum Machine Learning: from NISQ to Fault
+  Tolerance
+Published: 2024-01-21T00:19:16Z
+Link: http://arxiv.org/abs/2401.11351v2
+
+Abstract:
+Quantum machine learning, which involves running machine learning algorithms
+on quantum devices, has garnered significant attention in both academic and
+business circles. In this paper, we offer a comprehensive and unbiased review
+of the various concepts that have emerged in the field of quantum machine
+learning. This includes techniques used in Noisy Intermediate-Scale Quantum
+(NISQ) technologies and approaches for algorithms compatible with
+fault-tolerant quantum computing hardware. Our review covers fundamental
+concepts, algorithms, and the statistical learning theory pertinent to quantum
+machine learning.

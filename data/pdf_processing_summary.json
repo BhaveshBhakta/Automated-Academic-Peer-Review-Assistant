@@ -1,0 +1,142 @@
+[
+    {
+        "pdf_path": "data/pdfs/paper_12.pdf",
+        "text_path": "data/parsed_text/paper_12.txt",
+        "refs_path": "data/references/paper_12_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_1.pdf",
+        "text_path": "data/parsed_text/paper_1.txt",
+        "refs_path": "data/references/paper_1_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_20.pdf",
+        "text_path": "data/parsed_text/paper_20.txt",
+        "refs_path": "data/references/paper_20_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_24.pdf",
+        "text_path": "data/parsed_text/paper_24.txt",
+        "refs_path": "data/references/paper_24_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_13.pdf",
+        "text_path": "data/parsed_text/paper_13.txt",
+        "refs_path": "data/references/paper_13_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_11.pdf",
+        "text_path": "data/parsed_text/paper_11.txt",
+        "refs_path": "data/references/paper_11_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_23.pdf",
+        "text_path": "data/parsed_text/paper_23.txt",
+        "refs_path": "data/references/paper_23_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_15.pdf",
+        "text_path": "data/parsed_text/paper_15.txt",
+        "refs_path": "data/references/paper_15_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_9.pdf",
+        "text_path": "data/parsed_text/paper_9.txt",
+        "refs_path": "data/references/paper_9_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_5.pdf",
+        "text_path": "data/parsed_text/paper_5.txt",
+        "refs_path": "data/references/paper_5_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_26.pdf",
+        "text_path": "data/parsed_text/paper_26.txt",
+        "refs_path": "data/references/paper_26_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_21.pdf",
+        "text_path": "data/parsed_text/paper_21.txt",
+        "refs_path": "data/references/paper_21_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_3.pdf",
+        "text_path": "data/parsed_text/paper_3.txt",
+        "refs_path": "data/references/paper_3_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_7.pdf",
+        "text_path": "data/parsed_text/paper_7.txt",
+        "refs_path": "data/references/paper_7_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_25.pdf",
+        "text_path": "data/parsed_text/paper_25.txt",
+        "refs_path": "data/references/paper_25_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_10.pdf",
+        "text_path": "data/parsed_text/paper_10.txt",
+        "refs_path": "data/references/paper_10_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_18.pdf",
+        "text_path": "data/parsed_text/paper_18.txt",
+        "refs_path": "data/references/paper_18_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_4.pdf",
+        "text_path": "data/parsed_text/paper_4.txt",
+        "refs_path": "data/references/paper_4_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_14.pdf",
+        "text_path": "data/parsed_text/paper_14.txt",
+        "refs_path": null
+    },
+    {
+        "pdf_path": "data/pdfs/paper_6.pdf",
+        "text_path": "data/parsed_text/paper_6.txt",
+        "refs_path": "data/references/paper_6_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_2.pdf",
+        "text_path": "data/parsed_text/paper_2.txt",
+        "refs_path": "data/references/paper_2_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_22.pdf",
+        "text_path": "data/parsed_text/paper_22.txt",
+        "refs_path": "data/references/paper_22_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_29.pdf",
+        "text_path": "data/parsed_text/paper_29.txt",
+        "refs_path": "data/references/paper_29_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_30.pdf",
+        "text_path": "data/parsed_text/paper_30.txt",
+        "refs_path": "data/references/paper_30_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_27.pdf",
+        "text_path": "data/parsed_text/paper_27.txt",
+        "refs_path": "data/references/paper_27_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_28.pdf",
+        "text_path": "data/parsed_text/paper_28.txt",
+        "refs_path": "data/references/paper_28_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_17.pdf",
+        "text_path": "data/parsed_text/paper_17.txt",
+        "refs_path": "data/references/paper_17_refs.xml"
+    },
+    {
+        "pdf_path": "data/pdfs/paper_8.pdf",
+        "text_path": "data/parsed_text/paper_8.txt",
+        "refs_path": "data/references/paper_8_refs.xml"
+    }
+]

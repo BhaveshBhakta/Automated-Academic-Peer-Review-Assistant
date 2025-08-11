@@ -1,0 +1,5220 @@
+lecture notes:
+Optimization for Machine Learning
+version 0.57
+All rights reserved.
+Elad Hazan 1
+1www.cs.princeton.edu/~ehazan
+arXiv:1909.03550v1  [cs.LG]  8 Sep 2019
+
+ii
+
+Preface
+This text was written to accompany a series of lectures given at the Machine
+Learning Summer School Buenos Aires, following a lecture series at the
+Simons Center for Theoretical Computer Science, Berkeley. It was extended
+for the course COS 598D - Optimization for Machine Learning, Princeton
+University, Spring 2019.
+I am grateful to Paula Gradu for proofreading parts of this manuscript.
+I’m also thankful for the help of the following students and colleagues for
+corrections and suggestions to this text: Udaya Ghai, John Hallman, No´e
+Pion, Xinyi Chen.
+iii
+
+iv
+Preface
+Figure 1:
+Professor Arkadi Nemirovski, Pioneer of mathematical optimiza-
+tion
+
+Contents
+Preface
+iii
+1
+Introduction
+3
+1.1
+Examples of optimization problems in machine learning
+. . .
+4
+1.1.1
+Empirical Risk Minimization
+. . . . . . . . . . . . . .
+4
+1.1.2
+Matrix completion and recommender systems . . . . .
+6
+1.1.3
+Learning in Linear Dynamical Systems
+. . . . . . . .
+7
+1.2
+Why is mathematical programming hard? . . . . . . . . . . .
+8
+1.2.1
+The computational model . . . . . . . . . . . . . . . .
+8
+1.2.2
+Hardness of constrained mathematical programming .
+9
+2
+Basic concepts in optimization and analysis
+11
+2.1
+Basic deﬁnitions and the notion of convexity . . . . . . . . . .
+11
+2.1.1
+Projections onto convex sets . . . . . . . . . . . . . . .
+13
+2.1.2
+Introduction to optimality conditions . . . . . . . . . .
+14
+2.1.3
+Solution concepts for non-convex optimization
+. . . .
+15
+2.2
+Potentials for distance to optimality
+. . . . . . . . . . . . . .
+16
+2.3
+Gradient descent and the Polyak stepsize
+. . . . . . . . . . .
+18
+2.4
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+2.5
+Bibliographic remarks
+. . . . . . . . . . . . . . . . . . . . . .
+23
+3
+Stochastic Gradient Descent
+25
+3.1
+Training feedforward neural networks
+. . . . . . . . . . . . .
+25
+3.2
+Gradient descent for smooth optimization . . . . . . . . . . .
+27
+3.3
+Stochastic gradient descent
+. . . . . . . . . . . . . . . . . . .
+29
+3.4
+Bibliographic remarks
+. . . . . . . . . . . . . . . . . . . . . .
+31
+4
+Generalization and Non-Smooth Optimization
+33
+4.1
+A note on non-smooth optimization
+. . . . . . . . . . . . . .
+34
+4.2
+Minimizing Regret . . . . . . . . . . . . . . . . . . . . . . . .
+35
+v
+
+vi
+CONTENTS
+4.3
+Regret implies generalization
+. . . . . . . . . . . . . . . . . .
+35
+4.4
+Online gradient descent
+. . . . . . . . . . . . . . . . . . . . .
+36
+4.5
+Lower bounds . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+4.6
+Online gradient descent for strongly convex functions . . . . .
+39
+4.7
+Online Gradient Descent implies SGD . . . . . . . . . . . . .
+41
+4.8
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+44
+4.9
+Bibliographic remarks
+. . . . . . . . . . . . . . . . . . . . . .
+45
+5
+Regularization
+47
+5.1
+Motivation: prediction from expert advice . . . . . . . . . . .
+47
+5.1.1
+The weighted majority algorithm . . . . . . . . . . . .
+49
+5.1.2
+Randomized weighted majority . . . . . . . . . . . . .
+51
+5.1.3
+Hedge . . . . . . . . . . . . . . . . . . . . . . . . . . .
+52
+5.2
+The Regularization framework
+. . . . . . . . . . . . . . . . .
+53
+5.2.1
+The RFTL algorithm
+. . . . . . . . . . . . . . . . . .
+54
+5.2.2
+Mirrored Descent . . . . . . . . . . . . . . . . . . . . .
+55
+5.2.3
+Deriving online gradient descent
+. . . . . . . . . . . .
+56
+5.2.4
+Deriving multiplicative updates . . . . . . . . . . . . .
+57
+5.3
+Technical background: regularization functions . . . . . . . .
+57
+5.4
+Regret bounds for Mirrored Descent
+. . . . . . . . . . . . . .
+59
+5.5
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+62
+5.6
+Bibliographic Remarks . . . . . . . . . . . . . . . . . . . . . .
+63
+6
+Adaptive Regularization
+65
+6.1
+Adaptive Learning Rates: Intuition . . . . . . . . . . . . . . .
+65
+6.2
+A Regularization Viewpoint
+. . . . . . . . . . . . . . . . . .
+66
+6.3
+Tools from Matrix Calculus . . . . . . . . . . . . . . . . . . .
+66
+6.4
+The AdaGrad Algorithm and Its Analysis . . . . . . . . . . .
+67
+6.5
+Diagonal AdaGrad . . . . . . . . . . . . . . . . . . . . . . . .
+71
+6.6
+State-of-the-art: from Adam to Shampoo and beyond
+. . . .
+72
+6.7
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+73
+6.8
+Bibliographic Remarks . . . . . . . . . . . . . . . . . . . . . .
+74
+7
+Variance Reduction
+75
+7.1
+Variance reduction: Intuition . . . . . . . . . . . . . . . . . .
+75
+7.2
+Setting and deﬁnitions . . . . . . . . . . . . . . . . . . . . . .
+76
+7.3
+The variance reduction advantage . . . . . . . . . . . . . . . .
+77
+7.4
+A simple variance-reduced algorithm . . . . . . . . . . . . . .
+78
+7.5
+Bibliographic Remarks . . . . . . . . . . . . . . . . . . . . . .
+80
+
+CONTENTS
+vii
+8
+Nesterov Acceleration
+81
+8.1
+Algorithm and implementation . . . . . . . . . . . . . . . . .
+81
+8.2
+Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+82
+8.3
+Bibliographic Remarks . . . . . . . . . . . . . . . . . . . . . .
+84
+9
+The conditional gradient method
+85
+9.1
+Review: relevant concepts from linear algebra . . . . . . . . .
+85
+9.2
+Motivation: matrix completion and recommendation systems
+86
+9.3
+The Frank-Wolfe method
+. . . . . . . . . . . . . . . . . . . .
+88
+9.4
+Projections vs. linear optimization . . . . . . . . . . . . . . .
+90
+9.5
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+93
+9.6
+Bibliographic Remarks . . . . . . . . . . . . . . . . . . . . . .
+94
+10 Second order methods for machine learning
+95
+10.1 Motivating example: linear regression
+. . . . . . . . . . . . .
+95
+10.2 Self-Concordant Functions . . . . . . . . . . . . . . . . . . . .
+96
+10.3 Newton’s method for self-concordant functions
+. . . . . . . .
+97
+10.4 Linear-time second-order methods
+. . . . . . . . . . . . . . . 100
+10.4.1 Estimators for the Hessian Inverse . . . . . . . . . . . 100
+10.4.2 Incorporating the estimator . . . . . . . . . . . . . . . 101
+10.5 Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+10.6 Bibliographic Remarks . . . . . . . . . . . . . . . . . . . . . . 104
+11 Hyperparameter Optimization
+105
+11.1 Formalizing the problem . . . . . . . . . . . . . . . . . . . . . 105
+11.2 Hyperparameter optimization algorithms . . . . . . . . . . . . 106
+11.3 A Spectral Method . . . . . . . . . . . . . . . . . . . . . . . . 107
+11.3.1 Background: Compressed Sensing
+. . . . . . . . . . . 108
+11.3.2 The Spectral Algorithm . . . . . . . . . . . . . . . . . 110
+11.4 Bibliographic Remarks . . . . . . . . . . . . . . . . . . . . . . 111
+
+viii
+CONTENTS
+
+Notation
+We use the following mathematical notation in this writeup:
+• d-dimensional Euclidean space is denoted Rd.
+• Vectors are denoted by boldface lower-case letters such as x ∈Rd. Co-
+ordinates of vectors are denoted by underscore notation xi or regular
+brackets x(i).
+• Matrices are denoted by boldface upper-case letters such as X ∈Rm×n.
+Their coordinates by X(i, j), or Xij.
+• Functions are denoted by lower case letters f : Rd 7→R.
+• The k-th diﬀerential of function f is denoted by ∇kf ∈Rdk.
+The
+gradient is denoted without the superscript, as ∇f.
+• We use the mathcal macro for sets, such as K ⊆Rd.
+• We denote the gradient at point xt as ∇xt, or simply ∇t.
+• We denote the global or local optima of functions by x⋆.
+• We denote distance to optimality for iterative algorithms by ht =
+f(xt) −f(x⋆).
+• Euclidean distance to optimality is denoted dt = ∥xt −x⋆∥.
+1
+
+2
+CONTENTS
+
+Chapter 1
+Introduction
+The topic of this lecture series is the mathematical optimization approach
+to machine learning.
+In standard algorithmic theory, the burden of designing an eﬃcient al-
+gorithm for solving a problem at hand is on the algorithm designer. In the
+decades since in the introduction of computer science, elegant algorithms
+have been designed for tasks ranging from ﬁnding the shortest path in a
+graph, computing the optimal ﬂow in a network, compressing a computer
+ﬁle containing an image captured by digital camera, and replacing a string
+in a text document.
+The design approach, while useful to many tasks, falls short of more
+complicated problems, such as identifying a particular person in an image
+in bitmap format, or translating text from English to Hebrew. There may
+very well be an elegant algorithm for the above tasks, but the algorithmic
+design scheme does not scale.
+As Turing promotes in his paper [83], it is potentially easier to teach a
+computer to learn how to solve a task, rather than teaching it the solution
+for the particular tasks. In eﬀect, that’s what we do at school, or in this
+lecture series...
+The machine learning approach to solving problems is to have an au-
+tomated mechanism for learning an algorithm.
+Consider the problem of
+classifying images into two categories: those containing cars and those con-
+taining chairs (assuming there are only two types of images in the world).
+In ML we train (teach) a machine to achieve the desired functionality. The
+same machine can potentially solve any algorithmic task, and diﬀers from
+task to task only by a set of parameters that determine the functionality of
+the machine. This is much like the wires in a computer chip determine its
+3
+
+4
+CHAPTER 1. INTRODUCTION
+functionality. Indeed, one of the most popular machines are artiﬁcial neural
+networks.
+The mathematical optimization approach to machine learning is to view
+the process of machine training as an optimization problem. If we let w ∈Rd
+be the parameters of our machine (a.k.a. model), that are constrained to
+be in some set K ⊆Rd, and f the function measuring success in mapping
+examples to their correct label, then the problem we are interested in is
+described by the mathematical optimization problem of
+min
+w∈K f(w)
+(1.1)
+This is the problem that the lecture series focuses on, with particular em-
+phasis on functions that arise in machine learning and have special structure
+that allows for eﬃcient algorithms.
+1.1
+Examples of optimization problems in machine
+learning
+1.1.1
+Empirical Risk Minimization
+Machine learning problems exhibit special structure. For example, one of
+the most basic optimization problems in supervised learning is that of ﬁtting
+a model to data, or examples, also known as the optimization problem of
+Empirical Risk Minimization (ERM). The special structure of the problems
+arising in such formulations is separability across diﬀerent examples into
+individual losses.
+An example of such formulation is the supervised learning paradigm of
+linear classiﬁcation. In this model, the learner is presented with positive and
+negative examples of a concept. Each example, denoted by ai, is represented
+in Euclidean space by a d dimensional feature vector. For example, a com-
+mon representation for emails in the spam-classiﬁcation problem are binary
+vectors in Euclidean space, where the dimension of the space is the number of
+words in the language. The i’th email is a vector ai whose entries are given
+as ones for coordinates corresponding to words that appear in the email,
+and zero otherwise1. In addition, each example has a label bi ∈{−1, +1},
+corresponding to whether the email has been labeled spam/not spam. The
+1Such a representation may seem na¨ıve at ﬁrst as it completely ignores the words’ order
+of appearance and their context. Extensions to capture these features are indeed studied
+in the Natural Language Processing literature.
+
+1.1. EXAMPLES OF OPTIMIZATION PROBLEMS IN MACHINE LEARNING5
+goal is to ﬁnd a hyperplane separating the two classes of vectors: those with
+positive labels and those with negative labels. If such a hyperplane, which
+completely separates the training set according to the labels, does not ex-
+ist, then the goal is to ﬁnd a hyperplane that achieves a separation of the
+training set with the smallest number of mistakes.
+Mathematically speaking, given a set of m examples to train on, we seek
+x ∈Rd that minimizes the number of incorrectly classiﬁed examples, i.e.
+min
+x∈Rd
+1
+m
+X
+i∈[m]
+δ(sign(x⊤ai) ̸= bi)
+(1.2)
+where sign(x) ∈{−1, +1} is the sign function, and δ(z) ∈{0, 1} is the
+indicator function that takes the value 1 if the condition z is satisﬁed and
+zero otherwise.
+The mathematical formulation of the linear classiﬁcation above is a spe-
+cial case of mathematical programming (1.1), in which
+f(x) = 1
+m
+X
+i∈[m]
+δ(sign(x⊤ai) ̸= bi) =
+E
+i∼[m][ℓi(x)],
+where we make use of the expectation operator for simplicity, and denote
+ℓi(x) = δ(sign(x⊤ai) ̸= bi) for brevity. Since the program above is non-
+convex and non-smooth, it is common to take a convex relaxation and replace
+ℓi with convex loss functions. Typical choices include the means square error
+function and the hinge loss, given by
+ℓai,bi(x) = max{0, 1 −bi · x⊤ai}.
+This latter loss function in the context of binary classiﬁcation gives rise
+to the popular soft-margin SVM problem.
+Another important optimization problem is that of training a deep neural
+network for binary classiﬁcation. For example, consider a dataset of images,
+represented in bitmap format and denoted by {ai ∈Rd|i ∈[m]}, i.e. m
+images over n pixels. We would like to ﬁnd a mapping from images to the
+two categories, {bi ∈{0, 1}} of cars and chairs. The mapping is given by a
+set of parameters of a machine class, such as weights in a neural network,
+or values of a support vector machine.
+We thus try to ﬁnd the optimal
+parameters that match ai to b, i..e
+min
+w∈Rd f(w) = E
+ai,bi [ℓ(fw(ai), bi)] .
+
+6
+CHAPTER 1. INTRODUCTION
+1.1.2
+Matrix completion and recommender systems
+Media recommendations have changed signiﬁcantly with the advent of the
+Internet and rise of online media stores. The large amounts of data collected
+allow for eﬃcient clustering and accurate prediction of users’ preferences
+for a variety of media.
+A well-known example is the so called “Netﬂix
+challenge”—a competition of automated tools for recommendation from a
+large dataset of users’ motion picture preferences.
+One of the most successful approaches for automated recommendation
+systems, as proven in the Netﬂix competition, is matrix completion. Perhaps
+the simplest version of the problem can be described as follows.
+The entire dataset of user-media preference pairs is thought of as a
+partially-observed matrix. Thus, every person is represented by a row in
+the matrix, and every column represents a media item (movie). For sim-
+plicity, let us think of the observations as binary—a person either likes or
+dislikes a particular movie. Thus, we have a matrix M ∈{0, 1, ∗}n×m where
+n is the number of persons considered, m is the number of movies at our
+library, and 0/1 and ∗signify “dislike”, “like” and “unknown” respectively:
+Mij =
+
+
+
+
+
+
+
+
+
+
+
+0,
+person i dislikes movie j
+1,
+person i likes movie j
+∗,
+preference unknown
+.
+The natural goal is to complete the matrix, i.e. correctly assign 0 or 1 to
+the unknown entries. As deﬁned so far, the problem is ill-posed, since any
+completion would be equally good (or bad), and no restrictions have been
+placed on the completions.
+The common restriction on completions is that the “true” matrix has
+low rank. Recall that if a matrix X ∈Rn×m has rank k ≤ρ = min{n, m}
+then it can be written as
+X = UV , U ∈Rn×k, V ∈Rk×m.
+The intuitive interpretation of this property is that each entry in M
+can be explained by only k numbers.
+In matrix completion this means,
+intuitively, that there are only k factors that determine a persons preference
+over movies, such as genre, director, actors and so on.
+Now the simplistic matrix completion problem can be well-formulated
+as in the following mathematical program. Denote by ∥· ∥OB the Euclidean
+
+1.1. EXAMPLES OF OPTIMIZATION PROBLEMS IN MACHINE LEARNING7
+norm only on the observed (non starred) entries of M, i.e.,
+∥X∥2
+OB =
+X
+Mij̸=∗
+X2
+ij.
+The mathematical program for matrix completion is given by
+min
+X∈Rn×m
+1
+2∥X −M∥2
+OB
+s.t.
+rank(X) ≤k.
+1.1.3
+Learning in Linear Dynamical Systems
+Many learning problems require memory, or the notion of state. This is
+captured by the paradigm of reinforcement learning, as well of the special
+case of control in Linear Dynamical Systems (LDS).
+LDS model a variety of control and robotics problems in continuous
+variables. The setting is that of a time series, with following parameters:
+1. Inputs to the system, also called controls, denoted by u1, ..., uT ∈Rn.
+2. Outputs from the system, also called observations, denoted y1, ..., yT ∈
+Rm.
+3. The state of the system, which may either be observed or hidden,
+denoted xt, ..., xT ∈Rd.
+4. The system parameters, which are transformations matrices A, B, C, D
+in appropriate dimensions.
+In the online learning problem of LDS, the learner iteratively observes
+ut, yt, and has to predict ˆyt+1. The actual yt is generated according to the
+following dynamical equations:
+xt+1 = Axt + But + εt
+yt+1 = Cxt+1 + Dut + ζt,
+where εt, ζt are noise which is distributed as a Normal random variable.
+Consider an online sequence in which the states are visible. At time t,
+all system states, inputs and outputs are visible up to this time step. The
+learner has to predict yt+1, and only afterwards observes ut+1.xt+1, yt+1.
+
+8
+CHAPTER 1. INTRODUCTION
+One reasonable way to predict yt+1 based upon past observations is to
+compute the system, and use the computed transformations to predict. This
+amounts to solving the following mathematical program:
+min
+A,B, ˆC, ˆD
+(X
+τ<t
+(xτ+1 −Axτ + Buτ)2 + (yτ+1 −ˆCxτ + ˆDuτ)2
+)
+,
+and then predicting ˆyt+1 = ˆC ˆA(xt + But) + ˆDut.
+1.2
+Why is mathematical programming hard?
+The general formulation (1.1) is NP hard. To be more precise, we have to
+deﬁne the computational model we are working in as well as and the access
+model to the function.
+Before we give a formal proof, the intuition to what makes mathematical
+optimization hard is simple to state. In one line: it is the fact that global
+optimality cannot be veriﬁed on the basis of local properties.
+Most, if not all, eﬃcient optimization algorithms are iterative and based
+on a local improvement step. By this nature, any optimization algorithm
+will terminate when the local improvement is no longer possible, giving rise
+to a proposed solution. However, the quality of this proposed solution may
+diﬀer signiﬁcantly, in general, from that of the global optimum.
+This intuition explains the need for a property of objectives for which
+global optimality is locally veriﬁable.
+Indeed, this is exactly the notion
+of convexity, and the reasoning above explains its utmost importance in
+mathematical optimization.
+We now to prove that mathematical programming is NP-hard.
+This
+requires discussion of the computational model as well as access model to
+the input.
+1.2.1
+The computational model
+The computational model we shall adopt throughout this manuscript is that
+of a RAM machine equipped with oracle access to the objective function
+f : Rd 7→R and constraints set K ⊆Rd. The oracle model for the objective
+function can be one of the following, depending on the speciﬁc scenario:
+1. Value oracle:
+given a point x ∈Rd, oracle returns f(x) ∈R.
+2. Gradient (ﬁrst-order) oracle:
+given a point x ∈Rd, oracle returns
+the gradient ∇f(x) ∈Rd.
+
+1.2. WHY IS MATHEMATICAL PROGRAMMING HARD?
+9
+3. k-th order diﬀerential oracle:
+given a point x ∈Rd, oracle returns
+the tensor ∇kf(x) ∈Rdk.
+The oracle model for the constraints set is a bit more subtle. We distin-
+guish between the following oracles:
+1. Membership oracle:
+given a point x ∈Rd, oracle returns one if
+x ∈K and zero otherwise.
+2. Separating hyperplane oracle:
+given a point x ∈Rd, oracle either
+returns ”Yes” if x ∈K, or otherwise returns a hyperplane h ∈Rd such
+that h⊤x > 0 and ∀y ∈K , h⊤y ≤0.
+3. Explicit sets:
+the most common scenario in machine learning is one
+in which K is “natural”, such as the Euclidean ball or hypercube, or
+the entire Euclidean space.
+1.2.2
+Hardness of constrained mathematical programming
+Under this computational model, we can show:
+Lemma 1.1. Mathematical programming is NP-hard, even for a convex
+continuous constraint set K and quadratic objective functions.
+Informal sketch. Consider the MAX-CUT problem:
+given a graph G =
+(V, E), ﬁnd a subset of the vertices that maximizes the number of edges
+cut. Let A be the negative adjacency matrix of the graph, i.e.
+Aij =
+
+
+
+−1,
+(i, j) ∈E
+0,
+o/w
+Also suppose that Aii = 0.
+Next, consider the mathematical program:
+min
+
+fA(x) = 1
+4(x⊤Ax −2|E|)
+
+(1.3)
+∥x∥∞= 1 .
+Consider the cut deﬁned by the solution of this program, namely
+Sx = {i ∈V |xi = 1},
+for x = x⋆. Let C(S) denote the size of the cut speciﬁed by the subset of
+edges S ⊆E. Observe that the expression 1
+2x⊤Ax, is exactly equal to the
+
+10
+CHAPTER 1. INTRODUCTION
+number of edges that are cut by Sx minus the number of edges that are
+uncut. Thus, we have
+1
+2xAx = C(Sx) −(E −C(Sx)) = 2C(Sx) −E,
+and hence f(x) = C(Sx). Therefore, maximizing f(x) is equivalent to the
+MAX-CUT problem, and is thus NP-hard. We proceed to make the con-
+straint set convex and continuous. Consider the mathematical program
+min {fA(x)}
+(1.4)
+∥x∥∞≤1 .
+This is very similar to the previous program, but we relaxed the equality
+to be an inequality, consequently the constraint set is now the hypercube.
+We now claim that the solution is w.l.o.g. a vertex. To see that, consider
+y(x) ∈{±1}d a rounding of x to the corners deﬁned by:
+yi = y(x)i =
+
+
+
+1,
+w.p.1+xi
+2
+−1,
+w.p.1−xi
+2
+Notice that
+E[y] = x , ∀i ̸= j . E[yiyj] = xixj,
+and therefore E[y(x)⊤Ay(x)] = x⊤Ax. We conclude that the optimum of
+mathematical program 1.4 is the same as that for 1.3, and both are NP-
+hard.
+
+Chapter 2
+Basic concepts in
+optimization and analysis
+2.1
+Basic deﬁnitions and the notion of convexity
+We consider minimization of a continuous function over a convex subset of
+Euclidean space. We mostly consider objective functions that are convex. In
+later chapters we relax this requirement and consider non-convex functions
+as well.
+Henceforth, let K ⊆Rd be a bounded convex and compact set in Eu-
+clidean space. We denote by D an upper bound on the diameter of K:
+∀x, y ∈K, ∥x −y∥≤D.
+A set K is convex if for any x, y ∈K, all the points on the line segment
+connecting x and y also belong to K, i.e.,
+∀α ∈[0, 1], αx + (1 −α)y ∈K.
+A function f : K 7→R is convex if for any x, y ∈K
+∀α ∈[0, 1], f(αx + (1 −α)y) ≤αf(x) + (1 −α)f(y).
+Gradients and subgradients.
+The set of all subgradients of a function
+f at x, denoted ∂f(x), is the set of all vectors u such that
+f(y) ≥f(x) + u⊤(y −x).
+It can be shown that the set of subgradients of a convex function is always
+non-empty.
+11
+
+12
+CHAPTER 2. BASIC CONCEPTS
+Suppose f is diﬀerentiable, let ∇f(x)[i] =
+∂
+∂xi f(x) be the vector of
+partial derivatives according to the variables, called the gradient.
+If the
+gradient ∇f(x) exists, then ∇f(x) ∈∂f(x) and ∀y ∈K
+f(y) ≥f(x) + ∇f(x)⊤(y −x).
+Henceforth we shall denote by ∇f(x) the gradient, if it exists, or any member
+of ∂f(x) otherwise.
+We denote by G > 0 an upper bound on the norm of the subgradients of
+f over K, i.e., ∥∇f(x)∥≤G for all x ∈K. The existence of Such an upper
+bound implies that the function f is Lipschitz continuous with parameter
+G, that is, for all x, y ∈K
+|f(x) −f(y)| ≤G∥x −y∥.
+Smoothness and strong convexity.
+The optimization and machine learn-
+ing literature studies special types of convex functions that admit useful
+properties, which in turn allow for more eﬃcient optimization. Notably, we
+say that a function is α-strongly convex if
+f(y) ≥f(x) + ∇f(x)⊤(y −x) + α
+2 ∥y −x∥2.
+A function is β-smooth if
+f(y) ≤f(x) + ∇f(x)⊤(y −x) + β
+2 ∥y −x∥2.
+The latter condition is implied by a slightly stronger Lipschitz condition
+over the gradients, which is sometimes used to deﬁned smoothness, i.e.,
+∥∇f(x) −∇f(y)∥≤β∥x −y∥.
+If the function is twice diﬀerentiable and admits a second derivative,
+known as a Hessian for a function of several variables, the above conditions
+are equivalent to the following condition on the Hessian, denoted ∇2f(x):
+Smoothness:
+−βI ≼∇2f(x) ≼βI
+Strong-convexity:
+αI ≼∇2f(x),
+where A ≼B if the matrix B −A is positive semideﬁnite.
+When the function f is both α-strongly convex and β-smooth, we say
+that it is γ-well-conditioned where γ is the ratio between strong convexity
+and smoothness, also called the condition number of f
+γ = α
+β ≤1
+
+2.1. BASICS
+13
+2.1.1
+Projections onto convex sets
+In the following algorithms we shall make use of a projection operation onto
+a convex set, which is deﬁned as the closest point inside the convex set to a
+given point. Formally,
+Π
+K(y) ≜arg min
+x∈K
+∥x −y∥.
+When clear from the context, we shall remove the K subscript. It is left as
+an exercise to the reader to prove that the projection of a given point over
+a closed non-empty convex set exists and is unique.
+The computational complexity of projections is a subtle issue that de-
+pends much on the characterization of K itself. Most generally, K can be
+represented by a membership oracle—an eﬃcient procedure that is capable
+of deciding whether a given x belongs to K or not. In this case, projections
+can be computed in polynomial time. In certain special cases, projections
+can be computed very eﬃciently in near-linear time.
+A crucial property of projections that we shall make extensive use of is
+the Pythagorean theorem, which we state here for completeness:
+Figure 2.1: Pythagorean theorem.
+Theorem 2.1 (Pythagoras, circa 500 BC). Let K ⊆Rd be a convex set,
+y ∈Rd and x = ΠK(y). Then for any z ∈K we have
+∥y −z∥≥∥x −z∥.
+
+14
+CHAPTER 2. BASIC CONCEPTS
+We note that there exists a more general version of the Pythagorean
+theorem. The above theorem and the deﬁnition of projections are true and
+valid not only for Euclidean norms, but for projections according to other
+distances that are not norms. In particular, an analogue of the Pythagorean
+theorem remains valid with respect to Bregman divergences.
+2.1.2
+Introduction to optimality conditions
+The standard curriculum of high school mathematics contains the basic facts
+concerning when a function (usually in one dimension) attains a local opti-
+mum or saddle point. The KKT (Karush-Kuhn-Tucker) conditions general-
+ize these facts to more than one dimension, and the reader is referred to the
+bibliographic material at the end of this chapter for an in-depth rigorous
+discussion of optimality conditions in general mathematical programming.
+For our purposes, we describe only brieﬂy and intuitively the main facts
+that we will require henceforth. We separate the discussion into convex and
+non-convex programming.
+Optimality for convex optimization
+A local minimum of a convex function is also a global minimum (see exercises
+at the end of this chapter). We say that x⋆is an ε-approximate optimum if
+the following holds:
+∀x ∈K . f(x⋆) ≤f(x) + ε.
+The generalization of the fact that a minimum of a convex diﬀerentiable
+function on R is a point in which its derivative is equal to zero, is given by
+the multi-dimensional analogue that its gradient is zero:
+∇f(x) = 0
+⇐⇒
+x ∈arg min
+x∈Rn
+f(x).
+We will require a slightly more general, but equally intuitive, fact for con-
+strained optimization: at a minimum point of a constrained convex function,
+the inner product between the negative gradient and direction towards the
+interior of K is non-positive. This is depicted in Figure 2.2, which shows that
+−∇f(x⋆) deﬁnes a supporting hyperplane to K. The intuition is that if the
+inner product were positive, one could improve the objective by moving in
+the direction of the projected negative gradient. This fact is stated formally
+in the following theorem.
+
+2.1. BASICS
+15
+Theorem 2.2 (Karush-Kuhn-Tucker). Let K ⊆Rd be a convex set, x⋆∈
+arg minx∈K f(x). Then for any y ∈K we have
+∇f(x⋆)⊤(y −x⋆) ≥0.
+Figure 2.2: Optimality conditions: negative (sub)gradient pointing out-
+wards.
+2.1.3
+Solution concepts for non-convex optimization
+We have seen in the previous chapter that mathematical optimization is NP-
+hard. This implies that ﬁnding global solutions for non-convex optimization
+is NP-hard, even for smooth functions over very simple convex domains. We
+thus consider other trackable concepts of solutions.
+The most common solution concept is that of ﬁrst-order optimality, a.k.a.
+saddle-points or stationary points. These are points that satisfy
+∥∇f(x⋆)∥= 0.
+Unfortunately, even ﬁnding such stationary points is NP-hard.
+We thus
+settle for approximate stationary points, which satisify
+∥∇f(x⋆)∥≤ε.
+
+16
+CHAPTER 2. BASIC CONCEPTS
+Figure 2.3: First and second-order local optima.
+A more stringent notion of optimality we may consider is obtained by
+looking at the second derivatives. We can require they behave as for global
+minimum, see ﬁgure 2.3. Formally, we say that a point x⋆is a second-order
+local minimum if it satisﬁes the two conditions:
+∥∇f(x⋆)∥≤ε , ∇2f(x⋆) ⪰−√εI.
+The diﬀerences in approximation criteria for ﬁrst and second derivatives is
+natural, as we shall explore in non-convex approximation algorithms hence-
+forth.
+We note that it is possible to further deﬁne optimality conditions for
+higher order derivatives, although this is less useful in the context of machine
+learning.
+2.2
+Potentials for distance to optimality
+When analyzing convergence of gradient methods, it is useful to use potential
+functions in lieu of function distance to optimality, such as gradient norm
+and/or Euclidean distance to optimality. The following relationships hold
+between these quantities.
+Lemma 2.3. The following properties hold for α-strongly-convex functions
+and/or β-smooth functions over Euclidean space Rd.
+1.
+α
+2 d2
+t ≤ht
+2. ht ≤β
+2 d2
+t
+
+2.2. POTENTIALS FOR DISTANCE TO OPTIMALITY
+17
+3.
+1
+2β∥∇t∥2 ≤ht
+4. ht ≤
+1
+2α∥∇t∥2
+Proof.
+1. ht ≥α
+2 d2
+t :
+By strong convexity, we have
+ht
+= f(xt) −f(x⋆)
+≥∇f(x⋆)⊤(xt −x⋆) + α
+2 ∥xt −x⋆∥2
+= α
+2 ∥xt −x⋆∥2
+where the last inequality follows since the gradient at the global opti-
+mum is zero.
+2. ht ≤β
+2 d2
+t :
+By smoothness,
+ht
+= f(xt) −f(x⋆)
+≤∇f(x⋆)⊤(xt −x⋆) + β
+2 ∥xt −x⋆∥2
+= β
+2 ∥xt −x⋆∥2
+where the last inequality follows since the gradient at the global opti-
+mum is zero.
+3. ht ≥
+1
+2β∥∇t∥2: Using smoothness, and let xt+1 = xt −η∇t for η = 1
+β,
+ht =
+f(xt) −f(x⋆)
+≥f(xt) −f(xt+1)
+≥∇f(xt)⊤(xt −xt+1) −β
+2 ∥xt −xt+1∥2
+= η∥∇t∥2 −β
+2 η2∥∇t∥2
+=
+1
+2β∥∇t∥2.
+4. ht ≤
+1
+2α∥∇t∥2:
+We have for any pair x, y ∈Rd:
+f(y) ≥f(x) + ∇f(x)⊤(y −x) + α
+2 ∥x −y∥2
+≥min
+z∈Rd
+n
+f(x) + ∇f(x)⊤(z −x) + α
+2 ∥x −z∥2o
+= f(x) −1
+2α∥∇f(x)∥2.
+by taking z = x −1
+α∇f(x)
+
+18
+CHAPTER 2. BASIC CONCEPTS
+In particular, taking x = xt , y = x⋆, we get
+ht = f(xt) −f(x⋆) ≤1
+2α∥∇t∥2.
+(2.1)
+2.3
+Gradient descent and the Polyak stepsize
+The simplest iterative optimization algorithm is gradient descent, as given
+in Algorithm 1. We analyze GD with the Polyak stepsize, which has the
+advantage of not depending on the strong convexity and/or smoothness
+parameters of the objective function.
+Algorithm 1 GD with the Polyak stepsize
+1: Input: time horizon T, x0
+2: for t = 0, . . . , T −1 do
+3:
+Set ηt =
+ht
+∥∇t∥2
+4:
+xt+1 = xt −ηt∇t
+5: end for
+6: Return ¯x = arg minxt{f(xt)}
+To prove convergence bounds, assume ∥∇t∥≤G, and deﬁne:
+BT
+=
+min
+(
+Gd0
+√
+T
+, 2βd2
+0
+T
+, 3G2
+αT , βd2
+0
+
+1 −α
+4β
+T )
+Theorem 2.4. (GD with the Polyak Step Size) Algorithm 1 attains the
+following regret bound after T steps:
+h(¯x)
+=
+min
+0≤t≤T{ht} ≤BT
+Theorem 2.4 directly follows from the following lemma. Let 0 ≤γ ≤1,
+deﬁne RT,γ as follows:
+RT,γ = min
+(
+Gd0
+√γT , 2βd2
+0
+γT , 3G2
+γαT , βd2
+0
+
+1 −γ α
+4β
+T )
+.
+Lemma 2.5. For 0 ≤γ ≤1, suppose that a sequence x0, . . . xt satisﬁes:
+d2
+t+1 ≤d2
+t −γ
+h2
+t
+∥∇t∥2
+(2.2)
+
+2.3. GRADIENT DESCENT AND THE POLYAK STEPSIZE
+19
+then for ¯x as deﬁned in the algorithm, we have:
+h(¯x) ≤RT,γ .
+Proof. The proof analyzes diﬀerent cases:
+1. For convex functions with gradient bounded by G,
+d2
+t+1 −d2
+t
+≤−γh2
+t
+∥∇t∥2 ≤−γh2
+t
+G2
+Summing up over T iterations, and using Cauchy-Schwartz, we have
+1
+T
+X
+t
+ht
+≤
+1
+√
+T
+sX
+t
+h2
+t
+≤
+G
+√γT
+sX
+t
+(d2
+t −d2
+t+1) ≤Gd0
+√γT .
+2. For smooth functions whose gradient is bounded by G, Lemma 2.3
+implies:
+d2
+t+1 −d2
+t ≤−γh2
+t
+∥∇t∥2 ≤−γht
+2β .
+This implies
+1
+T
+X
+t
+ht ≤2βd2
+0
+γT
+.
+3. For strongly convex functions, Lemma 2.3 implies:
+d2
+t+1 −d2
+t ≤−γ
+h2
+t
+∥∇t∥2 ≤−γ h2
+t
+G2 ≤−γ α2d4
+t
+4G2 .
+In other words, d2
+t+1 ≤d2
+t (1 −γ α2d2
+t
+4G2 ) . Deﬁning at := γ α2d2
+t
+4G2 , we have:
+at+1 ≤at(1 −at) .
+
+20
+CHAPTER 2. BASIC CONCEPTS
+This implies that at ≤
+1
+t+1, which can be seen by induction1. The
+proof is completed as follows2 :
+1
+T/2
+T
+X
+t=T/2
+h2
+t
+≤
+2G2
+γT
+T
+X
+t=T/2
+(d2
+t −d2
+t+1)
+=
+2G2
+γT (d2
+T/2 −d2
+T )
+=
+8G4
+γ2α2T (aT/2 −aT )
+≤
+9G4
+γ2α2T 2 .
+Thus, there exists a t for which h2
+t ≤
+9G4
+γ2α2T 2 . Taking the square root
+completes the claim.
+4. For both strongly convex and smooth functions:
+d2
+t+1 −d2
+t ≤−γ
+h2
+t
+∥∇t∥2 ≤−γht
+2β ≤−γ α
+4β d2
+t
+Thus,
+hT ≤βd2
+T ≤βd2
+0
+
+1 −γ α
+4β
+T
+.
+This completes the proof of all cases.
+1That a0 ≤1 follows from Lemma 2.3. For t = 1, a1 ≤1
+2 since a1 ≤a0(1 −a0) and
+0 ≤a0 ≤1. For the induction step, at ≤at−1(1 −at−1) ≤1
+t (1 −1
+t ) = t−1
+t2 =
+1
+t+1( t2−1
+t2 ) ≤
+1
+t+1.
+2This assumes T is even. T odd leads to the same constants.
+
+2.4. EXERCISES
+21
+2.4
+Exercises
+1. Write an explicit expression for the gradient and projection operation
+(if needed) for each of the example optimization problems in the ﬁrst
+chapter.
+2. Prove that a diﬀerentiable function f(x) : R →R is convex if and only
+if for any x, y ∈R it holds that f(x) −f(y) ≤(x −y)f′(x).
+3. Recall that we say that a function f : Rn →R has a condition number
+γ = α/β over K ⊆Rd if the following two inequalities hold for all
+x, y ∈K:
+(a) f(y) ≥f(x) + (y −x)⊤∇f(x) + α
+2 ∥x −y∥2
+(b) f(y) ≤f(x) + (y −x)⊤∇f(x) + β
+2 ∥x −y∥2
+For matrices A, B ∈Rn×n we denote A ≽B if A −B is positive
+semideﬁnite. Prove that if f is twice diﬀerentiable and it holds that
+βI ≽∇2f(x) ≽αI for any x ∈K, then the condition number of f
+over K is α/β.
+4. Prove:
+(a) The sum of convex functions is convex.
+(b) Let f be α1-strongly convex and g be α2-strongly convex. Then
+f + g is (α1 + α2)-strongly convex.
+(c) Let f be β1-smooth and g be β2-smooth. Then f +g is (β1 +β2)-
+smooth.
+5. Let K ⊆Rd be closed, compact, non-empty and bounded. Prove that
+a necessary and suﬃcient condition for ΠK(x) to be a singleton, that
+is for | ΠK(x)| = 1, is for K to be convex.
+6. Prove that for convex functions, ∇f(x) ∈∂f(x), that is, the gradient
+belongs to the subgradient set.
+7. Let f(x) : Rn →R be a convex diﬀerentiable function and K ⊆Rn be
+a convex set. Prove that x⋆∈K is a minimizer of f over K if and only
+if for any y ∈K it holds that (y −x⋆)⊤∇f(x⋆) ≥0.
+8. Consider the n-dimensional simplex
+∆n = {x ∈Rn |
+n
+X
+i=1
+xi = 1, xi ≥0 , ∀i ∈[n]}.
+
+22
+CHAPTER 2. BASIC CONCEPTS
+Give an algorithm for computing the projection of a point x ∈Rn onto
+the set ∆n (a near-linear time algorithm exists).
+
+2.5. BIBLIOGRAPHIC REMARKS
+23
+2.5
+Bibliographic remarks
+The reader is referred to dedicated books on convex optimization for much
+more in-depth treatment of the topics surveyed in this background chapter.
+For background in convex analysis see the texts [11, 68]. The classic text-
+book [12] gives a broad introduction to convex optimization with numerous
+applications. For an adaptive analysis of gradient descent with the Polyak
+stepsize see [33].
+
+24
+CHAPTER 2. BASIC CONCEPTS
+
+Chapter 3
+Stochastic Gradient Descent
+The most important optimization algorithm in the context of machine learn-
+ing is stochastic gradient descent (SGD), especially for non-convex optimiza-
+tion and in the context of deep neural networks. In this chapter we spell
+out the algorithm and analyze it up to tight ﬁnite-time convergence rates.
+3.1
+Training feedforward neural networks
+Perhaps the most common optimization problem in machine learning is that
+of training feedforward neural networks. In this problem, we are given a set
+of labelled data points, such as labelled images or text. Let {xi, yi} be the
+set of labelled data points, also called the training data.
+The goal is to ﬁt the weights of an artiﬁcial neural network in order to
+minimize the loss over the data. Mathematically, the feedforward network
+is a given weighted a-cyclic graph G = (V, E, W). Each node v is assigned
+an activation function, which we assume is the same function for all nodes,
+denoted σ : Rd 7→R. Using a biological analogy, an activation function σ
+is a function that determines how strongly a neuron (i.e. a node) ‘ﬁres’ for
+a given input by mapping the result into the desired range, usually [0, 1] or
+[−1, 1] . Some popular examples include:
+• Sigmoid: σ(x) =
+1
+1+e−x
+• Hyperbolic tangent: tanh(x) = ex−e−x
+ex+e−x
+• Rectiﬁed linear unit: ReLU(x) = max{0, x} (currently the most widely
+used of the three)
+25
+
+26
+CHAPTER 3. STOCHASTIC GRADIENT DESCENT
+The inputs to the input layer nodes is a given data point, while the
+inputs to to all other nodes are the output of the nodes connected to it. We
+denote by ρ(v) the set of input neighbors to node v. The top node output
+is the input to the loss function, which takes its “prediction” and the true
+label to form a loss.
+For an input node v, its output as a function of the graph weights and
+input example x (of dimension d), which we denote as
+v(W, x) = σ
+ X
+i∈d
+Wv,ixi
+!
+The output of an internal node v is a function of its inputs u ∈ρ(v) and a
+given example x, which we denote as
+v(W, x) = σ
+
+X
+u∈ρ(v)
+Wuvu(W, x)
+
+
+If we denote the top node as v1, then the loss of the network over data point
+(xi, yi) is given by
+ℓ(v1(W, xi), yi).
+The objective function becomes
+f(W) = E
+xi,yi
+
+ℓ(v1(W, xi), yi)
+
+For most commonly-used activation and loss functions, the above func-
+tion is non-convex. However, it admits important computational properties.
+The most signiﬁcant property is given in the following lemma.
+Lemma 3.1 (Backpropagation lemma). The gradient of f can be computed
+in time O(|E|).
+The proof of this lemma is left as an exercise, but we sketch the main
+ideas. For every variable Wuv, we have by linearity of expectation that
+∂
+∂Wuv
+f(W) = E
+xi,yi
+
+∂
+∂Wuv
+ℓ(v1(W, xi), yi)
+
+.
+Next, using the chain rule, we claim that it suﬃces to know the partial
+derivatives of each node w.r.t. its immediate daughters. To see this, let us
+
+3.2. GRADIENT DESCENT FOR SMOOTH OPTIMIZATION
+27
+write the derivative w.r.t. Wuv using the chain rule:
+∂
+∂Wuv
+ℓ(v1(W, xi), yi) = ∂ℓ
+∂v1 · ∂v1
+∂Wuv
+= ∂ℓ
+∂v1 ·
+X
+v2∈ρ(v1)
+∂v1
+∂v2 ·
+∂vj
+∂Wuv
+= ...
+= ∂ℓ
+∂v1 ·
+X
+v2∈ρ(v1)
+∂v1
+∂v2 · ... ·
+X
+vk
+j ∈ρ(vk−1)
+· ∂vk
+∂Wuv
+We conclude that we only need to obtain the E partial derivatives along
+the edges in order to compute all partial derivatives of the function. The
+actual product at each node can be computed by a dynamic program in
+linear time.
+3.2
+Gradient descent for smooth optimization
+Before moving to stochastic gradient descent, we consider its determinis-
+tic counterpart:
+gradient descent, in the context of smooth non-convex
+optimization.
+Our notion of solution is a point with small gradient, i.e.
+∥∇f(x)∥≤ε.
+As we prove below, this requires O( 1
+ε2 ) iterations, each requiring one gra-
+dient computation. Recall that gradients can be computed eﬃciently, linear
+in the number of edges, in feed forward neural networks. Thus, the time to
+obtain a ε-approximate solution becomes O(|E|m
+ε2 ) for neural networks with
+E edges and over m examples.
+Algorithm 2 Gradient descent
+1: Input: f, T, initial point x1 ∈K, sequence of step sizes {ηt}
+2: for t = 1 to T do
+3:
+Let yt+1 = xt −ηt∇f(xt), xt+1 = ΠK (yt+1)
+4: end for
+5: return xT+1
+Although the choice of ηt can make a diﬀerence in practice, in theory
+the convergence of the vanilla GD algorithm is well understood and given in
+the following theorem. Below we assume that the function is bounded such
+that |f(x)| ≤M.
+
+28
+CHAPTER 3. STOCHASTIC GRADIENT DESCENT
+Theorem 3.2. For unconstrained minimization of β-smooth functions and
+ηt = 1
+β, GD Algorithm 2 converges as
+1
+T
+X
+t
+∥∇t∥2 ≤4Mβ
+T
+.
+Proof. Denote by ∇t the shorthand for ∇f(xt), and ht = f(xt) −f(x∗).
+The Descent Lemma is given in the following simple equation,
+ht+1 −ht = f(xt+1) −f(xt)
+≤∇⊤
+t (xt+1 −xt) + β
+2 ∥xt+1 −xt∥2
+β-smoothness
+= −ηt∥∇t∥2 + β
+2 η2
+t ∥∇t∥2
+algorithm defn.
+= −1
+2β ∥∇t∥2
+choice of ηt = 1
+β
+Thus, summing up over T iterations, we have
+1
+2β
+T
+X
+t=1
+∥∇t∥2 ≤
+X
+t
+(ht −ht+1) = h1 −hT+1 ≤2M
+For convex functions, the above theorem implies convergence in function
+value due to the following lemma,
+Lemma 3.3. A convex function satisﬁes
+ht ≤D∥∇t∥,
+and an α-strongly convex function satisﬁes
+ht ≤1
+2α∥∇t∥2.
+Proof. The gradient upper bound for convex functions gives
+ht ≤∇t(x∗−xt) ≤D∥∇t∥
+The strongly convex case appears in Lemma 2.3.
+
+3.3. STOCHASTIC GRADIENT DESCENT
+29
+3.3
+Stochastic gradient descent
+In the context of training feed forward neural networks, the key idea of
+Stochastic Gradient Descent is to modify the updates to be:
+Wt+1 = Wt −η e∇t
+(3.1)
+where e∇t is a random variable with E[e∇t] = ∇f (Wt) and bounded second
+moment E[∥e∇t∥2
+2] ≤σ2.
+Luckily, getting the desired e∇t random variable is easy in the posed
+problem since the objective function is already in expectation form so:
+∇f(W) = ∇E
+xi,yi[ℓ(v1(W, xi), yi)] = E
+xi,yi[∇ℓ(v1(W, xi), yi)].
+Therefore, at iteration t we can take e∇t = ∇ℓ(v1(W, xi), yi) where i ∈
+{1, ..., m} is picked uniformly at random. Based on the observation above,
+choosing e∇t this way preserves the desired expectation. So, for each iteration
+we only compute the gradient w.r.t. to one random example instead of the
+entire dataset, thereby drastically improving performance for every step. It
+remains to analyze how this impacts convergence.
+Algorithm 3 Stochastic gradient descent
+1: Input: f, T, initial point x1 ∈K, sequence of step sizes {ηt}
+2: for t = 1 to T do
+3:
+Let yt+1 = xt −ηt∇f(xt), xt+1 = ΠK (yt+1)
+4: end for
+5: return xT+1
+Theorem 3.4. For unconstrained minimization of β-smooth functions and
+ηt = η =
+q
+M
+βσ2T , SGD Algorithm 3 converges as
+E
+"
+1
+T
+X
+t
+∥∇t∥2
+#
+≤2
+r
+Mβσ2
+T
+.
+
+30
+CHAPTER 3. STOCHASTIC GRADIENT DESCENT
+Proof. Denote by ∇t the shorthand for ∇f(xt), and ht = f(xt) −f(x∗).
+The stochastic descent lemma is given in the following equation,
+E[ht+1 −ht] = E[f(xt+1) −f(xt)]
+≤E[∇⊤
+t (xt+1 −xt) + β
+2 ∥xt+1 −xt∥2]
+β-smoothness
+= −E[η∇⊤
+t ˜∇t] + β
+2 η2 E ∥˜∇t∥2
+algorithm defn.
+= −η∥∇t∥2 + β
+2 η2σ2
+variance bound.
+Thus, summing up over T iterations, we have for η =
+q
+M
+βσ2T ,
+E
+"
+1
+T
+T
+X
+t=1
+∥∇t∥2
+#
+≤
+1
+Tη
+P
+t E [ht −ht+1] + η β
+2 σ2 ≤M
+Tη + η β
+2 σ2
+=
+q
+Mβσ2
+T
++ 1
+2
+q
+Mβσ2
+T
+≤2
+q
+Mβσ2
+T
+.
+We thus conclude that O( 1
+ε4 ) iterations are needed to ﬁnd a point with
+∥∇f(x)∥≤ε, as opposed to O( 1
+ε2 ). However, each iteration takes O(|E|)
+time, instead of O(|E|m) time for gradient descent.
+This is why SGD is one of the most useful algorithms in machine learning.
+
+3.4. BIBLIOGRAPHIC REMARKS
+31
+3.4
+Bibliographic remarks
+For in depth treatment of backpropagation and the role of deep neural net-
+works in machine learning the reader is referred to [25].
+For detailed rigorous convergence proofs of ﬁrst order methods, see lec-
+ture notes by Nesterov [57] and Nemirovskii [53, 54], as well as the recent
+text [13].
+
+32
+CHAPTER 3. STOCHASTIC GRADIENT DESCENT
+
+Chapter 4
+Generalization and
+Non-Smooth Optimization
+In previous chapter we have introduced the framework of mathematical op-
+timization within the context of machine learning. We have described the
+mathematical formulation of several machine learning problems, notably
+training neural networks, as optimization problems. We then described as
+well as analyzed the most useful optimization method to solve such formu-
+lations: stochastic gradient descent.
+However, several important questions arise:
+1. SGD was analyzed for smooth functions. Can we minimize non-smooth
+objectives?
+2. Given an ERM problem (a.k.a. learning from examples, see ﬁrst chap-
+ter), what can we say about generalization to unseen examples? How
+does it aﬀect optimization?
+3. Are there faster algorithms than SGD in the context of ML?
+In this chapter we address the ﬁrst two, and devote the rest of this
+manuscript/course to the last question.
+How many examples are needed to learn a certain concept? This is a
+fundamental question of statistical/computational learning theory that has
+been studied for decades (see end of chapter for bibliographic references).
+The classical setting of learning from examples is statistical. It assumes
+examples are drawn i.i.d from a ﬁxed, arbitrary and unknown distribution.
+The mathematical optimization formulations that we have derived for the
+ERM problem assume that we have suﬃciently many examples, such that
+33
+
+34
+CHAPTER 4. GENERALIZATION
+optimizing a certain predictor/neural-network/machine on them will result
+in a solution that is capable of generalizing to unseen examples. The number
+of examples needed to generalize is called the sample complexity of the prob-
+lem, and it depends on the concept we are learning as well as the hypothesis
+class over which we are trying to optimize.
+There are dimensionality notions in the literature, notably the VC-
+dimension and related notions, that give precise bounds on the sample com-
+plexity for various hypothesis classes. In this text we take an algorithmic
+approach, which is also deterministic. Instead of studying sample complex-
+ity, which is non-algorithmic, we study algorithms for regret minimization.
+We will show that they imply generalization for a broad class of machines.
+4.1
+A note on non-smooth optimization
+Minimization of a function that is both non-convex and non-smooth is in
+general hopeless, from an information theoretic perspective. The following
+image explains why. The depicted function on the interval [0, 1] has a single
+local/global minimum, and if the crevasse is narrow enough, it cannot be
+found by any method other than extensive brute-force search, which can
+take arbitrarily long.
+0
+1
+Figure 4.1: Intractability of nonsmooth optimization
+Since non-convex and non-smooth optimization is hopeless, in the con-
+text of non-smooth functions we only consider convex optimization.
+
+4.2. MINIMIZING REGRET
+35
+4.2
+Minimizing Regret
+The setting we consider for the rest of this chapter is that of online (convex)
+optimization. In this setting a learner iteratively predicts a point xt ∈K in
+a convex set K ⊆Rd, and then receives a cost according to an adversarially
+chosen convex function ft ∈F from family F.
+The goal of the algorithms introduced in this chapter is to minimize
+worst-case regret, or diﬀerence between total cost and that of best point in
+hindsight:
+regret =
+sup
+f1,...,fT ∈F
+( T
+X
+t=1
+ft(xt) −min
+x∈K
+T
+X
+t=1
+ft(x)
+)
+.
+In order to compare regret to optimization error it is useful to consider
+the average regret, or regret/T. Let ¯xT = 1
+T
+PT
+t=1 xt be the average decision.
+If the functions ft are all equal to a single function f : K 7→R, then Jensen’s
+inequality implies that f(¯xT ) converges to f(x⋆) if the average regret is
+vanishing, since
+f(¯xT ) −f(x⋆) ≤1
+T
+T
+X
+t=1
+[f(xt) −f(x⋆)] = regret
+T
+4.3
+Regret implies generalization
+Statistical learning theory for learning from examples postulates that exam-
+ples from a certain concept are sampled i.i.d. from a ﬁxed and unknown
+distribution. The learners’ goal is to choose a hypothesis from a certain
+hypothesis class that can generalize to unseen examples.
+More formally, let D be a distribution over labelled examples {ai ∈
+Rd, bi ∈R} ∼D. Let H = {x} , x : Rd 7→R be a hypothsis class over which
+we are trying to learn (such as linear separators, deep neural networks,
+etc.). The generalization error of a hypothesis is the expected error of a
+hypothesis over randomly chosen examples according to a given loss function
+ℓ: R × R 7→R, which is applied to the prediction of the hypothesis and the
+true label, ℓ(x(ai), bi). Thus,
+error(x) =
+E
+ai,bi∼D[ℓ(x(ai), bi)].
+An algorithm that attains sublinear regret over the hypothesis class H,
+w.r.t. loss functions given by ft(x) = fa,b(x) = ℓ(x(a), b), gives rise to a
+generalizing hypothesis as follows.
+
+36
+CHAPTER 4. GENERALIZATION
+Lemma 4.1. Let ¯x = xt for t ∈[T] be chose uniformly at random from
+{x1, ..., xT }.Then, with expectation taken over random choice of ¯x as well
+as choices of ft ∼D,
+E[error(¯x)] ≤E[error(x∗)] + regret
+T
+Proof. By random choice of ¯x, we have
+E[f(¯x)] = E
+"
+1
+T
+X
+t
+f(xt)
+#
+Using the fact that ft ∼D, we have
+E[error(¯x)]
+= Ef∼D[f(¯x)]
+= Eft[ 1
+T
+P
+t ft(xt)]
+≤Eft[ 1
+T
+P
+t ft(x⋆)] + regret
+T
+= Ef[f(x⋆)] + regret
+T
+= Ef[error(x⋆)] + regret
+T
+4.4
+Online gradient descent
+Perhaps the simplest algorithm that applies to the most general setting of
+online convex optimization is online gradient descent. This algorithm is an
+online version of standard gradient descent for oﬄine optimization we have
+seen in the previous chapter.
+Pseudo-code for the algorithm is given in
+Algorithm 4, and a conceptual illustration is given in Figure 4.2.
+In each iteration, the algorithm takes a step from the previous point in
+the direction of the gradient of the previous cost. This step may result in
+a point outside of the underlying convex set. In such cases, the algorithm
+projects the point back to the convex set, i.e. ﬁnds its closest point in the
+convex set. Despite the fact that the next cost function may be completely
+diﬀerent than the costs observed thus far, the regret attained by the algo-
+rithm is sublinear. This is formalized in the following theorem (recall the
+deﬁnition of G and D from the previous chapter).
+Theorem 4.2. Online gradient descent with step sizes {ηt =
+D
+G
+√
+t, t ∈[T]}
+guarantees the following for all T ≥1:
+regretT =
+T
+X
+t=1
+ft(xt) −min
+x⋆∈K
+T
+X
+t=1
+ft(x⋆) ≤3GD
+√
+T
+
+4.4. ONLINE GRADIENT DESCENT
+37
+Figure 4.2: Online gradient descent: the iterate xt+1 is derived by advancing
+xt in the direction of the current gradient ∇t, and projecting back into K.
+Algorithm 4 online gradient descent
+1: Input: convex set K, T, x1 ∈K, step sizes {ηt}
+2: for t = 1 to T do
+3:
+Play xt and observe cost ft(xt).
+4:
+Update and project:
+yt+1 = xt −ηt∇ft(xt)
+xt+1 = Π
+K(yt+1)
+5: end for
+Proof. Let x⋆∈arg minx∈K
+PT
+t=1 ft(x). Deﬁne ∇t ≜∇ft(xt). By convexity
+ft(xt) −ft(x⋆) ≤∇⊤
+t (xt −x⋆)
+(4.1)
+We ﬁrst upper-bound ∇⊤
+t (xt −x⋆) using the update rule for xt+1 and The-
+orem 2.1 (the Pythagorean theorem):
+∥xt+1 −x⋆∥2 =
+Π
+K(xt −ηt∇t) −x⋆
+
+2
+≤∥xt −ηt∇t −x⋆∥2
+(4.2)
+
+38
+CHAPTER 4. GENERALIZATION
+Hence,
+∥xt+1 −x⋆∥2
+≤
+∥xt −x⋆∥2 + η2
+t ∥∇t∥2 −2ηt∇⊤
+t (xt −x⋆)
+2∇⊤
+t (xt −x⋆)
+≤
+∥xt −x⋆∥2 −∥xt+1 −x⋆∥2
+ηt
++ ηtG2
+(4.3)
+Summing (4.1) and (4.3) from t = 1 to T, and setting ηt =
+D
+G
+√
+t (with
+1
+η0 ≜0):
+2
+ T
+X
+t=1
+ft(xt) −ft(x⋆)
+!
+≤2
+T
+X
+t=1
+∇⊤
+t (xt −x⋆)
+≤
+T
+X
+t=1
+∥xt −x⋆∥2 −∥xt+1 −x⋆∥2
+ηt
++ G2
+T
+X
+t=1
+ηt
+≤
+T
+X
+t=1
+∥xt −x⋆∥2
+ 1
+ηt
+−
+1
+ηt−1
+
++ G2
+T
+X
+t=1
+ηt
+1
+η0
+≜0,
+∥xT+1 −x∗∥2 ≥0
+≤D2
+T
+X
+t=1
+ 1
+ηt
+−
+1
+ηt−1
+
++ G2
+T
+X
+t=1
+ηt
+≤D2 1
+ηT
++ G2
+T
+X
+t=1
+ηt
+telescoping series
+≤3DG
+√
+T.
+The last inequality follows since ηt =
+D
+G
+√
+t and PT
+t=1
+1
+√
+t ≤2
+√
+T.
+The online gradient descent algorithm is straightforward to implement,
+and updates take linear time given the gradient. However, there is a projec-
+tion step which may take signiﬁcantly longer.
+4.5
+Lower bounds
+Theorem 4.3. Any algorithm for online convex optimization incurs Ω(DG
+√
+T)
+regret in the worst case. This is true even if the cost functions are generated
+from a ﬁxed stationary distribution.
+We give a sketch of the proof; ﬁlling in all details is left as an exercise
+at the end of this chapter.
+
+4.6. ONLINE GRADIENT DESCENT FOR STRONGLY CONVEX FUNCTIONS39
+Consider an instance of OCO where the convex set K is the n-dimensional
+hypercube, i.e.
+K = {x ∈Rn , ∥x∥∞≤1}.
+There are 2n linear cost functions, one for each vertex v ∈{±1}n, deﬁned
+as
+∀v ∈{±1}n , fv(x) = v⊤x.
+Notice that both the diameter of K and the bound on the norm of the cost
+function gradients, denoted G, are bounded by
+D ≤
+v
+u
+u
+t
+n
+X
+i=1
+22 = 2√n, G =
+v
+u
+u
+t
+n
+X
+i=1
+(±1)2 = √n
+The cost functions in each iteration are chosen at random, with uniform
+probability, from the set {fv, v ∈{±1}n}. Denote by vt ∈{±1}n the vertex
+chosen in iteration t, and denote ft = fvt. By uniformity and independence,
+for any t and xt chosen online, Evt[ft(xt)] = Evt[v⊤
+t xt] = 0. However,
+E
+v1,...,vT
+"
+min
+x∈K
+T
+X
+t=1
+ft(x)
+#
+= E
+
+min
+x∈K
+X
+i∈[n]
+T
+X
+t=1
+vt(i) · xi
+
+
+= n E
+"
+−
+
+T
+X
+t=1
+vt(1)
+
+#
+i.i.d. coordinates
+= −Ω(n
+√
+T).
+The last equality is left as exercise 3.
+The facts above nearly complete the proof of Theorem 4.3; see the exer-
+cises at the end of this chapter.
+4.6
+Online gradient descent for strongly convex
+functions
+The ﬁrst algorithm that achieves regret logarithmic in the number of iter-
+ations is a twist on the online gradient descent algorithm, changing only
+the step size. The following theorem establishes logarithmic bounds on the
+regret if the cost functions are strongly convex.
+
+40
+CHAPTER 4. GENERALIZATION
+Theorem 4.4. For α-strongly convex loss functions, online gradient descent
+with step sizes ηt = 1
+αt achieves the following guarantee for all T ≥1
+regretT ≤
+T
+X
+t=1
+1
+αt∥∇t∥2 ≤G2
+2α (1 + log T).
+Proof. Let x⋆∈arg minx∈K
+PT
+t=1 ft(x). Recall the deﬁnition of regret
+regretT =
+T
+X
+t=1
+ft(xt) −
+T
+X
+t=1
+ft(x⋆).
+Deﬁne ∇t ≜∇ft(xt). Applying the deﬁnition of α-strong convexity to
+the pair of points xt,x∗, we have
+2(ft(xt) −ft(x⋆))
+≤
+2∇⊤
+t (xt −x⋆) −α∥x⋆−xt∥2.
+(4.4)
+We proceed to upper-bound ∇⊤
+t (xt −x⋆). Using the update rule for xt+1
+and the Pythagorean theorem 2.1, we get
+∥xt+1 −x⋆∥2 = ∥Π
+K(xt −ηt∇t) −x⋆∥2 ≤∥xt −ηt∇t −x⋆∥2.
+Hence,
+∥xt+1 −x⋆∥2
+≤
+∥xt −x⋆∥2 + η2
+t ∥∇t∥2 −2ηt∇⊤
+t (xt −x⋆)
+and
+2∇⊤
+t (xt −x⋆)
+≤
+∥xt −x⋆∥2 −∥xt+1 −x⋆∥2
+ηt
++ ηt∥∇t∥2.
+(4.5)
+
+4.7. ONLINE GRADIENT DESCENT IMPLIES SGD
+41
+Summing (4.5) from t = 1 to T, setting ηt =
+1
+αt (deﬁne
+1
+η0 ≜0), and
+combining with (4.4), we have:
+2
+T
+X
+t=1
+(ft(xt) −ft(x⋆))
+≤
+T
+X
+t=1
+∥xt −x⋆∥2
+ 1
+ηt
+−
+1
+ηt−1
+−α
+
++
+T
+X
+t=1
+ηt∥∇t∥2
+since 1
+η0
+≜0, ∥xT+1 −x∗∥2 ≥0
+=
+0 +
+T
+X
+t=1
+1
+αt∥∇t∥2
+≤
+G2
+α (1 + log T)
+4.7
+Online Gradient Descent implies SGD
+In this section we notice that OGD and its regret bounds imply the SGD
+bounds we have studied in the previous chapter. The main advantage are
+the guarantees for non-smooth stochastic optimization, and constrained op-
+timization.
+Recall that in stochastic optimization, the optimizer attempts to mini-
+mize a convex function over a convex domain as given by the mathematical
+program:
+min
+x∈K f(x).
+However, unlike standard oﬄine optimization, the optimizer is given access
+to a noisy gradient oracle, deﬁned by
+O(x) ≜˜∇x s.t.
+E[ ˜∇x] = ∇f(x) , E[∥˜∇x∥2] ≤G2
+That is, given a point in the decision set, a noisy gradient oracle returns
+a random vector whose expectation is the gradient at the point and whose
+second moment is bounded by G2.
+We will show that regret bounds for OCO translate to convergence rates
+for stochastic optimization. As a special case, consider the online gradient
+
+42
+CHAPTER 4. GENERALIZATION
+descent algorithm whose regret is bounded by
+regretT = O(DG
+√
+T)
+Applying the OGD algorithm over a sequence of linear functions that are
+deﬁned by the noisy gradient oracle at consecutive points, and ﬁnally re-
+turning the average of all points along the way, we obtain the stochastic
+gradient descent algorithm, presented in Algorithm 5.
+Algorithm 5 stochastic gradient descent
+1: Input: f, K, T, x1 ∈K, step sizes {ηt}
+2: for t = 1 to T do
+3:
+Let ˜∇t = O(xt) and deﬁne: ft(x) ≜⟨˜∇t, x⟩
+4:
+Update and project:
+yt+1 = xt −ηt ˜∇t
+xt+1 = Π
+K(yt+1)
+5: end for
+6: return ¯xT ≜1
+T
+PT
+t=1 xt
+Theorem 4.5. Algorithm 5 with step sizes ηt =
+D
+G
+√
+t guarantees
+E[f(¯xT )] ≤min
+x⋆∈K f(x⋆) + 3GD
+√
+T
+Proof. By the regret guarantee of OGD, we have
+E[f(¯xT )] −f(x⋆)
+≤E[ 1
+T
+X
+t
+f(xt)] −f(x⋆)
+convexity of f (Jensen)
+≤1
+T E[
+X
+t
+⟨∇f(xt), xt −x⋆⟩]
+convexity again
+= 1
+T E[
+X
+t
+⟨˜∇t, xt −x⋆⟩]
+noisy gradient estimator
+= 1
+T E[
+X
+t
+ft(xt) −ft(x⋆)]
+Algorithm 5, line (3)
+≤regretT
+T
+deﬁnition
+≤3GD
+√
+T
+theorem 4.2
+
+4.7. ONLINE GRADIENT DESCENT IMPLIES SGD
+43
+It is important to note that in the proof above, we have used the fact
+that the regret bounds of online gradient descent hold against an adaptive
+adversary. This need arises since the cost functions ft deﬁned in Algorithm
+5 depend on the choice of decision xt ∈K.
+In addition, the careful reader may notice that by plugging in diﬀerent
+step sizes (also called learning rates) and applying SGD to strongly convex
+functions, one can attain ˜O(1/T) convergence rates. Details of this deriva-
+tion are left as exercise 1.
+
+44
+CHAPTER 4. GENERALIZATION
+4.8
+Exercises
+1. Prove that SGD for a strongly convex function can, with appropriate
+parameters ηt, converge as ˜O( 1
+T ). You may assume that the gradient
+estimators have Euclidean norms bounded by the constant G.
+2. Design an OCO algorithm that attains the same asymptotic regret
+bound as OGD, up to factors logarithmic in G and D, without knowing
+the parameters G and D ahead of time.
+3. In this exercise we prove a tight lower bound on the regret of any
+algorithm for online convex optimization.
+(a) For any sequence of T fair coin tosses, let Nh be the number of
+head outcomes and Nt be the number of tails. Give an asymp-
+totically tight upper and lower bound on E[|Nh −Nt|] (i.e., order
+of growth of this random variable as a function of T, up to mul-
+tiplicative and additive constants).
+(b) Consider a 2-expert problem, in which the losses are inversely
+correlated: either expert one incurs a loss of one and the second
+expert zero, or vice versa. Use the fact above to design a set-
+ting in which any experts algorithm incurs regret asymptotically
+matching the upper bound.
+(c) Consider the general OCO setting over a convex set K. Design
+a setting in which the cost functions have gradients whose norm
+is bounded by G, and obtain a lower bound on the regret as
+a function of G, the diameter of K, and the number of game
+iterations.
+
+4.9. BIBLIOGRAPHIC REMARKS
+45
+4.9
+Bibliographic remarks
+The OCO framework was introduced by Zinkevich in [87], where the OGD
+algorithm was introduced and analyzed. Precursors to this algorithm, albeit
+for less general settings, were introduced and analyzed in [47]. Logarithmic
+regret algorithms for Online Convex Optimization were introduced and an-
+alyzed in [32]. For more detailed exposition on this prediction framework
+and its applications see [31].
+The SGD algorithm dates back to Robbins and Monro [67]. Application
+of SGD to soft-margin SVM training was explored in [74]. Tight conver-
+gence rates of SGD for strongly convex and non-smooth functions were only
+recently obtained in [35],[62],[76].
+
+46
+CHAPTER 4. GENERALIZATION
+
+Chapter 5
+Regularization
+In this chapter we consider a generalization of the gradient descent called
+by diﬀerent names in diﬀerent communities (such as mirrored-descent, or
+regularized-follow-the-leader). The common theme of this generalization is
+called Regularization, a concept that is founded in generalization theory.
+Since this course focuses on optimization rather than generalization, we
+shall refer the reader to the generalization aspect of regularization, and
+focus hereby on optimization algorithms.
+We start by motivating this general family of methods using the funda-
+mental problem of decision theory.
+5.1
+Motivation: prediction from expert advice
+Consider the following fundamental iterative decision making problem:
+At each time step t = 1, 2, . . . , T, the decision maker faces a choice
+between two actions A or B (i.e., buy or sell a certain stock). The decision
+maker has assistance in the form of N “experts” that oﬀer their advice. After
+a choice between the two actions has been made, the decision maker receives
+feedback in the form of a loss associated with each decision. For simplicity
+one of the actions receives a loss of zero (i.e., the “correct” decision) and
+the other a loss of one.
+We make the following elementary observations:
+1. A decision maker that chooses an action uniformly at random each
+iteration, trivially attains a loss of T
+2 and is “correct” 50% of the time.
+47
+
+48
+CHAPTER 5. REGULARIZATION
+2. In terms of the number of mistakes, no algorithm can do better in the
+worst case! In a later exercise, we will devise a randomized setting in
+which the expected number of mistakes of any algorithm is at least T
+2 .
+We are thus motivated to consider a relative performance metric: can
+the decision maker make as few mistakes as the best expert in hindsight?
+The next theorem shows that the answer in the worst case is negative for a
+deterministic decision maker.
+Theorem 5.1. Let L ≤T
+2 denote the number of mistakes made by the best
+expert in hindsight. Then there does not exist a deterministic algorithm that
+can guarantee less than 2L mistakes.
+Proof. Assume that there are only two experts and one always chooses op-
+tion A while the other always chooses option B. Consider the setting in
+which an adversary always chooses the opposite of our prediction (she can
+do so, since our algorithm is deterministic). Then, the total number of mis-
+takes the algorithm makes is T. However, the best expert makes no more
+than T
+2 mistakes (at every iteration exactly one of the two experts is mis-
+taken). Therefore, there is no algorithm that can always guarantee less than
+2L mistakes.
+This observation motivates the design of random decision making algo-
+rithms, and indeed, the OCO framework gracefully models decisions on a
+continuous probability space. Henceforth we prove Lemmas 5.3 and 5.4 that
+show the following:
+Theorem 5.2. Let ε ∈(0, 1
+2). Suppose the best expert makes L mistakes.
+Then:
+1. There is an eﬃcient deterministic algorithm that can guarantee less
+than 2(1 + ε)L + 2 log N
+ε
+mistakes;
+2. There is an eﬃcient randomized algorithm for which the expected num-
+ber of mistakes is at most (1 + ε)L + log N
+ε
+.
+
+5.1. MOTIVATION: PREDICTION FROM EXPERT ADVICE
+49
+5.1.1
+The weighted majority algorithm
+The weighted majority (WM) algorithm is intuitive to describe: each expert
+i is assigned a weight Wt(i) at every iteration t. Initially, we set W1(i) = 1
+for all experts i ∈[N]. For all t ∈[T] let St(A), St(B) ⊆[N] be the set of
+experts that choose A (and respectively B) at time t. Deﬁne,
+Wt(A) =
+X
+i∈St(A)
+Wt(i)
+Wt(B) =
+X
+i∈St(B)
+Wt(i)
+and predict according to
+at =
+(
+A
+if Wt(A) ≥Wt(B)
+B
+otherwise.
+Next, update the weights Wt(i) as follows:
+Wt+1(i) =
+(
+Wt(i)
+if expert i was correct
+Wt(i)(1 −ε)
+if expert i was wrong ,
+where ε is a parameter of the algorithm that will aﬀect its performance.
+This concludes the description of the WM algorithm. We proceed to bound
+the number of mistakes it makes.
+Lemma 5.3. Denote by Mt the number of mistakes the algorithm makes
+until time t, and by Mt(i) the number of mistakes made by expert i until
+time t. Then, for any expert i ∈[N] we have
+MT ≤2(1 + ε)MT (i) + 2 log N
+ε
+.
+We can optimize ε to minimize the above bound. The expression on the
+right hand side is of the form f(x) = ax + b/x, that reaches its minimum
+at x =
+p
+b/a. Therefore the bound is minimized at ε⋆=
+p
+log N/MT (i).
+Using this optimal value of ε, we get that for the best expert i⋆
+MT ≤2MT (i⋆) + O
+p
+MT (i⋆) log N
+
+.
+Of course, this value of ε⋆cannot be used in advance since we do not know
+which expert is the best one ahead of time (and therefore we do not know the
+value of MT (i⋆)). However, we shall see later on that the same asymptotic
+bound can be obtained even without this prior knowledge.
+Let us now prove Lemma 5.3.
+
+50
+CHAPTER 5. REGULARIZATION
+Proof. Let Φt = PN
+i=1 Wt(i) for all t ∈[T], and note that Φ1 = N.
+Notice that Φt+1 ≤Φt. However, on iterations in which the WM algo-
+rithm erred, we have
+Φt+1 ≤Φt(1 −ε
+2),
+the reason being that experts with at least half of total weight were wrong
+(else WM would not have erred), and therefore
+Φt+1 ≤1
+2Φt(1 −ε) + 1
+2Φt = Φt(1 −ε
+2).
+From both observations,
+Φt ≤Φ1(1 −ε
+2)Mt = N(1 −ε
+2)Mt.
+On the other hand, by deﬁnition we have for any expert i that
+WT (i) = (1 −ε)MT (i).
+Since the value of WT (i) is always less than the sum of all weights ΦT , we
+conclude that
+(1 −ε)MT (i) = WT (i) ≤ΦT ≤N(1 −ε
+2)MT .
+Taking the logarithm of both sides we get
+MT (i) log(1 −ε) ≤log N + MT log (1 −ε
+2).
+Next, we use the approximations
+−x −x2 ≤log (1 −x) ≤−x
+0 < x < 1
+2,
+which follow from the Taylor series of the logarithm function, to obtain that
+−MT (i)(ε + ε2) ≤log N −MT
+ε
+2,
+and the lemma follows.
+
+5.1. MOTIVATION: PREDICTION FROM EXPERT ADVICE
+51
+5.1.2
+Randomized weighted majority
+In the randomized version of the WM algorithm, denoted RWM, we choose
+expert i w.p. pt(i) = Wt(i)/ PN
+j=1 Wt(j) at time t.
+Lemma 5.4. Let Mt denote the number of mistakes made by RWM until
+iteration t. Then, for any expert i ∈[N] we have
+E[MT ] ≤(1 + ε)MT (i) + log N
+ε
+.
+The proof of this lemma is very similar to the previous one, where the factor
+of two is saved by the use of randomness:
+Proof. As before, let Φt = PN
+i=1 Wt(i) for all t ∈[T], and note that Φ1 = N.
+Let ˜mt = Mt −Mt−1 be the indicator variable that equals one if the RWM
+algorithm makes a mistake on iteration t. Let mt(i) equal one if the i’th
+expert makes a mistake on iteration t and zero otherwise. Inspecting the
+sum of the weights:
+Φt+1 =
+X
+i
+Wt(i)(1 −εmt(i))
+= Φt(1 −ε
+X
+i
+pt(i)mt(i))
+pt(i) =
+Wt(i)
+P
+j Wt(j)
+= Φt(1 −ε E[ ˜mt])
+≤Φte−εE[ ˜mt].
+1 + x ≤ex
+On the other hand, by deﬁnition we have for any expert i that
+WT (i) = (1 −ε)MT (i)
+Since the value of WT (i) is always less than the sum of all weights ΦT , we
+conclude that
+(1 −ε)MT (i) = WT (i) ≤ΦT ≤Ne−εE[MT ].
+Taking the logarithm of both sides we get
+MT (i) log(1 −ε) ≤log N −ε E[MT ]
+Next, we use the approximation
+−x −x2 ≤log (1 −x) ≤−x
+,
+0 < x < 1
+2
+
+52
+CHAPTER 5. REGULARIZATION
+to obtain
+−MT (i)(ε + ε2) ≤log N −ε E[MT ],
+and the lemma follows.
+5.1.3
+Hedge
+The RWM algorithm is in fact more general: instead of considering a dis-
+crete number of mistakes, we can consider measuring the performance of an
+expert by a non-negative real number ℓt(i), which we refer to as the loss
+of the expert i at iteration t. The randomized weighted majority algorithm
+guarantees that a decision maker following its advice will incur an average
+expected loss approaching that of the best expert in hindsight.
+Historically, this was observed by a diﬀerent and closely related algorithm
+called Hedge.
+Algorithm 6 Hedge
+1: Initialize: ∀i ∈[N], W1(i) = 1
+2: for t = 1 to T do
+3:
+Pick it ∼R Wt, i.e., it = i with probability xt(i) =
+Wt(i)
+P
+j Wt(j)
+4:
+Incur loss ℓt(it).
+5:
+Update weights Wt+1(i) = Wt(i)e−εℓt(i)
+6: end for
+Henceforth, denote in vector notation the expected loss of the algorithm
+by
+E[ℓt(it)] =
+N
+X
+i=1
+xt(i)ℓt(i) = x⊤
+t ℓt
+Theorem 5.5. Let ℓ2
+t denote the N-dimensional vector of square losses,
+i.e., ℓ2
+t (i) = ℓt(i)2, let ε > 0, and assume all losses to be non-negative. The
+Hedge algorithm satisﬁes for any expert i⋆∈[N]:
+T
+X
+t=1
+x⊤
+t ℓt ≤
+T
+X
+t=1
+ℓt(i⋆) + ε
+T
+X
+t=1
+x⊤
+t ℓ2
+t + log N
+ε
+
+5.2. THE REGULARIZATION FRAMEWORK
+53
+Proof. As before, let Φt = PN
+i=1 Wt(i) for all t ∈[T], and note that Φ1 = N.
+Inspecting the sum of weights:
+Φt+1
+= P
+i Wt(i)e−εℓt(i)
+= Φt
+P
+i xt(i)e−εℓt(i)
+xt(i) =
+Wt(i)
+P
+j Wt(j)
+≤Φt
+P
+i xt(i)(1 −εℓt(i) + ε2ℓt(i)2))
+for x ≥0,
+e−x ≤1 −x + x2
+= Φt(1 −εx⊤
+t ℓt + ε2x⊤
+t ℓ2
+t )
+≤Φte−εx⊤
+t ℓt+ε2x⊤
+t ℓ2
+t .
+1 + x ≤ex
+On the other hand, by deﬁnition, for expert i⋆we have that
+WT (i⋆) = e−ε PT
+t=1 ℓt(i⋆)
+Since the value of WT (i⋆) is always less than the sum of all weights Φt, we
+conclude that
+WT (i⋆) ≤ΦT ≤Ne−ε P
+t x⊤
+t ℓt+ε2 P
+t x⊤
+t ℓ2
+t .
+Taking the logarithm of both sides we get
+−ε
+T
+X
+t=1
+ℓt(i⋆) ≤log N −ε
+T
+X
+t=1
+x⊤
+t ℓt + ε2
+T
+X
+t=1
+x⊤
+t ℓ2
+t
+and the theorem follows by simplifying.
+5.2
+The Regularization framework
+In the previous section we studied the multiplicative weights update method
+for decision making. A natural question is: couldn’t we have used online
+gradient descent for the same exact purpose?
+Indeed, the setting of prediction from expert advice naturally follows
+into the framework of online convex optimization. To see this, consider the
+loss functions given by
+ft(x) = ℓ⊤
+t x = E
+i∼x[ℓt(i)],
+which capture the expected loss of choosing an expert from distribution
+x ∈∆n as a linear function.
+
+54
+CHAPTER 5. REGULARIZATION
+The regret guarantees we have studied for OGD imply a regret of
+O(GD
+√
+T) = O(
+√
+nT).
+Here we have used the fact that the Eucliean diameter of the simplex is two,
+and that the losses are bounded by one, hence the Euclidean norm of the
+gradient vector ℓt is bounded by √n.
+In contrast, the Hedge algorithm attains regret of O(√T log n) for the
+same problem. How can we explain this discrepancy?!
+5.2.1
+The RFTL algorithm
+Both OGD and Hedge are, in fact, instantiations of a more general meta-
+algorithm called RFTL (Regularized-Follow-The-Leader).
+In an OCO setting of regret minimization, the most straightforward
+approach for the online player is to use at any time the optimal decision
+(i.e., point in the convex set) in hindsight. Formally, let
+xt+1 = arg min
+x∈K
+t
+X
+τ=1
+fτ(x).
+This ﬂavor of strategy is known as “ﬁctitious play” in economics, and has
+been named “Follow the Leader” (FTL) in machine learning. It is not hard
+to see that this simple strategy fails miserably in a worst-case sense. That
+is, this strategy’s regret can be linear in the number of iterations, as the
+following example shows: Consider K = [−1, 1], let f1(x) = 1
+2x, and let fτ
+for τ = 2, . . . , T alternate between −x or x. Thus,
+t
+X
+τ=1
+fτ(x) =
+
+
+
+1
+2x,
+t is odd
+−1
+2x,
+otherwise
+The FTL strategy will keep shifting between xt = −1 and xt = 1, always
+making the wrong choice.
+The intuitive FTL strategy fails in the example above because it is un-
+stable. Can we modify the FTL strategy such that it won’t change decisions
+often, thereby causing it to attain low regret?
+This question motivates the need for a general means of stabilizing the
+FTL method. Such a means is referred to as “regularization”.
+
+5.2. THE REGULARIZATION FRAMEWORK
+55
+Algorithm 7 Regularized Follow The Leader
+1: Input: η > 0, regularization function R, and a convex compact set K.
+2: Let x1 = arg minx∈K {R(x)}.
+3: for t = 1 to T do
+4:
+Predict xt.
+5:
+Observe the payoﬀfunction ft and let ∇t = ∇ft(xt).
+6:
+Update
+xt+1 = arg min
+x∈K
+(
+η
+t
+X
+s=1
+∇⊤
+s x + R(x)
+)
+7: end for
+The generic RFTL meta-algorithm is deﬁned in Algorithm 7. The reg-
+ularization function R is assumed to be strongly convex, smooth, and twice
+diﬀerentiable.
+5.2.2
+Mirrored Descent
+An alternative view of this algorithm is in terms of iterative updates, which
+can be spelled out using the above deﬁnition directly. The resulting algo-
+rithm is called ”Mirrored Descent”.
+OMD is an iterative algorithm that computes the current decision using a
+simple gradient update rule and the previous decision, much like OGD. The
+generality of the method stems from the update being carried out in a “dual”
+space, where the duality notion is deﬁned by the choice of regularization:
+the gradient of the regularization function deﬁnes a mapping from Rn onto
+itself, which is a vector ﬁeld. The gradient updates are then carried out in
+this vector ﬁeld.
+For the RFTL algorithm the intuition was straightforward—the regular-
+ization was used to ensure stability of the decision. For OMD, regularization
+has an additional purpose: regularization transforms the space in which gra-
+dient updates are performed. This transformation enables better bounds in
+terms of the geometry of the space.
+The OMD algorithm comes in two ﬂavors: an agile and a lazy version.
+The lazy version keeps track of a point in Euclidean space and projects onto
+the convex decision set K only at decision time. In contrast, the agile version
+maintains a feasible point at all times, much like OGD.
+
+56
+CHAPTER 5. REGULARIZATION
+Algorithm 8 Online Mirrored Descent
+1: Input: parameter η > 0, regularization function R(x).
+2: Let y1 be such that ∇R(y1) = 0 and x1 = arg minx∈K BR(x||y1).
+3: for t = 1 to T do
+4:
+Play xt.
+5:
+Observe the payoﬀfunction ft and let ∇t = ∇ft(xt).
+6:
+Update yt according to the rule:
+[Lazy version]
+∇R(yt+1) = ∇R(yt) −η ∇t
+[Agile version]
+∇R(yt+1) = ∇R(xt) −η ∇t
+Project according to BR:
+xt+1 = arg min
+x∈K
+BR(x||yt+1)
+7: end for
+A myriad of questions arise, but ﬁrst, let us see how does this algorithm
+give rise to both OGD.
+We note that there are other important special cases of the RFTL meta-
+algorithm: those are derived with matrix-norm regularization—namely, the
+von Neumann entropy function, and the log-determinant function, as well
+as self-concordant barrier regularization. Perhaps most importantly for opti-
+mization, also the AdaGrad algorithm is obtained via changing regularization—
+which we shall explore in detail in the next chapter.
+5.2.3
+Deriving online gradient descent
+To derive the online gradient descent algorithm, we take R(x) =
+1
+2∥x −
+x0∥2
+2 for an arbitrary x0 ∈K. Projection with respect to this divergence
+is the standard Euclidean projection (left as an exercise), and in addition,
+∇R(x) = x−x0. Hence, the update rule for the OMD Algorithm 8 becomes:
+xt = Π
+K(yt), yt = yt−1 −η∇t−1
+lazy version
+xt = Π
+K(yt), yt = xt−1 −η∇t−1
+agile version
+The latter algorithm is exactly online gradient descent, as described in
+Algorithm 4 in Chapter 4. Furthermore, both variants are identical for the
+case in which K is the unit ball.
+
+5.3. TECHNICAL BACKGROUND: REGULARIZATION FUNCTIONS57
+We later prove general regret bounds that will imply a O(GD
+√
+T) regret
+for OGD as a special case of mirrored descent.
+5.2.4
+Deriving multiplicative updates
+Let R(x) = x log x = P
+i xi log xi be the negative entropy function, where
+log x is to be interpreted elementwise. Then ∇R(x) = 1 + log x, and hence
+the update rules for the OMD algorithm become:
+xt = arg min
+x∈K
+BR(x||yt), log yt = log yt−1 −η∇t−1
+lazy version
+xt = arg min
+x∈K
+BR(x||yt), log yt = log xt−1 −η∇t−1
+agile version
+With this choice of regularizer, a notable special case is the experts
+problem we encountered in §5.1, for which the decision set K is the n-
+dimensional simplex ∆n = {x ∈Rn
++ | P
+i xi = 1}. In this special case, the
+projection according to the negative entropy becomes scaling by the ℓ1 norm
+(left as an exercise), which implies that both update rules amount to the
+same algorithm:
+xt+1(i) =
+xt(i) · e−η∇t(i)
+Pn
+j=1 xt(j) · e−η∇t(j) ,
+which is exactly the Hedge algorithm! The general theorem we shall prove
+henceforth recovers the O(√T log n) bound for prediction from expert advice
+for this algorithm.
+5.3
+Technical background: regularization functions
+In the rest of this chapter we analyze the mirrored descent algorithm. For
+this purpose, consider regularization functions, denoted R : K 7→R, which
+are strongly convex and smooth (recall deﬁnitions in §2.1).
+Although it is not strictly necessary, we assume that the regularization
+functions in this chapter are twice diﬀerentiable over K and, for all points
+x ∈int(K) in the interior of the decision set, have a Hessian ∇2R(x) that
+is, by the strong convexity of R, positive deﬁnite.
+We denote the diameter of the set K relative to the function R as
+DR =
+r
+max
+x,y∈K{R(x) −R(y)}
+
+58
+CHAPTER 5. REGULARIZATION
+Henceforth we make use of general norms and their dual. The dual norm
+to a norm ∥· ∥is given by the following deﬁnition:
+∥y∥∗≜max
+∥x∥≤1⟨x, y⟩
+A positive deﬁnite matrix A gives rise to the matrix norm ∥x∥A =
+√
+x⊤Ax.
+The dual norm of a matrix norm is ∥x∥∗
+A = ∥x∥A−1.
+The generalized Cauchy-Schwarz theorem asserts ⟨x, y⟩≤∥x∥∥y∥∗and
+in particular for matrix norms, ⟨x, y⟩≤∥x∥A∥y∥∗
+A.
+In our derivations, we usually consider matrix norms with respect to
+∇2R(x), the Hessian of the regularization function R(x). In such cases, we
+use the notation
+∥x∥y ≜∥x∥∇2R(y)
+and similarly
+∥x∥∗
+y ≜∥x∥∇−2R(y)
+A crucial quantity in the analysis with regularization is the remainder
+term of the Taylor approximation of the regularization function, and es-
+pecially the remainder term of the ﬁrst order Taylor approximation. The
+diﬀerence between the value of the regularization function at x and the value
+of the ﬁrst order Taylor approximation is known as the Bregman divergence,
+given by
+Deﬁnition 5.6. Denote by BR(x||y) the Bregman divergence with respect
+to the function R, deﬁned as
+BR(x||y) = R(x) −R(y) −∇R(y)⊤(x −y)
+For twice diﬀerentiable functions, Taylor expansion and the mean-value
+theorem assert that the Bregman divergence is equal to the second derivative
+at an intermediate point, i.e., (see exercises)
+BR(x||y) = 1
+2∥x −y∥2
+z,
+for some point z ∈[x, y], meaning there exists some α ∈[0, 1] such that
+z = αx+(1−α)y. Therefore, the Bregman divergence deﬁnes a local norm,
+which has a dual norm. We shall denote this dual norm by
+∥· ∥∗
+x,y ≜∥· ∥∗
+z.
+
+5.4. REGRET BOUNDS FOR MIRRORED DESCENT
+59
+With this notation we have
+BR(x||y) = 1
+2∥x −y∥2
+x,y.
+In online convex optimization, we commonly refer to the Bregman divergence
+between two consecutive decision points xt and xt+1.
+In such cases, we
+shorthand notation for the norm deﬁned by the Bregman divergence with
+respect to R on the intermediate point in [xt, xt+1] as ∥· ∥t ≜∥· ∥xt,xt+1.
+The latter norm is called the local norm at iteration t. With this notation,
+we have BR(xt||xt+1) = 1
+2∥xt −xt+1∥2
+t .
+Finally, we consider below generalized projections that use the Bregman
+divergence as a distance instead of a norm. Formally, the projection of a
+point y according to the Bregman divergence with respect to function R is
+given by
+arg min
+x∈K
+BR(x||y)
+5.4
+Regret bounds for Mirrored Descent
+In this subsection we prove regret bounds for the agile version of the RFTL
+algorithm. The analysis is quite diﬀerent than the one for the lazy version,
+and of independent interest.
+Theorem 5.7. The RFTL Algorithm 8 attains for every u ∈K the following
+bound on the regret:
+regretT ≤2η
+T
+X
+t=1
+∥∇t∥∗2
+t + R(u) −R(x1)
+η
+.
+If an upper bound on the local norms is known, i.e. ∥∇t∥∗
+t ≤GR for all
+times t, then we can further optimize over the choice of η to obtain
+regretT ≤2DRGR
+√
+2T.
+Proof. Since the functions ft are convex, for any x∗∈K,
+ft(xt) −ft(x∗) ≤∇ft(xt)⊤(xt −x∗).
+
+60
+CHAPTER 5. REGULARIZATION
+The following property of Bregman divergences follows easily from the def-
+inition: for any vectors x, y, z,
+(x −y)⊤(∇R(z) −∇R(y)) = BR(x, y) −BR(x, z) + BR(y, z).
+Combining both observations,
+2(ft(xt) −ft(x∗)) ≤2∇ft(xt)⊤(xt −x∗)
+= 1
+η(∇R(yt+1) −∇R(xt))⊤(x∗−xt)
+= 1
+η[BR(x∗, xt) −BR(x∗, yt+1) + BR(xt, yt+1)]
+≤1
+η[BR(x∗, xt) −BR(x∗, xt+1) + BR(xt, yt+1)]
+where the last inequality follows from the generalized Pythagorean inequality
+(see [15] Lemma 11.3), as xt+1 is the projection w.r.t the Bregman divergence
+of yt+1 and x∗∈K is in the convex set. Summing over all iterations,
+2regret
+≤
+1
+η[BR(x∗, x1) −BR(x∗, xT )] +
+T
+X
+t=1
+1
+ηBR(xt, yt+1)
+≤
+1
+ηD2 +
+T
+X
+t=1
+1
+ηBR(xt, yt+1)
+(5.1)
+We proceed to bound BR(xt, yt+1). By deﬁnition of Bregman divergence,
+and the generalized Cauchy-Schwartz inequality,
+BR(xt, yt+1) + BR(yt+1, xt) = (∇R(xt) −∇R(yt+1))⊤(xt −yt+1)
+= η∇ft(xt)⊤(xt −yt+1)
+≤η∥∇ft(xt)∥∗∥xt −yt+1∥
+≤1
+2η2G2
+∗+ 1
+2∥xt −yt+1∥2.
+where in the last inequality follows from (a−b)2 ≥0. Thus, by our assump-
+tion BR(x, y) ≥1
+2∥x −y∥2, we have
+BR(xt, yt+1) ≤1
+2η2G2
+∗+ 1
+2∥xt −yt+1∥2 −BR(yt+1, xt) ≤1
+2η2G2
+∗.
+Plugging back into Equation (5.1), and by non-negativity of the Bregman
+divergence, we get
+regret ≤1
+2[1
+ηD2 + 1
+2ηTG2
+∗] ≤DG∗
+√
+T ,
+
+5.4. REGRET BOUNDS FOR MIRRORED DESCENT
+61
+by taking η =
+D
+2
+√
+TG∗
+
+62
+CHAPTER 5. REGULARIZATION
+5.5
+Exercises
+1.
+(a) Show that the dual norm to a matrix norm given by A ≻0
+corresponds to the matrix norm of A−1.
+(b) Prove the generalized Cauchy-Schwarz inequality for any norm,
+i.e.,
+⟨x, y⟩≤∥x∥∥y∥∗
+2. Prove that the Bregman divergence is equal to the local norm at an
+intermediate point, that is:
+BR(x||y) = 1
+2∥x −y∥2
+z,
+where z ∈[x, y] and the interval [x, y] is deﬁned as
+[x, y] = {v = αx + (1 −α)y , α ∈[0, 1]}
+3. Let R(x) = 1
+2∥x−x0∥2 be the (shifted) Euclidean regularization func-
+tion.
+Prove that the corresponding Bregman divergence is the Eu-
+clidean metric. Conclude that projections with respect to this diver-
+gence are standard Euclidean projections.
+4. Prove that both agile and lazy versions of the OMD meta-algorithm
+are equivalent in the case that the regularization is Euclidean and the
+decision set is the Euclidean ball.
+5. For this problem the decision set is the n-dimensional simplex. Let
+R(x) = x log x be the negative entropy regularization function. Prove
+that the corresponding Bregman divergence is the relative entropy,
+and prove that the diameter DR of the n-dimensional simplex with
+respect to this function is bounded by log n. Show that projections
+with respect to this divergence over the simplex amounts to scaling by
+the ℓ1 norm.
+6. ∗A set K ⊆Rd is symmetric if x ∈K implies −x ∈K. Symmetric
+sets gives rise to a natural deﬁnition of a norm. Deﬁne the function
+∥· ∥K : Rd 7→R as
+∥x∥K = arg min
+α>0
+ 1
+αx ∈K
+
+Prove that ∥· ∥K is a norm if and only if K is convex.
+
+5.6. BIBLIOGRAPHIC REMARKS
+63
+5.6
+Bibliographic Remarks
+Regularization in the context of online learning was ﬁrst studied in [26]
+and [48]. The inﬂuential paper of Kalai and Vempala [45] coined the term
+“follow-the-leader” and introduced many of the techniques that followed
+in OCO. The latter paper studies random perturbation as a regularization
+and analyzes the follow-the-perturbed-leader algorithm, following an early
+development by [29] that was overlooked in learning for many years.
+In the context of OCO, the term follow-the-regularized-leader was coined
+in [73, 71], and at roughly the same time an essentially identical algorithm
+was called “RFTL” in [1]. The equivalence of RFTL and Online Mirrored
+Descent was observed by [34].
+
+64
+CHAPTER 5. REGULARIZATION
+
+Chapter 6
+Adaptive Regularization
+In the previous chapter we have studied a geometric extension of online /
+stochastic / determinisitic gradient descent. The technique to achieve it is
+called regularization, and we have seen how for the problem of prediction
+from expert advice, it can potentially given exponential improvements in
+the dependence on the dimension.
+A natural question that arises is whether we can automatically learn the
+optimal regularization, i.e. best algorithm from the mirrored-descent class,
+for the problem at hand?
+The answer is positive in a strong sense: it is theoretically possible to
+learn the optimal regularization online and in a data-speciﬁc way. Not only
+that, the resulting algorithms exhibit the most signiﬁcant speedups in train-
+ing deep neural networks from all accelerations studied thus far.
+6.1
+Adaptive Learning Rates: Intuition
+The intuition for adaptive regularization is simple: consider an optimization
+problem which is axis-aligned, in which each coordinate is independent of
+the rest. It is reasonable to ﬁne tune the learning rate for each coordinate
+separately - to achieve optimal convergence in that particular subspace of
+the problem, independently of the rest.
+Thus, it is reasonable to change the SGD update rule from xt+1 ←
+xt −η∇t, to the more robust
+xt+1 ←xt −Dt∇t,
+where Dt is a diagonal matrix that contains in coordinate (i, i) the learning
+rate for coordinate i in the gradient.
+Recall from the previous sections
+65
+
+66
+CHAPTER 6. ADAPTIVE REGULARIZATION
+that the optimal learning rate for stochastic non-convex optimization is of
+the order O( 1
+√
+t). More precisely, in Theorem 3.4, we have seen that this
+learning rate should be on the order of O(
+1
+√
+tσ2 ), where σ2 is the variance of
+the stochastic gradients. The empirical estimator of the latter is P
+i<t ∥∇i∥2.
+Thus, the robust version of stochastic gradient descent for smooth non-
+convex optimization should behave as the above equation, with
+Dt(i, i) =
+1
+pP
+i<t ∇t(i)2 .
+This is exactly the diagonal version of the AdaGrad algorithm! We continue
+to rigorously derive it and prove its performance guarantee.
+6.2
+A Regularization Viewpoint
+In the previous chapter we have introduced regularization as a general
+methodology for deriving online convex optimization algorithms. Theorem
+5.7 bounds the regret of the Mirrored Descent algorithm for any strongly
+convex regularizer as
+regretT ≤max
+u∈K
+s
+2
+X
+t
+∥∇t∥∗2
+t BR(u||x1).
+In addition, we have seen how to derive the online gradient descent and the
+multiplicative weights algorithms as special cases of the RFTL methodology.
+We consider the following question: thus far we have thought of R as
+a strongly convex function. But which strongly convex function should we
+choose to minimize regret? This is a deep and diﬃcult question which has
+been considered in the optimization literature since its early developments.
+The ML approach is to learn the optimal regularization online. That is,
+a regularizer that adapts to the sequence of cost functions and is in a sense
+the “optimal” regularization to use in hindsight. We formalize this in the
+next section.
+6.3
+Tools from Matrix Calculus
+Many of the inequalities that we are familiar with for positive real numbers
+hold for positive semi-deﬁnite matrices as well.
+We henceforth need the
+following inequality, which is left as an exercise,
+
+6.4. THE ADAGRAD ALGORITHM AND ITS ANALYSIS
+67
+Proposition 6.1. For positive deﬁnite matrices A ≽B ≻0:
+2Tr((A −B)1/2) + Tr(A−1/2B) ≤2Tr(A1/2).
+Next, we require a structural result which explicitly gives the optimal
+regularization as a function of the gradients of the cost functions. For a
+proof see the exercises.
+Proposition 6.2. Let A ≽0. The minimizer of the following minimization
+problem:
+min
+X
+Tr(X−1A)
+subject to X ≽0
+Tr(X) ≤1,
+is X = A1/2/Tr(A1/2), and the minimum objective value is Tr2(A1/2).
+6.4
+The AdaGrad Algorithm and Its Analysis
+To be more formal, let us consider the set of all strongly convex regulariza-
+tion functions with a ﬁxed and bounded Hessian in the set
+∀x ∈K . ∇2R(x) = ∇2 ∈H ≜{X ∈Rn×n ; Tr(X) ≤1 , X ≽0}
+The set H is a restricted class of regularization functions (which does not
+include the entropic regularization). However, it is a general enough class
+to capture online gradient descent along with any rotation of the Euclidean
+regularization.
+Algorithm 9 AdaGrad (Full Matrix version)
+1: Input: parameters η, x1 ∈K.
+2: Initialize: S0 = G0 = 0,
+3: for t = 1 to T do
+4:
+Predict xt, suﬀer loss ft(xt).
+5:
+Update:
+St = St−1 + ∇t∇⊤
+t , Gt = St1/2
+yt+1 = xt −ηG−1
+t ∇t
+xt+1 = arg min
+x∈K
+∥yt+1 −x∥2
+Gt
+6: end for
+
+68
+CHAPTER 6. ADAPTIVE REGULARIZATION
+The problem of learning the optimal regularization has given rise to Algo-
+rithm 9, known as the AdaGrad (Adaptive subGradient method) algorithm.
+In the algorithm deﬁnition and throughout this chapter, the notation A−1
+refers to the Moore-Penrose pseudoinverse of the matrix A. Perhaps sur-
+prisingly, the regret of AdaGrad is at most a constant factor larger than the
+minimum regret of all RFTL algorithm with regularization functions whose
+Hessian is ﬁxed and belongs to the class H. The regret bound on AdaGrad
+is formally stated in the following theorem.
+Theorem 6.3. Let {xt} be deﬁned by Algorithm 9 with parameters η = D,
+where
+D = max
+u∈K ∥u −x1∥2.
+Then for any x⋆∈K,
+regretT (AdaGrad) ≤2D
+s
+min
+H∈H
+X
+t
+∥∇t∥∗2
+H .
+Before proving this theorem, notice that it delivers on one of the promised
+accounts: comparing to the bound of Theorem 5.7 and ignoring the diameter
+D and dimensionality, the regret bound is as good as the regret of RFTL
+for the class of regularization functions.
+We proceed to prove Theorem 6.3. First, a direct corollary of Proposition
+6.2 is that
+Corollary 6.4.
+s
+min
+H∈H
+X
+t
+∥∇t∥∗2
+H
+=
+q
+minH∈H Tr(H−1 P
+t ∇t∇⊤
+t )
+= Tr
+qP
+t ∇t∇⊤
+t = Tr(GT )
+Hence, to prove Theorem 6.3, it suﬃces to prove the following lemma.
+Lemma 6.5.
+regretT (AdaGrad) ≤2DTr(GT ) = 2D
+s
+min
+H∈H
+X
+t
+∥∇t∥∗2
+H .
+Proof. By the deﬁnition of yt+1:
+yt+1 −x⋆= xt −x⋆−ηGt−1∇t,
+(6.1)
+
+6.4. THE ADAGRAD ALGORITHM AND ITS ANALYSIS
+69
+and
+Gt(yt+1 −x⋆) = Gt(xt −x⋆) −η∇t.
+(6.2)
+Multiplying the transpose of (6.1) by (6.2) we get
+(yt+1 −x⋆)⊤Gt(yt+1 −x⋆) =
+(xt−x⋆)⊤Gt(xt−x⋆) −2η∇⊤
+t (xt−x⋆) + η2∇⊤
+t G−1
+t ∇t.
+(6.3)
+Since xt+1 is the projection of yt+1 in the norm induced by Gt, we have (see
+§2.1.1)
+(yt+1 −x⋆)⊤Gt(yt+1 −x⋆) = ∥yt+1 −x⋆∥2
+Gt ≥∥xt+1 −x⋆∥2
+Gt.
+This inequality is the reason for using generalized projections as opposed
+to standard projections, which were used in the analysis of online gradient
+descent (see §4.4 Equation (4.2)). This fact together with (6.3) gives
+∇⊤
+t (xt−x⋆) ≤η
+2∇⊤
+t G−1
+t ∇t + 1
+2η
+ ∥xt −x⋆∥2
+Gt −∥xt+1 −x⋆∥2
+Gt
+
+.
+Now, summing up over t = 1 to T we get that
+T
+X
+t=1
+∇⊤
+t (xt −x⋆) ≤η
+2
+T
+X
+t=1
+∇⊤
+t G−1
+t ∇t + 1
+2η∥x1 −x⋆∥2
+G0
+(6.4)
++ 1
+2η
+T
+X
+t=1
+
+∥xt −x⋆∥2
+Gt −∥xt −x⋆∥2
+Gt−1
+
+−1
+2η∥xT+1 −x⋆∥2
+GT
+≤η
+2
+T
+X
+t=1
+∇⊤
+t G−1
+t ∇t + 1
+2η
+T
+X
+t=1
+(xt−x⋆)⊤(Gt −Gt−1)(xt−x⋆).
+In the last inequality we use the fact that G0 = 0. We proceed to bound
+each of the terms above separately.
+Lemma 6.6. With St, Gt as deﬁned in Algorithm 9,
+T
+X
+t=1
+∇⊤
+t G−1
+t ∇t ≤2
+T
+X
+t=1
+∇⊤
+t G−1
+T ∇t ≤2Tr(GT ).
+Proof. We prove the lemma by induction. The base case follows since
+∇⊤
+1 G−1
+1 ∇1 = Tr(G−1
+1 ∇1∇⊤
+1 )
+= Tr(G−1
+1 G2
+1)
+= Tr(G1).
+
+70
+CHAPTER 6. ADAPTIVE REGULARIZATION
+Assuming the lemma holds for T −1, we get by the inductive hypothesis
+T
+X
+t=1
+∇⊤
+t G−1
+t ∇t ≤2Tr(GT−1) + ∇⊤
+T G−1
+T ∇T
+= 2Tr((G2
+T −∇T ∇⊤
+T )1/2) + Tr(G−1
+T ∇T ∇⊤
+T )
+≤2Tr(GT ).
+Here, the last inequality is due to the matrix inequality 6.1.
+Lemma 6.7.
+T
+X
+t=1
+(xt−x⋆)⊤(Gt −Gt−1)(xt−x⋆) ≤D2Tr(GT ).
+Proof. By deﬁnition St ≽St−1, and hence Gt ≽Gt−1. Thus,
+T
+X
+t=1
+(xt−x⋆)⊤(Gt −Gt−1)(xt−x⋆)
+≤
+T
+X
+t=1
+D2λmax(Gt −Gt−1)
+≤D2
+T
+X
+t=1
+Tr(Gt −Gt−1)
+A ≽0 ⇒λmax(A) ≤Tr(A)
+= D2
+T
+X
+t=1
+(Tr(Gt) −Tr(Gt−1))
+linearity of the trace
+≤D2Tr(GT ).
+Plugging both lemmas into Equation (6.4), we obtain
+T
+X
+t=1
+∇⊤
+t (xt −x⋆) ≤ηTr(GT ) + 1
+2ηD2Tr(GT ) ≤2DTr(GT ).
+
+6.5. DIAGONAL ADAGRAD
+71
+6.5
+Diagonal AdaGrad
+The AdaGrad algorithm maintains potentially dense matrices, and requires
+the computation of the square root of these matrices. This is usually pro-
+hibitive in machine learning applications in which the dimension is very
+large.
+Fortunately, the same ideas can be applied with almost no com-
+putational overhead on top of vanilla SGD, using the diagonal version of
+AdaGrad given by:
+Algorithm 10 AdaGrad (diagonal version)
+1: Input: parameters η, x1 ∈K.
+2: Initialize: S0 = G0 = 0,
+3: for t = 1 to T do
+4:
+Predict xt, suﬀer loss ft(xt).
+5:
+Update:
+St = St−1 + diag(∇t∇⊤
+t ), Gt = St1/2
+yt+1 = xt −ηG−1
+t ∇t
+xt+1 = arg min
+x∈K
+∥yt+1 −x∥2
+Gt
+6: end for
+In contrast to the full-matrix version, this version can be implemented in
+linear time and space, since diagonal matrices can be manipulated as vectors.
+Thus, memory overhead is only a single d-dimensional vector, which is used
+to represent the diagonal preconditioning (regularization) matrix, and the
+computational overhead is a few vector manipulations per iteration.
+Very similar to the full matrix case, the diagonal AdaGrad algorithm
+can be analyzed and the following performance bound obtained:
+Theorem 6.8. Let {xt} be deﬁned by Algorithm 10 with parameters η =
+D∞, where
+D∞= max
+u∈K ∥u −x1∥∞,
+and let diag(H) be the set of all diagonal matrices in H.
+Then for any
+x⋆∈K,
+regretT (D-AdaGrad) ≤2D∞
+s
+min
+H∈diag(H)
+X
+t
+∥∇t∥∗2
+H .
+
+72
+CHAPTER 6. ADAPTIVE REGULARIZATION
+6.6
+State-of-the-art: from Adam to Shampoo and
+beyond
+Since the introduction of the adaptive regularization technique in the con-
+text of regret minimization, several improvements were introduced that now
+compose state-of-the-art. A few notable advancements include:
+AdaDelta: The algorithm keeps an exponential average of past gradients and uses
+that in the update step.
+Adam: Adds a sliding window to AdaGrad, as well as adding a form of mo-
+mentum via estimating the second moments of past gradients and
+adjusting the update accordingly.
+Shampoo: Interpolates between full-matrix and diagonal adagrad in the context
+of deep neural networks: use of the special layer structure to reduce
+memory constraints.
+AdaFactor: Suggests a Shampoo-like approach to reduce memory footprint even
+further, to allow the training of huge models.
+GGT: While full-matrix AdaGrad is computationally slow due to the cost
+of manipulating matrices, this algorithm uses recent gradients (a thin
+matrix G), and via linear algebraic manipulations reduces computa-
+tion by never computing GG⊤, but rather only G⊤G, which is low
+dimensional.
+SM3 , ET: Diagonal AdaGrad requires an extra O(n) memory to store diag(Gt).
+These algorithms, inspired by AdaFactor, approximate Gt as a low
+rank tensor to save memory and computation.
+
+6.7. EXERCISES
+73
+6.7
+Exercises
+1. ∗Prove that for positive deﬁnite matrices A ≽B ≻0 it holds that
+(a) A1/2 ≽B1/2
+(b) 2Tr((A −B)1/2) + Tr(A−1/2B) ≤2Tr(A1/2).
+2. ∗Consider the following minimization problem where A ≻0:
+min
+X
+Tr(X−1A)
+subject to
+X ≻0
+Tr(X) ≤1.
+Prove that its minimizer is given by X = A1/2/Tr(A1/2), and the
+minimum is obtained at Tr2(A1/2).
+
+74
+CHAPTER 6. ADAPTIVE REGULARIZATION
+6.8
+Bibliographic Remarks
+The AdaGrad algorithm was introduced in [19, 18], its diagonal version
+was also discovered in parallel in [52]. Adam [46] and RMSprop [39] are
+widely used methods based on adaptive regularization. A cleaner analysis
+was recently proposed in [27], see also [17].
+Adaptive regularization has received much attention recently, see e.g.,
+[60, 85]. Newer algorithmic developments on adaptive regularization include
+Shampoo [28], GGT [3], AdaFactor [77], Extreme Tensoring [16] and SM3
+[6].
+
+Chapter 7
+Variance Reduction
+In the previous chapter we have studied the ﬁrst of our three acceleration
+techniques over SGD, adaptive regularization, which is a geometric tool for
+acceleration. In this chapter we introduce the second ﬁrst-order accelera-
+tion technique, called variance reduction. This technique is probabilistic in
+nature, and applies to more restricted settings of mathematical optimiza-
+tion in which the objective function has a ﬁnite-sum structure. Namely, we
+consider optimization problems of the form
+min
+x∈K f(x) , f(x) = 1
+m
+m
+X
+i=1
+fi(x) .
+(7.1)
+Such optimization problems are canonical in training of ML models, con-
+vex and non-convex. However, in the context of machine learning we should
+remember that the ultimate goal is generalization rather than training.
+7.1
+Variance reduction: Intuition
+The intuition for variance reduction is simple, and comes from trying to
+improve the naive convergence bounds for SGD that we have covered in the
+ﬁrst lesson.
+Recall the SGD update rule xt+1 ←xt−η ˆ∇t, in which ˆ∇t is an unbiased
+estimator for the gradient such that
+E[ ˆ∇t] = ∇t , E[∥ˆ∇t∥2
+2] ≤σ2.
+We have seen in Theorem 3.4, that for this update rule,
+E
+"
+1
+T
+X
+t
+∥∇t∥2
+#
+≤2
+r
+Mβσ2
+T
+.
+75
+
+76
+CHAPTER 7. VARIANCE REDUCTION
+The convergence is proportional to the second moment of the gradient esti-
+mator, and thus it makes sense to try to reduce this second moment. The
+variance reduction technique attempts to do so by using the average of all
+previous gradients, as we show next.
+7.2
+Setting and deﬁnitions
+We consider the ERM optimization problem over an average of loss func-
+tions. Before we begin, we need a few preliminaries and assumptions:
+1. We denote distance to optimality according to function value as
+ht = f(xt) −f(x∗),
+and in the k’th epoch of an algorithm, we denote hk
+t = f(xk
+t ) −f(x∗).
+2. We denote ˜hk = max
+
+4hk
+0 , 8αD2
+k
+	
+over an epoch.
+3. Assume all stochastic gradients have bounded second moments
+∥ˆ
+∇t∥2
+2 ≤σ2.
+4. We will assume that the individual functions fi in formulation (7.1)
+are also ˆβ-smooth and have ˆβ-Lipschitz gradient, namely
+∥∇fi(x) −∇fi(y)∥≤ˆβ∥x −y∥.
+5. We will use, proved in Lemma 2.3, that for β-smooth and α-strongly
+convex f we have
+ht ≥1
+2β ∥∇t∥2
+and
+α
+2 d2
+t = α
+2 ∥xt −x∗∥2 ≤ht ≤1
+2α∥∇t∥2.
+6. Recall that a function f is γ-well-conditioned if it is β-smooth, α-
+strongly convex and γ ≤α
+β .
+
+7.3. THE VARIANCE REDUCTION ADVANTAGE
+77
+7.3
+The variance reduction advantage
+Consider gradient descent for γ-well conditioned functions, and speciﬁcally
+used for ML training as in formulation (7.1) . It is well known that GD
+attains linear convergence rate as we now prove for completeness:
+Theorem 7.1. For unconstrained minimization of γ-well-conditioned func-
+tions and ηt = 1
+β, the Gradient Descent Algorithm 2 converges as
+ht+1 ≤h1e−γt.
+Proof.
+ht+1 −ht = f(xt+1) −f(xt)
+≤∇⊤
+t (xt+1 −xt) + β
+2 ∥xt+1 −xt∥2
+β-smoothness
+= −ηt∥∇t∥2 + β
+2 η2
+t ∥∇t∥2
+algorithm defn.
+= −1
+2β ∥∇t∥2
+choice of ηt = 1
+β
+≤−α
+β ht.
+by (2.1)
+Thus,
+ht+1 ≤ht(1 −α
+β ) ≤· · · ≤h1(1 −γ)t ≤h1e−γt
+where the last inequality follows from 1 −x ≤e−x for all x ∈R.
+However, what is the overall computational cost? Assuming that we can
+compute the gradient of each loss function corresponding to the individual
+training examples in O(d) time, the overall running time to compute the
+gradient is O(md).
+In order to attain approximation ε to the objective, the algorithm re-
+quires O( 1
+γ log 1
+ε) iterations, as per the Theorem above. Thus, the overall
+running time becomes O(md
+γ log 1
+ε). As we show below, variance reduction
+can reduce this running time to be O((m+ 1
+˜γ2 )d log 1
+ε), where ˜γ is a diﬀerent
+condition number for the same problem, that is in general smaller than the
+original. Thus, in one line, the variance reduction advantage can be sum-
+marized as:
+md
+γ log 1
+ε 7→(m + 1
+˜γ2 )d log 1
+ε .
+
+78
+CHAPTER 7. VARIANCE REDUCTION
+7.4
+A simple variance-reduced algorithm
+The following simple variance-reduced algorithm illustrates the main ideas
+of the technique.
+The algorithm is a stochastic gradient descent variant
+which proceeds in epochs. Strong convexity implies that the distance to the
+optimum shrinks with function value, so it is safe to decrease the distance
+upper bound every epoch.
+The main innovation is in line 7, which constructs the gradient estimator.
+Instead of the usual trick - which is to sample one example at random - here
+the estimator uses the entire gradient computed at the beginning of the
+current epoch.
+Algorithm 11 Epoch GD
+1: Input: f, T, x1
+0 ∈K, upper bound D1 ≥∥x1
+0 −x∗∥, step sizes {ηt}
+2: for k = 1 to log 1
+ε do
+3:
+Let BDk(xk
+0) be the ball of radius Dk around xk
+0.
+4:
+compute full gradient ∇k
+0 = ∇f(xk
+0)
+5:
+for t = 1 to T do
+6:
+Sample it ∈[m] uniformly at random, let ft = fit.
+7:
+construct stochastic gradient ˆ∇k
+t = ∇ft(xk
+t ) −∇ft(xk
+0) + ∇k
+0
+8:
+Let yk
+t+1 = xk
+t −ηt ˆ∇k
+t , xt+1 = ΠBDk(xk
+0) (yt+1)
+9:
+end for
+10:
+Set xk+1
+0
+= 1
+T
+PT
+t=1 xk
+t . Dk+1 ←Dk/2.
+11: end for
+12: return x0
+T+1
+The main guarantee for this algorithm is the following theorem, which
+delivers upon the aforementioned improvement,
+Theorem 7.2. Algorithm 11 returns an ε-approximate solution to optimiza-
+tion problem (7.1) in total time
+O
+
+m + 1
+˜γ2
+
+d log 1
+ε
+
+.
+Let ˜γ = α
+ˆβ < γ. Then the proof of this theorem follows from the following
+lemma.
+Lemma 7.3. For T = ˜O
+
+1
+˜γ2
+
+, we have
+E[˜hk+1] ≤1
+2
+˜hk.
+
+7.4. A SIMPLE VARIANCE-REDUCED ALGORITHM
+79
+Proof. As a ﬁrst step, we bound the variance of the gradients. Due to the
+fact that xk
+t ∈BDk(xk
+0), we have that for k′ > k, ∥xk
+t −xk′
+t ∥2 ≤4D2
+k. Thus,
+∥ˆ∇k
+t ∥2
+= ∥∇ft(xk
+t ) −∇ft(xk
+0) + ∇f(xk
+0)∥2
+deﬁnition
+≤2∥∇ft(xk
+t ) −∇ft(xk
+0)∥2 + 2∥∇f(xk
+0)∥2
+(a + b)2 ≤2a2 + 2b2
+≤2ˆβ2∥xk
+t −xk
+0∥2 + 4βhk
+0
+smoothness
+≤8ˆβ2D2
+k + 4βhk
+0
+projection step
+≤ˆβ2 1
+α˜hk + 4βhk
+0 ≤˜hk(
+ˆβ2
+α + β)
+Next, using the regret bound for strongly convex functions, we have
+E[hk+1
+0
+]
+≤E[ 1
+T
+P
+t hk
+t ]
+Jensen
+≤
+1
+αT E[P
+t
+1
+t ∥ˆ∇k
+t ∥2]
+Theorem 4.4
+≤
+1
+αT
+P
+t
+1
+t ˜hk(
+ˆβ2
+α + β)
+above
+≤log T
+T ˜hk( 1
+˜γ2 + 1
+γ )
+˜γ = α
+ˆβ
+Which implies the Lemma by choice of T, deﬁnition of ˜hk = max
+
+4hk
+0 , 8αD2
+k
+	
+,
+and exponential decrease of Dk.
+The expectation is over the stochastic gradient deﬁnition, and is required
+for using Theorem 4.4.
+To obtain the theorem from the lemma above, we need to strengthen
+it to a high probability statement using a martingale argument.
+This is
+possible since the randomness in construction of the stochastic gradients is
+i.i.d.
+The lemma now implies the theorem by noting that O(log 1
+ε) epochs
+suﬃces to get ε-approximation. Each epoch requires the computation of one
+full gradient, in time O(md), and ˜O( 1
+˜γ2 ) iterations that require stochastic
+gradient computation, in time O(d).
+
+80
+CHAPTER 7. VARIANCE REDUCTION
+7.5
+Bibliographic Remarks
+The variance reduction technique was ﬁrst introduced as part of the SAG
+algorithm [70]. Since then a host of algorithms were developed using the
+technique. The simplest exposition of the technique was given in [44]. The
+exposition in this chapter is developed from the Epoch GD algorithm [37],
+which uses a related technique for stochastic strongly convex optimization,
+as developed in [86].
+
+Chapter 8
+Nesterov Acceleration
+In previous chapters we have studied our bread and butter technique, SGD,
+as well as two acceleration techniques of adaptive regularization and variance
+reduction.
+In this chapter we study the historically earliest acceleration
+technique, known as Nesterov acceleration, or simply “acceleration”.
+For smooth and convex functions, Nesterov acceleration improves the
+convergence rate to optimality to O( 1
+T 2 ), a quadratic improvement over
+vanilla gradient descent. Similar accelerations are possible when the func-
+tion is also strongly convex: an accelerated rate of e−√γT , where γ is the
+condition number, vs. e−γT of vanilla gradient descent. This improvement
+is theoretically very signiﬁcant.
+However, in terms of applicability, Nesterov acceleration is theoretically
+the most restricted in the context of machine learning: it requires a smooth
+and convex objective. More importantly, the learning rates of this method
+are very brittle, and the method is not robust to noise. Since noise is pre-
+dominant in machine learning, the theoretical guarantees in stochastic op-
+timization environments are very restricted.
+However, the heuristic of momentum, which historically inspired acceler-
+ation, is extremely useful for non-convex stochastic optimization (although
+not known to yield signiﬁcant improvements in theory).
+8.1
+Algorithm and implementation
+Nesterov acceleration applies to the general setting of constrained smooth
+convex optimization:
+min
+x∈Rd f(x).
+(8.1)
+81
+
+82
+CHAPTER 8. NESTEROV ACCELERATION
+For simplicity of presentation, we restrict ourselves to the unconstrained
+convex and smooth case.
+Nevertheless, the method can be extended to
+constrained smooth convex, and potentially strongly convex, settings.
+The simple method presented in Algorithm 12 below is computationally
+equivalent to gradient descent.
+The only overhead is saving three state
+vectors (that can be reduced to two) instead of one for gradient descent.
+The following simple accelerated algorithm illustrates the main ideas of the
+technique.
+Algorithm 12 Simpliﬁed Nesterov Acceleration
+1: Input: f, T, initial point x0, parameters η, β, τ.
+2: for t = 1 to T do
+3:
+Set xt+1 = τzt + (1 −τ)yt, and denote ∇t+1 = ∇f(xt+1).
+4:
+Let yt+1 = xt+1 −1
+β∇t+1
+5:
+Let zt+1 = zt −η∇t+1
+6: end for
+7: return ¯x = 1
+T
+P
+t xt
+8.2
+Analysis
+The main guarantee for this algorithm is the following theorem.
+Theorem 8.1. Algorithm 12 converges to an ε-approximate solution to op-
+timization problem (8.1) in O( 1
+√ε) iterations.
+The proof starts with the following lemma which follows from our earlier
+standard derivations.
+Lemma 8.2.
+η∇⊤
+t+1(zt −x∗) ≤2η2β(f(xt+1) −f(yt+1)) +
+
+∥zt −x∗∥2 −∥zt+1 −x∗∥2
+.
+Proof. The proof is very similar to that of Theorem 4.2. By deﬁnition of zt,
+1
+∥zt+1 −x∗∥2
+= ∥zt −η∇t+1 −x∗∥2
+= ∥zt −x∗∥2 −η∇⊤
+t+1(zt −x∗) + η2∥∇t+1∥2
+≤∥zt −x∗∥2 −η∇⊤
+t+1(zt −x∗) + 2η2β(f(xt+1) −f(yt+1))
+Lemma 2.3 part 3
+1Henceforth we use Lemma 2.3 part 3.
+This proof of this Lemma shows that for
+y = x −1
+β ∇f(x), it holds that f(x) −f(y) ≥
+1
+2β ∥∇f(x)∥2.
+
+8.2. ANALYSIS
+83
+Lemma 8.3. For 2ηβ = 1−τ
+τ , we have that
+η∇⊤
+t+1(xt+1 −x∗) ≤2η2β(f(yt) −f(yt+1)) +
+
+∥zt −x∗∥2 −∥zt+1 −x∗∥2
+.
+Proof.
+η∇⊤
+t+1(xt+1 −x∗) −η∇⊤
+t+1(zt −x∗)
+= η∇⊤
+t+1(xt+1 −zt)
+= (1−τ)η
+τ
+∇⊤
+t+1(yt −xt+1)
+τ(xt+1 −zt) = (1 −τ)(yt −xt+1)
+≤(1−τ)η
+τ
+(f(yt) −f(xt+1)).
+convexity
+Thus, in combination with Lemma 8.2, and the condition of the Lemma, we
+get the inequality.
+We can now sketch the proof of the main theorem.
+Proof. Telescope Lemma 8.3 for all iterations to obtain:
+ThT
+= T(f(¯x) −f(x∗))
+≤P
+t ∇⊤
+t (xt −x∗)
+≤2ηβ P
+t(f(yt) −f(yt+1)) + 1
+η
+P
+t
+
+∥zt −x∗∥2 −∥zt+1 −x∗∥2
+≤2ηβ(f(y1) −f(yT+1)) + 1
+η
+
+∥z1 −x∗∥2 −∥zT+1 −x∗∥2
+≤√2βh1D,
+optimizing η
+where h1 is an upper bound on the distance f(y1) −f(x∗), and D bounds
+the Euclidean distance of zt to the optimum. Thus, we get a recurrence of
+the form
+hT ≤
+√h1
+T
+.
+Restarting Algorithm 12 and adapting the learning rate according to hT
+gives a rate of convergence of O( 1
+T 2 ) to optimality.
+
+84
+CHAPTER 8. NESTEROV ACCELERATION
+8.3
+Bibliographic Remarks
+Accelerated rates of order O( 1
+T 2 ) were obtained by Nemirovski as early as
+the late seventies. The ﬁrst practically eﬃcient accelerated algorithm is due
+to Nesterov [56] , see also [57]. The simpliﬁed proof presented hereby is due
+to [5].
+
+Chapter 9
+The conditional gradient
+method
+In many computational and learning scenarios the main bottleneck of opti-
+mization, both online and oﬄine, is the computation of projections onto the
+underlying decision set (see §2.1.1). In this chapter we discuss projection-free
+methods in convex optimization, and some of their applications in machine
+learning.
+The motivating example throughout this chapter is the problem of ma-
+trix completion, which is a widely used and accepted model in the con-
+struction of recommendation systems. For matrix completion and related
+problems, projections amount to expensive linear algebraic operations and
+avoiding them is crucial in big data applications.
+Henceforth we describe the conditional gradient algorithm, also known as
+the Frank-Wolfe algorithm. Afterwards, we describe problems for which lin-
+ear optimization can be carried out much more eﬃciently than projections.
+We conclude with an application to exploration in reinforcement learning.
+9.1
+Review: relevant concepts from linear algebra
+This chapter addresses rectangular matrices, which model applications such
+as recommendation systems naturally. Consider a matrix X ∈Rn×m. A
+non-negative number σ ∈R+ is said to be a singular value for X if there are
+two vectors u ∈Rn, v ∈Rm such that
+X⊤u = σv,
+Xv = σu.
+85
+
+86
+CHAPTER 9. THE CONDITIONAL GRADIENT METHOD
+The vectors u, v are called the left and right singular vectors respectively.
+The non-zero singular values are the square roots of the eigenvalues of the
+matrix XX⊤(and X⊤X). The matrix X can be written as
+X = UΣV ⊤, U ∈Rn×ρ , V ⊤∈Rρ×m,
+where ρ = min{n, m}, the matrix U is an orthogonal basis of the left singular
+vectors of X, the matrix V is an orthogonal basis of right singular vectors,
+and Σ is a diagonal matrix of singular values. This form is called the singular
+value decomposition for X.
+The number of non-zero singular values for X is called its rank, which
+we denote by k ≤ρ. The nuclear norm of X is deﬁned as the ℓ1 norm of its
+singular values, and denoted by
+∥X∥∗=
+ρ
+X
+i=1
+σi
+It can be shown (see exercises) that the nuclear norm is equal to the trace
+of the square root of the matrix times its transpose, i.e.,
+∥X∥∗= Tr(
+√
+X⊤X)
+We denote by A • B the inner product of two matrices as vectors in Rn×m,
+that is
+A • B =
+n
+X
+i=1
+m
+X
+j=1
+AijBij = Tr(AB⊤)
+9.2
+Motivation: matrix completion and recommen-
+dation systems
+Media recommendations have changed signiﬁcantly with the advent of the
+Internet and rise of online media stores. The large amounts of data collected
+allow for eﬃcient clustering and accurate prediction of users’ preferences
+for a variety of media.
+A well-known example is the so called “Netﬂix
+challenge”—a competition of automated tools for recommendation from a
+large dataset of users’ motion picture preferences.
+One of the most successful approaches for automated recommendation
+systems, as proven in the Netﬂix competition, is matrix completion. Perhaps
+the simplest version of the problem can be described as follows.
+The entire dataset of user-media preference pairs is thought of as a
+partially-observed matrix. Thus, every person is represented by a row in
+
+9.2. MOTIVATION
+87
+the matrix, and every column represents a media item (movie). For sim-
+plicity, let us think of the observations as binary—a person either likes or
+dislikes a particular movie. Thus, we have a matrix M ∈{0, 1, ∗}n×m where
+n is the number of persons considered, m is the number of movies at our
+library, and 0/1 and ∗signify “dislike”, “like” and “unknown” respectively:
+Mij =
+
+
+
+
+
+
+
+
+
+
+
+0,
+person i dislikes movie j
+1,
+person i likes movie j
+∗,
+preference unknown
+.
+The natural goal is to complete the matrix, i.e. correctly assign 0 or 1 to
+the unknown entries. As deﬁned so far, the problem is ill-posed, since any
+completion would be equally good (or bad), and no restrictions have been
+placed on the completions.
+The common restriction on completions is that the “true” matrix has
+low rank. Recall that a matrix X ∈Rn×m has rank k < ρ = min{n, m} if
+and only if it can be written as
+X = UV , U ∈Rn×k, V ∈Rk×m.
+The intuitive interpretation of this property is that each entry in M
+can be explained by only k numbers.
+In matrix completion this means,
+intuitively, that there are only k factors that determine a persons preference
+over movies, such as genre, director, actors and so on.
+Now the simplistic matrix completion problem can be well-formulated
+as in the following mathematical program. Denote by ∥· ∥OB the Euclidean
+norm only on the observed (non starred) entries of M, i.e.,
+∥X∥2
+OB =
+X
+Mij̸=∗
+X2
+ij.
+The mathematical program for matrix completion is given by
+min
+X∈Rn×m
+1
+2∥X −M∥2
+OB
+s.t.
+rank(X) ≤k.
+Since the constraint over the rank of a matrix is non-convex, it is stan-
+dard to consider a relaxation that replaces the rank constraint by the nuclear
+norm. It is known that the nuclear norm is a lower bound on the matrix
+
+88
+CHAPTER 9. THE CONDITIONAL GRADIENT METHOD
+rank if the singular values are bounded by one (see exercises). Thus, we
+arrive at the following convex program for matrix completion:
+min
+X∈Rn×m
+1
+2∥X −M∥2
+OB
+(9.1)
+s.t.
+∥X∥∗≤k.
+We consider algorithms to solve this convex optimization problem next.
+9.3
+The Frank-Wolfe method
+In this section we consider minimization of a convex function over a convex
+domain.
+The conditional gradient (CG) method, or Frank-Wolfe algorithm, is a
+simple algorithm for minimizing a smooth convex function f over a convex
+set K ⊆Rn. The appeal of the method is that it is a ﬁrst order interior point
+method - the iterates always lie inside the convex set, and thus no projections
+are needed, and the update step on each iteration simply requires minimizing
+a linear objective over the set. The basic method is given in Algorithm 13.
+Algorithm 13 Conditional gradient
+1: Input: step sizes {ηt ∈(0, 1], t ∈[T]}, initial point x1 ∈K.
+2: for t = 1 to T do
+3:
+vt ←arg minx∈K
+
+x⊤∇f(xt)
+	
+.
+4:
+xt+1 ←xt + ηt(vt −xt).
+5: end for
+Note that in the CG method, the update to the iterate xt may be not be
+in the direction of the gradient, as vt is the result of a linear optimization
+procedure in the direction of the negative gradient.
+This is depicted in
+Figure 9.1.
+The following theorem gives an essentially tight performance guarantee
+of this algorithm over smooth functions. Recall our notation from Chapter
+2: x⋆denotes the global minimizer of f over K, D denotes the diameter of
+the set K, and ht = f(xt)−f(x⋆) denotes the suboptimality of the objective
+value in iteration t.
+Theorem 9.1. The CG algorithm applied to β-smooth functions with step
+sizes ηt = min{2H
+t , 1}, for H ≥max{1, h1}, attains the following conver-
+gence guarantee:
+ht ≤2βHD2
+t
+
+9.3. THE FRANK-WOLFE METHOD
+89
+Figure 9.1: Direction of progression of the conditional gradient algorithm.
+Proof. As done before in this manuscript, we denote ∇t = ∇f(xt), and also
+denote H ≥max{h1, 1}, such that ηt = min{2H
+t , 1}. For any set of step
+sizes, we have
+f(xt+1) −f(x⋆) = f(xt + ηt(vt −xt)) −f(x⋆)
+≤f(xt) −f(x⋆) + ηt(vt −xt)⊤∇t + η2
+t
+β
+2 ∥vt −xt∥2
+β-smoothness
+≤f(xt) −f(x⋆) + ηt(x⋆−xt)⊤∇t + η2
+t
+β
+2 ∥vt −xt∥2
+vt optimality
+≤f(xt) −f(x⋆) + ηt(f(x⋆) −f(xt)) + η2
+t
+β
+2 ∥vt −xt∥2
+convexity of f
+≤(1 −ηt)(f(xt) −f(x⋆)) + η2
+t β
+2 D2.
+(9.2)
+
+90
+CHAPTER 9. THE CONDITIONAL GRADIENT METHOD
+We reached the recursion ht+1 ≤(1 −ηt)ht + η2
+t
+βD2
+2 , and by induction,
+ht+1 ≤(1 −ηt)ht + η2
+t
+βD2
+2
+≤(1 −ηt)2βHD2
+t
++ η2
+t
+βD2
+2
+induction hypothesis
+≤(1 −2H
+t )2βHD2
+t
++ 4H2
+t2
+βD2
+2
+value of ηt
+= 2βHD2
+t
+−2H2βD2
+t2
+≤2βHD2
+t
+(1 −1
+t )
+since H ≥1
+≤2βHD2
+t + 1 .
+t−1
+t
+≤
+t
+t+1
+9.4
+Projections vs. linear optimization
+The conditional gradient (Frank-Wolfe) algorithm described before does not
+resort to projections, but rather computes a linear optimization problem of
+the form
+arg min
+x∈K
+n
+x⊤u
+o
+.
+(9.3)
+When is the CG method computationally preferable? The overall compu-
+tational complexity of an iterative optimization algorithm is the product
+of the number of iterations and the computational cost per iteration. The
+CG method does not converge as well as the most eﬃcient gradient descent
+algorithms, meaning it requires more iterations to produce a solution of a
+comparable level of accuracy. However, for many interesting scenarios the
+computational cost of a linear optimization step (9.3) is signiﬁcantly lower
+than that of a projection step.
+Let us point out several examples of problems for which we have very eﬃ-
+cient linear optimization algorithms, whereas our state-of-the-art algorithms
+for computing projections are signiﬁcantly slower.
+Recommendation systems and matrix prediction.
+In the example
+pointed out in the preceding section of matrix completion, known methods
+
+9.4. PROJECTIONS VS. LINEAR OPTIMIZATION
+91
+for projection onto the spectahedron, or more generally the bounded nuclear-
+norm ball, require singular value decompositions, which take superlinear
+time via our best known methods. In contrast, the CG method requires
+maximal eigenvector computations which can be carried out in linear time
+via the power method (or the more sophisticated Lanczos algorithm).
+Network routing and convex graph problems.
+Various routing and
+graph problems can be modeled as convex optimization problems over a
+convex set called the ﬂow polytope.
+Consider a directed acyclic graph with m edges, a source node marked
+s and a target node marked t. Every path from s to t in the graph can be
+represented by its identifying vector, that is a vector in {0, 1}m in which the
+entries that are set to 1 correspond to edges of the path. The ﬂow polytope
+of the graph is the convex hull of all such identifying vectors of the simple
+paths from s to t. This polytope is also exactly the set of all unit s–t ﬂows
+in the graph if we assume that each edge has a unit ﬂow capacity (a ﬂow
+is represented here as a vector in Rm in which each entry is the amount of
+ﬂow through the corresponding edge).
+Since the ﬂow polytope is just the convex hull of s–t paths in the graph,
+minimizing a linear objective over it amounts to ﬁnding a minimum weight
+path given weights for the edges. For the shortest path problem we have
+very eﬃcient combinatorial optimization algorithms, namely Dijkstra’s al-
+gorithm.
+Thus, applying the CG algorithm to solve any convex optimization prob-
+lem over the ﬂow polytope will only require iterative shortest path compu-
+tations.
+Ranking and permutations.
+A common way to represent a permutation
+or ordering is by a permutation matrix.
+Such are square matrices over
+{0, 1}n×n that contain exactly one 1 entry in each row and column.
+Doubly-stochastic matrices are square, real-valued matrices with non-
+negative entries, in which the sum of entries of each row and each column
+amounts to 1.
+The polytope that deﬁnes all doubly-stochastic matrices
+is called the Birkhoﬀ-von Neumann polytope. The Birkhoﬀ-von Neumann
+theorem states that this polytope is the convex hull of exactly all n × n
+permutation matrices.
+Since a permutation matrix corresponds to a perfect matching in a fully
+connected bipartite graph, linear minimization over this polytope corre-
+sponds to ﬁnding a minimum weight perfect matching in a bipartite graph.
+
+92
+CHAPTER 9. THE CONDITIONAL GRADIENT METHOD
+Consider a convex optimization problem over the Birkhoﬀ-von Neumann
+polytope.
+The CG algorithm will iteratively solve a linear optimization
+problem over the BVN polytope, thus iteratively solving a minimum weight
+perfect matching in a bipartite graph problem, which is a well-studied com-
+binatorial optimization problem for which we know of eﬃcient algorithms.
+In contrast, other gradient based methods will require projections, which
+are quadratic optimization problems over the BVN polytope.
+Matroid polytopes.
+A matroid is pair (E, I) where E is a set of elements
+and I is a set of subsets of E called the independent sets which satisfy vari-
+ous interesting proprieties that resemble the concept of linear independence
+in vector spaces. Matroids have been studied extensively in combinatorial
+optimization and a key example of a matroid is the graphical matroid in
+which the set E is the set of edges of a given graph and the set I is the set of
+all subsets of E which are cycle-free. In this case, I contains all the spanning
+trees of the graph. A subset S ∈I could be represented by its identifying
+vector which lies in {0, 1}|E| which also gives rise to the matroid polytope
+which is just the convex hull of all identifying vectors of sets in I. It can
+be shown that some matroid polytopes are deﬁned by exponentially many
+linear inequalities (exponential in |E|), which makes optimization over them
+diﬃcult.
+On the other hand, linear optimization over matroid polytopes is easy
+using a simple greedy procedure which runs in nearly linear time. Thus, the
+CG method serves as an eﬃcient algorithm to solve any convex optimization
+problem over matroids iteratively using only a simple greedy procedure.
+
+9.5. EXERCISES
+93
+9.5
+Exercises
+1. Prove that if the singular values are smaller than or equal to one, then
+the nuclear norm is a lower bound on the rank, i.e., show
+rank(X) ≥∥X∥∗.
+2. Prove that the trace is related to the nuclear norm via
+∥X∥∗= Tr(
+√
+XX⊤) = Tr(
+√
+X⊤X).
+3. Show that maximizing a linear function over the spectahedron is equiv-
+alent to a maximal eigenvector computation. That is, show that the
+following mathematical program:
+min X • C
+X ∈Sd = {X ∈Rd×d , X ≽0 , Tr(X) ≤1},
+is equivalent to the following:
+min
+x∈Rd x⊤Cx
+s.t. ∥x∥2 ≤1.
+4. Download the MovieLens dataset from the web. Implement an online
+recommendation system based on the matrix completion model: im-
+plement the OCG and OGD algorithms for matrix completion. Bench-
+mark your results.
+
+94
+CHAPTER 9. THE CONDITIONAL GRADIENT METHOD
+9.6
+Bibliographic Remarks
+The matrix completion model has been extremely popular since its inception
+in the context of recommendation systems [80, 66, 69, 50, 14, 75].
+The conditional gradient algorithm was devised in the seminal paper
+by Frank and Wolfe [21]. Due to the applicability of the FW algorithm to
+large-scale constrained problems, it has been a method of choice in recent
+machine learning applications, to name a few: [42, 49, 41, 20, 30, 36, 72, 7,
+82, 22, 23, 8].
+The online conditional gradient algorithm is due to [36]. An optimal
+regret algorithm, attaining the O(
+√
+T) bound, for the special case of poly-
+hedral sets was devised in [23].
+
+Chapter 10
+Second order methods for
+machine learning
+At this point in our course, we have exhausted the main techniques in
+ﬁrst-order (or gradient-based) optimization.
+We have studied the main
+workhorse - stochastic gradient descent, the three acceleration techniques,
+and projection-free gradient methods. Have we exhausted optimization for
+ML?
+In this section we discuss using higher derivatives of the objective func-
+tion to accelerate optimization. The canonical method is Newton’s method,
+which involves the second derivative or Hessian in high dimensions. The
+vanilla approach is computationally expensive since it involves matrix inver-
+sion in high dimensions that machine learning problems usually require.
+However, recent progress in random estimators gives rise to linear-time
+second order methods, for which each iteration is as computationally cheap
+as gradient descent.
+10.1
+Motivating example: linear regression
+In the problem of linear regression we are given a set of measurements {ai ∈
+Rd, bi ∈R}, and the goal is to ﬁnd a set of weights that explains them best
+in the mean squared error sense. As a mathematical program, the goal is to
+optimize:
+min
+x∈Rd
+
+
+
+1
+2
+X
+i∈[m]
+
+a⊤
+i x −bi
+2
+
+
+,
+95
+
+96
+CHAPTER 10. SECOND ORDER METHODS
+or in matrix form,
+min
+x f(x) =
+1
+2∥Ax −b∥2
+
+.
+Here A ∈Rm×d, b ∈Rm. Notice that the objective function f is smooth,
+but not necessarily strongly convex. Therefore, all algorithms that we have
+studied so far without exception, which are all ﬁrst order methods, attain
+rates which are poly(1
+ε).
+However, the linear regression problem has a closed form solution that
+can be computed by taking the gradient to be zero, i.e. (Ax −b)⊤A = 0,
+which gives
+x = (A⊤A)−1A⊤b.
+The Newton direction is given by the inverse Hessian multiplied by the
+gradient, ∇−2f(x)∇f(x). Observe that a single Newton step, i.e. moving in
+the Newton direction with step size one, from any direction gets us directly
+to the optimal solution in one iteration! (see exercises)
+More generally, Newton’s method yields O(log 1
+ε) convergence rates for
+a large class of functions without dependence on the condition number of
+the function! We study this property next.
+10.2
+Self-Concordant Functions
+In this section we deﬁne and collect some of the properties of a special class
+of functions, called self-concordant functions. These functions allow New-
+ton’s method to run in time which is independent of the condition number.
+The class of self-concordant functions is expressive and includes quadratic
+functions, logarithms of inner products, a variety of barriers such as the log
+determinant, and many more.
+An excellent reference for this material is the lecture notes on this subject
+by Nemirovski [55]. We begin by deﬁning self-concordant functions.
+Deﬁnition 10.1 (Self-Concordant Functions). Let K ⊆Rn be a non-empty
+open convex set, and and let f : K 7→R be a C3 convex function. Then, f
+is said to be self-concordant if
+|∇3f(x)[h, h, h]| ≤2(h⊤∇2f(x)h)3/2,
+where we have
+∇kf(x)[h1, . . . , hk] ≜
+∂k
+∂t1 . . . ∂tk
+|t1=···=tkf(x + t1h1 + · · · + tkhk).
+
+10.2. NEWTON’S METHOD
+97
+Another key object in the analysis of self concordant functions is the
+notion of a Dikin Ellipsoid, which is the unit ball around a point in the
+norm given by the Hessian ∥· ∥∇2f at the point. We will refer to this norm
+as the local norm around a point and denote it as ∥· ∥x. Formally,
+Deﬁnition 10.2 (Dikin ellipsoid). The Dikin ellipsoid of radius r centered
+at a point x is deﬁned as
+Er(x) ≜{y | ∥y −x∥∇2f(x) ≤r}
+One of the key properties of self-concordant functions that we use is that
+inside the Dikin ellipsoid, the function is well conditioned with respect to
+the local norm at the center. The next lemma makes this formal. The proof
+of this lemma can be found in [55].
+Lemma 10.3 (See [55]). For all h such that ∥h∥x < 1 we have that
+(1 −∥h∥x)2∇2f(x) ⪯∇2f(x + h) ⪯
+1
+(1 −∥h∥x)2 ∇2f(x)
+Another key quantity, which is used both as a potential function as well
+as a dampening for the step size in the analysis of Newton’s method, is the
+Newton Decrement:
+λx ≜∥∇f(x)∥∗
+x =
+q
+∇f(x)⊤∇−2f(x)∇f(x).
+The following lemma quantiﬁes how λx behaves as a potential by showing
+that once it drops below 1, it ensures that the minimum of the function lies
+in the current Dikin ellipsoid. This is the property which we use crucially
+in our analysis. The proof can be found in [55].
+Lemma 10.4 (See [55]). If λx < 1 then
+∥x −x∗∥x ≤
+λx
+1 −λx
+10.3
+Newton’s method for self-concordant func-
+tions
+Before introducing the linear time second order methods, we start by intro-
+ducing a robust Newton’s method and its properties. The pseudo-code is
+given in Algorithm 14.
+
+98
+CHAPTER 10. SECOND ORDER METHODS
+The usual analysis of Newton’s method allows for quadratic convergence,
+i.e. error ε in O(log log 1
+ε) iterations for convex objectives. However, we
+prefer to present a version of Newton’s method which is robust to certain
+random estimators of the Newton direction. This yields a slower rate of
+O(log 1
+ε).
+The faster running time per iteration, which does not require
+matrix manipulations, more than makes up for this.
+Algorithm 14 Robust Newton’s method
+Input: T, x1
+for t = 1 to T do
+Set c = 1
+8, η = min{c,
+c
+8λxt }. Let 1
+2∇−2f(xt) ⪯˜∇−2
+t
+⪯2∇−2f(xt).
+xt+1 = xt −η ˜∇−2
+t ∇f(xt)
+end for
+return xT+1
+It is important to notice that every two consecutive points are within
+the same Dikin ellipsoid of radius 1
+2. Denote ∇t = ∇xt, and similarly for
+the Hessian. Then we have:
+∥xt −xt+1∥2
+xt = η2∇⊤
+t ˜∇−2
+t ∇2
+t ˜∇−2
+t ∇t ≤4η2λ2
+t ≤1
+2.
+The advantage of Newton’s method as applied to self-concordant func-
+tions is its linear convergence rate, as given in the following theorem.
+Theorem 10.5. Let f be self-concordant, and f(x1) ≤M, then
+ht = f(xt) −f(x∗) ≤O(M + log 1
+ε)
+The proof of this theorem is composed of two steps, according to the
+magnitude of the Newton decrement.
+Phase 1: damped Newton
+Lemma 10.6. As long as λx ≥1
+8, we have that
+ht ≤−1
+4c
+
+10.3. NEWTON’S METHOD FOR SELF-CONCORDANT FUNCTIONS99
+Proof. Using similar analysis to the descent lemma we have that
+f(xt+1) −f(xt)
+≤∇⊤
+t (xt+1 −xt) + 1
+2(xt −xt+1)⊤∇2(ζ)(xt −xt+1)
+Taylor
+≤∇⊤
+t (xt+1 −xt) + 1
+4(xt −xt+1)⊤∇2(xt)(xt −xt+1)
+xt+1 ∈E1/2(xt)
+= −η∇⊤
+t ˜∇−2
+t ∇t + 1
+4η2∇⊤
+t ˜∇−2
+t ∇2
+t ˜∇−2
+t ∇t
+= −ηλ2
+t + 1
+4η2λ2
+t ≤−1
+16c
+The conclusion from this step is that after O(M) steps, Algorithm 14
+reaches a point for which λx ≤1
+8. According to Lemma 10.4, we also have
+that ∥x −x∗∥x ≤1
+4, that is, the optimum is in the same Dikin ellipsoid as
+the current point.
+Phase 2: pure Newton
+In the second phase our step size is changed to
+be larger. In this case, we are guaranteed that the Newton decrement is less
+than one, and thus we know that the global optimum is in the same Dikin
+ellipsoid as the current point. In this ellipsoid, all Hessians are equivalent
+up to a factor of two, and thus Mirrored-Descent with the inverse Hessian
+as preconditioner becomes gradient descent. We make this formal below.
+Algorithm 15 Preconditioned Gradient Descent
+Input: P, T
+for t = 1 to T do
+xt+1 = xt −ηP −1∇f(xt)
+end for
+return xT+1
+Lemma 10.7. Suppose that 1
+2P ⪯∇2f(x) ⪯2P, and ∥x1 −x∗∥P ≤1
+2, then
+Algorithm 15 converges as
+ht+1 ≤h1e−1
+8 t.
+This theorem follows from noticing that the function g(z) = f(P −1/2x)
+is 1
+2-strongly convex and 2-smooth, and using Theorem 3.2. It can be shown
+that gradient descent on g is equivalent to Newton’s method in f. Details
+are left as an exercise.
+An immediate corollary is that Newton’s method converges at a rate of
+O(log 1
+ε) in this phase.
+
+100
+CHAPTER 10. SECOND ORDER METHODS
+10.4
+Linear-time second-order methods
+Newton’s algorithm is of foundational importance in the study of mathemat-
+ical programming in general. A major application are interior point methods
+for convex optimization, which are the most important polynomial-time al-
+gorithms for general constrained convex optimization.
+However, the main downside of this method is the need to maintain and
+manipulate matrices - namely the Hessians. This is completely impractical
+for machine learning applications in which the dimension is huge.
+Another signiﬁcant downside is the non-robust nature of the algorithm,
+which makes applying it in stochastic environments challenging.
+In this section we show how to apply Newton’s method to machine
+learning problems.
+This involves relatively new developments that allow
+for linear-time per-iteration complexity, similar to SGD, and theoretically
+superior running times.
+At the time of writing, however, these methods
+are practical only for convex optimization, and have not shown superior
+performance on optimization tasks involving deep neural networks.
+The ﬁrst step to developing a linear time Newton’s method is an eﬃcient
+stochastic estimator for the Newton direction, and the Hessian inverse.
+10.4.1
+Estimators for the Hessian Inverse
+The key idea underlying the construction is the following well known fact
+about the Taylor series expansion of the matrix inverse.
+Lemma 10.8. For a matrix A ∈Rd×d such that A ⪰0 and ∥A∥≤1, we
+have that
+A−1 =
+∞
+X
+i=0
+(I −A)i
+We propose two unbiased estimators based on the above series. To deﬁne
+the ﬁrst estimator pick a probability distribution over non-negative integers
+{pi} and sample ˆi from the above distribution. Let X1, . . . Xˆi be independent
+samples of the Hessian ∇2f and deﬁne the estimator as
+Deﬁnition 10.9 (Estimator 1).
+˜∇−2f = 1
+pˆi
+ˆiY
+j=1
+(I −Xj)
+
+10.4. LINEAR-TIME SECOND-ORDER METHODS
+101
+Observe that our estimator of the Hessian inverse is unbiased, i.e. E[ ˆX] =
+∇−2f at any point. Estimator 1 has the disadvantage that in a single sample
+it incorporates only one term of the Taylor series.
+The second estimator below is based on the observation that the above
+series has the following succinct recursive deﬁnition, and is more eﬃcient.
+For a matrix A deﬁne
+A−1
+j
+=
+j
+X
+i=0
+(I −A)i
+i.e. the ﬁrst j terms of the above Taylor expansion. It is easy to see that
+the following recursion holds for A−1
+j
+A−1
+j
+= I + (I −A)A−1
+j−1
+Using the above recursive formulation, we now describe an unbiased
+estimator of ∇−2f by deriving an unbiased estimator ˜∇−2fj for ∇−2fj.
+Deﬁnition 10.10 (Estimator 2). Given j independent and unbiased samples
+{X1 . . . Xj} of the hessian ∇2f. Deﬁne { ˜∇−2f0 . . . ˜∇−2fj} recursively as
+follows
+˜∇−2f0 = I
+˜∇−2ft = I + (I −Xj) ˜∇−2ft−1
+It can be readily seen that E[ ˜∇−2fj] = ∇−2fj and therefore E[ ˜∇−2fj] →
+∇−2f as j →∞giving us an unbiased estimator in the limit.
+10.4.2
+Incorporating the estimator
+Both of the above estimators can be computed using only Hessian-vector
+products, rather than matrix manipulations. For many machine learning
+problems, Hessian-vector products can be computed in linear time. Exam-
+ples include:
+1. Convex regression and SVM objectives over training data have the
+form
+min
+w f(w) = E
+i [ℓ(w⊤xi)],
+where ℓis a convex function. The Hessian can thus be written as
+∇2f(w) = E
+i [ℓ′′(w⊤xi)xix⊤
+i ]
+
+102
+CHAPTER 10. SECOND ORDER METHODS
+Thus, the ﬁrst Newton direction estimator can now be written as
+˜∇2f(w)∇w = E
+j∼D[
+jY
+i=1
+(I −ℓ′′(w⊤xi)xix⊤
+i )]∇w.
+Notice that this estimator can be computed using j vector-vector prod-
+ucts if the ordinal j was randomly chosen.
+2. Non-convex optimization over neural networks: a similar derivation as
+above shows that the estimator can be computed only using Hessian-
+vector products. The special structure of neural networks allow this
+computation in a constant number of backpropagation steps, i.e. linear
+time in the network size, this is called the “Pearlmutter trick”, see [61].
+We note that non-convex optimization presents special challenges for
+second order methods, since the Hessian need not be positive semi-
+deﬁnite.
+Nevertheless, the techniques presented hereby can still be
+used to provide theoretical speedups for second order methods over
+ﬁrst order methods in terms of convergence to local minima.
+The
+details are beyond our scope, and can be found in [2].
+Putting everything together.
+These estimators we have studied can
+be used to create unbiased estimators to the Newton direction of the form
+˜∇−2
+x ∇x for ˜∇−2
+x
+which satisﬁes
+1
+2∇−2f(xt) ⪯˜∇−2
+t
+⪯2∇−2f(xt).
+These can be incorporated into Algorithm 14, which we proved is capable
+of obtaining fast convergence with approximate Newton directions of this
+form.
+
+10.5. EXERCISES
+103
+10.5
+Exercises
+1. Prove that a single Newton step for linear regression yields the optimal
+solution.
+2. Let f : Rd 7→R, and consider the aﬃne transformation y = Ax, for
+A ∈Rd×d being a symmetric matrix. Prove that
+yt+1 ←yt −η∇f(yt)
+is equivalent to
+xt+1 ←xt −ηA−2∇f(xt).
+3. Prove that the function g(z) deﬁned in phase 2 of the robust Newton
+algorithm is 1
+2-strongly convex and 2-smooth. Conclude with a proof
+of Theorem 10.7.
+
+104
+CHAPTER 10. SECOND ORDER METHODS
+10.6
+Bibliographic Remarks
+The modern application of Newton’s method to convex optimization was
+put forth in the seminal work of Nesterov and Nemirovski [58] on interior
+point methods. A wonderful exposition is Nemirovski’s lecture notes [55].
+The fact that Hessian-vector products can be computed in linear time
+for feed forward neural networks was described in [61]. Linear time second
+order methods for machine learning and the Hessian-vector product model
+in machine learning was introduced in [4]. This was extended to non-convex
+optimization for deep learning in [2].
+
+Chapter 11
+Hyperparameter
+Optimization
+Thus far in this class, we have been talking about continuous mathematical
+optimization, where the search space of our optimization problem is continu-
+ous and mostly convex. For example, we have learned about how to optimize
+the weights of a deep neural network, which take continuous real values, via
+various optimization algorithms (SGD, AdaGrad, Newton’s method, etc.).
+However, in the process of training a neural network, there are some meta
+parameters, which we call hyperparameters, that have a profound eﬀect on
+the ﬁnal outcome. These are global, mostly discrete, parameters that are
+treated diﬀerently by algorithm designers as well as by engineers. Examples
+include the architecture of the neural network (number of layers, width of
+each layer, type of activation function, ...), the optimization scheme for up-
+dating weights (SGD/AdaGrad, initial learning rate, decay rate of learning
+rate, momentum parameter, ...), and many more. Roughly speaking, these
+hyperparameters are chosen before the training starts.
+The purpose of this chapter is to formalize this problem as an optimiza-
+tion problem in machine learning, which requires a diﬀerent methodology
+than we have treated in the rest of this course. We remark that hyperpa-
+rameter optimization is still an active area of research and its theoretical
+properties are not well understood as of this time.
+11.1
+Formalizing the problem
+What makes hyperparameters diﬀerent from “regular” parameters?
+105
+
+106
+CHAPTER 11. HYPERPARAMETER OPTIMIZATION
+1. The search space is often discrete (for example, number of layers). As
+such, there is no natural notion of gradient or diﬀerentials and it is
+not clear how to apply the iterative methods we have studied thus far.
+2. Even evaluating the objective function is extremely expensive (think
+of evaluating the test error of the trained neural network). Thus it is
+crucial to minimize the number of function evaluations, whereas other
+computations are signiﬁcantly less expensive.
+3. Evaluating the function can be done in parallel. As an example, train-
+ing feedforward deep neural networks over diﬀerent architectures can
+be done in parallel.
+More formally, we consider the following optimization problem
+min
+xi∈GF(qi)
+f(x),
+where x is the representation of discrete hyperparameters, each taking value
+from qi ≥2 possible discrete values and thus in GF(q), the Galois ﬁeld of
+order q. The example to keep in mind is that the objective f(x) is the test
+error of the neural network trained with hyperparameters x. Note that x
+has a search space of size Q
+i qi ≥2n, exponentially large in the number of
+diﬀerent hyperparameters.
+11.2
+Hyperparameter optimization algorithms
+The properties of the problem mentioned before prohibits the use of the
+algorithms we have studied thus far, which are all suitable for continuous
+optimization. A naive method is to perform a grid search over all hyperpa-
+rameters, but this quickly becomes infeasible. An emerging ﬁeld of research
+in recent years, called AutoML, aims to choose hyperparameters automati-
+cally. The following techniques are in common use:
+• Grid search, try all possible assignments of hyperparameters and
+return the best. This becomes infeasible very quickly with n - the
+number of hyperparameters.
+• Random search, where one randomly picks some choices of hyper-
+parameters, evaluates their function objective, and chooses the one
+choice of hyperparameters giving best performance. An advantage of
+this method is that it is easy to implement in parallel.
+
+11.3. A SPECTRAL METHOD
+107
+• Successive Halving and Hyperband, random search combined
+with early stopping using multi-armed bandit techniques. These gain
+a small constant factor improvement over random search.
+• Bayesian optimization, a statistical approach which has a prior over
+the objective and tries to iteratively pick an evaluation point which
+reduces the variance in objective value.
+Finally it picks the point
+that attains the lowest objective objective with highest conﬁdence.
+This approach is sequential in nature and thus diﬃcult to parallelize.
+Another important question is how to choose a good prior.
+The hyperparameter optimization problem is essentially a combinato-
+rial optimization problem with exponentially large search space. Without
+further assumptions, this optimization problem is information-theoretically
+hard. Such assumptions are explored in the next section with an accompa-
+nying algorithm.
+Finally, we note that a simple but hard-to-beat benchmark is random
+search with double budget. That is, compare the performance of a method
+to that of random search, but allow random search double the query budget
+of your own method.
+11.3
+A Spectral Method
+For simplicity, in this section we consider the case in which hyperparam-
+eters are binary. This retains the diﬃculty of the setting, but makes the
+mathematical derivation simpler. The optimization problem now becomes
+min
+x∈{−1,1}n
+f(x).
+(11.1)
+The method we describe in this section is inspired by the following key
+observation: although the whole search space of hyperparameters is exponen-
+tially large, it is often the case in practice that only a few hyperparameters
+together play a signiﬁcant role in the performance of a deep neural network.
+To make this intuition more precise, we need some deﬁnitions and facts
+from Fourier analysis of Boolean functions.
+Fact 11.1. Any function f : {−1, 1}n →[−1, 1] can be uniquely represented
+in the Fourier basis
+f(x) =
+X
+S⊆[n]
+αs ˆχS(x),
+
+108
+CHAPTER 11. HYPERPARAMETER OPTIMIZATION
+where each Fourier basis function
+ˆχS(x) =
+Y
+i∈S
+xi.
+is a monomial, and thus f(x) has a polynomial representation.
+Now we are ready to formalize our key observation in the following as-
+sumption:
+Assumption 11.2. The objective function f in the hyperparameter opti-
+mization problem (11.1) is low degree and sparse in the Fourier basis, i.e.
+f(x) ≈
+X
+|S|≤d
+αS ˆχS(x),
+∥α∥1 ≤k,
+(11.2)
+where d is the upper bound of polynomial degree, and k is the sparsity of
+Fourier coeﬃcient α (indexed by S) in ℓ1 sense (which is a convex relaxation
+of ∥α∥0, the true sparsity).
+Remark 11.3. Clearly this assumption does not always hold. For example,
+many deep reinforcement learning algorithms nowadays rely heavily on the
+choice of the random seed, which can also be seen as a hyperparameter. If
+x ∈{−1, 1}32 is the bit representation of a int32 random seed, then there is
+no reason to assume that a few of these bits should play a more signiﬁcant
+role than the others.
+Under this assumption, all we need to do now is to ﬁnd out the few im-
+portant sets of variables S’s, as well as their coeﬃcients αS’s, in the approx-
+imation (11.2). Fortunately, there is already a whole area of research, called
+compressed sensing, that aims to recover a high-dimensional but sparse vec-
+tor, using only a few linear measurements. Next, we will brieﬂy introduce
+the problem of compressed sensing, and one useful result from the litera-
+ture. After that, we will introduce the Harmonica algorithm, which applies
+compressed sensing techniques to solve the hyperparameter optimization
+problem (11.1).
+11.3.1
+Background: Compressed Sensing
+The problem of compressed sensing is as follows. Suppose there is a hidden
+signal x ∈Rn that we cannot observe. In order to recover x, we design a
+measurement matrix A ∈Rm×n, and obtain noisy linear measurements y =
+Ax + η ∈Rm, where η is some random noise. The diﬃculty arises when we
+
+11.3. A SPECTRAL METHOD
+109
+have a limited budget for measurements, i.e. m ≪n. Note that even without
+noise, recovering x is non-trivial since y = Ax is an underdetermined linear
+system, therefore if there is one solution x that solves this linear system,
+there will be inﬁnitely many solutions. The key to this problem is to assume
+that x is k-sparse, that is, ∥x∥0 ≤k. This assumption has been justiﬁed
+in various real-world applications; for example, natural images tend to be
+sparse in the Fourier/wavelet domain, a property which forms the bases of
+many image compression algorithms.
+Under the assumption of sparsity, the natural way to recover x is to
+solve a least squares problem, subject to some sparsity constraint ∥x∥0 ≤k.
+However, ℓ0 norm is diﬃcult to handle, and it is often replaced by ℓ1 norm,
+its convex relaxation. One useful result from the literature of compressed
+sensing is the following.
+Proposition 11.4 (Informal statement of Theorem 4.4 in [63]). Assume
+the ground-truth signal x ∈Rn is k-sparse.
+Then, with high probability,
+using a randomly designed A ∈Rm×n that is “near-orthogonal” (random
+Gaussian matrix, subsampled Fourier basis, etc.), with m = O(k log(n)/ε)
+and ∥η∥2 = O(√m), x can be recovered by a convex program
+min
+z∈Rn ∥y −Az∥2
+2
+s.t.
+∥z∥1 ≤k,
+(11.3)
+with accuracy ∥x −z∥2 ≤ε.
+This result is remarkable; in particular, it says that the number of mea-
+surements needed to recover a sparse signal is independent of the dimension
+n (up to a logarithm term), but only depends on the sparsity k and the
+desired accuracy ε. 1
+Remark 11.5. The convex program (11.3) is equivalent to the following
+LASSO problem
+min
+z∈Rn ∥y −Az∥2
+2 + λ∥z∥1,
+with a proper choice of regularization parameter λ. The LASSO problem
+is an unconstrained convex program, and has eﬃcient solvers, as per the
+algorithms we have studied in this course.
+1It also depends on the desired high-probability bound, which is omitted in this informal
+statement.
+
+110
+CHAPTER 11. HYPERPARAMETER OPTIMIZATION
+11.3.2
+The Spectral Algorithm
+The main idea is that, under Assumption 11.2, we can view the problem
+of hyperparameter optimization as recovering the sparse signal α from lin-
+ear measurements. More speciﬁcally, we need to query T random samples,
+f(x1), . . . , f(xT ), and then solve the LASSO problem
+min
+α
+T
+X
+t=1
+(
+X
+|S|≤d
+αS ˆχS(xt) −f(xt))2 + λ∥α∥1,
+(11.4)
+where the regularization term λ∥α∥1 controls the sparsity of α. Also note
+that the constraint |S| ≤d not only implies that the solution is a low-degree
+polynomial, but also helps to reduce the “eﬀective” dimension of α from 2n
+to O(nd), which makes it feasible to solve this LASSO problem.
+Denote by S1, . . . , Ss the indices of the s largest coeﬃcients of the LASSO
+solution, and deﬁne
+g(x) =
+X
+i∈[s]
+αSi ˆχSi(x),
+which involves only a few dimensions of x since the LASSO solution is sparse
+and low-degree.
+The next step is to set the variables outside ∪i∈[s]Si to
+arbitrary values, and compute a minimizer x∗∈arg min g(x).
+In other
+words, we have reduced the original problem of optimizing f(x) over n
+variables, to the problem of optimizing g(x) (an approximation of f(x))
+over only a few variables (which is now feasible to solve). One remarkable
+feature of this algorithm is that the returned solution x∗may not belong to
+the samples {x1, . . . , xT }, which is not the case for other existing methods
+(such as random search).
+Using theoretical results from compressed sensing (e.g.
+Proposition
+11.4), we can derive the following guarantee for the sparse recovery of α
+via LASSO.
+Theorem 11.6 (Informal statement of Lemma 7 in [38]). Assume f is k-
+sparse in the Fourier expansion. Then, with T = O(k2 log(n)/ε) samples,
+the solution of the LASSO problem (11.4) achieves ε accuracy.
+Finally, the above derivation can be considered as only one stage in a
+multi-stage process, each iteratively setting the value of a few more variables
+that are the most signiﬁcant.
+
+11.4. BIBLIOGRAPHIC REMARKS
+111
+11.4
+Bibliographic Remarks
+For a nice exposition on hyperparameter optimization see [64, 65], in which
+the the benchmark of comparing to Random Search with double queries was
+proposed.
+Perhaps the simplest approach to HPO is random sampling of diﬀerent
+choices of parameters and picking the best amongst the chosen evaluations
+[9].
+Successive Halving (SH) algorithm was introduced [43].
+Hyperband
+further improves SH by automatically tuning the hyperparameters in SH
+[51].
+The Bayesian optimization (BO) methodology is currently the most stud-
+ied in HPO. For recent studies and algorithms of this ﬂavor see [10, 78, 81,
+79, 24, 84, 40].
+The spectral approach for hyperparameter optimization was introduced
+in [38]. For an in-depth treatment of compressed sensing see the survey of
+[63], and for Fourier analysis of Boolean functions see [59].
+
+112
+CHAPTER 11. HYPERPARAMETER OPTIMIZATION
+
+Bibliography
+[1] Jacob Abernethy, Elad Hazan, and Alexander Rakhlin.
+Competing
+in the dark: An eﬃcient algorithm for bandit linear optimization. In
+Proceedings of the 21st Annual Conference on Learning Theory, pages
+263–274, 2008.
+[2] Naman Agarwal, Zeyuan Allen-Zhu, Brian Bullins, Elad Hazan, and
+Tengyu Ma. Finding approximate local minima faster than gradient
+descent. In Proceedings of the 49th Annual ACM SIGACT Symposium
+on Theory of Computing, pages 1195–1199. ACM, 2017.
+[3] Naman Agarwal, Brian Bullins, Xinyi Chen, Elad Hazan, Karan Singh,
+Cyril Zhang, and Yi Zhang. The case for full-matrix adaptive regular-
+ization. arXiv preprint arXiv:1806.02958, 2018.
+[4] Naman Agarwal, Brian Bullins, and Elad Hazan. Second-order stochas-
+tic optimization for machine learning in linear time. The Journal of
+Machine Learning Research, 18(1):4148–4187, 2017.
+[5] Zeyuan Allen-Zhu and Lorenzo Orecchia.
+Linear coupling:
+An ul-
+timate uniﬁcation of gradient and mirror descent.
+arXiv preprint
+arXiv:1407.1537, 2014.
+[6] Rohan Anil, Vineet Gupta, Tomer Koren, and Yoram Singer. Memory-
+eﬃcient adaptive optimization for large-scale learning. arXiv preprint
+arXiv:1901.11150, 2019.
+[7] Francis Bach, Simon Lacoste-Julien, and Guillaume Obozinski.
+On
+the equivalence between herding and conditional gradient algorithms.
+In John Langford and Joelle Pineau, editors, Proceedings of the 29th
+International Conference on Machine Learning (ICML-12), ICML ’12,
+pages 1359–1366, New York, NY, USA, July 2012. Omnipress.
+113
+
+114
+BIBLIOGRAPHY
+[8] Aur´elien Bellet, Yingyu Liang, Alireza Bagheri Garakani, Maria-
+Florina Balcan, and Fei Sha.
+Distributed frank-wolfe algorithm: A
+uniﬁed framework for communication-eﬃcient sparse learning. CoRR,
+abs/1404.2644, 2014.
+[9] James Bergstra and Yoshua Bengio.
+Random search for hyper-
+parameter optimization. J. Mach. Learn. Res., 13:281–305, February
+2012.
+[10] James S. Bergstra, R´emi Bardenet, Yoshua Bengio, and Bal´azs K´egl.
+Algorithms for hyper-parameter optimization. In J. Shawe-Taylor, R. S.
+Zemel, P. L. Bartlett, F. Pereira, and K. Q. Weinberger, editors, Ad-
+vances in Neural Information Processing Systems 24, pages 2546–2554.
+Curran Associates, Inc., 2011.
+[11] J.M. Borwein and A.S. Lewis. Convex Analysis and Nonlinear Opti-
+mization: Theory and Examples. CMS Books in Mathematics. Springer,
+2006.
+[12] S. Boyd and L. Vandenberghe. Convex Optimization. Cambridge Uni-
+versity Press, March 2004.
+[13] S´ebastien Bubeck. Convex optimization: Algorithms and complexity.
+Foundations and Trends in Machine Learning, 8(3–4):231–357, 2015.
+[14] E. Candes and B. Recht. Exact matrix completion via convex optimiza-
+tion. Foundations of Computational Mathematics, 9:717–772, 2009.
+[15] Nicol`o Cesa-Bianchi and G´abor Lugosi.
+Prediction, Learning, and
+Games. Cambridge University Press, 2006.
+[16] Xinyi Chen, Naman Agarwal, Elad Hazan, Cyril Zhang, and Yi Zhang.
+Extreme tensoring for low-memory preconditioning.
+arXiv preprint
+arXiv:1902.04620, 2019.
+[17] Qi Deng, Yi Cheng, and Guanghui Lan. Optimal adaptive and accel-
+erated stochastic gradient descent. arXiv preprint arXiv:1810.00553,
+2018.
+[18] John Duchi, Elad Hazan, and Yoram Singer.
+Adaptive subgradient
+methods for online learning and stochastic optimization. The Journal
+of Machine Learning Research, 12:2121–2159, 2011.
+
+BIBLIOGRAPHY
+115
+[19] John C. Duchi, Elad Hazan, and Yoram Singer. Adaptive subgradient
+methods for online learning and stochastic optimization. In COLT 2010
+- The 23rd Conference on Learning Theory, Haifa, Israel, June 27-29,
+2010, pages 257–269, 2010.
+[20] Miroslav Dud´ık, Za¨ıd Harchaoui, and J´erˆome Malick. Lifted coordinate
+descent for learning with trace-norm regularization. Journal of Machine
+Learning Research - Proceedings Track, 22:327–336, 2012.
+[21] M. Frank and P. Wolfe. An algorithm for quadratic programming. Naval
+Research Logistics Quarterly, 3:149–154, 1956.
+[22] Dan Garber and Elad Hazan. Approximating semideﬁnite programs in
+sublinear time. In NIPS, pages 1080–1088, 2011.
+[23] Dan Garber and Elad Hazan.
+Playing non-linear games with linear
+oracles. In FOCS, pages 420–428, 2013.
+[24] Jacob R. Gardner, Matt J. Kusner, Zhixiang Eddie Xu, Kilian Q. Wein-
+berger, and John P. Cunningham. Bayesian optimization with inequal-
+ity constraints.
+In Proceedings of the 31th International Conference
+on Machine Learning, ICML 2014, Beijing, China, 21-26 June 2014,
+pages 937–945, 2014.
+[25] Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Deep Learning.
+MIT Press, 2016. http://www.deeplearningbook.org.
+[26] A .J. Grove, N. Littlestone, and D. Schuurmans. General convergence
+results for linear discriminant updates. Machine Learning, 43(3):173–
+210, 2001.
+[27] Vineet Gupta, Tomer Koren, and Yoram Singer. A uniﬁed approach
+to adaptive regularization in online and stochastic optimization. arXiv
+preprint arXiv:1706.06569, 2017.
+[28] Vineet Gupta, Tomer Koren, and Yoram Singer. Shampoo: Precondi-
+tioned stochastic tensor optimization. arXiv preprint arXiv:1802.09568,
+2018.
+[29] James Hannan. Approximation to bayes risk in repeated play. In M.
+Dresher, A. W. Tucker, and P. Wolfe, editors, Contributions to the
+Theory of Games, volume 3, pages 97–139, 1957.
+
+116
+BIBLIOGRAPHY
+[30] Za¨ıd Harchaoui, Matthijs Douze, Mattis Paulin, Miroslav Dud´ık, and
+J´erˆome Malick. Large-scale image classiﬁcation with trace-norm regu-
+larization. In CVPR, pages 3386–3393, 2012.
+[31] Elad Hazan. Introduction to online convex optimization. Foundations
+and Trends ˆA R⃝in Optimization, 2(3-4):157–325, 2016.
+[32] Elad Hazan, Amit Agarwal, and Satyen Kale. Logarithmic regret al-
+gorithms for online convex optimization. In Machine Learning, volume
+69(2–3), pages 169–192, 2007.
+[33] Elad Hazan and Sham Kakade. Revisiting the polyak step size. arXiv
+preprint arXiv:1905.00313, 2019.
+[34] Elad Hazan and Satyen Kale. Extracting certainty from uncertainty:
+Regret bounded by variation in costs. In The 21st Annual Conference
+on Learning Theory (COLT), pages 57–68, 2008.
+[35] Elad Hazan and Satyen Kale. Beyond the regret minimization barrier:
+an optimal algorithm for stochastic strongly-convex optimization. Jour-
+nal of Machine Learning Research - Proceedings Track, pages 421–436,
+2011.
+[36] Elad Hazan and Satyen Kale. Projection-free online learning. In ICML,
+2012.
+[37] Elad Hazan and Satyen Kale. Beyond the regret minimization barrier:
+optimal algorithms for stochastic strongly-convex optimization.
+The
+Journal of Machine Learning Research, 15(1):2489–2512, 2014.
+[38] Elad Hazan, Adam Klivans, and Yang Yuan. Hyperparameter opti-
+mization: A spectral approach. ICLR, 2018.
+[39] Geoﬀrey Hinton, Nitish Srivastava, and Kevin Swersky. Neural net-
+works for machine learning lecture 6a overview of mini-batch gradient
+descent. Cited on, 14, 2012.
+[40] Ilija Ilievski, Taimoor Akhtar, Jiashi Feng, and Christine Annette Shoe-
+maker.
+Eﬃcient hyperparameter optimization for deep learning al-
+gorithms using deterministic RBF surrogates.
+In Proceedings of the
+Thirty-First AAAI Conference on Artiﬁcial Intelligence, February 4-9,
+2017, San Francisco, California, USA., pages 822–829, 2017.
+
+BIBLIOGRAPHY
+117
+[41] Martin Jaggi.
+Revisiting frank-wolfe: Projection-free sparse convex
+optimization. In ICML, 2013.
+[42] Martin Jaggi and Marek Sulovsk´y. A simple algorithm for nuclear norm
+regularized problems. In ICML, pages 471–478, 2010.
+[43] Kevin G. Jamieson and Ameet Talwalkar.
+Non-stochastic best arm
+identiﬁcation and hyperparameter optimization. In Proceedings of the
+19th International Conference on Artiﬁcial Intelligence and Statistics,
+AISTATS 2016, Cadiz, Spain, May 9-11, 2016, pages 240–248, 2016.
+[44] Rie Johnson and Tong Zhang. Accelerating stochastic gradient descent
+using predictive variance reduction. In Advances in neural information
+processing systems, pages 315–323, 2013.
+[45] Adam Kalai and Santosh Vempala. Eﬃcient algorithms for online de-
+cision problems. Journal of Computer and System Sciences, 71(3):291–
+307, 2005.
+[46] Diederik P Kingma and Jimmy Ba. Adam: A method for stochastic
+optimization. arXiv preprint arXiv:1412.6980, 2014.
+[47] Jyrki Kivinen and Manfred K. Warmuth. Exponentiated gradient ver-
+sus gradient descent for linear predictors. Inf. Comput., 132(1):1–63,
+1997.
+[48] Jyrki Kivinen and Manfred K. Warmuth.
+Relative loss bounds for
+multidimensional regression problems. Machine Learning, 45(3):301–
+329, 2001.
+[49] Simon Lacoste-Julien, Martin Jaggi, Mark W. Schmidt, and Patrick
+Pletscher.
+Block-coordinate frank-wolfe optimization for structural
+svms. In Proceedings of the 30th International Conference on Machine
+Learning, ICML 2013, Atlanta, GA, USA, 16-21 June 2013, pages 53–
+61, 2013.
+[50] J. Lee, B. Recht, R. Salakhutdinov, N. Srebro, and J. A. Tropp. Prac-
+tical large-scale optimization for max-norm regularization. In NIPS,
+pages 1297–1305, 2010.
+[51] L. Li, K. Jamieson, G. DeSalvo, A. Rostamizadeh, and A. Talwalkar.
+Hyperband: A Novel Bandit-Based Approach to Hyperparameter Op-
+timization. ArXiv e-prints, March 2016.
+
+118
+BIBLIOGRAPHY
+[52] H. Brendan McMahan and Matthew J. Streeter. Adaptive bound op-
+timization for online convex optimization. In COLT 2010 - The 23rd
+Conference on Learning Theory, Haifa, Israel, June 27-29, 2010, pages
+244–256, 2010.
+[53] Arkadi S. Nemirovski and David B. Yudin. Problem Complexity and
+Method Eﬃciency in Optimization. John Wiley UK/USA, 1983.
+[54] A.S. Nemirovskii. Interior point polynomial time methods in convex
+programming, 2004. Lecture Notes.
+[55] AS Nemirovskii.
+Interior point polynomial time methods in convex
+programming. Lecture Notes, 2004.
+[56] Y. Nesterov. A method of solving a convex programming problem with
+convergence rate O(1/k2). Soviet Mathematics Doklady, 27(2):372–376,
+1983.
+[57] Y. Nesterov. Introductory Lectures on Convex Optimization: A Basic
+Course. Applied Optimization. Springer, 2004.
+[58] Y. E. Nesterov and A. S. Nemirovskii. Interior Point Polynomial Al-
+gorithms in Convex Programming. SIAM, Philadelphia, 1994.
+[59] Ryan O’Donnell. Analysis of Boolean Functions. Cambridge University
+Press, New York, NY, USA, 2014.
+[60] Francesco Orabona and Koby Crammer. New adaptive algorithms for
+online classiﬁcation. In Proceedings of the 24th Annual Conference on
+Neural Information Processing Systems 2010., pages 1840–1848, 2010.
+[61] Barak A Pearlmutter. Fast exact multiplication by the hessian. Neural
+computation, 6(1):147–160, 1994.
+[62] Alexander Rakhlin, Ohad Shamir, and Karthik Sridharan.
+Making
+gradient descent optimal for strongly convex stochastic optimization.
+In ICML, 2012.
+[63] Holger Rauhut. Compressive sensing and structured random matrices.
+Theoretical foundations and numerical methods for sparse recovery, 9:1–
+92, 2010.
+[64] Benjamin Recht. Embracing the random. http://www.argmin.net/
+2016/06/23/hyperband/, 2016.
+
+BIBLIOGRAPHY
+119
+[65] Benjamin Recht. The news on auto-tuning. http://www.argmin.net/
+2016/06/20/hypertuning/, 2016.
+[66] Jasson D. M. Rennie and Nathan Srebro. Fast maximum margin matrix
+factorization for collaborative prediction. In Proceedings of the 22Nd
+International Conference on Machine Learning, ICML ’05, pages 713–
+719, New York, NY, USA, 2005. ACM.
+[67] Herbert Robbins and Sutton Monro.
+A stochastic approximation
+method. The Annals of Mathematical Statistics, 22(3):400–407, 09 1951.
+[68] R.T. Rockafellar. Convex Analysis. Convex Analysis. Princeton Uni-
+versity Press, 1997.
+[69] R. Salakhutdinov and N. Srebro.
+Collaborative ﬁltering in a non-
+uniform world: Learning with the weighted trace norm. In NIPS, pages
+2056–2064, 2010.
+[70] Mark Schmidt, Nicolas Le Roux, and Francis Bach. Minimizing ﬁnite
+sums with the stochastic average gradient. Mathematical Programming,
+162(1-2):83–112, 2017.
+[71] Shai Shalev-Shwartz. Online Learning: Theory, Algorithms, and Ap-
+plications. PhD thesis, The Hebrew University of Jerusalem, 2007.
+[72] Shai Shalev-Shwartz, Alon Gonen, and Ohad Shamir. Large-scale con-
+vex minimization with a low-rank constraint. In ICML, pages 329–336,
+2011.
+[73] Shai Shalev-Shwartz and Yoram Singer. A primal-dual perspective of
+online learning algorithms. Machine Learning, 69(2-3):115–142, 2007.
+[74] Shai Shalev-Shwartz, Yoram Singer, Nathan Srebro, and Andrew Cot-
+ter.
+Pegasos: primal estimated sub-gradient solver for svm.
+Math.
+Program., 127(1):3–30, 2011.
+[75] O. Shamir and S. Shalev-Shwartz.
+Collaborative ﬁltering with the
+trace norm: Learning, bounding, and transducing. JMLR - Proceedings
+Track, 19:661–678, 2011.
+[76] Ohad Shamir and Tong Zhang.
+Stochastic gradient descent for
+non-smooth optimization: Convergence results and optimal averaging
+schemes. In ICML, 2013.
+
+120
+BIBLIOGRAPHY
+[77] Noam Shazeer and Mitchell Stern. Adafactor: Adaptive learning rates
+with sublinear memory cost. arXiv preprint arXiv:1804.04235, 2018.
+[78] Jasper Snoek, Hugo Larochelle, and Ryan P. Adams. Practical bayesian
+optimization of machine learning algorithms. In Advances in Neural
+Information Processing Systems 25: 26th Annual Conference on Neural
+Information Processing Systems 2012. Proceedings of a meeting held
+December 3-6, 2012, Lake Tahoe, Nevada, United States., pages 2960–
+2968, 2012.
+[79] Jasper Snoek, Kevin Swersky, Richard S. Zemel, and Ryan P. Adams.
+Input warping for bayesian optimization of non-stationary functions. In
+Proceedings of the 31th International Conference on Machine Learning,
+ICML 2014, Beijing, China, 21-26 June 2014, pages 1674–1682, 2014.
+[80] Nathan Srebro. Learning with Matrix Factorizations. PhD thesis, Mas-
+sachusetts Institute of Technology, 2004.
+[81] Kevin Swersky, Jasper Snoek, and Ryan Prescott Adams. Multi-task
+bayesian optimization. In Advances in Neural Information Processing
+Systems 26: 27th Annual Conference on Neural Information Processing
+Systems 2013. Proceedings of a meeting held December 5-8, 2013, Lake
+Tahoe, Nevada, United States., pages 2004–2012, 2013.
+[82] Ambuj Tewari, Pradeep D. Ravikumar, and Inderjit S. Dhillon. Greedy
+algorithms for structurally constrained high dimensional problems. In
+NIPS, pages 882–890, 2011.
+[83] A. M. Turing.
+Computing machinery and intelligence.
+Mind,
+59(236):433–460, 1950.
+[84] Ziyu Wang, Masrour Zoghi, Frank Hutter, David Matheson, and Nando
+de Freitas. Bayesian optimization in high dimensions via random em-
+beddings. In IJCAI 2013, Proceedings of the 23rd International Joint
+Conference on Artiﬁcial Intelligence, Beijing, China, August 3-9, 2013,
+pages 1778–1784, 2013.
+[85] Rachel Ward, Xiaoxia Wu, and Leon Bottou. Adagrad stepsizes: Sharp
+convergence over nonconvex landscapes, from any initialization. arXiv
+preprint arXiv:1806.01811, 2018.
+[86] Lijun Zhang, Mehrdad Mahdavi, and Rong Jin. Linear convergence
+with condition number independent access of full gradients. In Advances
+in Neural Information Processing Systems, pages 980–988, 2013.
+
+BIBLIOGRAPHY
+121
+[87] Martin Zinkevich.
+Online convex programming and generalized in-
+ﬁnitesimal gradient ascent.
+In Proceedings of the 20th International
+Conference on Machine Learning, pages 928–936, 2003.

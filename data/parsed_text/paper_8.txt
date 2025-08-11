@@ -1,0 +1,2045 @@
+Generated using the oﬃcial AMS LATEX template v6.1 two-column layout. This work has been submitted for
+publication. Copyright in this work may be transferred without further notice, and this version may no longer be
+accessible.
+A Machine Learning Tutorial for Operational Meteorology, Part I: Traditional Machine
+Learning
+Randy J. Chase a,b,c , David R. Harrisonb,d,e , Amanda Burkeb,c , Gary M. Lackmannf and Amy McGoverna,b,c
+a School of Computer Science, University of Oklahoma, Norman OK USA
+b School of Meteorology, University of Oklahoma, Norman OK USA
+c NSF AI Institute for Research on Trustworthy AI in Weather, Climate, and Coastal Oceanography, University of Oklahoma, Norman OK
+USA
+d Cooperative Institute for Severe and High-Impact Weather Research and Operations, University of Oklahoma, Norman OK USA
+e NOAA/NWS/Storm Prediction Center, Norman, Oklahoma
+f Department of Marine, Earth, and Atmospheric Sciences, North Carolina State University, Raleigh, North Carolina
+ABSTRACT: Recently, the use of machine learning in meteorology has increased greatly. While many machine learning methods are not
+new, university classes on machine learning are largely unavailable to meteorology students and are not required to become a meteorologist.
+The lack of formal instruction has contributed to perception that machine learning methods are ’black boxes’ and thus end-users are hesitant
+to apply the machine learning methods in their every day workﬂow. To reduce the opaqueness of machine learning methods and lower
+hesitancy towards machine learning in meteorology, this paper provides a survey of some of the most common machine learning methods.
+A familiar meteorological example is used to contextualize the machine learning methods while also discussing machine learning topics
+using plain language. The following machine learning methods are demonstrated: linear regression; logistic regression; decision trees;
+random forest; gradient boosted decision trees; naïve Bayes; and support vector machines. Beyond discussing the diﬀerent methods, the
+paper also contains discussions on the general machine learning process as well as best practices to enable readers to apply machine learning
+to their own datasets. Furthermore, all code (in the form of Jupyter notebooks and Google Colaboratory notebooks) used to make the
+examples in the paper is provided in an eﬀort to catalyse the use of machine learning in meteorology.
+1. Introduction
+The mention and use of machine learning (ML) within
+meteorological journal articles is accelerating (Fig. 1; e.g.,
+Burke et al. 2020; Hill et al. 2020; Lagerquist et al. 2020;
+Li et al. 2020; Loken et al. 2020; Mao and Sorteberg 2020;
+Muñoz-Esparza et al. 2020; Wang et al. 2020; Bonavita
+et al. 2021; Cui et al. 2021; Flora et al. 2021; Hill and
+Schumacher 2021; Schumacher et al. 2021; Yang et al.
+2021; Zhang et al. 2021).
+With a growing number of
+published meteorological studies using ML methods, it is
+increasingly important for meteorologists to be well-versed
+in ML. However, the availability of meteorology speciﬁc
+resources about ML terms and methods is scarce. Thus,
+this series of papers (total of 2) aim to reduce the scarcity
+of meteorology speciﬁc ML resources.
+While many ML methods are generally not new (i.e.,
+published before 2002), there is a concern from ML de-
+velopers that end users (i.e., non-ML specialists) may be
+hesitant or are concerned about trusting ML. However,
+early work in this space suggests that non-technical ex-
+planations may be an important part of how end users
+perceive the trustworthiness of ML guidance (e.g., Cains
+et al. 2022). Thus, an additional goal of these papers is
+to enhance trustworthiness of ML methods through plain
+language discussions and meteorological examples.
+Corresponding author: Randy J. Chase, randychase@ou.edu
+In practice, ML models are often viewed as a black box
+which could also be contributing to user hesitancy. These
+mystiﬁed feelings towards ML methods can lead to an in-
+herent distrust with ML methods, despite their potential.
+Furthermore, the seemingly opaque nature of ML methods
+prevents ML forecasts from meeting one of the three re-
+quirements of a good forecast outlined by Murphy (1993):
+consistency. In short, Murphy (1993) explains that in order
+for a forecast to be good, the forecast must (1) be consis-
+tent with the user’s prior knowledge, (2) have good quality
+(i.e., accuracy) and (3) be valuable (i.e., provide beneﬁt).
+Plenty of technical papers demonstrate how ML forecasts
+can meet requirements 2 and 3, but as noted above if the
+ML methods are confusing and enigmatic, then it is diﬃ-
+cult for ML forecasts to be consistent with a meteorologists
+prior knowledge. This series of papers will serve as a ref-
+erence for meteorologists in order to make the black box of
+ML more transparent and enhance user trust in ML.
+This paper is organized as follows. Section 2 provides
+an introduction to all ML methods discussed in this paper
+and will deﬁne common ML terms. Section 3 discusses
+the general ML methods in context of a simple meteoro-
+logical example, while also describing the end-to-end ML
+pipeline. Then, Section 4 summarizes this paper and also
+discusses the topics of the next paper in the series.
+1
+arXiv:2204.07492v2  [physics.ao-ph]  7 Jun 2022
+
+2
+Fig. 1. Search results for the Meteorology and Atmospheric Science category when searching abstracts for machine learning methods and severe
+weather. Machine learning keywords searched were: linear regression, logistic regression, decision trees, random forest, gradient boosted trees,
+support vector machines, k-means, k-nearest, empirical orthogonal functions, principal component analysis, self organizing maps, neural networks,
+convolutional neural networks and unets. Severe weather keywords searched were: tornadoes, hail, hurricanes and tropical cyclones. (a) Counts of
+publications per year for all papers in the Meteorology and Atmospheric Science category (black line; reduced by one order of magnitude), machine
+learning topics (blue line) and severe weather topics (red line). (b) Same as (a), but with the two subtopics normalized by the total number of
+Meteorology and Atmospheric Science papers. (c) Number of neural network papers (including convolutional and unets) published in Meteorology
+and Atmospheric sciences. All data are derived from Clarivate Web of Science.
+2. Machine Learning Methods and Common Terms
+This section will describe a handful of the most com-
+mon ML methods.
+Before that, it is helpful to deﬁne
+some terminology used within ML. First, we deﬁne ML
+as any empirical1 method where parameters are ﬁt (i.e.,
+learned) on a training dataset in order to optimize (e.g.,
+minimize or maximize) a predeﬁned loss (i.e., cost) func-
+tion. Within this general framework, ML has two cate-
+gories: supervised and unsupervised learning. Supervised
+learning are ML methods that are trained with prescribed
+input features and output labels. For example, predicting
+tomorrow’s high temperature at a speciﬁc location where
+we have measurements (i.e., labels). Meanwhile, unsuper-
+vised methods do not have a predeﬁned output label (e.g.,
+self-organizing maps; Nowotarski and Jensen 2013). An
+example of an unsupervised ML task would be clustering
+all 500 mb geopotential height maps to look for unspeciﬁed
+patterns in the weather. This paper focuses on supervised
+learning.
+The input features for supervised learning, also referred
+to as input data, predictors or variables, can be written
+mathematically as the vector (matrix) 𝑋. The desired out-
+put of the ML model is usually called the target, predic-
+tand or label, and is mathematically written as the scalar
+(vector) 𝑦.
+Drawing on the meteorological example of
+predicting tomorrow’s high temperature, the input feature
+would be tomorrow’s forecasted temperature from a nu-
+merical weather model (e.g., GFS) and the label would be
+tomorrow’s observed temperature.
+1By empirical we mean any method that uses data as opposed to
+physics
+Supervised ML methods can be further broken into two
+sub-categories: regression and classiﬁcation. Regression
+tasks are ML methods that output a continuous range of
+values, like the forecast of tomorrow’s high temperature
+(e.g., 75.0◦F). Meanwhile classiﬁcation tasks are charac-
+teristic of ML methods that classify data (e.g., will it rain or
+snow tomorrow). Reposing tomorrow’s high temperature
+forecast as a classiﬁcation task would be: "Will tomor-
+row be warmer than today?". This paper will cover both
+regression and classiﬁcation methods. In fact, many ML
+methods can be used for both tasks.
+All ML methods described here will have one thing in
+common: the ML method quantitatively uses the training
+data to optimize a set of weights (i.e., thresholds) that en-
+able the prediction. These weights are determined either by
+minimizing the error of the ML prediction or maximizing
+a probability of a class label. The two diﬀerent methods
+coincide with the regression and classiﬁcation respectively.
+Alternative names for error that readers might encounter
+in the literature are loss or cost.
+Now that some of the common ML terms has been dis-
+cussed, the following subsections will describe the ML
+methods. It will start with the simplest methods (e.g., lin-
+ear regression) and move to more complex methods (e.g.,
+support vector machines) as the sections proceed. Please
+note that the following subsections aim to provide an intro-
+duction and the intuition behind each method. An example
+of the methods being applied and helpful application dis-
+cussion can be found in Section 3.
+
+3
+Residual! = (+𝑦" −𝑦!)
+!𝑦= 𝑤𝑥+ 𝑏
+Fig. 2. A visual example of linear regression with a single input
+predictor. The x-axis is a synthetic input feature, the y-axis is a synthetic
+output label. The solid black line is the regression ﬁt, and the red dashed
+lines are the residuals.
+a. Linear Regression
+An important concept in ML is when choosing to use
+ML for a task, one should start with the simpler ML models
+ﬁrst. Occam’s razor2 tells us to prefer the simplest solution
+that can solve the task or represent the data. While this
+doesn’t always mean the simplest ML model available, it
+does mean that simpler models should be tried before more
+complicated ones (Holte 1993). Thus, the ﬁrst ML method
+discussed is linear regression which has a long history in
+meteorology (e.g. Malone 1955) and forms the heart of
+the model output statistics product (i.e., MOS; Glahn and
+Lowry 1972) that many meteorologists are familiar with.
+Linear regression is popular because it is a simple method
+that is also computationally eﬃcient. At its simplest form,
+linear regression approximates the value you would like to
+predict (ˆ𝑦) by ﬁtting weight terms (𝑤𝑖) in the following
+equation,
+ˆ𝑦=
+𝑖=𝐷
+∑︁
+𝑖=0
+𝑤𝑖𝑥𝑖.
+(1)
+The ﬁrst predictor (𝑥0) is always 1 so that 𝑤0 is a bias term,
+allowing the function to move from the origin as needed.
+𝐷is the number of features for the task.
+As noted before, with ML, the objective is to ﬁnd 𝑤𝑖
+such that a user-speciﬁed loss function (i.e., error func-
+tion) is minimized. The most common loss function for
+traditional linear regression is the residual summed squared
+error (RSS):
+𝑅𝑆𝑆=
+𝑁
+∑︁
+𝑗=1
+(𝑦𝑗−ˆ𝑦𝑗)2
+(2)
+2https://en.wikipedia.org/wiki/Occam%27s_razor
+where 𝑦𝑗is a true data point, ˆ𝑦𝑗is the predicted data point
+and 𝑁is the total number of data points in the training
+dataset. A graphical example of a linear regression and
+its residuals is shown in Fig. 2. Linear regression using
+residual summed squared error can work very well and
+is a fast learning algorithm, so we suggest it as a base-
+line method before choosing more complicated methods.
+The exact minimization method is beyond the scope of
+this paper, but know that the minimization uses the slope
+(i.e., derivative) of the loss function to determine how to
+adjust the trainable weights. If this sounds familiar, that
+is because it is the same minimization technique learned
+in most ﬁrst year college calculus classes and is a similar
+technique to what is used in data assimilation for numer-
+ical weather prediction (c.f., Chapter 5 and Section 10.5
+in Kalnay 2002; Lackmann 2011). The concept of using
+the derivative to ﬁnd the minimum is repeated throughout
+most ML methods given there is often a minimization (or
+maximization) objective.
+Occasionally datasets can contain irrelevant or noisy
+predictors which can cause instabilities in the learning.
+One approach to address this is to use a modiﬁed ver-
+sion of linear regression known as ridge regression (Hoerl
+and Kennard 1970), which minimizes both the summed
+squared error (like before) and the sum of the squared
+weights called an 𝐿2 penalty.
+Mathematically, the new
+loss function can be described as
+𝑅𝑆𝑆𝑟𝑖𝑑𝑔𝑒=
+𝑁
+∑︁
+𝑗=1
+(𝑦𝑗−ˆ𝑦𝑗)2 +𝜆
+𝐷
+∑︁
+𝑖=0
+𝑤2
+𝑖
+(3)
+Here, 𝜆(which is ≥0) is a user-deﬁned parameter that con-
+trols the weight of the penalty. Likewise, another modiﬁed
+version of linear regression is lasso regression (Tibshirani
+1996) which minimizes the sum of the absolute value of
+the weights. This penalty to learning is also termed an 𝐿1
+penalty. The lasso loss function mathematically is
+𝑅𝑆𝑆𝑙𝑎𝑠𝑠𝑜=
+𝑁
+∑︁
+𝑗=1
+(𝑦𝑗−ˆ𝑦𝑗)2 +𝜆
+𝐷
+∑︁
+𝑖=0
+|𝑤𝑖|
+(4)
+Both lasso and ridge encourage the learned weights to be
+small but in diﬀerent ways. The two penalties are often
+combined to create the elastic-net penalty (Zou and Hastie
+2005)
+𝑅𝑆𝑆𝑒𝑙𝑎𝑠𝑡𝑖𝑐=
+𝑁
+∑︁
+𝑗=1
+(𝑦𝑗−ˆ𝑦𝑗)2 +𝜆
+𝐷
+∑︁
+𝑖=0
+(𝛼𝑤2
+𝑖+ (1−𝛼)|𝑤𝑖|).
+(5)
+In general, the addition of components to the loss function,
+like described in Eq. 3-5, is known as regularization and is
+found in other ML methods. Some recent examples of pa-
+pers using linear regression include subseasonal prediction
+of tropical cyclone parameters (Lee et al. 2020), relating
+
+4
+Fig. 3. A graphical depiction of the sigmoid function (Eq. 6). The
+x-axis is the predicted label value, while the y-axis is the now scaled
+value.
+mesocyclone characteristics to tornado intensity (Sessa and
+Trapp 2020) and short term forecasting of tropical cyclone
+intensity (Hu et al. 2020).
+b. Logistic Regression
+As a complement to linear regression, the ﬁrst classiﬁca-
+tion method discussed here is logistic regression. Logistic
+regression is an extension from linear regression in that it
+uses the same functional form of Eq. 1. The diﬀerences
+lie in how the weights for Eq. 1 are determined and a mi-
+nor adjustment to the output of Eq. 1. More speciﬁcally,
+logistic regression applies the sigmoid function (Fig. 3) to
+the output of Eq. 1 deﬁned as:
+𝑆( ˆ𝑦) =
+1
+1+ 𝑒−ˆ𝑦
+(6)
+Large positive values into the sigmoid results in a value of
+1 while large negative values result in a value of 0. Eﬀec-
+tively, the sigmoid scales the output of Eq. 1 to a range of
+0 to 1, which then can be interpreted like a probability. For
+the simplest case of classiﬁcation involving just two classes
+(e.g., rain or snow), the output of the sigmoid can be inter-
+preted as a probability of either class (e.g., rain or snow).
+The output probability then allows for the classiﬁcation
+to be formulated as the 𝑤𝑖that maximizes the probability
+of a desired class. Mathematically, the classiﬁcation loss
+function for logistic regression can be described as
+loss =
+𝑖=𝐷
+∑︁
+𝑖=0
+−𝑦𝑖log(𝑆( ˆ𝑦)) + (1−𝑦𝑖) log(1−𝑆( ˆ𝑦)).
+(7)
+Like before for linear regression, the expression in Eq. 7
+is minimized using derivatives. If the reader is interested
+𝑃32°F snow)
+𝑃32°F rain)
+Fig. 4. Visualizing the probability of a input feature given the class
+label. This example is created from ﬁve minute weather station obser-
+vations from near Marquette, Michigan (years included: 2005 - 2020).
+Precipitation phase was determined by the present weather sensor. The
+histogram is the normalized number of observations in that temperature
+bin, while the smooth curves are the normal distribution ﬁt to the data.
+Red are raining instances, blue are snowing instances.
+in more information on the mathematical techniques of
+minimization they can ﬁnd more information in Chapter 5
+of Kalnay (2002).
+Logistic regression has been used for a long time within
+meteorology.
+One of the earliest papers using logistic
+regression showed skill in predicting the probability of hail
+greater than 1.9 cm (Billet et al. 1997), while more recent
+papers have used logistic regression to identify storm mode
+(Jergensen et al. 2020), subseasonal prediction of surface
+temperature (Vigaud et al. 2019) and predict the transition
+of tropical cyclones to extratropical cyclones (Bieli et al.
+2020).
+c. Naïve Bayes
+An additional method to do classiﬁcation is known as
+naïve Bayes (Kuncheva 2006), which is named for its use
+of Bayes’s theorem and can be written as the following:
+𝑃(𝑦|𝑥) = 𝑃(𝑦)𝑃(𝑥|𝑦)
+𝑃(𝑥)
+.
+(8)
+In words, Eq. 8 is looking for the probability of some
+label 𝑦(e.g., snow), given a set of input features 𝑥(𝑃(𝑦|𝑥);
+e.g., temperature). This probability can be calculated from
+knowing the probability of the label 𝑦occurring in the
+dataset (𝑃(𝑦); e.g., how frequent it snows) times the prob-
+ability of the input features given it belongs to the class
+𝑦(𝑃(𝑥|𝑦); e.g., how frequently is it 32oF when it’s snow-
+ing), divided by the probability of the input features (𝑃(𝑥)).
+The naïve part of the naïve Bayes algorithm comes from
+
+5
+assuming that all input features 𝑥, are independent of one
+another and the term 𝑃(𝑥|𝑦) can be modeled by an assumed
+distribution (e.g., normal distribution) with parameters de-
+termined from the training data. While these assumptions
+are often not true, the naïve Bayes classiﬁer can be skill-
+ful in practice. A few simpliﬁcation steps results in the
+following
+ˆ𝑦= argmax(log(𝑃(𝑦)) +
+𝑁
+∑︁
+𝑖=0
+log(𝑃(𝑥𝑖|𝑦))).
+(9)
+Again in words, the predicted class (ˆ𝑦) from naïve Bayes is
+the classiﬁcation label (𝑦) such that the sum of the log of
+the probability of that classiﬁcation (𝑃(𝑦)) and the sum of
+log of all the probabilities of the speciﬁc inputs given the
+classiﬁcation (𝑃(𝑥𝑖|𝑦)) is maximized. In order to help vi-
+sualize the quantity 𝑃(𝑥𝑖|𝑦), a graphical example is shown
+in Fig. 4. This example uses surface weather measure-
+ments from a station near Marquette, Michigan where data
+were compiled when it was raining and snowing. Fig. 4
+shows distribution of air temperature (i.e., an input fea-
+ture) given the two classes (i.e., rain vs snow). In order to
+get 𝑃(𝑥𝑖|𝑦), we need to assume an underlying distribution
+function. The common assumed distribution with naïve
+Bayes is the normal distribution
+𝑓(𝑥; 𝜇,𝜎) =
+1
+𝜎
+√
+2𝜋
+𝑒−1
+2 ( 𝑥−𝜇
+𝜎)
+(10)
+where 𝜇is the mean and 𝜎is the standard deviation of the
+training data. While the normal distribution assumption
+for the temperature distribution in Fig. 4 is questionable
+due to thermodynamic constraints that lock the tempera-
+ture at 32oF (i.e., latent cool/heating), naïve bayes can still
+have skill.
+Initially, it might not seem like any sort of
+weights/biases are being ﬁt like the previously mentioned
+methods (e.g., logistic regression), but 𝜇and 𝜎are be-
+ing learned fron the training data. If performance from
+the normal distribution is poor, other distributions can be
+assumed, like a multinomial or a Bernoulli distribution.
+A popular use of naïve Bayes classiﬁcation in the mete-
+orological literature has been the implementation of Prob-
+Severe (e.g., Cintineo et al. 2014, 2018, 2020) which uses
+various severe storm parameters and observations to clas-
+sify the likelihood of any storm becoming severe in the
+next 60 minutes. Additional examples of naïve Bayes clas-
+siﬁers in meteorology have been used for identifying trop-
+ical cyclone secondary eyewall formation from microwave
+imagery (Kossin and Sitkowski 2009), identifying anoma-
+lous propagation in radar data (Peter et al. 2013) and pre-
+cipitation type (e.g., Convective/Stratiform) retrievals from
+geostationary satellites (Grams et al. 2016).
+Fig. 5. A visual representation of the two functions that can be used in
+decision trees for classiﬁcation, Entropy (blue) and Gini impurity (red).
+d. Trees and Forests
+Decision trees are based on a decision making method
+that humans have been using for years: ﬂow charts, where
+the quantitative decision points within the ﬂow chart are
+learned automatically from the data. Early use of decision
+trees in meteorology (e.g., Chisholm et al. 1968) actually
+pre-dated the formal description of the decision tree al-
+gorithm (Breiman 1984; Quinlan 1993; Breiman 2001).
+Since then, tree-based methods have grown in popularity
+and have been demonstrated to predict a variety of com-
+plex meteorological phenomena. Topics include: aviation
+applications (e.g., Williams et al. 2008a,b; Williams 2014;
+Muñoz-Esparza et al. 2020); severe weather (e.g., Gagne
+et al. 2009, 2013; McGovern et al. 2014; Mecikalski et al.
+2015; Lagerquist et al. 2017; Gagne et al. 2017; Czernecki
+et al. 2019; Burke et al. 2020; Hill et al. 2020; Loken et al.
+2020; Gensini et al. 2021; Flora et al. 2021; Loken et al.
+2022); solar power (e.g., McGovern et al. 2015); precipi-
+tation (e.g., Elmore and Grams 2016; Herman and Schu-
+macher 2018b,a; Taillardat et al. 2019; Loken et al. 2020;
+Wang et al. 2020; Mao and Sorteberg 2020; Li et al. 2020;
+Hill and Schumacher 2021; Schumacher et al. 2021); satel-
+lite and radar retrievals (e.g., Kühnlein et al. 2014; Conrick
+et al. 2020; Yang et al. 2021; Zhang et al. 2021) and climate
+related topics (e.g., Cui et al. 2021).
+To start, we will describe decision trees in context of a
+classiﬁcation problem. The decision tree creates splits in
+the data (i.e., decisions) that are chosen such that either the
+Gini Impurity value or the Entropy value decreases after
+the split. Gini Impurity is deﬁned as
+Gini =
+𝑖=𝑘
+∑︁
+𝑖=0
+𝑝𝑖(1−𝑝𝑖)
+(11)
+
+6
+where 𝑝𝑖is the probability of class i (i.e., the number of
+data points labeled class i divided by the total number of
+data points). While Entropy is deﬁned as
+Entropy =
+𝑖=𝑘
+∑︁
+𝑖=0
+𝑝𝑖log2(𝑝𝑖).
+(12)
+Both functions eﬀectively measure how similar the data
+point labels are in each one of the groupings of the tree
+after some split in the data. Envision the ﬂow chart as
+a tree. The decision is where the tree branches into two
+directions, resulting in two separate leaves. The goal of a
+decision tree is to choose the branch that results in a leaf
+having a minimum of Gini or Entropy. In other words, the
+data split would ideally result in two sub-groups of data
+where all the labels are the same within each sub-group.
+Fig. 5 shows both the Gini impurity and entropy for a
+two class problem. Consider the example of classifying
+winter precipitation as rain or snow. From some example
+surface temperature dataset the likely decision threshold
+would be near 32◦F, which would result in the subsequent
+two groupings of data point labels (i.e., snow/rain) having
+a dominant class label (i.e., fraction of class k is near 0
+or 1) and thus having a minimum of Entropy or Gini (i.e.,
+near 0). The actual output of this tree could be either the
+majority class label, or the ratio of the major class (i.e., a
+probabilistic output).
+While it is helpful to consider a decision tree with a
+single decision, also known as a tree with a depth of 1,
+the prediction power of a single decision is limited. A step
+toward more complexity is to include increasing depth (i.e.,
+more decisions/branches). To continue with the rain/snow
+example from the previous paragraph, we could include a
+second decision based on measured wet bulb temperature.
+A tree with depth two will likely have better performance,
+but the prediction power is still somewhat limited.
+An additional step to increase the complexity of decision
+trees, beyond including more predictors, is a commonly
+used method in meteorology: ensembles. While it might
+not be clear here, decision trees become over-ﬁt (i.e., work
+really well for training data, but perform poorly on new
+data) as the depth of the tree increases.
+An alternative
+approach is to use an ensemble of trees (i.e., a forest). Us-
+ing an ensemble of trees forms the basis of two additional
+tree based methods: random forests (Breiman 2001) and
+gradient boosted decision trees (Friedman 2001).
+Random forests are a collection of decision trees that are
+trained on random subsets of data and random subsets of
+input variables from the initial training dataset. In other
+words, the mathematics are exactly the same for each tree,
+the decisions still aim to minimize the loss (e.g., Entropy),
+but each tree is given a diﬀerent random subset of data
+sampled from the original dataset with replacement. Gra-
+dient boosted decision trees are an ensemble of trees that
+instead of training multiple trees on random subsets (i.e.,
+random forest), each tree in the ensemble is successively
+trained on the remaining error from the previous trees. To
+put it another way, rather than minimizing the total error
+on random trees, the reduced error from the ﬁrst decision
+tree is now minimized on the second tree, and the reduced
+error from trees one and two is then minimized on the
+third tree and so on. In order to come up with a single
+prediction out of the ensemble of trees, the predictions can
+be combined through a voting procedure (i.e., count up
+the predicted classes of each tree) or by taking the average
+probabilistic output from each tree. Random forests can
+use either method, while gradient boosted trees are limited
+to the voting procedure.
+While the discussion here has been centered on classi-
+ﬁcation for the tree-based methods, they can be used for
+regression as well. The main alteration to the decision tree
+method to convert to a regression-based problem is the sub-
+stitution of the loss function (i.e., Eq. 11-12). For example
+a common loss function for random forest for regression
+and gradient boosted regression is the same loss function
+as linear regression described in the previous section (e.g.,
+Eq. 2), the residual summed squared error.
+e. Support Vector Machines
+A support vector machine (commonly referred to as
+SVM; Vapnik 1963) is an ML method similar to linear
+and logistic regression. The idea is that a support vector
+machine uses a linear boundary to do its predictions, which
+has a similar mathematical form but written diﬀerently to
+account to vector notation. The equation is
+ˆ𝑦= w𝑇x+ 𝑏
+(13)
+where w is a vector of weights, x is a vector of input fea-
+tures, b is a bias term and ˆ𝑦is the regression prediction.
+In the case of classiﬁcation, only sign of the right side of
+Eq. 13 is used. This linear boundary can be generalized
+beyond two-dimensional problems (i.e., two input features)
+to three-dimensions where the decision boundary is called
+a plane, or any higher order space where the boundary is
+called a hyperplane. The main diﬀerence between linear
+methods discussed in Sections 2a-2b and support vector
+machines is that support vector machines include margins
+to the linear boundary. Formally, the margin is the area
+between the linear boundary and the closest training dat-
+apoint for each class label (e.g., closest rain data point
+and closest snow datapoint). This is shown schematically
+with a synthetic dataset in Fig. 6a. While this is an ideal
+case, usually classes overlap (Fig. 6b), but support vector
+machines can still handle splitting the classes. The opti-
+mization task for support vector machines is stated as the
+following: Find w𝑇such that the margin is maximized.
+In other words, support vector machines aim to maximize
+
+7
+Input Feature 1
+Input Feature 2
+𝒘𝑻𝒙+ 𝑏= 0
+𝒘
+Class 1
+Class 2
+a)
+b)
+Fig. 6. Support vector machine classiﬁcation examples. (a) ideal (synthetic) data where the x and y axis are both input features, while the color
+designates what class each point belongs to. The decision boundary learned by the support vector machine is the solid black line, while the margin
+is shown by the dashed lines. (b) a real world example using NAM18Z forecasts of U and V wind and tipping bucket measurements of precipitation.
+Blue plus markers are raining instances and the red minus signs are non-raining instances. Black lines are the decision boundary and margins.
+the distance between the two closest observations on ei-
+ther side of the hyperplane. Mathematically, the margin
+distance is described as
+margin =
+1
+w𝑇w.
+(14)
+Like before, the maximization is handled by numerical
+techniques to optimize the problem but the resulting so-
+lution will be the hyperplane with the largest separation
+between the classes. A powerful attribute of the support
+vector machine method is that it can be extended to ad-
+ditional mathematical formulations for the boundary, for
+example a quadratic function. Thus the person using sup-
+port vector machines can decide which function would
+work best for their data. Recent applications of support
+vector machines in meteorology include the classiﬁcation
+of storm mode (Jergensen et al. 2020), hindcasts of tropi-
+cal cyclones (Neetu et al. 2020) and evaluating errors with
+quantitative precipitation retrievals in the United States
+(Kurdzo et al. 2020).
+3. Machine Learning Application and Discussion
+This section will discuss the use of all ML methods with
+a familiar use-case: thunderstorms. Speciﬁcally, this sec-
+tion will show two ML applications derived from popular
+meteorological datasets: radar and satellite. The particu-
+lar data used are from the Storm EVent ImageRy dataset
+(SEVIR; Veillette et al. 2020), which contains over 10,000
+storm events from between 2017 and 2019. Each event
+spans four hours and includes measurements from both
+GOES-16 and NEXRAD. An example storm event and
+the 5 measured variables: Red channel visible reﬂectance
+(0.64𝜇m; Channel 2), midtropospheric water vapor bright-
+ness temperature (6.9 𝜇m; Channel 9), clean infrared win-
+dow brightness temperature (10.7 𝜇m; Channel 13), Ver-
+tically Integrated Liquid (VIL; from NEXRAD) and Geo-
+stationary Lightning Mapper (GLM) measured lightning
+ﬂashes are found in Fig. 7. In addition to discussing ML
+in context of the SEVIR dataset, this section will follow the
+general steps to using ML and contain helpful discussions
+of the best practices as well as the most common pitfalls.
+a. Problem Statements
+The SEVIR data will be applied to two tasks: (1) Does
+this image contain a thunderstorm? and (2) How many
+lightning ﬂashes are in this image? To be explicit, we as-
+sume the GLM observations are unavailable and we need
+to use the other measurements (e.g., infrared brightness
+temperature) as features to estimate if there are lightning
+ﬂashes (i.e., classiﬁcation), and how many of them are
+there (i.e., regression). While both of these tasks might be
+considered redundant since we have GLM, the goal of this
+paper is to provide discussion on how to use ML as well
+as discussion on the ML methods themselves. That being
+said, a potential useful application of the trained models
+herein would be to use them on satellite sensors that do not
+have lightning measurements. For example, all generations
+of GOES prior to GOES-16 did not have a lightning sensor
+co-located with the main sensor. Thus, we could poten-
+
+8
+Fig. 7. An example storm image from the Storm EVent ImageRy dataset. This event is from 06 August 2018. (a) the visible reﬂectance (b)
+the mid-tropospheric water vapor brightness temperature (c) the clean infrared brightness temperatures (d) the vertically integrated liquid retrieved
+from NEXRAD and (e) gridded GLM number of ﬂashes. (a) also has annotated locations of representative percentiles that were engineered features
+used for the ML models.
+tially use the ML models trained here to estimate GLM
+measurements prior to GOES-16 (i.e., November 2016).
+b. Data
+The ﬁrst step of any ML project is to obtain data. Here,
+the data are from a public archive hosted on the Amazon
+Web Service. For information of how to obtain the SEVIR
+data as well as the code associated with this manuscript
+see the Data Availability Statement. One major question at
+this juncture is, "How much data is needed to do machine
+learning?". While there does not exist a generic number
+that can apply to all datasets, the idea is to obtain enough
+data such that one’s training data are diverse. A diverse
+dataset is desired because any bias found within the train-
+ing data would be encoded in the ML method (McGovern
+et al. 2021). For example, if a ML model was trained on
+only images where thunderstorms were present, then the
+ML model would likely not know what a non-lightning
+producing storm would look like and be biased. Diversity
+in the SEVIR dataset is created by including random im-
+ages (i.e., no storms) from all around the United States (c.f.
+Figure 2 in Veillette et al. 2020).
+After obtaining the data, it is vital to remove as much
+spurious data as possible before training because the ML
+model will not know how to diﬀerentiate between spu-
+rious data and high quality data.
+A common anecdote
+when using ML models is garbage in, garbage out. The
+SEVIR dataset has already gone through rigorous quality
+control, but this is often not the case with raw meteorolog-
+ical datasets. Two examples of quality issues that would
+likely be found in satellite and radar datasets are satellite
+artifacts (e.g., GOES-17 heat pipe; McCorkel et al. 2019)
+and radar ground clutter (e.g., Hubbert et al. 2009). Clean-
+ing and manipulating the dataset to get it ready for ML
+often takes a researcher 50% - 80% of their time3. Thus,
+do not be discouraged if cleaning one’s datasets is taking
+a large amount of time because a high-quality dataset will
+be best for having a successful ML model.
+Subsequent to cleaning the data, the next step is to en-
+gineer the inputs (i.e., features) and outputs (i.e., labels).
+One avenue to create features is to use every single pixel in
+the image as a predictor. While this could work, given the
+number of pixels in the SEVIR images (589,824 total pix-
+els for one visible image) it is computationally impractical
+to train a ML model with all pixels. Thus, we are looking
+for a set of statistics than can be extracted from each image.
+For the generation of features, domain knowledge is criti-
+3https://www.nytimes.com/2014/08/18/technology/
+for-big-data-scientists-hurdle-to-insights-is-janitor-work.
+html
+
+9
+cal because choosing meteorologically relevant quantities
+will ultimately determine the ML models skill. For the
+ML tasks presented in Section 3a, information about the
+storm characteristics (e.g., strength) in the image would be
+beneﬁcial features. For example, a more intense storm is
+often associated with more lightning. Proxies for estimat-
+ing storm strength would be: the magnitude of reﬂectance
+in the visible channel; how cold brightness temperatures
+in the water vapor and clean infrared channel are; and how
+much vertically integrated water there is. Thus, to charac-
+terize these statistics, we extract the following percentiles
+from each image and variable: 0,1,10,25,50,75,90,99,100.
+To create the labels the number of lightning ﬂashes in
+the image are summed. For Problem Statement 1, an image
+is classiﬁed as containing a thunderstorm if the image has
+at least one ﬂash in the last ﬁve minutes. For Problem
+Statement 2, the sum of all lightning ﬂashes in the past ﬁve
+minutes within the image are used for the regression target.
+Now that the data have been quality controlled and our
+features and labels have been extracted, the next step is
+to split that dataset into three independent sub-categories
+named the training, validation and testing sets. The rea-
+son for these three sub-categories is because of the relative
+ease at which ML methods can "memorize" the training
+data. This occurs because ML models can contain numer-
+ous (e.g., hundreds, thousands, or even millions) learnable
+parameters, thus the ML model can learn to perform well
+on the training data but not generalize to other non-training
+data, which is called over-ﬁtting. In order to assess how
+over-ﬁt a ML model is, it is important to evaluate a trained
+ML model on data outside of its training data (i.e., valida-
+tion and testing sets).
+The training dataset is the largest subset of the total
+amount of data. The reason the training set is the largest is
+because the aforementioned desired outcome of most ML
+models is to generalize on wide variety of examples. Typ-
+ically, the amount of training data is between 70 - 85% of
+the total amount of data available. The validation dataset,
+regularly 5-15% of the total dataset, is a subset of data
+used to assess if a ML model is over-ﬁt and is also used for
+evaluating best model conﬁgurations (e.g., the depth of a
+decision tree). These model conﬁgurations are also known
+as hyperparameters. Machine learning models have nu-
+merous conﬁgurations and permutations that can be varied
+and could impact the skill of any one trained ML model.
+Thus, common practice is to systematically vary the avail-
+able hyperparameter choices, also called a grid search, and
+then evaluate the diﬀerent trained models based on the val-
+idation dataset. Hyperparamters will be discussed in more
+detail later. The test dataset is the last grouping that is set
+aside to the very end of the ML process. The test dataset
+is often of similar size to the validation dataset, but the
+key diﬀerence is that the test dataset is used after all hy-
+perparameter variations have been concluded. The reason
+for this last dataset is because when doing the systematic
+varying of the hyperparameters the ML practitioner is in-
+advertently tuning a ML model to the validation dataset.
+One will often choose speciﬁc hyperparameters in such
+a way to achieve the best performance on the validation
+dataset. Thus, to provide a truly unbiased assessment of
+the trained ML model skill for unseen data, the test dataset
+is set aside and not used until after training all ML models.
+It is common practice outside of meteorology (i.e., data
+science) to randomly split the total dataset into the three
+subsets. However, it is important to strive for independence
+of the various subsets. A data point in the training set
+should not be highly correlated to a data point in the test
+set. In meteorology this level of independence is often
+challenging given the frequent spatial and temporal auto-
+correlations in meteorologic data. Consider the SEVIR
+dataset. Each storm event has four hours of data broken
+into ﬁve minute time steps. For one storm event, there is
+a large correlation between adjacent ﬁve minute samples.
+Thus, randomly splitting the data would likely provide a
+biased assessment of the true skill of the ML model. In
+order to reduce the number of correlated data points across
+subsets, time is often used to split the dataset. For our
+example, we choose to split the SEVIR data up by training
+on 01 Jan 2017 - 01 Jun 2019 and split every other week in
+the rest of 2019 into the validating and testing sets. This
+equates to a 72%, 13% and 15% split for the training,
+validation and test sets respectively. In the event that the
+total dataset is small and splitting the data into smaller
+subsets creates less robust statistics, a resampling method
+known as k-fold cross-validation (e.g., Bischl et al. 2012;
+Goodfellow et al. 2016) can be used. The SEVIR dataset
+was suﬃciently large that we chose not to do k-fold cross-
+validation, but a meteorological example using it can be
+found in Shield and Houston (2022).
+c. Training and Evaluation
+1) Classification
+As stated in Section 3.a, task (1) is to classify if an image
+contains a thunderstorm. Thus, the classiﬁcation meth-
+ods available to do this task are: logistic regression, naïve
+Bayes, decision trees, random forest, gradient boosted trees
+and support vector machines. In order to ﬁnd an optimal
+ML model, it is often best to try all methods available.
+While this might seem like a considerable amount of ad-
+ditional eﬀort, the ML package used in this tutorial (i.e.,
+scikit learn4) uses the same syntax for all methods (e.g.,
+method.ﬁt(𝑋,𝑦), method.predict(𝑋𝑣𝑎𝑙)),. Thus, ﬁtting all
+available methods does not require substantially more ef-
+fort from the ML practitioner and will likely result in ﬁnd-
+ing a best performing model.
+To start oﬀ, all methods are initially trained using their
+default hyperparameters in scikit-learn and just one input
+feature, the minimum infrared brightness temperature (𝑇𝑏).
+4https://scikit-learn.org/stable/
+
+10
+Fig. 8. The normalized distributions of minimum brightness tem-
+perature (𝑇𝑏) from the clean infrared channel for thunderstorm images
+(blue;T-storm) and non-thunderstorm images (red; No T-storm).
+We choose to use 𝑇𝑏because meteorologically it is a proxy
+for the depth of the storms in the domain, which is cor-
+related to lightning formation (Yoshida et al. 2009). To
+assess the predictive power of this variable, the distribu-
+tions of 𝑇𝑏for thunderstorms and no thunderstorms are
+shown in Fig. 8. As expected, 𝑇𝑏for thunderstorms show
+more frequent lower temperatures than non-thunderstorm
+images. Training all methods using 𝑇𝑏achieves an accu-
+racy of 80% on the validation dataset. While accuracy is a
+common and easy to understand metric, it is best to always
+use more than one metric when evaluating ML methods.
+Another common performance metric for classiﬁcation
+tasks is the Area Under the Curve (AUC). More speciﬁcally
+the common area metric is associated with the Receiver
+Operating Characteristics curve (ROC). The ROC curve is
+calculated from the relationship between the Probability of
+False Detection (POFD) and the Probability of Detection
+(POD). Both POFD and POD parameters are calculated
+from determining parameters within a contingency table
+which are the true positives (both the ML prediction and
+label say thunderstorm), false positives (ML prediction
+predicts thunderstorm, label has no thunderstorm), false
+negatives (ML prediction is no thunderstorm, label shows
+there is a thunderstorm) and true negatives (ML says no
+thunderstorm, label says no thunderstorm). The POFD and
+POD are deﬁned by
+POFD =
+FalsePositive
+TruePositive+FalsePositive.
+(15)
+POD =
+TruePositive
+TruePositive+FalseNegative.
+(16)
+All of the ML models, except support vector machines
+(as coded in sklearn), can provide a probabilistic estimation
+of the classiﬁcation (e.g., this image is 95% likely to have
+lightning in it).
+When calculating the accuracy before,
+we assumed a threshold of 50% to designate what the
+ML prediction was. In order to get the ROC curve, the
+threshold probability is instead varied from 0% to 100%.
+The resulting ROC curves for all of the ML methods except
+support vector machines are shown in Fig. 9a. We see that
+for this simple one feature model, all methods are still
+very similar and have AUCs near 0.9 (Fig. 9a), which is
+generally considered good performance5.
+An additional method for evaluating the performance
+of classiﬁcation method is called a performance diagram
+(Figure 9b; Roebber 2009). The performance diagram is
+also calculated from the contingency table, using the POD
+again for the y-axis, but this time the x-axis is the success
+ratio (SR) which is deﬁned as
+SR =
+TruePositive
+TruePositive+FalsePositive.
+(17)
+From this diagram, several things can be gleaned about the
+models performance. In general, the top right corner is
+where ’best’ performing models are found. This area is
+characterized by models that capture nearly all events (i.e.,
+thunderstorms), while not predicting a lot of false alarms
+(i.e., false positives). This corner is also associated with
+high values of critical success index (CSI; ﬁlled contours
+Fig. 9b), deﬁned as
+CSI =
+TruePositive
+TruePositive+FalsePositive+FalseNegative.
+(18)
+which is a metric that shows a model’s performance without
+considering the true negatives. Not considering the true
+negatives is important because true negatives can dominate
+ML tasks in meteorology given the often rare nature of
+events with large impacts (e.g., ﬂoods, hail, tornadoes).
+The last set of lines on this diagram are the frequency
+bias contours (dashed grey lines Fig. 9b). These contours
+indicate if a model is over-forecasting or under-forecasting.
+For the simple ML models trained, even though most of
+them have a similar accuracy and AUC, the performance
+diagram suggests their performance is indeed diﬀerent.
+Consider the tree based methods (green box; Fig.
+9b).
+They are all eﬀectively at the same location with a POD of
+about 0.9 and a SR of about 0.75, which is a region that
+has a frequency bias of almost 1.5. Meanwhile the logistic
+regression, support vector machines and naïve Bayes meth-
+ods are much closer to the frequency bias line of 1, while
+having a similar CSI as the tree based methods. Thus,
+after considering overall accuracy, AUC and the perfor-
+mance diagram, the best performing model would be either
+the logistic regression, support vector machines or naïve
+Bayes.
+At this junction, the practitioner has the option
+5No formal peer reviewed journal states this, it is more of a rule of
+thumb in machine learning practice
+
+11
+a)
+b)
+Fig. 9. Performance metrics from the simple classiﬁcation (only using 𝑇𝑏). (a) Receiver Operating Characteristic (ROC) curves for each ML
+model (except support vector machines), logistic regression (LgR; blue), naïve Bayes (NB; red), decision tree (DT; geen), random forest (RF;
+yellow) and gradient boosted trees (GBT; light green). The area under the ROC curve is reported in the legend. (b) Performance Diagram for all
+ML models (same colors as a). Color ﬁll is the corresponding CSI value for each Success Ratio-Probability of Detection (SR, POD) pair. Dashed
+contours are the frequency bias.
+to consider if they want a slightly over-forecasting system
+or a slightly under-forecasting system. For the thunder-
+storm, no-thunderstorm task, there are not many implica-
+tions for over-forecasting or under-forecasting. However,
+developers of a tornado prediction model may prefer a sys-
+tem that produces more false positives (over-forecasting;
+storm warned, no tornado) than false negatives (under-
+forecasting; storm not warned, tornado) as missed events
+could have signiﬁcant impact to life and property. It should
+be clear that without going beyond a single metric, this
+diﬀerentiation between the ML methods would not be pos-
+sible.
+While the previous example was simple by design, we
+as humans could have used a simple threshold at the inter-
+section of the two histograms in Fig. 8 to achieve similar
+accuracy (e.g., 81%; not shown). The next logical step
+with the classiﬁcation task would be to use all available
+features. One important thing to mention at this step is
+that it is good practice to normalize input features. Some
+of the ML methods (e.g., random forest) can handle in-
+puts of diﬀerent magnitudes (e.g., CAPE is on the order
+of 100s to 1000s, but Lifted Index is on the order of 1s to
+10s), but others (e.g., logistic regression) will be uninten-
+tionally biased towards larger magnitude features if you do
+not scale your input features. Common scaling methods
+include min-max scaling and scaling your input features
+to have mean 0 and standard deviation of 1 (i.e., standard
+anomaly) which are deﬁned mathematically as
+minmax =
+𝑥−𝑥𝑚𝑖𝑛
+𝑥𝑚𝑎𝑥−𝑥𝑚𝑖𝑛
+.
+(19)
+and
+standard anom. = 𝑥−𝜇
+𝜎
+(20)
+respectively. In Eq. 19, 𝑥𝑚𝑖𝑛is the minimum value within
+the training dataset for some input feature 𝑥while 𝑥𝑚𝑎𝑥is
+the maximum value in the training dataset. In Eq. 20, 𝜇
+is the mean of feature 𝑥in the training dataset and 𝜎is the
+standard deviation. For this paper, the standard anomaly is
+used.
+Using all available input features yields an accuracy of
+90%, 84%, 86%, 91%, 90%, 89% for logistic regression,
+naïve Bayes, decision tree, random forest, gradient boosted
+trees and support vector machines respectively. Beyond the
+relatively good accuracy, the ROC curves are shown in Fig.
+10a. This time there are generally two sets of curves, one
+better performing group (logistic regression, random for-
+est, gradient boosted trees and support vector machines)
+with AUCs of 0.97 and a worse performing group (naïve
+Bayes and decision tree) AUCs around 0.87. This sep-
+aration coincides with the ﬂexibility of the classiﬁcation
+methods. The better performing groups are better set to
+deal with many features and non-linear interactions of the
+features, while the worse performing group is a bit more
+restricted in how it combines many features. Considering
+
+12
+a)
+b)
+Fig. 10. As in Figure 9, but now trained with all available predictors. The annotations from Fig. 9 have been removed.
+the performance diagram (Fig. 10b), the same grouping
+of high AUC performing models have higher CSI scores
+(> 0.8) and have little to no frequency bias. Meanwhile
+the lower AUC performing models have lower CSI (0.75)
+and NB has a slight overforecasting bias. Overall, the ML
+performance on classifying if an image has a thunderstorm
+is doing well with all predictors. While a good performing
+model is a desired outcome of ML, at this point we do not
+know how the ML is making its predictions. This is part
+of the ’black-box’ issue of ML and does not lend itself to
+being consistent with the ML user’s prior knowledge (see
+note in introduction on consistency; Murphy 1993).
+In order to alleviate some of opaqueness of the ML
+black-box, one can interrogate the trained ML models by
+asking: "What input features are most important to the
+decision?" and "Are the patterns the ML models learned
+physical (e.g., follow meteorological expectation)?". The
+techniques named permutation importance (Breiman 2001;
+Lakshmanan et al. 2015) and accumulated local eﬀects
+(ALE; Apley and Zhu 2020) are used to answer these
+two questions respectively. Permutation importance is a
+method in which the relative importance of a input fea-
+ture is quantiﬁed by considering the change in evaluation
+metric (e.g., AUC) when that input variable is shuﬄed
+(i.e., randomized). The intuition is that the most important
+variables when shuﬄed will cause the largest change to
+the evaluation metric. There are two main ﬂavors of per-
+mutation importance, named single-pass and multi-pass.
+Single-pass permutation importance goes through each in-
+put variable and shuﬄes them one by one, calculating the
+change in the evaluation metrics. Multi-pass permutation
+importance uses the result of the single-pass, but progres-
+sively permutes features. In other words, features are suc-
+cessively permuted in the order that they were determined
+as important (most important then second most impor-
+tant etc) from the single pass but are now left shuﬄed.
+The speciﬁc name for the method we have been describ-
+ing is the backward multi-pass permutation importance.
+The backward name comes from the direction of shuf-
+ﬂing, starting will all variables unshuﬄed and shuﬄing
+more and more of them. There is the opposite direction,
+named forward multi-pass permutation importance, where
+the starting point is that all features are shuﬄed to start.
+Then each feature is unshuﬄed in order of their importance
+from the single-pass permutation importance. For visual
+learners, see the animations (for the backward direction;
+Fig. ES4 and Fig. ES5) in the supplement of McGovern
+et al. (2019). The reason for doing multi-pass permutation
+importance is because correlated features could result in
+falsely identifying non-important variables using the single
+pass permutation importance. The best analysis of the per-
+mutation test is to use both the single pass and multi-pass
+tests in conjunction.
+The top ﬁve most important features for the better per-
+forming models (i.e., logistic regression, random forest and
+gradient boosted trees) as determined by permutation im-
+portance are shown in Fig. 11. For all ML methods both
+the single and multi-pass test show that the maximum verti-
+cally integrated liquid is the most important feature, while
+the minimum brightness temperature from the clean in-
+frared and midtropospheric water vapor channels are found
+within the top 5 predictors (except multi-pass test for lo-
+gistic regression). In general, the way to interpret these are
+to take the consensus over all models which features are
+
+13
+Fig. 11. Backward permutation importance test for the best performing classiﬁcation ML models. Single pass results are in the top row, while
+multi-pass forward results are for the bottom row. Each column corresponds to a diﬀerent ML method: logistic regression (a,d), random forest (b,e)
+and gradient boosted trees (c,f). Bars are colored by their source, yellow for the vertically integrated liquid (VIL), red for the infrared (IR), blue for
+water vapor (WV) and black for visible (VIS). Number subscripts correspond to the percentile of that variable. The dashed black line is the original
+AUC value when all features are not shuﬄed.
+important. At this point it time to consider if the most im-
+portant predictors make meteorological sense. Vertically
+integrated liquid has been shown to have a relationship to
+lightning (e.g., Watson et al. 1995) and is thus plausible
+to be the most important predictor. Similarly, the mini-
+mum brightness temperature at the water vapor and clean
+infrared channels also makes physical sense because lower
+temperatures are generally associated with taller storms.
+We could also reconcile the maximum infrared brightness
+temperature (Fig 11a) as a proxy for the surface tempera-
+ture which correlates to buoyancy, but note that the relative
+change in AUC with this feature is quite small. Conversely,
+any important predictors that don’t align with traditional
+meteorological knowledge may require further exploration
+to determine why the model is placing such weight on those
+variables. Does the predictor have some statistical corre-
+lation with the meteorological event that is unexplained by
+past literature, or are there nonphysical characteristics of
+the data that may be inﬂuencing the model during training?
+In the latter case, it is possible that your model might be
+getting the right answer for the wrong reasons.
+Meanwhile minimum brightness temperature at both the
+water vapor and clean infrared channels also make physi-
+cal sense since lower temperatures are related with taller
+storms. We could also reconcile the max infrared bright-
+ness temperature as a proxy for the surface temperature,
+which correlates to buoyancy, but not that the relative
+change in AUC with this feature is quite small.
+If any
+the top predictors don’t make sense meteorologically, then
+your model might be getting the right answer for the wrong
+reasons.
+Accumulated local eﬀects are where small changes to
+input features and their associated change on the output of
+the model are quantiﬁed. The goal behind ALE is to in-
+vestigate the relationship between an input feature and the
+output. ALE is performed by binning the data based on the
+feature of interest. Then for each example in each bin, the
+feature value is replaced by the edges of the bin. The mean
+diﬀerence in the model output from the replaced feature
+
+14
+Fig. 12. Accumulated local eﬀects (ALE) for (a) the maximum Vertically Integrated Liquid (VILmax), (b) the minimum brightness temperature
+from infrared (IRmin) and (c) the minimum brightness temperature from the water vapor channel (WVmin). Lines correspond to all the ML methods
+trained (except support vector machines) and colors match Fig. 9. Grey histograms in the background are the counts of points in each bin.
+value is then used as the ALE for that bin. This process is
+repeated for all bins which result in a curve. For example,
+the ALE for some of the top predictors of the permutation
+test are shown in in Fig. 12. At this step, the ALEs can be
+mainly used to see if the ML models have learned physi-
+cally plausible trends with input features. For the vertically
+integrated liquid, all models show that as the max vertically
+integrated liquid increases from about 2 𝑘𝑔𝑚2 to 30 𝑘𝑔𝑚2
+the average output probability of the model will increase,
+but values larger than 30 𝑘𝑔𝑚2 generally all have the same
+local eﬀect on the prediction (Fig. 12a). As for the mini-
+mum clean infrared brightness temperature, the magnitude
+of the average change is considerably diﬀerent across the
+diﬀerent models, but generally all have the same pattern.
+As the minimum temperature increases from -88◦C to -
+55◦C, the mean output probability decreases: temperatures
+larger than -17 ◦C have no change (Fig. 12b). Lastly, all
+but the logistic regression shows a similar pattern with the
+minimum water vapor brightness temperature, but notice
+the magnitude of the y-axis (Fig. 12c). Much less change
+occurs with this feature. For interested readers, additional
+interpretation techniques and examples can be found in
+Molnar (2022).
+2) Regression
+As stated in Section 3.a, task (2) is to predict the number
+of lightning ﬂashes inside an image. Thus, the regression
+methods available to do this task are: linear regression,
+decision tree, random forest, gradient boosted trees and
+support vector machines. Similar to task (1) a simple sce-
+nario is considered ﬁrst, using 𝑇𝑏as the lone predictor.
+Figure 13 shows the general relationship between 𝑇𝑏and
+the number of ﬂashes in the image. For 𝑇𝑏> -25◦𝐶, most
+images do not have any lightning, while 𝑇𝑏< -25◦𝐶shows
+a general increase of lightning ﬂashes. Given there are a lot
+of images with 0 ﬂashes (approximately 50% of the total
+Fig. 13. The training data relationship between the minimum bright-
+ness temperature from infrared (𝑇𝑏) and the number of ﬂashes detected
+by GLM. All non-thunderstorm images (number of ﬂashes equal to 0)
+are in black.
+dataset; black points in Fig. 13), the linear methods will
+likely struggle to capture a skillful prediction. One way to
+improve performance would be to only predict the num-
+ber of ﬂashes on images where there is non-zero ﬂashes.
+While this might not seem like a viable way forward since
+non-lightning cases would be useful to predict, in practice
+we could leverage the very good performance of the classi-
+ﬁcation model from Section 3.c.1, and then use the trained
+regression on images that are conﬁdent to have at least one
+ﬂash in them. An example of this done in the literature is
+
+15
+Gagne et al. (2017) where hail size predictions were only
+made if the classiﬁcation model said there was hail.
+As before, all methods are ﬁt on the training data initially
+using the default hyperparameters.
+A common way to
+compare regression model performance is to create a one-
+to-one plot, which has the predicted number of ﬂashes on
+the x-axis and the true measured number of ﬂashes on
+the y-axis. A perfect model will show all points tightly
+centered along the diagonal of the plot.
+This is often
+the quickest qualitative assessment of how a regression
+model is performing. While 𝑇𝑏was well suited for the
+classiﬁcation of thunderstorm/no-thunderstorm, it is clear
+that ﬁtting a linear model to the data in Fig. 13 did not
+do well (Fig. 14a,e), leading to a strong over-prediction of
+the number of lightning ﬂashes in an images with less than
+100 ﬂashes, while under-predicting the number of ﬂashes
+for images with more than 100 ﬂashes. The tree based
+methods tend to do better, but there is still a large amount
+of scatter and an over estimation of storms with less than
+100 ﬂashes.
+In order to tie quantitative metrics to the performance
+of each model the following are common metrics calcu-
+lated: Mean Bias, Mean Absolute Error (MAE), Root
+Mean Squared Error (RMSE) and coeﬃcient of determi-
+nation (𝑅2). Their mathematical representations are the
+following:
+Bias = 1
+𝑁
+𝑁
+∑︁
+𝑗=1
+(𝑦𝑗−ˆ𝑦𝑗),
+(21)
+MAE = 1
+𝑁
+𝑁
+∑︁
+𝑗=1
+|𝑦𝑗−ˆ𝑦𝑗|
+(22)
+RMSE =
+v
+u
+t
+1
+𝑁
+𝑁
+∑︁
+𝑗=1
+(𝑦𝑗−ˆ𝑦𝑗)2
+(23)
+R2 = 1−
+Í𝑁
+𝑗=1(𝑦𝑗−ˆ𝑦𝑗)2
+Í𝑁
+𝑗=1(𝑦𝑗−¯𝑦)2
+(24)
+All of these metrics are shown in Fig. 15. In general,
+the metrics give a more quantitative perspective to the one-
+to-one plots. The poor performance of the linear methods
+shows, with the two worst performances being the support
+vector machines and linear regression with biases of 71 and
+6 ﬂashes respectively. While no method provides remark-
+able performance, the random forest and gradient boosted
+trees perform better with this single feature model (show
+better metrics holistically).
+As before, the next logical step is to use all available
+features to predict the number of ﬂashes: those results
+are found in Fig.
+16 and 17.
+As expected, the model
+performance increases. Now all models show a general
+correspondence between the predicted number of ﬂashes
+and the true number of ﬂashes in the one-to-one plot (Fig.
+16). Meanwhile the scatter for random forest and gradient
+boosted trees has reduced considerably when comparing to
+the single input models (Fig. 16c,d). While comparing the
+bias of the models trained with all predictors is relatively
+similar, the other metrics are much improved, showing
+large reductions in MAE, RMSE and increases in 𝑅2 (Fig.
+17) for all methods except decision trees. This reinforces
+that fact that similar to the classiﬁcation example, it is
+always good to compare more than one metric.
+Since the initial ﬁtting of the ML models used the default
+parameters, there might be room for tuning the models to
+have better performance. Here we will show an example
+of some hyperparameter tuning of a random forest. The
+common parameters that can be altered in a random forest
+include, the maximum depth of the trees (i.e., number of
+decisions in a tree) and the number of trees in the forest.
+The formal hyperparameter search will use the full training
+dataset, and systematically vary the depth of the trees from
+1 to 10 (in increments of 1) as well as the number of trees
+from 1 to 100 (1,5,10,25,50,100). This results in 60 total
+models that are trained.
+In order to evaluate which is the best conﬁguration, the
+same metrics as before are shown in Fig. 18 as a function of
+the depth of the trees. The random forest quickly gains skill
+with added depth beyond one, with all metrics improving
+for both the training (dashed lines) and validation datasets
+(solid lines). Beyond a depth of four, the bias, MAE and
+RMSE all stagnate, but the 𝑅2 value increases until a depth
+of eight where the training data continue to increase. There
+does not seem to be that large of an eﬀect of increasing the
+number of trees beyond 10 (color change of lines). The
+characteristic of increasing training metric skills but no
+increase (or a decrease) to validation data skill is the over-
+ﬁtting signal we discussed in Section 3.b. Thus, the best
+random forest model choice for predicting lightning ﬂashes
+is a random forest with a max depth of eight and a total
+of 10 trees. The reason we choose 10 trees, is because in
+general choosing a simpler model is less computationally
+expensive to use as well as a more interpretable than a
+model with 1000 trees.
+d. Testing
+As mentioned before, the test dataset is the dataset you
+hold out until the end when all hyperparameter tuning has
+ﬁnished so that there is no unintentional tuning of the
+ﬁnal model conﬁguration to a dataset. Thus, now that we
+have evaluated the performance of all our models on the
+validation dataset it is time to run the same evaluations as
+in Section 3.c.1 and Section 3.c.2. These test results are
+the end performance metrics that should be interpreted as
+the expected ML performance on new data (e.g., the ML
+applied in practice). For the ML models here the metrics
+
+16
+Fig. 14. The one-to-one relationship between the predicted number of lightning ﬂashes from the ML learning models trained on only 𝑇𝑏(x-axis;
+ˆ𝑦) and the number of measure ﬂashes from GLM (y-axis; 𝑦). Each marker is one observation. Meanwhile areas with more than 100 points in close
+proximity are shown in the colored boxes. The lighter the shade of the color, the higher density of points. (a) linear regression (LnR; reds), (b)
+decision tree (DT; blues), (c) random forest (RF; oranges), (d) gradient boosted trees (GBT; purples) and (e) linear support vector machines (SVM;
+greys).
+are very similar as the validation set. For brevity the extra
+ﬁgures are included in the appendix (Fig A1-A3).
+4. Summary and Future Work
+This manuscript was the ﬁrst of two Machine Learning
+(ML) tutorial papers designed for the operational meteo-
+rology community. This paper supplied a survey of some
+of the most common ML methods. All ML methods de-
+scribed here are considered supervised methods, meaning
+the data the models are trained from include pre-labeled
+truth data.
+The speciﬁc methods covered included lin-
+ear regression, logistic regression, decision trees, random
+forests, gradient boosted decision trees, naïve Bayes and
+support vector machines. The overarching goal of the paper
+was to introduce the ML methods in such a way that ML
+methods are more familiar to readers as they encounter
+them in the operational community and within the gen-
+eral meteorological literature. Moreover, this manuscript
+provided ample references of published meteorological ex-
+amples as well as open-source code to act as catalysts for
+readers to adapt and try ML on their own datasets and in
+their workﬂows.
+Additionally, this manuscript provided a tutorial exam-
+ple of how to apply ML to a couple meteorological tasks
+using the Storm EVent ImageRy dataset (SEVIR; Veillette
+et al. 2020) dataset. We:
+1. Discussed the various steps of preparing data for
+ML (i.e., removing artifacts; engineering features,
+train/val/test splits; Section 3.b)
+2. Conducted a classiﬁcation task to predict if satellite
+images had lightning within them. This section in-
+cluded discussions of training, evaluation and inter-
+rogation of the trained ML models (Section 3.c.1)
+3. Exhibited a regression task to predict the number of
+lightning ﬂashes in a satellite image. This section also
+contained discussions of training/evaluation as well as
+an example of hyperparameter tuning (Section 3.c.2)
+4. Released python code to conduct all steps and exam-
+ples in this manuscript (see Data Availability State-
+ment)
+The follow on paper in this series will discuss a more
+complex, yet potentially more powerful, grouping of ML
+
+17
+Fig. 15. Validation dataset metrics for all ML models. Colors are
+the same as in Fig. 14. Exact numerical value is reported on top of each
+bar.
+methods: neural networks and deep learning. Like a lot of
+the ML methods described in this paper, neural networks
+aren’t necessarily new (Rumelhart et al. 1986) and were
+ﬁrst applied to meteorology topics decades ago (e.g., Key
+et al. 1989; Lee et al. 1990). Although, given the expo-
+nential growth of computing resources and dataset sizes,
+research using neural networks and deep learning in mete-
+orology has been accelerating (e.g., Fig 1c; Gagne et al.
+2019; Lagerquist et al. 2020; Cintineo et al. 2020; Chase
+et al. 2021; Hilburn et al. 2021; Lagerquist et al. 2021;
+Molina et al. 2021; Ravuri et al. 2021). Thus, it is im-
+portant that operational meteorologists also understand the
+basics of neural networks and deep learning.
+
+18
+Fig. 16. As in Fig. 14, but now the x-axis is provided from the ML models trained with all available input features.
+Fig. 17. As in Fig. 15, but for ML models trained with all available
+input features.
+Fig. 18. Hyperparameter tuning of a random forest for predicting the
+number of lightning ﬂashes. All input features are used.Solid lines are
+the validation dataset while the dashed lines are the training data. The
+vertical dotted line is the depth of trees where over-ﬁtting begins.
+
+19
+Acknowledgments.
+This material is based upon work
+supported by the National Science Foundation under Grant
+No.
+ICER-2019758, supporting authors RJC, AM and
+AB. Author DRH was provided support by NOAA/Oﬃce
+of Oceanic and Atmospheric Research under NOAA-
+University of Oklahoma Cooperative Agreements number
+NA16OAR4320115 and number NA21OAR4320204, U.S.
+Department of Commerce. The scientiﬁc results and con-
+clusions, as well as any views or opinions expressed herein,
+are those of the authors and do not necessarily reﬂect the
+views of NOAA or the Department of Commerce.
+We want to acknowledge the work put forth by the
+authors of the SEVIR dataset (Mark S. Veillette, Sid-
+dharth Samsi and Christopher J. Mattioli) for making a
+high-quality free dataset. We would also like to acknowl-
+edge the open-source python community for providing their
+tools for free. Speciﬁcally, we acknowledge Google Colab
+(Bisong 2019), Anaconda (Anaconda 2020), scikit-learn
+(Pedregosa et al. 2011), Pandas (Wes McKinney 2010),
+Numpy (Harris et al. 2020) and Jupyter (Kluyver et al.
+2016).
+Data availability statement.
+As an eﬀort to catalyse
+the use and trust of machine learning within meteorology
+we have supplied a github repository with a code tutorial of
+a lot of the same things discussed in this paper. The latest
+version of github repository can be located here: https:
+//github.com/ai2es/WAF_ML_Tutorial_Part1.
+If
+you are interested in the version of the repository that
+was available at time of publication please see the zendo
+archive of version 1 here:
+URL. The original github
+repo for SEVIR is located here: https://github.com/
+MIT-AI-Accelerator/neurips-2020-sevir.
+APPENDIX
+Testing dataset ﬁgures
+This appendix contains the test dataset evaluations for
+both the classiﬁcation task (Fig. A1) and the regression
+task (Fig. A2-A3). Results are largely the same as the
+validation set, so to save space they were included here.
+
+20
+a)
+b)
+Fig. A1. As in Figure 9, but now for the test dataset
+
+21
+Fig. A2. As in Fig. 14, but for the test dataset
+
+22
+Fig. A3. As in Fig. 15, but for the test dataset
+
+23
+References
+Anaconda, 2020: Anaconda software distribution. Anaconda Inc., URL
+https://docs.anaconda.com/.
+Apley,
+D. W.,
+and J. Zhu,
+2020:
+Visualizing the eﬀects of
+predictor variables in black box supervised learning models.
+Journal of the Royal Statistical Society:
+Series B (Statistical
+Methodology), 82 (4), 1059–1086, https://doi.org/https://doi.org/10.
+1111/rssb.12377, URL https://rss.onlinelibrary.wiley.com/doi/abs/
+10.1111/rssb.12377, https://rss.onlinelibrary.wiley.com/doi/pdf/10.
+1111/rssb.12377.
+Bieli, M., A. H. Sobel, S. J. Camargo, and M. K. Tippett, 2020: A statis-
+tical model to predict the extratropical transition of tropical cyclones.
+Weather and Forecasting, 35 (2), 451 – 466, https://doi.org/10.
+1175/WAF-D-19-0045.1, URL https://journals.ametsoc.org/view/
+journals/wefo/35/2/waf-d-19-0045.1.xml.
+Billet, J., M. DeLisi, B. Smith, and C. Gates, 1997: Use of regres-
+sion techniques to predict hail size and the probability of large hail.
+Weather and Forecasting, 12 (1), 154–164.
+Bischl, B., O. Mersmann, H. Trautmann, and C. Weihs, 2012:
+Resampling methods for meta-model validation with recommen-
+dations for evolutionary computation. Evol. Comput., 20 (2),
+249–275, https://doi.org/10.1162/EVCO_a_00069, URL https://doi.
+org/10.1162/EVCO_a_00069.
+Bisong, E., 2019: Google Colaboratory, 59–64. Apress, Berkeley, CA,
+https://doi.org/10.1007/978-1-4842-4470-8_7, URL https://doi.org/
+10.1007/978-1-4842-4470-8_7.
+Bonavita, M., and Coauthors, 2021:
+Machine learning for earth
+system observation and prediction. Bulletin of the American Me-
+teorological Society, 102 (4), E710 – E716, https://doi.org/10.
+1175/BAMS-D-20-0307.1, URL https://journals.ametsoc.org/view/
+journals/bams/102/4/BAMS-D-20-0307.1.xml.
+Breiman, L., 1984: Classiﬁcation and Regression Trees. Routledge, New
+York, New York.
+Breiman, L., 2001: Random forests. Machine Learning, 45, 5–32, URL
+https://doi.org/10.1023/A:1010933404324.
+Burke, A., N. Snook, D. J. Gagne II, S. McCorkle, and A. McGovern,
+2020: Calibration of Machine Learning–Based Probabilistic Hail
+Predictions for Operational Forecasting. Weather and Forecasting,
+35 (1), 149–168, https://doi.org/10.1175/WAF-D-19-0105.1.
+Cains, M. G., and Coauthors, 2022:
+Nws forecasters’ perceptions
+and potential uses of trustworthy ai/ml for hazardous weather
+risks, URL https://ams.confex.com/ams/102ANNUAL/meetingapp.
+cgi/Paper/393121, american meteorological society, 102 annual
+meeting.
+Chase, R. J., S. W. Nesbitt, and G. M. McFarquhar, 2021: A dual-
+frequency radar retrieval of two parameters of the snowfall particle
+size distribution using a neural network. Journal of Applied Me-
+teorology and Climatology, 60 (3), 341 – 359, https://doi.org/10.
+1175/JAMC-D-20-0177.1, URL https://journals.ametsoc.org/view/
+journals/apme/60/3/JAMC-D-20-0177.1.xml.
+Chisholm, D., J. Ball, K. Veigas, and P. Luty, 1968: The diagnosis of
+upper-level humidity. Journal of Applied Meteorology, 7 (4), 613–
+619.
+Cintineo, J., M. Pavolonis, J. Sieglaﬀ, and D. Lindsey, 2014: An empir-
+ical model for assessing the severe weather potential of developing
+convection. Weather and Forecasting, 29 (3), 639–653.
+Cintineo, J., and Coauthors, 2018: An empirical model for assessing
+the severe weather potential of developing convection. Weather and
+Forecasting, 33 (1), 331–345.
+Cintineo, J. L., M. J. Pavolonis, J. M. Sieglaﬀ, L. Cronce, and J. Brun-
+ner, 2020: Noaa probsevere v2.0—probhail, probwind, and probtor.
+Weather and Forecasting, 35 (4), 1523 – 1543, https://doi.org/10.
+1175/WAF-D-19-0242.1, URL https://journals.ametsoc.org/view/
+journals/wefo/35/4/wafD190242.xml.
+Conrick, R., J. P. Zagrodnik, and C. F. Mass, 2020: Dual-polarization
+radar retrievals of coastal paciﬁc northwest raindrop size distribution
+parameters using random forest regression. Journal of Atmospheric
+and Oceanic Technology, 37 (2), 229 – 242, https://doi.org/10.
+1175/JTECH-D-19-0107.1, URL https://journals.ametsoc.org/view/
+journals/atot/37/2/jtech-d-19-0107.1.xml.
+Cui,
+W.,
+X.
+Dong,
+B.
+Xi,
+and
+Z.
+Feng,
+2021:
+Clima-
+tology of linear mesoscale convective system morphology in
+the united states based on the random-forests method. Jour-
+nal
+of
+Climate,
+34
+(17),
+7257
+–
+7276,
+https://doi.org/10.
+1175/JCLI-D-20-0862.1, URL https://journals.ametsoc.org/view/
+journals/clim/34/17/JCLI-D-20-0862.1.xml.
+Czernecki, B., M. Taszarek, M. Marosz, M. Półrolniczak, L. Kolen-
+dowicz, A. Wyszogrodzki, and J. Szturc, 2019: Application of ma-
+chine learning to large hail prediction - the importance of radar re-
+ﬂectivity, lightning occurrence and convective parameters derived
+from era5. Atmospheric Research, 227, 249–262, https://doi.org/
+https://doi.org/10.1016/j.atmosres.2019.05.010, URL https://www.
+sciencedirect.com/science/article/pii/S0169809519300900.
+Elmore, K. L., and H. Grams, 2016: Using mping data to generate
+random forests for precipitation type forecasts. 14th Conference on
+Artiﬁcial and Computational Intelligence and its Applications to the
+Environmental Sciences, 4.2.
+Flora, M. L., C. K. Potvin, P. S. Skinner, S. Handler, and A. Mc-
+Govern, 2021:
+Using machine learning to generate storm-scale
+probabilistic guidance of severe weather hazards in the warn-on-
+forecast system. Monthly Weather Review, 149 (5), 1535 – 1557,
+https://doi.org/10.1175/MWR-D-20-0194.1, URL https://journals.
+ametsoc.org/view/journals/mwre/149/5/MWR-D-20-0194.1.xml.
+Friedman, J., 2001: Greedy function approximation: a gradient boosting
+machine. Annals of Statistics, 29 (5), 1189–1232.
+Gagne, D., H. Christensen, A. Subramanian, and A. Monahan, 2019:
+Machine learning for stochastic parameterization: Generative ad-
+versarial networks in the lorenz ’96 model. Journal of Advances
+in Modeling Earth Systems, Conditionally Accepted, URL https:
+//arxiv.org/abs/1909.04711.
+Gagne, D., A. McGovern, and J. Brotzge, 2009: Classiﬁcation of convec-
+tive areas using decision trees. Journal of Atmospheric and Oceanic
+Technology, 26 (7), 1341–1353.
+Gagne, D., A. McGovern, J. Brotzge, and M. Xue, 2013: Severe hail
+prediction within a spatiotemporal relational data mining framework.
+International Conference on Data Mining, Dallas, TX, Institute of
+Electrical and Electronics Engineers.
+Gagne, D., A. McGovern, S. Haupt, R. Sobash, J. Williams, and M. Xue,
+2017: Storm-based probabilistic hail forecasting with machine learn-
+ing applied to convection-allowing ensembles. Weather and Fore-
+casting, 32 (5), 1819–1840.
+Gensini, V. A., C. Converse, W. S. Ashley, and M. Taszarek,
+2021:
+Machine learning classiﬁcation of signiﬁcant tornadoes
+
+24
+and hail in the united states using era5 proximity soundings.
+Weather and Forecasting, 36 (6), 2143 – 2160, https://doi.org/10.
+1175/WAF-D-21-0056.1, URL https://journals.ametsoc.org/view/
+journals/wefo/36/6/WAF-D-21-0056.1.xml.
+Glahn, H. R., and D. A. Lowry, 1972: The Use of Model Output
+Statistics (MOS) in Objective Weather Forecasting. J. Appl. Meteor.,
+11, 1203–1211.
+Goodfellow, I., Y. Bengio, and A. Courville, 2016: Deep Learning. MIT
+Press, http://www.deeplearningbook.org.
+Grams, H. M., P.-E. Kirstetter, and J. J. Gourley, 2016:
+Naïve
+bayesian
+precipitation
+type
+retrieval
+from
+satellite
+using
+a
+cloud-top and ground-radar matched climatology. Journal of
+Hydrometeorology,
+17 (10),
+2649 – 2665,
+https://doi.org/10.
+1175/JHM-D-16-0058.1, URL https://journals.ametsoc.org/view/
+journals/hydr/17/10/jhm-d-16-0058_1.xml.
+Harris,
+C.
+R.,
+and
+Coauthors,
+2020:
+Array
+programming
+with NumPy. Nature,
+585 (7825),
+357–362,
+https://doi.org/
+10.1038/s41586-020-2649-2,
+URL
+https://doi.org/10.1038/
+s41586-020-2649-2.
+Herman, G., and R. Schumacher, 2018a: Dendrology in numerical
+weather prediction: What random forests and logistic regression tell
+us about forecasting. Mon. Wea. Rev., 146, 1785–1812, URL https:
+//doi.org/10.1175/MWR-D-17-0307.1.
+Herman, G., and R. Schumacher, 2018b: Money doesn’t grow on trees,
+but forecasts do: Forecasting extreme precipitation with random
+forests. Mon. Wea. Rev., 146, 1571–1600, URL https://doi.org/10.
+1175/MWR-D-17-0250.1.
+Hilburn, K. A., I. Ebert-Uphoﬀ, and S. D. Miller, 2021: Development
+and interpretation of a neural-network-based synthetic radar reﬂectiv-
+ity estimator using goes-r satellite observations. Journal of Applied
+Meteorology and Climatology, 60 (1), 3 – 21, https://doi.org/10.
+1175/JAMC-D-20-0084.1, URL https://journals.ametsoc.org/view/
+journals/apme/60/1/jamc-d-20-0084.1.xml.
+Hill, A. J., G. R. Herman, and R. S. Schumacher, 2020: Forecast-
+ing severe weather with random forests. Monthly Weather Review,
+148 (5), 2135 – 2161, https://doi.org/10.1175/MWR-D-19-0344.
+1,
+URL
+https://journals.ametsoc.org/view/journals/mwre/148/5/
+mwr-d-19-0344.1.xml.
+Hill, A. J., and R. S. Schumacher, 2021: Forecasting excessive rainfall
+with random forests and a deterministic convection-allowing model.
+Weather and Forecasting, 36 (5), 1693 – 1711, https://doi.org/10.
+1175/WAF-D-21-0026.1, URL https://journals.ametsoc.org/view/
+journals/wefo/36/5/WAF-D-21-0026.1.xml.
+Hoerl,
+A.
+E.,
+and
+R.
+W.
+Kennard,
+1970:
+Ridge
+regres-
+sion:
+Biased estimation for nonorthogonal problems. Techno-
+metrics, 12 (1), 55–67, https://doi.org/10.1080/00401706.1970.
+10488634,
+URL
+https://www.tandfonline.com/doi/abs/10.1080/
+00401706.1970.10488634, https://www.tandfonline.com/doi/pdf/10.
+1080/00401706.1970.10488634.
+Holte, R. C., 1993: Very simple classiﬁcation rules perform well on
+most commonly used datasets. Machine Learning, 11 (1), 63–90,
+https://doi.org/10.1023/A:1022631118932, URL https://doi.org/10.
+1023/A:1022631118932.
+Hu, L., E. A. Ritchie, and J. S. Tyo, 2020: Short-term tropical cyclone
+intensity forecasting from satellite imagery based on the deviation an-
+gle variance technique. Weather and Forecasting, 35 (1), 285 – 298,
+https://doi.org/10.1175/WAF-D-19-0102.1,
+URL https://journals.
+ametsoc.org/view/journals/wefo/35/1/waf-d-19-0102.1.xml.
+Hubbert,
+J.
+C.,
+M. Dixon,
+S. M.
+Ellis,
+and G.
+Meymaris,
+2009:
+Weather
+radar
+ground
+clutter.
+part
+i:
+Identiﬁca-
+tion,
+modeling,
+and simulation. Journal of Atmospheric and
+Oceanic Technology, 26 (7), 1165 – 1180, https://doi.org/10.
+1175/2009JTECHA1159.1, URL https://journals.ametsoc.org/view/
+journals/atot/26/7/2009jtecha1159_1.xml.
+Jergensen, G. E., A. McGovern, R. Lagerquist, and T. Smith,
+2020:
+Classifying convective storms using machine learning.
+Weather and Forecasting, 35 (2), 537 – 559, https://doi.org/10.
+1175/WAF-D-19-0170.1, URL https://journals.ametsoc.org/view/
+journals/wefo/35/2/waf-d-19-0170.1.xml.
+Kalnay, E., 2002:
+Atmospheric Modeling, Data Assimilation and
+Predictability. Cambridge University Press, https://doi.org/10.1017/
+CBO9780511802270.
+Key, J., J. Maslanik, and A. Schweiger, 1989: Classiﬁcation of merged
+AVHRR and SMMR Arctic data with neural networks. Photogram-
+metric Engineering and Remote Sensing, 55 (9), 1331–1338.
+Kluyver, T., and Coauthors, 2016: Jupyter notebooks – a publish-
+ing format for reproducible computational workﬂows. Positioning
+and Power in Academic Publishing: Players, Agents and Agendas,
+F. Loizides, and B. Schmidt, Eds., IOS Press, 87 - 90.
+Kossin, J. P., and M. Sitkowski, 2009:
+An objective model for
+identifying secondary eyewall formation in hurricanes. Monthly
+Weather Review, 137 (3), 876 – 892, https://doi.org/10.1175/
+2008MWR2701.1, URL https://journals.ametsoc.org/view/journals/
+mwre/137/3/2008mwr2701.1.xml.
+Kuncheva,
+L.
+I.,
+2006:
+On
+the
+optimality
+of
+naïve
+bayes
+with dependent binary features. Pattern Recognition Letters,
+27 (7),
+830–837,
+https://doi.org/https://doi.org/10.1016/j.patrec.
+2005.12.001, URL https://www.sciencedirect.com/science/article/
+pii/S0167865505003582.
+Kurdzo,
+J. M.,
+E. F. Joback,
+P.-E. Kirstetter,
+and J. Y. N.
+Cho, 2020:
+Geospatial qpe accuracy dependence on weather
+radar network conﬁgurations. Journal of Applied Meteorology
+and Climatology,
+59 (11),
+1773 – 1792,
+https://doi.org/10.
+1175/JAMC-D-19-0164.1, URL https://journals.ametsoc.org/view/
+journals/apme/59/11/JAMC-D-19-0164.1.xml.
+Kühnlein, M., T. Appelhans, B. Thies, and T. Nauß, 2014:
+Pre-
+cipitation estimates from msg seviri daytime, nighttime, and twi-
+light data with random forests. Journal of Applied Meteorol-
+ogy and Climatology, 53 (11), 2457 – 2480, https://doi.org/10.
+1175/JAMC-D-14-0082.1, URL https://journals.ametsoc.org/view/
+journals/apme/53/11/jamc-d-14-0082.1.xml.
+Lackmann, G., 2011: Numerical Weather Prediction/Data Assimilation,
+274–287. American Meteorological Society.
+Lagerquist, R., A. McGovern, C. R. Homeyer, D. J. G. II, and T. Smith,
+2020: Deep learning on three-dimensional multiscale data for next-
+hour tornado prediction. Monthly Weather Review, 148 (7), 2837
+– 2861, https://doi.org/10.1175/MWR-D-19-0372.1, URL https://
+journals.ametsoc.org/view/journals/mwre/148/7/mwrD190372.xml.
+Lagerquist, R., A. McGovern, and T. Smith, 2017: Machine learning
+for real-time prediction of damaging straight-line convective wind.
+Weather and Forecasting, 32 (6), 2175–2193.
+
+25
+Lagerquist, R., J. Q. Stewart, I. Ebert-Uphoﬀ, and C. Kumler, 2021:
+Using deep learning to nowcast the spatial coverage of convec-
+tion from himawari-8 satellite data. Monthly Weather Review,
+149 (12), 3897 – 3921, https://doi.org/10.1175/MWR-D-21-0096.
+1,
+URL
+https://journals.ametsoc.org/view/journals/mwre/149/12/
+MWR-D-21-0096.1.xml.
+Lakshmanan, V., C. Karstens, J. Krause, K. Elmore, A. Ryzhkov,
+and S. Berkseth, 2015: Which polarimetric variables are impor-
+tant for weather/no-weather discrimination? Journal of Atmospheric
+and Oceanic Technology, 32 (6), 1209 – 1223, https://doi.org/
+10.1175/JTECH-D-13-00205.1, URL https://journals.ametsoc.org/
+view/journals/atot/32/6/jtech-d-13-00205_1.xml.
+Lee, C.-Y., S. J. Camargo, F. Vitart, A. H. Sobel, J. Camp,
+S. Wang, M. K. Tippett, and Q. Yang, 2020: Subseasonal pre-
+dictions of tropical cyclone occurrence and ace in the s2s dataset.
+Weather and Forecasting, 35 (3), 921 – 938, https://doi.org/10.
+1175/WAF-D-19-0217.1, URL https://journals.ametsoc.org/view/
+journals/wefo/35/3/waf-d-19-0217.1.xml.
+Lee, J., R. Weger, S. Sengupta, and R. Welch, 1990: A neural network
+approach to cloud classiﬁcation. IEEE Transactions on Geoscience
+and Remote Sensing, 28 (5), 846–855, https://doi.org/10.1109/36.
+58972.
+Li, L., and Coauthors, 2020: A causal inference model based on random
+forests to identify the eﬀect of soil moisture on precipitation. Jour-
+nal of Hydrometeorology, 21 (5), 1115 – 1131, https://doi.org/10.
+1175/JHM-D-19-0209.1, URL https://journals.ametsoc.org/view/
+journals/hydr/21/5/jhm-d-19-0209.1.xml.
+Loken, E. D., A. J. Clark, and C. D. Karstens, 2020:
+Gener-
+ating Probabilistic Next-Day Severe Weather Forecasts from
+Convection-Allowing Ensembles Using Random Forests. Weather
+and
+Forecasting,
+https://doi.org/10.1175/WAF-D-19-0258.1,
+URL https://doi.org/10.1175/WAF-D-19-0258.1,
+https://journals.
+ametsoc.org/waf/article-pdf/doi/10.1175/WAF-D-19-0258.1/
+4951271/wafd190258.pdf.
+Loken,
+E. D.,
+A. J. Clark,
+and A. McGovern,
+2022:
+Com-
+paring
+and
+interpreting
+diﬀerently-designed
+random
+forests
+for
+next-day
+severe
+weather
+hazard
+prediction.
+Weather
+and
+Forecasting,
+https://doi.org/10.1175/WAF-D-21-0138.1,
+URL
+https://journals.ametsoc.org/view/journals/wefo/aop/
+WAF-D-21-0138.1/WAF-D-21-0138.1.xml.
+Malone, T., 1955: Application of statistical methods in weather pre-
+diction. Proceedings of the National Academy of Sciences, 41 (11),
+806–815.
+Mao, Y., and A. Sorteberg, 2020: Improving radar-based precipita-
+tion nowcasts with machine learning using an approach based on
+random forest. Weather and Forecasting, 35 (6), 2461 – 2478,
+https://doi.org/10.1175/WAF-D-20-0080.1,
+URL https://journals.
+ametsoc.org/view/journals/wefo/35/6/waf-d-20-0080.1.xml.
+McCorkel, J., J. Van Naarden, D. Lindsey, B. Efremova, M. Coak-
+ley, M. Black, and A. Krimchansky, 2019: Goes-17 advanced base-
+line imager performance recovery summary. IGARSS 2019 - 2019
+IEEE International Geoscience and Remote Sensing Symposium, 1–
+4, https://doi.org/10.1109/IGARSS40859.2019.9044466.
+McGovern, A., I. Ebert-Uphoﬀ, D. J. G. I. au2, and A. Bostrom, 2021:
+The need for ethical, responsible, and trustworthy artiﬁcial intelli-
+gence for environmental sciences. 2112.08453.
+McGovern, A., D. Gagne, J. Basara, T. Hamill, and D. Margolin, 2015:
+Solar energy prediction: An international contest to initiate interdis-
+ciplinary research on compelling meteorological problems. Bulletin
+of the American Meteorological Society, 96 (8), 1388–1395.
+McGovern, A., D. Gagne, J. Williams, R. Brown, and J. Basara, 2014:
+Enhancing understanding and improving prediction of severe weather
+through spatiotemporal relational learning. Machine Learning, 95 (1),
+27–50.
+McGovern, A., R. Lagerquist, D. Gagne, G. Jergensen, K. Elmore,
+C. Homeyer, and T. Smith, 2019: Making the black box more trans-
+parent: Understanding the physical implications of machine learn-
+ing. Bulletin of the American Meteorological Society, early online
+release.
+Mecikalski, J., J. Williams, C. Jewett, D. Ahĳevych, A. LeRoy, and
+J. Walker, 2015:
+Probabilistic 0–1-h convective initiation now-
+casts that combine geostationary satellite observations and numerical
+weather prediction model data. Journal of Applied Meteorology and
+Climatology, 54 (5), 1039–1059.
+Molina, M. J., D. J. Gagne, and A. F. Prein, 2021:
+A bench-
+mark
+to
+test
+generalization
+capabilities
+of
+deep
+learning
+methods to classify severe convective storms in a changing
+climate. Earth and Space Science,
+8 (9),
+e2020EA001 490,
+https://doi.org/https://doi.org/10.1029/2020EA001490, URL https:
+//agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020EA001490,
+e2020EA001490
+2020EA001490,
+https://agupubs.onlinelibrary.
+wiley.com/doi/pdf/10.1029/2020EA001490.
+Molnar, C., 2022: Interpretable Machine Learning. 2nd ed., URL https:
+//christophm.github.io/interpretable-ml-book.
+Murphy,
+A. H.,
+1993:
+What is a good forecast?
+an es-
+say
+on
+the
+nature
+of
+goodness
+in
+weather
+forecasting.
+Weather and Forecasting,
+8 (2),
+281 – 293,
+https://doi.org/
+10.1175/1520-0434(1993)008<0281:WIAGFA>2.0.CO;2,
+URL
+https://journals.ametsoc.org/view/journals/wefo/8/2/1520-0434_
+1993_008_0281_wiagfa_2_0_co_2.xml.
+Muñoz-Esparza, D., R. D. Sharman, and W. Deierling, 2020: Avia-
+tion turbulence forecasting at upper levels with machine learning
+techniques based on regression trees. Journal of Applied Meteo-
+rology and Climatology, 59 (11), 1883 – 1899, https://doi.org/10.
+1175/JAMC-D-20-0116.1, URL https://journals.ametsoc.org/view/
+journals/apme/59/11/JAMC-D-20-0116.1.xml.
+Neetu, S., M. Lengaigne, J. Vialard, M. Mangeas, C. Menkes, I. Suresh,
+J. Leloup, and J. Knaﬀ, 2020: Quantifying the beneﬁts of nonlinear
+methods for global statistical hindcasts of tropical cyclones inten-
+sity. Weather and Forecasting, 35 (3), 807 – 820, https://doi.org/10.
+1175/WAF-D-19-0163.1, URL https://journals.ametsoc.org/view/
+journals/wefo/35/3/waf-d-19-0163.1.xml.
+Nowotarski, C. J., and A. A. Jensen, 2013:
+Classifying proxim-
+ity soundings with self-organizing maps toward improving super-
+cell and tornado forecasting. Wea. Forecasting, 28, 783–801, URL
+https://doi.org/10.1175/WAF-D-12-00125.1.
+Pedregosa, F., and Coauthors, 2011: Scikit-learn: Machine learning in
+Python. Journal of Machine Learning Research, 12, 2825–2830.
+Peter,
+J. R.,
+A. Seed,
+and P. J. Steinle,
+2013:
+Application
+of a bayesian classiﬁer of anomalous propagation to single-
+polarization radar reﬂectivity data. Journal of Atmospheric and
+Oceanic
+Technology,
+30
+(9),
+1985
+–
+2005,
+https://doi.org/
+10.1175/JTECH-D-12-00082.1, URL https://journals.ametsoc.org/
+view/journals/atot/30/9/jtech-d-12-00082_1.xml.
+
+26
+Quinlan, J., 1993: C4.5: Programs for Machine Learning. Morgan
+Kaufmann, San Mateo, California.
+Ravuri, S., and Coauthors, 2021:
+Skilful precipitation nowcasting
+using deep generative models of radar. Nature, 597 (7878), 672–
+677, https://doi.org/10.1038/s41586-021-03854-z, URL https://doi.
+org/10.1038/s41586-021-03854-z.
+Roebber, P., 2009: Visualizing multiple measures of forecast quality.
+Weather and Forecasting, 24 (2), 601–608.
+Rumelhart, D. E., G. E. Hinton, and R. J. Williams, 1986: Learn-
+ing representations by back-propagating errors. Nature, 323 (6088),
+533–536, https://doi.org/10.1038/323533a0, URL https://doi.org/10.
+1038/323533a0.
+Schumacher, R. S., A. J. Hill, M. Klein, J. A. Nelson, M. J. Erickson,
+S. M. Trojniak, and G. R. Herman, 2021: From random forests
+to ﬂood forecasts: A research to operations success story. Bulletin
+of the American Meteorological Society, 102 (9), E1742 – E1755,
+https://doi.org/10.1175/BAMS-D-20-0186.1, URL https://journals.
+ametsoc.org/view/journals/bams/102/9/BAMS-D-20-0186.1.xml.
+Sessa, M. F., and R. J. Trapp, 2020:
+Observed relationship be-
+tween tornado intensity and pretornadic mesocyclone characteristics.
+Weather and Forecasting, 35 (4), 1243 – 1261, https://doi.org/10.
+1175/WAF-D-19-0099.1, URL https://journals.ametsoc.org/view/
+journals/wefo/35/4/wafD190099.xml.
+Shield,
+S. A.,
+and A. L. Houston,
+2022:
+Diagnosing super-
+cell
+environments:
+A
+machine
+learning
+approach.
+Weather
+and
+Forecasting,
+https://doi.org/10.1175/WAF-D-21-0098.1,
+URL
+https://journals.ametsoc.org/view/journals/wefo/aop/
+WAF-D-21-0098.1/WAF-D-21-0098.1.xml.
+Taillardat, M., A.-L. Fougères, P. Naveau, and O. Mestre, 2019: Forest-
+based and semiparametric methods for the postprocessing of rainfall
+ensemble forecasting. Weather and Forecasting, 34 (3), 617 – 634,
+https://doi.org/10.1175/WAF-D-18-0149.1,
+URL https://journals.
+ametsoc.org/view/journals/wefo/34/3/waf-d-18-0149_1.xml.
+Tibshirani, R., 1996: Regression shrinkage and selection via the lasso.
+Journal of the Royal Statistical Society. Series B (Methodological),
+58 (1), 267–288, URL http://www.jstor.org/stable/2346178.
+Vapnik, V., 1963: Pattern recognition using generalized portrait method.
+Automation and Remote Control, 24, 774–780, URL https://ci.nii.ac.
+jp/naid/10020952249/en/.
+Veillette, M., S. Samsi, and C. Mattioli, 2020:
+Sevir :
+A storm
+event imagery dataset for deep learning applications in radar
+and satellite meteorology. Advances in Neural Information Pro-
+cessing Systems, H. Larochelle, M. Ranzato, R. Hadsell, M. F.
+Balcan, and H. Lin, Eds., Curran Associates, Inc., Vol. 33,
+22 009–22 019, URL https://proceedings.neurips.cc/paper/2020/ﬁle/
+fa78a16157fed00d7a80515818432169-Paper.pdf.
+Vigaud, N., M. K. Tippett, J. Yuan, A. W. Robertson, and N. Acharya,
+2019: Probabilistic skill of subseasonal surface temperature forecasts
+over north america. Weather and Forecasting, 34 (6), 1789 – 1806,
+https://doi.org/10.1175/WAF-D-19-0117.1,
+URL https://journals.
+ametsoc.org/view/journals/wefo/34/6/waf-d-19-0117_1.xml.
+Wang, C., P. Wang, D. Wang, J. Hou, and B. Xue, 2020: Nowcasting
+multicell short-term intense precipitation using graph models and
+random forests. Monthly Weather Review, 148 (11), 4453 – 4466,
+https://doi.org/10.1175/MWR-D-20-0050.1, URL https://journals.
+ametsoc.org/view/journals/mwre/148/11/MWR-D-20-0050.1.xml.
+Watson, A. I., R. L. Holle, and R. E. López, 1995:
+Lightning
+from two national detection networks related to vertically in-
+tegrated liquid and echo-top information from wsr-88d radar.
+Weather and Forecasting, 10 (3), 592 – 605, https://doi.org/
+10.1175/1520-0434(1995)010<0592:LFTNDN>2.0.CO;2,
+URL
+https://journals.ametsoc.org/view/journals/wefo/10/3/1520-0434_
+1995_010_0592_lftndn_2_0_co_2.xml.
+Wes McKinney, 2010: Data Structures for Statistical Computing in
+Python. Proceedings of the 9th Python in Science Conference, Stéfan
+van der Walt, and Jarrod Millman, Eds., 56 – 61, https://doi.org/
+10.25080/Majora-92bf1922-00a.
+Williams, J., 2014: Using random forests to diagnose aviation turbu-
+lence. Machine Learning, 95 (1), 51–70.
+Williams, J., D. Ahĳevych, S. Dettling, and M. Steiner, 2008a: Com-
+bining observations and model data for short-term storm forecasting.
+Remote Sensing Applications for Aviation Weather Hazard Detec-
+tion and Decision Support, San Diego, CA, International Society for
+Optics and Photonics.
+Williams, J., R. Sharman, J. Craig, and G. Blackburn, 2008b: Remote
+detection and diagnosis of thunderstorm turbulence. Remote Sensing
+Applications for Aviation Weather Hazard Detection and Decision
+Support, San Diego, CA, International Society for Optics and Pho-
+tonics.
+Yang,
+L.,
+H. Xu,
+and S. Yu,
+2021:
+Estimating pm2.5 con-
+centrations in contiguous eastern coastal zone of china us-
+ing modis aod and a two-stage random forest model. Jour-
+nal of Atmospheric and Oceanic Technology, https://doi.org/10.
+1175/JTECH-D-20-0214.1, URL https://journals.ametsoc.org/view/
+journals/atot/aop/JTECH-D-20-0214.1/JTECH-D-20-0214.1.xml.
+Yoshida, S., T. Morimoto, T. Ushio, and Z. Kawasaki, 2009:
+A
+ﬁfth-power relationship for lightning activity from tropical rainfall
+measuring mission satellite observations. Journal of Geophysical
+Research:
+Atmospheres, 114 (D9), https://doi.org/https://doi.org/
+10.1029/2008JD010370, URL https://agupubs.onlinelibrary.wiley.
+com/doi/abs/10.1029/2008JD010370, https://agupubs.onlinelibrary.
+wiley.com/doi/pdf/10.1029/2008JD010370.
+Zhang, Z., D. Wang, J. Qiu, J. Zhu, and T. Wang, 2021: Machine
+learning approaches for improving near-real-time imerg rainfall esti-
+mates by integrating cloud properties from noaa cdr patmos-x. Jour-
+nal of Hydrometeorology, 22 (10), 2767 – 2781, https://doi.org/10.
+1175/JHM-D-21-0019.1, URL https://journals.ametsoc.org/view/
+journals/hydr/22/10/JHM-D-21-0019.1.xml.
+Zou, H., and T. Hastie, 2005: Regularization and variable selection
+via the elastic net. Journal of the Royal Statistical Society. Series B
+(Statistical Methodology), 67 (2), 301–320, URL http://www.jstor.
+org/stable/3647580.

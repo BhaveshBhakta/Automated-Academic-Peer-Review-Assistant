@@ -1,0 +1,668 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Data poisoning attacks against autoregressive models</title>
+		<author>
+			<persName><forename type="first">Scott</forename><surname>Alfeld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojin</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Barford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Thirtieth AAAI Conference on Artificial Intelligence (AAAI-16)</title>
+				<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Optimal control: An introduction to the theory and its applications</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Athans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Peter</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Falb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Courier Corporation</title>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Dynamic Programming and Optimal Control</title>
+		<author>
+			<persName><forename type="first">Dimitri</forename><forename type="middle">P</forename><surname>Bertsekas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Athena Scientific</title>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note>4th edition</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Wild patterns: Ten years after the rise of adversarial machine learning</title>
+		<author>
+			<persName><forename type="first">Battista</forename><surname>Biggio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Roli</surname></persName>
+		</author>
+		<idno>abs/1712.03141</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Stackelberg games for adversarial prediction problems</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Brückner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Scheffer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining</title>
+				<meeting>the 17th ACM SIGKDD international conference on Knowledge discovery and data mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="547" to="555" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Regret analysis of stochastic and nonstochastic multi-armed bandit problems. Foundations and Trends in Machine Learning</title>
+		<author>
+			<persName><forename type="first">Sébastien</forename><surname>Bubeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolo</forename><surname>Cesa-Bianchi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="1" to="122" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Curriculum adversarial training</title>
+		<author>
+			<persName><forename type="first">Qi-Zhi</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dawn</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The 27th International Joint Conference on Artificial Intelligence (IJCAI)</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Adversarial attack on graph structured data</title>
+		<author>
+			<persName><forename type="first">Hanjun</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tian</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">;</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 35th International Conference on Machine Learning</title>
+				<editor>
+			<persName><forename type="first">Jennifer</forename><surname>Dy</surname></persName>
+			<persName><forename type="first">Andreas</forename><surname>Krause</surname></persName>
+		</editor>
+		<meeting>the 35th International Conference on Machine Learning<address><addrLine>Stockholmsmssan, Stockholm Sweden</addrLine></address></meeting>
+		<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2018-07" />
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="10" to="15" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Learning to teach</title>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tie-Yan</forename><surname>Liu</surname></persName>
+		</author>
+		<editor>ICLR</editor>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Dynamic optimization and differential games</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Terry</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Friesz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Springer Science &amp; Business Media</publisher>
+			<biblScope unit="volume">135</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<author>
+			<persName><forename type="first">Sandy</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Papernot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pieter</forename><surname>Abbeel</surname></persName>
+		</author>
+		<title level="m">Adversarial attacks on neural network policies. arXiv</title>
+				<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Manipulating machine learning: Poisoning attacks and countermeasures for regression learning</title>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Jagielski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alina</forename><surname>Oprea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Battista</forename><surname>Biggio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cristina</forename><surname>Nita-Rotaru</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The 39th IEEE Symposium on Security and Privacy</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<author>
+			<persName><forename type="first">Anthony</forename><forename type="middle">D</forename><surname>Joseph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blaine</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">P</forename><surname>Benjamin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Rubinstein</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Tygar</surname></persName>
+		</author>
+		<title level="m">Adversarial Machine Learning</title>
+				<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note>in press</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Adversarial attacks on stochastic bandits</title>
+		<author>
+			<persName><forename type="first">Kwang-Sung</forename><surname>Jun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lihong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuzhe</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojin</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS)</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">An Optimal Control Approach to Sequential Machine Teaching</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lessard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018-10" />
+		</imprint>
+	</monogr>
+	<note>ArXiv e-prints</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Scalable Optimization of Randomized Operational Decisions in Adversarial Classification Settings</title>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yevgeniy</forename><surname>Vorobeychik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Eighteenth International Conference on Artificial Intelligence and Statistics</title>
+				<editor>
+			<persName><forename type="first">Guy</forename><surname>Lebanon</surname></persName>
+			<persName><forename type="first">S</forename><forename type="middle">V N</forename><surname>Vishwanathan</surname></persName>
+		</editor>
+		<meeting>the Eighteenth International Conference on Artificial Intelligence and Statistics<address><addrLine>San Diego, California, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2015-05" />
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="9" to="12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Calculus of variations and optimal control theory: A concise introduction</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Liberzon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Princeton University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Iterative machine teaching</title>
+		<author>
+			<persName><forename type="first">Weiyang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmad</forename><surname>Humayun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charlene</forename><surname>Tay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><forename type="middle">B</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Rehg</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="2149" to="2158" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Towards black-box iterative machine teaching</title>
+		<author>
+			<persName><forename type="first">Weiyang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xingguo</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">M</forename><surname>Rehg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">JMLR Workshop and Conference Proceedings</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="3147" to="3155" />
+		</imprint>
+	</monogr>
+	<note>ICML</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Adversarial learning</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Lowd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Meek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining</title>
+				<meeting>the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="641" to="647" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Using machine teaching to identify optimal training-set attacks on machine learners</title>
+		<author>
+			<persName><forename type="first">Shike</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojin</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Twenty-Ninth AAAI Conference on Artificial Intelligence</title>
+				<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Optimal teaching for limited-capacity human learners</title>
+		<author>
+			<persName><forename type="first">Kaustubh</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojin</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukasz</forename><surname>Kopec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><surname>Love</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS)</title>
+				<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">A Tour of Reinforcement Learning: The View from Continuous Control</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Recht</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018-06" />
+		</imprint>
+	</monogr>
+	<note>ArXiv e-prints</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Machine beats human at sequencing visuals for perceptual-fluency practice</title>
+		<author>
+			<persName><forename type="first">Ayon</forename><surname>Sen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Purav</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><forename type="middle">A</forename><surname>Rau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blake</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Nowak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">T</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojin</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Educational Data Mining</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Bayesian brain: probabilistic approaches to neural coding</title>
+		<author>
+			<persName><forename type="first">Emanuel</forename><surname>Todorov</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="269" to="298" />
+		</imprint>
+	</monogr>
+	<note>Optimal control theory</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Adversarial machine learning</title>
+		<author>
+			<persName><forename type="first">Yevgeniy</forename><surname>Vorobeychik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Murat</forename><surname>Kantarcioglu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Synthesis Lectures on Artificial Intelligence and Machine Learning</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1" to="169" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Machine teaching: an inverse problem to machine learning and an approach toward optimal education</title>
+		<author>
+			<persName><forename type="first">Xiaojin</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Twenty-Ninth AAAI Conference on Artificial Intelligence (AAAI &quot;Blue Sky&quot; Senior Member Presentation Track)</title>
+				<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">No learner left behind: On the complexity of teaching multiple learners simultaneously</title>
+		<author>
+			<persName><forename type="first">Xiaojin</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ji</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>Lopes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The 26th International Joint Conference on Artificial Intelligence (IJCAI</title>
+				<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">An Overview of Machine Teaching</title>
+		<author>
+			<persName><forename type="first">Xiaojin</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adish</forename><surname>Singla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Zilles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">N</forename><surname>Rafferty</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1801.05927" />
+		<imprint>
+			<date type="published" when="2018-01" />
+		</imprint>
+	</monogr>
+	<note>ArXiv e-prints</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

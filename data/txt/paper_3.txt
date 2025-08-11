@@ -1,0 +1,10 @@
+Title: Minimax deviation strategies for machine learning and recognition with
+  short learning samples
+Published: 2017-07-16T09:15:08Z
+Link: http://arxiv.org/abs/1707.04849v1
+
+Abstract:
+The article is devoted to the problem of small learning samples in machine
+learning. The flaws of maximum likelihood learning and minimax learning are
+looked into and the concept of minimax deviation learning is introduced that is
+free of those flaws.

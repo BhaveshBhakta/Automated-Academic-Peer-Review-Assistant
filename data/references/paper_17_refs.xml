@@ -1,0 +1,328 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Human activity recognition on smartphones using a multiclass hardware-friendly support vector machine</title>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Anguita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Ghio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Oneto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xavier</forename><surname>Parra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><forename type="middle">L</forename><surname>Reyes-Ortiz</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-35395-6_30</idno>
+		<ptr target="http://dx.doi.org/10.1007/978-3-642-35395-6_30" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 4th International Conference on Ambient Assisted Living and Home Care, IWAAL&apos;12</title>
+				<meeting>the 4th International Conference on Ambient Assisted Living and Home Care, IWAAL&apos;12<address><addrLine>Berlin, Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer-Verlag</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="216" to="223" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">A Gender-Based Genetic Algorithm for the Automatic Configuration of Algorithms Principles and Practice of Constraint Programming -CP</title>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Ansótegui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meinolf</forename><surname>Sellmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Tierney</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-04244-7\14</idno>
+		<ptr target="http://cs.brown.edu/{}sello/PAPER/cp09-gbac.pdf" />
+	</analytic>
+	<monogr>
+		<title level="s">Lecture Notes in Computer Science</title>
+		<imprint>
+			<biblScope unit="volume">5732</biblScope>
+			<biblScope unit="page" from="142" to="157" />
+			<date type="published" when="2009" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Algorithms for hyper-parameter optimization</title>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">S</forename><surname>Bergstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rémi</forename><surname>Bardenet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Balázs</forename><surname>Kégl</surname></persName>
+		</author>
+		<ptr target="http://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimization.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<editor>
+			<persName><forename type="first">J</forename><surname>Shawe-Taylor</surname></persName>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Zemel</surname></persName>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Bartlett</surname></persName>
+			<persName><forename type="first">F</forename><surname>Pereira</surname></persName>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="2546" to="2554" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Random forests</title>
+		<author>
+			<persName><forename type="first">Leo</forename><surname>Breiman</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/A:1010933404324</idno>
+		<ptr target="http://dx.doi.org/10.1023/A:1010933404324" />
+	</analytic>
+	<monogr>
+		<title level="j">Mach. Learn</title>
+		<idno type="ISSN">0885-6125</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="5" to="32" />
+			<date type="published" when="2001-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A tutorial on support vector machines for pattern recognition</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Christopher</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Burges</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/A:1009715923555</idno>
+		<ptr target="http://dx.doi.org/10.1023/A:1009715923555" />
+	</analytic>
+	<monogr>
+		<title level="j">Data Min. Knowl. Discov</title>
+		<idno type="ISSN">1384-5810</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="121" to="167" />
+			<date type="published" when="1998-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Codalab</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Codalab</surname></persName>
+		</author>
+		<ptr target="http://www.codalab.com/" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Drivendata</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Drivendata</surname></persName>
+		</author>
+		<ptr target="http://www.drivendata.com/" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Sequential model-based optimization for general algorithm configuration</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hutter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">H</forename><surname>Hoos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Leyton-Brown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. of LION-5</title>
+				<meeting>of LION-5</meeting>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page">507523</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Kaggle</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kaggle</surname></persName>
+		</author>
+		<ptr target="http://www.kaggle.com/" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Hyperopt-sklearn: Automatic hyperparameter configuration for scikit-learn</title>
+		<author>
+			<persName><forename type="first">Brent</forename><surname>Komer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Bergstra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Eliasmith</surname></persName>
+		</author>
+		<ptr target="https://dl.dropboxusercontent.com/u/380268/scipy_proceedings_2014/pdfs/komer.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 13th Python in Science Conference</title>
+				<meeting>the 13th Python in Science Conference</meeting>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="33" to="39" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">20 newsgroups data set</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lang</surname></persName>
+		</author>
+		<ptr target="http://www.ai.mit.edu/people/jrennie/20Newsgroups/" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">The MNIST database of handwritten digits</title>
+		<author>
+			<persName><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corinna</forename><surname>Cortes</surname></persName>
+		</author>
+		<ptr target="http://yann.lecun.com/exdb/mnist/" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Scikit-learn: Machine learning in Python</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Pedregosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Varoquaux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gramfort</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Michel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Thirion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Grisel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Blondel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Prettenhofer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Weiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Dubourg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vanderplas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Passos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cournapeau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brucher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Perrot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Duchesnay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="2825" to="2830" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

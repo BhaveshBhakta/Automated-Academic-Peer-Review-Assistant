@@ -1,0 +1,47 @@
+{
+  "new_pdf": "/home/bhxveshhh/ML/LangChain/Automated Academic Peer Review Assistant/test_pdf/test_medical_rp.pdf",
+  "mappings": [
+    {
+      "claim": "*Marzyeh Ghassemi, Tristan Naumann, Peter Schulam, Andrew L Beam, Irene Y Chen, Rajesh Ranganath University of Toronto and Vector Institute, Toronto, ON M5S 3G8, Canada (MG); Microsoft Research, Redmond, WA, USA (TN); Johns Hopkins University, Baltimore, MD, USA (PS); Harvard School of Public Health, Boston, MA, USA (ALB); Massachusetts Institute of Technology, Cambridge, MA, USA (IYC); and New York University, New York, NY, USA (RR) marzyeh@cs.toronto.edu PS reports personal fees and other fees from Bayesian Health, outside the submitted work.",
+      "is_novel": true,
+      "matched_claim": "CHALLENGES IN BUILDING PREDICTIVE MODELS FOR MEDICINE In this section, we show how probabilistic models can aid in diﬀerent parts of the model development and model maintenance pipeline in healthcare.",
+      "matched_paper_title": "Probabilistic Machine Learning for Healthcare",
+      "matched_paper_index": 25,
+      "similarity": 0.419
+    },
+    {
+      "claim": "Comment www.thelancet.com/digital-health Vol 1 August 2019 e157 Practical guidance on artificial intelligence for health-care data Advances in machine learning and artificial intelligence (AI) offer the potential to provide personalised care that is equal to or better than the performance of humans for several health-care tasks.1 AI models are often powered by clinical data that are generated and managed via the medical system, for which the primary purpose of data collection is to support care, rather than facilitate subsequent analysis.",
+      "is_novel": true,
+      "matched_claim": "Next, we demonstrate how to apply the algorithms with appropriate toolkits to conduct machine learning experiments for clinical prediction tasks.",
+      "matched_paper_title": "Machine Learning for Clinical Predictive Analytics",
+      "matched_paper_index": 3,
+      "similarity": 0.5138
+    },
+    {
+      "claim": "For example, whereas some diseases (eg, dia­ betes) are verifiable through blood tests, others (eg, heart failure) might encompass a variety of underl­ying conditions, thereby requiring human judgment to label each patient.7,8 Label uncertainty can be addressed by using gener­ ative models and unsupervised clustering to separate populations into underlying subtypes, but this approach assumes that there are enough variables available to learn class separations.",
+      "is_novel": true,
+      "matched_claim": "Next, we demonstrate how to apply the algorithms with appropriate toolkits to conduct machine learning experiments for clinical prediction tasks.",
+      "matched_paper_title": "Machine Learning for Clinical Predictive Analytics",
+      "matched_paper_index": 3,
+      "similarity": 0.4429
+    },
+    {
+      "claim": "A possible short-term solution is to use generative adversarial networks with differential privacy to generate synthetic data with the statistical properties of real health-care data; however, models trained on synthetic data might not be as accurate as those trained on clinical data.5 A long-term solution to data challenges must focus on generating high-quality, deidentified data primarily for research purposes.",
+      "is_novel": true,
+      "matched_claim": "In this work, the performance of the proposed generative model is examined by comparing the generated synthetic patient records with the real data.",
+      "matched_paper_title": "When Machine Learning Meets Privacy: A Survey and Outlook",
+      "matched_paper_index": 24,
+      "similarity": 0.6173
+    },
+    {
+      "claim": "Although many state-of-the-art methods are known to be overconfident under standard training conditions, AI techniques that are forced to assign prob­ abilities to any input can provide a foundation for under­ stand­ing when a situation is unknown.7 Handling the unknown, or at least knowing when the current situ­ ation is an unknown, is important in ensuring patient safety and clinician trust in algorithms.",
+      "is_novel": true,
+      "matched_claim": "With each task of the process, we propose quality assurance methodology that is suitable to adress challenges in machine learning development that we identify in form of risks.",
+      "matched_paper_title": "Towards CRISP-ML(Q): A Machine Learning Process Model with Quality\n  Assurance Methodology",
+      "matched_paper_index": 29,
+      "similarity": 0.5036
+    }
+  ],
+  "num_new_claims": 5,
+  "num_existing_claims": 22
+}

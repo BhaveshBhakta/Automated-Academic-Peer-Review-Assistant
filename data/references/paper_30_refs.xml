@@ -1,0 +1,3274 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">A cyber-physical systems architecture for industry 4.0-based manufacturing systems. Manufacturing letters</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bagheri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A</forename><surname>Kao</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="18" to="23" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">How virtualization, decentralization and network building change the manufacturing landscape: An Industry 4.0 Perspective. International journal of mechanical</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brettel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Friederichsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rosenberg</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="37" to="44" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Autonomous driving in the real world: Experiences with Tesla autopilot and summon</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dikmen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Burns</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 8th international conference on automotive user interfaces and interactive vehicular applications</title>
+				<meeting>the 8th international conference on automotive user interfaces and interactive vehicular applications</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="225" to="228" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Machine learning applications in cancer prognosis and prediction. Computational and structural biotechnology journal</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kourou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Exarchos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">P</forename><surname>Exarchos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">V</forename><surname>Karamouzis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">I</forename><surname>Fotiadis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="8" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Dermatologist-level classification of skin cancer with deep neural networks</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Esteva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kuprel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Novoa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Swetter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M</forename><surname>Blau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Thrun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">542</biblScope>
+			<biblScope unit="page">115</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">W</forename><surname>Andrews</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hare</surname></persName>
+		</author>
+		<title level="m">Survey Analysis: AI and ML Development Strategies, Motivators and Adoption Challenges</title>
+				<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m">Nimdzi Insights. Artificial Intelligence: Localization Winners, Losers, Heroes, Spectators, and You</title>
+				<meeting><address><addrLine>Pactera EDGE</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">AI System Engineering-Key Challenges and Lessons Learned</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ehrlinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Geist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Sobiezky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zellinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brunner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Moser</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/make3010004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning and Knowledge Extraction</title>
+		<imprint>
+			<biblScope unit="volume">2021</biblScope>
+			<biblScope unit="page" from="56" to="83" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Guidelines for quality assurance of machine learning-based artificial intelligence</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hamada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Ishikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Masuda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Matsuya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ujita</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">SEKE2020: the 32nd International Conference on Software Engineering &amp; Knowledge Engineering</title>
+				<imprint>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="335" to="341" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">CRISP-DM 1.0 Step-by-step data mining guide</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Chapman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Clinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Khabaza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Reinartz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Shearer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wirth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The CRISP-DM consortium</title>
+				<imprint>
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Towards a standard process model for data mining</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wirth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hipp</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Crisp-Dm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Fourth International Conference on the Practical Application of Knowledge Discovery and Data Mining</title>
+				<meeting>the Fourth International Conference on the Practical Application of Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="29" to="39" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The New Blueprint for Data Mining</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Shearer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Crisp-Dm</forename><surname>The</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Model</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Data Warehousing</title>
+		<imprint>
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">A survey of Knowledge Discovery and Data Mining process models. The Knowledge Engineering Review</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kurgan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Musilek</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="1" to="24" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A survey of data mining and knowledge discovery process models and methodologies</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Mariscal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Marbán</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fernández</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/S0269888910000032</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Knowledge Eng. Review</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="137" to="166" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Future trends in data mining</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">P</forename><surname>Kriegel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Borgwardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kröger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pryakhin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schubert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zimek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Data Mining and Knowledge Discovery</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="87" to="97" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Quality Diagnostic Models for Packaging Manufacturing: An Industrial Data Mining Case Study</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>De Abajo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Diez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lobato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Cuesta</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</title>
+				<meeting>the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="799" to="804" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Predictive modeling in automotive direct marketing: tools, experiences and open issues</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Gersten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wirth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Arndt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Sixth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</title>
+				<meeting>the Sixth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2000" />
+			<biblScope unit="page" from="398" to="406" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Analysing Warranty Claims of Automobiles; An Application Description following the CRISP-DM Data Mining Process</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hipp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lindner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Fifth International Computer Science Conference</title>
+				<meeting>the Fifth International Computer Science Conference</meeting>
+		<imprint>
+			<date type="published" when="1999" />
+			<biblScope unit="page" from="31" to="40" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<author>
+			<persName><surname>Ieee</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Std</surname></persName>
+		</author>
+		<title level="m">IEEE Standard for Developing Software Life Cycle Processes</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="1074" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Toward data mining engineering: A software engineering approach</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Marbán</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Segovia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Menasalvas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fernández-Baizán</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="87" to="107" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">SEMMA Data Mining Methodology</title>
+	</analytic>
+	<monogr>
+		<title level="j">SAS</title>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+		<respStmt>
+			<orgName>SAS Institute</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Implementation of Six Sigma to reduce cost of quality: a case study of automobile sector</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">G</forename><surname>Surange</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Failure Analysis and Prevention</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="282" to="294" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Towards Enterprise-Ready AI Deployments Minimizing the Risk of Consuming AI Models in Business Applications</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Muthusamy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Slominski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Ishakian</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/AI4I.2018.8665685</idno>
+	</analytic>
+	<monogr>
+		<title level="m">First International Conference on Artificial Intelligence for Industries (AI4I)</title>
+				<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="108" to="109" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Extending CRISP-DM to incorporate temporal data mining of multidimensional medical data streams: A neonatal intensive care unit case study</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Catley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">P</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mcgregor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tracy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">22nd IEEE International Symposium on Computer</title>
+				<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">CRISP-DM0: A method to extend CRISP-DM to support null hypothesis driven confirmatory data mining</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Heath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mcgregor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">1st Advances in Health Informatics Conference</title>
+				<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="96" to="101" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Specializing CRISP-DM for evidence mining</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Venter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>De Waal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Willers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IFIP International Conference on Digital Forensics</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="303" to="315" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">CRISP Data Mining Methodology Extension for Medical Domain</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Niaksu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Baltic Journal of Modern Computing</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="92" to="109" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Software Engineering for Machine Learning: A Case Study</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Amershi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Begel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Deline</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Gall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kamar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Nagappan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Nushi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zimmermann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Software Engineering (ICSE 2019) -Software Engineering in Practice track</title>
+				<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The ML test score: A rubric for ML production readiness and technical debt reduction</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Breck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Salib</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sculley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Big Data (Big Data)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1123" to="1132" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Hidden technical debt in machine learning systems</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sculley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Holt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Golovin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Davydov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ebner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Chaudhary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Crespo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dennison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in neural information processing systems</title>
+		<imprint>
+			<biblScope unit="page" from="2503" to="2511" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Deep Learning in Automotive Software</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Falcini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mitidieri Costanza</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/MS.2017.79</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Software</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="56" to="63" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Open Problems in Engineering and Quality Assurance of Safety Critical Machine Learning Systems</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kuwajima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yasuoka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nakae</surname></persName>
+		</author>
+		<idno>1812.03057</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Preliminary Systematic Literature Review of Machine Learning System Development Process</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Watanabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Washizaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sakamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Saito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Honda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tsuda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fukazawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Yoshioka</surname></persName>
+		</author>
+		<idno>arXiv:cs.LG/1910.05528</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">The Secrets of Machine Learning: Ten Things You Wish You Had Known Earlier to be More Effective at Data Analysis</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rudin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Carlson</surname></persName>
+		</author>
+		<idno>arXiv:cs.LG/1906.01998</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Predicting the price of used cars using machine learning techniques</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pudaruth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Inf. Comput. Technol</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="753" to="764" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Autonomy and Accountability: legal liability for machine learning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Reed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Kennedy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Responsibility</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+		<respStmt>
+			<orgName>Queen Mary School of Law Legal Studies Research Paper</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Legal requirements on explainability in machine learning</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bibal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lognoul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>De Streel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Frénay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence and Law</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><surname>Binns</surname></persName>
+		</author>
+		<title level="m">Machine Learning: Lessons from Political Philosophy. Proceedings of the 1st Conference on Fairness, Accountability and Transparency</title>
+				<editor>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Friedler</surname></persName>
+			<persName><forename type="first">C</forename><surname>Wilson</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="page" from="149" to="159" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of Machine Learning Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">The Measure and Mismeasure of Fairness: A Critical Review of Fair Machine Learning</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Corbett-Davies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Goel</surname></persName>
+		</author>
+		<idno>arXiv:cs.CY/1808.00023</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barredo Arrieta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Díaz-Rodríguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Del Ser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bennetot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tabik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barbado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>García</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gil-López</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Molina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Benjamins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chatila</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Herrera</surname></persName>
+		</author>
+		<idno>arXiv:cs.AI/1910.10045</idno>
+		<title level="m">Explainable Artificial Intelligence (XAI): Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI 2019</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Megaman: scalable manifold learning in python</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mcqueen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Meilă</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vanderplas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="5176" to="5180" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Data management challenges in production machine learning</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Polyzotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Whang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zinkevich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2017 ACM International Conference on Management of Data</title>
+				<meeting>the 2017 ACM International Conference on Management of Data</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1723" to="1726" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Unit Testing Data with Deequ</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Schelter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Biessmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lange</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Rukat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Seufert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Brunelle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Taptunov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 International Conference on Management of Data</title>
+				<meeting>the 2019 International Conference on Management of Data</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="1993" to="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Curse of Dimensionality</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Keogh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mueen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Encyclopedia of Machine Learning and Data Mining</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sammut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">I</forename><surname>Webb</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Eds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">S</forename><surname>Springer</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4899-7687-1_192</idno>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="314" to="315" />
+			<pubPlace>Boston, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Pattern recognition and machine learning, 5th Edition; Information science and statistics</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Bishop</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">An Introduction to Variable and Feature Selection</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Guyon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Elisseeff</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="1157" to="1182" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">On relevant dimensions in kernel feature spaces</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Buhmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="1875" to="1908" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">A review of feature selection and feature extraction methods applied on microarray data</title>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">M</forename><surname>Hira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">F</forename><surname>Gillies</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in bioinformatics</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">A Review of Feature Selection Techniques in Bioinformatics</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Saeys</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">N</forename><surname>Inza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Larrañaga</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/btm344</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="2507" to="2517" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chandrashekar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Sahin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.compeleceng.2013.11.024</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A Survey on Feature Selection Methods. Comput. Electr. Eng</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="16" to="28" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<author>
+			<persName><forename type="first">I</forename><surname>Guyon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nikravesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Zadeh</surname></persName>
+		</author>
+		<title level="m">Feature Extraction: Foundations and Applications (Studies in Fuzziness and Soft Computing</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Springer-Verlag</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<pubPlace>Berlin, Heidelberg</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Selection bias in gene extraction on the basis of microarray gene-expression data</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ambroise</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">J</forename><surname>Mclachlan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the national academy of sciences</title>
+				<meeting>the national academy of sciences</meeting>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="volume">99</biblScope>
+			<biblScope unit="page" from="6562" to="6566" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Analyzing classifiers: Fisher vectors and deep neural networks</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lapuschkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Binder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="2912" to="2920" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Unmasking Clever Hans predictors and assessing what machines really learn</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lapuschkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wäldchen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Binder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature communications</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">1096</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<title level="m" type="main">Explainable AI: interpreting, explaining and visualizing deep learning</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Vedaldi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+			<publisher>Springer Nature</publisher>
+			<biblScope unit="volume">11700</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Neural network classification and prior class probabilities</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lawrence</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Burns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Back</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Tsoi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Giles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Neural networks: tricks of the trade</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Synthetic Minority Over-sampling Technique</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">V</forename><surname>Chawla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">W</forename><surname>Bowyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">O</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">P</forename><surname>Kegelmeyer</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Smote</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Artificial Intelligence Research</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="321" to="357" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">A Study of the Behavior of Several Methods for Balancing Machine Learning Training Data</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E A P A</forename><surname>Batista</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Prati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Monard</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1007730.1007735</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SIGKDD Explor. Newsl</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="20" to="29" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Imbalanced-learn: A Python Toolbox to Tackle the Curse of Imbalanced Datasets in Machine Learning</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Lemaître</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Nogueira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Aridas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="559" to="563" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<title level="m" type="main">A primer on wavelets and their scientific applications</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Walker</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>CRC press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<monogr>
+		<title level="m" type="main">Understanding Digital Signal Processing</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Lyons</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note>2Nd Edition</note>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Prentice</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ptr</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<pubPlace>Upper Saddle River, NJ, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Recurrent neural networks for multivariate time series with missing values</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Che</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Purushotham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sontag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific reports</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">6085</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Missing Value Imputationin Tables with Non-Numerical Data</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Biessmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Salinas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Schelter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lange</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 27th ACM International Conference on Information and Knowledge Management</title>
+				<meeting>the 27th ACM International Conference on Information and Knowledge Management</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="2017" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Matrix Factorization Techniques for Recommender Systems</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Koren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Volinsky</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/MC.2009.263</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="30" to="37" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Multiple imputation: a review of practical and theoretical findings</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Murray</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Others</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Statistical Science</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="142" to="159" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<monogr>
+		<title level="m" type="main">Multiple imputation using chained equations: issues and guidance for practice</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">R</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Royston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Wood</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="377" to="399" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<monogr>
+		<title level="m" type="main">Multiple imputation by chained equations: what is it and how does it work? International journal of methods in psychiatric research</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Azur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Stuart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Frangakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Leaf</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="40" to="49" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">From Predictive Methods to Missing Data Imputation: An Optimization Approach</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Bertsimas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Pawlowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">D</forename><surname>Zhuo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="1" to="39" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Learning feature representations with k-means</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Coates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Neural networks: Tricks of the trade</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<monogr>
+		<title level="m" type="main">Kernel principal component analysis</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Schölkopf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Smola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997" />
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="583" to="588" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<monogr>
+		<title level="m" type="main">Learning internal representations by error propagation</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Rumelhart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1985" />
+		</imprint>
+		<respStmt>
+			<orgName>California Univ San Diego La Jolla Inst for Cognitive Science</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<monogr>
+		<title level="m" type="main">Deep Learning</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Courville</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Understanding data augmentation for classification: when to warp?</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gatt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Stamatescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Mcdonnell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">international conference on digital image computing: techniques and applications (DICTA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">A</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">B</forename><surname>Orr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Efficient</surname></persName>
+		</author>
+		<title level="m">Neural networks: Tricks of the trade</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<monogr>
+		<title level="m" type="main">Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ioffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Szegedy</surname></persName>
+		</author>
+		<idno>1502.03167</idno>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">TFX: A TensorFlow-based production-scale machine learning platform</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Baylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Breck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">T</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fiedel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Y</forename><surname>Foo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Haque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Haykal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ispir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Koc</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Others</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</title>
+				<meeting>the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1387" to="1395" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rudin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Machine Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Biessmann</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1901.08558</idno>
+		<title level="m">Quantifying Interpretability and Trust in Machine Learning Systems</title>
+				<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<monogr>
+		<title level="m" type="main">Learning with kernels: support vector machines, regularization, optimization, and beyond</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Schölkopf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Smola</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<publisher>MIT press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">The Lack of a Priori Distinctions Between Learning Algorithms</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Wolpert</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/neco.1996.8.7.1341</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Comput</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="1341" to="1390" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<monogr>
+		<title level="m" type="main">An introduction to kernel-based learning algorithms</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Rätsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Tsuda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Schölkopf</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="181" to="201" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Harman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<idno>1906.10742</idno>
+		<title level="m">Machine Learning Testing: Survey, Landscapes and Horizons</title>
+				<imprint>
+			<date type="published" when="1906" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<monogr>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hutter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kotthoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vanschoren</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-05318-5</idno>
+		<title level="m">Automated Machine Learning -Methods, Systems, Challenges; The Springer Series on Challenges in Machine Learning</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Efficient and Robust Automated Machine Learning</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Feurer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Klein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Eggensperger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Springenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Blum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hutter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cortes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Lawrence</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sugiyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Garnett</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<publisher>Curran Associates, Inc</publisher>
+			<biblScope unit="page" from="2962" to="2970" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zoph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">V</forename><surname>Le</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1611.01578</idno>
+		<title level="m">Neural architecture search with reinforcement learning</title>
+				<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Why Does Unsupervised Pre-training Help Deep Learning?</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Erhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Courville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">A</forename><surname>Manzagol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Vincent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="625" to="660" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Deep Feature Learning of In-Cylinder Flow Fields to Analyze CCVs in an SI-Engine</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dreher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Welch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ourza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zündorf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Maucher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dreizler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Böhm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hanuschkin</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/1468087420974148</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Engine Research</title>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Semi-supervised Learning with Deep Generative Models</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mohamed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jimenez Rezende</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Welling</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 27; Ghahramani, Z.; Welling, M</title>
+				<editor>
+			<persName><forename type="first">C</forename><surname>Cortes</surname></persName>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Lawrence</surname></persName>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="3581" to="3589" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<monogr>
+		<title level="m" type="main">Semi-Supervised Learning</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Chapelle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Schlkopf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zien</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>The MIT Press</publisher>
+		</imprint>
+	</monogr>
+	<note>1st ed</note>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">How transferable are features in deep neural networks?</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yosinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Clune</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lipson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 27; Ghahramani</title>
+				<editor>
+			<persName><forename type="first">C</forename><surname>Cortes</surname></persName>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Lawrence</surname></persName>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="3320" to="3328" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Using the Nyström Method to Speed Up Kernel Machines</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K I</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Seeger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems 13; Leen</title>
+				<editor>
+			<persName><forename type="first">T</forename><forename type="middle">G</forename><surname>Dietterich</surname></persName>
+			<persName><forename type="first">V</forename><surname>Tresp</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2001" />
+			<biblScope unit="page" from="682" to="688" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">On the Nyström Method for Approximating a Gram Matrix for Improved Kernel-Based Learning</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Drineas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Mahoney</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="2153" to="2175" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<monogr>
+		<title level="m" type="main">A Survey of Model Compression and Acceleration for Deep Neural Networks</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno>1710.09282</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Frankle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Carbin</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1803.03635</idno>
+		<title level="m">The lottery ticket hypothesis: Finding sparse, trainable neural networks</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<monogr>
+		<title level="m" type="main">DeepCABAC: A Universal Compression Algorithm for Deep Neural Networks</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wiedemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kirchhoffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Matlage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Haase</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marbán</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Marinc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Neumann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Osman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Marpe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Schwarz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wiegand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samek</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1907" />
+		</imprint>
+	</monogr>
+	<note>1907.11900</note>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title level="a" type="main">Ensemble-based classifiers</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Rokach</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence Review</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="1" to="39" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">Ensembling neural networks: many could be better than all</title>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">H</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial intelligence</title>
+		<imprint>
+			<biblScope unit="volume">137</biblScope>
+			<biblScope unit="page" from="239" to="263" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<analytic>
+		<title level="a" type="main">Popular ensemble methods: An empirical study</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Opitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Maclin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of artificial intelligence research</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="169" to="198" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<analytic>
+		<title level="a" type="main">Simple and scalable predictive uncertainty estimation using deep ensembles</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lakshminarayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pritzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Blundell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="6402" to="6413" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title level="a" type="main">Dropout as a Bayesian approximation</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Representing model uncertainty in deep learning. international conference on machine learning</title>
+				<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1050" to="1059" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<monogr>
+		<title level="m" type="main">The Machine Learning Reproducibility Checklist</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pineau</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="2019" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<analytic>
+		<title level="a" type="main">A Practical Taxonomy of Reproducibility for</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tatman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Vanderplas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning Research</title>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<analytic>
+		<title level="a" type="main">Deep reinforcement learning that matters</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Henderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bachman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pineau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Precup</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Meger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Thirty-Second AAAI Conference on Artificial Intelligence</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<monogr>
+		<title level="m" type="main">Winner&apos;s Curse? On Pace, Progress, and Empirical Rigor</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sculley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Snoek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wiltschko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rahimi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<analytic>
+		<title level="a" type="main">Unreproducible Research is Reproducible</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Bouthillier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Laurent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Vincent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chaudhuri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="middle">;</forename><surname>Eds</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pmlr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 36th International Conference on Machine Learning</title>
+				<meeting>the 36th International Conference on Machine Learning<address><addrLine>Long Beach, California, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="page" from="725" to="734" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of Machine Learning Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<analytic>
+		<title level="a" type="main">ModelDB: A System for Machine Learning Model Management</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Vartak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Subramanyam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">E</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Viswanathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Husnoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Madden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zaharia</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2939502.2939516</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Workshop on Human-In-the-Loop Data Analytics</title>
+				<meeting>the Workshop on Human-In-the-Loop Data Analytics<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">3</biblScope>
+		</imprint>
+	</monogr>
+	<note>HILDA &apos;16</note>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<analytic>
+		<title level="a" type="main">Metamorphic Testing of Driverless Cars</title>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">Q</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3241979</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Commun. ACM</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page" from="61" to="67" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<analytic>
+		<title level="a" type="main">Automated Testing of Deep-neural-network-driven Autonomous Cars</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Deeptest</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3180155.3180220</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 40th International Conference on Software Engineering</title>
+				<meeting>the 40th International Conference on Software Engineering<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="303" to="314" />
+		</imprint>
+	</monogr>
+	<note>ICSE &apos;18</note>
+</biblStruct>
+
+<biblStruct xml:id="b112">
+	<analytic>
+		<title level="a" type="main">Automated Whitebox Testing of Deep Learning Systems</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jana</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Deepxplore</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3132747.3132785</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 26th Symposium on Operating Systems Principles</title>
+				<meeting>the 26th Symposium on Operating Systems Principles<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1" to="18" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b113">
+	<monogr>
+		<title level="m" type="main">An Algorithm for Generating Invisible Data Poisoning Using Adversarial Noise That Breaks Image Classification Deep Learning. Machine Learning and Knowledge Extraction</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chan-Hon-Tong</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/make1010011</idno>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="192" to="204" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b114">
+	<monogr>
+		<title level="m" type="main">Debugging Machine Learning Tasks</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chakarov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Nori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Rajamani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Vijaykeerthy</surname></persName>
+		</author>
+		<idno>abs/1603.07292</idno>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b115">
+	<analytic>
+		<title level="a" type="main">Explainable AI Framework for Multivariate Hydrochemical Time Series</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Thrun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ultsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Breuer</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/make3010009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning and Knowledge Extraction</title>
+		<imprint>
+			<biblScope unit="volume">2021</biblScope>
+			<biblScope unit="page" from="170" to="204" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b116">
+	<analytic>
+		<title level="a" type="main">On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Binder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Klauschen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PloS one</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">e0130140</biblScope>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b117">
+	<analytic>
+		<title level="a" type="main">How to explain individual classification decisions</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Baehrens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Schroeter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Harmeling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kawanabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="1803" to="1831" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b118">
+	<analytic>
+		<title level="a" type="main">What is relevant in a text document?&quot;: An interpretable machine learning approach</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Arras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Horn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PloS one</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">e0181142</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b119">
+	<monogr>
+		<title level="m" type="main">How to Achieve Explainability and Transparency in Human AI Interaction. HCI International</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hois</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Theofanou-Fuelbier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Junk</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note>Posters</note>
+</biblStruct>
+
+<biblStruct xml:id="b120">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stephanidis</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ed</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+			<publisher>Springer International Publishing</publisher>
+			<biblScope unit="page" from="177" to="183" />
+			<pubPlace>Cham</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b121">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lapuschkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Seegerer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hägele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">T</forename><surname>Schütt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dähne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Kindermans</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Innvestigate</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">neural networks! Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1" to="8" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b122">
+	<monogr>
+		<title level="m" type="main">InterpretML: A Unified Framework for Machine Learning Interpretability</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jenkins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Koch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Caruana</surname></persName>
+		</author>
+		<idno>arXiv:cs.LG/1909.09223</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b123">
+	<analytic>
+		<title level="a" type="main">Machine learning at Facebook: Understanding inference at the edge</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brooks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Choudhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dukhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hazelwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Isaac</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Others</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Symposium on High Performance Computer Architecture (HPCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="331" to="344" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b124">
+	<analytic>
+		<title level="a" type="main">Guidelines and Benchmarks for Deployment of Deep Learning Models on Smartphones as Real-Time Apps</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sehgal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kehtarnavaz</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/make1010027</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning and Knowledge Extraction</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="450" to="465" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b125">
+	<analytic>
+		<title level="a" type="main">Serving Machine Learning Workloads in Resource Constrained Environments: a Serverless Deployment Example</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Christidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Davies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Moschoyiannis</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/SOCA.2019.00016</idno>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE 12th Conference on Service-Oriented Computing and Applications (SOCA)</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="55" to="63" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b126">
+	<analytic>
+		<title level="a" type="main">Deep visual domain adaptation: A survey</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Deng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<imprint>
+			<biblScope unit="volume">312</biblScope>
+			<biblScope unit="page" from="135" to="153" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b127">
+	<analytic>
+		<title level="a" type="main">Covariate shift adaptation by importance weighted cross validation</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sugiyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Krauledat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="985" to="1005" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b128">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><surname>Heckemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gesell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pfister</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Berns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Trapp</surname></persName>
+		</author>
+		<title level="m">Safe automotive software. International Conference on Knowledge-Based and Intelligent Information and Engineering Systems</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="167" to="176" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b129">
+	<analytic>
+		<title level="a" type="main">Safe learning of regions of attraction for uncertain, nonlinear systems with gaussian processes</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Berkenkamp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Moriconi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Schoellig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Krause</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE 55th Conference on Decision and Control (CDC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="4661" to="4666" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b130">
+	<monogr>
+		<title level="m" type="main">Continuous Deployment of Machine Learning Pipelines</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Derakhshan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Mahdiraji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Rabl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Markl</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+			<publisher>EDBT</publisher>
+			<biblScope unit="page" from="397" to="408" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b131">
+	<monogr>
+		<title level="m" type="main">Cloud Computing Patterns: Fundamentals to Design</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fehling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Leymann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Retter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Schupeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Arbitter</surname></persName>
+		</author>
+		<imprint>
+			<pubPlace>Build, and Manage Cloud Applications</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b132">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Springer</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-7091-1568-8</idno>
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b133">
+	<analytic>
+		<title level="a" type="main">Interpretability and Reproducability in Production Machine Learning Applications</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghanta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sundararaman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Khermosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sridhar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Arteaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Talagala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">17th IEEE International Conference on Machine Learning and Applications (ICMLA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="658" to="664" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

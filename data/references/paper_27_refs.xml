@@ -1,0 +1,1194 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Jukka Heikkonen, and Tapio Pahikkala. The spatial leave-pair-out cross-validation method for reliable AUC estimation of spatial classifiers</title>
+		<author>
+			<persName><forename type="first">Antti</forename><surname>Airola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonne</forename><surname>Pohjankukka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johanna</forename><surname>Torppa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maarit</forename><surname>Middleton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vesa</forename><surname>Nykänen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Data Mining and Knowledge Discovery</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="730" to="747" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">A stratified random sampling design in space and time for regional to global scale burned area product validation. Remote sensing of environment</title>
+		<author>
+			<persName><forename type="first">Luigi</forename><surname>Boschetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Stephen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David P</forename><surname>Stehman</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Roy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">186</biblScope>
+			<biblScope unit="page" from="465" to="478" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Spatial machine-learning model diagnostics: A model-agnostic distance-based approach</title>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Brenning</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Geographical Information Science</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Statistical approaches for spatial sample survey: Persistent misconceptions and new developments</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dick</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Brus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Soil Science</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="686" to="703" />
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Using satellite imagery to understand and promote sustainable development</title>
+		<author>
+			<persName><forename type="first">Marshall</forename><surname>Burke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anne</forename><surname>Driscoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Lobell</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ermon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">371</biblScope>
+			<biblScope unit="issue">6535</biblScope>
+			<biblScope unit="page">e8628</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Microestimates of wealth for all low-and middle-income countries</title>
+		<author>
+			<persName><forename type="first">Guanghua</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sourav</forename><surname>Chatterjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">E</forename><surname>Blumenstock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">e2113658119</biblScope>
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Global geospatial data from earth observation: Status and issues</title>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Dowman</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hannes</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Reuter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Digital Earth</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="328" to="341" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Spatial statistical machine learning models to assess the relationship between development vulnerabilities and educational factors in children in queensland, australia</title>
+		<author>
+			<persName><forename type="first">Aiden</forename><surname>Wala Draidi Areed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathryn</forename><surname>Price</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kerrie</forename><surname>Arnett</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Mengersen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022" />
+			<publisher>BMC Public Health</publisher>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Paintings predict the distribution of species, or the challenge of selecting environmental predictors and evaluation statistics</title>
+		<author>
+			<persName><forename type="first">Yoan</forename><surname>Fourcade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Aurélien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><surname>Besnard</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Secondi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Global Ecology and Biogeography</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="245" to="256" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Spatial statistics and modeling</title>
+		<author>
+			<persName><forename type="first">Carlo</forename><surname>Gaetan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xavier</forename><surname>Guyon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Springer</publisher>
+			<biblScope unit="volume">90</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">The special nature of spatial data. The SAGE Handbook of Spatial Analysis</title>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Haining</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<publisher>SAGE Publications</publisher>
+			<biblScope unit="page" from="5" to="23" />
+			<pubPlace>Los Angeles</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Geostatistical learning: Challenges and opportunities</title>
+		<author>
+			<persName><forename type="first">Júlio</forename><surname>Hoffimann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maciel</forename><surname>Zortea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bianca</forename><surname>Breno De Carvalho</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Zadrozny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Applied Mathematics and Statistics</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">689393</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Combining satellite imagery and machine learning to predict poverty</title>
+		<author>
+			<persName><forename type="first">Neal</forename><surname>Jean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marshall</forename><surname>Burke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">B</forename><surname>Lobell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Ermon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">353</biblScope>
+			<biblScope unit="issue">6301</biblScope>
+			<biblScope unit="page" from="790" to="794" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Auxiliary-task learning for geographic data with autoregressive embeddings</title>
+		<author>
+			<persName><forename type="first">Konstantin</forename><surname>Klemmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Daniel</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Neill</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 29th International Conference on Advances in Geographic Information Systems</title>
+				<meeting>the 29th International Conference on Advances in Geographic Information Systems</meeting>
+		<imprint>
+			<date type="published" when="2021" />
+			<biblScope unit="page" from="141" to="144" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Wilds: A benchmark of in-the-wild distribution shifts</title>
+		<author>
+			<persName><forename type="first">Pang</forename><surname>Wei Koh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiori</forename><surname>Sagawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henrik</forename><surname>Marklund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sang</forename><forename type="middle">Michael</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marvin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akshay</forename><surname>Balsubramani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weihua</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michihiro</forename><surname>Yasunaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">Lanas</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irena</forename><surname>Gao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2021" />
+			<biblScope unit="page" from="5637" to="5664" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Spatial leave-one-out cross-validation for variable selection in the presence of spatial autocorrelation</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Kévin Le Rest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Pinaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joël</forename><surname>Monestiez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Chadoeuf</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Bretagnolle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Global ecology and biogeography</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="811" to="820" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Sampling: design and analysis</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sharon</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Lohr</surname></persName>
+		</author>
+		<imprint>
+			<publisher>Chapman and Hall/CRC</publisher>
+			<biblScope unit="page">2021</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Accuracy assessment in convolutional neural network-based deep learning remote sensing studies-part 1: Literature review</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Aaron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">A</forename><surname>Maxwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luis Andrés</forename><surname>Warner</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Guillén</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page">2450</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Machine learning-based global maps of ecological variables and the challenge of assessing them</title>
+		<author>
+			<persName><forename type="first">Hanna</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edzer</forename><surname>Pebesma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="4" />
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Importance of spatial predictor variable selection in machine learning applications-moving from data reproduction to spatial prediction</title>
+		<author>
+			<persName><forename type="first">Hanna</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christoph</forename><surname>Reudenbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Wöllauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Nauss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ecological Modelling</title>
+		<imprint>
+			<biblScope unit="volume">411</biblScope>
+			<biblScope unit="page">108815</biblScope>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Nearest neighbour distance matching leave-one-out cross-validation for map validation</title>
+		<author>
+			<persName><forename type="first">Carles</forename><surname>Milà</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><surname>Mateu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edzer</forename><surname>Pebesma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanna</forename><surname>Meyer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Methods in Ecology and Evolution</title>
+		<imprint>
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Model cards for model reporting</title>
+		<author>
+			<persName><forename type="first">Margaret</forename><surname>Mitchell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simone</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zaldivar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parker</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucy</forename><surname>Vasserman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Hutchinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><surname>Spitzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deborah</forename><surname>Inioluwa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timnit</forename><surname>Raji</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gebru</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the conference on fairness, accountability, and transparency</title>
+				<meeting>the conference on fairness, accountability, and transparency</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="220" to="229" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Characterizing agricultural drought in the Karamoja subregion of Uganda with meteorological and satellite-based indices</title>
+		<author>
+			<persName><forename type="first">Catherine</forename><surname>Nakalembe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Natural Hazards</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="837" to="862" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Machine learning of spatial data</title>
+		<author>
+			<persName><forename type="first">Behnam</forename><surname>Nikparvar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Claude</forename><surname>Thill</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ISPRS International Journal of Geo-Information</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">600</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A review of geospatial methods for population estimation and their use in constructing reproductive, maternal, newborn, child and adolescent health service indicators</title>
+		<author>
+			<persName><forename type="first">Kristine</forename><surname>Nilsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natalia</forename><surname>Tejedor-Garavito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edson</forename><surname>Douglas R Leasure</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corrine</forename><forename type="middle">W</forename><surname>Utazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adelle</forename><forename type="middle">S</forename><surname>Ruktanonchai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claire</forename><forename type="middle">A</forename><surname>Wigley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zoe</forename><surname>Dooley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">J</forename><surname>Matthews</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Tatem</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BMC health services research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Global and national trends, gaps, and opportunities in documenting and monitoring species distributions</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ruth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carsten</forename><surname>Oliver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Ranipeta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><surname>Winner</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Jetz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS Biology</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">e3001336</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Street2sat: A machine learning pipeline for generating ground-truth geo-referenced labeled datasets from street-level images</title>
+		<author>
+			<persName><forename type="first">Madhava</forename><surname>Paliyam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><surname>Nakalembe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Nyiawung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannah</forename><surname>Kerner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Tackling Climate Change with Machine Learning Workshop at the International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Spatial validation reveals poor predictive performance of large-scale ecological mapping models</title>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Ploton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frédéric</forename><surname>Mortier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxime</forename><surname>Réjou-Méchain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Barbier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Picard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vivien</forename><surname>Rossi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carsten</forename><surname>Dormann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guillaume</forename><surname>Cornu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gaëlle</forename><surname>Viennois</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Bayol</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature communications</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Estimating the prediction performance of spatial models via spatial k-fold cross validation</title>
+		<author>
+			<persName><forename type="first">Jonne</forename><surname>Pohjankukka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tapio</forename><surname>Pahikkala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paavo</forename><surname>Nevalainen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jukka</forename><surname>Heikkonen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Geographical Information Science</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2001" to="2019" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Parameter recovery using remotely sensed variables</title>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Proctor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tamma</forename><surname>Carleton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandy</forename><surname>Sum</surname></persName>
+		</author>
+		<ptr target="http://www.nber.org/papers/w30861" />
+	</analytic>
+	<monogr>
+		<title level="j">National Bureau of Economic Research</title>
+		<imprint>
+			<date type="published" when="2023-01" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Working Paper 30861</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Crossvalidation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure</title>
+		<author>
+			<persName><forename type="first">Volker</forename><surname>David R Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simone</forename><surname>Bahn</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ciuti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jane</forename><surname>Boyce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gurutzeta</forename><surname>Elith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Severin</forename><surname>Guillera-Arroita</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hauenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>José</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Lahoz-Monfort</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wilfried</forename><surname>Schröder</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Thuiller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ecography</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="913" to="929" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Fast building segmentation from satellite imagery and few local labels</title>
+		<author>
+			<persName><forename type="first">Caleb</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><surname>Ortiz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hogeun</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nancy</forename><surname>Lozano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><forename type="middle">Kher</forename><surname>Kaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tina</forename><surname>Sederholm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Dodhia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan M Lavista</forename><surname>Ferres</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE/CVF Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2022" />
+			<biblScope unit="page" from="1463" to="1471" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Post-estimation smoothing: A simple baseline for learning with side information</title>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Rolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Michael I Jordan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Recht</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Artificial Intelligence and Statistics</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2020" />
+			<biblScope unit="page" from="1759" to="1769" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">A generalizable and accessible approach to machine learning with global satellite imagery</title>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>Rolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Proctor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tamma</forename><surname>Carleton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Bolliger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vaishaal</forename><surname>Shankar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miyabi</forename><surname>Ishihara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Recht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Solomon</forename><surname>Hsiang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature communications</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Hyperparameter tuning and performance assessment of statistical and machine-learning algorithms using spatial data</title>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Schratz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jannes</forename><surname>Muenchow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eugenia</forename><surname>Iturritxa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Richter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Brenning</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ecological Modelling</title>
+		<imprint>
+			<biblScope unit="volume">406</biblScope>
+			<biblScope unit="page" from="109" to="120" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Development and delivery of species distribution models to inform decision-making</title>
+		<author>
+			<persName><forename type="first">Catherine</forename><forename type="middle">S</forename><surname>Helen R Sofaer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">S</forename><surname>Jarnevich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Regan</forename><forename type="middle">L</forename><surname>Pearse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephanie</forename><surname>Smyth</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Auer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Gericke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">C</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerald</forename><forename type="middle">F</forename><surname>Edwards</surname><genName>Jr</genName></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">G</forename><surname>Guala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">T</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Morisette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BioScience</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="544" to="557" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Three common machine learning algorithms neither enhance prediction accuracy nor reduce spatial autocorrelation in residuals: An analysis of twenty-five socioeconomic data sets</title>
+		<author>
+			<persName><forename type="first">Insang</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daehyun</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Geographical Analysis</title>
+		<imprint>
+			<biblScope unit="page">2022</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Validation of the us geological survey&apos;s land change monitoring, assessment and projection (lcmap) collection 1.0 annual land cover products</title>
+		<author>
+			<persName><surname>Stephen V Stehman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Bruce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josephine</forename><forename type="middle">A</forename><surname>Pengra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danika</forename><forename type="middle">F</forename><surname>Horton</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Wellington</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing of Environment</title>
+		<imprint>
+			<biblScope unit="volume">265</biblScope>
+			<biblScope unit="page">112646</biblScope>
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Domain adaptation for the classification of remote sensing data: An overview of recent advances. IEEE geoscience and remote sensing magazine</title>
+		<author>
+			<persName><forename type="first">Devis</forename><surname>Tuia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claudio</forename><surname>Persello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Bruzzone</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="41" to="57" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">blockcv: An r package for generating spatially or environmentally separated folds for k-fold cross-validation of species distribution models</title>
+		<author>
+			<persName><forename type="first">Roozbeh</forename><surname>Valavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jane</forename><surname>Elith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>José</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gurutzeta</forename><surname>Lahoz-Monfort</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Guillera-Arroita</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">bioRxiv</title>
+		<imprint>
+			<biblScope unit="page">357798</biblScope>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Spatial crossvalidation is not the right way to evaluate map accuracy</title>
+		<author>
+			<persName><forename type="first">Mj-C</forename><surname>Alexandre</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Wadoux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Gerard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sytze</forename><surname>Heuvelink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dick</forename><forename type="middle">J</forename><surname>De Bruin</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Brus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ecological Modelling</title>
+		<imprint>
+			<biblScope unit="volume">457</biblScope>
+			<biblScope unit="page">109692</biblScope>
+			<date type="published" when="2021" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Embedding scale: New thinking of scale in machine learning and geographic representation</title>
+		<author>
+			<persName><forename type="first">May</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arlo</forename><surname>Mckee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Geographical Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="501" to="524" />
+			<date type="published" when="2022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,13 @@
+Title: Tuning Learning Rates with the Cumulative-Learning Constant
+Published: 2025-04-30T00:07:48Z
+Link: http://arxiv.org/abs/2505.13457v1
+
+Abstract:
+This paper introduces a novel method for optimizing learning rates in machine
+learning. A previously unrecognized proportionality between learning rates and
+dataset sizes is discovered, providing valuable insights into how dataset scale
+influences training dynamics. Additionally, a cumulative learning constant is
+identified, offering a framework for designing and optimizing advanced learning
+rate schedules. These findings have the potential to enhance training
+efficiency and performance across a wide range of machine learning
+applications.

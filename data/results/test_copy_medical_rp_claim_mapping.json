@@ -1,0 +1,23 @@
+{
+  "new_pdf": "/home/bhxveshhh/ML/LangChain/Automated Academic Peer Review Assistant/test_pdf/test_copy_medical_rp.pdf",
+  "mappings": [
+    {
+      "claim": "Next, we demonstrate how to apply the algorithms with appropriate toolkits to conduct machine learning experiments for clinical prediction tasks.",
+      "is_novel": false,
+      "matched_claim": "Next, we demonstrate how to apply the algorithms with appropriate toolkits to conduct machine learning experiments for clinical prediction tasks.",
+      "matched_paper_title": "Machine Learning for Clinical Predictive Analytics",
+      "matched_paper_index": 3,
+      "similarity": 1.0
+    },
+    {
+      "claim": "In Figure 3 and Table 3 we demonstrate a few cases of diagnostics as examples.",
+      "is_novel": false,
+      "matched_claim": "In Figure 3 and Table 3 we demonstrate a few cases of diagnostics as examples.",
+      "matched_paper_title": "Machine Learning for Clinical Predictive Analytics",
+      "matched_paper_index": 3,
+      "similarity": 1.0
+    }
+  ],
+  "num_new_claims": 2,
+  "num_existing_claims": 23
+}

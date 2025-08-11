@@ -1,0 +1,112 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Bayesian Reasoning and Machine Learning</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Barber</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>New York, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Plausible deniability for privacypreserving data synthesis</title>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Bindschaedler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Shokri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carl</forename><forename type="middle">A</forename><surname>Gunter</surname></persName>
+		</author>
+		<idno>abs/1708.07975</idno>
+		<ptr target="http://arxiv.org/abs/1708.07975" />
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Some general divergence measures for probability distributions</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Dragomir</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10474-005-0251-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Mathematica Hungarica</title>
+		<idno type="ISSN">1588-2632</idno>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="331" to="345" />
+			<date type="published" when="2005-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The Algorithmic Foundations of Differential Privacy</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dwork</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Roth</surname></persName>
+		</author>
+		<idno type="DOI">10.1561/0400000042</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Found. Trends Theor. Comput. Sci</title>
+		<idno type="ISSN">1551-305X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page" from="211" to="407" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Deepobfuscator: Adversarial training framework for privacy-preserving image classification</title>
+		<author>
+			<persName><forename type="first">Ang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiayi</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huanrui</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiran</forename><surname>Chen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

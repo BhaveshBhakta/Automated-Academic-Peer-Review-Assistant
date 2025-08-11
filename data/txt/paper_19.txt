@@ -1,0 +1,8 @@
+Title: Proceedings of the 2016 ICML Workshop on #Data4Good: Machine Learning in
+  Social Good Applications
+Published: 2016-07-08T16:55:31Z
+Link: http://arxiv.org/abs/1607.02450v2
+
+Abstract:
+This is the Proceedings of the ICML Workshop on #Data4Good: Machine Learning
+in Social Good Applications, which was held on June 24, 2016 in New York.

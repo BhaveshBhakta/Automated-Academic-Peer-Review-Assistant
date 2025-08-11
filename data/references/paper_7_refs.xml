@@ -1,0 +1,4879 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader/>
+	<text>
+		<front/>
+		<body/>
+		<back>
+			<div>
+				<listBibl>
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">An Overview of Cubist</title>
+		<ptr target="https://www.rulequest.com/cubist-win.html" />
+	</analytic>
+	<monogr>
+		<title level="j">Online; accessed</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<date type="published" when="2017-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Decision tree learning</title>
+		<ptr target="https://en.wikipedia.org/wiki/Decision_tree_learning" />
+		<imprint>
+			<date type="published" when="2018-04-04" />
+		</imprint>
+	</monogr>
+	<note>Retrieved</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Random</forename><surname>Forest</surname></persName>
+		</author>
+		<ptr target="https://en.wikipedia.org/wiki/Random_forest" />
+		<imprint>
+			<date type="published" when="2018-04-04" />
+		</imprint>
+	</monogr>
+	<note>Retrieved</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Using machine learning to focus iterative optimization</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Agakov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bonilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cavazos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Franke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Fursin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>O'boyle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Thomson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Toussaint</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Symposium on Code Generation and Optimization</title>
+				<meeting>the International Symposium on Code Generation and Optimization</meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="295" to="305" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Performance prediction for multi-threaded applications</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zahran</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Workshop on AI-assisted Design for Architecture (AIDArc)</title>
+				<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note>held in conjunction with ISCA</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Perceptron-based branch confidence estimation</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Akkary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Koltur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Refaai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Software, IEE Proceedings</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="265" to="265" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Meet the sherlock holmes&apos; of side channel leakage: A survey of cache sca detection techniques</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Akram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mushtaq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Bhatti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lapotre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gogniat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="70836" to="70860" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Introduction to machine learning</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Alpaydin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014" />
+			<publisher>MIT press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Mixed-signal approximate computation: A neural predictor case study</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Amant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Burger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE micro</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="104" to="115" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Cross-architecture performance prediction (xapp) using cpu code to predict gpu performance</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ardalani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lestourgeon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sankaralingam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">48th Annual IEEE/ACM International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="725" to="737" />
+		</imprint>
+	</monogr>
+	<note>Microarchitecture (MICRO)</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">A static analysis-based cross-architecture performance prediction using machine learning</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ardalani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Thakker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Albarghouthi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sankaralingam</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1906.07840</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Predicting gpu performance from cpu runs using machine learning</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Baldini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Altman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Architecture and High Performance Computing (SBAC-PAD)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="254" to="261" />
+		</imprint>
+	</monogr>
+	<note>IEEE 26th International Symposium on</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Maximizing cache performance under uncertainty</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Beckmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sanchez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Symposium on High Performance Computer Architecture (HPCA</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="109" to="120" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Pecc: Prediction-error correcting cache</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bhardwaj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Janardhan</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Workshop on ML for Systems at NeurIPS</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Perceptron-based prefetch filtering</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bhatia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chacon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pugsley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Teran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">V</forename><surname>Gratz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="1" to="13" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The gem5 Simulator</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Binkert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Beckmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Black</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Reinhardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Saidi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Basu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hestness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Hower</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Krishna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sardashti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM SIGARCH Comp. Arch. News</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="1" to="7" />
+			<date type="published" when="2011-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Coordinated management of multiple interacting resources in chip multiprocessors: A machine learning approach</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bitirgen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ipek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Martinez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 41st annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<meeting>the 41st annual IEEE/ACM International Symposium on Microarchitecture</meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="318" to="329" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Neural confidence estimation for more accurate value prediction</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Black</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Franklin</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 12th international conference on High Performance Computing</title>
+				<meeting>the 12th international conference on High Performance Computing</meeting>
+		<imprint>
+			<publisher>Springer-Verlag</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="376" to="385" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">The perceptron: A model for brain functioning. i</title>
+		<author>
+			<persName><forename type="first">H.-D</forename><surname>Block</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Reviews of Modern Physics</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page">123</biblScope>
+			<date type="published" when="1962" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Performance modelling of heterogeneous isa multicore architectures</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">K</forename><surname>Boran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Meghwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Singh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">East-West Design &amp; Test Symposium (EWDTS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">A training algorithm for optimal margin classifiers</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">E</forename><surname>Boser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">M</forename><surname>Guyon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">N</forename><surname>Vapnik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the fifth annual workshop on Computational learning theory</title>
+				<meeting>the fifth annual workshop on Computational learning theory</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="1992" />
+			<biblScope unit="page" from="144" to="152" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Understanding memory access patterns for prefetching</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Litz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Workshop on AI-assisted Design for Architecture (AIDArc)</title>
+				<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note>held in conjunction with ISCA</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Random forests</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Breiman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Machine learning</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="5" to="32" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Classification and regression trees. Routledge</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Breiman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Hierarchical cluster analysis</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">C</forename><surname>Bridges</surname><genName>Jr</genName></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological reports</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="851" to="854" />
+			<date type="published" when="1966" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A new organization for a perceptron-based branch predictor and its fpga implementation</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Cadenas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Megson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">VLSI, 2005. Proceedings. IEEE Computer Society Annual Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="305" to="306" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Evidence-based static branch prediction using machine learning</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Calder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Grunwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lindsay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mozer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zorn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Programming Languages and Systems (TOPLAS)</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="188" to="222" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">An empirical comparison of supervised learning algorithms</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Caruana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Niculescu-Mizil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 23rd international conference on Machine learning</title>
+				<meeting>the 23rd international conference on Machine learning</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="161" to="168" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Using machine learning techniques to analyze the performance of concurrent kernel execution on gpus</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Carvalho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Clua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Paes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bentes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lopes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M D A</forename><surname>Drummond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Future Generation Computer Systems</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="page" from="528" to="540" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Anomaly detection: A survey</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Chandola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM computing surveys (CSUR)</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Real time detection of cache-based side-channel attacks using hardware performance counters</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chiappetta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Savas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yilmaz</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Soft Computing</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="1162" to="1174" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Christopher</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pattern</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Learning</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+			<publisher>Springer-Verlag</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Pack &amp; cap: adaptive dvfs and thread packing under power caps</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cochran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hankendi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Coskun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reda</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 44th annual IEEE/ACM international symposium on microarchitecture</title>
+				<meeting>the 44th annual IEEE/ACM international symposium on microarchitecture</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="175" to="185" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Optimizing for reduced code space using genetic algorithms</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">D</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Schielke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Subramanian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM SIGPLAN Notices</title>
+				<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="1999" />
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Nearest neighbor pattern classification</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Cover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on information theory</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="21" to="27" />
+			<date type="published" when="1967" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Svms for improved branch prediction</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Culpepper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gondree</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005" />
+			<pubPlace>UCDavis, USA, ECS201A</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of California</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Block2vec: A deep learning strategy on mining block correlations in storage systems</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">S</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Parallel Processing Workshops (ICPPW), 2016 45th International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="230" to="239" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Improved composite confidence mechanisms for a perceptron branch predictor</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Desmet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Eeckhout</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">De</forename><surname>Bosschere</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Systems Architecture</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="143" to="151" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">The master algorithm: How the quest for the ultimate learning machine will remake our world</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Domingos</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+			<pubPlace>Basic Books</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Kleio: A hybrid memory page scheduler with machine intelligence</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">D</forename><surname>Doudali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Blagodurov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Vishnu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gurumurthi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gavrilovska</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 28th International Symposium on High-Performance Parallel and Distributed Computing</title>
+				<meeting>the 28th International Symposium on High-Performance Parallel and Distributed Computing</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="37" to="48" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Improving cache management policies using dynamic reuse distances</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Duong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cammarota</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Valero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Veidenbaum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">45th Annual IEEE/ACM International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="389" to="400" />
+		</imprint>
+	</monogr>
+	<note>Microarchitecture (MICRO)</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Two-level branch prediction using neural networks</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Egan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Steven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Quick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Anguera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Steven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Vintan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Systems Architecture</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="557" to="570" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">On the comparison of regression algorithms for computer architecture performance analysis of software applications</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Elmoustapha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Charles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kshitij</surname></persName>
+		</author>
+		<idno>SMART&apos;07</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the First Workshop on Statistical and Machine learning approaches applied to ARchitectures and compilaTion</title>
+				<meeting>the First Workshop on Statistical and Machine learning approaches applied to ARchitectures and compilaTion</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">A language for describing predictors and its application to automatic synthesis</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Emer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Gloy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">In ACM SIGARCH Computer Architecture News</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="304" to="314" />
+			<date type="published" when="1997" />
+			<publisher>ACM</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Dynamic feature selection for hardware prediction</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Givan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Falsafi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Vijaykumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECE Technical Reports</title>
+		<imprint>
+			<biblScope unit="page">28</biblScope>
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Dynamic voltage and frequency scaling in nocs with supervised and reinforcement learning techniques</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Fettes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bunescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Karanth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Louri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computers</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page" from="375" to="389" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Hardware-level thread migration to reduce on-chip data movement via reinforcement learning</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Fettes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Karanth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bunescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Louri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Shiflett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="3638" to="3649" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Cpu hardware classification and performance prediction using neural networks and statistical learning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Foots</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Artificial Intelligence and Applications (IJAIA)</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">The elements of statistical learning</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Friedman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hastie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tibshirani</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001" />
+			<publisher>Springer series in statistics</publisher>
+			<biblScope unit="volume">1</biblScope>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Adaptive information processing: An effective way to improve perceptron branch predictors</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Instruction-Level Parallelism</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Bit-level perceptron prediction for indirect branches</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Garza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mirbagher-Ajorpaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">A</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="27" to="38" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<title level="m" type="main">Using binary neural networks for hardware branch prediction</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Gaudet</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Appropriate allocation of workloads on performance asymmetric multicore architectures via deep learning algorithms</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gomatheeshwari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Selvakumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Microprocessors and Microsystems</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page">102996</biblScope>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<title level="m" type="main">Bias-free neural predictor. The 4th Championship Branch Prediction</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gope</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Lipasti</surname></persName>
+		</author>
+		<ptr target="http://www.jilp.org/cbp2014" />
+		<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<title level="m" type="main">Big. little processing with arm cortex-a15 &amp; cortex-a7</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Greenhalgh</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page">17</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">A machine learning-based approach to estimate the cpu-burst time for processes in the computational grids</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Helmy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Al-Azani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Bin-Obaidellah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Artificial Intelligence, Modelling and Simulation</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="3" to="8" />
+		</imprint>
+	</monogr>
+	<note>3rd International Conference on</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Learning multiple layers of representation</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trends in cognitive sciences</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="428" to="434" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Combining local and global history hashing in perceptron branch prediction</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Y</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Fong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICIS 2007. 6th IEEE/ACIS International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="54" to="59" />
+		</imprint>
+	</monogr>
+	<note>Computer and Information Science</note>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Performance prediction based on inherent program similarity</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hoste</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Phansalkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Eeckhout</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Georges</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">De</forename><surname>Bosschere</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Parallel Architectures and Compilation Techniques (PACT), 2006 International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="114" to="122" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Efficiently exploring architectural design spaces via predictive modeling</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ïpek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Mckee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Caruana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>De Supinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schulz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+			<publisher>ACM</publisher>
+			<biblScope unit="volume">40</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Self-optimizing memory controllers: A reinforcement learning approach</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ipek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Mutlu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Martínez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Caruana</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Architecture, 2008. ISCA&apos;08. 35th International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="39" to="50" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<title level="m" type="main">Learning automatic schedulers with projective reparameterization</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amarasinghe</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">High performance cache replacement using re-reference interval prediction (rrip)</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jaleel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Theobald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Steely</surname><genName>Jr</genName></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Emer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">In ACM SIGARCH Computer Architecture News</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="60" to="71" />
+			<date type="published" when="2010" />
+			<publisher>ACM</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">An introduction to statistical learning</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Witten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hastie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tibshirani</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013" />
+			<publisher>Springer</publisher>
+			<biblScope unit="volume">112</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<title level="m" type="main">Cache miss rate predictability via neural networks</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Karuvally</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tiwari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Moss</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Automated regression-based gpu design space exploration</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Martonosi</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Stargazer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Performance Analysis of Systems and Software (ISPASS), 2012 IEEE International Symposium on</title>
+				<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="2" to="13" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">Multiperspective perceptron predictor. Championship Branch Prediction (CBP-5</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jiménez</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<monogr>
+		<title level="m" type="main">Snip: Scaled neural indirect predictor</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Fast path-based neural branch prediction</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 36th annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<meeting>the 36th annual IEEE/ACM International Symposium on Microarchitecture</meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2003" />
+			<biblScope unit="page">243</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Improved latency and accuracy for neural branch prediction</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Computer Systems (TOCS)</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="197" to="218" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Piecewise linear branch prediction</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM SIGARCH Computer Architecture News</title>
+				<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="382" to="393" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Generalizing neural branch prediction</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Architecture and Code Optimization (TACO)</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">17</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">An optimized scaled neural branch predictor</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Design (ICCD), 2011 IEEE 29th International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="113" to="118" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Insertion and promotion for tree-based pseudolru last-level caches</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 46th Annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<meeting>the 46th Annual IEEE/ACM International Symposium on Microarchitecture</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="284" to="296" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Perceptron learning for predicting the behavior of conditional branches</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings. IJCNN&apos;01. International Joint Conference on</title>
+				<meeting>IJCNN&apos;01. International Joint Conference on</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2001" />
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="2122" to="2127" />
+		</imprint>
+	</monogr>
+	<note>Neural Networks</note>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Neural methods for dynamic branch prediction</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Computer Systems (TOCS)</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="369" to="397" />
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<title level="m" type="main">Principal components in regression analysis</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">T</forename><surname>Jolliffe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="167" to="198" />
+		</imprint>
+	</monogr>
+	<note>Principal component analysis</note>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Power-aware performance increase via core/uncore reinforcement control for chip-multiprocessors</title>
+		<author>
+			<persName><forename type="first">D.-C</forename><surname>Juan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Marculescu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2012 ACM/IEEE international symposium on Low power electronics and design</title>
+				<meeting>the 2012 ACM/IEEE international symposium on Low power electronics and design</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="97" to="102" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Compute bottlenecks on the new 64-bit arm</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jundt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cauble-Chantrenne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tiwari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Peraza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Laurenzano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Carrington</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 3rd International Workshop on Energy Efficient Supercomputing</title>
+				<meeting>the 3rd International Workshop on Energy Efficient Supercomputing</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page">6</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Supervised learning based power management for multicore processors</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pedram</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="1395" to="1408" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Reinforcement learning: A survey</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">P</forename><surname>Kaelbling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Littman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Moore</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of artificial intelligence research</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="237" to="285" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<monogr>
+		<title level="m" type="main">Branch and confidence prediction using perceptrons</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kelley</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">The case for learning application behavior to improve hardware energy efficiency</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kevin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Jafanza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kansal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Taur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zahran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Muzahid</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2004.13074</idno>
+		<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">On the finding proper cache prediction model using neural network</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Khakhaeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chantrapornchai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Knowledge and Smart Technology (KST), 2016 8th International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="146" to="151" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Using predictivemodeling for cross-program design space exploration in multicore systems</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Xekalakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cavazos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cintra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 16th International Conference on Parallel Architecture and Compilation Techniques</title>
+				<meeting>the 16th International Conference on Parallel Architecture and Compilation Techniques</meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="327" to="338" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Rhmd: evasion-resilient hardware malware detectors</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Khasawneh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Abu-Ghazaleh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ponomarev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 50th Annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<meeting>the 50th Annual IEEE/ACM International Symposium on Microarchitecture</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="315" to="327" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Ensemble learning for low-level hardware-supported malware detection</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Khasawneh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ozsoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Donovick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Abu-Ghazaleh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ponomarev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Workshop on Recent Advances in Intrusion Detection</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="3" to="25" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Accurate hardware malware detectors with specialized ensemble classifiers</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Khasawneh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ozsoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Donovick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">A</forename><surname>Ghazaleh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">V</forename><surname>Ponomarev</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ensemblehmd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Dependable and Secure Computing</title>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Constructing support vector machine ensemble</title>
+		<author>
+			<persName><forename type="first">H.-C</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-M</forename><surname>Je</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Y</forename><surname>Bang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern recognition</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="2757" to="2767" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<monogr>
+		<title level="m" type="main">Branch prediction using advanced neural methods</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003" />
+		</imprint>
+		<respStmt>
+			<orgName>University of California, Berkeley</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Autoscale: Energy efficiency optimization for stochastic edge inference using reinforcement learning</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">G</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-J</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 53rd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO) (2020)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<biblScope unit="page" from="1082" to="1096" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<monogr>
+		<title level="m" type="main">Mixed-signal neural network branch prediction</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mirabbasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">M</forename><surname>Aamodt</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">A survey of machine learning techniques applied to self-organizing cellular networks</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">V</forename><surname>Klaine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Imran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Onireti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Souza</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Communications Surveys &amp; Tutorials</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="2392" to="2431" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<monogr>
+		<title level="m" type="main">Learning vector quantization. In Self-Organizing Maps</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kohonen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995" />
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="175" to="189" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Automatic feature generation for machine learning based optimizing compilation</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Leather</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bonilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Boyle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CGO 2009. International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="81" to="91" />
+		</imprint>
+	</monogr>
+	<note>Code Generation and Optimization</note>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">Illustrative design space studies with microarchitectural regression models</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Brooks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">High Performance Computer Architecture</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="340" to="351" />
+		</imprint>
+	</monogr>
+	<note>IEEE 13th International Symposium on</note>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">Composable performance regression for scalable multiprocessor models</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Collins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brooks</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Cpr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 41st annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<meeting>the 41st annual IEEE/ACM International Symposium on Microarchitecture</meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="270" to="281" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">The multiple branch predictor using perceptrons. The Transactions of The Korean Institute of</title>
+		<author>
+			<persName><forename type="first">J.-B</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electrical Engineers</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="621" to="626" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">Powertrain: A learning-based calibration of mcpat power models</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Ryoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sunwoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gerstlauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Low Power Electronics and Design (ISLPED)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="189" to="194" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title level="a" type="main">There&apos;s plenty of room at the top: What will drive computer performance after moore&apos;s law?</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Leiserson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">C</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Emer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Kuszmaul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">W</forename><surname>Lampson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sanchez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">B</forename><surname>Schardl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">368</biblScope>
+			<biblScope unit="page">6495</biblScope>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">Processor design space exploration via statistical sampling and semi-supervised ensemble learning</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wang</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="25495" to="25505" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<analytic>
+		<title level="a" type="main">Machine learning based online performance prediction for runtime parallelization and task scheduling</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schulz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>De Supinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Mckee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Performance Analysis of Systems and Software</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="89" to="100" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<analytic>
+		<title level="a" type="main">Mcpat: an integrated power, area, and timing modeling framework for multicore and manycore architectures</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Ahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D</forename><surname>Strong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Brockman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Tullsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Jouppi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 42nd Annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<meeting>the 42nd Annual IEEE/ACM International Symposium on Microarchitecture</meeting>
+		<imprint>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="469" to="480" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title level="a" type="main">Characterizing on-chip traffic patterns in general-purpose gpus: A deep learning approach</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Penney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ramamurthy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE 37th International Conference on Computer Design (ICCD)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="56" to="64" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<analytic>
+		<title level="a" type="main">Machine learning-based prefetch optimization for data center applications</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T.-H</forename><surname>Hung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis</title>
+				<meeting>the Conference on High Performance Computing Networking, Storage and Analysis</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page">56</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<analytic>
+		<title level="a" type="main">Design space exploration of memory controller placement in throughput processors with deep learning</title>
+		<author>
+			<persName><forename type="first">T.-R</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pedram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Computer Architecture Letters</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="51" to="54" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<monogr>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hafdi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Han</surname></persName>
+		</author>
+		<title level="m">Neural-hardware architecture search</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<analytic>
+		<title level="a" type="main">An introduction to computing with neural nets</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lippmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Assp magazine</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="4" to="22" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<analytic>
+		<title level="a" type="main">A machine learning approach to accelerating dse of reconfigurable accelerator systems</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S B</forename><surname>Lopes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Pereira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 33rd Symposium on Integrated Circuits and Systems Design (SBCCI) (2020)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lowe-Power</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Akram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Amslinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Andreozzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Armejach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Asmussen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bharadwaj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Black</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2007.03152</idno>
+		<title level="m">The gem5 simulator: Version 20.0+</title>
+				<imprint>
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<analytic>
+		<title level="a" type="main">Automatically diagnosing abnormal battery drain issues on smartphones</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Saul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Voelker</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Edoctor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NSDI</title>
+				<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="57" to="70" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<analytic>
+		<title level="a" type="main">Learning heuristics for basic block instruction scheduling</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Malik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chase</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Van Beek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Heuristics</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="549" to="569" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b112">
+	<monogr>
+		<title level="m" type="main">A study on deep belief net for branch prediction</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gui</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017" />
+			<publisher>IEEE Access</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b113">
+	<analytic>
+		<title level="a" type="main">Virtual address translation via learned page table indexes</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Margaritov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ustiugov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bugnion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Grot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Conference on Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b114">
+	<analytic>
+		<title level="a" type="main">Predicting cloud performance for hpc applications: a user-oriented approach</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Mariani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Anghel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jongerius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Dittmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing</title>
+				<meeting>the 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing</meeting>
+		<imprint>
+			<publisher>IEEE Press</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="524" to="533" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b115">
+	<analytic>
+		<title level="a" type="main">Scheduling straight-line code using reinforcement learning and rollouts</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Moss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing Systems</title>
+				<imprint>
+			<date type="published" when="1999" />
+			<biblScope unit="page" from="903" to="909" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b116">
+	<analytic>
+		<title level="a" type="main">Ithemal: Accurate, portable and fast basic block throughput estimation using deep neural networks</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mendis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Renda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Amarasinghe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Carbin</surname></persName>
+		</author>
+		<idno>PMLR</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="4505" to="4515" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b117">
+	<analytic>
+		<title level="a" type="main">Distributed representations of words and phrases and their compositionality</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mikolov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Dean</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="3111" to="3119" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b118">
+	<analytic>
+		<title level="a" type="main">Detecting invariant footprints of microarchitectural attacks with perceptron</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mirbagher-Ajorpaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Pokam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mohammadian-Koruyeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Garza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Abu-Ghazaleh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Perspectron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 53rd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO) (2020)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<biblScope unit="page" from="1124" to="1137" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b119">
+	<analytic>
+		<title level="a" type="main">Esp: A machine learning approach to predicting application interference</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Mishra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Lafferty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hoffmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Autonomic Computing (ICAC), 2017 IEEE International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="125" to="134" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b120">
+	<monogr>
+		<title level="m" type="main">A survey of techniques for dynamic branch prediction</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mittal</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1804.00261</idno>
+		<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b121">
+	<analytic>
+		<title level="a" type="main">Applying statistical machine learning to multicore voltage &amp; frequency scaling</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Moeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Melhem</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 7th ACM international conference on Computing frontiers</title>
+				<meeting>the 7th ACM international conference on Computing frontiers</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="277" to="286" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b122">
+	<analytic>
+		<title level="a" type="main">The combined perceptron branch predictor</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Monchiero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Palermo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">European Conference on Parallel Processing</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="487" to="496" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b123">
+	<analytic>
+		<title level="a" type="main">A machine learning approach to automatic production of compiler heuristics</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Monsifrot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Bodin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Quiniou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">AIMSA</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2002" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="41" to="50" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b124">
+	<analytic>
+		<title level="a" type="main">Multi-objective reconfigurable self-optimizing memory scheduler</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mukundan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Martinez</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Morse</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">High Performance Computer Architecture (HPCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="1" to="12" />
+		</imprint>
+	</monogr>
+	<note>IEEE 18th International Symposium on</note>
+</biblStruct>
+
+<biblStruct xml:id="b125">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">P</forename><surname>Murphy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Naive bayes classifiers. University of British Columbia</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b126">
+	<analytic>
+		<title level="a" type="main">Introducing the graph 500</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">B</forename><surname>Wheeler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">W</forename><surname>Barrett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Ang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cray Users Group (CUG)</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="45" to="74" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b127">
+	<analytic>
+		<title level="a" type="main">Nights-watch: A cache-based side-channel intrusion detector using hardware performance counters</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mushtaq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Akram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Bhatti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chaudhry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lapotre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gogniat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 7th International Workshop on Hardware and Architectural Support for Security and Privacy</title>
+				<meeting>the 7th International Workshop on Hardware and Architectural Support for Security and Privacy</meeting>
+		<imprint>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b128">
+	<analytic>
+		<title level="a" type="main">Whisper: A tool for run-time detection of side-channel attacks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mushtaq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bricq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Bhatti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Akram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lapotre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gogniat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Benoit</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="83871" to="83900" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b129">
+	<analytic>
+		<title level="a" type="main">A machine learning methodology for cache recommendation</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Navarro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hoffmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Stuckmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hübner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Symposium on Applied Reconfigurable Computing</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="311" to="322" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b130">
+	<analytic>
+		<title level="a" type="main">A machine learning approach for performance prediction and scheduling on heterogeneous cpus</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Nemirovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Arkose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Markovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nemirovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Unsal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cristal</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Architecture and High Performance Computing</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="121" to="128" />
+		</imprint>
+	</monogr>
+	<note>29th International Symposium on</note>
+</biblStruct>
+
+<biblStruct xml:id="b131">
+	<analytic>
+		<title level="a" type="main">Path traced perceptron branch predictor using local history for weight selection</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ninomiya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abe</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename></persName>
+		</author>
+		<idno>MICRO-39</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The 2nd JILP Championship Branch Prediction Competition (CBP-2) in conjunction with The 39th Annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<imprint>
+			<publisher>Citeseer</publisher>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b132">
+	<analytic>
+		<title level="a" type="main">Gpu performance estimation using software rasterization and machine learning</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>O'neal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Brisk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Abousamra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Waters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Shriver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Embedded Computing Systems (TECS)</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page">148</biblScope>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b133">
+	<analytic>
+		<title level="a" type="main">Hlspredict: Cross platform performance prediction for fpga high-level synthesis</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>O'neal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kalantar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Derenard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Brisk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b134">
+	<analytic>
+		<title level="a" type="main">Hardware-based malware detection using low-level architectural features</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ozsoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">N</forename><surname>Khasawneh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Donovick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Gorelik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Abu-Ghazaleh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ponomarev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computers</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="3332" to="3344" />
+			<date type="published" when="2016" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b135">
+	<analytic>
+		<title level="a" type="main">Hardware-assisted cross-generation prediction of gpus under design</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>O'neal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Brisk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Shriver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kishinevsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="1133" to="1146" />
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b136">
+	<analytic>
+		<title level="a" type="main">Analyzing hardware based malware detectors</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Homayoun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 54th Annual Design Automation Conference 2017</title>
+				<meeting>the 54th Annual Design Automation Conference 2017</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page">25</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b137">
+	<analytic>
+		<title level="a" type="main">Semantic locality and context-based prefetching using reinforcement learning</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Peled</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mannor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Weiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Etsion</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Architecture (ISCA), 2015 ACM/IEEE 42nd Annual International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="285" to="297" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b138">
+	<monogr>
+		<author>
+			<persName><forename type="first">L</forename><surname>Peled</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Weiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Etsion</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1804.00478</idno>
+		<title level="m">Towards memory prefetching with neural networks: Challenges and insights</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b139">
+	<analytic>
+		<title level="a" type="main">A neural network prefetcher for arbitrary memory access patterns</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Peled</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Weiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Etsion</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Architecture and Code Optimization (TACO)</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="1" to="27" />
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b140">
+	<analytic>
+		<title level="a" type="main">Boa: The bayesian optimization algorithm</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pelikan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Goldberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cantú-Paz</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 1st Annual Conference on Genetic and Evolutionary Computation</title>
+				<meeting>the 1st Annual Conference on Genetic and Evolutionary Computation</meeting>
+		<imprint>
+			<publisher>Morgan Kaufmann Publishers Inc</publisher>
+			<date type="published" when="1999" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="525" to="532" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b141">
+	<analytic>
+		<title level="a" type="main">Power-performance modeling on asymmetric multi-cores</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pricopi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Muthukaruppan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Venkataramani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Mitra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Vishin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Compilers, Architecture and Synthesis for Embedded Systems (CASES), 2013 International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="1" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b142">
+	<analytic>
+		<title level="a" type="main">Deciphering predictive schedulers for heterogeneous-isa multicore architectures</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Prodromou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Venkat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Tullsen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 10th International Workshop on Programming Models and Applications for Multicores and Manycores</title>
+				<meeting>the 10th International Workshop on Programming Models and Applications for Multicores and Manycores</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="51" to="60" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b143">
+	<analytic>
+		<title level="a" type="main">Maximizing hardware prefetch effectiveness with machine learning</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Burtscher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Qasem</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE 12th International Conferen on Embedded Software and Systems (ICESS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="383" to="389" />
+		</imprint>
+	</monogr>
+	<note>IEEE 17th International Conference on</note>
+</biblStruct>
+
+<biblStruct xml:id="b144">
+	<analytic>
+		<title level="a" type="main">A case for efficient accelerator design space exploration via bayesian optimization</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Reagen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Hernández-Lobato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Adolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gelbart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Whatmough</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G.-Y</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brooks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Low Power Electronics and Design</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b145">
+	<analytic>
+		<title level="a" type="main">Empirical cpu power modelling and estimation in the gem5 simulator</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">K</forename><surname>Reddy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Balsamo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Diestelhorst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Al-Hashimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">V</forename><surname>Merrett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">27th International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+	<note>Power and Timing Modeling</note>
+</biblStruct>
+
+<biblStruct xml:id="b146">
+	<analytic>
+		<title level="a" type="main">Optimizing cpu simulator parameters with learned differentiable surrogates</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Renda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mendis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Carbin</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Difftune</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 53rd Annual IEEE/ACM International Symposium on Microarchitecture (MICRO) (2020)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<biblScope unit="page" from="442" to="455" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b147">
+	<analytic>
+		<title level="a" type="main">System-level power estimation tool for embedded processor based platforms</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Rethinagiri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Palomar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ben Atitallah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Niar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Unsal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Kestelman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 6th Workshop on Rapid Simulation and Performance Evaluation: Methods and Tools</title>
+				<meeting>the 6th Workshop on Rapid Simulation and Performance Evaluation: Methods and Tools</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="page">5</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b148">
+	<analytic>
+		<title level="a" type="main">Evaluating branch prediction using two-level perceptron table</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">V M</forename><surname>Ribas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Goncalves</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Parallel, Distributed, and Network-Based Processing</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page">4</biblScope>
+		</imprint>
+	</monogr>
+	<note>14th Euromicro International Conference on</note>
+</biblStruct>
+
+<biblStruct xml:id="b149">
+	<analytic>
+		<title level="a" type="main">A study on the use of performance counters to estimate power in microprocessors</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Rodrigues</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Annamalai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Koren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kundu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Circuits and Systems II: Express Briefs</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="882" to="886" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b150">
+	<analytic>
+		<title level="a" type="main">Memristors for neural branch prediction: a case study in strict latency and write endurance challenges</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Saadeldeen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Franklin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Browne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Strukov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sherwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chong</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">T</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM International Conference on Computing Frontiers</title>
+				<meeting>the ACM International Conference on Computing Frontiers</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page">26</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b151">
+	<monogr>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">O</forename><surname>Sanchez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-H</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Cads</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1907.07776</idno>
+		<title level="m">Core-aware dynamic scheduler for multicore memory controllers</title>
+				<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b152">
+	<monogr>
+		<title level="m" type="main">Linear regression analysis</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Seber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Lee</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+			<publisher>John Wiley &amp; Sons</publisher>
+			<biblScope unit="volume">329</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b153">
+	<analytic>
+		<title level="a" type="main">Machine learning based design space exploration for hybrid main-memory design</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Imam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Symposium on Memory Systems</title>
+				<meeting>the International Symposium on Memory Systems</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="480" to="489" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b154">
+	<monogr>
+		<title level="m" type="main">Exploring perceptron-based register value prediction. In Second Value Prediction and Value-Based Optimization Workshop</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Seng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hamerly</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+	<note>held in conjuction with ASPLOS</note>
+</biblStruct>
+
+<biblStruct xml:id="b155">
+	<analytic>
+		<title level="a" type="main">A neural net branch predictor to reduce power</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sethuram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">I</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">V</forename><surname>Venkatanarayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Bushnell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">VLSI Design, 2007. Held jointly with 6th International Conference on Embedded Systems., 20th International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="679" to="684" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b156">
+	<analytic>
+		<title level="a" type="main">Revisiting the perceptron predictor</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seznec</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IRISA</title>
+		<imprint>
+			<date type="published" when="2004-05" />
+		</imprint>
+	</monogr>
+	<note type="report_type">PI-1620</note>
+</biblStruct>
+
+<biblStruct xml:id="b157">
+	<analytic>
+		<title level="a" type="main">Tage-sc-l branch predictors</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Seznec</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">JILP-Championship Branch Prediction</title>
+				<imprint>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b158">
+	<analytic>
+		<title level="a" type="main">Automatically characterizing large scale program behavior</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sherwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Perelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hamerly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Calder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM SIGARCH Computer Architecture News</title>
+				<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2002" />
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="45" to="57" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b159">
+	<monogr>
+		<title level="m" type="main">Perceptron branch prediction with separated taken/not-taken weight tables</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lipasti</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b160">
+	<analytic>
+		<title level="a" type="main">Applying deep learning to the cache replacement problem</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 52nd Annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<meeting>the 52nd Annual IEEE/ACM International Symposium on Microarchitecture</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="413" to="425" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b161">
+	<monogr>
+		<title level="m" type="main">A neural hierarchical sequence model for irregular data prefetching</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Swersky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hashemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ranganathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b162">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Spec</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Spec</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Cpu</surname></persName>
+		</author>
+		<ptr target="https://www.spec.org/cpu2006/" />
+		<imprint>
+			<date type="published" when="2006-08-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b163">
+	<analytic>
+		<title level="a" type="main">Genetic algorithms: A survey</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Srinivas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Patnaik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">computer</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="17" to="26" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b164">
+	<analytic>
+		<title level="a" type="main">An idealistic neuro-ppm branch predictor</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Frachtenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Lubeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pakin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cook</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Instruction-Level Parallelism</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b165">
+	<analytic>
+		<title level="a" type="main">Low-power, high-performance analog neural branch prediction</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>St Amant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Burger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 41st annual IEEE/ACM International Symposium on Microarchitecture</title>
+				<meeting>the 41st annual IEEE/ACM International Symposium on Microarchitecture</meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="447" to="458" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b166">
+	<analytic>
+		<title level="a" type="main">A parallel genetic algorithm for multiobjective microprocessor design</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Stanley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">N</forename><surname>Mudge</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICGA</title>
+				<imprint>
+			<date type="published" when="1995" />
+			<biblScope unit="page" from="597" to="604" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b167">
+	<analytic>
+		<title level="a" type="main">Data Analytics using Open-Source Tools</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Strickland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lulu. com</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b168">
+	<monogr>
+		<title level="m" type="main">Reinforcement learning: An introduction</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>Sutton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Barto</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>MIT press Cambridge</publisher>
+			<biblScope unit="volume">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b169">
+	<analytic>
+		<title level="a" type="main">Merging path and gshare indexing in perceptron branch prediction</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tarjan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Skadron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM transactions on architecture and code optimization (TACO)</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="280" to="300" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b170">
+	<analytic>
+		<title level="a" type="main">Post-silicon cpu adaptation made practical using machine learning</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Tarsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B R</forename><surname>Chowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sebot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chinya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gaur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sankaranarayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-K</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chappell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Singhal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wang</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="14" to="26" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b171">
+	<monogr>
+		<title level="m" type="main">Improving branch prediction by modeling global history with convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Tarsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-K</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Keskin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Chinya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wang</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+		<idno type="arXiv">arXiv:1906.09889</idno>
+		<imprint>
+			<date type="published" when="2019" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b172">
+	<analytic>
+		<title level="a" type="main">Perceptron learning for reuse prediction</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Teran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Jiménez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">49th Annual IEEE/ACM International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1" to="12" />
+		</imprint>
+	</monogr>
+	<note>Microarchitecture (MICRO)</note>
+</biblStruct>
+
+<biblStruct xml:id="b173">
+	<analytic>
+		<title level="a" type="main">Hardware efficient piecewise linear branch predictor</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Held jointly with 6th International Conference on Embedded Systems., 20th International Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="673" to="678" />
+		</imprint>
+	</monogr>
+	<note>VLSI Design</note>
+</biblStruct>
+
+<biblStruct xml:id="b174">
+	<monogr>
+		<title level="m" type="main">Statistical learning theory</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vapnik</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>Wiley</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b175">
+	<analytic>
+		<title level="a" type="main">Sd-vbs: The san diego vision benchmark suite</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Venkata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Jeon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Louie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Belongie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Taylor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE International Symposium on</title>
+		<imprint>
+			<biblScope unit="page" from="55" to="64" />
+			<date type="published" when="2009" />
+			<publisher>IEEE</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b176">
+	<monogr>
+		<title level="m" type="main">Perceptron learning driven coherence aware reuse prediction for last-level caches</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Verma</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b177">
+	<analytic>
+		<title level="a" type="main">Driving cache replacement with ml-based lecar</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Vietri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">V</forename><surname>Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">A</forename><surname>Martinez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lyons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Rangaswami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Narasimhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">10th {USENIX} Workshop on Hot Topics in Storage and File Systems (HotStorage 18)</title>
+				<imprint>
+			<date type="published" when="2018" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b178">
+	<analytic>
+		<title level="a" type="main">Towards a high performance neural branch predictor</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">N</forename><surname>Vintan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Iridon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Neural Networks, 1999. IJCNN&apos;99. International Joint Conference on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="1999" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="868" to="873" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b179">
+	<monogr>
+		<title level="m" type="main">Run-time power estimation for mobile and embedded asymmetric multi-core cpus</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">V</forename><surname>Merrett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hashimi</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b180">
+	<analytic>
+		<title level="a" type="main">Accurate and stable run-time power modeling for mobile and embedded cpus</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Diestelhorst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hansson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Al-Hashimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">V</forename><surname>Merrett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="106" to="119" />
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b181">
+	<monogr>
+		<title level="m" type="main">Data cache prefetching with perceptron learning</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Luo</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1712.00905</idno>
+		<imprint>
+			<date type="published" when="2017" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b182">
+	<analytic>
+		<title level="a" type="main">Cure: A high-performance, low-power, and reliable network-on-chip design using reinforcement learning</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Louri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Parallel and Distributed Systems</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="2125" to="2138" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b183">
+	<analytic>
+		<title level="a" type="main">Reducing data movement energy via online data clustering and encoding</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ipek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">49th Annual IEEE/ACM International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page" from="1" to="13" />
+		</imprint>
+	</monogr>
+	<note>Microarchitecture (MICRO)</note>
+</biblStruct>
+
+<biblStruct xml:id="b184">
+	<analytic>
+		<title level="a" type="main">Dynamic branch prediction using machine learning</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECS-201A</title>
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+	<note>Fall</note>
+</biblStruct>
+
+<biblStruct xml:id="b185">
+	<analytic>
+		<title level="a" type="main">Mapping parallelism to multi-cores: a machine learning based approach</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Boyle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM Sigplan notices</title>
+				<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="75" to="84" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b186">
+	<analytic>
+		<title level="a" type="main">Integrating profile-driven parallelism detection and machine-learning-based mapping</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tournavitis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Franke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>'boyle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Architecture and Code Optimization (TACO)</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">2</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b187">
+	<analytic>
+		<title level="a" type="main">Up by their bootstraps: Online learning in artificial neural networks for cmp uncore power management</title>
+		<author>
+			<persName><forename type="first">J.-Y</forename><surname>Won</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Gratz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Soteriou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">High Performance Computer Architecture (HPCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="308" to="319" />
+		</imprint>
+	</monogr>
+	<note>IEEE 20th International Symposium on</note>
+</biblStruct>
+
+<biblStruct xml:id="b188">
+	<analytic>
+		<title level="a" type="main">Gpgpu performance and power estimation using machine learning</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Greathouse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lyashevsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Jayasena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chiou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">High Performance Computer Architecture (HPCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="564" to="576" />
+		</imprint>
+	</monogr>
+	<note>IEEE 21st International Symposium on</note>
+</biblStruct>
+
+<biblStruct xml:id="b189">
+	<analytic>
+		<title level="a" type="main">Quantifying sources of error in mcpat and potential impacts on architectural studies</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Xi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Jacobson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G.-Y</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Brooks</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">High Performance Computer Architecture (HPCA)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="577" to="589" />
+		</imprint>
+	</monogr>
+	<note>IEEE 21st International Symposium on</note>
+</biblStruct>
+
+<biblStruct xml:id="b190">
+	<analytic>
+		<title level="a" type="main">Adaptive energy minimization of embedded heterogeneous systems using regression-based learning</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Shafik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">V</forename><surname>Merrett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Stott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Levine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Hashimi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Power and Timing Modeling, Optimization and Simulation (PATMOS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="103" to="110" />
+		</imprint>
+	</monogr>
+	<note>25th International Workshop on</note>
+</biblStruct>
+
+<biblStruct xml:id="b191">
+	<analytic>
+		<title level="a" type="main">Flush+ reload: A high resolution, low noise, l3 cache side-channel attack</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yarom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Falkner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">USENIX Security Symposium</title>
+				<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="719" to="732" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b192">
+	<analytic>
+		<title level="a" type="main">Neural acceleration for gpu throughput processors</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yazdanbakhsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lotfi-Kamran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Esmaeilzadeh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">48th Annual IEEE/ACM International Symposium on</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="482" to="493" />
+		</imprint>
+	</monogr>
+	<note>Microarchitecture (MICRO)</note>
+</biblStruct>
+
+<biblStruct xml:id="b193">
+	<analytic>
+		<title level="a" type="main">Learning-based power management for multicore processors via idle period manipulation</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="1043" to="1055" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b194">
+	<analytic>
+		<title level="a" type="main">Experiences with ml-driven design: A noc case study</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sethumurugan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Eckert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Morton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Oskin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">E</forename><surname>Jerger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">H</forename><surname>Loh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE International Symposium on High Performance Computer Architecture (HPCA) (2020)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<biblScope unit="page" from="637" to="648" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b195">
+	<analytic>
+		<title level="a" type="main">A dynamic branch predictor based on parallel structure of srnn</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Yahya</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="86230" to="86237" />
+			<date type="published" when="2020" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b196">
+	<analytic>
+		<title level="a" type="main">An energy-efficient network-on-chip design using reinforcement learning</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Louri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 56th Annual Design Automation Conference 2019</title>
+				<meeting>the 56th Annual Design Automation Conference 2019</meeting>
+		<imprint>
+			<date type="published" when="2019" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b197">
+	<analytic>
+		<title level="a" type="main">Accurate phase-level cross-platform power and performance estimation</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gerstlauer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 53rd Annual Design Automation Conference</title>
+				<meeting>the 53rd Annual Design Automation Conference</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2016" />
+			<biblScope unit="page">4</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b198">
+	<analytic>
+		<title level="a" type="main">Learning-based analytical cross-platform performance prediction</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ravikumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gerstlauer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Embedded Computer Systems: Architectures, Modeling, and Simulation</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="52" to="59" />
+		</imprint>
+	</monogr>
+	<note>2015 International Conference on</note>
+</biblStruct>
+
+<biblStruct xml:id="b199">
+	<analytic>
+		<title level="a" type="main">Bbs: Micro-architecture benchmarking blockchain systems through machine learning and fuzzy set</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE International Symposium on High Performance Computer Architecture (HPCA) (2020)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<biblScope unit="page" from="411" to="423" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

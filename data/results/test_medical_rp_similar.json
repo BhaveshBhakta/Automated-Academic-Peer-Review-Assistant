@@ -1,0 +1,37 @@
+[
+  {
+    "index": 3,
+    "title": "Machine Learning for Clinical Predictive Analytics",
+    "url": null,
+    "similarity": 0.19757401943206787,
+    "pdf_path": ""
+  },
+  {
+    "index": 25,
+    "title": "Probabilistic Machine Learning for Healthcare",
+    "url": null,
+    "similarity": 0.019797325134277344,
+    "pdf_path": ""
+  },
+  {
+    "index": 24,
+    "title": "When Machine Learning Meets Privacy: A Survey and Outlook",
+    "url": null,
+    "similarity": -0.178672194480896,
+    "pdf_path": ""
+  },
+  {
+    "index": 21,
+    "title": "Ten-year Survival Prediction for Breast Cancer Patients",
+    "url": null,
+    "similarity": -0.2681245803833008,
+    "pdf_path": ""
+  },
+  {
+    "index": 29,
+    "title": "Towards CRISP-ML(Q): A Machine Learning Process Model with Quality\n  Assurance Methodology",
+    "url": null,
+    "similarity": -0.274761438369751,
+    "pdf_path": ""
+  }
+]

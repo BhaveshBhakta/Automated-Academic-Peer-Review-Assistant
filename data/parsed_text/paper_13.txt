@@ -1,0 +1,2304 @@
+Noname manuscript No.
+(will be inserted by the editor)
+Data Pricing in Machine Learning Pipelines
+Zicun Cong · Xuan Luo · Pei Jian ·
+Feida Zhu · Yong Zhang
+Received: date / Accepted: date
+Abstract Machine learning is disruptive. At the same time, machine learning
+can only succeed by collaboration among many parties in multiple steps natu-
+rally as pipelines in an eco-system, such as collecting data for possible machine
+learning applications, collaboratively training models by multiple parties and
+delivering machine learning services to end users. Data is critical and pene-
+trating in the whole machine learning pipelines. As machine learning pipelines
+involve many parties and, in order to be successful, have to form a construc-
+tive and dynamic eco-system, marketplaces and data pricing are fundamental
+in connecting and facilitating those many parties. In this article, we survey
+the principles and the latest research development of data pricing in machine
+learning pipelines. We start with a brief review of data marketplaces and pric-
+ing desiderata. Then, we focus on pricing in three important steps in machine
+learning pipelines. To understand pricing in the step of training data collection,
+we review pricing raw data sets and data labels. We also investigate pricing
+in the step of collaborative training of machine learning models, and overview
+Zicun Cong
+Simon Fraser University, Burnaby, Canada
+E-mail: zicun cong@cs.sfu.ca
+Xuan Luo
+Simon Fraser University, Burnaby, Canada
+E-mail: xuan luo@cs.sfu.ca
+Jian Pei
+Simon Fraser University, Burnaby, Canada
+E-mail: jpei@cs.sfu.ca
+Feida Zhu
+Singapore Management University, Singapore
+E-mail: fdzhu@smu.edu.sg
+Yong Zhang
+Huawei Technologies Canada, Burnaby, Canada
+E-mail: yong.zhang3@huawei.com
+arXiv:2108.07915v1  [cs.LG]  18 Aug 2021
+
+2
+Zicun Cong et al.
+pricing machine learning models for end users in the step of machine learning
+deployment. We also discuss a series of possible future directions.
+Keywords Data Assets · Data Pricing · Data Products · Machine Learning ·
+AI
+1 Introduction
+The disruptive success of machine learning in many applications has led to
+an explosion in demand [100, 1]. Recent research predicts that the global ma-
+chine learning market is expected to reach 20.83 billion dollars in 2024 [64].
+To succeed in building a machine learning application, one party is far from
+enough. Many parties have to collaborate in one way or another. For example,
+one party may have to acquire raw data and data labeling services from some
+other parties to construct training data, multiple parties may need to collab-
+orate in building a machine learning model, and one party may want to use
+some other parties’ models to solve its business problems. Machine learning
+applications are indeed pipelines connecting many parties.
+Data is critical for machine learning. Machine learning models, especially
+deep models, rely on large amounts of data for training and testing. Deploying
+machine learning services also needs data – machine learning models consume
+users’ data as input, and return insights and recommend possible actions.
+Maintaining and updating machine learning models still need data. The im-
+portance of data for machine learning cannot be over emphasized. Data pen-
+etrates the whole machine learning pipelines.
+Obtaining data for machine learning is far from easy [61]. For a party that
+wants to build a machine learning model, the challenges come from multiple
+aspects. First, within the party, in order to develop a training data set, more
+often than not it is costly to collect data, create proper labels and ensure data
+quality. Second, the party may realize that it does not have the necessary
+data to train the target model. Thus, the party may have to explore external
+sources for the data needed. This involves acquiring external data. Last, to
+build or strengthen business edges, the party may want to provide machine
+learning services to other parties. Then, the party has to exchange data with
+other parties, such as accessing data from end users and providing end users
+model output.
+Connecting many parties in an eco-system in scale requires a general and
+principled mechanism. As data and models are essential in machine learning
+pipelines and data and model exchanges are the most fundamental interactions
+among diﬀerent parties, data and model marketplaces become a natural choice
+for machine learning pipelines and eco-systems, and pricing becomes the core
+mechanism in machine learning pipelines.
+In response to the massive and diversiﬁed demands for various data, data
+products become valuable assets for purchase and sale. Here, data products
+refer to data sets as products and information services derived from data
+sets [80]. Data commoditization motivates data owners to share their data
+
+Data Pricing in Machine Learning Pipelines
+3
+Pricing in 
+collaborative 
+training of machine 
+learning models
+Model
+Pricing ML model
+User 1
+Data
+Party 1
+Pricing raw dataset
+Pricing data label
+Training Data Collection Step
+Model Training Step
+Model Deployment Step
+Party n
+Pricing raw dataset
+Pricing data label
+. 
+. 
+. 
+.
+Pricing ML model
+User n
+Data
+Model
+. 
+. 
+. 
+. 
+.
+Fig. 1: Steps and pricing tasks in machine learning pipelines
+products in exchange of rewards and thus helps data buyers to access data
+products of high quality and large quantities.
+To enable tradings between data owners and data buyers, data must be
+priced. Pricing data, however, is far from trivial. Agarwal et al. [1] summarize
+ﬁve properties making data a unique asset. First, data can be replicated at zero
+marginal cost. Second, the value of data is inherently combinatorial. Third,
+the value of data varies widely among diﬀerent buyers. Last, the usefulness of
+data lies in the value of information derived from it, which is diﬃcult to verify
+a priori. Due to those properties, pricing models for physical goods cannot be
+directly applied or straightforwardly extended to data products, and thus new
+principles, theories, and methods need to be developed.
+Based on an extensive survey on existing research, we identify and focus
+on three steps in data and model supply tasks in the manufacturing pipeline
+of machine learning models [32]. The steps and their corresponding tasks are
+illustrated in Figure 1. In the step of training data collection, raw data is
+collected and the associated labels are annotated. We review the research on
+pricing for raw data sets and data labels. In the step of collaborative training
+of machine learning models, we investigate how to price diﬀerent participants’
+contributions through their data. In the model deployment step, we overview
+pricing machine learning models for end users. We focus on the four pricing
+tasks in machine learning pipelines as follows.
+– Pricing raw data sets. To build a machine learning model, the ﬁrst step
+is collecting training data. Monetizing and trading raw data sets provide
+people with a convenient and eﬃcient way to acquire a large amount of
+training data. A key challenge in pricing raw data sets is how to set the
+price reﬂecting the usefulness of a data set. Moreover, pricing models may
+be optimized towards diﬀerent objectives, such as revenue maximization,
+arbitrage-freeness, and truthfulness. Achieving those optimization goals in-
+
+4
+Zicun Cong et al.
+troduces additional challenges in the design and implementation of pricing
+models.
+– Pricing data labels. In the training data collection step, in addition to
+collecting raw data, obtaining data labels is critical. Crowdsourcing is a
+popular way for this purpose [102]. Unfortunately, spammers may commit
+no eﬀorts in their assigned tasks and produce random answers, which leads
+to data sets of poor quality. Thus, a key challenge in pricing data labels
+is how to estimate label accuracy and compensate crowdworkers corre-
+spondingly, such that they are motivated and driven to invest high eﬀorts
+and report accurate data labels [102]. This task only appears in machine
+learning pipelines where supervised machine learning models are produced.
+– Revenue allocation in collaborative machine learning. Collaborative ma-
+chine learning is an emerging paradigm, where multiple data owners col-
+laboratively train machine learning models on their aggregate data, and
+share the revenues of using/selling these models. Data sets from diﬀerent
+owners may have diﬀerent contributions to the learned models. Evenly dis-
+tributing the revenues is not fair to data owners, particularly for those who
+contribute more valuable data, and thus may discourage future collabora-
+tions. To this end, a key challenge is how to fairly reward data owners’
+contributions.
+– Pricing
+machine
+learning
+models.
+Machine
+learning
+as
+a
+service
+(MLaaS) [100, 17] is a rapidly growing industry. Customers may purchase
+well-trained machine learning models or build models on top of those well-
+trained rather than building models from scratch by themselves. For ex-
+ample, one may use Google prediction API to classify an image for only
+$0.0015 [17]. While machine learning models and raw data sets share a
+series of common ideas in pricing, the pricing models of raw data sets can-
+not be trivially adapted to price machine learning models. How to version
+machine learning models and avoid arbitrage among multiple versions is a
+key challenge in this task.
+The four tasks are related to each other. They share some core ideas, that
+is, linking prices of data products to their utilities to customers. But as the
+tasks have diﬀerent application scenarios and pricing goals, they are solved by
+orthogonal techniques.
+The existing models in the ﬁrst two tasks aim at pricing training data
+sets with absolute utility functions, that is, the utility of a data product only
+depends on the properties of the product. One important diﬀerence between
+the ﬁrst two tasks is about the utility functions. The utility (e.g., accuracy)
+of data labels is very hard to compute due to the lack of ground-truth ver-
+iﬁcations. The third task evaluates the utility of a data set by its marginal
+contribution to a machine learning model. Thus, the utility of a data set also
+depends on the utility of other data sets used to jointly build the model. The
+existing methods in the last task also employ absolute utility functions. But as
+machine learning models and data sets have diﬀerent properties, new pricing
+models are developed.
+
+Data Pricing in Machine Learning Pipelines
+5
+The four tasks are connected when machine learning models and data sets
+are priced in an end-to-end manner. On the one hand, the price of a machine
+learning model limits the budget of training data procurement and the revenue
+that can be split among data owners [1]. On the other hand, the costs of data
+procurement and model training also inﬂuence the selling price of machine
+learning models, as they are part of the manufacturing cost [61]. Figure 1
+shows the connections of the four tasks.
+There are some previous surveys related to data pricing [58, 31, 110]. This
+article covers a substantially deeper and more focused scope than those. In
+this article, we try to present a comprehensive survey on data pricing in ma-
+chine learning pipelines. Very recently, Pei [80] presents a survey connecting
+economics, digital product pricing, and data product pricing. He identiﬁes a
+series of desirable properties in data pricing and reviews the techniques achiev-
+ing those properties. But Pei [80] does not focus on machine learning pipeline
+and does not cover the studies of pricing data labels.
+The rest of this survey is organized as follows. Section 2 reviews basic
+concepts and essential principles in data product pricing. Section 3 reviews
+pricing raw data sets. Pricing data labels is discussed in Section 4. In Section 5,
+we review the recent progress in revenue allocation in collaborative machine
+learning. Section 6 is about how to price machine learning models. We conclude
+this survey and discuss some future directions in Section 7.
+2 Data Marketplaces and Pricing
+In this section, we brieﬂy review data marketplaces and pricing in general.
+We ﬁrst discuss the basic structures of data marketplaces. Then, we discuss
+some major pricing strategies in general. Third, we discuss diﬀerent types of
+data markets in terms of competition and dominance. Last, we discuss the
+desiderata of data pricing.
+2.1 Data Marketplaces
+A data marketplace is a platform that allows people to buy and sell data prod-
+ucts [87]. Some examples of data marketplaces include Dawex [22], Snowﬂake
+data marketplace [96], and BDEX [6]. Muschalle et al. [70] identify seven
+categories of participants in data marketplaces, namely analysts, application
+vendors, data processing algorithm developers, data providers, consultants,
+licensing and certiﬁcation entities, and data market owners.
+Figure 2a shows the conceptual architecture of data marketplaces. A data
+marketplace mainly consists of three major entities, namely data sellers, an
+arbiter (also known as data vendor [87] and data broker [78]), and data buyers.
+Data sellers own data products and are willing to share those products with
+the arbiter in exchange for rewards. Data buyers want to obtain data products
+to solve their problems. The function of an arbiter is to facilitate transactions
+
+6
+Zicun Cong et al.
+…
+…
+Data Seller
+Arbiter
+Data Seller
+Data 
+Buyer
+Data 
+Buyer
+Data
+Data
+Data
+Data
+Payment
+Payment
+Payment
+Payment
+(a) General data marketplace.
+…
+Data 
+Buyer
+Data 
+Buyer
+Data
+Data
+Payment
+Payment
+Arbiter
+Data 
+Seller
+(b) Sell-side marketplace.
+…
+Data Seller
+Data Seller
+Data
+Data
+Payment
+Payment
+Arbiter
+Data 
+Buyer
+(c) Buy-side marketplace.
+Fig. 2: Architectures of data marketplace.
+between data sellers and data buyers. The arbiter collects data products from
+data sellers and sells them to data buyers. After collecting the payments from
+buyers, the arbiter distributes the payments to data sellers. In general, arbiters
+are modeled as non-proﬁt participants in data marketplaces.
+Some studies simplify the architecture of data marketplaces to sell-side
+marketplaces and buy-side marketplaces. A sell-side marketplace [110], as
+shown in Figure 2b, has a single data provider and multiple data buyers.
+In a sell-side marketplace, the arbiter is operated by a monopoly data seller to
+sell the single seller’s data products. In literature, sell-side marketplaces are
+considered by pricing models of both general data sets [39] and speciﬁc types
+of data products, such as XML documents [99] and data queries on a relational
+database [25].
+A buy-side marketplace [110], as shown in Figure 2c, has multiple data
+providers and a single consumer/data buyer. In a buy-side marketplace, the
+arbiter is operated by the single data buyer for purchasing data products from
+providers. Buy-side marketplaces are considered in many existing studies [33,
+2, 45]. For instance, de Alfaro et al. [2] study a buy-side marketplace, where a
+single consumer pays crowdsource workers for labeling the single buyer’s data
+set.
+
+Data Pricing in Machine Learning Pipelines
+7
+2.2 Pricing Strategies
+Many pricing strategies have been developed in pricing theory. Cost-based
+pricing, customer value-based pricing, and competition-based pricing are three
+important categories [23].
+Cost-based pricing considers that the price of a product is determined by
+adding a speciﬁc amount of markup to the cost. This strategy is adopted in
+personal data pricing, where the cost is the total privacy compensation to data
+owners [78]. A disadvantage of the cost-based pricing strategy is that it only
+considers internal factors in determining the selling price. External factors,
+such as competition and demands, are not included [65].
+Customer value-based pricing determines the price of a product primarily
+based on how much the target customers believe a product is worth [23]. To
+apply customer value-based pricing, a seller needs to estimate customers’ de-
+mands for a product through their willingness and aﬀordability [65]. Customer
+value-based pricing is the most popularly used strategy for data pricing.
+Competition-based pricing determines the price of a product strategically
+based on competitors’ price levels and behavior expectations [23]. Game the-
+ory provides a powerful tool to implement the strategy. In a non-cooperative
+game, every seller is selﬁsh and sets the price that maximizes the seller’s proﬁt
+independently [65]. The competition result, that is the asking price of each
+seller, is the Nash equilibrium [74].
+There are some other major pricing strategies in literature [27, 72, 8, 76, 44],
+such as operation-oriented pricing, revenue-oriented pricing, and relationship-
+oriented pricing. The remarkably rich body of studies in economics and mar-
+keting research on pricing tactics is far beyond the scope and capacity of this
+survey.
+2.3 Four Types of Data Markets
+Similar to physical goods, the prices of data products are also inﬂuenced by
+the dominance and diversity of supplies and demands in the market.
+Fricker and Maksimov [31] identify four types of data markets. First, in
+a monopoly, a supplier holds enough market power to set prices to maximize
+proﬁts. Second, in an oligopoly, a small number of suppliers dominate the
+market. Third, in strong competition markets, individual suppliers do not have
+enough market powers to set proﬁt-maximizing prices, and prices tend to align
+with marginal costs. Last, in a monopsony, a single buyer controls the market
+as the only consumer of products provided by sellers.
+Most studies assume explicitly or implicitly a monopoly (monopsony) mar-
+ket structure where the data seller (data buyer) does not care about competing
+with others. Data pricing in oligopoly market is considered by Balasubrama-
+nian et al. [5]. Jiang et al. [47] study a perfect competition market where
+participants can directly trade with each other.
+
+8
+Zicun Cong et al.
+2.4 Desiderata of Data Pricing
+There are some desiderata perferred by most pricing models. In this section,
+we brieﬂy review the six desiderata suggested by Pei [80]. In addition, we
+complement the existing study by an important desideratum, eﬀort elicitation.
+Truthfulness Truthfulness is an important economic property of robust mar-
+kets [113]. In a truthful market, all participants are selﬁsh and only oﬀer prices
+that maximize their utility values. Participants may have their own valuations
+on the same product, but a truthful market guarantees that for each par-
+ticipant, oﬀering the real valuation is an individual’s best strategy. In other
+words, no participants will lie about their valuations. Truthfulness simpliﬁes
+all participants’ strategies and ensures basic market fairness [30].
+Reverse auction is a common tool to implement truthful data markets. In
+a reverse auction, N sellers D = {s1, . . . , sN} compete for a buyer’s deal by
+submitting their asking prices {b1, . . . , bN}. An auction mechanism takes as
+input the submitted bids, selects a subset of sellers as winners, and determines
+the payment pi to each winner si, where pi ≥bi. In a truthful reverse auction,
+the best strategy (dominant strategy) for a seller si to maximize the expected
+utility is submitting the individual’s real valuation, no matter what others
+submit.
+In his seminal paper on optimal mechanism design, Myerson [71] shows
+that a sealed-bid reverse auction mechanism is truthful if and only if (1) The
+selection rule is monotone, that is, if a seller si wins the auction by bidding bi,
+it also wins by bidding b′
+i ≤bi; and (2) Each winner is paid the critical value,
+that is, seller si would not win the auction if si bids higher than this value.
+Revenue Maximization Revenue maximization is a strategy to increase a
+seller’s customer base by having low prices. This strategy is widely adopted by
+sellers in an emerging market to build market share and reputations. For tra-
+ditional physical goods, the curves of marginal cost are U-shaped with respect
+to manufacturing level. The revenue of a seller is maximized when the man-
+ufacturing level is set such that the marginal revenue is zero [11]. Since data
+products can be re-produced at almost zero costs [1], the revenue maximization
+techniques for data products and physical products are quite diﬀerent [80].
+Fairness In some scenarios, sellers need to cooperatively participate in a trans-
+action. A data market is fair to the contributors in a coalition if the revenue
+generated by the coalition is fairly divided among the sellers.
+Suppose a set of sellers D = {s1, . . . , sN} cooperatively participate in a
+transaction that leads to a payment v. Shapley [91] lays out four axioms for a
+fair allocation.
+– Balance: The payment v should be fully distributed to the sellers in D.
+
+Data Pricing in Machine Learning Pipelines
+9
+– Symmetry: Sellers making the same contribution to the payment should be
+paid the same. For a set of sellers S and two additional sellers s and s′, if
+S ∪{s} and S ∪{s′} lead to the same payment, sellers s and s′ should get
+the same payment.
+– Zero element: If a seller’s data does not contribute to the payment of any
+coalitions, the seller should receive no payment.
+– Additivity: If the data of a group of sellers can be used for two tasks t1 and
+t2 with payments v1 and v2, respectively, then the payment to solve both
+tasks t1 + t2 should be v1 + v2.
+It is proved that Shapley value ψ(s) is the unique allocation method that
+satisﬁes the four axioms, which is deﬁned as the average marginal contribution
+of si to all possible subsets of sellers S ⊆D \ {si}
+ψ(s) = 1
+N
+X
+S⊆D\{s}
+U(S ∪{s}) −U(S)
+ N−1
+|S|
+
+,
+(1)
+where U(·) is the utility function [91]. For example, in the context of collabora-
+tive machine learning, U(S) is the performance score of the machine learning
+model trained on the data sets of S, such as precision.
+Equation 1 can be rewritten to
+ψ(s) = 1
+N!
+X
+π∈Q(D)
+(U(P π
+s ∪{s} −U(P π
+s ))),
+(2)
+where π ∈Q(D) is a permutation of sellers and P π
+s is the set of sellers that
+precede seller s in π.
+The fact that Shapley value uniquely possesses Shapley fairness, combined
+with its ﬂexibility to support diﬀerent utility functions, makes it a popular
+tool to implement fair data marketplaces.
+Arbitrage-free Pricing Arbitrage is the activities that take advantage of price
+diﬀerences between multiple markets. In a data marketplace, a data seller may
+oﬀer multiple versions of products. As a consequence, a critical concern is that
+a data buyer may circumvent the advertised price of a product through buying
+a bundle of cheaper ones, which negatively aﬀects the seller’s revenue. For
+example, consider a data seller selling noisy queries to the seller’s database [78,
+80], and the seller perturbs each query answer independently with random
+noise. An answer with a variance of 5 is sold at $5 and with a variance of 1 is
+sold at $50. A data buyer wants to obtain an answer of variance 1. The buyer
+can purchase the cheaper answer 5 times and compute their average. Since
+the noises are added independently, the aggregated average has variance 1.
+Thus the customer saves $25 by arbitrage. A desirable pricing function should
+guarantee that no arbitrage is possible, in which case we call it arbitrage-free.
+
+10
+Zicun Cong et al.
+Privacy-preservation Privacy protection during the transactions of data raises
+more and more concerns. In data marketplaces, the privacy of buyers, sellers,
+and involved third parties are highly vulnerable, and might be disclosed in
+many diﬀerent ways [80]. Many diﬀerent solutions have been proposed for
+privacy protection in data markets [30, 57, 43]. In this survey, we focus on the
+studies along the line of privacy compensation [57, 78, 77], which investigate
+how to provide compensations for the privacy disclosure of data owners. For
+the purpose of privacy protection, sensitive data sets are usually traded with
+injected random noise [77]. A data set with less random noise is more accurate,
+but may leak more privacy and thus more compensations should be made to
+the data owner.
+Computational Eﬃciency The numbers of transactions, sellers and buyers
+may be huge in a data marketplace. Therefore, it is a fundamental requirement
+for a pricing model to compute prices eﬃciently with respect to a large number
+of goods and participants. Prices should be computed in polynomial time with
+respect to the number of participants [1] or the number of data products [16].
+In some application scenarios, however, it takes exponential time to compute
+the pricing functions with desirable properties, such as Shapley fairness [33],
+arbitrage-freeness [53], and revenue maximization [16]. For example, Koutris
+et al. [53] show that computing arbitrage-free prices of join queries on a rela-
+tional database is in general NP-hard. How to eﬃciently determine prices with
+desirable properties presents technical challenges.
+Eﬀort Elicitation In addition to the above six desiderata, here we propose a
+new one, eﬀort elicitation.
+In a data marketplace, a data buyer may purchase training data labels via
+crowdsourcing. Crowdworkers are presented with unlabeled data instances (for
+instance, images) and are asked to provide labels (for instance, a binary label
+indicating whether or not the image contains pedestrains). A major challenge
+in label collection is to ensure that workers invest their eﬀorts and provide
+accurate answers. A poorly designed pricing model may result in labels with
+very low quality [88]. For example, if each task has a ﬁxed price, an obvious
+strategy that maximizes a worker’s proﬁt is to just provide arbitrary answers
+without even solving the tasks [102]. Many techniques have been developed to
+post-process noisy answers in order to improve their quality. However, when
+the inputs to these algorithms are highly erroneous, it is diﬃcult to guarantee
+that the processed answers will be reliable enough for downstream machine
+learning tasks [88]. In order to avoid the troubles of “garbage in, garbage out”,
+a desirable approach is to design proper rewards for crowdsourcing tasks that
+incent workers to invest eﬀorts and provide higher quality answers [102].
+3 Pricing Raw Data Sets
+In this section, we review the existing studies focusing on pricing raw data
+sets. The existing studies consider four types of scenarios. The most tradi-
+
+Data Pricing in Machine Learning Pipelines
+11
+tional methods price data sets as indivisible units and do not consider supplier
+competitions. The intrinsic properties of data sets, such as volumes, are fac-
+tors determining prices. In the second scenario, how to price indivisible data
+sets in a competitive market is studied. In the third scenario, data consumers
+can purchase just a fraction of an entire data set, which is more ﬂexible to
+consumers but may have the issue of arbitrage. The last scenario addresses
+pricing personal data by privacy compensation.
+3.1 Pricing General Data
+Machine learning and statistical models are vulnerable to poor quality training
+data, thus high quality data is valuable to data buyers [102]. Pricing data sets
+based on quality becomes a natural choice.
+Heckman et al. [39] identify a list of factors to assess the quality of a data
+set, such as age of data, accuracy of data, and volume of data. A linear model
+is proposed to set the price of a data set as
+price = Fixed cost +
+X
+i
+wi · factori.
+Estimating the model parameters wi is a diﬃcult task, as many data sets may
+not have public prices associated with them. A more comprehensive list of
+quality criteria is proposed in [97].
+Yu and Zhang [107] study the problem of trading multiple versions of a
+data set, constructed by diﬀerent data quality factors. They assume customers’
+demands and maximum acceptable prices of diﬀerent versions are public. A
+bi-level programming model is established to address the problem. At the
+ﬁrst level, the data seller determines versions and their prices to maximize
+the total revenue. At the second level, a group of buyers select data products
+to maximize their utilities. Solving the bi-level programming model is NP-
+hard. Yu and Zhang [107] propose a heuristic genetic algorithm to approach
+it numerically.
+3.2 Pricing Crowdsensing Data
+Crowdsensing is a powerful tool to quickly and cheaply obtain vast amounts
+of training data for machine learning models [102, 112]. In a crowdsensing
+marketplace, a task requester initiates a data collection task and compensates
+participating workers according to their reported costs. As workers may ex-
+aggerate their costs, pricing models should incentivize workers to truthfully
+reveal their costs.
+Yang et al. [105] design a reverse auction mechanism for mobile sensing
+data, that is truthful, individually rational, and proﬁtable. A pricing model is
+truthful if all sellers truthfully report their data collection costs. A model is
+individually rational if all sellers have non-negative net proﬁts, and proﬁtable
+
+12
+Zicun Cong et al.
+if the data buyer has non-negative net proﬁts. The authors assume that a
+buyer has a set Γ = {τ1, . . . , τn} of sensing tasks, where each task τi has a
+value vi to the buyer. Each seller si chooses a subset of tasks Γi ⊆Γ and has
+a private cost ci for performing the tasks. Seller si decides a price bi for the
+sensed data and submits the task-bid pair (Γi, bi) to the buyer. After collecting
+all bids, the buyer selects a subset of sellers S as winners and determines the
+payment pi to each winner si.
+The proposed auction mechanism, MSensing, selects winners S in a greedy
+manner. Starting with S = ∅, it iteratively chooses the seller that brings
+the largest non-negative net marginal proﬁt. Each winner si ∈S is paid the
+critical value pi of si, that is, seller si would not win the auction if si bids
+higher than pi. Speciﬁcally, MSensing runs the winner selection algorithm over
+users S′ = U \ {si}. The payment pi is the largest price si can bid, such that
+si can replace a user in S′. Please note that pi ≥bi, this is because due to
+incomplete cost information, the buyer provides extra compensations to sellers
+on top of their bids to motivate them to reveal actual costs. MSensing satisﬁes
+Myerson’s characterization of truthful auction mechanisms [71].
+The follow-up work by Jin et al. [48] considers the situation where a data
+buyer has a data quality requirement Qj for each sensing task tj. The authors
+propose a Vickrey-Clarke-Groves mechanism [4] like truthful reverse combi-
+natorial auction. They assume that the data quality qi of each seller si is
+public and qi is the same for all sensing tasks. The authors ﬁrst consider the
+scenario where each seller only bids for one bundle of sensing tasks Γi. The
+auction winners S must satisfy the quality requirement for each task tj, that
+is, P
+si∈S, if tj∈Γi qi ≥Qj. The objective of the auction is to maximize the
+total utility of the buyer and the sellers. The authors prove that winner deter-
+mination under the setting is NP-hard and propose a greedy winner selection
+algorithm with a guaranteed approximation ratio to the optimal total util-
+ity. Each winner is paid by the winner’s critical payment. The authors further
+study the total utility maximization problem in a more general scenario, where
+each seller can bid for multiple bundles of tasks. They propose an iterative de-
+scending algorithm that achieves close-to-optimal total utility. However, the
+auction is not truthful.
+Koutsopoulos [55] considers a similar setting as Jin et al. [48] do, but as-
+sumes that a data buyer has only one sensing task. The author proposes a
+truthful reverse auction that minimizes the expected cost of the buyer while
+guaranteeing the data quality requirement. The author assumes that the data
+buyer has prior knowledge about the distribution of each seller si’s unit par-
+ticipation cost ci. The units of participation xi of si is a positive real value
+indicating how much data is purchased from si. Given the sellers’ bids, the data
+buyer determines the auction winners and their participation units by solv-
+ing a linear programming model, which minimizes the total expected payment
+under the data quality constraint. Critical payments are made to the selected
+winners. All sellers bidding truthfully forms a Bayesian Nash equilibrium [56].
+
+Data Pricing in Machine Learning Pipelines
+13
+3.3 Pricing Data Queries
+Query-based pricing models tailor the purchase of data to users’ needs. Cus-
+tomers can purchase their interested parts of a data set through data queries,
+and are charged according to their issued queries. While such a marketplace
+mechanism provides greater ﬂexibility to buyers, a less carefully designed pric-
+ing model may open the loophole for arbitrage, which allows buyers to obtain
+a query result in a cost less than the advertised prices.
+Given a database D and a multi-set of query bundles S = {Q1, . . . , Qm}, a
+query bundle Q is determined by S, if the answer to Q can be computed only
+from the answers to the query bundles in S. A pricing function is arbitrage-
+free if the advertised price π(Q) ≤Pm
+i=1 π(Qi), that is, the answer to a query
+bundle Q cannot be obtained more cheaply from an alternative set of query
+bundles.
+The ﬁrst formal framework for arbitrage-free query-based data pricing was
+introduced by Koutris et al. [53]. The major idea is that a data seller can ﬁrst
+specify the prices of a few views V over a database, and then the price of
+a query bundle Q is decided algorithmically. Theoretically, the authors show
+that if there are no arbitrage situations among the views in V, there exists
+a unique arbitrage-free and discount-free pricing function π(Q). Speciﬁcally,
+π(Q) is the total price of the cheapest subset of V that determines Q, which is
+found by query determinacy [73]. They also show the complexity of evaluating
+the price functions. Unfortunately, the pricing model is NP-hard for a large
+class of practical queries. They develop polynomial time algorithms for speciﬁc
+classes of conjunctive queries, chain queries, and cyclic queries.
+Subsequently, Koutris et al. [54] develop a prototype pricing system, Query-
+Market, based on the idea [53]. They formulate the pricing model as an integer
+linear program (ILP) with the objective to minimize the total cost of purchased
+views Vp. The purchased views Vp must satisfy the following requirements.
+For a tuple t in the query answer Q(D), there must exist a subset of views in
+Vp that can produce t and for each relation R in Q, at lease one view on R
+should be purchased. For a tuple t not in Q(D), there must exist a subset of
+views in Vp that can indicate t /∈Q(D). Although the pricing problem in the
+setting is in general NP-hard, QueryMarket shows that a large class of queries
+can be priced in practice, albeit for small data sets. To handle the case that a
+query Q may require databases from multiple sellers, they introduce a revenue
+sharing policy among sellers. Speciﬁcally, each seller gets a share of the query
+price π(Q), which is proportional to the maximum revenue that the seller can
+get among all minimum-cost solutions to the ILP.
+The problem of designing arbitrage-free pricing models for linear aggre-
+gation queries is studied by Li et al. [57]. Given a data set of n real values
+x = ⟨x1, . . . , xn⟩, a linear query over x is a real-valued vector q = ⟨w1, . . . , wn⟩,
+and the answer is q(x) = P
+i=1 wixi. The authors propose a marketplace,
+where a data buyer can purchase a single linear query q with a variance con-
+straint v deﬁned by the buyer. The query Q = (q, v) is answered by an unbi-
+ased estimator of q(x) with a variance smaller than or equal to v. The authors
+
+14
+Zicun Cong et al.
+ﬁrst develop a proposition that the pricing function π cannot decrease faster
+than
+1
+v, that is, π(q, v) = Ω( 1
+v). Then, they propose a family of arbitrage-
+free pricing functions, π(q, v) = f 2(q)
+v
+, where the function f(·) is semi-norm.
+Last, they provide a general framework to synthesize new arbitrage-free pric-
+ing functions from the existing ones. For any arbitrage-free pricing functions
+π1, . . . , πk, the pricing function π(Q) = f(π1(Q), . . . , πk(Q)) is also arbitrage-
+free if f(·) is a subadditive and nondecreasing function. A comprehensive list
+of celebrated arbitrage-free pricing functions are listed by Niu et al. [78]. In
+addition to synthesized pricing functions, Li et al. [57] also study a similar
+view-based pricing framework as Koutris et al. [53] do. By adapting the theo-
+retical results in [53], the authors show that the view-based pricing model for
+linear aggregation queries is NP-hard.
+Lin and Kifer [59] study arbitrage-free pricing for general data queries.
+They propose three pricing schemes, namely instance-independent pricing, up-
+front dependent pricing, and delayed pricing. The authors further summarize
+ﬁve forms of arbitrages, namely price-based arbitrage, separate account arbi-
+trage, post-processing arbitrage, serendipitous arbitrage, and almost-certain
+arbitrage. The authors point out that the model by Koutris et al. [53] has
+pricing-based arbitrage, that is, the computed prices may leak information
+about D. Theoretically, they propose an instance-independent pricing func-
+tion and a delayed pricing function that are arbitrage-free across all forms.
+The major idea is to tackle the pricing problem from a probabilistic view.
+Queries that are more likely to reveal the true database instance are priced
+higher.
+In the same vein, Deep and Koutris [24] characterize the structure of pricing
+functions with respect to information arbitrage and bundle arbitrage, where
+information arbitrage covers both post-processing arbitrage and serendipitous
+arbitrage deﬁned by Lin and Kifer [59]. For both instance-independent pric-
+ing and answer-dependent pricing of a query, an arbitrage-free pricing function
+should be monotone and subadditive with respect to the amount of information
+revealed by asking the query. Several examples of arbitrage-free pricing func-
+tions are presented, including the weighted coverage function and the Shannon
+entropy function.
+Deep and Koutris [25] later implement the theoretical framework [24] into
+a real time pricing system, QIRANA, which computes the price of a query
+bundle Q from the view of uncertainty reduction. They assume that a buyer
+is facing a set of all possible database instances S with the same schema as
+the true database instance D. After receiving the query answer E = Q(D),
+the buyer can rule out some database instances Di ∈S that cannot be D by
+checking whether Q(Di) = E. A query bundle that eliminates more database
+instances is priced higher, as it reveals more information about D. The authors
+propose an arbitrage-free answer-dependent pricing function, which assigns a
+weight wi to each database Di ∈S, and computes the price of a query bundle
+
+Data Pricing in Machine Learning Pipelines
+15
+by
+π(Q) =
+X
+i∈{i|Di∈S},Q(D)̸=Q(Di)
+wi.
+(3)
+By default, the same weight wi =
+P
+|S| is assigned to each possible database in-
+stance Di, where P is a parameter set by the data owner. The data owner can
+also provide QIRANA with some example query bundles and their correspond-
+ing prices. Then, QIRANA will automatically learn instance weights wi from
+the given examples by solving an entropy maximization problem. Choosing S
+to be the complete set of possible database instances leads to a #P-hard prob-
+lem. To make the pricing function tractable, QIRANA uses a random sample
+of database instances as S.
+Chawla et al. [15] extend the pricing function in Equation 3 to maxi-
+mize seller revenue. They consider the setting that the supply is unlimited
+and the buyers are single-minded, that is, a buyer only wants to buy a sin-
+gle query bundle Q. A buyer will purchase Q if the advertised price π(Q)
+is smaller than or equal to the buyer’s valuation vQ. The authors take a
+training data set consisting of some query bundles and their customer val-
+uations. Three pricing schemes are investigated. The major idea of the pricing
+schemes is that, according to Equation 3, a query can be priced as a bun-
+dle of items (database instances). Uniform bundle pricing sets the same price
+for all query bundles. Item pricing sets the price of a query bundle using
+Equation 3, where the weights wi are learned from the training data. XOS
+pricing learns k weights w1
+i , . . . , wk
+i for each item Di and sets the price of Q as
+π(Q) = maxk
+j=1
+P
+i∈{i|Di∈S},Q(D)̸=Q(Di) wj
+i . Theoretically, the approximation
+rate of each pricing scheme to the optimal revenue is studied. Although XOS
+pricing scheme enjoys the best approximation rate, the authors show that item
+pricing usually achieves larger revenue in practice.
+Miao et al. [69] study the problem of pricing selection-projection-natural
+join queries over incomplete databases. An arbitrage-free pricing function is
+proposed based on the idea of data provenance, which describes the origins
+of a piece of data and its processing history [10, 98]. Let t be a tuple in
+a query answer Q(D). The lineage L(t, D) of t is deﬁned as the set of tu-
+ples in the database D that contribute to t. The authors assume that each
+tuple t has a base price p(t). The price of Q is set to the weighted aggre-
+gation of the costs of all tuples in M(Q, D) = ∪t∈Q(D)L(t, D). Speciﬁcally,
+πUCA(Q) = P
+i∈{i|ti∈M(Q,D)} µip(ti), where µi is the percentage of attributes
+of ti that are not missing. The authors also propose an answer quality aware
+pricing function, πQUCA(Q) = ∆
+n πUCA(Q)κ(Q, D), where κ(Q, D) is the an-
+swer quality and ∆is a constant. However, πQUCA is not arbitrage-free.
+Purchasing data is usually not a one-shot deal. A customer may purchase
+multiple queries from the same data seller. A history-aware pricing function
+will not charge the customer twice for already purchased information. Query-
+Market [54] tracks the purchased views of a customer and avoids charging
+those views when pricing future queries of the customer. Both [25] and [69]
+support history-aware pricing in the same vein as [54]. One drawback of these
+
+16
+Zicun Cong et al.
+history-based approaches is that the seller must provide reliable storage to
+keep users’ query history [101].
+Upadhyaya et al. [101] propose an optimal history-aware pricing function,
+that is, a buyer is only charged once for purchased data. The key idea is to allow
+buyers to ask for refunds of already purchased data. In their setting, a query is
+priced according to its output size. The seller computes an identiﬁer (coupon)
+for each tuple in the query answer Q(D). Both Q(D) and the corresponding
+coupons are sent to the buyer. If the buyer receives the same tuple t from two
+queries, the buyer can ask for a refund of t by presenting the two coupons
+associated with t in the two corresponding queries. To prevent buyers from
+borrowing coupons from others and receiving unconscionable refunds, each
+coupon is uniquely associated with a buyer. By tracking coupon status, the
+data seller guarantees that each coupon will be used only once. However, the
+pricing function has no arbitrage-free guarantee [25].
+3.4 Privacy Compensation
+Machine learning models in many areas, like recommendation systems [19]
+and personalized medical treatments [66], require a large amount of personal
+data. However, trading and sharing personal data may leak the privacy of data
+providers. Therefore, how to measure and properly compensate data providers
+for their privacy loss is an important concern in designing marketplaces of
+personal data.
+Diﬀerential privacy [28] is a mathematical framework rigorously providing
+privacy protection and plays an essential role in personal data pricing. Follow-
+ing the principle of diﬀerential privacy, random noises are injected into a data
+set, such that data buyers can learn useful information about the whole data
+set but cannot learn speciﬁcs accurately about an individual. The magnitude
+of random noise impacts data providers’ privacy loss and the data price. A
+data set with less injected random noise may leak more privacy and is priced
+higher. Pricing models of personal data routinely adopt cost-plus pricing strat-
+egy, where sellers ﬁrst compensate data providers for their privacy loss, and
+then scale up the total privacy compensation to determine the price for data
+buyers [78].
+Ghosh and Roth [34] initiate the study of pricing privacy by auction. They
+propose a truthful marketplace to sell single counting queries on binary data. In
+their settings, a data seller has a data set consisting of personal data di ∈{0, 1}
+of individual i. The data seller sells an estimator bs of the sum s = P
+i di and
+compensates data providers for their privacy loss. Under the framework of
+diﬀerential privacy, the authors treat privacy as a commodity to be traded. In
+particular, if a provider’s data is used in an ϵ−diﬀerentially private manner,
+ϵ privacy units should be purchased from the provider. Thus, the privacy
+compensation problem can be transformed into variants of multi-unit reverse
+auction. The authors assume that each data provider i has a privacy cost
+
+Data Pricing in Machine Learning Pipelines
+17
+function
+ci(ϵ) = vi ∗ϵ,
+(4)
+representing the cost for using the data in an ϵ-diﬀerentially private manner,
+where vi is the unit privacy cost of i. In an auction, data providers are asked
+to submit their asking prices bi for the use of their data. Ghosh and Roth
+[34] consider two situations. In the ﬁrst situation, a buyer has an accuracy
+requirement on bs, that is, Pr[|bs −s| ≥k] ≤
+1
+3. The authors establish an
+observation that they only need to purchase data from m individuals and
+use them in an ϵ-dﬀerential privacy manner, where m and ϵ only depend on
+the accuracy goal. It’s shown that the classic Vickrey-Clarke-Groves auction
+minimizes the buyer’s payment and guarantees the accuracy goal. The major
+idea is to select m individuals with the cheapest bids and provide each winner
+with a uniform compensation ϵ·b, where b is the (m+1)-th smallest bid. In the
+second situation, a buyer has a budget constraint and wants to maximize the
+accuracy of ˆs. The authors propose a greedy-based approximation algorithm
+to solve the problem.
+The value of personal data and privacy valuation may be correlated. For
+example, a patient may assign a higher price to the patient’s medical report
+than the healthy people ask for. Ghosh and Roth [34] show a negative result
+that in the situations having such correlations, no individually rational direct
+mechanism can protect privacy.
+In a follow-up study, Dandekar et al. [19] consider the scenario of sell-
+ing linear aggregate queries q = ⟨w1, . . . , wn⟩over real-valued personal data
+D = ⟨d1, . . . , dn⟩. They assume data providers have the same privacy cost
+function as Equation 4, and propose a truthful reverse auction mechanism to
+maximize the accuracy of estimators for budget-constraint buyers. The error
+of an estimator bs of the true answer s = P
+i widi is its squared error (bs −s)2.
+It is shown that an bs computed from more providers with large corresponding
+weights in q is more accurate. Therefore, the problem is transformed into a
+knapsack reverse auction [95] that maximizes the total weights of the selected
+providers under budget constraints. Speciﬁcally, the authors treat the budget
+as the capacity of the knapsack, the privacy cost of a data entry di as its
+weight in the knapsack, and wi as the value of di. A greedy-based algorithm
+with an approximation ratio of 5 is proposed to solve the problem.
+The aforementioned studies [34, 19] assume that data buyers can purchase
+an arbitrary amount of privacy from each data provider. However, a conserva-
+tive individual may not want to sell the individual’s data if the privacy loss is
+too large. Nget et al. [77] study the same problem as Dandekar et al. [19] do in
+a more realistic situation, that is, an individual i can refuse to participate in
+an estimator if the privacy loss of i is larger than a threshold ϵi. They assume
+that the privacy cost function of each data provider is public and propose a
+heuristic method to determine query price. The model ﬁrst randomly samples
+a subset of data providers. Then, it uses the data from each sampled individual
+i in an ϵi-diﬀerentially private manner, and computes the compensations cor-
+respondingly. If the total compensation is larger than the budget, the model
+
+18
+Zicun Cong et al.
+decreases the diﬀerential privacy levels of the high cost providers, such that
+the budget goal is met. Last, they generate the perturbed query answers by
+personalized diﬀerential privacy [50], which guarantees the diﬀerential privacy
+for each selected individual i. They repeat the above steps several times and
+return the perturbed answer with the smallest squared error.
+Later, Zhang et al. [111] propose a truthful personal data marketplace,
+where each data provider i can specify the personal maximum tolerable privacy
+loss ϵi. They ﬁrst show that the accuracy of query answers is proportional
+to the total amount of purchased privacy. Under the assumption that the
+distributions of privacy costs of all individuals are public, they design a variant
+of Bayesian optimal knapsack procurement [29], which maximizes the expected
+total purchased privacy under the constraint of a data buyer’s expected budget.
+The authors solve the problem by adopting the algorithm in [29]. The noisy
+query answer is generated using personalized diﬀerential privacy [50], which
+guarantees ϵi-diﬀerential privacy for each selected individual i.
+The models proposed by Dandekar et al. [19], Ghosh and Roth [34] may be
+attacked by arbitrage. Li et al. [57] consider the situation where a data buyer
+has a variance constraint v on the purchased noisy query answers. They assume
+that the privacy costs of individuals are public, and propose a theoretical
+framework for assigning arbitrage-free prices to linear aggregate queries q. A
+perturbed answer is generated from the true answer by adding Laplace noise
+with the expectation 0 and variance p v
+2. Measured by diﬀerential privacy, the
+privacy loss of an individual i is upper-bounded by ϵ =
+w
+√v
+2 if the individual is
+involved in the query, and 0 otherwise, where w is the largest absolute weight
+in q. Several privacy compensation functions are proposed, such as pi(ϵ) = ciϵ,
+where ci is the unit privacy cost of individual i. The price of a query is the
+sum of the privacy compensations, which is proved to be arbitrage-free.
+Li et al. [57] only compensate individuals involved in queries. However,
+as two individuals’ data may be correlated, the privacy of a not-involved in-
+dividual may be leaked due to the revelation of the other individual’s data.
+To fairly compensate individuals for their privacy, Niu et al. [78] extend the
+model by Li et al. [57], and propose a pricing model that is arbitrage-free and
+dependency fair. Dependent fairness requires that a data provider should re-
+ceive a privacy compensation as long as some data of other providers that is
+correlated to the data of this provider is involved in a query. Employing depen-
+dent diﬀerential privacy [60], the privacy loss of a data provider i caused by
+a query is upper-bounded by ϵi =
+dsi
+√v
+2 , where dsi is the dependent sensitivity
+of the query at provider i’s data. The authors propose a bottom-up mech-
+anism and a top-down mechanism to determine privacy compensations and
+query prices. The bottom-up mechanism computes compensations in the same
+way as Li et al. [57] do and determines query prices as a multiple of the to-
+tal compensations. The top-down mechanism ﬁrst determines the query price
+using a user-deﬁned arbitrage-free pricing function and spares some fraction
+of a buyer’s payment for privacy compensation. Each data provider receives a
+division of the compensation proportional to the provider’s privacy loss.
+
+Data Pricing in Machine Learning Pipelines
+19
+All of the privacy compensation methods discussed above assume a trust-
+worthy platform/agent to trade data providers’ privacy with data buyers. Data
+providers, however, cannot control the usage of their own data.
+In this concern, Jin et al. [49] develop a truthful crowdsensing marketplace,
+where data owners can determine how much privacy to disclose. In their mar-
+ketplace, obfuscated geo-locations of data owners are traded by auctions. Data
+owners ﬁrst inject random noise to their data based on their own privacy pref-
+erences. Then, each data owner bids with the cost as well as the mean and
+variance of the injected random noise. The buyer determines auction winners
+to maximize data accuracy with respect to the buyer’s budget constraint. The
+authors show that the optimization problem is NP-hard and develop a greedy
+heuristic solution. The major idea is to iteratively select data owners that
+bring the largest marginal utility contributions until the budget is used up.
+In this section, we review representative pricing models of raw data sets in
+four types of scenarios, where diﬀerent desiderata are considered. A limitation
+of the discussed pricing models is that data sets are priced without considering
+their down-stream applications. Fernandez et al. [30] argue that the value of
+a data set to customers is usually task dependent and cannot be evaluated
+by the intrinsic properties of the data set alone. As the pricing models of raw
+data sets are agnostic to the down-stream applications of raw data sets, these
+pricing models can be used in machine learning pipelines of building both
+supervised and unsupervised machine learning models.
+4 Pricing Data Labels
+Crowdsourcing is a popular method for collecting large-scale labeled train-
+ing data for machine learning tasks [88]. Unfortunately, crowdsourced data
+often suﬀers from quality issues. This is mainly due to the existence of lazy
+and spamming workers, who submit low quality labels. Those workers can
+be discouraged from participating in the tasks by rewarding them with a
+performance-based payment [82]. However, due to a lack of ground-truth ver-
+iﬁcation of the collected labels, how to evaluate label quality and price the
+labels correspondingly is a challenging task. In this section, we review two
+types of label pricing models, which are designed to motivate workers to exert
+eﬀorts and submit accurate data labels.
+4.1 Gold Task-based Pricing Models
+A gold task is one for which the answer is known to the data buyer a priori.
+Gold tasks can be uniformly mixed at random within the tasks for workers
+to evaluate workers’ performance, which determines the payments to workers.
+Since workers cannot distinguish gold tasks from others, this strategy can
+motivate workers to provide accurate labels.
+
+20
+Zicun Cong et al.
+Shah and Zhou [88] consider a crowdsourcing setup where workers perform
+binary labeling tasks. The authors propose a multiplicative pricing model using
+gold tasks. The model allows a worker to skip an assigned task if the worker is
+not conﬁdent about the answer. The total payment to a worker u is computed
+based on u’s performance on the answered tasks. The workers are selﬁsh and
+want to maximize their individual expected payments. The authors assume
+that each worker has a private belief Pr(yt = l) about how likely the true label
+yt of a task t is l. The pricing model is designed to incentivize workers to only
+report high-conﬁdence labels with beliefs greater than a threshold p. The total
+reward starts at β. For each correct answer in the gold tasks, the reward will be
+multiplied by 1
+p. However, if any of these gold tasks are answered incorrectly,
+the reward will drop to zero, that is,
+π(u) = β · 1
+pc · 1(r = 0),
+(5)
+where 1(·) is an indicator function, and c and r are the number of correct and
+wrong answers, respectively. This pricing model motivates workers to only
+answer tasks that they are suﬃciently conﬁdent about. The pricing model is
+incentive compatible, that is, a worker receives the maximum expected pay-
+ment if and only if the worker exerts eﬀorts to report accurate labels. The
+pricing model also satisﬁes the “no-free-lunch” axiom, that is, workers who
+only provide wrong answers will receive no payments. In their setting, the
+proposed method is the unique incentive compatible model that satisﬁes the
+“no-free-lunch” axiom.
+Shah et al. [90] further generalize the model [88] to multi-label tasks. For
+each task, a worker can submit multiple answers bY that the worker believes is
+most likely to be correct. This multi-selection system provides workers more
+ﬂexibility to express their beliefs, which can use the expertise of workers with
+partial knowledge more eﬀectively than single-selection systems. The authors
+assume that the workers’ beliefs for any label being the true label for a task
+lie in the set {0} ∪(p, 1], where p is ﬁxed and known. The authors want to
+encourage workers to only report the set of labels with positive beliefs. The
+reward of a worker for a gold task is (1−p)(|bY |−1) if one of the worker’s answers
+is correct and 0 if otherwise. The total payment to a worker is determined by
+the product of the worker’s rewards on all gold tasks.
+In a later study, Shah and Zhou [89] propose a two-stage multiplicative
+pricing model to motivate workers to self-correct their answers. In the ﬁrst
+stage, a worker answers the assigned tasks. In the second stage, if the worker’s
+answer to a task t does not agree with the answer from the peer workers,
+the worker has an opportunity to change the answer. The worker u receives
+a high reward for a gold task t if the initial answer to the task is correct, a
+low reward if the updated answer is correct, and 0 reward if the ﬁnal answer
+is wrong. The total payment is determined by the product of the worker’s
+rewards from gold tasks. Theoretically, the authors prove that the proposed
+method is the unique incentive compatible model that satisﬁes the no-free-
+lunch axiom. Empirically, they show in a simulation that the self-correction
+
+Data Pricing in Machine Learning Pipelines
+21
+setting can signiﬁcantly improve the data quality compared to the standard
+single-stage settings.
+To reduce the variance in payoﬀs, the aforementioned methods [89, 90, 88]
+require each worker to solve a suﬃcient number of gold tasks. This leads to
+a waste of procurement budget, as the answers to the gold tasks are already
+known.
+de Alfaro et al. [2] address the limitation by combining the ideas from peer
+prediction and gold tasks. They arrange the workers in a hierarchy, where
+every worker shares one common task with each of its children. A few gold
+tasks are used to incentivize high eﬀorts from the workers at the top level of
+the hierarchy. Assuming these workers exert suﬃcient eﬀorts to provide high
+quality answers, their answers can be used as pseudo gold tasks for workers in
+the second layer, who can in turn provide pseudo gold tasks for the next level,
+and so forth. A worker will be punished if the worker does not agree with the
+parent on the task shared between them. As the workers at the top level are
+evaluated by the true gold tasks, they are evaluated more accurately than the
+other workers, which is not fair to workers at lower layers.
+The follow-up work by Goel and Faltings [36] considers fair payment among
+workers, that is, the expected reward of a worker is directly proportional to
+the accuracy of the worker’s answers and independent of the strategy and
+proﬁciency of the worker’s random peers. The key idea is to estimate the
+proﬁciency of workers, which is the probability that a worker can solve the
+tasks correctly. Goel and Faltings [36] start by estimating the proﬁciency of a
+small group of workers with gold tasks. Then, the answers by the small group
+of workers to non-gold tasks are used as contributed gold tasks, where the
+workers’ proﬁciencies are used as the trustworthy degree of those tasks. The
+contributed gold tasks are used to estimate the proﬁciency of more workers.
+Finally, the payoﬀof each worker is proportional to the worker’s estimated
+proﬁciency, such that workers with good proﬁciency receive high payments.
+The model guarantees that exerting high eﬀorts to provide accurate labels is
+a dominant strategy for each worker.
+4.2 Peer Prediction-based Pricing Models
+Peer prediction-based pricing model can incentivize eﬀorts and accurate data
+labels without access to gold tasks. Those models take advantage of the
+stochastic correlation of answers to the same tasks, and set up a game among
+workers, called a mechanism in game theory. The game is designed such that
+workers who exert eﬀort in solving the tasks can achieve high expected re-
+wards, whereas spammers providing random answers on average receive no
+payments. A pricing model is incentive compatible if it admits exerting high
+eﬀorts and truthful reporting as an equilibrium.
+Dasgupta and Ghosh [20] initiate the study of eﬀort elicitation and propose
+the DG model to price binary labels. A data buyer assigns a set of data labeling
+tasks to a group of workers, such that each task is labeled by multiple workers
+
+22
+Zicun Cong et al.
+and each worker labels multiple tasks. They assume that a worker ui either
+invests no eﬀort and thus provides a random label, or invests full eﬀort with
+a cost ci and provides a true label with probability pi. Here, pi is called the
+proﬁciency of ui. The workers are self-interested, who want to maximize their
+payoﬀs.
+The DG model pays a worker ui on an assigned task t based on how
+surprisingly ui’s report is consistent with that of the peer worker up. Denote
+by by and byp the answers from ui and up to a task, respectively. The model
+pays ui with a constant reward subtracting the probability Pr(ui, up) that ui
+and up have the same answer to a random task, that is,
+π(ui, t) = β · (1(by = byp) −Pr(ui, up)),
+(6)
+where β is a non-negative payment scaling parameter that is chosen to cover
+workers’ eﬀort costs, and Pr(ui, up) is approximated from the submitted labels.
+The total payment to a worker ui is the sum of ui’s payment for each task.
+The pricing model incentivizes eﬀorts, as the expected payment for spam-
+mers who do not solve their tasks and report random/constant labels is exactly
+zero. Under the assumption that the proﬁciency of all workers are better than
+random guess, it is shown that the DG model is incentive compatible. Even
+though the pricing model also has non-informive equilibria, such as all workers
+reporting the same label, those equilibria are less proﬁtable to the workers,
+and thus are not attractive to the workers.
+In a multi-label situation, two labels l1 and l2 may be positively cor-
+related. Shnayder et al. [92] show that under the DG model [20], workers
+can achieve more proﬁts by misreporting l1 by l2. The correlated agreement
+(CA) mechanism [92] extends the DG model to multi-label tasks. In the
+CA mechanism, knowledge about label correlation is required. A label cor-
+relation matrix ∆is learned from workers’ submissions, where an element
+∆i,j = Pr(li, lj) −Pr(li)Pr(lj) is the correlation degree between labels li and
+lj. Denote by S(·) the sign function of ∆, that is, S(li, lj) = 1 if ∆i,j > 0, and
+0 otherwise. A worker u will be rewarded for a task t if u’s report is positively
+correlated with that of peer up. To penalize the case where all workers blindly
+report the same label, a worker u will be penalized if u is likely to be consistent
+with worker up on random tasks. In particular, the payment to worker u for
+reporting ˆy is
+π(u, t) = β · (S(by, byp) −S(bya, byb)),
+where ˆyp is the answer to task t by worker up, bya is the answer to a random task
+by worker u, and byb is the answer to another random task by worker up. When
+the number of tasks is large, such that label correlations ∆can be accurately
+learned, the CA mechanism is incentive compatible with the highest payment.
+However, the mechanism fails if two labels l1 and l2 are not distinguishable
+with respect to S(·), that is, ∀li ∈Y , S(l1, li) = S(l2, li). In this situation,
+workers may misreport l1 by l2 and still receive the same payoﬀs.
+Radanovic et al. [82] provide complementary theoretical results on pricing
+multi-label tasks. They assume that the labels only have limited correlations,
+
+Data Pricing in Machine Learning Pipelines
+23
+that is, Pr(op = l2|o = l1) < Pr(op = l2|o = l2), where o and op are the
+observed labels of worker u and worker up, respectively. The mechanism pays
+the report by by worker u on a task t by
+π(u, t) = 1(by = byp)
+R(by)
+−1,
+where R(by) is the empirical frequency of by, which is computed from all submis-
+sions. It is shown that exerting high eﬀorts and truthful reporting is strictly
+more proﬁtable than any other equilibria. However, their assumptions on label
+correlations may not hold in some applications [92].
+The aforementioned methods [20, 92, 82] require that each task must be
+completed by at least two workers, which leads to duplicate answers, and thus
+does not use the crowd eﬃciently. For a setting with binary labels, Liu and
+Chen [62] propose to learn a classiﬁer M from workers’ reports, and use the
+classiﬁer’s predictions M(t) as peer reports. Since workers’ submitted labels
+are noisy, the classiﬁer is trained by the techniques of learning with noisy
+labels [75]. Speciﬁcally, they ﬁrst estimate the error rates of submitted labels.
+Then, the classiﬁer is optimized by an error rate calibrated loss function ϕ(·)
+proposed by Natarajan et al. [75]. A report by to a task t is priced based
+on −ϕ(M(t), by), such that labels with large loss are priced lower. Under the
+assumption that M is better than random guess, exerting eﬀorts to ﬁnd the
+truth labels is the highest-paying equilibrium.
+Liu and Chen [63] study the problem of sequential label collection, where
+labeling tasks are published in multiple rounds. In their settings, an accurately
+labeled task has a ﬁxed reward to a data buyer, whereas a mistakenly labeled
+task has no value to a data buyer. They propose an incentive compatible
+pricing model that maximizes the expected utility for a data buyer, which is
+the diﬀerence between the total rewards and the total payment.
+They develop a multi-armed bandit algorithm to extend the DG model [20],
+which dynamically adjusts the parameter β in Equation 6. A larger β encour-
+ages more accurate labels but costs more money. As the bandit algorithm
+requires a static environment, this method may fail to learn the optimal β
+if adversarial workers adjust their strategies according to their interactions
+with the mechanism [42, 37]. Hu et al. [42] solve the problem by reinforcement
+learning, which is more robust to strategic behaviors of workers.
+In practice, peer prediction-based models need to adjust payments to avoid
+negative payments. The adjustment may lead to an issue that spammers may
+receive positive and high rewards. Radanovic and Faltings [81] address the
+issue by proposing a reputation system PropeRBoost to adjust the payments.
+PropeRBoost publishes tasks to workers in multiple rounds, and computes a
+reputation score for each worker based on the worker’s past submissions. In
+each round r, it ﬁrst applies the DG model [20] to compute workers’ payments,
+and then re-scales the payments by the reputations of the corresponding work-
+ers. It is shown that the average payment of a spammer converges to 0 as r
+approaches inﬁnity.
+
+24
+Zicun Cong et al.
+In this section, we review gold task-based and peer prediction-based pricing
+models for data labels. The developed pricing models guarantee that exerting
+eﬀorts to report accurate data labels is the most proﬁtable strategy of all work-
+ers. A major concern of gold task-based methods is that these methods require
+a suﬃcient number of gold tasks to obtain good performance. In some scenar-
+ios, however, gold tasks are very expensive to obtain. For peer prediction-based
+methods, the existence of multiple equilibria is a major limitation, as workers
+may converge to an uninformative equilibrium, where workers do not exert full
+eﬀorts [93].
+5 Pricing in Collaborative Training of Machine Learning Models
+Collaborative machine learning is an appealing paradigm where multiple data
+owners collaboratively build high-quality machine learning models by con-
+tributing their data. As the data sets from diﬀerent data owners may have
+diﬀerent contributions to the trained machine learning models, data owners
+who contribute more valuable data should receive more rewards [94]. In this
+section, we review contribution evaluation and revenue allocation techniques
+in collaborative machine learning.
+5.1 Revenue Allocation by Shapley Value
+Shapley fairness is widely adopted as the foundation of fair revenue allocation
+in collaborative machine learning. It guarantees that each participant receives
+a payment proportional to the participant’s marginal contribution to the per-
+formance of the trained machine learning model. The challenge in adopting
+Shapley value lies in its exponential computational cost.
+Maleki et al. [67] tackle the eﬃciency issue of Shapley value by proposing a
+permutation sampling algorithm for bounded utility functions. By Equation 2,
+the Shapley value of a seller is the marginal utility contribution averaged
+over all possible subsets of sellers, which can be estimated by sample mean.
+Denote by bψ(s) an (ϵ, δ)-approximator of a seller’s Shapley value, that is,
+Pr(| bψ(s) −ψ(s)| ≤ϵ) ≥1 −δ. To compute the estimators for all sellers, by
+Hoeﬀding’s inequality [40], we need O( 2r2N
+ϵ2
+log 2N
+δ ) samples and evaluate the
+utility function O(N 2 log N) times, where N is the number of sellers and r is
+the range of the utility function. Evaluating the utility function itself, such
+as computing testing accuracy, is computationally expensive, as it requires
+training a machine learning model. Therefore, the method is not scalable to a
+large number of sellers.
+Ghorbani and Zou [33] extend the Monte-Carlo method by Maleki et al. [67]
+to price individual data point in supervised learning, and propose truncated-
+based and gradient-based approximation methods. Their truncated-based
+method reduces the number of utility evaluations by ignoring coalitions of
+large size. The authors argue that it is suﬃcient to estimate Shapley values
+
+Data Pricing in Machine Learning Pipelines
+25
+up to the intrinsic noise in the prediction performance U on the test data set,
+which can be measured as the bootstrap variance of U. In addition, the per-
+formance change by adding one more training data point s to a large training
+data set S is ignorably small. Therefore, if the utility of S is close to the utility
+of the whole data set D, the marginal contribution of s to S can be regarded as
+0 in practice, and thus its computation can be truncated. Their gradient-based
+method speeds up the evaluation of utility functions by reducing training time,
+where a model is trained with only one pass through the training data. They
+update the model by performing gradient descent on one data point s at a
+time and the marginal contribution of s is the change in the model perfor-
+mance. The two approximation methods introduce estimation bias into the
+approximated Shapley values, and have no guarantees on the approximation
+error.
+Jia et al. [46] propose two approximation algorithms with provable er-
+ror bounds for Shapley value that signiﬁcantly reduce the number of utility
+evaluations. The ﬁrst algorithm adopts the idea of group testing in feature
+selection [114]. Denote by βi a Boolean random variable indicating whether a
+seller si is in a random sample of sellers. A sampling distribution of β1, . . . , βN
+is designed such that the diﬀerence in Shapley values between a seller si and
+a seller sj is
+ψ(si) −ψ(sj) =
+1
+N −1
+X
+S⊆D\{si,sj}
+U(S ∪{si}) −U(S ∪{sj})
+ N−2
+|S|
+
+= E[(βi −βj)U(β1, . . . , βN)],
+where U(β1, . . . , βN) is the utility evaluated on the appearing sellers and D
+are all sellers. The Shapley value of sellers can be derived from the estimated
+Shapley diﬀerences between all datum pairs by solving a feasibility problem.
+They demonstrate that the algorithm returns an (ϵ, δ)-approximation with
+O(N(logN)2) utility evaluations. The second algorithm is based on their ob-
+servation that Shapley values are approximately sparse, that is, most values
+are around the mean. Exploiting this property, they apply the idea of sparse
+signal recovering in compressive sensing [83], and develop an algorithm that
+produces an (ϵ, δ)-approximation with only O(N log(log(N))) utility evalua-
+tions.
+Jia et al. [45] further discover that Shapley values for data points used in
+unweighted kNN classiﬁers can be computed exactly only in O(N log N) time.
+Given a testing point xtest with label ytest, they deﬁne the utility of a kNN
+classiﬁer as the likelihood of ytest, that is,
+U(S) = 1
+k
+min(k,|S|)
+X
+i=1
+1(yαi(S) = ytest),
+where αi(S) is the index of the training data that is the i-th closest to xtest
+in the set of data points S. The special utility function enables eﬃcient com-
+putation of Shapley diﬀerences between two data points xαi(S) and xαi+1(S),
+
+26
+Zicun Cong et al.
+that is,
+ψ(xαi(S)) −ψ(xαi+1(S)) = 1(yαi(S) = ytest) −1(yαi+1(S) = ytest)
+k
+min(i, k)
+i
+.
+(7)
+They start by computing ψ(xαN(S)) =
+1(yαN (S)=ytest)
+N
+and then exploit-
+ing Equation 7 to recursively compute the Shapley values in the order of
+xαN(S), . . . , xα1(S). They further develop an (ϵ, δ)-approximation algorithm
+based on Locality Sensitive Hashing [21] with only sublinear complexity. The
+major idea is to only compute Shapley values for the retrieved k∗= max(k, 1
+ϵ )
+nearest neighbors of xtest and ignore the rest data points, as their Shapley
+values are too small. Moreover, they present a Monte-Carlo approximation al-
+gorithm with O( N
+ϵ2 log(k) log( k
+δ )) time complexity for weighted kNN classiﬁers.
+The aforementioned studies [45, 46, 33] evaluate the utility of a model by
+its performance on a validation data set. Sim et al. [94] consider the situation
+where no validation data sets are available, and propose to use information
+gain on model parameters as the utility function. Denote by θ the model
+parameters. After training on data D, the information gain IG(θ) = H(θ) −
+H(θ|D) is the reduction in the uncertainty of θ, where H(·) is the entropy
+function. In addition to Shapley fairness, three additional incentive conditions
+for revenue allocation are proposed, namely individual rationality, stability of
+the grand coalition, and group welfare. They also present p-Shapley fairness,
+which assigns a reward π(si) = kψ(si)p to a seller si. By tuning parameter
+p ∈[0, 1], they can trade oﬀbetween achieving diﬀerent incentive conditions.
+Rather than monetary incentives, each participant receives a machine learning
+model as a reward. To realize diﬀerent levels of rewards, the models are trained
+by injecting diﬀerent levels of noise into training labels.
+Federated Learning [7, 68] enables multiple decentralized participants to
+collaboratively train a machine learning model while keeping their training
+data locally. The data sets contributed by the participants are used in a se-
+quential order determined by a central server. Evaluating participants’ con-
+tributions using Shapley value incurs high communication costs among the
+decentralized participants. Moreover, Shapley value neglects the order of data
+sources. To accommodate the challenges, Wang et al. [103] propose federated
+Shapley value. Denote by U(si + sj) the utility of the model, which is trained
+on si’s data ﬁrst, then on sj’s data. Let It be the set of selected participants
+in round t of the federated learning process. The federated Shapley value of
+participant si at round t is deﬁned as follows.
+ψt(si) =
+
+
+
+1
+|It|
+P
+S⊆It\{si}
+U(I1:t−1+(S∪{si}))−U(I1:t−1+S)
+(
+|It|−1
+|S| )
+if si ∈It
+0
+if si /∈It
+(8)
+The federated Shapley value of si is ψ(si) = PT
+t=1 ψ(si), where T is the total
+rounds in federated learning. The authors show that federated Shapley values
+satisfy the balance and additivity axioms of Shapley fairness. The other two
+
+Data Pricing in Machine Learning Pipelines
+27
+axioms, symmetry and zero element, are satisﬁed in each round. They extend
+the permutation sampling and group testing approximation methods [46] to
+compute federated Shapley values.
+Participants in federated learning spend some costs for contributing their
+data sets, such as privacy cost [41] and energy costs [51]. Yu et al. [108] pro-
+pose a fair revenue allocation mechanism for federated learning that jointly
+considers the costs and contributions of participants. At round t, each partic-
+ipant si has a public cost ci(t) and receives a reward πi(t). The regret ri(t)
+of si is a function of the diﬀerence between the total cost and total reward
+of si. A large value of ri(t) indicates that si is not well compensated for the
+costs incurred to si. The authors argue that the payments of participants at
+each round should achieve contribution fairness and regret fairness. Contri-
+bution fairness requires that the payment πi(t) and the Shapley value ψt(si)
+of each participant si should be positively correlated, that is, P
+i πi(t)ψt(si)
+should be maximized. Regret fairness requires that the participants should
+have similar regrets, that is, the diﬀerence of the regrets among participants
+should be minimized. The payments of participants are determined by solving
+an optimization problem with respect to a budget constraint. Theoretically,
+they show that the time-averaged regret of participants is upper-bounded by
+a constant value as t →∞.
+Shapley value is vulnerable to data-replication attacks. A data provider
+may replicate his/her data with zero cost and acts as an additional provider
+to get extra unconscionable rewards. Agarwal et al. [1] address the issue by pe-
+nalizing similar data sets to disincentivize replication, that is, the replication-
+robust Shapley value is deﬁned as
+ψr(si) = ψ(si)e
+−λ P
+sj ∈D\{si} SM(si,sj),
+where SM is a similarity metric and λ is a constant. However, the proposed
+replication-robust Shapley value no longer satisﬁes the balance axiom in Shap-
+ley fairness.
+Han et al. [38] study the replication attack in data markets with submodu-
+lar utility functions. They show that the total reward received by an attacker
+increases monotonically with respect to the number of the attacker’s replica-
+tions. They discover that the extra reward to the attacker mainly comes from
+the marginal contributions to small seller groups by the attacker’s replication.
+To ﬁx the issue, the authors propose to down-weigh those contributions when
+computing Shapley values. Their method guarantees that attackers receive
+smaller rewards with more replications.
+Ohrimenko et al. [79] design a replication robust collaborative data mar-
+ket, where each participant is asked to pay a participation fee. This method
+discourages replication, as the extra reward received by an attacker cannot
+cover the attacker’s participation cost.
+
+28
+Zicun Cong et al.
+5.2 Other Revenue Allocation Methods
+There are some other revenue allocation methods in collaborative machine
+learning other than Shapley value.
+Leave-one-out [18] is a commonly used method to evaluate data impor-
+tance. It compares the performance of a model trained on the full data set with
+the performance trained on the full set minus one point. The performance drop
+is deﬁned as the value of the data point, that is, π(si) = U(D) −U(D \ {si}).
+Leave-one-out is often approximated by inﬂuence function [18, 52], which mea-
+sures how the model changes as the weight of a training point is changed with-
+out retraining the model. Richardson et al. [85] apply an inﬂuence function
+to reward participants in federated learning for their contributed data points.
+It is shown that the pricing model is incentive compatible. Applying inﬂuence
+functions to price data points are also investigated in [84, 46]. Comparing with
+Shapley value, leave-one-out methods, in general, are more eﬃcient as they do
+not require model retraining. However, leave-one-out methods may not accu-
+rately assess the values of data points. The methods may assign a low value to
+one of the two exactly equivalent data points, regardless of how important the
+datum is, as high performance may still be achieved by including the other
+datum [106].
+Yan and Procaccia [104] design a data pricing model based on core [35],
+which is a celebrated revenue allocation solution in cooperative game theory.
+The solution seeks to achieve maximum stability of how participants team up
+with each other. Core requires that the total reward of each coalition S should
+be at least equal to the utility U(S), that is, ∀S ⊆D, P
+si∈S π(si) ≥U(S),
+where π(si) is the reward of participant si and D is the set of all participants.
+When such a reward cannot be achieved, least core relaxes the constraints by
+allowing a minimum diﬀerence ϵ between the utility of S and the total reward
+of S. In particular, least core computes the payment to each participant by
+solving the following linear program.
+min ϵ
+s.t.
+X
+si∈D
+π(si) = U(D),
+X
+si∈S
+π(si) + ϵ ≥U(S) ∀S ⊆D.
+(9)
+The number of constraints in Equation 9 grows exponentially with respect
+to the number of participants. Yan and Procaccia [104] tackle the eﬃciency
+issue by proposing a Monte Carlo approximation algorithm with guaranteed
+approximation errors. Their approximation method samples a relatively small
+number of coalitions and solves Equation 9 on the sampled coalitions. If Equa-
+tion 9 has multiple solutions, the solution with the smallest l2-norm is chosen.
+Their revenue allocation satisﬁes the balance, symmetry, and zero element
+axioms of Shapley fairness.
+
+Data Pricing in Machine Learning Pipelines
+29
+Yoon et al. [106] propose a reinforcement learning algorithm to value data
+points. They learn a data value estimator that estimates data values and se-
+lects the most valuable samples to train a target classiﬁer. They jointly learn
+the data value estimator and the corresponding classiﬁer, which enables the
+classiﬁer and the data value estimator to improve the performance of each
+other. However, this method cannot guarantee fair revenue distribution among
+participants.
+Most of the existing revenue allocation methods are developed in the set-
+tings that supervised machine learning models are jointly trained. The partici-
+pants are rewarded based on the contributions of their data sets to the utility of
+the jointly trained machine learning model. To adapt existing pricing models to
+scenarios where unsupervised machine learning models are jointly trained, the
+major challenge is to develop a utility function that participants can all agree
+on. For some traditional unsupervised machine learning models, there are some
+widely accepted performance metrics that can serve as the utility functions.
+For example, Silhouette Coeﬃcient [86] and Calinski-Harabasz index [12] are
+widely used to evaluate the performance of clustering algorithms when ground-
+truth clusters are unknown. However, developing a utility function for some
+unsupervised models, such as pre-trained deep language models [26, 9], may be
+challenging, as they are evaluated diﬀerently in many down-stream machine
+learning tasks.
+In this section, we review pricing models in collaborative training of ma-
+chine learning models. The major idea is to price each participant’s data set
+based on its contribution to the performance of the jointly trained machine
+learning model. Shapley value-based methods guarantee fair revenue distri-
+bution among participants, but suﬀer from poor computational eﬃciency and
+scalability. Some alternative methods [106, 104] enjoy better eﬃciency or coali-
+tion stability, but lose fairness guarantee.
+6 Pricing Machine Learning Models
+Machine learning models are needed in many diﬀerent applications and scenar-
+ios. Rather than building machine learning models from scratch, many users
+and companies turn to purchase well-trained machine learning models, due to
+their lack of expertise and computation resources [109, 16]. In this section, we
+review pricing models for machine learning models and discuss the diﬀerences
+between pricing machine learning models and raw data sets.
+6.1 Pricing Models
+Pricing machine learning models is an emerging research area. To the best of
+our knowledge, the existing studies mainly focus on arbitrage-free and revenue
+maximization pricing.
+
+30
+Zicun Cong et al.
+Chen et al. [16] propose an arbitrage-free and revenue maximization ma-
+chine learning model marketplace. In their setting, a model owner sells multiple
+versions of a machine learning model to diﬀerent buyers. The seller ﬁrst trains
+an optimal model on the whole raw data set. Then, the seller produces dif-
+ferent versions of the optimal model by adding Gaussian noises with diﬀerent
+variances to the parameters of the optimal model. The expected error rates
+of the generated model instances are monotonically increasing with respect
+to the variance of the injected noise. An arbitrage-free pricing function guar-
+antees that a buyer cannot derive a high performance model by paying less.
+Under their mechanism, a pricing function is arbitrage-free if and only if the
+function is monotone and subadditive with respect to the inverse of the noise
+variance. Unfortunately, their pricing model only works for machine learning
+models trained with strictly convex objective functions.
+Chen et al. [16] further study revenue maximization in pricing machine
+learning models with respect to the demands and valuations of a set of buyers.
+They show that determining the optimal prices is coNP-hard. To overcome
+the computational hardness, they relax the subadditive constraints π(x+y) ≤
+π(x) + π(y) by bπ(x)
+x
+≤bπ(y)
+y , where x ≤y and bπ is an approximation of the
+optimal pricing function π. They show that bπ is arbitrage-free and ∀x > 0,
+π(x)/2 ≤bπ(x) ≤π(x). They propose a dynamic programming algorithm to
+compute bπ in O(n2) time, where n is the number of model versions.
+Liu et al. [61] present an end-to-end model marketplace, which jointly
+considers data owners’ privacy costs and model buyers’ demands. A broker
+collects data from data owners, and produces multiple versions of a machine
+learning model for sale with diﬀerent subsets of training data and diﬀerent
+diﬀerential privacy levels ϵ. The revenues are fully distributed to data owners.
+Objective perturbation [14] is used to train models with required diﬀerential
+privacy levels, which injects quantiﬁed random noise into the objective function
+of a model. Each data owner si requests a minimum compensation for using
+the owner’s data to train a model with ϵ-diﬀerential privacy, that is
+π(si, ϵ) = bi · ci(ϵ),
+where bi is proportional to the Shapley value of si with regard to all sellers’
+data sets and ci(ϵ) is the privacy cost of si. A desirable pricing model should
+guarantee revenue maximization, arbitrage-freeness with respect to diﬀerential
+privacy levels, and covers the compensations to data owners. Computing the
+optimal pricing function is coNP-hard, and thus they propose a dynamic pro-
+gramming algorithm to solve the problem approximately. A limitation of the
+pricing model is that it cannot adjust prices with respect to dynamic customer
+demands, which may limit the broker’s revenue.
+Agarwal et al. [1] consider an online auction for machine learning model
+market, which is truthful and revenue maximizing. They assume buyers come
+one at a time, and each wants to purchase a machine learning model for the
+buyer’s prediction task. Denote by G(bYi, Yi) the quality of a model’s prediction
+bYi on buyer i’s validation data set Yi. The reward that buyer i receives from
+
+Data Pricing in Machine Learning Pipelines
+31
+the model is µi · G(bYi, Yi), where µi is buyer i’s private valuation on unit per-
+formance. Denote by pi and bi, respectively, the asking price of the broker and
+the bid of buyer i for unit performance. The broker produces a noisy machine
+learning model for buyer i based on the price diﬀerence pi −bi. Speciﬁcally,
+the model is trained on a data set with quantiﬁed injected random noise, such
+that the model’s performance is degraded proportionally to pi −bi. Buyer i
+is charged by a function RF(pi, bi, Yi), which is designed following Myerson’s
+payment function rule [71]. The utility that buyer i receives by bidding bi is
+U(bi) = µi · G(bYi, Yi) −RF(pi, bi, Yi),
+where bYi is the prediction of the returned noisy model. It is shown that truth-
+fully bidding the buyer’s valuation µi can maximize buyer i’s utility. The au-
+thors apply a Multiplicative Weights method [3] to compute the price pi from
+historical revenues. They show that the pricing mechanism achieves maximum
+revenue.
+6.2 Pricing Raw Data Products Versus Machine Learning Models
+At a high level, pricing machine learning models and raw data sets share
+a series of common desiderata and techniques. But their pricing models are
+essentially diﬀerent from each other on at least four aspects.
+First, the pricing units of machine learning models are often well deﬁned
+and ﬁxed. A machine learning model is usually priced and sold as a whole.
+Customers can purchase either a machine learning model or the usage of a
+machine learning model via API calls, where each call has a ﬁxed price. In
+contrast, a raw data set can be consumed in multiple granularities. For ex-
+ample, a customer may be interested in the sales information of American
+customers in the last year. Another customer, however, may want to purchase
+the sales information during the Christmas season. Such ﬂexibility makes it
+easier to version raw data products, and enables more ﬂexible pricing mecha-
+nisms. For example, according to how much information is revealed, diﬀerent
+prices can be assigned to diﬀerent queries on the same database [25].
+Second, versioning in model markets is harder than that in data markets.
+As data sets have strong and ﬂexible aggregateability, diﬀerent versions of a
+data set can be easily produced by aggregating along diﬀerent dimensions.
+Producing diﬀerent versions of a machine learning model requires more so-
+phisticated techniques [16], since it is challenging to accurately control the
+diﬀerences between multiple versions.
+Third, the value of raw data sets to customers is generally harder to mea-
+sure than that of machine learning models. Often, raw data sets are used to
+train machine learning models. The ultimate value of a data set dependents
+not only on its intrinsic properties but also on the speciﬁc task that the data
+set is used for and the analyzing methods [30]. Therefore, it is usually hard
+for customers to understand the value of a data set. Many machine learning
+
+32
+Zicun Cong et al.
+models are designed for speciﬁc tasks and are directly used by people to sup-
+port decision making [1]. It is easier for people to verify and understand the
+value of such machine learning models. For example, customers can value a
+classiﬁcation model based on its prediction accuracy.
+Last, preventing arbitrage is usually harder in model market than in raw
+data market. As shown by Tram`er et al. [100], Yu et al. [109], machine learning
+models may be stolen by adversaries via a reasonable number of API calls. A
+customer with a large number of query instances may ﬁrst purchase some
+predictions from a target machine learning model. Then, the customer can
+train a local model with near-equivalent outputs as the target model and use
+the local model to predict the remaining query instances with almost no cost.
+In this section, we review pricing machine learning models. We ﬁrst revisit
+arbitrage-free and revenue maximization pricing models. Then, we discuss sev-
+eral major diﬀerences between machine learning model products and raw data
+set products, including pricing units, versioning, arbitrage prevention, and
+customer valuation.
+7 Conclusions and Future Directions
+In this paper, we survey data pricing in end-to-end machine learning pipelines.
+We consider three important steps in machine learning pipelines where pric-
+ing may be substantially involved, namely raw data collection and labeling,
+collaborative training machine learning models, and machine learning model
+marketplaces. We systematically review representative studies in those steps,
+discuss the pricing principles and review the existing methods. End-to-end
+machine learning pipelines are playing a more and more important role in the
+current big data and AI economics era. To the best of our knowledge, this is
+the ﬁrst survey on data pricing in machine learning pipelines.
+Data pricing is still in its early stage. There are many research challenges
+for future works. We list some of them here.
+First, the existing studies focus on designing proper rewarding models in
+each separate stage of machine learning pipelines. There is a lack of system-
+atic study of an end-to-end revenue allocation solution. As presented in our
+survey, the manufacturing process of machine learning models involves mul-
+tiple parties, including data owners, data processors, machine learning model
+designers, and other possible participants. Each party provides value-added
+contributions at one stage of the pipeline and receives a reward. A natural
+question is how to allocate manufacturing budgets among diﬀerent parties.
+To answer the question, we need a mechanism to measure and compare the
+contributions of diﬀerent parties in diﬀerent stages. We also need a system
+that can dynamically adjust the budget allocations in response to the changes
+in supply and demand.
+Second, almost all pricing models of collaborative model training formulate
+revenue allocation as a cooperative game, and use Shapley value to carry out
+
+Data Pricing in Machine Learning Pipelines
+33
+the allocation. They justify the usage of Shapley value through the four ax-
+ioms, namely balance, symmetry, zero element, and additivity. However, Yan
+and Procaccia [104] argue that the necessity of additivity for data valuation is
+debatable. Except for the additivity axiom, many other celebrated allocation
+solutions in cooperative game theory can also satisfy the other three axioms.
+Comparing with Shapley value, the other solutions have their advantages and
+limitations. For example, normalized Banzhaf value [13] computes the pay-
+ment to each player as the player’s average marginal contribution towards all
+coalitions of other players. Even though normalized Banzhaf value does not
+satisfy the additivity axiom, it is more robust to data replication attacks than
+Shapley value [38]. In a marketplace where robustness is more important than
+additivity, normalized Banzhaf value is more preferable than Shapley value.
+Diﬀerent types of data marketplaces may have diﬀerent goals [30], and thus
+require diﬀerent axioms. Therefore, we need a better understanding about
+the necessary axioms in diﬀerent marketplaces and explore revenue allocation
+solutions in speciﬁc marketplaces.
+Third, ﬁne-grained data procurement for machine learning tasks is not fully
+explored. In practice, data sets from two sellers may have similar or overlap-
+ping parts. A data buyer with a limited budget may not want to purchase
+many similar data points, as the diversity of training data sets is critical to
+the performance of machine learning models [30]. Query-based pricing mod-
+els [53] allow data buyers to only purchase their interested parts of a data
+set. However, the existing query-based pricing models are only designed for
+relational data sets in monopoly markets. Supporting query-based pricing in
+marketplaces of general data sets with competing sellers brings new challenges
+and opportunities. For example, it is interesting for data buyers to explore
+how to distribute their budgets among data sellers to maximize the utility of
+purchased data sets. For data sellers, it is important to assign prices to diﬀer-
+ent parts of their data sets based on supply and demand, such that the data
+sellers and their data sets can remain competitive in the market.
+Last, rigorous evaluation methods for data pricing models need to be de-
+veloped. Many existing pricing models are only evaluated in oversimpliﬁed ex-
+perimental environments, where many assumptions are made on the behaviors
+of market participants. A theoretically sound model, however, may not work in
+practice, as some model assumptions may break. For example, in a real-world
+market, participants can have adversarial, ignorant, or coalition-building be-
+haviors. However, the eﬀects of those behaviors on the performance of pric-
+ing models are largely dismissed in detailed analysis. Therefore, as suggested
+by Fernandez et al. [30], a simulation platform that can simulate diﬀerent be-
+haviors of market participants should be developed. The platform can help us
+study the advantages and limitations of pricing models in target environments,
+and choose the best one to deploy.
+
+34
+Zicun Cong et al.
+References
+1. Agarwal A, Dahleh MA, Sarkar T (2019) A marketplace for data: An al-
+gorithmic solution. In: Karlin A, Immorlica N, Johari R (eds) Proceedings
+of the 2019 ACM Conference on Economics and Computation, EC 2019,
+Phoenix, AZ, USA, June 24-28, 2019, ACM, pp 701–726, DOI 10.1145/
+3328526.3329589, URL https://doi.org/10.1145/3328526.3329589
+2. de Alfaro L, Faella M, Polychronopoulos V, Shavlovsky M (2016) In-
+centives for truthful evaluations. CoRR abs/1608.07886, URL http:
+//arxiv.org/abs/1608.07886, 1608.07886
+3. Arora S, Hazan E, Kale S (2012) The multiplicative weights update
+method: a meta-algorithm and applications. Theory Comput 8(1):121–
+164, DOI 10.4086/toc.2012.v008a006, URL https://doi.org/10.4086/
+toc.2012.v008a006
+4. Ausubel LM, Milgrom P, et al. (2006) The lovely but lonely vickrey
+auction. Combinatorial auctions 17:22–26
+5. Balasubramanian S, Bhattacharya S, Krishnan VV (2015) Pricing infor-
+mation goods: A strategic analysis of the selling and pay-per-use mecha-
+nisms. Marketing Science 34(2):218–234
+6. BDEX (2021) Bdex. https://www.bdex.com, accessed: 2021-05-09
+7. Brendan M, Daniel R (2017) Federated learning: Collaborative ma-
+chine learning without centralized training data. Google AI Blog
+URL
+https://ai.googleblog.com/2017/04/federated-learning-
+collaborative.html, accessed: 2021-07-02
+8. Brennan R, Canning L, Mcdowell R (2013) Business-to-business market-
+ing. Sage Publications, DOI 10.4135/9781446276518
+9. Brown TB, Mann B, Ryder N, Subbiah M, Kaplan J, Dhariwal P,
+Neelakantan A, Shyam P, Sastry G, Askell A, Agarwal S, Herbert-
+Voss A, Krueger G, Henighan T, Child R, Ramesh A, Ziegler DM,
+Wu J, Winter C, Hesse C, Chen M, Sigler E, Litwin M, Gray S,
+Chess B, Clark J, Berner C, McCandlish S, Radford A, Sutskever I,
+Amodei D (2020) Language models are few-shot learners. In: Larochelle
+H, Ranzato M, Hadsell R, Balcan M, Lin H (eds) Advances in Neu-
+ral Information Processing Systems 33: Annual Conference on Neu-
+ral Information Processing Systems 2020, NeurIPS 2020, December 6-
+12, 2020, virtual, URL https://proceedings.neurips.cc/paper/2020/
+hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html
+10. Buneman P, Tan WC (2007) Provenance in databases. In: Chan CY,
+Ooi BC, Zhou A (eds) Proceedings of the ACM SIGMOD Interna-
+tional Conference on Management of Data, Beijing, China, June 12-
+14, 2007, ACM, pp 1171–1173, DOI 10.1145/1247480.1247646, URL
+https://doi.org/10.1145/1247480.1247646
+11. Burkett JP (2006) Microeconomics: Optimization, Experiments, and Be-
+havior. OUP Catalogue, Oxford University Press, New York
+12. Cali´nski T, Harabasz J (1974) A dendrite method for cluster analysis.
+Communications in Statistics-theory and Methods 3(1):1–27
+
+Data Pricing in Machine Learning Pipelines
+35
+13. Chalkiadakis G, Elkind E, Wooldridge MJ (2011) Computational As-
+pects of Cooperative Game Theory. Synthesis Lectures on Artiﬁcial
+Intelligence and Machine Learning, Morgan & Claypool Publishers,
+DOI 10.2200/S00355ED1V01Y201107AIM016, URL https://doi.org/
+10.2200/S00355ED1V01Y201107AIM016
+14. Chaudhuri K, Monteleoni C, Sarwate AD (2011) Diﬀerentially private
+empirical risk minimization. J Mach Learn Res 12:1069–1109, URL http:
+//dl.acm.org/citation.cfm?id=2021036
+15. Chawla
+S,
+Deep
+S,
+Koutris
+P,
+Teng
+Y
+(2019)
+Revenue
+maxi-
+mization for query pricing. Proc VLDB Endow 13(1):1–14, DOI
+10.14778/3357377.3357378, URL http://www.vldb.org/pvldb/vol13/
+p1-chawla.pdf
+16. Chen L, Koutris P, Kumar A (2019) Towards model-based pricing for
+machine learning in a data marketplace. In: Boncz PA, Manegold S, Ail-
+amaki A, Deshpande A, Kraska T (eds) Proceedings of the 2019 Interna-
+tional Conference on Management of Data, SIGMOD Conference 2019,
+Amsterdam, The Netherlands, June 30 - July 5, 2019, ACM, pp 1535–
+1552, DOI 10.1145/3299869.3300078, URL https://doi.org/10.1145/
+3299869.3300078
+17. Chen L, Zaharia M, Zou JY (2020) Frugalml: How to use ml predic-
+tion apis more accurately and cheaply. Advances in Neural Information
+Processing Systems 33
+18. Cook
+RD,
+Weisberg
+S
+(1980)
+Characterizations
+of
+an
+empirical
+inﬂuence function for detecting inﬂuential cases in regression. Tech-
+nometrics
+22(4):495–508,
+DOI
+10.1080/00401706.1980.10486199,
+URL
+https://www.tandfonline.com/doi/abs/10.1080/
+00401706.1980.10486199,
+https://www.tandfonline.com/doi/pdf/
+10.1080/00401706.1980.10486199
+19. Dandekar P, Fawaz N, Ioannidis S (2012) Privacy auctions for recom-
+mender systems. In: Goldberg PW (ed) Internet and Network Economics
+- 8th International Workshop, WINE 2012, Liverpool, UK, December
+10-12, 2012. Proceedings, Springer, Lecture Notes in Computer Sci-
+ence, vol 7695, pp 309–322, DOI 10.1007/978-3-642-35311-6\ 23, URL
+https://doi.org/10.1007/978-3-642-35311-6 23
+20. Dasgupta A, Ghosh A (2013) Crowdsourced judgement elicitation with
+endogenous proﬁciency. In: Schwabe D, Almeida VAF, Glaser H, Baeza-
+Yates R, Moon SB (eds) 22nd International World Wide Web Confer-
+ence, WWW ’13, Rio de Janeiro, Brazil, May 13-17, 2013, International
+World Wide Web Conferences Steering Committee / ACM, pp 319–
+330, DOI 10.1145/2488388.2488417, URL https://doi.org/10.1145/
+2488388.2488417
+21. Datar M, Immorlica N, Indyk P, Mirrokni VS (2004) Locality-sensitive
+hashing scheme based on p-stable distributions. In: Snoeyink J, Bois-
+sonnat J (eds) Proceedings of the 20th ACM Symposium on Computa-
+tional Geometry, Brooklyn, New York, USA, June 8-11, 2004, ACM, pp
+253–262, DOI 10.1145/997817.997857, URL https://doi.org/10.1145/
+
+36
+Zicun Cong et al.
+997817.997857
+22. Dawex (2021) Dawex. https://www.dawex.com/en/, accessed: 2021-05-09
+23. De Toni D, Milan GS, Saciloto EB, Larentis F (2017) Pricing strate-
+gies and levels and their impact on corporate proﬁtability. Revista de
+Administra¸c˜ao (S˜ao Paulo) 52(2):120–133
+24. Deep S, Koutris P (2017) The design of arbitrage-free data pricing
+schemes. In: Benedikt M, Orsi G (eds) 20th International Conference
+on Database Theory, ICDT 2017, March 21-24, 2017, Venice, Italy,
+Schloss Dagstuhl - Leibniz-Zentrum f¨ur Informatik, LIPIcs, vol 68, pp
+12:1–12:18, DOI 10.4230/LIPIcs.ICDT.2017.12, URL https://doi.org/
+10.4230/LIPIcs.ICDT.2017.12
+25. Deep S, Koutris P (2017) QIRANA: A framework for scalable query
+pricing. In: Salihoglu S, Zhou W, Chirkova R, Yang J, Suciu D (eds)
+Proceedings of the 2017 ACM International Conference on Manage-
+ment of Data, SIGMOD Conference 2017, Chicago, IL, USA, May 14-19,
+2017, ACM, pp 699–713, DOI 10.1145/3035918.3064017, URL https:
+//doi.org/10.1145/3035918.3064017
+26. Devlin J, Chang M, Lee K, Toutanova K (2019) BERT: pre-training of
+deep bidirectional transformers for language understanding. In: Burstein
+J, Doran C, Solorio T (eds) Proceedings of the 2019 Conference of
+the North American Chapter of the Association for Computational
+Linguistics: Human Language Technologies, NAACL-HLT 2019, Min-
+neapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Pa-
+pers), Association for Computational Linguistics, pp 4171–4186, DOI
+10.18653/v1/n19-1423, URL https://doi.org/10.18653/v1/n19-1423
+27. Dibb S, Simkin L, Pride WM, Ferrell O (2005) Marketing: Concepts and
+Strategies. 5th Edition. Houghton Miﬄin, Abingdon, UK
+28. Dwork C (2008) Diﬀerential privacy: A survey of results. In: Agrawal
+M, Du D, Duan Z, Li A (eds) Theory and Applications of Models of
+Computation, 5th International Conference, TAMC 2008, Xi’an, China,
+April 25-29, 2008. Proceedings, Springer, Lecture Notes in Computer
+Science, vol 4978, pp 1–19, DOI 10.1007/978-3-540-79228-4\ 1, URL
+https://doi.org/10.1007/978-3-540-79228-4 1
+29. Ensthaler L, Giebe T (2014) Bayesian optimal knapsack procurement.
+Eur J Oper Res 234(3):774–779, DOI 10.1016/j.ejor.2013.09.031, URL
+https://doi.org/10.1016/j.ejor.2013.09.031
+30. Fernandez RC, Subramaniam P, Franklin MJ (2020) Data market plat-
+forms: Trading data assets to solve data problems. Proc VLDB Endow
+13(12):1933–1947, DOI 10.14778/3407790.3407800
+31. Fricker SA, Maksimov YV (2017) Pricing of data products in data mar-
+ketplaces. In: Ojala A, Holmstr¨om Olsson H, Werder K (eds) Software
+Business, Springer International Publishing, Cham, pp 49–66
+32. Fung C, Beschastnikh I (2019) Brokered agreements in multi-party ma-
+chine learning. In: Proceedings of the 10th ACM SIGOPS Asia-Paciﬁc
+Workshop on Systems, pp 69–75
+
+Data Pricing in Machine Learning Pipelines
+37
+33. Ghorbani A, Zou JY (2019) Data shapley: Equitable valuation of data
+for machine learning. In: Chaudhuri K, Salakhutdinov R (eds) Pro-
+ceedings of the 36th International Conference on Machine Learning,
+ICML 2019, 9-15 June 2019, Long Beach, California, USA, PMLR, Pro-
+ceedings of Machine Learning Research, vol 97, pp 2242–2251, URL
+http://proceedings.mlr.press/v97/ghorbani19c.html
+34. Ghosh A, Roth A (2011) Selling privacy at auction. In: Shoham Y, Chen
+Y, Roughgarden T (eds) Proceedings 12th ACM Conference on Electronic
+Commerce (EC-2011), San Jose, CA, USA, June 5-9, 2011, ACM, pp 199–
+208, DOI 10.1145/1993574.1993605, URL https://doi.org/10.1145/
+1993574.1993605
+35. Gillies DB (1959) Solutions to general non-zero-sum games. Contribu-
+tions to the Theory of Games 4:47–85
+36. Goel N, Faltings B (2019) Deep bayesian trust: A dominant and fair in-
+centive mechanism for crowd. In: The Thirty-Third AAAI Conference
+on Artiﬁcial Intelligence, AAAI 2019, The Thirty-First Innovative Ap-
+plications of Artiﬁcial Intelligence Conference, IAAI 2019, The Ninth
+AAAI Symposium on Educational Advances in Artiﬁcial Intelligence,
+EAAI 2019, Honolulu, Hawaii, USA, January 27 - February 1, 2019,
+AAAI Press, pp 1996–2003, DOI 10.1609/aaai.v33i01.33011996, URL
+https://doi.org/10.1609/aaai.v33i01.33011996
+37. Gur Y, Zeevi AJ, Besbes O (2014) Stochastic multi-armed-bandit prob-
+lem with non-stationary rewards. In: Ghahramani Z, Welling M, Cortes
+C, Lawrence ND, Weinberger KQ (eds) Advances in Neural Informa-
+tion Processing Systems 27: Annual Conference on Neural Informa-
+tion Processing Systems 2014, December 8-13 2014, Montreal, Quebec,
+Canada, pp 199–207, URL https://proceedings.neurips.cc/paper/
+2014/hash/903ce9225fca3e988c2af215d4e544d3-Abstract.html
+38. Han D, Tople S, Rogers A, Wooldridge MJ, Ohrimenko O, Tschi-
+atschek S (2020) Replication-robust payoﬀ-allocation with applications
+in machine learning marketplaces. CoRR abs/2006.14583, URL https:
+//arxiv.org/abs/2006.14583, 2006.14583
+39. Heckman JR, Boehmer EL, Peters EH, Davaloo M, Kurup NG (2015) A
+pricing model for data markets. iConference 2015 Proceedings
+40. Hoeﬀding W (1994) Probability inequalities for sums of bounded random
+variables. In: The Collected Works of Wassily Hoeﬀding, Springer, pp
+409–426
+41. Hu R, Gong Y (2020) Trading data for learning: Incentive mecha-
+nism for on-device federated learning. In: IEEE Global Communications
+Conference, GLOBECOM 2020, Virtual Event, Taiwan, December 7-
+11, 2020, IEEE, pp 1–6, DOI 10.1109/GLOBECOM42002.2020.9322475,
+URL https://doi.org/10.1109/GLOBECOM42002.2020.9322475
+42. Hu Z, Liang Y, Zhang J, Li Z, Liu Y (2018) Inference aided rein-
+forcement learning for incentive mechanism design in crowdsourcing.
+In: Bengio S, Wallach HM, Larochelle H, Grauman K, Cesa-Bianchi
+N, Garnett R (eds) Advances in Neural Information Processing Sys-
+
+38
+Zicun Cong et al.
+tems 31: Annual Conference on Neural Information Processing Sys-
+tems 2018, NeurIPS 2018, December 3-8, 2018, Montr´eal, Canada, pp
+5512–5522, URL https://proceedings.neurips.cc/paper/2018/hash/
+f2e43fa3400d826df4195a9ac70dca62-Abstract.html
+43. Hynes N, Dao D, Yan D, Cheng R, Song D (2018) A demonstra-
+tion of sterling: A privacy-preserving data marketplace. Proc VLDB
+Endow 11(12):2086–2089, DOI 10.14778/3229863.3236266, URL http:
+//www.vldb.org/pvldb/vol11/p2086-hynes.pdf
+44. Irvin G (1978) Modern Cost-Beneﬁt Methods. Macmillan Publishers
+Limited, London, DOI 10.1007/978-1-349-15912-3
+45. Jia R, Dao D, Wang B, Hubis FA, G¨urel NM, Li B, Zhang C, Spanos
+CJ, Song D (2019) Eﬃcient task-speciﬁc data valuation for near-
+est neighbor algorithms. Proc VLDB Endow 12(11):1610–1623, DOI
+10.14778/3342263.3342637, URL http://www.vldb.org/pvldb/vol12/
+p1610-jia.pdf
+46. Jia R, Dao D, Wang B, Hubis FA, Hynes N, G¨urel NM, Li B, Zhang
+C, Song D, Spanos CJ (2019) Towards eﬃcient data valuation based
+on the shapley value. In: Chaudhuri K, Sugiyama M (eds) The 22nd
+International Conference on Artiﬁcial Intelligence and Statistics, AIS-
+TATS 2019, 16-18 April 2019, Naha, Okinawa, Japan, PMLR, Pro-
+ceedings of Machine Learning Research, vol 89, pp 1167–1176, URL
+http://proceedings.mlr.press/v89/jia19a.html
+47. Jiang C, Gao L, Duan L, Huang J (2015) Economics of peer-to-peer
+mobile crowdsensing. In: 2015 IEEE Global Communications Conference
+(GLOBECOM), IEEE, pp 1–6
+48. Jin H, Su L, Chen D, Nahrstedt K, Xu J (2015) Quality of infor-
+mation aware incentive mechanisms for mobile crowd sensing systems.
+In: Shen SX, Sun Y, Chen J, Zhang J, Zussman G (eds) Proceed-
+ings of the 16th ACM International Symposium on Mobile Ad Hoc
+Networking and Computing, MobiHoc 2015, Hangzhou, China, June
+22-25, 2015, ACM, pp 167–176, DOI 10.1145/2746285.2746310, URL
+https://doi.org/10.1145/2746285.2746310
+49. Jin W, Xiao M, Li M, Guo L (2019) If you do not care about
+it, sell it: Trading location privacy in mobile crowd sensing. In:
+2019 IEEE Conference on Computer Communications, INFOCOM
+2019, Paris, France, April 29 - May 2, 2019, IEEE, pp 1045–
+1053, DOI 10.1109/INFOCOM.2019.8737457, URL https://doi.org/
+10.1109/INFOCOM.2019.8737457
+50. Jorgensen Z, Yu T, Cormode G (2015) Conservative or liberal? person-
+alized diﬀerential privacy. In: Gehrke J, Lehner W, Shim K, Cha SK,
+Lohman GM (eds) 31st IEEE International Conference on Data Engi-
+neering, ICDE 2015, Seoul, South Korea, April 13-17, 2015, IEEE Com-
+puter Society, pp 1023–1034, DOI 10.1109/ICDE.2015.7113353, URL
+https://doi.org/10.1109/ICDE.2015.7113353
+51. Kang J, Xiong Z, Niyato D, Xie S, Zhang J (2019) Incentive mech-
+anism for reliable federated learning: A joint optimization approach
+
+Data Pricing in Machine Learning Pipelines
+39
+to combining reputation and contract theory. IEEE Internet Things
+J 6(6):10700–10714, DOI 10.1109/JIOT.2019.2940820, URL https://
+doi.org/10.1109/JIOT.2019.2940820
+52. Koh PW, Liang P (2017) Understanding black-box predictions via inﬂu-
+ence functions. In: Precup D, Teh YW (eds) Proceedings of the 34th In-
+ternational Conference on Machine Learning, ICML 2017, Sydney, NSW,
+Australia, 6-11 August 2017, PMLR, Proceedings of Machine Learning
+Research, vol 70, pp 1885–1894, URL http://proceedings.mlr.press/
+v70/koh17a.html
+53. Koutris P, Upadhyaya P, Balazinska M, Howe B, Suciu D (2012) Query-
+based data pricing. In: Benedikt M, Kr¨otzsch M, Lenzerini M (eds)
+Proceedings of the 31st ACM SIGMOD-SIGACT-SIGART Symposium
+on Principles of Database Systems, PODS 2012, Scottsdale, AZ, USA,
+May 20-24, 2012, ACM, pp 167–178, DOI 10.1145/2213556.2213582, URL
+https://doi.org/10.1145/2213556.2213582
+54. Koutris P, Upadhyaya P, Balazinska M, Howe B, Suciu D (2013) Toward
+practical query pricing with querymarket. In: Ross KA, Srivastava D,
+Papadias D (eds) Proceedings of the ACM SIGMOD International Con-
+ference on Management of Data, SIGMOD 2013, New York, NY, USA,
+June 22-27, 2013, ACM, pp 613–624, DOI 10.1145/2463676.2465335,
+URL https://doi.org/10.1145/2463676.2465335
+55. Koutsopoulos
+I
+(2013)
+Optimal
+incentive-driven
+design
+of
+par-
+ticipatory
+sensing
+systems.
+In:
+Proceedings
+of
+the
+IEEE
+INFO-
+COM 2013, Turin, Italy, April 14-19, 2013, IEEE, pp 1402–1410,
+DOI 10.1109/INFCOM.2013.6566934, URL https://doi.org/10.1109/
+INFCOM.2013.6566934
+56. Leyton-Brown K, Shoham Y (2008) Essentials of Game Theory: A
+Concise Multidisciplinary Introduction. Synthesis Lectures on Artiﬁ-
+cial Intelligence and Machine Learning, Morgan & Claypool Publishers,
+DOI 10.2200/S00108ED1V01Y200802AIM003, URL https://doi.org/
+10.2200/S00108ED1V01Y200802AIM003
+57. Li C, Li DY, Miklau G, Suciu D (2013) A theory of pricing pri-
+vate data. In: Tan W, Guerrini G, Catania B, Gounaris A (eds) Joint
+2013 EDBT/ICDT Conferences, ICDT ’13 Proceedings, Genoa, Italy,
+March 18-22, 2013, ACM, pp 33–44, DOI 10.1145/2448496.2448502, URL
+https://doi.org/10.1145/2448496.2448502
+58. Liang F, Yu W, An D, Yang Q, Fu X, Zhao W (2018) A survey on big data
+market: Pricing, trading and protection. IEEE Access 6:15132–15154
+59. Lin B, Kifer D (2014) On arbitrage-free pricing for general data queries.
+Proc VLDB Endow 7(9):757–768, DOI 10.14778/2732939.2732948, URL
+http://www.vldb.org/pvldb/vol7/p757-lin.pdf
+60. Liu C, Chakraborty S, Mittal P (2016) Dependence makes you vulnber-
+able: Diﬀerential privacy under dependent tuples. In: 23rd Annual
+Network and Distributed System Security Symposium, NDSS 2016, San
+Diego, California, USA, February 21-24, 2016, The Internet Society, URL
+http://wp.internetsociety.org/ndss/wp-content/uploads/sites/
+
+40
+Zicun Cong et al.
+25/2017/09/dependence-makes-you-vulnerable-differential-
+privacy-under-dependent-tuples.pdf
+61. Liu J, Lou J, Liu J, Xiong L, Pei J, Sun J (2021) Dealer: An end-to-
+end model marketplace with diﬀerential privacy. Proc VLDB Endow
+14(6):957–969, DOI 10.14778/3447689.3447700, URL https://doi.org/
+10.14778/3447689.3447700
+62. Liu Y, Chen Y (2017) Machine-learning aided peer prediction. In:
+Daskalakis C, BabaioﬀM, Moulin H (eds) Proceedings of the 2017 ACM
+Conference on Economics and Computation, EC ’17, Cambridge, MA,
+USA, June 26-30, 2017, ACM, pp 63–80, DOI 10.1145/3033274.3085126,
+URL https://doi.org/10.1145/3033274.3085126
+63. Liu Y, Chen Y (2017) Sequential peer prediction: Learning to elicit eﬀort
+using posted prices. In: Singh SP, Markovitch S (eds) Proceedings of the
+Thirty-First AAAI Conference on Artiﬁcial Intelligence, February 4-9,
+2017, San Francisco, California, USA, AAAI Press, pp 607–613, URL
+http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14970
+64. Louis C (2020) Roundup of machine learning forecasts and mar-
+ket estimates, 2020. Forbes URL https://www.forbes.com/sites/
+louiscolumbus/2020/01/19/roundup-of-machine-learning-
+forecasts-and-market-estimates-2020, accessed: 2021-06-28
+65. Luong NC, Hoang DT, Wang P, Niyato D, Kim DI, Han Z (2016) Data
+collection and wireless communication in internet of things (iot) using
+economic analysis and pricing models: A survey. IEEE Communications
+Surveys & Tutorials 18(4):2546–2590
+66. Ma L, Zhang C, Wang Y, Ruan W, Wang J, Tang W, Ma X, Gao X, Gao J
+(2020) Concare: Personalized clinical feature embedding via capturing the
+healthcare context. In: The Thirty-Fourth AAAI Conference on Artiﬁ-
+cial Intelligence, AAAI 2020, The Thirty-Second Innovative Applications
+of Artiﬁcial Intelligence Conference, IAAI 2020, The Tenth AAAI Sym-
+posium on Educational Advances in Artiﬁcial Intelligence, EAAI 2020,
+New York, NY, USA, February 7-12, 2020, AAAI Press, pp 833–840,
+URL https://aaai.org/ojs/index.php/AAAI/article/view/5428
+67. Maleki S, Tran-Thanh L, Hines G, Rahwan T, Rogers A (2013) Bound-
+ing the estimation error of sampling-based shapley value approxi-
+mation with/without stratifying. CoRR abs/1306.4265, URL http://
+arxiv.org/abs/1306.4265, 1306.4265
+68. McMahan B, Moore E, Ramage D, Hampson S, y Arcas BA (2017)
+Communication-eﬃcient learning of deep networks from decentralized
+data. In: Singh A, Zhu XJ (eds) Proceedings of the 20th Interna-
+tional Conference on Artiﬁcial Intelligence and Statistics, AISTATS
+2017, 20-22 April 2017, Fort Lauderdale, FL, USA, PMLR, Proceed-
+ings of Machine Learning Research, vol 54, pp 1273–1282, URL http:
+//proceedings.mlr.press/v54/mcmahan17a.html
+69. Miao X, Gao Y, Chen L, Peng H, Yin J, Li Q (2020) Towards query
+pricing on incomplete data. IEEE Transactions on Knowledge and Data
+Engineering
+
+Data Pricing in Machine Learning Pipelines
+41
+70. Muschalle A, Stahl F, L¨oser A, Vossen G (2012) Pricing approaches for
+data markets. In: International workshop on business intelligence for the
+real-time enterprise, Springer, pp 129–144
+71. Myerson RB (1981) Optimal auction design. Mathematics of operations
+research 6(1):58–73
+72. Nagle J TT & Hogan (2010) The Strategy and Tactics of Pricing: A
+Guide to Growing More Proﬁtably. Prentice Hall
+73. Nash A, Segouﬁn L, Vianu V (2007) Determinacy and rewriting of con-
+junctive queries using views: A progress report. In: Schwentick T, Suciu
+D (eds) Database Theory - ICDT 2007, 11th International Conference,
+Barcelona, Spain, January 10-12, 2007, Proceedings, Springer, Lecture
+Notes in Computer Science, vol 4353, pp 59–73, DOI 10.1007/11965893\
+5, URL https://doi.org/10.1007/11965893 5
+74. Nash JF (1950) Equilibrium points in n-person games. Proc of the Na-
+tional Academy of Sciences 36:48–49
+75. Natarajan N, Dhillon IS, Ravikumar P, Tewari A (2013) Learn-
+ing
+with
+noisy
+labels.
+In:
+Burges
+CJC,
+Bottou
+L,
+Ghahramani
+Z,
+Weinberger
+KQ
+(eds)
+Advances
+in
+Neural
+Information
+Pro-
+cessing
+Systems
+26:
+27th
+Annual
+Conference
+on
+Neural
+Infor-
+mation Processing Systems 2013. Proceedings of a meeting held
+December
+5-8,
+2013,
+Lake
+Tahoe,
+Nevada,
+United
+States,
+pp
+1196–1204, URL https://proceedings.neurips.cc/paper/2013/hash/
+3871bd64012152bfb53fdf04b401193f-Abstract.html
+76. Neumeier M (2015) The brand ﬂip : why customers now run companies–
+and how to proﬁt from it. New Riders,, San Francisco :
+77. Nget R, Cao Y, Yoshikawa M (2017) How to balance privacy and money
+through pricing mechanism in personal data market. In: Degenhardt
+J, Kallumadi S, de Rijke M, Si L, Trotman A, Xu Y (eds) Proceed-
+ings of the SIGIR 2017 Workshop On eCommerce co-located with the
+40th International ACM SIGIR Conference on Research and Develop-
+ment in Information Retrieval, eCOM@SIGIR 2017, Tokyo, Japan, Au-
+gust 11, 2017, CEUR-WS.org, CEUR Workshop Proceedings, vol 2311,
+URL http://ceur-ws.org/Vol-2311/paper 15.pdf
+78. Niu C, Zheng Z, Wu F, Tang S, Gao X, Chen G (2018) Unlocking the
+value of privacy: Trading aggregate statistics over private correlated data.
+In: Guo Y, Farooq F (eds) Proceedings of the 24th ACM SIGKDD Inter-
+national Conference on Knowledge Discovery & Data Mining, KDD 2018,
+London, UK, August 19-23, 2018, ACM, pp 2031–2040, DOI 10.1145/
+3219819.3220013, URL https://doi.org/10.1145/3219819.3220013
+79. Ohrimenko O, Tople S, Tschiatschek S (2019) Collaborative ma-
+chine learning markets with data-replication-robust payments. CoRR
+abs/1911.09052, URL http://arxiv.org/abs/1911.09052, 1911.09052
+80. Pei J (2020) A survey on data pricing: from economics to data science.
+IEEE Transactions on Knowledge and Data Engineering PP:1–1, DOI
+10.1109/TKDE.2020.3045927
+
+42
+Zicun Cong et al.
+81. Radanovic G, Faltings B (2016) Learning to scale payments in crowd-
+sourcing with properboost. In: Ghosh A, Lease M (eds) Proceedings
+of the Fourth AAAI Conference on Human Computation and Crowd-
+sourcing, HCOMP 2016, 30 October - 3 November, 2016, Austin, Texas,
+USA, AAAI Press, pp 179–188, URL http://aaai.org/ocs/index.php/
+HCOMP/HCOMP16/paper/view/14033
+82. Radanovic G, Faltings B, Jurca R (2016) Incentives for eﬀort in crowd-
+sourcing using the peer truth serum. ACM Trans Intell Syst Technol
+7(4):48:1–48:28, DOI 10.1145/2856102, URL https://doi.org/10.1145/
+2856102
+83. Rauhut H (2010) Compressive sensing and structured random matrices.
+Theoretical foundations and numerical methods for sparse recovery 9:1–
+92
+84. Richardson A, Filos-Ratsikas A, Faltings B (2019) Rewarding high-
+quality data via inﬂuence functions. CoRR abs/1908.11598, 1908.11598
+85. Richardson A, Filos-Ratsikas A, Faltings B (2020) Budget-bounded in-
+centives for federated learning. In: Yang Q, Fan L, Yu H (eds) Federated
+Learning - Privacy and Incentive, Lecture Notes in Computer Science, vol
+12500, Springer, pp 176–188, DOI 10.1007/978-3-030-63076-8\ 13, URL
+https://doi.org/10.1007/978-3-030-63076-8 13
+86. Rousseeuw PJ (1987) Silhouettes: a graphical aid to the interpretation
+and validation of cluster analysis. Journal of computational and applied
+mathematics 20:53–65
+87. Schomm F, Stahl F, Vossen G (2013) Marketplaces for data: an initial
+survey. ACM SIGMOD Record 42(1):15–26
+88. Shah NB, Zhou D (2015) Double or nothing: Multiplicative incen-
+tive mechanisms for crowdsourcing. In: Cortes C, Lawrence ND, Lee
+DD, Sugiyama M, Garnett R (eds) Advances in Neural Informa-
+tion Processing Systems 28: Annual Conference on Neural Informa-
+tion Processing Systems 2015, December 7-12, 2015, Montreal, Quebec,
+Canada, pp 1–9, URL https://proceedings.neurips.cc/paper/2015/
+hash/c81e728d9d4c2f636f067f89cc14862c-Abstract.html
+89. Shah NB, Zhou D (2016) No oops, you won’t do it again: Mechanisms
+for self-correction in crowdsourcing. In: Balcan M, Weinberger KQ (eds)
+Proceedings of the 33nd International Conference on Machine Learning,
+ICML 2016, New York City, NY, USA, June 19-24, 2016, JMLR.org,
+JMLR Workshop and Conference Proceedings, vol 48, pp 1–10, URL
+http://proceedings.mlr.press/v48/shaha16.html
+90. Shah NB, Zhou D, Peres Y (2015) Approval voting and incentives
+in crowdsourcing. In: Bach FR, Blei DM (eds) Proceedings of the
+32nd International Conference on Machine Learning, ICML 2015, Lille,
+France, 6-11 July 2015, JMLR.org, JMLR Workshop and Conference Pro-
+ceedings, vol 37, pp 10–19, URL http://proceedings.mlr.press/v37/
+shaha15.html
+91. Shapley LS (1953) A value for n-person games. Contributions to the
+Theory of Games 2:307–317
+
+Data Pricing in Machine Learning Pipelines
+43
+92. Shnayder V, Agarwal A, Frongillo RM, Parkes DC (2016) Informed
+truthfulness in multi-task peer prediction. In: Conitzer V, Bergemann
+D, Chen Y (eds) Proceedings of the 2016 ACM Conference on Eco-
+nomics and Computation, EC ’16, Maastricht, The Netherlands, July
+24-28, 2016, ACM, pp 179–196, DOI 10.1145/2940716.2940790, URL
+https://doi.org/10.1145/2940716.2940790
+93. Shnayder V, Frongillo RM, Parkes DC (2016) Measuring performance of
+peer prediction mechanisms using replicator dynamics. In: Kambhampati
+S (ed) Proceedings of the Twenty-Fifth International Joint Conference
+on Artiﬁcial Intelligence, IJCAI 2016, New York, NY, USA, 9-15 July
+2016, IJCAI/AAAI Press, pp 2611–2617, URL http://www.ijcai.org/
+Abstract/16/371
+94. Sim RHL, Zhang Y, Chan MC, Low BKH (2020) Collaborative ma-
+chine learning with incentive-aware model rewards. In: Proceedings of
+the 37th International Conference on Machine Learning, ICML 2020, 13-
+18 July 2020, Virtual Event, PMLR, Proceedings of Machine Learning
+Research, vol 119, pp 8927–8936, URL http://proceedings.mlr.press/
+v119/sim20a.html
+95. Singer Y (2010) Budget feasible mechanisms. In: 51th Annual IEEE
+Symposium on Foundations of Computer Science, FOCS 2010, Octo-
+ber 23-26, 2010, Las Vegas, Nevada, USA, IEEE Computer Society, pp
+765–774, DOI 10.1109/FOCS.2010.78, URL https://doi.org/10.1109/
+FOCS.2010.78
+96. Snowﬂake
+(2021)
+Snowﬂake
+data
+marketplace.
+https://
+www.snowflake.com/data-marketplace/, accessed: 2021-05-09
+97. Stahl F, Vossen G (2016) Data quality scores for pricing on data mar-
+ketplaces. In: Nguyen NT, Trawinski B, Fujita H, Hong T (eds) Intelli-
+gent Information and Database Systems - 8th Asian Conference, ACI-
+IDS 2016, Da Nang, Vietnam, March 14-16, 2016, Proceedings, Part
+I, Springer, Lecture Notes in Computer Science, vol 9621, pp 215–224,
+DOI 10.1007/978-3-662-49381-6\ 21, URL https://doi.org/10.1007/
+978-3-662-49381-6 21
+98. Tang R, Wu H, Bao Z, Bressan S, Valduriez P (2013) The price is right -
+models and algorithms for pricing data. In: Decker H, Lhotsk´a L, Link S,
+Basl J, Tjoa AM (eds) Database and Expert Systems Applications - 24th
+International Conference, DEXA 2013, Prague, Czech Republic, August
+26-29, 2013. Proceedings, Part II, Springer, Lecture Notes in Computer
+Science, vol 8056, pp 380–394, DOI 10.1007/978-3-642-40173-2\ 31, URL
+https://doi.org/10.1007/978-3-642-40173-2 31
+99. Tang R, Amarilli A, Senellart P, Bressan S (2014) Get a sample for a dis-
+count - sampling-based XML data pricing. In: Decker H, Lhotsk´a L, Link
+S, Spies M, Wagner RR (eds) Database and Expert Systems Applications
+- 25th International Conference, DEXA 2014, Munich, Germany, Septem-
+ber 1-4, 2014. Proceedings, Part I, Springer, Lecture Notes in Computer
+Science, vol 8644, pp 20–34, DOI 10.1007/978-3-319-10073-9\ 3, URL
+https://doi.org/10.1007/978-3-319-10073-9 3
+
+44
+Zicun Cong et al.
+100. Tram`er F, Zhang F, Juels A, Reiter MK, Ristenpart T (2016) Steal-
+ing machine learning models via prediction apis. In: Holz T, Sav-
+age S (eds) 25th USENIX Security Symposium, USENIX Security 16,
+Austin, TX, USA, August 10-12, 2016, USENIX Association, pp 601–
+618, URL https://www.usenix.org/conference/usenixsecurity16/
+technical-sessions/presentation/tramer
+101. Upadhyaya P, Balazinska M, Suciu D (2016) Price-optimal query-
+ing with data apis. Proc VLDB Endow 9(14):1695–1706, DOI
+10.14778/3007328.3007335,
+URL
+http://www.vldb.org/pvldb/vol9/
+p1695-upadhyaya.pdf
+102. Vaughan JW (2017) Making better use of the crowd: How crowdsourc-
+ing can advance machine learning research. J Mach Learn Res 18:193:1–
+193:46, URL http://jmlr.org/papers/v18/17-234.html
+103. Wang T, Rausch J, Zhang C, Jia R, Song D (2020) A principled approach
+to data valuation for federated learning. In: Yang Q, Fan L, Yu H (eds)
+Federated Learning - Privacy and Incentive, Lecture Notes in Computer
+Science, vol 12500, Springer, pp 153–167, DOI 10.1007/978-3-030-63076-
+8\ 11, URL https://doi.org/10.1007/978-3-030-63076-8 11
+104. Yan T, Procaccia AD (2021) If you like shapley then you’ll love the core.
+In: Thirty-Fifth AAAI Conference on Artiﬁcial Intelligence, AAAI 2021,
+Thirty-Third Conference on Innovative Applications of Artiﬁcial Intelli-
+gence, IAAI 2021, The Eleventh Symposium on Educational Advances in
+Artiﬁcial Intelligence, EAAI 2021, Virtual Event, February 2-9, 2021,
+AAAI Press, pp 5751–5759, URL https://ojs.aaai.org/index.php/
+AAAI/article/view/16721
+105. Yang D, Xue G, Fang X, Tang J (2012) Crowdsourcing to smartphones:
+incentive mechanism design for mobile phone sensing. In: Akan ¨OB, Ekici
+E, Qiu L, Snoeren AC (eds) The 18th Annual International Conference
+on Mobile Computing and Networking, Mobicom’12, Istanbul, Turkey,
+August 22-26, 2012, ACM, pp 173–184, DOI 10.1145/2348543.2348567,
+URL https://doi.org/10.1145/2348543.2348567
+106. Yoon J, Arik S¨O, Pﬁster T (2020) Data valuation using reinforcement
+learning. In: Proceedings of the 37th International Conference on Ma-
+chine Learning, ICML 2020, 13-18 July 2020, Virtual Event, PMLR,
+Proceedings of Machine Learning Research, vol 119, pp 10842–10851,
+URL http://proceedings.mlr.press/v119/yoon20a.html
+107. Yu H, Zhang M (2017) Data pricing strategy based on data quality.
+Comput Ind Eng 112:1–10, DOI 10.1016/j.cie.2017.08.008, URL https:
+//doi.org/10.1016/j.cie.2017.08.008
+108. Yu H, Liu Z, Liu Y, Chen T, Cong M, Weng X, Niyato D, Yang
+Q (2020) A sustainable incentive scheme for federated learning. IEEE
+Intell Syst 35(4):58–69, DOI 10.1109/MIS.2020.2987774, URL https:
+//doi.org/10.1109/MIS.2020.2987774
+109. Yu H, Yang K, Zhang T, Tsai Y, Ho T, Jin Y (2020) Cloudleak:
+Large-scale
+deep
+learning
+models
+stealing
+through
+adversar-
+ial
+examples.
+In:
+27th
+Annual
+Network
+and
+Distributed
+Sys-
+
+Data Pricing in Machine Learning Pipelines
+45
+tem
+Security
+Symposium,
+NDSS
+2020,
+San
+Diego,
+California,
+USA,
+February
+23-26,
+2020,
+The
+Internet
+Society,
+URL
+https:
+//www.ndss-symposium.org/ndss-paper/cloudleak-large-scale-
+deep-learning-models-stealing-through-adversarial-examples/
+110. Zhang M, Beltran F (2020) A survey of data pricing methods. SSRN
+111. Zhang M, Beltr´an F, Liu J (2020) Selling data at an auction under
+privacy constraints. In: Adams RP, Gogate V (eds) Proceedings of
+the Thirty-Sixth Conference on Uncertainty in Artiﬁcial Intelligence,
+UAI 2020, virtual online, August 3-6, 2020, AUAI Press, Proceed-
+ings of Machine Learning Research, vol 124, pp 669–678, URL http:
+//proceedings.mlr.press/v124/zhang20b.html
+112. Zhang X, Yang Z, Sun W, Liu Y, Tang S, Xing K, Mao X (2016) In-
+centives for mobile crowd sensing: A survey. IEEE Commun Surv Tu-
+torials 18(1):54–67, DOI 10.1109/COMST.2015.2415528, URL https:
+//doi.org/10.1109/COMST.2015.2415528
+113. Zhou X, Zheng H (2009) Trust: A general framework for truthful double
+spectrum auctions. In: IEEE INFOCOM 2009, IEEE, pp 999–1007
+114. Zhou Y, Porwal U, Zhang C, Ngo HQ, Nguyen L, R´e C, Govin-
+daraju V (2014) Parallel feature selection inspired by group test-
+ing. In: Ghahramani Z, Welling M, Cortes C, Lawrence ND, Wein-
+berger KQ (eds) Advances in Neural Information Processing Sys-
+tems 27: Annual Conference on Neural Information Processing Sys-
+tems 2014, December 8-13 2014, Montreal, Quebec, Canada, pp
+3554–3562, URL https://proceedings.neurips.cc/paper/2014/hash/
+fb8feff253bb6c834deb61ec76baa893-Abstract.html
