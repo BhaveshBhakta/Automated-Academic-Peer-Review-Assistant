@@ -1,0 +1,5395 @@
+{
+  "file": "data/parsed_text/paper_4.txt",
+  "num_mentions": 373,
+  "mentions": [
+    {
+      "raw": "1\nLearni",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "learni",
+      "value_si": 1.0,
+      "si_unit": "learni",
+      "context": "ical predictive analytics\nwei-hung weng 1\nlearning objectives\n• understand the basics of",
+      "span": [
+        65,
+        73
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ly\navailable datasets via case studies.\n1. machine learning for healthcare\n1.1. i",
+      "span": [
+        483,
+        484
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1.1",
+      "value": 1.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.1,
+      "si_unit": null,
+      "context": "ies.\n1. machine learning for healthcare\n1.1. introduction\nin this chapter, we provi",
+      "span": [
+        518,
+        521
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "g clinical prediction problems (section\n1). understanding the motivations behind ",
+      "span": [
+        1111,
+        1112
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "ary of model selection methods (section 2). these\ntopics will help us utilize mac",
+      "span": [
+        1750,
+        1751
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1MIT",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "mit",
+      "value_si": 1.0,
+      "si_unit": "mit",
+      "context": " following that, we will introduce some\n1mit csail, cambridge, ma, usa. corresponden",
+      "span": [
+        1878,
+        1882
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "thms for prediction prob-\nlems (section 3). for example, logistic regression, dec",
+      "span": [
+        2035,
+        2036
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": " the machine learning\napproach (section 4). lastly, we will provide case studies\n",
+      "span": [
+        2215,
+        2216
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2012, as",
+      "value": 2012.0,
+      "kind": "time",
+      "unit": "as",
+      "value_si": 2.012e-15,
+      "si_unit": "second",
+      "context": "\navailable dataset, physionet challenge 2012, as well as the\nbreast tumor data from brea",
+      "span": [
+        2353,
+        2361
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": " have mentioned in\nthe chapter (section 5).\n1.2. why machine learning?\nmachine le",
+      "span": [
+        2507,
+        2508
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1.2",
+      "value": 1.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.2,
+      "si_unit": null,
+      "context": "e mentioned in\nthe chapter (section 5).\n1.2. why machine learning?\nmachine learning",
+      "span": [
+        2511,
+        2514
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2012",
+      "value": 2012.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2012.0,
+      "si_unit": null,
+      "context": " as computer vision (krizhevsky et al., 2012),\nnatural language processing (nlp) (ya",
+      "span": [
+        3252,
+        3256
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "language processing (nlp) (yala et al., 2017), and\nspeech to text translation (wu et",
+      "span": [
+        3307,
+        3311
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "\nspeech to text translation (wu et al., 2016; chung et al.,\n2018; 2019), for many co",
+      "span": [
+        3357,
+        3361
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "slation (wu et al., 2016; chung et al.,\n2018; 2019), for many complex real-world app",
+      "span": [
+        3377,
+        3381
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "n (wu et al., 2016; chung et al.,\n2018; 2019), for many complex real-world applicati",
+      "span": [
+        3383,
+        3387
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "data have been generated (henry et al., 2016).\nmachine learning for healthcare there",
+      "span": [
+        3599,
+        3603
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2014",
+      "value": 2014.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2014.0,
+      "si_unit": null,
+      "context": " outcome prediction (ghas-\nsemi et al., 2014), diagnosis (gulshan et al., 2016; este",
+      "span": [
+        3846,
+        3850
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": " al., 2014), diagnosis (gulshan et al., 2016; esteva\net al., 2017; liu et al., 2017;",
+      "span": [
+        3880,
+        3884
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "s (gulshan et al., 2016; esteva\net al., 2017; liu et al., 2017; chung & weng, 2017; ",
+      "span": [
+        3901,
+        3905
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": " 2016; esteva\net al., 2017; liu et al., 2017; chung & weng, 2017; nagpal\net al., 201",
+      "span": [
+        3919,
+        3923
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": ", 2017; liu et al., 2017; chung & weng, 2017; nagpal\net al., 2018), treatment and op",
+      "span": [
+        3939,
+        3943
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "017; chung & weng, 2017; nagpal\net al., 2018), treatment and optimal decision making",
+      "span": [
+        3960,
+        3964
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": " optimal decision making (raghu\net al., 2017; weng et al., 2017a; komorowski et al.,",
+      "span": [
+        4020,
+        4024
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017a",
+      "value": 2017.0,
+      "kind": "time",
+      "unit": "a",
+      "value_si": 63651679200.0,
+      "si_unit": "second",
+      "context": "aking (raghu\net al., 2017; weng et al., 2017a; komorowski et al., 2018)\nusing data in",
+      "span": [
+        4039,
+        4044
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": " weng et al., 2017a; komorowski et al., 2018)\nusing data in different modalities, su",
+      "span": [
+        4065,
+        4069
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "red lab\nmeasurements (pivovarov et al., 2015), claims data (doshi-\nvelez et al., 201",
+      "span": [
+        4162,
+        4166
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2014",
+      "value": 2014.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2014.0,
+      "si_unit": null,
+      "context": "015), claims data (doshi-\nvelez et al., 2014; pivovarov et al., 2015; choi et al., 2",
+      "span": [
+        4203,
+        4207
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "-\nvelez et al., 2014; pivovarov et al., 2015; choi et al., 2016),\nfree texts (pivova",
+      "span": [
+        4227,
+        4231
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "4; pivovarov et al., 2015; choi et al., 2016),\nfree texts (pivovarov et al., 2015; w",
+      "span": [
+        4246,
+        4250
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "., 2016),\nfree texts (pivovarov et al., 2015; weng & szolovits, 2018;\nweng et al., 2",
+      "span": [
+        4283,
+        4287
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "vovarov et al., 2015; weng & szolovits, 2018;\nweng et al., 2019b), images (gulshan e",
+      "span": [
+        4307,
+        4311
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019b",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "b",
+      "value_si": 2019.0,
+      "si_unit": "b",
+      "context": "5; weng & szolovits, 2018;\nweng et al., 2019b), images (gulshan et al., 2016; esteva\n",
+      "span": [
+        4326,
+        4331
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "et al., 2019b), images (gulshan et al., 2016; esteva\net al., 2017; bejnordi et al., ",
+      "span": [
+        4358,
+        4362
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "s (gulshan et al., 2016; esteva\net al., 2017; bejnordi et al., 2017; chen et al., 20",
+      "span": [
+        4379,
+        4383
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "; esteva\net al., 2017; bejnordi et al., 2017; chen et al., 2019a), physi-\narxiv:1909",
+      "span": [
+        4402,
+        4406
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019a",
+      "value": 2019.0,
+      "kind": "time",
+      "unit": "a",
+      "value_si": 63714794400.0,
+      "si_unit": "second",
+      "context": "17; bejnordi et al., 2017; chen et al., 2019a), physi-\narxiv:1909.09246v1  [cs.lg]  1",
+      "span": [
+        4421,
+        4426
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1909.09246v",
+      "value": 1909.09246,
+      "kind": "other",
+      "unit": "v",
+      "value_si": 1909.09246,
+      "si_unit": "v",
+      "context": "2017; chen et al., 2019a), physi-\narxiv:1909.09246v1  [cs.lg]  19 sep 2019\n\nmachine learnin",
+      "span": [
+        4442,
+        4453
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1  ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "et al., 2019a), physi-\narxiv:1909.09246v1  [cs.lg]  19 sep 2019\n\nmachine learning f",
+      "span": [
+        4453,
+        4456
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "19 Sep",
+      "value": 19.0,
+      "kind": "other",
+      "unit": "sep",
+      "value_si": 19.0,
+      "si_unit": "sep",
+      "context": "a), physi-\narxiv:1909.09246v1  [cs.lg]  19 sep 2019\n\nmachine learning for clinical pre",
+      "span": [
+        4465,
+        4471
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019\n\nMachin",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "machin",
+      "value_si": 2019.0,
+      "si_unit": "machin",
+      "context": "si-\narxiv:1909.09246v1  [cs.lg]  19 sep 2019\n\nmachine learning for clinical predictive analy",
+      "span": [
+        4472,
+        4484
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "lytics\nological signals (lehman et al., 2018), and even cross-modal\ninformation (hsu",
+      "span": [
+        4562,
+        4566
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "en cross-modal\ninformation (hsu et al., 2018; liu et al., 2019).\ninstead of traditio",
+      "span": [
+        4615,
+        4619
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "ormation (hsu et al., 2018; liu et al., 2019).\ninstead of traditional ad-hoc healthc",
+      "span": [
+        4633,
+        4637
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "ble prediction models (gehrmann\net al., 2018). they help us maximize the utilization",
+      "span": [
+        5006,
+        5010
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "sing a machine\nlearning-based approach.\n2. general concepts of learning\n2.1. lear",
+      "span": [
+        5204,
+        5205
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.1",
+      "value": 2.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.1,
+      "si_unit": null,
+      "context": "proach.\n2. general concepts of learning\n2.1. learning scenario for clinical predict",
+      "span": [
+        5236,
+        5239
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.2",
+      "value": 2.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.2,
+      "si_unit": null,
+      "context": "o through the concepts mentioned above.\n2.2. machine learning scenarios\nthere are m",
+      "span": [
+        6816,
+        6819
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.2",
+      "value": 2.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.2,
+      "si_unit": null,
+      "context": "under unsuper-\nvised learning scenario.\n2.2.1. supervised learning\nsupervised learn",
+      "span": [
+        7396,
+        7399
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".1",
+      "value": 0.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.1,
+      "si_unit": null,
+      "context": "er unsuper-\nvised learning scenario.\n2.2.1. supervised learning\nsupervised learnin",
+      "span": [
+        7399,
+        7401
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1, ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "an algorithm along with a set\nof data {x1, ..., xn} with the corresponding outcome ",
+      "span": [
+        7898,
+        7901
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1, ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": " with the corresponding outcome label\n{y1, ..., yn}.supervised learning can be cate",
+      "span": [
+        7949,
+        7952
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1995",
+      "value": 1995.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1995.0,
+      "si_unit": null,
+      "context": "vector\nmachines (svm) (cortes & vapnik, 1995) will be a better\nchoice. for example, ",
+      "span": [
+        8394,
+        8398
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.2",
+      "value": 2.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.2,
+      "si_unit": null,
+      "context": " probability distributions of\nthe data.\n2.2.2. unsupervised learning\nwithout corres",
+      "span": [
+        8815,
+        8818
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2",
+      "value": 0.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2,
+      "si_unit": null,
+      "context": "obability distributions of\nthe data.\n2.2.2. unsupervised learning\nwithout correspo",
+      "span": [
+        8818,
+        8820
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1, ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "irectly from the given unlabeled data {x1, ..., xn}.\nthere is no ground truth in th",
+      "span": [
+        9010,
+        9013
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2014",
+      "value": 2014.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2014.0,
+      "si_unit": null,
+      "context": "supervised approach (ghas-\nsemi et al., 2014).\n\nmachine learning for clinical predic",
+      "span": [
+        9269,
+        9273
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.2",
+      "value": 2.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.2,
+      "si_unit": null,
+      "context": "rning for clinical predictive analytics\n2.2.3. other scenario\nother scenarios such ",
+      "span": [
+        9328,
+        9331
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".3",
+      "value": 0.3,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.3,
+      "si_unit": null,
+      "context": "ng for clinical predictive analytics\n2.2.3. other scenario\nother scenarios such as",
+      "span": [
+        9331,
+        9333
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "h a dynamic environment (silver et al., 2016), in\nwhich the agent attempts to reach ",
+      "span": [
+        9513,
+        9517
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": " yield optimal decisions (raghu\net al., 2017).\n2.3. find the best function\nto estima",
+      "span": [
+        9999,
+        10003
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.3",
+      "value": 2.3,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.3,
+      "si_unit": null,
+      "context": "optimal decisions (raghu\net al., 2017).\n2.3. find the best function\nto estimate and",
+      "span": [
+        10006,
+        10009
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "gression, and hinge loss for svm (table 1).\ncost function is the summation of los",
+      "span": [
+        10634,
+        10635
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2012",
+      "value": 2012.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2012.0,
+      "si_unit": null,
+      "context": "r\nto the textbooks (abu-mostafa et al., 2012).\n2.4. metrics\nchoosing an appropriate ",
+      "span": [
+        11882,
+        11886
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.4",
+      "value": 2.4,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.4,
+      "si_unit": null,
+      "context": "e textbooks (abu-mostafa et al., 2012).\n2.4. metrics\nchoosing an appropriate numeri",
+      "span": [
+        11889,
+        11892
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.4",
+      "value": 2.4,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.4,
+      "si_unit": null,
+      "context": "ed\nto different scenarios and problems.\n2.4.1. supervised learning\nin classiﬁcation",
+      "span": [
+        12061,
+        12064
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".1",
+      "value": 0.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.1,
+      "si_unit": null,
+      "context": "to different scenarios and problems.\n2.4.1. supervised learning\nin classiﬁcation p",
+      "span": [
+        12064,
+        12066
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1\nscore",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "score",
+      "value_si": 1.0,
+      "si_unit": "score",
+      "context": "ecall/sensitivity, speciﬁcity, and the f1\nscore are usually used. we use a confusion ma",
+      "span": [
+        12211,
+        12218
+      ],
+      "metric_labels": [
+        "f1",
+        "recall"
+      ]
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "show\nthe relation between these metrics 2.\nthe area under receiver operating curv",
+      "span": [
+        12306,
+        12307
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "false positive rate (fpr, also known\nas 1-speciﬁcity), and y-axis of true positiv",
+      "span": [
+        12488,
+        12489
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": " and y-axis of true positive rate (tpr) 1.\nfpr and tpr values may change based on",
+      "span": [
+        12542,
+        12543
+      ],
+      "metric_labels": [
+        "recall"
+      ]
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "shold of\nyour subjective choice.\nfigure 1. example of auroc.\nin a regression prob",
+      "span": [
+        12632,
+        12633
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 ",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "the detailed equations\nare as follows:\nr2 = 1 −ssres\nsstot\n= 1 −\npm\ni=1(yi −f(xi))",
+      "span": [
+        12962,
+        12964
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "detailed equations\nare as follows:\nr2 = 1 −ssres\nsstot\n= 1 −\npm\ni=1(yi −f(xi))2\npm",
+      "span": [
+        12966,
+        12968
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "s\nare as follows:\nr2 = 1 −ssres\nsstot\n= 1 −\npm\ni=1(yi −f(xi))2\npm\ni=1(yi −ˆyi)2\nad",
+      "span": [
+        12983,
+        12985
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "follows:\nr2 = 1 −ssres\nsstot\n= 1 −\npm\ni=1(yi −f(xi))2\npm\ni=1(yi −ˆyi)2\nadjusted r",
+      "span": [
+        12992,
+        12993
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2\nPm",
+      "value": 2.0,
+      "kind": "length",
+      "unit": "pm",
+      "value_si": 2e-12,
+      "si_unit": "meter",
+      "context": "= 1 −ssres\nsstot\n= 1 −\npm\ni=1(yi −f(xi))2\npm\ni=1(yi −ˆyi)2\nadjusted r2 = 1 −(1 −r2)(",
+      "span": [
+        13004,
+        13008
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "res\nsstot\n= 1 −\npm\ni=1(yi −f(xi))2\npm\ni=1(yi −ˆyi)2\nadjusted r2 = 1 −(1 −r2)(m −1",
+      "span": [
+        13011,
+        13012
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2\nAdjust",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "adjust",
+      "value_si": 2.0,
+      "si_unit": "adjust",
+      "context": "= 1 −\npm\ni=1(yi −f(xi))2\npm\ni=1(yi −ˆyi)2\nadjusted r2 = 1 −(1 −r2)(m −1)\nm −n −1\nthere a",
+      "span": [
+        13021,
+        13029
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 ",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "(yi −f(xi))2\npm\ni=1(yi −ˆyi)2\nadjusted r2 = 1 −(1 −r2)(m −1)\nm −n −1\nthere are als",
+      "span": [
+        13033,
+        13035
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "−f(xi))2\npm\ni=1(yi −ˆyi)2\nadjusted r2 = 1 −(1 −r2)(m −1)\nm −n −1\nthere are also ot",
+      "span": [
+        13037,
+        13039
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "i))2\npm\ni=1(yi −ˆyi)2\nadjusted r2 = 1 −(1 −r2)(m −1)\nm −n −1\nthere are also other ",
+      "span": [
+        13041,
+        13043
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "\npm\ni=1(yi −ˆyi)2\nadjusted r2 = 1 −(1 −r2)(m −1)\nm −n −1\nthere are also other met",
+      "span": [
+        13045,
+        13046
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "1(yi −ˆyi)2\nadjusted r2 = 1 −(1 −r2)(m −1)\nm −n −1\nthere are also other metrics f",
+      "span": [
+        13051,
+        13052
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1\nThere",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "there",
+      "value_si": 1.0,
+      "si_unit": "there",
+      "context": ")2\nadjusted r2 = 1 −(1 −r2)(m −1)\nm −n −1\nthere are also other metrics for regression, ",
+      "span": [
+        13060,
+        13067
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.4",
+      "value": 2.4,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.4,
+      "si_unit": null,
+      "context": "on (bic), for different study purposes.\n2.4.2. unsupervised learning\nsince there ar",
+      "span": [
+        13224,
+        13227
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2",
+      "value": 0.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2,
+      "si_unit": null,
+      "context": "(bic), for different study purposes.\n2.4.2. unsupervised learning\nsince there are ",
+      "span": [
+        13227,
+        13229
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1\nn",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "n",
+      "value_si": 1.0,
+      "si_unit": "n",
+      "context": "tion\nnote\nregression\nmean-squared error\n1\nn\npn\ni=1(yi −ˆyi)2\neasy to learn but sens",
+      "span": [
+        13729,
+        13732
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "\nregression\nmean-squared error\n1\nn\npn\ni=1(yi −ˆyi)2\neasy to learn but sensitive t",
+      "span": [
+        13738,
+        13739
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2\nEasy",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "easy",
+      "value_si": 2.0,
+      "si_unit": "easy",
+      "context": "n\nmean-squared error\n1\nn\npn\ni=1(yi −ˆyi)2\neasy to learn but sensitive to outliers\n(mse",
+      "span": [
+        13748,
+        13754
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 loss",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "loss",
+      "value_si": 2.0,
+      "si_unit": "loss",
+      "context": " learn but sensitive to outliers\n(mse, l2 loss)\nmean absolute error\n1\nn\npn\ni=1 |yi −ˆy",
+      "span": [
+        13797,
+        13803
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1\nn",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "n",
+      "value_si": 1.0,
+      "si_unit": "n",
+      "context": "iers\n(mse, l2 loss)\nmean absolute error\n1\nn\npn\ni=1 |yi −ˆyi|\nrobust to outliers but",
+      "span": [
+        13825,
+        13828
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": ", l2 loss)\nmean absolute error\n1\nn\npn\ni=1 |yi −ˆyi|\nrobust to outliers but not dif",
+      "span": [
+        13834,
+        13836
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 loss",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "loss",
+      "value_si": 1.0,
+      "si_unit": "loss",
+      "context": " outliers but not differentiable\n(mae, l1 loss)\nclassiﬁcation\ncross entropy\n= log loss",
+      "span": [
+        13895,
+        13901
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1\nn",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "n",
+      "value_si": 1.0,
+      "si_unit": "n",
+      "context": "classiﬁcation\ncross entropy\n= log loss\n−1\nn\npn\ni=1[yi log( ˆyi) + (1 −yi) log(1 −ˆy",
+      "span": [
+        13943,
+        13946
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "tion\ncross entropy\n= log loss\n−1\nn\npn\ni=1[yi log( ˆyi) + (1 −yi) log(1 −ˆyi)]\n= −",
+      "span": [
+        13952,
+        13953
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "\n= log loss\n−1\nn\npn\ni=1[yi log( ˆyi) + (1 −yi) log(1 −ˆyi)]\n= −1\nn\npn\ni=1 pi log q",
+      "span": [
+        13970,
+        13972
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "\n−1\nn\npn\ni=1[yi log( ˆyi) + (1 −yi) log(1 −ˆyi)]\n= −1\nn\npn\ni=1 pi log qi\nquantify ",
+      "span": [
+        13981,
+        13983
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1\nn",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "n",
+      "value_si": 1.0,
+      "si_unit": "n",
+      "context": "[yi log( ˆyi) + (1 −yi) log(1 −ˆyi)]\n= −1\nn\npn\ni=1 pi log qi\nquantify the differenc",
+      "span": [
+        13993,
+        13996
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 pi",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "pi",
+      "value_si": 1.0,
+      "si_unit": "pi",
+      "context": "ˆyi) + (1 −yi) log(1 −ˆyi)]\n= −1\nn\npn\ni=1 pi log qi\nquantify the difference between\n",
+      "span": [
+        14002,
+        14006
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1\nn",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "n",
+      "value_si": 1.0,
+      "si_unit": "n",
+      "context": "wo probability distributions\nhinge loss\n1\nn\npn\ni=1 max(0, 1 −yi ˆyi)\nfor support ve",
+      "span": [
+        14087,
+        14090
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 max",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "max",
+      "value_si": 1.0,
+      "si_unit": "max",
+      "context": "ility distributions\nhinge loss\n1\nn\npn\ni=1 max(0, 1 −yi ˆyi)\nfor support vector machin",
+      "span": [
+        14096,
+        14101
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "0, ",
+      "value": 0.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.0,
+      "si_unit": null,
+      "context": "distributions\nhinge loss\n1\nn\npn\ni=1 max(0, 1 −yi ˆyi)\nfor support vector machine\nkl",
+      "span": [
+        14102,
+        14105
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "tributions\nhinge loss\n1\nn\npn\ni=1 max(0, 1 −yi ˆyi)\nfor support vector machine\nkl d",
+      "span": [
+        14105,
+        14107
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "een\ntwo probability distributions\ntable 1. examples of commonly-used loss functio",
+      "span": [
+        14256,
+        14257
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "\ntp\ntp+fp\naccuracy =\ntp+tn\ntp+tn+fp+fn\nf1 = 2×precision×recall\nprecision+recall\nta",
+      "span": [
+        14570,
+        14572
+      ],
+      "metric_labels": [
+        "accuracy",
+        "f1",
+        "precision",
+        "recall"
+      ]
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "tp+fp\naccuracy =\ntp+tn\ntp+tn+fp+fn\nf1 = 2×precision×recall\nprecision+recall\ntable",
+      "span": [
+        14574,
+        14575
+      ],
+      "metric_labels": [
+        "accuracy",
+        "f1",
+        "precision",
+        "recall"
+      ]
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "precision×recall\nprecision+recall\ntable 2. commonly-used metrics in machine learn",
+      "span": [
+        14616,
+        14617
+      ],
+      "metric_labels": [
+        "precision",
+        "recall"
+      ]
+    },
+    {
+      "raw": "2.5",
+      "value": 2.5,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.5,
+      "si_unit": null,
+      "context": "cture for learning\ndata representation.\n2.5. model validation\nthe next step after d",
+      "span": [
+        14741,
+        14744
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "20",
+      "value": 20.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 20.0,
+      "si_unit": null,
+      "context": "sets. however, people usually split out 20-30% of\nthe whole dataset for their test",
+      "span": [
+        16261,
+        16263
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-30%",
+      "value": -30.0,
+      "kind": "percent",
+      "unit": "%",
+      "value_si": -30.0,
+      "si_unit": "%",
+      "context": "ts. however, people usually split out 20-30% of\nthe whole dataset for their testing ",
+      "span": [
+        16263,
+        16267
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.5",
+      "value": 2.5,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.5,
+      "si_unit": null,
+      "context": "n can\nbe smaller if you have more data.\n2.5.1. cross-validation\nthe other commonly ",
+      "span": [
+        16365,
+        16368
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".1",
+      "value": 0.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.1,
+      "si_unit": null,
+      "context": "an\nbe smaller if you have more data.\n2.5.1. cross-validation\nthe other commonly us",
+      "span": [
+        16368,
+        16370
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 folds",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "folds",
+      "value_si": 1.0,
+      "si_unit": "folds",
+      "context": "lidation, and train on the\nremaining k −1 folds. the ﬁnal error is the average of\nerror",
+      "span": [
+        16851,
+        16858
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "rage of\nerrors over k times of training 2. in practice, we usually use\nk=5 or 10.",
+      "span": [
+        16925,
+        16926
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "5 or",
+      "value": 5.0,
+      "kind": "other",
+      "unit": "or",
+      "value_si": 5.0,
+      "si_unit": "or",
+      "context": "aining 2. in practice, we usually use\nk=5 or 10. the extreme case for n cases is n-f",
+      "span": [
+        16958,
+        16962
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10",
+      "value": 10.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.0,
+      "si_unit": null,
+      "context": "g 2. in practice, we usually use\nk=5 or 10. the extreme case for n cases is n-fold",
+      "span": [
+        16963,
+        16965
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "called leave-one-out cv (loocv).\nfigure 2. k-fold cross-validation.\nplease keep i",
+      "span": [
+        17116,
+        17117
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.6",
+      "value": 2.6,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.6,
+      "si_unit": null,
+      "context": " dev sets\nare involved in this process.\n2.6. diagnostics\nafter the ﬁrst iteration o",
+      "span": [
+        17291,
+        17294
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.6",
+      "value": 2.6,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.6,
+      "si_unit": null,
+      "context": "a model\nwith low bias and low variance.\n2.6.1. bias and variance\nthe bias of a mode",
+      "span": [
+        17640,
+        17643
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".1",
+      "value": 0.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.1,
+      "si_unit": null,
+      "context": "odel\nwith low bias and low variance.\n2.6.1. bias and variance\nthe bias of a model ",
+      "span": [
+        17643,
+        17645
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.6",
+      "value": 2.6,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.6,
+      "si_unit": null,
+      "context": "one by\nreducing regularization (section 2.6.2), or conﬁguring and\nadding more input",
+      "span": [
+        18100,
+        18103
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2",
+      "value": 0.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2,
+      "si_unit": null,
+      "context": " by\nreducing regularization (section 2.6.2), or conﬁguring and\nadding more input f",
+      "span": [
+        18103,
+        18105
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3 and",
+      "value": 3.0,
+      "kind": "other",
+      "unit": "and",
+      "value_si": 3.0,
+      "si_unit": "and",
+      "context": "aining and\nvalidation errors. in figure 3 and table 3 we demonstrate a\nfew cases of d",
+      "span": [
+        19213,
+        19218
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3 we",
+      "value": 3.0,
+      "kind": "other",
+      "unit": "we",
+      "value_si": 3.0,
+      "si_unit": "we",
+      "context": "alidation errors. in figure 3 and table 3 we demonstrate a\nfew cases of diagnostics ",
+      "span": [
+        19225,
+        19229
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "ases of diagnostics as examples.\nfigure 3. bias and variance.\n2.6.2. regularizati",
+      "span": [
+        19289,
+        19290
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.6",
+      "value": 2.6,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.6,
+      "si_unit": null,
+      "context": " examples.\nfigure 3. bias and variance.\n2.6.2. regularization\nthe goal of regulariz",
+      "span": [
+        19311,
+        19314
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2",
+      "value": 0.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2,
+      "si_unit": null,
+      "context": "amples.\nfigure 3. bias and variance.\n2.6.2. regularization\nthe goal of regularizat",
+      "span": [
+        19314,
+        19316
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "election op-\nerator (lasso regression, l1-regularization) (tibshirani,\n1996), rid",
+      "span": [
+        19532,
+        19533
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1996",
+      "value": 1996.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1996.0,
+      "si_unit": null,
+      "context": "ession, l1-regularization) (tibshirani,\n1996), ridge regression (l2-regression) (hoe",
+      "span": [
+        19563,
+        19567
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": " (tibshirani,\n1996), ridge regression (l2-regression) (hoerl & kennard,\n1970), an",
+      "span": [
+        19589,
+        19590
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1970",
+      "value": 1970.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1970.0,
+      "si_unit": null,
+      "context": "ssion (l2-regression) (hoerl & kennard,\n1970), and elastic net regression (a linear ",
+      "span": [
+        19621,
+        19625
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1\nand",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "and",
+      "value_si": 1.0,
+      "si_unit": "and",
+      "context": "et regression (a linear combination of l1\nand l2 regularization) (zou & hastie, 2005)",
+      "span": [
+        19681,
+        19686
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 regula",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "regula",
+      "value_si": 2.0,
+      "si_unit": "regula",
+      "context": "ession (a linear combination of l1\nand l2 regularization) (zou & hastie, 2005).\nin pract",
+      "span": [
+        19688,
+        19696
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2005",
+      "value": 2005.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2005.0,
+      "si_unit": null,
+      "context": "1\nand l2 regularization) (zou & hastie, 2005).\nin practice, we add a weighted penalt",
+      "span": [
+        19721,
+        19725
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "cost\nfunction as a regularization. for l1-regularization, we add\nthe absolute val",
+      "span": [
+        19821,
+        19822
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": " of coefﬁcient as penalty\nterm, and in l2-regularization we add the squared value",
+      "span": [
+        19921,
+        19922
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": "uared value of\nmagnitude instead (table 4).\nl1-regularization is also a good tech",
+      "span": [
+        19991,
+        19992
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": " value of\nmagnitude instead (table 4).\nl1-regularization is also a good technique",
+      "span": [
+        19996,
+        19997
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": " to zero and remove them. in contrast, l2-\nregularization just makes the coefﬁcie",
+      "span": [
+        20168,
+        20169
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.7",
+      "value": 2.7,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.7,
+      "si_unit": null,
+      "context": "e coefﬁcients smaller, but not to\nzero.\n2.7. error analysis\nit is an important prac",
+      "span": [
+        20239,
+        20242
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "decrease complexity\nadd more data\ntable 3. the characteristic of high bias and hi",
+      "span": [
+        21115,
+        21116
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "high variance.\nregularization\nequation\nl1 (lasso)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn",
+      "span": [
+        21194,
+        21196
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "regularization\nequation\nl1 (lasso)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 |βj|\nl2 (",
+      "span": [
+        21209,
+        21210
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ion\nequation\nl1 (lasso)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 |βj|\nl2 (ridge)\npm\ni=",
+      "span": [
+        21220,
+        21222
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 ",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "tion\nl1 (lasso)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 |βj|\nl2 (ridge)\npm\ni=1(yi −pn",
+      "span": [
+        21228,
+        21230
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "sso)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 |βj|\nl2 (ridge)\npm\ni=1(yi −pn\nj=1 βjxij)",
+      "span": [
+        21239,
+        21241
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 ",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "i=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 |βj|\nl2 (ridge)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn",
+      "span": [
+        21247,
+        21249
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "βjxij)2 + λ pn\nj=1 |βj|\nl2 (ridge)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 β2\nj\ntabl",
+      "span": [
+        21262,
+        21263
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": " pn\nj=1 |βj|\nl2 (ridge)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 β2\nj\ntable 4. l1 and ",
+      "span": [
+        21273,
+        21275
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 ",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "|βj|\nl2 (ridge)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 β2\nj\ntable 4. l1 and l2-regul",
+      "span": [
+        21281,
+        21283
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "dge)\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 β2\nj\ntable 4. l1 and l2-regularized logi",
+      "span": [
+        21292,
+        21294
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2\nj",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "j",
+      "value_si": 2.0,
+      "si_unit": "j",
+      "context": ")\npm\ni=1(yi −pn\nj=1 βjxij)2 + λ pn\nj=1 β2\nj\ntable 4. l1 and l2-regularized logistic",
+      "span": [
+        21295,
+        21298
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": "i −pn\nj=1 βjxij)2 + λ pn\nj=1 β2\nj\ntable 4. l1 and l2-regularized logistic regress",
+      "span": [
+        21305,
+        21306
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 and",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "and",
+      "value_si": 1.0,
+      "si_unit": "and",
+      "context": "n\nj=1 βjxij)2 + λ pn\nj=1 β2\nj\ntable 4. l1 and l2-regularized logistic regression.\nlog",
+      "span": [
+        21309,
+        21314
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "jxij)2 + λ pn\nj=1 β2\nj\ntable 4. l1 and l2-regularized logistic regression.\nlogica",
+      "span": [
+        21316,
+        21317
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017b",
+      "value": 2017.0,
+      "kind": "other",
+      "unit": "b",
+      "value_si": 2017.0,
+      "si_unit": "b",
+      "context": "s with\nspeciﬁc conditions (weng et al., 2017b). such misclassiﬁca-\ntion can be preven",
+      "span": [
+        21443,
+        21448
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.8",
+      "value": 2.8,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.8,
+      "si_unit": null,
+      "context": " order\nto help distinguish the classes.\n2.8. ablation analysis\nablation analysis is",
+      "span": [
+        21680,
+        21683
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "or deidentiﬁcation (dernoncourt et al., 2017), the authors\ndemonstrate that the char",
+      "span": [
+        22328,
+        22332
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "ame the critical factor of their study.\n3. learning algorithms\nin this section, w",
+      "span": [
+        22510,
+        22511
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3 or",
+      "value": 3.0,
+      "kind": "other",
+      "unit": "or",
+      "value_si": 3.0,
+      "si_unit": "or",
+      "context": "se refer to program-\nming tutorial part 3 or deep learning textbook for further\ninfo",
+      "span": [
+        22959,
+        22963
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "further\ninformation (goodfellow et al., 2016).\n3.1. supervised learning\n3.1.1. linea",
+      "span": [
+        23031,
+        23035
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.1",
+      "value": 3.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.1,
+      "si_unit": null,
+      "context": "\ninformation (goodfellow et al., 2016).\n3.1. supervised learning\n3.1.1. linear mode",
+      "span": [
+        23038,
+        23041
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.1",
+      "value": 3.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.1,
+      "si_unit": null,
+      "context": "et al., 2016).\n3.1. supervised learning\n3.1.1. linear models\nlinear models are comm",
+      "span": [
+        23063,
+        23066
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".1",
+      "value": 0.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.1,
+      "si_unit": null,
+      "context": "al., 2016).\n3.1. supervised learning\n3.1.1. linear models\nlinear models are common",
+      "span": [
+        23066,
+        23068
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.1",
+      "value": 3.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.1,
+      "si_unit": null,
+      "context": "mple but powerful family of algorithms.\n3.1.2. tree-based models\ntree-based models ",
+      "span": [
+        23806,
+        23809
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2",
+      "value": 0.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2,
+      "si_unit": null,
+      "context": "e but powerful family of algorithms.\n3.1.2. tree-based models\ntree-based models ca",
+      "span": [
+        23809,
+        23811
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "most\ncommon tree-based models (breiman, 2017). it follows the\nsteps below to ﬁnd the",
+      "span": [
+        24037,
+        24041
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2005",
+      "value": 2005.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2005.0,
+      "si_unit": null,
+      "context": "ries of\nclinical rules (fonarow et al., 2005). however, decision trees\nmay have the ",
+      "span": [
+        25122,
+        25126
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2001",
+      "value": 2001.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2001.0,
+      "si_unit": null,
+      "context": "ng and subsampling fea-\ntures (breiman, 2001). in brief, it tries to ensemble the\nre",
+      "span": [
+        25341,
+        25345
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1999",
+      "value": 1999.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1999.0,
+      "si_unit": null,
+      "context": "s into a stronger model (freund\net al., 1999; friedman, 2001).\n3.1.3. support vector",
+      "span": [
+        26081,
+        26085
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2001",
+      "value": 2001.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2001.0,
+      "si_unit": null,
+      "context": "r model (freund\net al., 1999; friedman, 2001).\n3.1.3. support vector machine (svm)\ns",
+      "span": [
+        26097,
+        26101
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.1",
+      "value": 3.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.1,
+      "si_unit": null,
+      "context": " (freund\net al., 1999; friedman, 2001).\n3.1.3. support vector machine (svm)\nsvm is ",
+      "span": [
+        26104,
+        26107
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".3",
+      "value": 0.3,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.3,
+      "si_unit": null,
+      "context": "reund\net al., 1999; friedman, 2001).\n3.1.3. support vector machine (svm)\nsvm is a ",
+      "span": [
+        26107,
+        26109
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1995",
+      "value": 1995.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1995.0,
+      "si_unit": null,
+      "context": "learning algo-\nrithms (cortes & vapnik, 1995). the goal of svm is trying\nto ﬁnd a hy",
+      "span": [
+        26221,
+        26225
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2D",
+      "value": 2.0,
+      "kind": "time",
+      "unit": "d",
+      "value_si": 172800.0,
+      "si_unit": "second",
+      "context": "ing\nto ﬁnd a hyperplane (e.g. a line in 2d, a plane in 3d, or\na n-dimension struct",
+      "span": [
+        26290,
+        26292
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3D",
+      "value": 3.0,
+      "kind": "time",
+      "unit": "d",
+      "value_si": 259200.0,
+      "si_unit": "second",
+      "context": "perplane (e.g. a line in 2d, a plane in 3d, or\na n-dimension structure in a n + 1 ",
+      "span": [
+        26305,
+        26307
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 dimens",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "dimens",
+      "value_si": 1.0,
+      "si_unit": "dimens",
+      "context": "3d, or\na n-dimension structure in a n + 1 dimensions space) to\nseparate data points into",
+      "span": [
+        26345,
+        26353
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": "nts, support vectors, to the hyperplane 4.\nsvm also works for non-linear separabl",
+      "span": [
+        26527,
+        26528
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "he space back to\nthe original one later 5. the commonly used kernels in-\nclude li",
+      "span": [
+        26728,
+        26729
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": "svm is its superior performance,\nfigure 4. hyperplane of svm to linearly separate",
+      "span": [
+        26959,
+        26960
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "vm to linearly separate samples.\nfigure 5. kernel trick of svm.\nyet the model’s i",
+      "span": [
+        27017,
+        27018
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.2",
+      "value": 3.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.2,
+      "si_unit": null,
+      "context": " applications\nin the healthcare domain.\n3.2. unsupervised learning\nin the previous ",
+      "span": [
+        27133,
+        27136
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.2",
+      "value": 3.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.2,
+      "si_unit": null,
+      "context": "ace for further machine learning steps.\n3.2.1. clustering\nk-means clustering, expec",
+      "span": [
+        27577,
+        27580
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".1",
+      "value": 0.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.1,
+      "si_unit": null,
+      "context": " for further machine learning steps.\n3.2.1. clustering\nk-means clustering, expecta",
+      "span": [
+        27580,
+        27582
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "6",
+      "value": 6.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 6.0,
+      "si_unit": null,
+      "context": "steps of k-means clustering are (figure 6):\n• randomly initializing k points as t",
+      "span": [
+        27956,
+        27957
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 and",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "and",
+      "value_si": 2.0,
+      "si_unit": "and",
+      "context": " points in the cluster\n• repeating step 2 and 3 until convergence\n\nmachine learning f",
+      "span": [
+        28207,
+        28212
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3 until",
+      "value": 3.0,
+      "kind": "other",
+      "unit": "until",
+      "value_si": 3.0,
+      "si_unit": "until",
+      "context": "s in the cluster\n• repeating step 2 and 3 until convergence\n\nmachine learning for clini",
+      "span": [
+        28213,
+        28220
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "6",
+      "value": 6.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 6.0,
+      "si_unit": null,
+      "context": "or clinical predictive analytics\nfigure 6. steps of k-means clustering.\nthe k-mea",
+      "span": [
+        28292,
+        28293
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9 of",
+      "value": 9.0,
+      "kind": "other",
+      "unit": "of",
+      "value_si": 9.0,
+      "si_unit": "of",
+      "context": "ning tasks, as well be shown in section 9 of the\n“applied statistical learning in py",
+      "span": [
+        28699,
+        28703
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.2",
+      "value": 3.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.2,
+      "si_unit": null,
+      "context": "nsights about potential cluster\nnumber.\n3.2.2. dimensionality reduction\nwhile deali",
+      "span": [
+        29071,
+        29074
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2",
+      "value": 0.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2,
+      "si_unit": null,
+      "context": "ghts about potential cluster\nnumber.\n3.2.2. dimensionality reduction\nwhile dealing",
+      "span": [
+        29074,
+        29076
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2011",
+      "value": 2011.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2011.0,
+      "si_unit": null,
+      "context": "into a new\ncoordinate system (jolliffe, 2011). the ﬁrst axis of the new\ncoordinate s",
+      "span": [
+        29716,
+        29720
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ds to the ﬁrst principal compo-\nnent (pc1), which explains the most variance in t",
+      "span": [
+        29815,
+        29816
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2008",
+      "value": 2008.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2008.0,
+      "si_unit": null,
+      "context": "high-dimensional data (maaten & hinton, 2008). t-sne\nconsiders probability distribut",
+      "span": [
+        30429,
+        30433
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1988",
+      "value": 1988.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1988.0,
+      "si_unit": null,
+      "context": "put of the network (rumel-\nhart et al., 1988; hinton & salakhutdinov, 2006).\nthe dim",
+      "span": [
+        30810,
+        30814
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2006",
+      "value": 2006.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2006.0,
+      "si_unit": null,
+      "context": "t et al., 1988; hinton & salakhutdinov, 2006).\nthe dimensionality reduction algorith",
+      "span": [
+        30840,
+        30844
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": "ence (classiﬁ-\ncation/prediction) time.\n4. pitfalls and limitations\nmachine learn",
+      "span": [
+        31163,
+        31164
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "2019a",
+      "value": 2019.0,
+      "kind": "time",
+      "unit": "a",
+      "value_si": 63714794400.0,
+      "si_unit": "second",
+      "context": "al and multitask training (weng et al., 2019a), or learn-\ning temporality and irregul",
+      "span": [
+        31469,
+        31474
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "porality and irregularity (xiao et al., 2018).\nhowever, there are some pitfalls and ",
+      "span": [
+        31534,
+        31538
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019b",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "b",
+      "value_si": 2019.0,
+      "si_unit": "b",
+      "context": "d\nwhile model development (chen et al., 2019b). for exam-\nple, model biases and fairn",
+      "span": [
+        31703,
+        31708
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "ually noisy and biased (caruana\net al., 2015; ghassemi et al., 2018). we still need ",
+      "span": [
+        31849,
+        31853
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "(caruana\net al., 2015; ghassemi et al., 2018). we still need human\nexpert to validat",
+      "span": [
+        31872,
+        31876
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "an important topic from the aspects of\n(1) human-machine collaboration and (2) bu",
+      "span": [
+        32023,
+        32024
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "of\n(1) human-machine collaboration and (2) building a human-\nlike intelligent mac",
+      "span": [
+        32059,
+        32060
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "nt machine for medicine (girkar et al., 2018).\ncausality is usually not being addres",
+      "span": [
+        32134,
+        32138
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": " them to improve workﬂow (horng et al.,\n2017; chen et al., 2019a), as well as integr",
+      "span": [
+        32538,
+        32542
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019a",
+      "value": 2019.0,
+      "kind": "time",
+      "unit": "a",
+      "value_si": 63714794400.0,
+      "si_unit": "second",
+      "context": "rkﬂow (horng et al.,\n2017; chen et al., 2019a), as well as integrate all informa-\ntio",
+      "span": [
+        32557,
+        32562
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "future\nclinician-machine collaboration.\n5. programming exercise\nwe provide three ",
+      "span": [
+        32801,
+        32802
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "2012 Databa",
+      "value": 2012.0,
+      "kind": "other",
+      "unit": "databa",
+      "value_si": 2012.0,
+      "si_unit": "databa",
+      "context": "essed icu data from physionet challenge\n2012 database\nthe learning objectives of these tuto",
+      "span": [
+        33246,
+        33257
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1, we",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "we",
+      "value_si": 1.0,
+      "si_unit": "we",
+      "context": "ssiﬁcation and clustering tasks\nin part 1, we will go through the basic of machine le",
+      "span": [
+        33476,
+        33481
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2, we",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "we",
+      "value_si": 2.0,
+      "si_unit": "we",
+      "context": "through classiﬁcation problems. in part 2, we will\ngo deeper into unsupervised learni",
+      "span": [
+        33577,
+        33582
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3, we",
+      "value": 3.0,
+      "kind": "other",
+      "unit": "we",
+      "value_si": 3.0,
+      "si_unit": "we",
+      "context": "r clustering\nand visualization. in part 3, we will discuss more about\ndeep neural net",
+      "span": [
+        33675,
+        33680
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "6",
+      "value": 6.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 6.0,
+      "si_unit": null,
+      "context": " the link of tutorials in\nthe appendix.\n6. conclusion\nin summary, machine learnin",
+      "span": [
+        33779,
+        33780
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "epository:\nhttps://github.com/\nckbjimmy/2018_mlw.git.\nreferences\nabu-mostafa, y., li",
+      "span": [
+        34454,
+        34458
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2012",
+      "value": 2012.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2012.0,
+      "si_unit": null,
+      "context": "ing\nfrom data: a short course. amlbook, 2012.\nbejnordi, b. e., lin, j., glass, b., m",
+      "span": [
+        34572,
+        34576
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": " cancer in\nhistopathology images. isbi, 2017.\nbreiman, l. random forests. machine le",
+      "span": [
+        34832,
+        34836
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "45",
+      "value": 45.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 45.0,
+      "si_unit": null,
+      "context": "n, l. random forests. machine learning, 45(1):\n5–32, 2001.\nbreiman, l. classiﬁcati",
+      "span": [
+        34884,
+        34886
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "l. random forests. machine learning, 45(1):\n5–32, 2001.\nbreiman, l. classiﬁcation",
+      "span": [
+        34887,
+        34888
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "andom forests. machine learning, 45(1):\n5–32, 2001.\nbreiman, l. classiﬁcation and",
+      "span": [
+        34891,
+        34892
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "32, ",
+      "value": 32.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 32.0,
+      "si_unit": null,
+      "context": "dom forests. machine learning, 45(1):\n5–32, 2001.\nbreiman, l. classiﬁcation and regr",
+      "span": [
+        34893,
+        34897
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2001",
+      "value": 2001.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2001.0,
+      "si_unit": null,
+      "context": "forests. machine learning, 45(1):\n5–32, 2001.\nbreiman, l. classiﬁcation and regressi",
+      "span": [
+        34897,
+        34901
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "cation and regression trees. routledge,\n2017.\ncaruana, r., lou, y., gehrke, j., koch",
+      "span": [
+        34962,
+        34966
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "30",
+      "value": 30.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 30.0,
+      "si_unit": null,
+      "context": " predicting\npneumonia risk and hospital 30-day readmission. kdd,\n2015.\nchen, p.-h.",
+      "span": [
+        35114,
+        35116
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "k and hospital 30-day readmission. kdd,\n2015.\nchen, p.-h. c., gadepalli, k., macdona",
+      "span": [
+        35139,
+        35143
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "25",
+      "value": 25.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 25.0,
+      "si_unit": null,
+      "context": " for cancer\ndiagnosis. nature medicine, 25(9):1453, 2019a.\nchen, p.-h. c., liu, y.",
+      "span": [
+        35411,
+        35413
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9",
+      "value": 9.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 9.0,
+      "si_unit": null,
+      "context": "r cancer\ndiagnosis. nature medicine, 25(9):1453, 2019a.\nchen, p.-h. c., liu, y., ",
+      "span": [
+        35414,
+        35415
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1453, ",
+      "value": 1453.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1453.0,
+      "si_unit": null,
+      "context": "ancer\ndiagnosis. nature medicine, 25(9):1453, 2019a.\nchen, p.-h. c., liu, y., and peng",
+      "span": [
+        35417,
+        35423
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019a",
+      "value": 2019.0,
+      "kind": "time",
+      "unit": "a",
+      "value_si": 63714794400.0,
+      "si_unit": "second",
+      "context": "diagnosis. nature medicine, 25(9):1453, 2019a.\nchen, p.-h. c., liu, y., and peng, l. ",
+      "span": [
+        35423,
+        35428
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "18",
+      "value": 18.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 18.0,
+      "si_unit": null,
+      "context": "odels for healthcare. nature materials,\n18(5):410, 2019b.\nchoi, y., chiu, c. y.-i.",
+      "span": [
+        35543,
+        35545
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "ls for healthcare. nature materials,\n18(5):410, 2019b.\nchoi, y., chiu, c. y.-i., ",
+      "span": [
+        35546,
+        35547
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "410, ",
+      "value": 410.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 410.0,
+      "si_unit": null,
+      "context": "for healthcare. nature materials,\n18(5):410, 2019b.\nchoi, y., chiu, c. y.-i., and son",
+      "span": [
+        35549,
+        35554
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019b",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "b",
+      "value_si": 2019.0,
+      "si_unit": "b",
+      "context": "ealthcare. nature materials,\n18(5):410, 2019b.\nchoi, y., chiu, c. y.-i., and sontag, ",
+      "span": [
+        35554,
+        35559
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "ntations of medical concepts. amia\ncri, 2016:41, 2016.\nchung, y.-a. and weng, w.-h. ",
+      "span": [
+        35675,
+        35679
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "41, ",
+      "value": 41.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 41.0,
+      "si_unit": null,
+      "context": "ons of medical concepts. amia\ncri, 2016:41, 2016.\nchung, y.-a. and weng, w.-h. learn",
+      "span": [
+        35680,
+        35684
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "of medical concepts. amia\ncri, 2016:41, 2016.\nchung, y.-a. and weng, w.-h. learning ",
+      "span": [
+        35684,
+        35688
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4H",
+      "value": 4.0,
+      "kind": "time",
+      "unit": "h",
+      "value_si": 14400.0,
+      "si_unit": "second",
+      "context": "trieval. machine learning\nfor health (ml4h) workshop at nips 2017, 2017.\nchung, y.",
+      "span": [
+        35872,
+        35874
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017, ",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "ning\nfor health (ml4h) workshop at nips 2017, 2017.\nchung, y.-a., weng, w.-h., tong, s",
+      "span": [
+        35893,
+        35899
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "or health (ml4h) workshop at nips 2017, 2017.\nchung, y.-a., weng, w.-h., tong, s., a",
+      "span": [
+        35899,
+        35903
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "h and text em-\nbedding spaces. neurips, 2018.\nchung, y.-a., weng, w.-h., tong, s., a",
+      "span": [
+        36041,
+        36045
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "sed speech-to-text translation. icassp, 2019.\ncortes, c. and vapnik, v. support-vect",
+      "span": [
+        36155,
+        36159
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "20",
+      "value": 20.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 20.0,
+      "si_unit": null,
+      "context": "rt-vector networks. ma-\nchine learning, 20(3):273–297, 1995.\ndernoncourt, f., lee,",
+      "span": [
+        36232,
+        36234
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "vector networks. ma-\nchine learning, 20(3):273–297, 1995.\ndernoncourt, f., lee, j",
+      "span": [
+        36235,
+        36236
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "273",
+      "value": 273.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 273.0,
+      "si_unit": null,
+      "context": "tor networks. ma-\nchine learning, 20(3):273–297, 1995.\ndernoncourt, f., lee, j. y.,",
+      "span": [
+        36238,
+        36241
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "297, ",
+      "value": 297.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 297.0,
+      "si_unit": null,
+      "context": "networks. ma-\nchine learning, 20(3):273–297, 1995.\ndernoncourt, f., lee, j. y., uzune",
+      "span": [
+        36242,
+        36247
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1995",
+      "value": 1995.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1995.0,
+      "si_unit": null,
+      "context": "rks. ma-\nchine learning, 20(3):273–297, 1995.\ndernoncourt, f., lee, j. y., uzuner, o",
+      "span": [
+        36247,
+        36251
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "24",
+      "value": 24.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 24.0,
+      "si_unit": null,
+      "context": " with recurrent neural\nnetworks. jamia, 24(3):596–606, 2017.\ndoshi-velez, f., ge, ",
+      "span": [
+        36385,
+        36387
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "th recurrent neural\nnetworks. jamia, 24(3):596–606, 2017.\ndoshi-velez, f., ge, y.",
+      "span": [
+        36388,
+        36389
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "596",
+      "value": 596.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 596.0,
+      "si_unit": null,
+      "context": "recurrent neural\nnetworks. jamia, 24(3):596–606, 2017.\ndoshi-velez, f., ge, y., and",
+      "span": [
+        36391,
+        36394
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "606, ",
+      "value": 606.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 606.0,
+      "si_unit": null,
+      "context": "rrent neural\nnetworks. jamia, 24(3):596–606, 2017.\ndoshi-velez, f., ge, y., and kohan",
+      "span": [
+        36395,
+        36400
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": " neural\nnetworks. jamia, 24(3):596–606, 2017.\ndoshi-velez, f., ge, y., and kohane, i",
+      "span": [
+        36400,
+        36404
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "133",
+      "value": 133.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 133.0,
+      "si_unit": null,
+      "context": "ecord\ntime-series analysis. pediatrics, 133(1):e54–e63, 2014.\nesteva, a., kuprel, b",
+      "span": [
+        36559,
+        36562
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "d\ntime-series analysis. pediatrics, 133(1):e54–e63, 2014.\nesteva, a., kuprel, b.,",
+      "span": [
+        36563,
+        36564
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "54",
+      "value": 54.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 54.0,
+      "si_unit": null,
+      "context": "me-series analysis. pediatrics, 133(1):e54–e63, 2014.\nesteva, a., kuprel, b., novo",
+      "span": [
+        36567,
+        36569
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "63, ",
+      "value": 63.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 63.0,
+      "si_unit": null,
+      "context": "eries analysis. pediatrics, 133(1):e54–e63, 2014.\nesteva, a., kuprel, b., novoa, r. ",
+      "span": [
+        36571,
+        36575
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2014",
+      "value": 2014.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2014.0,
+      "si_unit": null,
+      "context": "s analysis. pediatrics, 133(1):e54–e63, 2014.\nesteva, a., kuprel, b., novoa, r. a., ",
+      "span": [
+        36575,
+        36579
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "542",
+      "value": 542.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 542.0,
+      "si_unit": null,
+      "context": "ncer with deep neural networks. nature,\n542(7639):115, 2017.\nfonarow, g. c., adams,",
+      "span": [
+        36756,
+        36759
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "7639",
+      "value": 7639.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 7639.0,
+      "si_unit": null,
+      "context": " with deep neural networks. nature,\n542(7639):115, 2017.\nfonarow, g. c., adams, k. f",
+      "span": [
+        36760,
+        36764
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "115, ",
+      "value": 115.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 115.0,
+      "si_unit": null,
+      "context": "deep neural networks. nature,\n542(7639):115, 2017.\nfonarow, g. c., adams, k. f., abra",
+      "span": [
+        36766,
+        36771
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "neural networks. nature,\n542(7639):115, 2017.\nfonarow, g. c., adams, k. f., abraham,",
+      "span": [
+        36771,
+        36775
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "293",
+      "value": 293.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 293.0,
+      "si_unit": null,
+      "context": "ion and regression tree\nanalysis. jama, 293(5):572–580, 2005.\nfreund, y., schapire,",
+      "span": [
+        37020,
+        37023
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "and regression tree\nanalysis. jama, 293(5):572–580, 2005.\nfreund, y., schapire, r",
+      "span": [
+        37024,
+        37025
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "572",
+      "value": 572.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 572.0,
+      "si_unit": null,
+      "context": " regression tree\nanalysis. jama, 293(5):572–580, 2005.\nfreund, y., schapire, r., an",
+      "span": [
+        37027,
+        37030
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "580, ",
+      "value": 580.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 580.0,
+      "si_unit": null,
+      "context": "ression tree\nanalysis. jama, 293(5):572–580, 2005.\nfreund, y., schapire, r., and abe,",
+      "span": [
+        37031,
+        37036
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2005",
+      "value": 2005.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2005.0,
+      "si_unit": null,
+      "context": "on tree\nanalysis. jama, 293(5):572–580, 2005.\nfreund, y., schapire, r., and abe, n. ",
+      "span": [
+        37036,
+        37040
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "14",
+      "value": 14.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 14.0,
+      "si_unit": null,
+      "context": "ese society for artiﬁcial\nintelligence, 14(771-780):1612, 1999.\nfriedman, j. h. gr",
+      "span": [
+        37169,
+        37171
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "771",
+      "value": 771.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 771.0,
+      "si_unit": null,
+      "context": " society for artiﬁcial\nintelligence, 14(771-780):1612, 1999.\nfriedman, j. h. greedy",
+      "span": [
+        37172,
+        37175
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-780",
+      "value": -780.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -780.0,
+      "si_unit": null,
+      "context": "ciety for artiﬁcial\nintelligence, 14(771-780):1612, 1999.\nfriedman, j. h. greedy fun",
+      "span": [
+        37175,
+        37179
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1612, ",
+      "value": 1612.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1612.0,
+      "si_unit": null,
+      "context": "for artiﬁcial\nintelligence, 14(771-780):1612, 1999.\nfriedman, j. h. greedy function ap",
+      "span": [
+        37181,
+        37187
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1999",
+      "value": 1999.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1999.0,
+      "si_unit": null,
+      "context": "tiﬁcial\nintelligence, 14(771-780):1612, 1999.\nfriedman, j. h. greedy function approx",
+      "span": [
+        37187,
+        37191
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1189",
+      "value": 1189.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1189.0,
+      "si_unit": null,
+      "context": "ting machine. annals of statistics, pp. 1189–1232,\n2001.\ngehrmann, s., dernoncourt, ",
+      "span": [
+        37295,
+        37299
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1232,\n",
+      "value": 1232.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1232.0,
+      "si_unit": null,
+      "context": "machine. annals of statistics, pp. 1189–1232,\n2001.\ngehrmann, s., dernoncourt, f., li,",
+      "span": [
+        37300,
+        37306
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2001",
+      "value": 2001.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2001.0,
+      "si_unit": null,
+      "context": "e. annals of statistics, pp. 1189–1232,\n2001.\ngehrmann, s., dernoncourt, f., li, y.,",
+      "span": [
+        37306,
+        37310
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "13",
+      "value": 13.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 13.0,
+      "si_unit": null,
+      "context": "ing from\nclinical narratives. plos one, 13(2):e0192360, 2018.\nghassemi, m., nauman",
+      "span": [
+        37626,
+        37628
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": " from\nclinical narratives. plos one, 13(2):e0192360, 2018.\nghassemi, m., naumann,",
+      "span": [
+        37629,
+        37630
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "0192360, ",
+      "value": 192360.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 192360.0,
+      "si_unit": null,
+      "context": "m\nclinical narratives. plos one, 13(2):e0192360, 2018.\nghassemi, m., naumann, t., doshi-v",
+      "span": [
+        37633,
+        37642
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "l narratives. plos one, 13(2):e0192360, 2018.\nghassemi, m., naumann, t., doshi-velez",
+      "span": [
+        37642,
+        37646
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "75",
+      "value": 75.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 75.0,
+      "si_unit": null,
+      "context": "lling in intensive care\nunits. kdd, pp. 75–84, 2014.\nghassemi, m., naumann, t., sc",
+      "span": [
+        37834,
+        37836
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "84, ",
+      "value": 84.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 84.0,
+      "si_unit": null,
+      "context": "ng in intensive care\nunits. kdd, pp. 75–84, 2014.\nghassemi, m., naumann, t., schulam",
+      "span": [
+        37837,
+        37841
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2014",
+      "value": 2014.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2014.0,
+      "si_unit": null,
+      "context": "n intensive care\nunits. kdd, pp. 75–84, 2014.\nghassemi, m., naumann, t., schulam, p.",
+      "span": [
+        37841,
+        37845
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1806.00388",
+      "value": 1806.00388,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1806.00388,
+      "si_unit": null,
+      "context": "ng for\nhealthcare. arxiv preprint arxiv:1806.00388, 2018.\ngirkar, u. m., uchimido, r., leh",
+      "span": [
+        37989,
+        37999
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "hcare. arxiv preprint arxiv:1806.00388, 2018.\ngirkar, u. m., uchimido, r., lehman, l",
+      "span": [
+        38001,
+        38005
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4H",
+      "value": 4.0,
+      "kind": "time",
+      "unit": "h",
+      "value_si": 14400.0,
+      "si_unit": "second",
+      "context": "ability. machine learning\nfor health (ml4h) workshop at neurips 2018, 2018.\ngoodfe",
+      "span": [
+        38254,
+        38256
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018, ",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "g\nfor health (ml4h) workshop at neurips 2018, 2018.\ngoodfellow, i., bengio, y., and co",
+      "span": [
+        38278,
+        38284
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "health (ml4h) workshop at neurips 2018, 2018.\ngoodfellow, i., bengio, y., and courvi",
+      "span": [
+        38284,
+        38288
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "courville, a. deep learning.\nmit press, 2016.\ngulshan, v., peng, l., coram, m., stum",
+      "span": [
+        38362,
+        38366
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "316\n",
+      "value": 316.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 316.0,
+      "si_unit": null,
+      "context": "hy in retinal fundus photographs. jama, 316\n(22):2402–2410, 2016.\nhenry, j., pylypch",
+      "span": [
+        38638,
+        38642
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "22",
+      "value": 22.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 22.0,
+      "si_unit": null,
+      "context": " retinal fundus photographs. jama, 316\n(22):2402–2410, 2016.\nhenry, j., pylypchuk,",
+      "span": [
+        38643,
+        38645
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2402",
+      "value": 2402.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2402.0,
+      "si_unit": null,
+      "context": "inal fundus photographs. jama, 316\n(22):2402–2410, 2016.\nhenry, j., pylypchuk, y., s",
+      "span": [
+        38647,
+        38651
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2410, ",
+      "value": 2410.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2410.0,
+      "si_unit": null,
+      "context": "fundus photographs. jama, 316\n(22):2402–2410, 2016.\nhenry, j., pylypchuk, y., searcy, ",
+      "span": [
+        38652,
+        38658
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": " photographs. jama, 316\n(22):2402–2410, 2016.\nhenry, j., pylypchuk, y., searcy, t., ",
+      "span": [
+        38658,
+        38662
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2008",
+      "value": 2008.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2008.0,
+      "si_unit": null,
+      "context": "ng us non-federal\nacute care hospitals: 2008-2015. onc data brief, 35:1–9,\n2016.\nhin",
+      "span": [
+        38804,
+        38808
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-2015",
+      "value": -2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -2015.0,
+      "si_unit": null,
+      "context": "s non-federal\nacute care hospitals: 2008-2015. onc data brief, 35:1–9,\n2016.\nhinton, ",
+      "span": [
+        38808,
+        38813
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "35",
+      "value": 35.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 35.0,
+      "si_unit": null,
+      "context": "e hospitals: 2008-2015. onc data brief, 35:1–9,\n2016.\nhinton, g. e. and salakhutdi",
+      "span": [
+        38831,
+        38833
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ospitals: 2008-2015. onc data brief, 35:1–9,\n2016.\nhinton, g. e. and salakhutdino",
+      "span": [
+        38834,
+        38835
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9,\n",
+      "value": 9.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 9.0,
+      "si_unit": null,
+      "context": "pitals: 2008-2015. onc data brief, 35:1–9,\n2016.\nhinton, g. e. and salakhutdinov, r",
+      "span": [
+        38836,
+        38839
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "als: 2008-2015. onc data brief, 35:1–9,\n2016.\nhinton, g. e. and salakhutdinov, r. r.",
+      "span": [
+        38839,
+        38843
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "313\n",
+      "value": 313.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 313.0,
+      "si_unit": null,
+      "context": " of data with neural networks. science, 313\n(5786):504–507, 2006.\nhoerl, a. e. and k",
+      "span": [
+        38953,
+        38957
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5786",
+      "value": 5786.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5786.0,
+      "si_unit": null,
+      "context": "ata with neural networks. science, 313\n(5786):504–507, 2006.\nhoerl, a. e. and kennar",
+      "span": [
+        38958,
+        38962
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "504",
+      "value": 504.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 504.0,
+      "si_unit": null,
+      "context": "th neural networks. science, 313\n(5786):504–507, 2006.\nhoerl, a. e. and kennard, r.",
+      "span": [
+        38964,
+        38967
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "507, ",
+      "value": 507.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 507.0,
+      "si_unit": null,
+      "context": "eural networks. science, 313\n(5786):504–507, 2006.\nhoerl, a. e. and kennard, r. w. ri",
+      "span": [
+        38968,
+        38973
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2006",
+      "value": 2006.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2006.0,
+      "si_unit": null,
+      "context": " networks. science, 313\n(5786):504–507, 2006.\nhoerl, a. e. and kennard, r. w. ridge ",
+      "span": [
+        38973,
+        38977
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "12",
+      "value": 12.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 12.0,
+      "si_unit": null,
+      "context": " nonorthogonal problems. technometrics,\n12(1):55–67, 1970.\nhorng, s., sontag, d. a",
+      "span": [
+        39090,
+        39092
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "northogonal problems. technometrics,\n12(1):55–67, 1970.\nhorng, s., sontag, d. a.,",
+      "span": [
+        39093,
+        39094
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "55",
+      "value": 55.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 55.0,
+      "si_unit": null,
+      "context": "thogonal problems. technometrics,\n12(1):55–67, 1970.\nhorng, s., sontag, d. a., hal",
+      "span": [
+        39096,
+        39098
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "67, ",
+      "value": 67.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 67.0,
+      "si_unit": null,
+      "context": "gonal problems. technometrics,\n12(1):55–67, 1970.\nhorng, s., sontag, d. a., halpern,",
+      "span": [
+        39099,
+        39103
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1970",
+      "value": 1970.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1970.0,
+      "si_unit": null,
+      "context": "l problems. technometrics,\n12(1):55–67, 1970.\nhorng, s., sontag, d. a., halpern, y.,",
+      "span": [
+        39103,
+        39107
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "12",
+      "value": 12.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 12.0,
+      "si_unit": null,
+      "context": "riage using machine learning. plos one, 12(4):\ne0174708, 2017.\nhsu, t.-m. h., weng",
+      "span": [
+        39332,
+        39334
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": "ge using machine learning. plos one, 12(4):\ne0174708, 2017.\nhsu, t.-m. h., weng, ",
+      "span": [
+        39335,
+        39336
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "0174708, ",
+      "value": 174708.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 174708.0,
+      "si_unit": null,
+      "context": "ing machine learning. plos one, 12(4):\ne0174708, 2017.\nhsu, t.-m. h., weng, w.-h., boag, ",
+      "span": [
+        39340,
+        39349
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "ne learning. plos one, 12(4):\ne0174708, 2017.\nhsu, t.-m. h., weng, w.-h., boag, w., ",
+      "span": [
+        39349,
+        39353
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4H",
+      "value": 4.0,
+      "kind": "time",
+      "unit": "h",
+      "value_si": 14400.0,
+      "si_unit": "second",
+      "context": "reports. machine\nlearning for health (ml4h) workshop at neurips 2018,\n2018.\njollif",
+      "span": [
+        39540,
+        39542
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018,\n",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "g for health (ml4h) workshop at neurips 2018,\n2018.\njolliffe, i. principal component a",
+      "span": [
+        39564,
+        39570
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "health (ml4h) workshop at neurips 2018,\n2018.\njolliffe, i. principal component analy",
+      "span": [
+        39570,
+        39574
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2011",
+      "value": 2011.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2011.0,
+      "si_unit": null,
+      "context": "principal component analysis. springer, 2011.\nkomorowski, m., celi, l. a., badawi, o",
+      "span": [
+        39629,
+        39633
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "24",
+      "value": 24.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 24.0,
+      "si_unit": null,
+      "context": "sis in intensive\ncare. nature medicine, 24(11):1716, 2018.\nkrizhevsky, a., sutskev",
+      "span": [
+        39829,
+        39831
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "11",
+      "value": 11.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 11.0,
+      "si_unit": null,
+      "context": " in intensive\ncare. nature medicine, 24(11):1716, 2018.\nkrizhevsky, a., sutskever,",
+      "span": [
+        39832,
+        39834
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1716, ",
+      "value": 1716.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1716.0,
+      "si_unit": null,
+      "context": "intensive\ncare. nature medicine, 24(11):1716, 2018.\nkrizhevsky, a., sutskever, i., and",
+      "span": [
+        39836,
+        39842
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "ive\ncare. nature medicine, 24(11):1716, 2018.\nkrizhevsky, a., sutskever, i., and hin",
+      "span": [
+        39842,
+        39846
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2012",
+      "value": 2012.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2012.0,
+      "si_unit": null,
+      "context": "ep convolutional neural networks.\nnips, 2012.\nlehman, e. p., krishnan, r. g., zhao, ",
+      "span": [
+        39967,
+        39971
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "hythmia alarms from ecg dynamics.\nmlhc, 2018.\nliu, g., hsu, t.-m. h., mcdermott, m.,",
+      "span": [
+        40140,
+        40144
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "te chest x-ray report generation. mlhc, 2019.\nliu, y., gadepalli, k., norouzi, m., d",
+      "span": [
+        40299,
+        40303
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1703.02442",
+      "value": 1703.02442,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1703.02442,
+      "si_unit": null,
+      "context": " pathology images.\narxiv preprint\narxiv:1703.02442, 2017.\nmaaten, l. v. d. and hinton, g. ",
+      "span": [
+        40533,
+        40543
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "mages.\narxiv preprint\narxiv:1703.02442, 2017.\nmaaten, l. v. d. and hinton, g. visual",
+      "span": [
+        40545,
+        40549
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9",
+      "value": 9.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 9.0,
+      "si_unit": null,
+      "context": " g. visualizing data using t-sne.\njmlr, 9(nov):2579–2605, 2008.\nnagpal, k., foote",
+      "span": [
+        40619,
+        40620
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2579",
+      "value": 2579.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2579.0,
+      "si_unit": null,
+      "context": "ualizing data using t-sne.\njmlr, 9(nov):2579–2605, 2008.\nnagpal, k., foote, d., liu,",
+      "span": [
+        40626,
+        40630
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2605, ",
+      "value": 2605.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2605.0,
+      "si_unit": null,
+      "context": "ing data using t-sne.\njmlr, 9(nov):2579–2605, 2008.\nnagpal, k., foote, d., liu, y., wu",
+      "span": [
+        40631,
+        40637
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2008",
+      "value": 2008.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2008.0,
+      "si_unit": null,
+      "context": "ta using t-sne.\njmlr, 9(nov):2579–2605, 2008.\nnagpal, k., foote, d., liu, y., wulczy",
+      "span": [
+        40637,
+        40641
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1811.06497",
+      "value": 1811.06497,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1811.06497,
+      "si_unit": null,
+      "context": "f prostate\ncancer. arxiv preprint arxiv:1811.06497, 2018.\npivovarov, r., perotte, a. j., g",
+      "span": [
+        40905,
+        40915
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "ancer. arxiv preprint arxiv:1811.06497, 2018.\npivovarov, r., perotte, a. j., grave, ",
+      "span": [
+        40917,
+        40921
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "58",
+      "value": 58.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 58.0,
+      "si_unit": null,
+      "context": "types from heterogeneous ehr data. jbi, 58:156–165,\n2015.\nraghu, a., komorowski, m",
+      "span": [
+        41085,
+        41087
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "156",
+      "value": 156.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 156.0,
+      "si_unit": null,
+      "context": "es from heterogeneous ehr data. jbi, 58:156–165,\n2015.\nraghu, a., komorowski, m., c",
+      "span": [
+        41088,
+        41091
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "165,\n",
+      "value": 165.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 165.0,
+      "si_unit": null,
+      "context": "rom heterogeneous ehr data. jbi, 58:156–165,\n2015.\nraghu, a., komorowski, m., celi, l",
+      "span": [
+        41092,
+        41097
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "eterogeneous ehr data. jbi, 58:156–165,\n2015.\nraghu, a., komorowski, m., celi, l. a.",
+      "span": [
+        41097,
+        41101
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": " reinforcement learning approach.\nmlhc, 2017.\nrumelhart, d. e., hinton, g. e., willi",
+      "span": [
+        41280,
+        41284
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "propagating errors. cognitive\nmodeling, 5(3):1, 1988.\nsilver, d., huang, a., madd",
+      "span": [
+        41418,
+        41419
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "opagating errors. cognitive\nmodeling, 5(3):1, 1988.\nsilver, d., huang, a., maddis",
+      "span": [
+        41420,
+        41421
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1, ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "gating errors. cognitive\nmodeling, 5(3):1, 1988.\nsilver, d., huang, a., maddison, c",
+      "span": [
+        41423,
+        41426
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1988",
+      "value": 1988.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1988.0,
+      "si_unit": null,
+      "context": "ing errors. cognitive\nmodeling, 5(3):1, 1988.\nsilver, d., huang, a., maddison, c. j.",
+      "span": [
+        41426,
+        41430
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "529",
+      "value": 529.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 529.0,
+      "si_unit": null,
+      "context": "eural networks and tree search.\nnature, 529(7587):484, 2016.\ntibshirani, r. regress",
+      "span": [
+        41667,
+        41670
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "7587",
+      "value": 7587.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 7587.0,
+      "si_unit": null,
+      "context": "l networks and tree search.\nnature, 529(7587):484, 2016.\ntibshirani, r. regression s",
+      "span": [
+        41671,
+        41675
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "484, ",
+      "value": 484.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 484.0,
+      "si_unit": null,
+      "context": "orks and tree search.\nnature, 529(7587):484, 2016.\ntibshirani, r. regression shrinkag",
+      "span": [
+        41677,
+        41682
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "and tree search.\nnature, 529(7587):484, 2016.\ntibshirani, r. regression shrinkage an",
+      "span": [
+        41682,
+        41686
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "58",
+      "value": 58.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 58.0,
+      "si_unit": null,
+      "context": "cal society: series b\n(methodological), 58(1):267–288, 1996.\nweng, w.-h. and szolo",
+      "span": [
+        41822,
+        41824
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": " society: series b\n(methodological), 58(1):267–288, 1996.\nweng, w.-h. and szolovi",
+      "span": [
+        41825,
+        41826
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "267",
+      "value": 267.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 267.0,
+      "si_unit": null,
+      "context": "ciety: series b\n(methodological), 58(1):267–288, 1996.\nweng, w.-h. and szolovits, p",
+      "span": [
+        41828,
+        41831
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "288, ",
+      "value": 288.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 288.0,
+      "si_unit": null,
+      "context": "y: series b\n(methodological), 58(1):267–288, 1996.\nweng, w.-h. and szolovits, p. mapp",
+      "span": [
+        41832,
+        41837
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1996",
+      "value": 1996.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1996.0,
+      "si_unit": null,
+      "context": "ries b\n(methodological), 58(1):267–288, 1996.\nweng, w.-h. and szolovits, p. mapping ",
+      "span": [
+        41837,
+        41841
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018 KDD",
+      "value": 2018.0,
+      "kind": "other",
+      "unit": "kdd",
+      "value_si": 2018.0,
+      "si_unit": "kdd",
+      "context": "mer languages with embedding\nalignment. 2018 kdd workshop on machine learning\nfor medici",
+      "span": [
+        41967,
+        41975
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "e learning\nfor medicine and healthcare, 2018.\n\nmachine learning for clinical predict",
+      "span": [
+        42034,
+        42038
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4H",
+      "value": 4.0,
+      "kind": "time",
+      "unit": "h",
+      "value_si": 14400.0,
+      "si_unit": "second",
+      "context": "ients. machine learn-\ning for health (ml4h) workshop at nips 2017, 2017a.\nweng, w.",
+      "span": [
+        42280,
+        42282
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017, ",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "\ning for health (ml4h) workshop at nips 2017, 2017a.\nweng, w.-h., wagholikar, k. b., m",
+      "span": [
+        42301,
+        42307
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017a",
+      "value": 2017.0,
+      "kind": "time",
+      "unit": "a",
+      "value_si": 63651679200.0,
+      "si_unit": "second",
+      "context": "or health (ml4h) workshop at nips 2017, 2017a.\nweng, w.-h., wagholikar, k. b., mccray",
+      "span": [
+        42307,
+        42312
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "17",
+      "value": 17.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 17.0,
+      "si_unit": null,
+      "context": "edical informatics\nand decision making, 17(1):155, 2017b.\nweng, w.-h., cai, y., li",
+      "span": [
+        42557,
+        42559
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "cal informatics\nand decision making, 17(1):155, 2017b.\nweng, w.-h., cai, y., lin,",
+      "span": [
+        42560,
+        42561
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "155, ",
+      "value": 155.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 155.0,
+      "si_unit": null,
+      "context": " informatics\nand decision making, 17(1):155, 2017b.\nweng, w.-h., cai, y., lin, a., ta",
+      "span": [
+        42563,
+        42568
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017b",
+      "value": 2017.0,
+      "kind": "other",
+      "unit": "b",
+      "value_si": 2017.0,
+      "si_unit": "b",
+      "context": "rmatics\nand decision making, 17(1):155, 2017b.\nweng, w.-h., cai, y., lin, a., tan, f.",
+      "span": [
+        42568,
+        42573
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1909.07846",
+      "value": 1909.07846,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1909.07846,
+      "si_unit": null,
+      "context": "tadata prediction. arxiv preprint\narxiv:1909.07846, 2019a.\nweng, w.-h., chung, y.-a., and ",
+      "span": [
+        42744,
+        42754
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019a",
+      "value": 2019.0,
+      "kind": "time",
+      "unit": "a",
+      "value_si": 63714794400.0,
+      "si_unit": "second",
+      "context": "ction. arxiv preprint\narxiv:1909.07846, 2019a.\nweng, w.-h., chung, y.-a., and szolovi",
+      "span": [
+        42756,
+        42761
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019b",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "b",
+      "value_si": 2019.0,
+      "si_unit": "b",
+      "context": "sed\nclinical language translation. kdd, 2019b.\nwu, y., schuster, m., chen, z., le, q.",
+      "span": [
+        42857,
+        42862
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1609.08144",
+      "value": 1609.08144,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1609.08144,
+      "si_unit": null,
+      "context": "chine translation.\narxiv preprint arxiv:1609.08144, 2016.\nxiao, c., choi, e., and sun, j. ",
+      "span": [
+        43106,
+        43116
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "ation.\narxiv preprint arxiv:1609.08144, 2016.\nxiao, c., choi, e., and sun, j. opport",
+      "span": [
+        43118,
+        43122
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "25",
+      "value": 25.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 25.0,
+      "si_unit": null,
+      "context": "cords data: a systematic review. jamia,\n25(10):1419–1428, 2018.\nyala, a., barzilay",
+      "span": [
+        43290,
+        43292
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10",
+      "value": 10.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.0,
+      "si_unit": null,
+      "context": "ds data: a systematic review. jamia,\n25(10):1419–1428, 2018.\nyala, a., barzilay, r",
+      "span": [
+        43293,
+        43295
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1419",
+      "value": 1419.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1419.0,
+      "si_unit": null,
+      "context": "ata: a systematic review. jamia,\n25(10):1419–1428, 2018.\nyala, a., barzilay, r., sal",
+      "span": [
+        43297,
+        43301
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1428, ",
+      "value": 1428.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1428.0,
+      "si_unit": null,
+      "context": "a systematic review. jamia,\n25(10):1419–1428, 2018.\nyala, a., barzilay, r., salama, l.",
+      "span": [
+        43302,
+        43308
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "ematic review. jamia,\n25(10):1419–1428, 2018.\nyala, a., barzilay, r., salama, l., gr",
+      "span": [
+        43308,
+        43312
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "161",
+      "value": 161.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 161.0,
+      "si_unit": null,
+      "context": ". breast cancer research and\ntreatment, 161(2):203–211, 2017.\nzou, h. and hastie, t",
+      "span": [
+        43554,
+        43557
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "east cancer research and\ntreatment, 161(2):203–211, 2017.\nzou, h. and hastie, t. ",
+      "span": [
+        43558,
+        43559
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "203",
+      "value": 203.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 203.0,
+      "si_unit": null,
+      "context": "t cancer research and\ntreatment, 161(2):203–211, 2017.\nzou, h. and hastie, t. elast",
+      "span": [
+        43561,
+        43564
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "211, ",
+      "value": 211.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 211.0,
+      "si_unit": null,
+      "context": "ncer research and\ntreatment, 161(2):203–211, 2017.\nzou, h. and hastie, t. elasticnet:",
+      "span": [
+        43565,
+        43570
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "research and\ntreatment, 161(2):203–211, 2017.\nzou, h. and hastie, t. elasticnet: ela",
+      "span": [
+        43570,
+        43574
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2005",
+      "value": 2005.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2005.0,
+      "si_unit": null,
+      "context": " variable selection. r package version, 2005.",
+      "span": [
+        43681,
+        43685
+      ],
+      "metric_labels": []
+    }
+  ],
+  "issues": {
+    "hard_checks": [
+      {
+        "type": "range_error_percent",
+        "message": "Percentage -30.0% out of 0–100 bounds",
+        "mention": "-30%"
+      },
+      {
+        "type": "inconsistent_physical_quantity",
+        "message": "Values differ by ≥100× for ('time', 'second')",
+        "metric": "('time', 'second')",
+        "values": [
+          2.012e-15,
+          63651679200.0,
+          63714794400.0,
+          172800.0,
+          259200.0,
+          63714794400.0,
+          63714794400.0,
+          63714794400.0,
+          14400.0,
+          14400.0,
+          14400.0,
+          14400.0,
+          63651679200.0,
+          63714794400.0
+        ]
+      }
+    ],
+    "statistical_checks": [
+      {
+        "type": "statistical_outlier",
+        "message": "Value 2019.0 machin is a |z|≥3.0 outlier vs corpus",
+        "bucket": "other::machin",
+        "zscore": 3.158617485743223,
+        "mean": 195.11818181818182,
+        "std": 577.4304189773263,
+        "mention": "2019\n\nMachin"
+      }
+    ]
+  },
+  "corpus_stats_available_for": [
+    "length::meter",
+    "memory::byte",
+    "other::acm",
+    "other::akram",
+    "other::algori",
+    "other::and",
+    "other::are",
+    "other::articl",
+    "other::b",
+    "other::be",
+    "other::biblio",
+    "other::bo",
+    "other::but",
+    "other::by",
+    "other::c",
+    "other::can",
+    "other::chapte",
+    "other::chen",
+    "other::conclu",
+    "other::data",
+    "other::datase",
+    "other::doi",
+    "other::double",
+    "other::e",
+    "other::end",
+    "other::epochs",
+    "other::exerci",
+    "other::f",
+    "other::fig",
+    "other::figure",
+    "other::for",
+    "other::from",
+    "other::g",
+    "other::gt",
+    "other::https",
+    "other::i",
+    "other::ieee",
+    "other::if",
+    "other::intern",
+    "other::introd",
+    "other::is",
+    "other::it",
+    "other::j",
+    "other::k",
+    "other::l",
+    "other::learni",
+    "other::log",
+    "other::machin",
+    "other::maximu",
+    "other::model",
+    "other::n",
+    "other::no",
+    "other::norm",
+    "other::of",
+    "other::on",
+    "other::online",
+    "other::or",
+    "other::p",
+    "other::pages",
+    "other::presen",
+    "other::pricin",
+    "other::procee",
+    "other::r",
+    "other::regula",
+    "other::shows",
+    "other::spectr",
+    "other::st",
+    "other::summar",
+    "other::suppor",
+    "other::t",
+    "other::table",
+    "other::that",
+    "other::the",
+    "other::then",
+    "other::to",
+    "other::tr",
+    "other::u",
+    "other::url",
+    "other::v",
+    "other::w",
+    "other::we",
+    "other::when",
+    "other::where",
+    "other::which",
+    "other::with",
+    "other::x",
+    "other::y",
+    "other::z",
+    "other::zicun",
+    "percent::%",
+    "scalar::None",
+    "time::second"
+  ]
+}

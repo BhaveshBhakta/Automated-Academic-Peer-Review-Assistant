@@ -1,0 +1,30 @@
+{
+  "paper": "data/parsed_text/paper_4.txt",
+  "references": [
+    "data/ref_corpus/ref_1.txt",
+    "data/ref_corpus/ref_2.txt"
+  ],
+  "exact_overlap": [
+    {
+      "chunk": "In this situation,\nthe trained model will not be able to be applied to other\ncases \u2022 It is important to prevent using any data in the dev set\nor testing set for model training Test data leakage, i having part of testing data while training phase, may\ncause the over\ufb01tting of the model to your test data and\nerroneously gives you a high performance but a bad\nmodel There is no consensus on the relative proportions of the\nthree subsets",
+      "score": 0.84110482767211,
+      "type": "exact_overlap"
+    }
+  ],
+  "paraphrase_overlap": [
+    {
+      "chunk": "We\nbegin with a quick introduction to the concepts of machine\nlearning, and outline some of the most common machine\nlearning algorithms Next, we demonstrate how to apply\nthe algorithms with appropriate toolkits to conduct machine\nlearning experiments for clinical prediction tasks This chapter is composed of \ufb01ve sections First, we will\nexplain why machine learning techniques are helpful for\nresearchers in solving clinical prediction problems (section\n1) Understanding the motivations behind machine learn-\ning approaches in healthcare are essential, since precision\nand accuracy are often critical in healthcare problems, and\neverything from diagnostic decisions to predictive clinical\nanalytics could dramatically bene\ufb01t from data-based pro-\ncesses with improved ef\ufb01ciency and reliability",
+      "score": 0.7639697790145874,
+      "type": "paraphrase_overlap"
+    },
+    {
+      "chunk": "In this situation,\nthe trained model will not be able to be applied to other\ncases \u2022 It is important to prevent using any data in the dev set\nor testing set for model training Test data leakage, i having part of testing data while training phase, may\ncause the over\ufb01tting of the model to your test data and\nerroneously gives you a high performance but a bad\nmodel There is no consensus on the relative proportions of the\nthree subsets",
+      "score": 0.9079935550689697,
+      "type": "paraphrase_overlap"
+    }
+  ],
+  "summary": {
+    "exact_overlap_count": 1,
+    "paraphrase_overlap_count": 2
+  }
+}

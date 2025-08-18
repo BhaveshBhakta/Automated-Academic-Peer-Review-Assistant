@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 try:
-    from pdf_parse import extract_text_from_pdf as extract_text_from_pdf_fn
+    from utils.pdf_parse import extract_text_from_pdf as extract_text_from_pdf_fn
 except Exception:
     extract_text_from_pdf_fn = None
 

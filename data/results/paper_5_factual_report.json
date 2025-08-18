@@ -1,0 +1,4311 @@
+{
+  "file": "data/parsed_text/paper_5.txt",
+  "num_mentions": 285,
+  "mentions": [
+    {
+      "raw": "1 Lakshm",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "lakshm",
+      "value_si": 1.0,
+      "si_unit": "lakshm",
+      "context": ":\nbenefits and trade-offs\nsamiyuru menik1 lakshmish ramaswamy1\nabstract\nmachine learning",
+      "span": [
+        93,
+        101
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "1\nABSTRA",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "abstra",
+      "value_si": 1.0,
+      "si_unit": "abstra",
+      "context": "offs\nsamiyuru menik1 lakshmish ramaswamy1\nabstract\nmachine learning technologies have de",
+      "span": [
+        114,
+        122
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "1\nINTROD",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "introd",
+      "value_si": 1.0,
+      "si_unit": "introd",
+      "context": "chine learning solutions do not permit.\n1\nintroduction\nmachine learning (ml) has gained ",
+      "span": [
+        1376,
+        1384
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1School",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "school",
+      "value_si": 1.0,
+      "si_unit": "school",
+      "context": "eir workﬂows. making cutting edge tech-\n1school of computing, university of georgia, at",
+      "span": [
+        2787,
+        2794
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "19812",
+      "value": 19812.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 19812.0,
+      "si_unit": null,
+      "context": "s.\ncorrespondence to:\nsamiyuru menik\n<sm19812@uga.edu>\nnologies accessible to a wider",
+      "span": [
+        2903,
+        2908
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": " learning technologies more accessible, 1/\ncutting edge technologies should be ac",
+      "span": [
+        4027,
+        4028
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "ce through means that are easy to grasp 2/ it should\nbe possible to implement cus",
+      "span": [
+        4134,
+        4135
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2301.09753v",
+      "value": 2301.09753,
+      "kind": "other",
+      "unit": "v",
+      "value_si": 2301.09753,
+      "si_unit": "v",
+      "context": "lack boxes that produce the right\narxiv:2301.09753v1  [cs.lg]  23 jan 2023\n\ntowards modular",
+      "span": [
+        4621,
+        4632
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1  ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "that produce the right\narxiv:2301.09753v1  [cs.lg]  23 jan 2023\n\ntowards modular ma",
+      "span": [
+        4632,
+        4635
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "23 Jan",
+      "value": 23.0,
+      "kind": "other",
+      "unit": "jan",
+      "value_si": 23.0,
+      "si_unit": "jan",
+      "context": " the right\narxiv:2301.09753v1  [cs.lg]  23 jan 2023\n\ntowards modular machine learning ",
+      "span": [
+        4644,
+        4650
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2023\n\nToward",
+      "value": 2023.0,
+      "kind": "other",
+      "unit": "toward",
+      "value_si": 2023.0,
+      "si_unit": "toward",
+      "context": "ght\narxiv:2301.09753v1  [cs.lg]  23 jan 2023\n\ntowards modular machine learning solution deve",
+      "span": [
+        4651,
+        4663
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 shows",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "shows",
+      "value_si": 1.0,
+      "si_unit": "shows",
+      "context": "eering domains already experience.\nfig. 1 shows a visual representation of monolithic m",
+      "span": [
+        6774,
+        6781
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ithic and modular solution\ndevelopment. 1/ exploring how the two approaches will ",
+      "span": [
+        7779,
+        7780
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "ilability and cost of data acquisition.\n2/ study the differences of solution deve",
+      "span": [
+        7886,
+        7887
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "thic approach and the modular approach. 3/\ntrade offs between model performance i",
+      "span": [
+        7998,
+        7999
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": "nce in terms of accuracy\nand efﬁciency. 4/ maintainability of the solutions devel",
+      "span": [
+        8074,
+        8075
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "2\nMODULA",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "modula",
+      "value_si": 2.0,
+      "si_unit": "modula",
+      "context": "ions developed\nwith the two approaches.\n2\nmodularity in machine learning\nmodularity is a",
+      "span": [
+        8145,
+        8153
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ing end to end\nmonolithic models\nfigure 1. visualization of monolithic ml solutio",
+      "span": [
+        10895,
+        10896
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3\nCASE",
+      "value": 3.0,
+      "kind": "other",
+      "unit": "case",
+      "value_si": 3.0,
+      "si_unit": "case",
+      "context": "ion development: beneﬁts and trade-offs\n3\ncase studies\nas discussed before, we will be",
+      "span": [
+        14585,
+        14591
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.1\nText",
+      "value": 3.1,
+      "kind": "other",
+      "unit": "text",
+      "value_si": 3.1,
+      "si_unit": "text",
+      "context": "infrared (nir) ﬁeld prediction problem.\n3.1\ntext based sentiment analysis\ntext based sen",
+      "span": [
+        14955,
+        14963
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "els are monolithic in nature\n(tan & le, 2019; devlin et al., 2019). monolithic deep ",
+      "span": [
+        15652,
+        15656
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": " nature\n(tan & le, 2019; devlin et al., 2019). monolithic deep learn-\ning solutions ",
+      "span": [
+        15673,
+        15677
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": " sentiment analysis\nmodel (wolf et al., 2019). the model is already trained\nwith 150",
+      "span": [
+        16982,
+        16986
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "150k",
+      "value": 150.0,
+      "kind": "other",
+      "unit": "k",
+      "value_si": 150.0,
+      "si_unit": "k",
+      "context": "019). the model is already trained\nwith 150k english, 80k dutch, 137k german, 140k f",
+      "span": [
+        17023,
+        17027
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "80k",
+      "value": 80.0,
+      "kind": "other",
+      "unit": "k",
+      "value_si": 80.0,
+      "si_unit": "k",
+      "context": "l is already trained\nwith 150k english, 80k dutch, 137k german, 140k french,\n72k it",
+      "span": [
+        17037,
+        17040
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "137k",
+      "value": 137.0,
+      "kind": "other",
+      "unit": "k",
+      "value_si": 137.0,
+      "si_unit": "k",
+      "context": "y trained\nwith 150k english, 80k dutch, 137k german, 140k french,\n72k italian and 50",
+      "span": [
+        17048,
+        17052
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "140k",
+      "value": 140.0,
+      "kind": "other",
+      "unit": "k",
+      "value_si": 140.0,
+      "si_unit": "k",
+      "context": "h 150k english, 80k dutch, 137k german, 140k french,\n72k italian and 50k spanish sen",
+      "span": [
+        17061,
+        17065
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "72k",
+      "value": 72.0,
+      "kind": "other",
+      "unit": "k",
+      "value_si": 72.0,
+      "si_unit": "k",
+      "context": "h, 80k dutch, 137k german, 140k french,\n72k italian and 50k spanish sentiment analy",
+      "span": [
+        17074,
+        17077
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "50k",
+      "value": 50.0,
+      "kind": "other",
+      "unit": "k",
+      "value_si": 50.0,
+      "si_unit": "k",
+      "context": "7k german, 140k french,\n72k italian and 50k spanish sentiment analysis data points.",
+      "span": [
+        17090,
+        17093
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "1\nto",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "to",
+      "value_si": 1.0,
+      "si_unit": "to",
+      "context": "ts the sentiment of the input text in a 1\nto 5 scale where 1 is the least positive a",
+      "span": [
+        17190,
+        17194
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "5 scale",
+      "value": 5.0,
+      "kind": "other",
+      "unit": "scale",
+      "value_si": 5.0,
+      "si_unit": "scale",
+      "context": "e sentiment of the input text in a 1\nto 5 scale where 1 is the least positive and 5 is ",
+      "span": [
+        17195,
+        17202
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "1 is",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "is",
+      "value_si": 1.0,
+      "si_unit": "is",
+      "context": " the input text in a 1\nto 5 scale where 1 is the least positive and 5 is the most\npo",
+      "span": [
+        17209,
+        17213
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5 is",
+      "value": 5.0,
+      "kind": "other",
+      "unit": "is",
+      "value_si": 5.0,
+      "si_unit": "is",
+      "context": "scale where 1 is the least positive and 5 is the most\npositive sentiment. the ﬁrst s",
+      "span": [
+        17237,
+        17241
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "english\ntranslation model (wolf et al., 2019; tiedemann, 2020). the\nsecond stage use",
+      "span": [
+        17403,
+        17407
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": "on model (wolf et al., 2019; tiedemann, 2020). the\nsecond stage uses the same sentim",
+      "span": [
+        17420,
+        17424
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "solution were distilled (hinton\net al., 2015) into a smaller model to see the perfor",
+      "span": [
+        17612,
+        17616
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "500 words",
+      "value": 500.0,
+      "kind": "other",
+      "unit": "words",
+      "value_si": 500.0,
+      "si_unit": "words",
+      "context": "ls are truncated to a\nmaximum length of 500 words and padded appropriately if a\nsequence ",
+      "span": [
+        18571,
+        18580
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "llation student\nnetwork is shown in ﬁg. 2. the distillation is done by con-\nfigur",
+      "span": [
+        18699,
+        18700
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "the distillation is done by con-\nfigure 2. architecture of the sentiment analysis",
+      "span": [
+        18742,
+        18743
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "3 shows",
+      "value": 3.0,
+      "kind": "other",
+      "unit": "shows",
+      "value_si": 3.0,
+      "si_unit": "shows",
+      "context": "eled\ntext from the input language.\nfig. 3 shows a diagram of the monolithic and the mod",
+      "span": [
+        19192,
+        19199
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": "review sentiment dataset (keung et al.,\n2020). this contains 30000 sentiment analysi",
+      "span": [
+        19490,
+        19494
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "30000 sentim",
+      "value": 30000.0,
+      "kind": "other",
+      "unit": "sentim",
+      "value_si": 30000.0,
+      "si_unit": "sentim",
+      "context": "set (keung et al.,\n2020). this contains 30000 sentiment analysis data points.\neach datapoint",
+      "span": [
+        19511,
+        19523
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "1 to",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "to",
+      "value_si": 1.0,
+      "si_unit": "to",
+      "context": "t has spanish product review text and a 1 to 5\nstar rating that correspond to the pr",
+      "span": [
+        19602,
+        19606
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5\nstar",
+      "value": 5.0,
+      "kind": "other",
+      "unit": "star",
+      "value_si": 5.0,
+      "si_unit": "star",
+      "context": " spanish product review text and a 1 to 5\nstar rating that correspond to the product r",
+      "span": [
+        19607,
+        19613
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": "elopment: beneﬁts and trade-offs\nfigure 3. monolithic (left) vs modular (right) s",
+      "span": [
+        19751,
+        19752
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3.2\nSatell",
+      "value": 3.2,
+      "kind": "other",
+      "unit": "satell",
+      "value_si": 3.2,
+      "si_unit": "satell",
+      "context": "els and the models distilled from them.\n3.2\nsatellite image classiﬁcation and nir predicti",
+      "span": [
+        19853,
+        19863
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "n the eu-\nrosat dataset (helber et al., 2019) into 10 classes of land\nuse and land c",
+      "span": [
+        20295,
+        20299
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10 classe",
+      "value": 10.0,
+      "kind": "other",
+      "unit": "classe",
+      "value_si": 10.0,
+      "si_unit": "classe",
+      "context": "osat dataset (helber et al., 2019) into 10 classes of land\nuse and land cover. we will be",
+      "span": [
+        20306,
+        20315
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "13 band",
+      "value": 13.0,
+      "kind": "other",
+      "unit": "band",
+      "value_si": 13.0,
+      "si_unit": "band",
+      "context": "as a red green blue (rgb) version and\na 13 band version. for our experiments, we use th",
+      "span": [
+        21129,
+        21136
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "oposed by kenji et al. (enomoto\net al., 2017). fig. 4 shows a sample of the altered ",
+      "span": [
+        21421,
+        21425
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4 shows",
+      "value": 4.0,
+      "kind": "other",
+      "unit": "shows",
+      "value_si": 4.0,
+      "si_unit": "shows",
+      "context": "nji et al. (enomoto\net al., 2017). fig. 4 shows a sample of the altered eurosat\ndataset",
+      "span": [
+        21433,
+        21440
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": "makes the dataset more challeng-\nfigure 4. eurosat data points before (top row) a",
+      "span": [
+        21535,
+        21536
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "20%",
+      "value": 20.0,
+      "kind": "percent",
+      "unit": "%",
+      "value_si": 20.0,
+      "si_unit": "%",
+      "context": "al appli-\ncation domains, we use only a 20% of the eurosat labeled\ndata to train, v",
+      "span": [
+        21825,
+        21828
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "in\nthe monolithic model is shown in ﬁg. 5. this architecture\ndownsamples the feat",
+      "span": [
+        23015,
+        23016
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "rsions perform the classiﬁcation\nfigure 5. architecture of the satellite image cl",
+      "span": [
+        23402,
+        23403
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "6",
+      "value": 6.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 6.0,
+      "si_unit": null,
+      "context": "twork\narchitecture that is shown in ﬁg. 6. first part of this archi-\ntecture, the",
+      "span": [
+        23611,
+        23612
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "6 downsa",
+      "value": 6.0,
+      "kind": "other",
+      "unit": "downsa",
+      "value_si": 6.0,
+      "si_unit": "downsa",
+      "context": "art, downsamples the feature maps\nusing 6 downsampling blocks. each downsampling block\nh",
+      "span": [
+        23702,
+        23710
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "ted from the u-net (ronneberger et al., 2015)\nand pix2pix (isola et al., 2017) archi",
+      "span": [
+        24964,
+        24968
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2pix",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "pix",
+      "value_si": 2.0,
+      "si_unit": "pix",
+      "context": "u-net (ronneberger et al., 2015)\nand pix2pix (isola et al., 2017) architectures. the",
+      "span": [
+        24977,
+        24981
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "t al., 2015)\nand pix2pix (isola et al., 2017) architectures. the second\nfigure 6. en",
+      "span": [
+        24997,
+        25001
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "6",
+      "value": 6.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 6.0,
+      "si_unit": null,
+      "context": " 2017) architectures. the second\nfigure 6. encoder decoder architecture of the cl",
+      "span": [
+        25036,
+        25037
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5 and",
+      "value": 5.0,
+      "kind": "other",
+      "unit": "and",
+      "value_si": 5.0,
+      "si_unit": "and",
+      "context": " same network architecture shown in ﬁg. 5 and they are\ntrained using the classiﬁcatio",
+      "span": [
+        25863,
+        25868
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "7",
+      "value": 7.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 7.0,
+      "si_unit": null,
+      "context": "he cloud removal module is shown in ﬁg. 7. further, three\ndistilled models are tr",
+      "span": [
+        26098,
+        26099
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "7",
+      "value": 7.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 7.0,
+      "si_unit": null,
+      "context": "t model of the modular (ii) ver-\nfigure 7. output (bottom row) of the cloud remov",
+      "span": [
+        26537,
+        26538
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4\nTRADE",
+      "value": 4.0,
+      "kind": "other",
+      "unit": "trade",
+      "value_si": 4.0,
+      "si_unit": "trade",
+      "context": "ed classiﬁcation data is not available.\n4\ntrade-offs of modularity\nin this section we w",
+      "span": [
+        26752,
+        26759
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4.1\nAccura",
+      "value": 4.1,
+      "kind": "other",
+      "unit": "accura",
+      "value_si": 4.1,
+      "si_unit": "accura",
+      "context": "tween monolithic and modular solutions.\n4.1\naccuracy\nthis section compares the accuracy of",
+      "span": [
+        26946,
+        26956
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "4.1",
+      "value": 4.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.1,
+      "si_unit": null,
+      "context": "satellite image classiﬁcation problems.\n4.1.1\nsentiment analysis\nfor the sentiment ",
+      "span": [
+        27133,
+        27136
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": ".1\nSentim",
+      "value": 0.1,
+      "kind": "other",
+      "unit": "sentim",
+      "value_si": 0.1,
+      "si_unit": "sentim",
+      "context": "ellite image classiﬁcation problems.\n4.1.1\nsentiment analysis\nfor the sentiment analysis ",
+      "span": [
+        27136,
+        27145
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "8",
+      "value": 8.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 8.0,
+      "si_unit": null,
+      "context": "lts of\nthis experiment are shown in ﬁg. 8.\nfigure 8. sentiment analysis accuracy ",
+      "span": [
+        27843,
+        27844
+      ],
+      "metric_labels": [
+        "accuracy",
+        "time"
+      ]
+    },
+    {
+      "raw": "8",
+      "value": 8.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 8.0,
+      "si_unit": null,
+      "context": "s experiment are shown in ﬁg. 8.\nfigure 8. sentiment analysis accuracy of monolit",
+      "span": [
+        27853,
+        27854
+      ],
+      "metric_labels": [
+        "accuracy",
+        "time"
+      ]
+    },
+    {
+      "raw": "8 shows",
+      "value": 8.0,
+      "kind": "other",
+      "unit": "shows",
+      "value_si": 8.0,
+      "si_unit": "shows",
+      "context": "neﬁts and trade-offs\nthe results in ﬁg. 8 shows that the original monolithic\nsolution h",
+      "span": [
+        28054,
+        28061
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 percen",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "percen",
+      "value_si": 1.0,
+      "si_unit": "percen",
+      "context": "ginal monolithic\nsolution has less than 1 percentage point higher accuracy\nover the orig",
+      "span": [
+        28114,
+        28122
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "2 percen",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "percen",
+      "value_si": 2.0,
+      "si_unit": "percen",
+      "context": "om the monolithic solution is less than 2 percentage points\nlower in accuracy compared t",
+      "span": [
+        28250,
+        28258
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "1 percen",
+      "value": 1.0,
+      "kind": "other",
+      "unit": "percen",
+      "value_si": 1.0,
+      "si_unit": "percen",
+      "context": " from the modular solution is\nless than 1 percentage point lower compared to the origina",
+      "span": [
+        28395,
+        28403
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "0.3%",
+      "value": 0.3,
+      "kind": "percent",
+      "unit": "%",
+      "value_si": 0.3,
+      "si_unit": "%",
+      "context": " distilled from the modular\nversion has 0.3% higher accuracy compared to the model\nd",
+      "span": [
+        28512,
+        28516
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "4.1",
+      "value": 4.1,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.1,
+      "si_unit": null,
+      "context": "ms of accuracy\nto monolithic solutions.\n4.1.2\nsatellite image classiﬁcation\nthe tes",
+      "span": [
+        28699,
+        28702
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": ".2\nSatell",
+      "value": 0.2,
+      "kind": "other",
+      "unit": "satell",
+      "value_si": 0.2,
+      "si_unit": "satell",
+      "context": "of accuracy\nto monolithic solutions.\n4.1.2\nsatellite image classiﬁcation\nthe test split o",
+      "span": [
+        28702,
+        28711
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "9",
+      "value": 9.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 9.0,
+      "si_unit": null,
+      "context": "models and the results are shown in ﬁg. 9.\nfigure 9. cloudy satellite image class",
+      "span": [
+        28852,
+        28853
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9",
+      "value": 9.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 9.0,
+      "si_unit": null,
+      "context": " the results are shown in ﬁg. 9.\nfigure 9. cloudy satellite image classiﬁcation a",
+      "span": [
+        28862,
+        28863
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9 shows",
+      "value": 9.0,
+      "kind": "other",
+      "unit": "shows",
+      "value_si": 9.0,
+      "si_unit": "shows",
+      "context": " distilled versions.\nthe results in ﬁg. 9 shows that the modular (i) solution that\nwas ",
+      "span": [
+        29004,
+        29011
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "11.34%",
+      "value": 11.34,
+      "kind": "percent",
+      "unit": "%",
+      "value_si": 11.34,
+      "si_unit": "%",
+      "context": " solutions.\nit has been able to achieve 11.34% accuracy improvement\nover the monolithi",
+      "span": [
+        29194,
+        29200
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "10%",
+      "value": 10.0,
+      "kind": "percent",
+      "unit": "%",
+      "value_si": 10.0,
+      "si_unit": "%",
+      "context": "odular (i) solution was able to achieve 10%\naccuracy improvement over the correspon",
+      "span": [
+        29391,
+        29394
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "4.2\nLatenc",
+      "value": 4.2,
+      "kind": "other",
+      "unit": "latenc",
+      "value_si": 4.2,
+      "si_unit": "latenc",
+      "context": ", cloudy satellite image classiﬁcation.\n4.2\nlatency\nthis section compares the latency of t",
+      "span": [
+        29871,
+        29881
+      ],
+      "metric_labels": [
+        "latency"
+      ]
+    },
+    {
+      "raw": "4.2",
+      "value": 4.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.2,
+      "si_unit": null,
+      "context": "satellite image classiﬁcation problems.\n4.2.1\nsentiment analysis\nthe spanish produc",
+      "span": [
+        30056,
+        30059
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": ".1\nSentim",
+      "value": 0.1,
+      "kind": "other",
+      "unit": "sentim",
+      "value_si": 0.1,
+      "si_unit": "sentim",
+      "context": "ellite image classiﬁcation problems.\n4.2.1\nsentiment analysis\nthe spanish product review ",
+      "span": [
+        30059,
+        30068
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "30000 test",
+      "value": 30000.0,
+      "kind": "other",
+      "unit": "test",
+      "value_si": 30000.0,
+      "si_unit": "test",
+      "context": " it takes for each model to process the 30000 test\ndata points. the results are shown in ﬁ",
+      "span": [
+        30358,
+        30368
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10",
+      "value": 10.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.0,
+      "si_unit": null,
+      "context": "ta points. the results are shown in ﬁg. 10. the experi-\nments are conducted on a m",
+      "span": [
+        30411,
+        30413
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.20GHz",
+      "value": 2.2,
+      "kind": "other",
+      "unit": "gigahertz",
+      "value_si": 2.2,
+      "si_unit": "gigahertz",
+      "context": "n a machine with intel(r) xeon(r)\ncpu @ 2.20ghz, 13298580 kb of ram and a tesla p100\n16",
+      "span": [
+        30488,
+        30495
+      ],
+      "metric_labels": [
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "13298580 kB",
+      "value": 13298580.0,
+      "kind": "memory",
+      "unit": "kilobyte",
+      "value_si": 13298580000.0,
+      "si_unit": "byte",
+      "context": "ne with intel(r) xeon(r)\ncpu @ 2.20ghz, 13298580 kb of ram and a tesla p100\n16280mib gpu.\nf",
+      "span": [
+        30497,
+        30508
+      ],
+      "metric_labels": [
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "100\n",
+      "value": 100.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 100.0,
+      "si_unit": null,
+      "context": ".20ghz, 13298580 kb of ram and a tesla p100\n16280mib gpu.\nfigure 10. sentiment analy",
+      "span": [
+        30529,
+        30533
+      ],
+      "metric_labels": [
+        "memory",
+        "time",
+        "freq"
+      ]
+    },
+    {
+      "raw": "16280MiB",
+      "value": 16280.0,
+      "kind": "memory",
+      "unit": "mebibyte",
+      "value_si": 17070817280.0,
+      "si_unit": "byte",
+      "context": "hz, 13298580 kb of ram and a tesla p100\n16280mib gpu.\nfigure 10. sentiment analysis late",
+      "span": [
+        30533,
+        30541
+      ],
+      "metric_labels": [
+        "memory",
+        "time",
+        "freq"
+      ]
+    },
+    {
+      "raw": "10",
+      "value": 10.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.0,
+      "si_unit": null,
+      "context": "m and a tesla p100\n16280mib gpu.\nfigure 10. sentiment analysis latency of monolith",
+      "span": [
+        30554,
+        30556
+      ],
+      "metric_labels": [
+        "latency",
+        "time"
+      ]
+    },
+    {
+      "raw": "10 shows",
+      "value": 10.0,
+      "kind": "other",
+      "unit": "shows",
+      "value_si": 10.0,
+      "si_unit": "shows",
+      "context": " distilled versions.\nthe results in ﬁg. 10 shows that the original modular so-\nlution is",
+      "span": [
+        30676,
+        30684
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4.2",
+      "value": 4.2,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.2,
+      "si_unit": null,
+      "context": " discussed in\nthe introduction section.\n4.2.2\nsatellite image classiﬁcation\nto comp",
+      "span": [
+        31326,
+        31329
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2\nSatell",
+      "value": 0.2,
+      "kind": "other",
+      "unit": "satell",
+      "value_si": 0.2,
+      "si_unit": "satell",
+      "context": "scussed in\nthe introduction section.\n4.2.2\nsatellite image classiﬁcation\nto compare the l",
+      "span": [
+        31329,
+        31338
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "56700\ndata",
+      "value": 56700.0,
+      "kind": "other",
+      "unit": "data",
+      "value_si": 56700.0,
+      "si_unit": "data",
+      "context": "ime that each solution takes to process 56700\ndata points is measured. the same is done wi",
+      "span": [
+        31473,
+        31483
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.20GHz",
+      "value": 2.2,
+      "kind": "other",
+      "unit": "gigahertz",
+      "value_si": 2.2,
+      "si_unit": "gigahertz",
+      "context": "n a machine with intel(r) xeon(r) cpu @ 2.20ghz,\n13298580 kb of ram and a tesla p100 16",
+      "span": [
+        31644,
+        31651
+      ],
+      "metric_labels": [
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "13298580 kB",
+      "value": 13298580.0,
+      "kind": "memory",
+      "unit": "kilobyte",
+      "value_si": 13298580000.0,
+      "si_unit": "byte",
+      "context": "ne with intel(r) xeon(r) cpu @ 2.20ghz,\n13298580 kb of ram and a tesla p100 16280mib gpu.\nt",
+      "span": [
+        31653,
+        31664
+      ],
+      "metric_labels": [
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "100 ",
+      "value": 100.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 100.0,
+      "si_unit": null,
+      "context": ".20ghz,\n13298580 kb of ram and a tesla p100 16280mib gpu.\nthe results are shown in ﬁ",
+      "span": [
+        31685,
+        31689
+      ],
+      "metric_labels": [
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "16280MiB",
+      "value": 16280.0,
+      "kind": "memory",
+      "unit": "mebibyte",
+      "value_si": 17070817280.0,
+      "si_unit": "byte",
+      "context": "hz,\n13298580 kb of ram and a tesla p100 16280mib gpu.\nthe results are shown in ﬁg. 11.\nt",
+      "span": [
+        31689,
+        31697
+      ],
+      "metric_labels": [
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "11",
+      "value": 11.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 11.0,
+      "si_unit": null,
+      "context": "80mib gpu.\nthe results are shown in ﬁg. 11.\nthe latency results in ﬁg. 11 shows th",
+      "span": [
+        31732,
+        31734
+      ],
+      "metric_labels": [
+        "latency"
+      ]
+    },
+    {
+      "raw": "11 shows",
+      "value": 11.0,
+      "kind": "other",
+      "unit": "shows",
+      "value_si": 11.0,
+      "si_unit": "shows",
+      "context": "n in ﬁg. 11.\nthe latency results in ﬁg. 11 shows that the non-distilled\nmonolithic solut",
+      "span": [
+        31763,
+        31771
+      ],
+      "metric_labels": [
+        "latency"
+      ]
+    },
+    {
+      "raw": "63.83%",
+      "value": 63.83,
+      "kind": "percent",
+      "unit": "%",
+      "value_si": 63.83,
+      "si_unit": "%",
+      "context": " non-distilled\nmonolithic solution took 63.83% less time compared to the\nfastest modul",
+      "span": [
+        31820,
+        31826
+      ],
+      "metric_labels": [
+        "time"
+      ]
+    },
+    {
+      "raw": "11",
+      "value": 11.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 11.0,
+      "si_unit": null,
+      "context": "elopment: beneﬁts and trade-offs\nfigure 11. cloudy satellite image classiﬁcation l",
+      "span": [
+        32217,
+        32219
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4.3\nReusab",
+      "value": 4.3,
+      "kind": "other",
+      "unit": "reusab",
+      "value_si": 4.3,
+      "si_unit": "reusab",
+      "context": "with the respective\ndistilled versions.\n4.3\nreusability\nin this section we are testing whe",
+      "span": [
+        32361,
+        32371
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "12",
+      "value": 12.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 12.0,
+      "si_unit": null,
+      "context": "lts of this experiment are shown\nin ﬁg. 12. the latency of each solution is measur",
+      "span": [
+        34294,
+        34296
+      ],
+      "metric_labels": [
+        "latency"
+      ]
+    },
+    {
+      "raw": "56700 data",
+      "value": 56700.0,
+      "kind": "other",
+      "unit": "data",
+      "value_si": 56700.0,
+      "si_unit": "data",
+      "context": "ach solution is measured for\nprocessing 56700 data points using each version of the solu-\n",
+      "span": [
+        34354,
+        34364
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2.20GHz",
+      "value": 2.2,
+      "kind": "other",
+      "unit": "gigahertz",
+      "value_si": 2.2,
+      "si_unit": "gigahertz",
+      "context": "n a machine with intel(r) xeon(r) cpu @ 2.20ghz,\n13298580 kb of ram and a tesla p100 16",
+      "span": [
+        34450,
+        34457
+      ],
+      "metric_labels": [
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "13298580 kB",
+      "value": 13298580.0,
+      "kind": "memory",
+      "unit": "kilobyte",
+      "value_si": 13298580000.0,
+      "si_unit": "byte",
+      "context": "ne with intel(r) xeon(r) cpu @ 2.20ghz,\n13298580 kb of ram and a tesla p100 16280mib gpu.\nt",
+      "span": [
+        34459,
+        34470
+      ],
+      "metric_labels": [
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "100 ",
+      "value": 100.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 100.0,
+      "si_unit": null,
+      "context": ".20ghz,\n13298580 kb of ram and a tesla p100 16280mib gpu.\nthe latency results are sh",
+      "span": [
+        34491,
+        34495
+      ],
+      "metric_labels": [
+        "latency",
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "16280MiB",
+      "value": 16280.0,
+      "kind": "memory",
+      "unit": "mebibyte",
+      "value_si": 17070817280.0,
+      "si_unit": "byte",
+      "context": "hz,\n13298580 kb of ram and a tesla p100 16280mib gpu.\nthe latency results are shown in ﬁ",
+      "span": [
+        34495,
+        34503
+      ],
+      "metric_labels": [
+        "latency",
+        "memory",
+        "freq"
+      ]
+    },
+    {
+      "raw": "13",
+      "value": 13.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 13.0,
+      "si_unit": null,
+      "context": "u.\nthe latency results are shown in ﬁg. 13.\nfigure 12. mean squared error (lower t",
+      "span": [
+        34546,
+        34548
+      ],
+      "metric_labels": [
+        "latency"
+      ]
+    },
+    {
+      "raw": "12",
+      "value": 12.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 12.0,
+      "si_unit": null,
+      "context": "ncy results are shown in ﬁg. 13.\nfigure 12. mean squared error (lower the better) ",
+      "span": [
+        34557,
+        34559
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "13",
+      "value": 13.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 13.0,
+      "si_unit": null,
+      "context": "luding their distilled versions.\nfigure 13. latency (lower the better) of monolith",
+      "span": [
+        34693,
+        34695
+      ],
+      "metric_labels": [
+        "latency"
+      ]
+    },
+    {
+      "raw": "12 and",
+      "value": 12.0,
+      "kind": "other",
+      "unit": "and",
+      "value_si": 12.0,
+      "si_unit": "and",
+      "context": " distilled versions.\nthe results in ﬁg. 12 and 13 resembles the pattern we ob-\nserved ",
+      "span": [
+        34834,
+        34840
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "13 resemb",
+      "value": 13.0,
+      "kind": "other",
+      "unit": "resemb",
+      "value_si": 13.0,
+      "si_unit": "resemb",
+      "context": "led versions.\nthe results in ﬁg. 12 and 13 resembles the pattern we ob-\nserved in the cla",
+      "span": [
+        34841,
+        34850
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4.4\nMainta",
+      "value": 4.4,
+      "kind": "other",
+      "unit": "mainta",
+      "value_si": 4.4,
+      "si_unit": "mainta",
+      "context": "while\nhaving comparable latency values.\n4.4\nmaintainability\nin this section, we empiricall",
+      "span": [
+        35316,
+        35326
+      ],
+      "metric_labels": [
+        "latency"
+      ]
+    },
+    {
+      "raw": "14 shows",
+      "value": 14.0,
+      "kind": "other",
+      "unit": "shows",
+      "value_si": 14.0,
+      "si_unit": "shows",
+      "context": "satellite images with cloud cover.\nfig. 14 shows the images after adding noise. then the",
+      "span": [
+        35828,
+        35836
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "14",
+      "value": 14.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 14.0,
+      "si_unit": null,
+      "context": "elopment: beneﬁts and trade-offs\nfigure 14. cloudy eurosat data points after addin",
+      "span": [
+        36271,
+        36273
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "15",
+      "value": 15.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 15.0,
+      "si_unit": null,
+      "context": " accuracy of each\nmodel is shown in ﬁg. 15. as shown in the results in ﬁg.\nfigure ",
+      "span": [
+        36751,
+        36753
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "15",
+      "value": 15.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 15.0,
+      "si_unit": null,
+      "context": ". as shown in the results in ﬁg.\nfigure 15. classiﬁcation accuracy for noisy satel",
+      "span": [
+        36793,
+        36795
+      ],
+      "metric_labels": [
+        "accuracy"
+      ]
+    },
+    {
+      "raw": "15, both",
+      "value": 15.0,
+      "kind": "other",
+      "unit": "both",
+      "value_si": 15.0,
+      "si_unit": "both",
+      "context": "oisy satellite images with\ncloud cover.\n15, both monolithic and modular (i) solutions si",
+      "span": [
+        36865,
+        36873
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2 times",
+      "value": 2.0,
+      "kind": "other",
+      "unit": "times",
+      "value_si": 2.0,
+      "si_unit": "times",
+      "context": "d modular solution could achieve around 2 times\nhigher accuracy compared to the origina",
+      "span": [
+        37201,
+        37208
+      ],
+      "metric_labels": [
+        "accuracy",
+        "time"
+      ]
+    },
+    {
+      "raw": "5\nOPEN",
+      "value": 5.0,
+      "kind": "other",
+      "unit": "open",
+      "value_si": 5.0,
+      "si_unit": "open",
+      "context": "are usually labor intensive to produce.\n5\nopen challenges\nmodularity in ml has a numbe",
+      "span": [
+        37598,
+        37604
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2021",
+      "value": 2021.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2021.0,
+      "si_unit": null,
+      "context": "nd metadata support (menik &\nramaswamy, 2021) should be developed to make modular\nml",
+      "span": [
+        39551,
+        39555
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "6\nRELATE",
+      "value": 6.0,
+      "kind": "other",
+      "unit": "relate",
+      "value_si": 6.0,
+      "si_unit": "relate",
+      "context": "he beneﬁts of modular machine learning.\n6\nrelated work\nthere are several existing lines ",
+      "span": [
+        39714,
+        39722
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2021",
+      "value": 2021.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2021.0,
+      "si_unit": null,
+      "context": "work. csordas\net. al. (csord´as et al., 2021) have attempted to do this by\nlearning ",
+      "span": [
+        40052,
+        40056
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "semble learning\nmethods (sagi & rokach, 2018) has a sense of modularity.\nan ensemble",
+      "span": [
+        40516,
+        40520
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "ning is\nrouting networks (cases et al., 2019). modular question\nanswering approach p",
+      "span": [
+        41298,
+        41302
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "ach proposed by jacobs (andreas et al.,\n2016) is another example for similar work. t",
+      "span": [
+        41377,
+        41381
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": "fer learning techniques (zhuang\net al., 2020) allow machine learning model developer",
+      "span": [
+        41960,
+        41964
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "7\nSUMMAR",
+      "value": 7.0,
+      "kind": "other",
+      "unit": "summar",
+      "value_si": 7.0,
+      "si_unit": "summar",
+      "context": "ernals of\ncomplex network architecture.\n7\nsummary\nin this work, while acknowledging the ",
+      "span": [
+        43090,
+        43098
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1601.01705",
+      "value": 1601.01705,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1601.01705,
+      "si_unit": null,
+      "context": "uestion answering.\narxiv preprint arxiv:1601.01705, 2016.\ncases, i., rosenbaum, c., riemer",
+      "span": [
+        44639,
+        44649
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2016",
+      "value": 2016.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2016.0,
+      "si_unit": null,
+      "context": "ering.\narxiv preprint arxiv:1601.01705, 2016.\ncases, i., rosenbaum, c., riemer, m., ",
+      "span": [
+        44651,
+        44655
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019 Confer",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "confer",
+      "value_si": 2019.0,
+      "si_unit": "confer",
+      "context": " understanding. in pro-\nceedings of the 2019 conference of the north american\nchapter of th",
+      "span": [
+        44899,
+        44910
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "cs: human language technologies, volume 1 (long\nand short papers), pp. 3631–3648, ",
+      "span": [
+        45033,
+        45035
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3631",
+      "value": 3631.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3631.0,
+      "si_unit": null,
+      "context": ", volume 1 (long\nand short papers), pp. 3631–3648, 2019.\ncsord´as, r., van steenkist",
+      "span": [
+        45064,
+        45068
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3648, ",
+      "value": 3648.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3648.0,
+      "si_unit": null,
+      "context": "ume 1 (long\nand short papers), pp. 3631–3648, 2019.\ncsord´as, r., van steenkiste, s., ",
+      "span": [
+        45069,
+        45075
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "(long\nand short papers), pp. 3631–3648, 2019.\ncsord´as, r., van steenkiste, s., and ",
+      "span": [
+        45075,
+        45079
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9th",
+      "value": 9.0,
+      "kind": "length",
+      "unit": "th",
+      "value_si": 0.00022859999999999997,
+      "si_unit": "meter",
+      "context": "through differentiable weight masks. in 9th international\nconference on learning re",
+      "span": [
+        45233,
+        45236
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2021,\nVirtua",
+      "value": 2021.0,
+      "kind": "other",
+      "unit": "virtua",
+      "value_si": 2021.0,
+      "si_unit": "virtua",
+      "context": "rence on learning representations, iclr 2021,\nvirtual event, austria, may 3-7, 2021. openrev",
+      "span": [
+        45296,
+        45308
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "3",
+      "value": 3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 3.0,
+      "si_unit": null,
+      "context": " iclr 2021,\nvirtual event, austria, may 3-7, 2021. openreview.net,\n2021. url http",
+      "span": [
+        45330,
+        45331
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-7, ",
+      "value": -7.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -7.0,
+      "si_unit": null,
+      "context": "iclr 2021,\nvirtual event, austria, may 3-7, 2021. openreview.net,\n2021. url https://",
+      "span": [
+        45331,
+        45335
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2021",
+      "value": 2021.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2021.0,
+      "si_unit": null,
+      "context": " 2021,\nvirtual event, austria, may 3-7, 2021. openreview.net,\n2021. url https://open",
+      "span": [
+        45335,
+        45339
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2021",
+      "value": 2021.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2021.0,
+      "si_unit": null,
+      "context": "austria, may 3-7, 2021. openreview.net,\n2021. url https://openreview.net/forum?\nid=7",
+      "span": [
+        45357,
+        45361
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "7uVcpu",
+      "value": 7.0,
+      "kind": "other",
+      "unit": "uvcpu",
+      "value_si": 7.0,
+      "si_unit": "uvcpu",
+      "context": "1. url https://openreview.net/forum?\nid=7uvcpu-gmd.\ndevlin, j., chang, m., lee, k., an",
+      "span": [
+        45400,
+        45406
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019 Confer",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "confer",
+      "value_si": 2019.0,
+      "si_unit": "confer",
+      "context": "\nsolorio, t. (eds.), proceedings of the 2019 conference of\nthe north american chapter of th",
+      "span": [
+        45617,
+        45628
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019, Minnea",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "minnea",
+      "value_si": 2019.0,
+      "si_unit": "minnea",
+      "context": " human language technologies,\nnaacl-hlt 2019, minneapolis, mn, usa, june 2-7,\n2019, volume 1",
+      "span": [
+        45754,
+        45766
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2",
+      "value": 2.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2.0,
+      "si_unit": null,
+      "context": "cl-hlt 2019, minneapolis, mn, usa, june 2-7,\n2019, volume 1 (long and short paper",
+      "span": [
+        45787,
+        45788
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-7,\n",
+      "value": -7.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -7.0,
+      "si_unit": null,
+      "context": "l-hlt 2019, minneapolis, mn, usa, june 2-7,\n2019, volume 1 (long and short papers), ",
+      "span": [
+        45788,
+        45792
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019, Volume",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "volume",
+      "value_si": 2019.0,
+      "si_unit": "volume",
+      "context": "t 2019, minneapolis, mn, usa, june 2-7,\n2019, volume 1 (long and short papers), pp. 4171–418",
+      "span": [
+        45792,
+        45804
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1 ",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "apolis, mn, usa, june 2-7,\n2019, volume 1 (long and short papers), pp. 4171–4186.\n",
+      "span": [
+        45805,
+        45807
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4171",
+      "value": 4171.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4171.0,
+      "si_unit": null,
+      "context": ", volume 1 (long and short papers), pp. 4171–4186.\nassociation for computational lin",
+      "span": [
+        45836,
+        45840
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4186",
+      "value": 4186.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4186.0,
+      "si_unit": null,
+      "context": "ume 1 (long and short papers), pp. 4171–4186.\nassociation for computational linguist",
+      "span": [
+        45841,
+        45845
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "ociation for computational linguistics, 2019. doi:\n10.18653/v1/n19-1423.\nurl https:/",
+      "span": [
+        45890,
+        45894
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.18653",
+      "value": 10.18653,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.18653,
+      "si_unit": null,
+      "context": "r computational linguistics, 2019. doi:\n10.18653/v1/n19-1423.\nurl https://doi.org/\n10.18",
+      "span": [
+        45901,
+        45909
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ional linguistics, 2019. doi:\n10.18653/v1/n19-1423.\nurl https://doi.org/\n10.18653",
+      "span": [
+        45911,
+        45912
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "19",
+      "value": 19.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 19.0,
+      "si_unit": null,
+      "context": "al linguistics, 2019. doi:\n10.18653/v1/n19-1423.\nurl https://doi.org/\n10.18653/v1/",
+      "span": [
+        45914,
+        45916
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-1423",
+      "value": -1423.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -1423.0,
+      "si_unit": null,
+      "context": " linguistics, 2019. doi:\n10.18653/v1/n19-1423.\nurl https://doi.org/\n10.18653/v1/n19-1",
+      "span": [
+        45916,
+        45921
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.18653",
+      "value": 10.18653,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.18653,
+      "si_unit": null,
+      "context": "18653/v1/n19-1423.\nurl https://doi.org/\n10.18653/v1/n19-1423.\nenomoto, k., sakurada, k.,",
+      "span": [
+        45944,
+        45952
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "19-1423.\nurl https://doi.org/\n10.18653/v1/n19-1423.\nenomoto, k., sakurada, k., wa",
+      "span": [
+        45954,
+        45955
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "19",
+      "value": 19.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 19.0,
+      "si_unit": null,
+      "context": "1423.\nurl https://doi.org/\n10.18653/v1/n19-1423.\nenomoto, k., sakurada, k., wang, ",
+      "span": [
+        45957,
+        45959
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-1423",
+      "value": -1423.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -1423.0,
+      "si_unit": null,
+      "context": "23.\nurl https://doi.org/\n10.18653/v1/n19-1423.\nenomoto, k., sakurada, k., wang, w., f",
+      "span": [
+        45959,
+        45964
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017 IEEE",
+      "value": 2017.0,
+      "kind": "other",
+      "unit": "ieee",
+      "value_si": 2017.0,
+      "si_unit": "ieee",
+      "context": "itional generative adversarial nets. in 2017 ieee\nconference on computer vision and patte",
+      "span": [
+        46166,
+        46175
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017, Honolu",
+      "value": 2017.0,
+      "kind": "other",
+      "unit": "honolu",
+      "value_si": 2017.0,
+      "si_unit": "honolu",
+      "context": "n recognition\nworkshops, cvpr workshops 2017, honolulu, hi, usa,\njuly 21-26, 2017, pp. 1533–",
+      "span": [
+        46256,
+        46268
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "21",
+      "value": 21.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 21.0,
+      "si_unit": null,
+      "context": "workshops 2017, honolulu, hi, usa,\njuly 21-26, 2017, pp. 1533–1541. ieee computer ",
+      "span": [
+        46286,
+        46288
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-26, ",
+      "value": -26.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -26.0,
+      "si_unit": null,
+      "context": "rkshops 2017, honolulu, hi, usa,\njuly 21-26, 2017, pp. 1533–1541. ieee computer soci-",
+      "span": [
+        46288,
+        46293
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017, pp",
+      "value": 2017.0,
+      "kind": "length",
+      "unit": "pp",
+      "value_si": 0.7115527777777777,
+      "si_unit": "meter",
+      "context": "ps 2017, honolulu, hi, usa,\njuly 21-26, 2017, pp. 1533–1541. ieee computer soci-\nety, 20",
+      "span": [
+        46293,
+        46301
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1533",
+      "value": 1533.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1533.0,
+      "si_unit": null,
+      "context": "onolulu, hi, usa,\njuly 21-26, 2017, pp. 1533–1541. ieee computer soci-\nety, 2017. do",
+      "span": [
+        46303,
+        46307
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1541",
+      "value": 1541.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1541.0,
+      "si_unit": null,
+      "context": "lu, hi, usa,\njuly 21-26, 2017, pp. 1533–1541. ieee computer soci-\nety, 2017. doi: 10",
+      "span": [
+        46308,
+        46312
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": "pp. 1533–1541. ieee computer soci-\nety, 2017. doi: 10.1109/cvprw.2017.197. url https",
+      "span": [
+        46339,
+        46343
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1109",
+      "value": 10.1109,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1109,
+      "si_unit": null,
+      "context": "41. ieee computer soci-\nety, 2017. doi: 10.1109/cvprw.2017.197. url https:\n//doi.org/10",
+      "span": [
+        46350,
+        46357
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2017",
+      "value": 0.2017,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2017,
+      "si_unit": null,
+      "context": "uter soci-\nety, 2017. doi: 10.1109/cvprw.2017.197. url https:\n//doi.org/10.1109/cvprw",
+      "span": [
+        46363,
+        46368
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".197",
+      "value": 0.197,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.197,
+      "si_unit": null,
+      "context": "soci-\nety, 2017. doi: 10.1109/cvprw.2017.197. url https:\n//doi.org/10.1109/cvprw.201",
+      "span": [
+        46368,
+        46372
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1109",
+      "value": 10.1109,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1109,
+      "si_unit": null,
+      "context": "09/cvprw.2017.197. url https:\n//doi.org/10.1109/cvprw.2017.197.\nhelber, p., bischke, b.",
+      "span": [
+        46395,
+        46402
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2017",
+      "value": 0.2017,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2017,
+      "si_unit": null,
+      "context": ".197. url https:\n//doi.org/10.1109/cvprw.2017.197.\nhelber, p., bischke, b., dengel, a",
+      "span": [
+        46408,
+        46413
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".197",
+      "value": 0.197,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.197,
+      "si_unit": null,
+      "context": " url https:\n//doi.org/10.1109/cvprw.2017.197.\nhelber, p., bischke, b., dengel, a., a",
+      "span": [
+        46413,
+        46417
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "12",
+      "value": 12.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 12.0,
+      "si_unit": null,
+      "context": "l. top. appl.\nearth obs. remote. sens., 12(7):2217–2226, 2019. doi:\n10.1109/jstars",
+      "span": [
+        46695,
+        46697
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "7",
+      "value": 7.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 7.0,
+      "si_unit": null,
+      "context": "top. appl.\nearth obs. remote. sens., 12(7):2217–2226, 2019. doi:\n10.1109/jstars.2",
+      "span": [
+        46698,
+        46699
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2217",
+      "value": 2217.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2217.0,
+      "si_unit": null,
+      "context": ". appl.\nearth obs. remote. sens., 12(7):2217–2226, 2019. doi:\n10.1109/jstars.2019.29",
+      "span": [
+        46701,
+        46705
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2226, ",
+      "value": 2226.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2226.0,
+      "si_unit": null,
+      "context": "l.\nearth obs. remote. sens., 12(7):2217–2226, 2019. doi:\n10.1109/jstars.2019.2918242. ",
+      "span": [
+        46706,
+        46712
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "th obs. remote. sens., 12(7):2217–2226, 2019. doi:\n10.1109/jstars.2019.2918242. url ",
+      "span": [
+        46712,
+        46716
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1109",
+      "value": 10.1109,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1109,
+      "si_unit": null,
+      "context": "ote. sens., 12(7):2217–2226, 2019. doi:\n10.1109/jstars.2019.2918242. url https://doi.\no",
+      "span": [
+        46723,
+        46730
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2019",
+      "value": 0.2019,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2019,
+      "si_unit": null,
+      "context": "(7):2217–2226, 2019. doi:\n10.1109/jstars.2019.2918242. url https://doi.\norg/10.1109/j",
+      "span": [
+        46737,
+        46742
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2918242",
+      "value": 0.2918242,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2918242,
+      "si_unit": null,
+      "context": "217–2226, 2019. doi:\n10.1109/jstars.2019.2918242. url https://doi.\norg/10.1109/jstars.20",
+      "span": [
+        46742,
+        46750
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1109",
+      "value": 10.1109,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1109,
+      "si_unit": null,
+      "context": "tars.2019.2918242. url https://doi.\norg/10.1109/jstars.2019.2918242.\nhinton, g. e., vin",
+      "span": [
+        46773,
+        46780
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2019",
+      "value": 0.2019,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2019,
+      "si_unit": null,
+      "context": "242. url https://doi.\norg/10.1109/jstars.2019.2918242.\nhinton, g. e., vinyals, o., an",
+      "span": [
+        46787,
+        46792
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2918242",
+      "value": 0.2918242,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2918242,
+      "si_unit": null,
+      "context": "url https://doi.\norg/10.1109/jstars.2019.2918242.\nhinton, g. e., vinyals, o., and dean, ",
+      "span": [
+        46792,
+        46800
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1503.02531",
+      "value": 1503.02531,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1503.02531,
+      "si_unit": null,
+      "context": "wl-\nedge in a neural network. corr, abs/1503.02531, 2015.\nurl http://arxiv.org/abs/1503.02",
+      "span": [
+        46901,
+        46911
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "a neural network. corr, abs/1503.02531, 2015.\nurl http://arxiv.org/abs/1503.02531.\ni",
+      "span": [
+        46913,
+        46917
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1503.02531",
+      "value": 1503.02531,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1503.02531,
+      "si_unit": null,
+      "context": "3.02531, 2015.\nurl http://arxiv.org/abs/1503.02531.\nisola, p., zhu, j., zhou, t., and efro",
+      "span": [
+        46944,
+        46954
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017 IEEE",
+      "value": 2017.0,
+      "kind": "other",
+      "unit": "ieee",
+      "value_si": 2017.0,
+      "si_unit": "ieee",
+      "context": " conditional adversarial net-\nworks. in 2017 ieee conference on computer vision\nand patte",
+      "span": [
+        47075,
+        47084
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017, Honolu",
+      "value": 2017.0,
+      "kind": "other",
+      "unit": "honolu",
+      "value_si": 2017.0,
+      "si_unit": "honolu",
+      "context": "er vision\nand pattern recognition, cvpr 2017, honolulu, hi,\nusa, july 21-26, 2017, pp. 5967–",
+      "span": [
+        47145,
+        47157
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "21",
+      "value": 21.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 21.0,
+      "si_unit": null,
+      "context": "ion, cvpr 2017, honolulu, hi,\nusa, july 21-26, 2017, pp. 5967–5976. ieee computer\n",
+      "span": [
+        47175,
+        47177
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-26, ",
+      "value": -26.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -26.0,
+      "si_unit": null,
+      "context": "n, cvpr 2017, honolulu, hi,\nusa, july 21-26, 2017, pp. 5967–5976. ieee computer\nsocie",
+      "span": [
+        47177,
+        47182
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017, pp",
+      "value": 2017.0,
+      "kind": "length",
+      "unit": "pp",
+      "value_si": 0.7115527777777777,
+      "si_unit": "meter",
+      "context": "pr 2017, honolulu, hi,\nusa, july 21-26, 2017, pp. 5967–5976. ieee computer\nsociety, 2017",
+      "span": [
+        47182,
+        47190
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5967",
+      "value": 5967.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5967.0,
+      "si_unit": null,
+      "context": "onolulu, hi,\nusa, july 21-26, 2017, pp. 5967–5976. ieee computer\nsociety, 2017.\ndoi:",
+      "span": [
+        47192,
+        47196
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5976",
+      "value": 5976.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5976.0,
+      "si_unit": null,
+      "context": "lu, hi,\nusa, july 21-26, 2017, pp. 5967–5976. ieee computer\nsociety, 2017.\ndoi: 10.1",
+      "span": [
+        47197,
+        47201
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2017",
+      "value": 2017.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2017.0,
+      "si_unit": null,
+      "context": ", pp. 5967–5976. ieee computer\nsociety, 2017.\ndoi: 10.1109/cvpr.2017.632.\nurl\nhttps:",
+      "span": [
+        47226,
+        47230
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1109",
+      "value": 10.1109,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1109,
+      "si_unit": null,
+      "context": "5976. ieee computer\nsociety, 2017.\ndoi: 10.1109/cvpr.2017.632.\nurl\nhttps://doi.org/10.1",
+      "span": [
+        47237,
+        47244
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2017",
+      "value": 0.2017,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2017,
+      "si_unit": null,
+      "context": "omputer\nsociety, 2017.\ndoi: 10.1109/cvpr.2017.632.\nurl\nhttps://doi.org/10.1109/cvpr.2",
+      "span": [
+        47249,
+        47254
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".632",
+      "value": 0.632,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.632,
+      "si_unit": null,
+      "context": "er\nsociety, 2017.\ndoi: 10.1109/cvpr.2017.632.\nurl\nhttps://doi.org/10.1109/cvpr.2017.",
+      "span": [
+        47254,
+        47258
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1109",
+      "value": 10.1109,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1109,
+      "si_unit": null,
+      "context": "1109/cvpr.2017.632.\nurl\nhttps://doi.org/10.1109/cvpr.2017.632.\nkeung, p., lu, y., szarv",
+      "span": [
+        47280,
+        47287
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".2017",
+      "value": 0.2017,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.2017,
+      "si_unit": null,
+      "context": "17.632.\nurl\nhttps://doi.org/10.1109/cvpr.2017.632.\nkeung, p., lu, y., szarvas, g., an",
+      "span": [
+        47292,
+        47297
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".632",
+      "value": 0.632,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.632,
+      "si_unit": null,
+      "context": "2.\nurl\nhttps://doi.org/10.1109/cvpr.2017.632.\nkeung, p., lu, y., szarvas, g., and sm",
+      "span": [
+        47297,
+        47301
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020 Confer",
+      "value": 2020.0,
+      "kind": "other",
+      "unit": "confer",
+      "value_si": 2020.0,
+      "si_unit": "confer",
+      "context": " and liu, y. (eds.), proceedings of the\n2020 conference on empirical methods in natural lan",
+      "span": [
+        47464,
+        47475
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020, Online",
+      "value": 2020.0,
+      "kind": "other",
+      "unit": "online",
+      "value_si": 2020.0,
+      "si_unit": "online",
+      "context": "in natural lan-\nguage processing, emnlp 2020, online, november 16-\n20, 2020, pp. 4563–4568. ",
+      "span": [
+        47541,
+        47553
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "16",
+      "value": 16.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 16.0,
+      "si_unit": null,
+      "context": "rocessing, emnlp 2020, online, november 16-\n20, 2020, pp. 4563–4568. association f",
+      "span": [
+        47564,
+        47566
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "20, ",
+      "value": 20.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 20.0,
+      "si_unit": null,
+      "context": "ssing, emnlp 2020, online, november 16-\n20, 2020, pp. 4563–4568. association for com",
+      "span": [
+        47568,
+        47572
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020, pp",
+      "value": 2020.0,
+      "kind": "length",
+      "unit": "pp",
+      "value_si": 0.7126111111111111,
+      "si_unit": "meter",
+      "context": "g, emnlp 2020, online, november 16-\n20, 2020, pp. 4563–4568. association for computation",
+      "span": [
+        47572,
+        47580
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4563",
+      "value": 4563.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4563.0,
+      "si_unit": null,
+      "context": "020, online, november 16-\n20, 2020, pp. 4563–4568. association for computational\nlin",
+      "span": [
+        47582,
+        47586
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4568",
+      "value": 4568.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4568.0,
+      "si_unit": null,
+      "context": "online, november 16-\n20, 2020, pp. 4563–4568. association for computational\nlinguist",
+      "span": [
+        47587,
+        47591
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": "ociation for computational\nlinguistics, 2020. doi: 10.18653/v1/2020.emnlp-main.\n369.",
+      "span": [
+        47636,
+        47640
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.18653",
+      "value": 10.18653,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.18653,
+      "si_unit": null,
+      "context": "r computational\nlinguistics, 2020. doi: 10.18653/v1/2020.emnlp-main.\n369.\nurl https://do",
+      "span": [
+        47647,
+        47655
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ional\nlinguistics, 2020. doi: 10.18653/v1/2020.emnlp-main.\n369.\nurl https://doi.o",
+      "span": [
+        47657,
+        47658
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": "nal\nlinguistics, 2020. doi: 10.18653/v1/2020.emnlp-main.\n369.\nurl https://doi.org/10",
+      "span": [
+        47659,
+        47663
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "369",
+      "value": 369.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 369.0,
+      "si_unit": null,
+      "context": "2020. doi: 10.18653/v1/2020.emnlp-main.\n369.\nurl https://doi.org/10.18653/v1/\n2020.",
+      "span": [
+        47676,
+        47679
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.18653",
+      "value": 10.18653,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.18653,
+      "si_unit": null,
+      "context": "20.emnlp-main.\n369.\nurl https://doi.org/10.18653/v1/\n2020.emnlp-main.369.\nmenik, s. and ",
+      "span": [
+        47701,
+        47709
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "ain.\n369.\nurl https://doi.org/10.18653/v1/\n2020.emnlp-main.369.\nmenik, s. and ram",
+      "span": [
+        47711,
+        47712
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": ".\n369.\nurl https://doi.org/10.18653/v1/\n2020.emnlp-main.369.\nmenik, s. and ramaswamy",
+      "span": [
+        47714,
+        47718
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": ".369",
+      "value": 0.369,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.369,
+      "si_unit": null,
+      "context": "s://doi.org/10.18653/v1/\n2020.emnlp-main.369.\nmenik, s. and ramaswamy, l. towards a ",
+      "span": [
+        47729,
+        47733
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "15th",
+      "value": 15.0,
+      "kind": "length",
+      "unit": "th",
+      "value_si": 0.00038099999999999994,
+      "si_unit": "meter",
+      "context": "rning service description\nframework. in 15th ieee international conference on se-\nma",
+      "span": [
+        47857,
+        47861
+      ],
+      "metric_labels": [
+        "memory"
+      ]
+    },
+    {
+      "raw": "2021, Laguna",
+      "value": 2021.0,
+      "kind": "other",
+      "unit": "laguna",
+      "value_si": 2021.0,
+      "si_unit": "laguna",
+      "context": "onference on se-\nmantic computing, icsc 2021, laguna hills, ca, usa,\njanuary 27-29, 2021, pp",
+      "span": [
+        47922,
+        47934
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "27",
+      "value": 27.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 27.0,
+      "si_unit": null,
+      "context": "sc 2021, laguna hills, ca, usa,\njanuary 27-29, 2021, pp. 104–107. ieee, 2021. doi:",
+      "span": [
+        47959,
+        47961
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-29, ",
+      "value": -29.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -29.0,
+      "si_unit": null,
+      "context": " 2021, laguna hills, ca, usa,\njanuary 27-29, 2021, pp. 104–107. ieee, 2021. doi:\n10.1",
+      "span": [
+        47961,
+        47966
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2021, pp",
+      "value": 2021.0,
+      "kind": "length",
+      "unit": "pp",
+      "value_si": 0.7129638888888888,
+      "si_unit": "meter",
+      "context": ", laguna hills, ca, usa,\njanuary 27-29, 2021, pp. 104–107. ieee, 2021. doi:\n10.1109/icsc",
+      "span": [
+        47966,
+        47974
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "104",
+      "value": 104.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 104.0,
+      "si_unit": null,
+      "context": "ills, ca, usa,\njanuary 27-29, 2021, pp. 104–107. ieee, 2021. doi:\n10.1109/icsc50631",
+      "span": [
+        47976,
+        47979
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "107",
+      "value": 107.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 107.0,
+      "si_unit": null,
+      "context": ", ca, usa,\njanuary 27-29, 2021, pp. 104–107. ieee, 2021. doi:\n10.1109/icsc50631.202",
+      "span": [
+        47980,
+        47983
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2021",
+      "value": 2021.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2021.0,
+      "si_unit": null,
+      "context": "january 27-29, 2021, pp. 104–107. ieee, 2021. doi:\n10.1109/icsc50631.2021.00026. url",
+      "span": [
+        47991,
+        47995
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1109",
+      "value": 10.1109,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1109,
+      "si_unit": null,
+      "context": "29, 2021, pp. 104–107. ieee, 2021. doi:\n10.1109/icsc50631.2021.00026. url https://doi.\n",
+      "span": [
+        48002,
+        48009
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "50631.2021",
+      "value": 50631.2021,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 50631.2021,
+      "si_unit": null,
+      "context": ". 104–107. ieee, 2021. doi:\n10.1109/icsc50631.2021.00026. url https://doi.\norg/10.1109/ics",
+      "span": [
+        48014,
+        48024
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".00026",
+      "value": 0.00026,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.00026,
+      "si_unit": null,
+      "context": " ieee, 2021. doi:\n10.1109/icsc50631.2021.00026. url https://doi.\norg/10.1109/icsc50631",
+      "span": [
+        48024,
+        48030
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1109",
+      "value": 10.1109,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1109,
+      "si_unit": null,
+      "context": "c50631.2021.00026. url https://doi.\norg/10.1109/icsc50631.2021.00026.\nronneberger, o., ",
+      "span": [
+        48053,
+        48060
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "50631.2021",
+      "value": 50631.2021,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 50631.2021,
+      "si_unit": null,
+      "context": "00026. url https://doi.\norg/10.1109/icsc50631.2021.00026.\nronneberger, o., fischer, p., an",
+      "span": [
+        48065,
+        48075
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": ".00026",
+      "value": 0.00026,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 0.00026,
+      "si_unit": null,
+      "context": " https://doi.\norg/10.1109/icsc50631.2021.00026.\nronneberger, o., fischer, p., and brox",
+      "span": [
+        48075,
+        48081
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015 ",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "omputer-\nassisted intervention - miccai 2015 - 18th interna-\ntional conference munich",
+      "span": [
+        48332,
+        48337
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "18th",
+      "value": 18.0,
+      "kind": "length",
+      "unit": "th",
+      "value_si": 0.00045719999999999995,
+      "si_unit": "meter",
+      "context": "-\nassisted intervention - miccai 2015 - 18th interna-\ntional conference munich, germ",
+      "span": [
+        48339,
+        48343
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "5 ",
+      "value": 5.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 5.0,
+      "si_unit": null,
+      "context": "nal conference munich, germany, october 5 - 9,\n2015, proceedings, part iii, volume",
+      "span": [
+        48396,
+        48398
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9,\n",
+      "value": 9.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 9.0,
+      "si_unit": null,
+      "context": "conference munich, germany, october 5 - 9,\n2015, proceedings, part iii, volume 9351",
+      "span": [
+        48400,
+        48403
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015, Procee",
+      "value": 2015.0,
+      "kind": "other",
+      "unit": "procee",
+      "value_si": 2015.0,
+      "si_unit": "procee",
+      "context": "ference munich, germany, october 5 - 9,\n2015, proceedings, part iii, volume 9351 of lecture\n",
+      "span": [
+        48403,
+        48415
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9351 of",
+      "value": 9351.0,
+      "kind": "other",
+      "unit": "of",
+      "value_si": 9351.0,
+      "si_unit": "of",
+      "context": " 9,\n2015, proceedings, part iii, volume 9351 of lecture\nnotes in computer science, pp. ",
+      "span": [
+        48439,
+        48446
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "234",
+      "value": 234.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 234.0,
+      "si_unit": null,
+      "context": " lecture\nnotes in computer science, pp. 234–241. springer, 2015.\ndoi: 10.1007/978-3",
+      "span": [
+        48486,
+        48489
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "241",
+      "value": 241.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 241.0,
+      "si_unit": null,
+      "context": "ture\nnotes in computer science, pp. 234–241. springer, 2015.\ndoi: 10.1007/978-3-319",
+      "span": [
+        48490,
+        48493
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2015",
+      "value": 2015.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2015.0,
+      "si_unit": null,
+      "context": "omputer science, pp. 234–241. springer, 2015.\ndoi: 10.1007/978-3-319-24574-4\\ 28. ur",
+      "span": [
+        48505,
+        48509
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1007",
+      "value": 10.1007,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1007,
+      "si_unit": null,
+      "context": "ence, pp. 234–241. springer, 2015.\ndoi: 10.1007/978-3-319-24574-4\\ 28. url https://\ndoi",
+      "span": [
+        48516,
+        48523
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "978",
+      "value": 978.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 978.0,
+      "si_unit": null,
+      "context": ". 234–241. springer, 2015.\ndoi: 10.1007/978-3-319-24574-4\\ 28. url https://\ndoi.org",
+      "span": [
+        48524,
+        48527
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-3",
+      "value": -3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -3.0,
+      "si_unit": null,
+      "context": "34–241. springer, 2015.\ndoi: 10.1007/978-3-319-24574-4\\ 28. url https://\ndoi.org/1",
+      "span": [
+        48527,
+        48529
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-319",
+      "value": -319.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -319.0,
+      "si_unit": null,
+      "context": "–241. springer, 2015.\ndoi: 10.1007/978-3-319-24574-4\\ 28. url https://\ndoi.org/10.10",
+      "span": [
+        48529,
+        48533
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-24574",
+      "value": -24574.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -24574.0,
+      "si_unit": null,
+      "context": ". springer, 2015.\ndoi: 10.1007/978-3-319-24574-4\\ 28. url https://\ndoi.org/10.1007/978",
+      "span": [
+        48533,
+        48539
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-4",
+      "value": -4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -4.0,
+      "si_unit": null,
+      "context": "nger, 2015.\ndoi: 10.1007/978-3-319-24574-4\\ 28. url https://\ndoi.org/10.1007/978-3",
+      "span": [
+        48539,
+        48541
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "28",
+      "value": 28.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 28.0,
+      "si_unit": null,
+      "context": ", 2015.\ndoi: 10.1007/978-3-319-24574-4\\ 28. url https://\ndoi.org/10.1007/978-3-319",
+      "span": [
+        48543,
+        48545
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "10.1007",
+      "value": 10.1007,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 10.1007,
+      "si_unit": null,
+      "context": "3-319-24574-4\\ 28. url https://\ndoi.org/10.1007/978-3-319-24574-4_28.\nsagi, o. and roka",
+      "span": [
+        48568,
+        48575
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "978",
+      "value": 978.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 978.0,
+      "si_unit": null,
+      "context": "574-4\\ 28. url https://\ndoi.org/10.1007/978-3-319-24574-4_28.\nsagi, o. and rokach, ",
+      "span": [
+        48576,
+        48579
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-3",
+      "value": -3.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -3.0,
+      "si_unit": null,
+      "context": "-4\\ 28. url https://\ndoi.org/10.1007/978-3-319-24574-4_28.\nsagi, o. and rokach, l.",
+      "span": [
+        48579,
+        48581
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-319",
+      "value": -319.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -319.0,
+      "si_unit": null,
+      "context": "\\ 28. url https://\ndoi.org/10.1007/978-3-319-24574-4_28.\nsagi, o. and rokach, l. ens",
+      "span": [
+        48581,
+        48585
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-24574",
+      "value": -24574.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -24574.0,
+      "si_unit": null,
+      "context": ". url https://\ndoi.org/10.1007/978-3-319-24574-4_28.\nsagi, o. and rokach, l. ensemble ",
+      "span": [
+        48585,
+        48591
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-4",
+      "value": -4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -4.0,
+      "si_unit": null,
+      "context": "https://\ndoi.org/10.1007/978-3-319-24574-4_28.\nsagi, o. and rokach, l. ensemble le",
+      "span": [
+        48591,
+        48593
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "28",
+      "value": 28.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 28.0,
+      "si_unit": null,
+      "context": "ps://\ndoi.org/10.1007/978-3-319-24574-4_28.\nsagi, o. and rokach, l. ensemble learn",
+      "span": [
+        48594,
+        48596
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "8",
+      "value": 8.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 8.0,
+      "si_unit": null,
+      "context": "s: data mining and knowledge\ndiscovery, 8(4):e1249, 2018.\ntan, m. and le, q. v. e",
+      "span": [
+        48721,
+        48722
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "4",
+      "value": 4.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 4.0,
+      "si_unit": null,
+      "context": " data mining and knowledge\ndiscovery, 8(4):e1249, 2018.\ntan, m. and le, q. v. efﬁ",
+      "span": [
+        48723,
+        48724
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1249, ",
+      "value": 1249.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1249.0,
+      "si_unit": null,
+      "context": "a mining and knowledge\ndiscovery, 8(4):e1249, 2018.\ntan, m. and le, q. v. efﬁcientnet:",
+      "span": [
+        48727,
+        48733
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2018",
+      "value": 2018.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2018.0,
+      "si_unit": null,
+      "context": "ng and knowledge\ndiscovery, 8(4):e1249, 2018.\ntan, m. and le, q. v. efﬁcientnet: ret",
+      "span": [
+        48733,
+        48737
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "36th",
+      "value": 36.0,
+      "kind": "length",
+      "unit": "th",
+      "value_si": 0.0009143999999999999,
+      "si_unit": "meter",
+      "context": "hutdinov, r. (eds.), proceedings of\nthe 36th international conference on machine lea",
+      "span": [
+        48902,
+        48906
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019, ",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "al conference on machine learning,\nicml 2019, 9-15 june 2019, long beach, california,\n",
+      "span": [
+        48958,
+        48964
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "9",
+      "value": 9.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 9.0,
+      "si_unit": null,
+      "context": "ference on machine learning,\nicml 2019, 9-15 june 2019, long beach, california,\nu",
+      "span": [
+        48964,
+        48965
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-15 June",
+      "value": -15.0,
+      "kind": "other",
+      "unit": "june",
+      "value_si": -15.0,
+      "si_unit": "june",
+      "context": "erence on machine learning,\nicml 2019, 9-15 june 2019, long beach, california,\nusa, volu",
+      "span": [
+        48965,
+        48973
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019, Long",
+      "value": 2019.0,
+      "kind": "other",
+      "unit": "long",
+      "value_si": 2019.0,
+      "si_unit": "long",
+      "context": " machine learning,\nicml 2019, 9-15 june 2019, long beach, california,\nusa, volume 97 of pr",
+      "span": [
+        48974,
+        48984
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "97 of",
+      "value": 97.0,
+      "kind": "other",
+      "unit": "of",
+      "value_si": 97.0,
+      "si_unit": "of",
+      "context": "19, long beach, california,\nusa, volume 97 of proceedings of machine learning\nresearc",
+      "span": [
+        49016,
+        49021
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "6105",
+      "value": 6105.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 6105.0,
+      "si_unit": null,
+      "context": "dings of machine learning\nresearch, pp. 6105–6114. pmlr, 2019. url http://\nproceedin",
+      "span": [
+        49068,
+        49072
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "6114",
+      "value": 6114.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 6114.0,
+      "si_unit": null,
+      "context": " of machine learning\nresearch, pp. 6105–6114. pmlr, 2019. url http://\nproceedings.ml",
+      "span": [
+        49073,
+        49077
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "learning\nresearch, pp. 6105–6114. pmlr, 2019. url http://\nproceedings.mlr.press/v97/",
+      "span": [
+        49085,
+        49089
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "97",
+      "value": 97.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 97.0,
+      "si_unit": null,
+      "context": "019. url http://\nproceedings.mlr.press/v97/tan19a.html.\ntiedemann, j. the tatoeba ",
+      "span": [
+        49126,
+        49128
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "19a",
+      "value": 19.0,
+      "kind": "time",
+      "unit": "a",
+      "value_si": 599594400.0,
+      "si_unit": "second",
+      "context": "rl http://\nproceedings.mlr.press/v97/tan19a.html.\ntiedemann, j. the tatoeba transla",
+      "span": [
+        49132,
+        49135
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1174",
+      "value": 1174.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1174.0,
+      "si_unit": null,
+      "context": " conference on machine translation,\npp. 1174–1182, online, november 2020. associatio",
+      "span": [
+        49321,
+        49325
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1182, Online",
+      "value": 1182.0,
+      "kind": "other",
+      "unit": "online",
+      "value_si": 1182.0,
+      "si_unit": "online",
+      "context": "erence on machine translation,\npp. 1174–1182, online, november 2020. association\nfor computa",
+      "span": [
+        49326,
+        49338
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": "lation,\npp. 1174–1182, online, november 2020. association\nfor computational linguist",
+      "span": [
+        49349,
+        49353
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": ". url https://www.\naclweb.org/anthology/2020.wmt-1.139.\nwolf, t., debut, l., sanh, v",
+      "span": [
+        49436,
+        49440
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "-1.139",
+      "value": -1.139,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": -1.139,
+      "si_unit": null,
+      "context": "tps://www.\naclweb.org/anthology/2020.wmt-1.139.\nwolf, t., debut, l., sanh, v., chaumon",
+      "span": [
+        49444,
+        49450
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1910.03771",
+      "value": 1910.03771,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1910.03771,
+      "si_unit": null,
+      "context": "natural language processing. arxiv, abs/1910.03771,\n2019.\nzhuang, f., qi, z., duan, k., xi",
+      "span": [
+        49667,
+        49677
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2019",
+      "value": 2019.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2019.0,
+      "si_unit": null,
+      "context": "uage processing. arxiv, abs/1910.03771,\n2019.\nzhuang, f., qi, z., duan, k., xi, d., ",
+      "span": [
+        49679,
+        49683
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "109",
+      "value": 109.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 109.0,
+      "si_unit": null,
+      "context": "sfer\nlearning. proceedings of the ieee, 109(1):43–76, 2020.",
+      "span": [
+        49833,
+        49836
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "1",
+      "value": 1.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 1.0,
+      "si_unit": null,
+      "context": "\nlearning. proceedings of the ieee, 109(1):43–76, 2020.",
+      "span": [
+        49837,
+        49838
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "43",
+      "value": 43.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 43.0,
+      "si_unit": null,
+      "context": "arning. proceedings of the ieee, 109(1):43–76, 2020.",
+      "span": [
+        49840,
+        49842
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "76, ",
+      "value": 76.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 76.0,
+      "si_unit": null,
+      "context": "ing. proceedings of the ieee, 109(1):43–76, 2020.",
+      "span": [
+        49843,
+        49847
+      ],
+      "metric_labels": []
+    },
+    {
+      "raw": "2020",
+      "value": 2020.0,
+      "kind": "scalar",
+      "unit": null,
+      "value_si": 2020.0,
+      "si_unit": null,
+      "context": " proceedings of the ieee, 109(1):43–76, 2020.",
+      "span": [
+        49847,
+        49851
+      ],
+      "metric_labels": []
+    }
+  ],
+  "issues": {
+    "hard_checks": [
+      {
+        "type": "inconsistent_physical_quantity",
+        "message": "Values differ by ≥100× for ('memory',)",
+        "metric": "('memory',)",
+        "values": [
+          1.0,
+          1.0,
+          3.0,
+          2021.0,
+          1.0,
+          2020.0,
+          0.369,
+          0.00038099999999999994
+        ]
+      },
+      {
+        "type": "inconsistent_percent",
+        "message": "Conflicting percent values (0.3–11.34) for metric ('accuracy',)",
+        "metric": "('accuracy',)",
+        "values": [
+          0.3,
+          11.34,
+          10.0
+        ]
+      },
+      {
+        "type": "inconsistent_physical_quantity",
+        "message": "Values differ by ≥100× for ('freq', 'memory')",
+        "metric": "('freq', 'memory')",
+        "values": [
+          2.2,
+          13298580000.0,
+          2.2,
+          13298580000.0,
+          100.0,
+          17070817280.0,
+          2.2,
+          13298580000.0
+        ]
+      },
+      {
+        "type": "inconsistent_physical_quantity",
+        "message": "Values differ by ≥100× for ('freq', 'memory', 'time')",
+        "metric": "('freq', 'memory', 'time')",
+        "values": [
+          100.0,
+          17070817280.0
+        ]
+      },
+      {
+        "type": "inconsistent_physical_quantity",
+        "message": "Values differ by ≥100× for ('freq', 'latency', 'memory')",
+        "metric": "('freq', 'latency', 'memory')",
+        "values": [
+          100.0,
+          17070817280.0
+        ]
+      },
+      {
+        "type": "inconsistent_physical_quantity",
+        "message": "Values differ by ≥100× for ('length', 'meter')",
+        "metric": "('length', 'meter')",
+        "values": [
+          0.00022859999999999997,
+          0.7115527777777777,
+          0.7115527777777777,
+          0.7126111111111111,
+          0.7129638888888888,
+          0.00045719999999999995,
+          0.0009143999999999999
+        ]
+      }
+    ],
+    "statistical_checks": [
+      {
+        "type": "statistical_outlier",
+        "message": "Value 9351.0 of is a |z|≥3.0 outlier vs corpus",
+        "bucket": "other::of",
+        "zscore": 5.76307007097243,
+        "mean": 343.3306382978723,
+        "std": 1562.9984107033808,
+        "mention": "9351 of"
+      }
+    ]
+  },
+  "corpus_stats_available_for": [
+    "length::meter",
+    "memory::byte",
+    "other::acm",
+    "other::akram",
+    "other::algori",
+    "other::and",
+    "other::are",
+    "other::articl",
+    "other::b",
+    "other::be",
+    "other::biblio",
+    "other::bo",
+    "other::but",
+    "other::by",
+    "other::c",
+    "other::can",
+    "other::chapte",
+    "other::chen",
+    "other::conclu",
+    "other::data",
+    "other::datase",
+    "other::doi",
+    "other::double",
+    "other::e",
+    "other::end",
+    "other::epochs",
+    "other::exerci",
+    "other::f",
+    "other::fig",
+    "other::figure",
+    "other::for",
+    "other::from",
+    "other::g",
+    "other::gt",
+    "other::https",
+    "other::i",
+    "other::ieee",
+    "other::if",
+    "other::intern",
+    "other::introd",
+    "other::is",
+    "other::it",
+    "other::j",
+    "other::k",
+    "other::l",
+    "other::learni",
+    "other::log",
+    "other::machin",
+    "other::maximu",
+    "other::model",
+    "other::n",
+    "other::no",
+    "other::norm",
+    "other::of",
+    "other::on",
+    "other::online",
+    "other::or",
+    "other::p",
+    "other::pages",
+    "other::presen",
+    "other::pricin",
+    "other::procee",
+    "other::r",
+    "other::regula",
+    "other::shows",
+    "other::spectr",
+    "other::st",
+    "other::summar",
+    "other::suppor",
+    "other::t",
+    "other::table",
+    "other::that",
+    "other::the",
+    "other::then",
+    "other::to",
+    "other::tr",
+    "other::u",
+    "other::url",
+    "other::v",
+    "other::w",
+    "other::we",
+    "other::when",
+    "other::where",
+    "other::which",
+    "other::with",
+    "other::x",
+    "other::y",
+    "other::z",
+    "other::zicun",
+    "percent::%",
+    "scalar::None",
+    "time::second"
+  ]
+}

@@ -10,7 +10,7 @@
       "year": "2017"
     },
     {
-      "title": "Random Forests",
+      "title": "Random forests",
       "year": "2001"
     },
     {
@@ -18,7 +18,7 @@
       "year": "2017"
     },
     {
-      "title": "Intelligible Models for HealthCare",
+      "title": "Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission",
       "year": "2015"
     },
     {
@@ -42,7 +42,7 @@
       "year": "2019"
     },
     {
-      "title": "Towards Unsupervised Speech-to-text Translation",
+      "title": "Towards unsupervised speech-to-text translation",
       "year": "2019"
     },
     {
@@ -70,7 +70,7 @@
       "year": "1999"
     },
     {
-      "title": "Greedy function approximation: A gradient boosting machine.",
+      "title": "Greedy function approximation: a gradient boosting machine. Annals of statistics",
       "year": "2001"
     },
     {
@@ -86,8 +86,8 @@
       "year": "2018"
     },
     {
-      "title": "Abstract 448: Predicting Blood Pressure Response to Fluid Bolus Therapy Using Neural Networks with Clinical Interpretability",
-      "year": "2019"
+      "title": "Predicting blood pressure response to fluid bolus therapy using attention-based neural networks for clinical interpretability",
+      "year": "2018"
     },
     {
       "title": "Deep learning",
@@ -102,11 +102,11 @@
       "year": "2008"
     },
     {
-      "title": "Reducing the Dimensionality of Data with Neural Networks",
+      "title": "Reducing the dimensionality of data with neural networks",
       "year": "2006"
     },
     {
-      "title": "Ridge Regression: Biased Estimation for Nonorthogonal Problems",
+      "title": "Ridge regression: Biased estimation for nonorthogonal problems",
       "year": "1970"
     },
     {
@@ -118,8 +118,8 @@
       "year": "2018"
     },
     {
-      "title": "Principal Component Analysis and Factor Analysis",
-      "year": "1986"
+      "title": "Principal component analysis",
+      "year": "2011"
     },
     {
       "title": "The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care",
@@ -142,19 +142,19 @@
       "year": "2018"
     },
     {
-      "title": "Development and validation of a deep learning algorithm for improving Gleason scoring of prostate cancer",
-      "year": "2019"
+      "title": "Development and validation of a deep learning algorithm for improving gleason scoring of prostate cancer",
+      "year": "2018"
     },
     {
-      "title": "Learning probabilistic phenotypes from heterogeneous EHR data",
+      "title": "Learning probabilistic phenotypes from heterogeneous ehr data",
       "year": "2015"
     },
     {
-      "title": "Learning Representations by Back-Propagating Errors",
-      "year": "2002"
+      "title": "Learning representations by back-propagating errors",
+      "year": "1988"
     },
     {
-      "title": "Mastering the game of Go with deep neural networks and tree search",
+      "title": "Mastering the game of go with deep neural networks and tree search",
       "year": "2016"
     },
     {
@@ -178,7 +178,7 @@
       "year": "2019"
     },
     {
-      "title": "Unsupervised Clinical Language Translation",
+      "title": "Unsupervised clinical language translation",
       "year": "2019"
     },
     {
@@ -194,7 +194,7 @@
       "year": "2016"
     },
     {
-      "title": "Regularization and Variable Selection Via the Elastic Net",
+      "title": "Elastic net regularization and variable selection",
       "year": "2005"
     }
   ]

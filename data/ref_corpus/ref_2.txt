@@ -1,0 +1,5 @@
+Clinical predictive analytics leverages machine learning to forecast patient risks and assist in medical decision-making. Large-scale datasets such as EHRs, diagnostic images, and laboratory results form the basis for model training.  
+Deep learning has demonstrated significant promise, particularly in imaging-based diagnostics and temporal sequence modeling with recurrent neural networks.  
+However, issues such as data imbalance, bias, and lack of generalization across institutions pose barriers to real-world deployment. Future research emphasizes explainable AI methods to increase clinician adoption and improve transparency in predictive models.
+
+It is important to prevent using any data in the dev set or testing set for model training. Test data leakage, i.e. having part of testing data while training phase, may cause the overﬁtting of the model to your test data and erroneously gives you a high performance but a bad model.There is no consensus on the relative proportions of the three subsets. However, people usually split out 20-30% of the whole dataset for their testing set. The proportion can be smaller if you have more data.

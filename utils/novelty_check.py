@@ -5,7 +5,7 @@ import numpy as np
 import argparse
 from sentence_transformers import SentenceTransformer
 import fitz  
-from pdf_parse import extract_text_from_pdf 
+from utils.pdf_parse import extract_text_from_pdf 
 
 # === Config ===
 FAISS_INDEX_PATH = "data/faiss_index.bin"
