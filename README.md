@@ -1,12 +1,12 @@
 # **Automated Academic Peer Review Assistant** 
 
-🚀 An AI-powered system for automated academic peer review.  
+An AI-powered system for automated academic peer review.  
 
 This tool analyzes research papers to provide structured, reviewer-style feedback. It performs citation quality checks, novelty search, plagiarism detection, factual consistency analysis, and claim mapping, then synthesizes the results into a professional review report. Designed for researchers, educators, and institutions to accelerate the peer review process.  
 
 ---
 
-## ✨ Key Features  
+## Key Features  
 
 - **Automated Analysis Suite**  
   - **Novelty Search:** Retrieve and compare papers using FAISS + semantic embeddings.  
@@ -27,7 +27,7 @@ This tool analyzes research papers to provide structured, reviewer-style feedbac
 
 ---
 
-## 🛠️ Technology Stack  
+## Technology Stack  
 
 - **Core Libraries:** `PyPDF2`, `requests`, `argparse`, `json`, `re`  
 - **NLP & Embeddings:** `sentence_transformers` (`all-MiniLM-L6-v2`), `faiss`, `scikit-learn`  
@@ -45,7 +45,7 @@ This tool analyzes research papers to provide structured, reviewer-style feedbac
 
 ---
 
-## 🚀 Quick Start  
+## Quick Start  
 
 1. **Clone the repository and install dependencies:**  
    ```bash
@@ -98,7 +98,7 @@ This tool analyzes research papers to provide structured, reviewer-style feedbac
 
 ---
 
-## 🗺️ High-Level Architecture
+## High-Level Architecture
 
 ```text
 User (Browser, PDF Upload)
@@ -129,7 +129,7 @@ User (Browser, PDF Upload)
 
 ---
 
-## 🛣️ Roadmap & Future Work
+## Roadmap & Future Work
 
 * **Scalability:** Containerize with Docker and add background workers for large-scale reviews.
 * **Improved Claim Extraction:** Use advanced NLP/LLM models for precise claim detection.
