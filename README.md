@@ -41,7 +41,7 @@ This tool analyzes research papers to provide structured, reviewer-style feedbac
 
 <img width="1835" height="1080" alt="Screenshot_20250925_193919" src="https://github.com/user-attachments/assets/74a1444b-03c6-4811-a6aa-138425cf8aa3" />
 <img width="1840" height="971" alt="Screenshot_20250919_112236" src="https://github.com/user-attachments/assets/a1871891-43a0-485b-bd38-899c9480b883" />
-<img width="1851" height="1080" alt="Screenshot_20250925_193809" src="https://github.com/user-attachments/assets/e4d8c603-92b5-4fe6-938f-6bce016a82f6" />
+<img width="1844" height="1080" alt="peerreview" src="https://github.com/user-attachments/assets/f5f61699-4b6a-4bed-b6e1-373f8df551c9" />
 
 ---
 
@@ -75,25 +75,29 @@ This tool analyzes research papers to provide structured, reviewer-style feedbac
    ```bash
    python utils/pdf_parse.py
    ```
+4. **Build FAISS index for similarity search**
 
-4. **Build FAISS index for similarity search:**
+```bash
+python utils/faiss_index.py \
+    --pdf_dir data/pdfs \
+    --index_path data/faiss_indexes/global_index.bin \
+    --mapping_path data/faiss_indexes/global_mapping.json \
+    --metadata_path data/metadata.json
+```
 
-   ```bash
-   python utils/faiss_index.py \
-       --pdf_dir data/pdfs \
-       --index_path data/faiss_indexes/global_index.bin \
-       --mapping_path data/faiss_indexes/global_mapping.json \
-       --metadata_path data/metadata.json
-   ```
+5. **Run the application**
 
-5. **Run the application:**
+```bash
+python app.py
+```
 
-   ```bash
-   python app.py
-   ```
+6. **Run the react app**
 
-6. **Access the UI:**
-   Open [http://localhost:5000](http://localhost:5000) in your browser.
+Open:
+
+```bash
+npm run dev
+```
 
 
 ---
